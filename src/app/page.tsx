@@ -347,6 +347,19 @@ export default function HomePage() {
                     <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed pt-1">
                       {exhibition.description}
                     </p>
+
+                    {/* 도슨트 블로그 바로가기 뱃지 */}
+                    {exhibition.blogSlug && (
+                      <div className="pt-1">
+                        <Link
+                          href={`/blog/${exhibition.blogSlug}`}
+                          className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors bg-indigo-50/90 hover:bg-indigo-100 px-2.5 py-1 rounded-lg"
+                        >
+                          <span>✍️ AI 도슨트 해설 & 코스</span>
+                          <span>→</span>
+                        </Link>
+                      </div>
+                    )}
                   </div>
 
                   {/* 하단 액션 버튼 */}

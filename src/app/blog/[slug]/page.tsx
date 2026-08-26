@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import rawData from "../../../../public/data/art-sample.json";
+import { Exhibition } from "@/types/art";
+
+const exhibitions: Exhibition[] = rawData as Exhibition[];
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -155,9 +159,56 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
           </div>
 
+          {/* 연계 전시 카드 */}
+          {(() => {
+            const relatedExhibition = exhibitions.find(
+              (e) => e.id === post.eventId || e.blogSlug === post.slug
+            );
+            if (!relatedExhibition) return null;
+
+            return (
+              <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 text-white shadow-md border border-indigo-500/30 space-y-4">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/30 text-indigo-200 border border-indigo-400/30">
+                    🎨 이번 글에 소개된 전시
+                  </span>
+                  <span className="text-xs text-slate-300 font-medium">
+                    {relatedExhibition.region} · {relatedExhibition.subRegion}
+                  </span>
+                </div>
+
+                <div className="space-y-1.5">
+                  <h3 className="text-lg sm:text-xl font-bold text-white leading-snug">
+                    {relatedExhibition.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    📍 {relatedExhibition.venueName || relatedExhibition.location} | 📅 {relatedExhibition.period}
+                  </p>
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <Link
+                    href={`/events/${relatedExhibition.id}`}
+                    className="py-2.5 px-5 rounded-xl bg-white hover:bg-indigo-50 text-indigo-950 text-xs sm:text-sm font-bold transition-all shadow-sm inline-flex items-center gap-1.5"
+                  >
+                    전시 상세정보 & 길찾기 안내 →
+                  </Link>
+                  <a
+                    href={relatedExhibition.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-medium border border-white/20 transition-all"
+                  >
+                    미술관 공식 홈페이지 ↗
+                  </a>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* 태그 목록 */}
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-12 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-2">
+            <div className="mt-10 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-2">
               <span className="text-xs font-bold text-slate-400">TAGS :</span>
               {post.tags.map((tag, idx) => (
                 <span

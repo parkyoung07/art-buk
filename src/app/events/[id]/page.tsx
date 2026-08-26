@@ -187,6 +187,30 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* 좌측: 전시 소개 및 큐레이터 노트 (2열 차지) */}
           <div className="lg:col-span-2 space-y-8">
+            {/* AI 도슨트 블로그 가이드 배너 */}
+            {exhibition.blogSlug && (
+              <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-900 rounded-3xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border border-indigo-500/30">
+                <div className="space-y-2 z-10 max-w-xl">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-bold border border-indigo-400/30">
+                    ✍️ AI 도슨트 심층 가이드
+                  </span>
+                  <h3 className="text-lg sm:text-xl font-extrabold text-white">
+                    전시 관람 전 꼭 읽어야 할 상세 도슨트 리뷰 & 코스
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    작품 속 숨겨진 이야기부터 추천 포토존, 주변 맛집·카페 연계 코스를 확인해 보세요.
+                  </p>
+                </div>
+                <Link
+                  href={`/blog/${exhibition.blogSlug}`}
+                  className="z-10 shrink-0 px-5 py-3 rounded-2xl bg-white text-indigo-950 hover:bg-indigo-50 font-bold text-sm transition-all shadow-md inline-flex items-center gap-2 group"
+                >
+                  <span>도슨트 글 읽기</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </Link>
+              </div>
+            )}
+
             {/* 전시 상세 소개 */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs space-y-4">
               <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
@@ -288,6 +312,16 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
 
               {/* 액션 버튼 */}
               <div className="pt-3 border-t border-slate-100 space-y-3">
+                {exhibition.blogSlug && (
+                  <Link
+                    href={`/blog/${exhibition.blogSlug}`}
+                    className="w-full py-3.5 px-4 rounded-2xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-sm transition-all border border-indigo-200 text-center flex items-center justify-center gap-2 group"
+                  >
+                    <span>✍️ AI 도슨트 추천 글 읽기</span>
+                    <span className="group-hover:translate-x-0.5 transition-transform">→</span>
+                  </Link>
+                )}
+
                 <a
                   href={exhibition.link}
                   target="_blank"

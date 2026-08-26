@@ -5,6 +5,7 @@ summary: "늦여름부터 가을까지 이어지는 2026 부산비엔날레의 �
 category: "전시 리뷰"
 tags: ["부산비엔날레", "부산전시", "부산현대미술관", "부울경전시", "가을나들이"]
 region: "부산"
+eventId: "busan-biennale-2026"
 thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=800&auto=format&fit=crop&q=80"
 ---
 

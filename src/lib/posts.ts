@@ -13,6 +13,7 @@ export interface PostData {
   tags: string[];
   region: string;
   thumbnail?: string;
+  eventId?: string;
   content: string;
 }
 
@@ -55,6 +56,7 @@ export function getAllPosts(): PostData[] {
           : [],
         region: data.region || "부울경",
         thumbnail: data.thumbnail || "",
+        eventId: data.eventId || "",
         content,
       } as PostData;
     });
@@ -85,6 +87,7 @@ export function getPostBySlug(slug: string): PostData | null {
         : [],
       region: data.region || "부울경",
       thumbnail: data.thumbnail || "",
+      eventId: data.eventId || "",
       content,
     };
   } catch {

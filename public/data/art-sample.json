@@ -22,7 +22,8 @@
     "tag": "🔥 2026 공식 개막",
     "posterTheme": "bg-gradient-to-br from-indigo-950 via-slate-900 to-blue-900",
     "accentColor": "#6366f1",
-    "link": "http://www.busanbiennale.org"
+    "link": "http://www.busanbiennale.org",
+    "blogSlug": "2026-08-26-busan-biennale"
   },
   {
     "id": "ulsan-media-art-2026",
@@ -47,7 +48,8 @@
     "tag": "인기 미디어아트",
     "posterTheme": "bg-gradient-to-br from-purple-950 via-slate-900 to-fuchsia-950",
     "accentColor": "#d946ef",
-    "link": "https://www.ulsan.go.kr/s/uam"
+    "link": "https://www.ulsan.go.kr/s/uam/",
+    "blogSlug": "2026-08-26-ulsan-media-art"
   },
   {
     "id": "gyeongnam-autumn-masterpiece",
@@ -72,7 +74,8 @@
     "tag": "가을 대기획전",
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950",
     "accentColor": "#14b8a6",
-    "link": "https://www.gyeongnam.go.kr/gam"
+    "link": "https://www.gyeongnam.go.kr/gam/index.do",
+    "blogSlug": "2026-08-26-gyeongnam-art-museum"
   },
   {
     "id": "gimhae-clayarch-autumn",
@@ -97,6 +100,7 @@
     "tag": "힐링 건축도자",
     "posterTheme": "bg-gradient-to-br from-amber-950 via-slate-900 to-stone-900",
     "accentColor": "#f59e0b",
-    "link": "https://www.clayarch.org"
+    "link": "https://clayarch.ghct.or.kr/",
+    "blogSlug": "2026-08-26-gimhae-clayarch"
   }
 ]

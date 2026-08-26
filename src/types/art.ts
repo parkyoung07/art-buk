@@ -22,4 +22,5 @@ export interface Exhibition {
   link: string;
   curatorNote?: string;
   nearbySpots?: string[];
+  blogSlug?: string;
 }
