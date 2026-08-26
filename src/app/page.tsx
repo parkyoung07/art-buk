@@ -49,8 +49,55 @@ export default function HomePage() {
     });
   }, [selectedRegion, showOnlyFree, searchQuery]);
 
+  // Google Event List JSON-LD 스키마
+  const eventListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: exhibitionsData.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Event",
+        name: item.title,
+        startDate: item.startDate || "2026-04-01",
+        endDate: item.endDate || "2026-06-30",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {
+          "@type": "Place",
+          name: item.venueName || item.location,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: item.region,
+            streetAddress: item.address || item.location,
+            addressCountry: "KR",
+          },
+        },
+        description: item.description,
+        offers: {
+          "@type": "Offer",
+          price: item.isFree ? "0" : item.price.replace(/[^0-9]/g, ""),
+          priceCurrency: "KRW",
+          availability: "https://schema.org/InStock",
+          url: `https://art-buk.pages.dev/events/${item.id}/`,
+        },
+        organizer: {
+          "@type": "Organization",
+          name: item.venueName || "부울경 미술관",
+          url: item.link,
+        },
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+      {/* 구조화 데이터 (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventListJsonLd) }}
+      />
+
       {/* 1. 상단 네비게이션 헤더 */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">

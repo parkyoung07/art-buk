@@ -13,13 +13,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 및 미술관 가이드",
+  metadataBase: new URL("https://art-buk.pages.dev"),
+  title: {
+    default: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 가이드",
+    template: "%s | 부울경 아트·전시 나들이",
+  },
   description: "부산, 울산, 경남 지역의 최신 미술관 전시, 미디어아트, 갤러리 소식과 AI 도슨트 추천 코스를 한눈에 만나보세요.",
-  keywords: ["부산전시", "울산전시", "경남전시", "부산시립미술관", "울산시립미술관", "경남도립미술관", "클레이아크김해미술관", "부울경데이트", "주말나들이"],
+  keywords: [
+    "부산전시",
+    "울산전시",
+    "경남전시",
+    "부울경미술관",
+    "부산시립미술관",
+    "울산시립미술관",
+    "경남도립미술관",
+    "클레이아크김해미술관",
+    "부울경데이트",
+    "주말나들이",
+  ],
+  authors: [{ name: "부울경 아트·전시 나들이 팀" }],
+  creator: "art-buk",
+  publisher: "art-buk",
   openGraph: {
-    title: "부울경 아트·전시 나들이",
-    description: "부산, 울산, 경남의 특별한 전시와 문화 예술 소식",
+    title: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 가이드",
+    description: "부산, 울산, 경남의 특별한 전시와 문화 예술 소식 및 AI 도슨트 추천 코스",
+    url: "https://art-buk.pages.dev",
+    siteName: "부울경 아트·전시 나들이",
+    locale: "ko_KR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 가이드",
+    description: "부산, 울산, 경남의 특별한 전시와 문화 예술 소식",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

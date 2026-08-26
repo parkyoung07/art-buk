@@ -24,9 +24,34 @@ export async function generateMetadata({ params }: PageProps) {
   const post = getPostBySlug(slug);
   if (!post) return { title: "글을 찾을 수 없습니다." };
 
+  const url = `https://art-buk.pages.dev/blog/${post.slug}/`;
+  const image = post.thumbnail || "https://art-buk.pages.dev/og-default.jpg";
+
   return {
     title: `${post.title} | 부울경 전시 블로그`,
-    description: post.summary || "부울경 아트·전시 나들이 AI 도슨트 리뷰",
+    description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
+    keywords: [...post.tags, post.region, "부울경전시", "미술관나들이"],
+    openGraph: {
+      title: `${post.title} | 부울경 전시 블로그`,
+      description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
+      url,
+      type: "article",
+      publishedTime: post.date,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [image],
+    },
   };
 }
 
@@ -41,8 +66,43 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  // BlogPosting JSON-LD 구조화 데이터
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.summary,
+    image: post.thumbnail ? [post.thumbnail] : undefined,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: "부울경 아트·전시 나들이 AI 도슨트",
+      url: "https://art-buk.pages.dev",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "art-buk",
+      url: "https://art-buk.pages.dev",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://art-buk.pages.dev/favicon.ico",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://art-buk.pages.dev/blog/${post.slug}/`,
+    },
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+      {/* 구조화 데이터 (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* 1. 상단 네비게이션 헤더 */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -110,8 +170,14 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
             </div>
           )}
 
+          {/* 출처 및 공공데이터 명시 (E-E-A-T 신뢰도) */}
+          <div className="mt-8 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs text-slate-500 flex items-center gap-2">
+            <span>ℹ️</span>
+            <span>본 정보는 한국문화정보원 공공데이터를 기반으로 작성되었습니다.</span>
+          </div>
+
           {/* 하단 네비게이션 버튼 */}
-          <div className="mt-10 pt-6 border-t border-slate-200 flex items-center justify-between">
+          <div className="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between">
             <Link
               href="/blog"
               className="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold transition-colors inline-flex items-center gap-1.5"

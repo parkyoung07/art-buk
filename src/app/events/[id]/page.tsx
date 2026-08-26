@@ -16,6 +16,38 @@ interface PageProps {
   params: Promise<{ id: string }>;
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const { id } = await params;
+  const exhibition = exhibitions.find((item) => item.id === id);
+  if (!exhibition) return { title: "전시를 찾을 수 없습니다." };
+
+  const url = `https://art-buk.pages.dev/events/${exhibition.id}/`;
+
+  return {
+    title: `${exhibition.title} | ${exhibition.venueName || exhibition.location}`,
+    description: `${exhibition.period} | ${exhibition.location} - ${exhibition.description}`,
+    keywords: [
+      exhibition.region,
+      exhibition.subRegion,
+      exhibition.category,
+      exhibition.venueName || "",
+      "부울경전시",
+      "미술관",
+    ],
+    openGraph: {
+      title: `${exhibition.title} | 부울경 아트·전시 나들이`,
+      description: `${exhibition.period} (${exhibition.venueName || exhibition.location}) - ${exhibition.description}`,
+      url,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: exhibition.title,
+      description: `${exhibition.period} | ${exhibition.venueName || exhibition.location}`,
+    },
+  };
+}
+
 export default async function ExhibitionDetailPage({ params }: PageProps) {
   const { id } = await params;
   const exhibition = exhibitions.find((item) => item.id === id);
@@ -24,8 +56,47 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  // Google Event Schema (JSON-LD)
+  const eventJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: exhibition.title,
+    startDate: exhibition.startDate || "2026-04-01",
+    endDate: exhibition.endDate || "2026-06-30",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: exhibition.venueName || exhibition.location,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: exhibition.region,
+        streetAddress: exhibition.address || exhibition.location,
+        addressCountry: "KR",
+      },
+    },
+    description: exhibition.description,
+    offers: {
+      "@type": "Offer",
+      price: exhibition.isFree ? "0" : exhibition.price.replace(/[^0-9]/g, ""),
+      priceCurrency: "KRW",
+      availability: "https://schema.org/InStock",
+      url: exhibition.link || `https://art-buk.pages.dev/events/${exhibition.id}/`,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: exhibition.venueName || "부울경 미술관",
+      url: exhibition.link,
+    },
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+      {/* 구조화 데이터 (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
+      />
       {/* 1. 상단 네비게이션 바 */}
       <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
