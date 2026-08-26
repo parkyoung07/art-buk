@@ -69,23 +69,23 @@ export default function HomePage() {
             </div>
           </div>
 
-          <nav className="flex items-center gap-1 sm:gap-4">
+          <nav className="flex items-center gap-1 sm:gap-3 text-xs sm:text-sm font-medium">
             <button
               onClick={() => {
                 setSelectedRegion("전체");
                 setShowOnlyFree(false);
                 setSearchQuery("");
               }}
-              className="px-3 py-1.5 text-xs sm:text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors"
+              className="px-3 py-1.5 text-indigo-600 font-bold bg-indigo-50 rounded-lg transition-colors"
             >
-              전시 탐색
+              전시 둘러보기
             </button>
-            <a
-              href="#ai-docent-section"
-              className="px-3 py-1.5 text-xs sm:text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors"
+            <Link
+              href="/blog"
+              className="px-3 py-1.5 text-slate-700 hover:text-indigo-600 transition-colors"
             >
-              AI 도슨트
-            </a>
+              전시 블로그
+            </Link>
             <div className="hidden md:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               공공데이터 연동 완료
@@ -358,12 +358,12 @@ export default function HomePage() {
               매일 아침 부울경 전역의 새로운 전시 데이터를 분석하여, 작품 속 숨겨진 이야기와 미술관 주변 데이트·나들이 맛집 코스를 함께 추천해 드립니다.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <button
-                onClick={() => alert("AI 도슨트 블로그 및 코스 추천 기능이 곧 정식 오픈됩니다!")}
-                className="px-5 py-3 rounded-xl bg-white text-indigo-950 font-bold text-sm hover:bg-indigo-50 transition-all shadow-md"
+              <Link
+                href="/blog"
+                className="px-5 py-3 rounded-xl bg-white text-indigo-950 font-bold text-sm hover:bg-indigo-50 transition-all shadow-md inline-block"
               >
                 도슨트 추천 글 읽어보기 →
-              </button>
+              </Link>
               <span className="text-xs text-indigo-300">
                 매일 오전 06:00 자동 발행
               </span>

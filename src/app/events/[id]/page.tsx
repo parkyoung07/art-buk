@@ -39,14 +39,22 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
             <span>전시 목록으로 돌아가기</span>
           </Link>
 
-          <Link href="/" className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-xs">
-              A
-            </span>
-            <span className="font-bold text-sm tracking-tight text-slate-900 hidden sm:inline">
-              부울경 아트·전시
-            </span>
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/blog"
+              className="text-xs sm:text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors"
+            >
+              전시 블로그
+            </Link>
+            <Link href="/" className="flex items-center gap-2">
+              <span className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-xs">
+                A
+              </span>
+              <span className="font-bold text-sm tracking-tight text-slate-900 hidden sm:inline">
+                부울경 아트·전시
+              </span>
+            </Link>
+          </div>
         </div>
       </header>
 
