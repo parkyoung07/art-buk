@@ -175,6 +175,18 @@ async function fetchPexelsPhotos(query, count = 4) {
   ];
 }
 
+// 한국 시간(KST, UTC+9) 기준 오늘 날짜 문자열(YYYY-MM-DD) 반환 함수
+function getKSTDateString() {
+  const now = new Date();
+  const kstOffset = 9 * 60; // 9 hours in minutes
+  const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+  const kst = new Date(utc + kstOffset * 60000);
+  const year = kst.getFullYear();
+  const month = String(kst.getMonth() + 1).padStart(2, "0");
+  const day = String(kst.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 // 4. Gemini API로 마크다운 글 생성
 async function generatePostWithGemini(exhibition, photos, dateStr) {
   const prompt = `
@@ -228,7 +240,7 @@ thumbnail: "${photos[0]?.url || ''}"
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
         temperature: 0.7,
-        maxOutputTokens: 3000
+        maxOutputTokens: 8192
       }
     })
   });
@@ -263,7 +275,7 @@ async function main() {
   }
 
   const existingFiles = fs.readdirSync(postsDir);
-  const today = new Date().toISOString().split("T")[0];
+  const today = getKSTDateString();
 
   // 아직 작성되지 않은 전시 후보 선택
   let targetExhibition = EXHIBITION_POOL.find(ex => {
