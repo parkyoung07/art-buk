@@ -142,25 +142,35 @@ export default function HomePage() {
       </header>
 
       {/* 2. Hero 섹션 */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-900 text-white py-16 sm:py-20">
+      <section className="relative overflow-hidden text-white py-14 sm:py-16">
+        {/* 배경 이미지 & 은은한 오버레이 */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1920&auto=format&fit=crop&q=80')`
+          }}
+        />
+        {/* 다크 그라데이션 및 블러 오버레이로 텍스트 가독성 확보 */}
+        <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/90 via-slate-900/90 to-slate-950/95 backdrop-blur-[2px]"></div>
+
         {/* 배경 은은한 빛 효과 */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-xs sm:text-sm font-medium mb-6 backdrop-blur-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs sm:text-sm font-medium mb-5 backdrop-blur-md shadow-sm">
             <span>🎨</span>
             <span>2026 부울경 미술관 & 갤러리 통합 가이드</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight sm:leading-tight">
+          <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight sm:leading-tight">
             이번 주말, 부울경의 예술과 함께하는 <br className="hidden sm:inline" />
-            <span className="bg-gradient-to-r from-indigo-300 via-sky-300 to-pink-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-200 via-sky-200 to-pink-200 bg-clip-text text-transparent">
               감성 가득한 나들이
             </span>
           </h1>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto">
             부산의 바다, 울산의 빛, 경남의 자연을 담은 미술관 전시 정보와 AI 도슨트 추천 코스를 한눈에 확인하세요.
           </p>
 

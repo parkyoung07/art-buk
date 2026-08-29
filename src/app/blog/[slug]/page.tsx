@@ -100,7 +100,17 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+    <div className="relative min-h-screen flex flex-col bg-slate-100 text-slate-800">
+      {/* 상단 및 전체 은은한 배경 이미지 */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1920&auto=format&fit=crop&q=80')`
+        }}
+      />
+      {/* 상단 앰비언트 그라데이션 */}
+      <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-indigo-900/10 via-slate-100/50 to-transparent pointer-events-none" />
+
       {/* 구조화 데이터 (JSON-LD) */}
       <script
         type="application/ld+json"
@@ -132,23 +142,23 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
       </header>
 
       {/* 2. 글 본문 아티클 영역 */}
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-        <article className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-sm">
+      <main className="relative flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <article className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 sm:p-12 border border-slate-200/80 shadow-md">
           {/* 글 헤더 */}
-          <header className="pb-8 mb-8 border-b border-slate-200">
-            <div className="flex flex-wrap items-center gap-2 mb-4">
+          <header className="pb-6 mb-8 border-b border-slate-200">
+            <div className="flex flex-wrap items-center gap-2 mb-3">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">
                 {post.region} · {post.category}
               </span>
               <time className="text-xs text-slate-400 font-medium">{post.date}</time>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
+            <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
               {post.title}
             </h1>
 
             {post.summary && (
-              <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-medium bg-slate-50 p-4 rounded-2xl border border-slate-100">
+              <p className="mt-4 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium bg-slate-50/80 p-3.5 sm:p-4 rounded-2xl border border-slate-100">
                 💡 {post.summary}
               </p>
             )}

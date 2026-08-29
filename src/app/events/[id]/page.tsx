@@ -164,7 +164,7 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
           </div>
 
           {/* 전시 제목 */}
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-snug sm:leading-tight max-w-4xl">
+          <h1 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-snug sm:leading-tight max-w-4xl">
             {exhibition.title}
           </h1>
 

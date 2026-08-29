@@ -43,21 +43,30 @@ export default function BlogListPage() {
       </header>
 
       {/* 2. 블로그 Hero 섹션 */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-indigo-950 via-slate-900 to-slate-900 text-white py-16 sm:py-20">
+      <section className="relative overflow-hidden text-white py-14 sm:py-16">
+        {/* 배경 이미지 & 은은한 오버레이 */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1920&auto=format&fit=crop&q=80')`
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/90 via-slate-900/90 to-slate-950/95 backdrop-blur-[2px]"></div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-xs sm:text-sm font-medium mb-5">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs sm:text-sm font-medium mb-5 backdrop-blur-md shadow-sm">
             <span>✍️</span>
             <span>AI 도슨트 & 전시 큐레이션 매거진</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight">
+          <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight">
             부울경 전시 리뷰 & <br className="hidden sm:inline" />
-            <span className="bg-gradient-to-r from-indigo-300 via-sky-300 to-pink-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-200 via-sky-200 to-pink-200 bg-clip-text text-transparent">
               도슨트 나들이 이야기
             </span>
           </h1>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto">
             작품 속에 담긴 숨은 이야기부터 미술관 주변 데이트·나들이 추천 코스까지, 친절한 해설을 만나보세요.
           </p>
         </div>
@@ -70,31 +79,55 @@ export default function BlogListPage() {
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <Link href={`/blog/${post.slug}`} className="block flex-1 flex flex-col p-6">
-                  {/* 카테고리 & 지역 뱃지 */}
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">
+                {/* 썸네일 이미지 (있을 경우) */}
+                {post.thumbnail && (
+                  <Link href={`/blog/${post.slug}`} className="block relative aspect-video overflow-hidden bg-slate-100">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={post.thumbnail}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"></div>
+                    <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/90 backdrop-blur-md text-indigo-700 shadow-sm">
                       {post.region} · {post.category}
                     </span>
-                    <time className="text-xs text-slate-400 font-medium">{post.date}</time>
-                  </div>
+                  </Link>
+                )}
+
+                <Link href={`/blog/${post.slug}`} className="block flex-1 flex flex-col p-6">
+                  {/* 썸네일이 없을 때만 표시되는 뱃지 */}
+                  {!post.thumbnail && (
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">
+                        {post.region} · {post.category}
+                      </span>
+                      <time className="text-xs text-slate-400 font-medium">{post.date}</time>
+                    </div>
+                  )}
+
+                  {post.thumbnail && (
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <time className="text-xs text-slate-400 font-medium">{post.date}</time>
+                    </div>
+                  )}
 
                   {/* 글 제목 */}
-                  <h2 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors line-clamp-2 leading-snug mb-3">
+                  <h2 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors line-clamp-2 leading-snug mb-2">
                     {post.title}
                   </h2>
 
                   {/* 미리보기 본문 (summary) */}
-                  <p className="text-xs sm:text-sm text-slate-600 line-clamp-3 leading-relaxed mb-4 flex-1">
+                  <p className="text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed mb-4 flex-1">
                     {post.summary}
                   </p>
 
                   {/* 태그 목록 */}
                   {post.tags && post.tags.length > 0 && (
                     <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
-                      {post.tags.map((tag, idx) => (
+                      {post.tags.slice(0, 3).map((tag, idx) => (
                         <span
                           key={idx}
                           className="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md"
