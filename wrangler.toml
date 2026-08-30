@@ -6,6 +6,7 @@ binding = "AI"
 
 [[kv_namespaces]]
 binding = "CHAT_KV"
-id = "chat_kv_id"
+id = "92bc561db5074d42b07e99d9f37559bd"
+
 
 
