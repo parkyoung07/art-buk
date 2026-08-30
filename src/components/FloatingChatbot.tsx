@@ -147,7 +147,7 @@ export default function FloatingChatbot() {
   };
 
   // Handle Manual Send
-  const handleSendMessage = (e?: React.FormEvent) => {
+  const handleSendMessage = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     const query = inputValue.trim();
     if (!query) return;
@@ -166,7 +166,32 @@ export default function FloatingChatbot() {
     setInputValue("");
     setIsTyping(true);
 
-    // Check if query matches any known questions
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: query }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.reply) {
+          setIsTyping(false);
+          const botMessage: Message = {
+            id: botMsgId,
+            sender: "bot",
+            text: data.reply,
+            timestamp: formatCurrentTime(),
+          };
+          setMessages((prev) => [...prev, botMessage]);
+          return;
+        }
+      }
+    } catch {
+      // Fallback if /api/chat is unreachable
+    }
+
+    // Local fallback matching
     const matched = chatData.questions.find(
       (q) =>
         q.question.toLowerCase().includes(query.toLowerCase()) ||
@@ -178,21 +203,20 @@ export default function FloatingChatbot() {
         (query.includes("블로그") && q.question.includes("블로그"))
     );
 
-    setTimeout(() => {
-      setIsTyping(false);
-      const answerText = matched
-        ? matched.answer
-        : `"${query}"에 대한 질문을 확인했습니다! 😊\n\n부울경(부산, 울산, 경남)의 상세 전시 및 AI 도슨트 추천 코스는 아래 추천 질문 버튼을 눌러 빠르게 확인하실 수 있습니다.`;
+    setIsTyping(false);
+    const answerText = matched
+      ? matched.answer
+      : `"${query}"에 대한 질문을 확인했습니다! 😊\n\n부울경(부산, 울산, 경남)의 상세 전시 및 AI 도슨트 추천 코스는 아래 추천 질문 버튼을 눌러 빠르게 확인하실 수 있습니다.`;
 
-      const botMessage: Message = {
-        id: botMsgId,
-        sender: "bot",
-        text: answerText,
-        timestamp: formatCurrentTime(),
-      };
-      setMessages((prev) => [...prev, botMessage]);
-    }, 450);
+    const botMessage: Message = {
+      id: botMsgId,
+      sender: "bot",
+      text: answerText,
+      timestamp: formatCurrentTime(),
+    };
+    setMessages((prev) => [...prev, botMessage]);
   };
+
 
   // Handle Copy to Clipboard
   const handleCopyText = (text: string, msgId: string) => {
