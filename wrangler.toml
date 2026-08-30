@@ -1,5 +1,7 @@
 name = "art-buk"
 pages_build_output_dir = "out"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
 
 [ai]
 binding = "AI"
@@ -7,6 +9,3 @@ binding = "AI"
 [[kv_namespaces]]
 binding = "CHAT_KV"
 id = "92bc561db5074d42b07e99d9f37559bd"
-
-
-
