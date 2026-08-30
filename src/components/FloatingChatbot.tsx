@@ -22,7 +22,7 @@ interface Message {
 
 const DEFAULT_CHAT_DATA: ChatData = {
   welcomeMessage:
-    "안녕하세요! 🎨 부울경 아트·전시 나들이 AI 안내원입니다.\n전시 정보나 추천 코스가 궁금하시면 아래 질문을 눌러보세요!",
+    "안녕하세요! 🎨 부울경 아트·전시 나들이 AI 안내원입니다.\n궁금하신 전시나 코스를 자유롭게 질문하시거나 아래 추천 질문을 눌러보세요!",
   questions: [
     {
       id: "q1",
@@ -73,9 +73,10 @@ export default function FloatingChatbot() {
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Load chat-data.json
+  // 1. Load chat-data.json on mount
   useEffect(() => {
     fetch("/data/chat-data.json")
       .then((res) => {
@@ -88,12 +89,11 @@ export default function FloatingChatbot() {
         }
       })
       .catch(() => {
-        // Fallback to default
         setChatData(DEFAULT_CHAT_DATA);
       });
   }, []);
 
-  // Initialize welcome message when opened first time
+  // 2. Initialize welcome message
   useEffect(() => {
     if (messages.length === 0 && chatData.welcomeMessage) {
       setMessages([
@@ -107,7 +107,7 @@ export default function FloatingChatbot() {
     }
   }, [chatData, messages.length]);
 
-  // Scroll to bottom
+  // 3. Auto-scroll to bottom
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -118,8 +118,19 @@ export default function FloatingChatbot() {
     }
   }, [messages, isTyping, isOpen]);
 
-  // Handle Question Click
+  // 4. Focus input on open
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 200);
+    }
+  }, [isOpen]);
+
+  // 5. Handle Question Chip Click
   const handleSelectQuestion = (qItem: QuestionItem) => {
+    if (isTyping) return;
+
     const userMsgId = `user-${Date.now()}`;
     const botMsgId = `bot-${Date.now() + 1}`;
 
@@ -133,7 +144,6 @@ export default function FloatingChatbot() {
     setMessages((prev) => [...prev, userMessage]);
     setIsTyping(true);
 
-    // Realistic answering delay
     setTimeout(() => {
       setIsTyping(false);
       const botMessage: Message = {
@@ -146,11 +156,11 @@ export default function FloatingChatbot() {
     }, 450);
   };
 
-  // Handle Manual Send
+  // 6. Handle Direct User Input Send (calls /api/chat with Workers AI)
   const handleSendMessage = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     const query = inputValue.trim();
-    if (!query) return;
+    if (!query || isTyping) return;
 
     const userMsgId = `user-${Date.now()}`;
     const botMsgId = `bot-${Date.now() + 1}`;
@@ -162,63 +172,70 @@ export default function FloatingChatbot() {
       timestamp: formatCurrentTime(),
     };
 
+    // 1) 즉시 사용자 말풍선 표시 및 입력창 비우기
     setMessages((prev) => [...prev, userMessage]);
     setInputValue("");
+    // 2) AI 답변 대기 상태 (입력창/전송버튼 비활성화)
     setIsTyping(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      // 3) 백엔드 /api/chat API 서버로 POST 요청
+      const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({ message: query }),
       });
 
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.reply) {
+      if (response.ok) {
+        const data = await response.json();
+        const replyText = data?.reply || data?.response;
+
+        if (replyText) {
           setIsTyping(false);
           const botMessage: Message = {
             id: botMsgId,
             sender: "bot",
-            text: data.reply,
+            text: replyText,
             timestamp: formatCurrentTime(),
           };
           setMessages((prev) => [...prev, botMessage]);
           return;
         }
       }
-    } catch {
-      // Fallback if /api/chat is unreachable
+
+      // 만약 API 응답이 실패한 경우 fallback 또는 에러 메시지
+      throw new Error("서버 응답 오류");
+    } catch (error) {
+      console.warn("API 호출 실패, 로컬 데이터 매칭 또는 에러 처리:", error);
+
+      // 로컬 사전 등록 질문 매칭 시도
+      const matched = chatData.questions.find(
+        (q) =>
+          q.question.toLowerCase().includes(query.toLowerCase()) ||
+          (query.includes("부산") && q.question.includes("부산")) ||
+          (query.includes("울산") && q.question.includes("울산")) ||
+          (query.includes("경남") && q.question.includes("가을")) ||
+          (query.includes("가격") && q.question.includes("가성비")) ||
+          (query.includes("블로그") && q.question.includes("블로그"))
+      );
+
+      setIsTyping(false);
+
+      const botMessage: Message = {
+        id: botMsgId,
+        sender: "bot",
+        text: matched
+          ? matched.answer
+          : "죄송합니다. 서버와의 연결에 실패했습니다. 잠시 후 다시 질문해 주세요.",
+        timestamp: formatCurrentTime(),
+      };
+      setMessages((prev) => [...prev, botMessage]);
     }
-
-    // Local fallback matching
-    const matched = chatData.questions.find(
-      (q) =>
-        q.question.toLowerCase().includes(query.toLowerCase()) ||
-        query.toLowerCase().includes(q.id) ||
-        (query.includes("부산") && q.question.includes("부산")) ||
-        (query.includes("울산") && q.question.includes("울산")) ||
-        (query.includes("경남") && q.question.includes("가을")) ||
-        (query.includes("가격") && q.question.includes("가성비")) ||
-        (query.includes("블로그") && q.question.includes("블로그"))
-    );
-
-    setIsTyping(false);
-    const answerText = matched
-      ? matched.answer
-      : `"${query}"에 대한 질문을 확인했습니다! 😊\n\n부울경(부산, 울산, 경남)의 상세 전시 및 AI 도슨트 추천 코스는 아래 추천 질문 버튼을 눌러 빠르게 확인하실 수 있습니다.`;
-
-    const botMessage: Message = {
-      id: botMsgId,
-      sender: "bot",
-      text: answerText,
-      timestamp: formatCurrentTime(),
-    };
-    setMessages((prev) => [...prev, botMessage]);
   };
 
-
-  // Handle Copy to Clipboard
+  // 7. Handle Copy to Clipboard with 1.5s Green Check Animation
   const handleCopyText = (text: string, msgId: string) => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
@@ -254,7 +271,7 @@ export default function FloatingChatbot() {
     document.body.removeChild(textArea);
   };
 
-  // Reset chat
+  // 8. Reset Chat
   const handleResetChat = () => {
     setMessages([
       {
@@ -267,13 +284,16 @@ export default function FloatingChatbot() {
   };
 
   return (
-    <aside aria-label="부울경 전시 AI 챗봇 안내 도우미" className="fixed bottom-5 right-5 z-50 select-none">
+    <aside
+      aria-label="부울경 전시 AI 챗봇 안내 도우미"
+      className="fixed bottom-5 right-5 z-50 select-none font-sans"
+    >
       {/* Chat Window */}
       {isOpen && (
         <div
           role="dialog"
           aria-label="부울경 AI 전시 큐레이터 채팅창"
-          className="w-[92vw] sm:w-[400px] h-[580px] max-h-[82vh] bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-indigo-100 flex flex-col overflow-hidden mb-4 transition-all duration-300 animate-in fade-in slide-in-from-bottom-5"
+          className="w-[92vw] sm:w-[410px] h-[600px] max-h-[85vh] bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-indigo-100/90 flex flex-col overflow-hidden mb-4 transition-all duration-300 animate-in fade-in slide-in-from-bottom-5"
         >
           {/* Header */}
           <div className="bg-gradient-to-r from-indigo-600 via-indigo-700 to-violet-700 p-4 text-white flex items-center justify-between shadow-md">
@@ -283,13 +303,13 @@ export default function FloatingChatbot() {
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <h3 className="font-bold text-sm sm:text-base leading-tight">
+                  <h3 className="font-bold text-sm sm:text-base leading-tight tracking-tight">
                     부울경 전시 AI 가이드
                   </h3>
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 </div>
                 <p className="text-[11px] text-indigo-200">
-                  부산·울산·경남 전시 & 코스 안내
+                  부산 · 울산 · 경남 실시간 AI 질의응답
                 </p>
               </div>
             </div>
@@ -298,13 +318,13 @@ export default function FloatingChatbot() {
                 type="button"
                 onClick={handleResetChat}
                 title="대화 초기화"
-                className="p-2 rounded-xl text-indigo-200 hover:text-white hover:bg-white/10 transition-colors text-xs"
+                className="p-2 rounded-xl text-indigo-200 hover:text-white hover:bg-white/10 transition-colors text-xs flex items-center gap-1"
                 aria-label="대화 초기화"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="15"
+                  height="15"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -355,24 +375,24 @@ export default function FloatingChatbot() {
                   }`}
                 >
                   <div
-                    className={`relative max-w-[85%] sm:max-w-[80%] rounded-2xl p-3.5 shadow-xs leading-relaxed whitespace-pre-wrap ${
+                    className={`relative max-w-[85%] sm:max-w-[82%] rounded-2xl p-3.5 shadow-xs leading-relaxed whitespace-pre-wrap ${
                       isBot
-                        ? "bg-white text-slate-800 border border-slate-200/80 rounded-tl-xs"
+                        ? "bg-white text-slate-800 border border-slate-200/80 rounded-tl-xs shadow-slate-200/50"
                         : "bg-indigo-600 text-white rounded-tr-xs shadow-indigo-500/10"
                     }`}
                   >
-                    <div>{msg.text}</div>
+                    <div className="break-words">{msg.text}</div>
 
-                    {/* Bot Message Copy Icon Button */}
+                    {/* Bot Message Bottom Copy Icon */}
                     {isBot && (
                       <div className="mt-2.5 pt-2 border-t border-slate-100/90 flex items-center justify-between text-[11px] text-slate-400">
-                        <span className="text-[10px] text-slate-400">
+                        <span className="text-[10px] text-slate-400 font-mono">
                           {msg.timestamp}
                         </span>
                         <div className="flex items-center gap-1.5">
                           {isCopied && (
                             <span className="text-[10px] font-semibold text-emerald-600 animate-in fade-in duration-200">
-                              복사됨!
+                              복사 완료!
                             </span>
                           )}
                           <button
@@ -380,7 +400,7 @@ export default function FloatingChatbot() {
                             onClick={() => handleCopyText(msg.text, msg.id)}
                             title={isCopied ? "복사 완료" : "답변 복사하기"}
                             aria-label={isCopied ? "복사 완료" : "답변 복사하기"}
-                            className="p-1 rounded-md hover:bg-slate-100 transition-colors flex items-center justify-center focus:outline-none"
+                            className="p-1 rounded-md hover:bg-slate-100 text-slate-500 hover:text-slate-700 transition-colors flex items-center justify-center focus:outline-none"
                           >
                             {isCopied ? (
                               /* 성공 체크 아이콘 (초록색 체크 마크 SVG) */
@@ -435,7 +455,7 @@ export default function FloatingChatbot() {
                   </div>
 
                   {!isBot && (
-                    <span className="text-[10px] text-slate-400 mt-1 px-1">
+                    <span className="text-[10px] text-slate-400 mt-1 px-1 font-mono">
                       {msg.timestamp}
                     </span>
                   )}
@@ -443,14 +463,14 @@ export default function FloatingChatbot() {
               );
             })}
 
-            {/* Typing Indicator */}
+            {/* Waiting / Thinking Indicator */}
             {isTyping && (
-              <div className="flex items-center gap-1.5 bg-white border border-slate-200/80 px-3.5 py-2.5 rounded-2xl rounded-tl-xs w-fit shadow-xs">
-                <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-                <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-                <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-bounce"></span>
-                <span className="text-[11px] text-slate-400 ml-1">
-                  안내 작성 중...
+              <div className="flex items-center gap-2 bg-white border border-indigo-100 px-4 py-3 rounded-2xl rounded-tl-xs w-fit shadow-xs animate-in fade-in">
+                <span className="w-2 h-2 bg-indigo-600 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                <span className="w-2 h-2 bg-indigo-500 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                <span className="w-2 h-2 bg-violet-500 rounded-full animate-bounce"></span>
+                <span className="text-xs text-indigo-700 font-medium ml-1">
+                  AI가 답변을 생각하고 있어요...
                 </span>
               </div>
             )}
@@ -458,9 +478,9 @@ export default function FloatingChatbot() {
             {/* Quick Questions Chips Area */}
             <div className="pt-2">
               <p className="text-[11px] font-semibold text-slate-500 mb-2 flex items-center gap-1">
-                <span>💡 자주 묻는 질문</span>
+                <span>💡 자주 묻는 추천 질문</span>
                 <span className="text-[10px] font-normal text-slate-400">
-                  (클릭 시 자동 답변)
+                  (클릭 시 빠른 답변)
                 </span>
               </p>
               <div className="flex flex-col gap-1.5">
@@ -468,8 +488,9 @@ export default function FloatingChatbot() {
                   <button
                     key={q.id}
                     type="button"
+                    disabled={isTyping}
                     onClick={() => handleSelectQuestion(q)}
-                    className="text-left text-xs bg-white hover:bg-indigo-50/80 active:bg-indigo-100 text-slate-700 hover:text-indigo-700 p-2.5 rounded-xl border border-slate-200/90 hover:border-indigo-200 transition-all duration-200 shadow-2xs hover:shadow-xs flex items-center justify-between group"
+                    className="text-left text-xs bg-white hover:bg-indigo-50/80 active:bg-indigo-100 disabled:opacity-50 text-slate-700 hover:text-indigo-700 p-2.5 rounded-xl border border-slate-200/90 hover:border-indigo-200 transition-all duration-200 shadow-2xs hover:shadow-xs flex items-center justify-between group"
                   >
                     <span className="line-clamp-1">{q.question}</span>
                     <span className="text-slate-300 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all text-xs shrink-0 ml-1">
@@ -483,28 +504,35 @@ export default function FloatingChatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Footer */}
+          {/* Input Footer Form */}
           <form
             onSubmit={handleSendMessage}
-            className="p-3 bg-white border-t border-slate-100 flex items-center gap-2"
+            className="p-3 bg-white border-t border-slate-100 flex items-center gap-2 shadow-inner"
           >
             <input
+              ref={inputRef}
               type="text"
               value={inputValue}
+              disabled={isTyping}
               onChange={(e) => setInputValue(e.target.value)}
-              placeholder="전시나 미술관 관련 질문을 입력하세요..."
-              className="flex-1 px-3.5 py-2.5 text-xs sm:text-sm bg-slate-100/90 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:bg-white text-slate-800 placeholder-slate-400 transition-all"
+              placeholder={
+                isTyping
+                  ? "AI가 답변을 작성 중입니다..."
+                  : "전시나 미술관 관련 질문을 입력하세요..."
+              }
+              className="flex-1 px-3.5 py-2.5 text-xs sm:text-sm bg-slate-100/90 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:bg-white disabled:bg-slate-50 disabled:text-slate-400 text-slate-800 placeholder-slate-400 transition-all"
             />
             <button
               type="submit"
-              disabled={!inputValue.trim()}
+              disabled={isTyping || !inputValue.trim()}
               aria-label="질문 전송"
-              className="p-2.5 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-200 text-white disabled:text-slate-400 rounded-xl transition-all shadow-xs flex items-center justify-center shrink-0"
+              className="px-3.5 py-2.5 bg-indigo-600 hover:bg-indigo-700 disabled:bg-slate-200 text-white disabled:text-slate-400 rounded-2xl transition-all shadow-xs flex items-center justify-center gap-1 shrink-0 font-medium text-xs sm:text-sm active:scale-95"
             >
+              <span>전송</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
