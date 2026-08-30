@@ -72,9 +72,24 @@ export default function FloatingChatbot() {
   const [isTyping, setIsTyping] = useState(false);
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState("");
+  const [userId, setUserId] = useState<string>("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Initialize unique user session ID for live consultation
+  useEffect(() => {
+    try {
+      let storedId = localStorage.getItem("artbuk_chat_uid");
+      if (!storedId) {
+        storedId = `user_${Math.random().toString(36).substring(2, 7)}`;
+        localStorage.setItem("artbuk_chat_uid", storedId);
+      }
+      setUserId(storedId);
+    } catch {
+      setUserId(`user_${Date.now().toString().slice(-4)}`);
+    }
+  }, []);
 
   // 1. Load chat-data.json on mount
   useEffect(() => {
@@ -106,6 +121,7 @@ export default function FloatingChatbot() {
       ]);
     }
   }, [chatData, messages.length]);
+
 
   // 3. Auto-scroll to bottom
   const scrollToBottom = () => {
@@ -178,6 +194,15 @@ export default function FloatingChatbot() {
     // 2) AI 답변 대기 상태 (입력창/전송버튼 비활성화)
     setIsTyping(true);
 
+    // 사용자 메시지를 KV 상담 저장소에 기록
+    if (userId) {
+      fetch("/api/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, message: query, sender: "user" }),
+      }).catch(() => {});
+    }
+
     try {
       // 3) 백엔드 /api/chat API 서버로 POST 요청
       const response = await fetch("/api/chat", {
@@ -201,6 +226,15 @@ export default function FloatingChatbot() {
             timestamp: formatCurrentTime(),
           };
           setMessages((prev) => [...prev, botMessage]);
+
+          // 답변 메시지도 KV 상담 저장소에 기록
+          if (userId) {
+            fetch("/api/messages", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ userId, message: replyText, sender: "admin" }),
+            }).catch(() => {});
+          }
           return;
         }
       }
@@ -234,6 +268,7 @@ export default function FloatingChatbot() {
       setMessages((prev) => [...prev, botMessage]);
     }
   };
+
 
   // 7. Handle Copy to Clipboard with 1.5s Green Check Animation
   const handleCopyText = (text: string, msgId: string) => {
