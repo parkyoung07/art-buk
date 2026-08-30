@@ -699,57 +699,90 @@ export default function FloatingChatbot() {
         </div>
       )}
 
-      {/* Trendy Minimal Floating Toggle Button */}
-      <button
-        type="button"
-        onClick={() => setIsOpen((prev) => !prev)}
-        aria-label={isOpen ? "AI 챗봇 닫기" : "AI 아트북 큐레이터 챗봇 열기"}
-        className="w-14 h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 hover:text-slate-950 border border-black/[0.08] shadow-[0_10px_25px_-5px_rgba(0,0,0,0.1),0_8px_10px_-6px_rgba(0,0,0,0.1)] hover:shadow-[0_15px_30px_-5px_rgba(99,102,241,0.25),0_10px_15px_-5px_rgba(0,0,0,0.08)] hover:-translate-y-[3px] active:translate-y-0 active:scale-95 transition-all duration-300 ease-out flex items-center justify-center relative group focus:outline-none focus:ring-4 focus:ring-indigo-100 cursor-pointer"
-      >
-        {isOpen ? (
-          <div className="transition-transform duration-300 rotate-0 group-hover:rotate-90 flex items-center justify-center text-slate-600 group-hover:text-slate-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </div>
-        ) : (
-          <div className="relative flex items-center justify-center">
-            {/* 아트북 감성 라인 아이콘 SVG */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="chatbot-icon-svg text-slate-700 group-hover:text-indigo-600 transition-all duration-300 group-hover:scale-105"
-            >
-              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
-              <path d="M6 6h10M6 10h10" />
-            </svg>
-
-            {/* AI Live Pulse Indicator Dot */}
-            <span className="absolute -top-1.5 -right-1.5 flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-60"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-600 border-2 border-white"></span>
+      {/* Dynamic Animated & Intuitive Floating Chatbot Button */}
+      <div className="relative flex items-center justify-end">
+        {/* Floating Tooltip Pill (열려있지 않을 때 부드럽게 둥둥 뜨며 시선 유도) */}
+        {!isOpen && (
+          <div
+            onClick={() => setIsOpen(true)}
+            className="absolute right-16 bottom-2.5 bg-slate-900/95 backdrop-blur-md text-white text-xs font-bold px-3.5 py-1.5 rounded-2xl shadow-xl whitespace-nowrap flex items-center gap-2 border border-slate-700/80 cursor-pointer hover:scale-105 transition-transform duration-200 animate-bounce select-none"
+          >
+            <span className="text-sm">💬</span>
+            <span>AI 전시 가이드 질문하기</span>
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
           </div>
         )}
-      </button>
+
+        {/* Main Floating Button */}
+        <button
+          type="button"
+          onClick={() => setIsOpen((prev) => !prev)}
+          aria-label={isOpen ? "AI 챗봇 닫기" : "AI 전시 도슨트 챗봇 열기"}
+          className="relative w-15 h-15 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-600 to-violet-500 hover:from-indigo-500 hover:to-violet-400 text-white shadow-2xl hover:shadow-indigo-500/50 hover:scale-110 active:scale-95 transition-all duration-300 flex items-center justify-center group focus:outline-none focus:ring-4 focus:ring-indigo-300/50 cursor-pointer"
+        >
+          {/* Subtle Ripple Wave Ring behind the button */}
+          {!isOpen && (
+            <span className="absolute -inset-1.5 rounded-full bg-indigo-500/20 animate-ping pointer-events-none"></span>
+          )}
+
+          {isOpen ? (
+            /* Close (X) State with smooth rotation */
+            <div className="transition-transform duration-300 rotate-0 group-hover:rotate-90 flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </div>
+          ) : (
+            /* Intuitive Animated AI Docent Speech Bubble Icon */
+            <div className="relative flex items-center justify-center">
+              {/* Animated Sparkle Stars */}
+              <span className="absolute -top-2.5 -right-2 text-amber-300 text-sm animate-pulse">
+                ✨
+              </span>
+
+              {/* Intuitive AI Chatbot Face SVG */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-300 group-hover:rotate-6 group-hover:scale-105"
+              >
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="white" stroke="white" />
+                {/* Cute Bot Eyes & Smile */}
+                <circle cx="9" cy="10" r="1.5" fill="#4f46e5" />
+                <circle cx="15" cy="10" r="1.5" fill="#4f46e5" />
+                <path d="M10 13.5c.8.8 3.2.8 4 0" stroke="#4f46e5" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+
+              {/* Active Pulse Status Dot */}
+              <span className="absolute -bottom-1 -right-1 flex h-3.5 w-3.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
+              </span>
+            </div>
+          )}
+        </button>
+      </div>
     </aside>
   );
 }
