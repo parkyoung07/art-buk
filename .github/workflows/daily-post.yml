@@ -53,7 +53,13 @@ jobs:
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy out --project-name=art-buk
+        continue-on-error: true
+        run: |
+          if [ -n "${CLOUDFLARE_API_TOKEN}" ]; then
+            npx wrangler pages deploy out --project-name=art-buk
+          else
+            echo "ℹ️ Cloudflare API Token이 없으므로 GitHub Push 연동을 통해 자동 배포됩니다."
+          fi
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
