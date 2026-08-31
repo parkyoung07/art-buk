@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["울산전시", "울산시립미술관", "미디어아트", "빛의서사", "울산데이트", "XR체험"]
 region: "울산"
 eventId: "ulsan-media-art-2026"
-thumbnail: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/6727765/pexels-photo-6727765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요! 부울경 문화예술의 매력을 가장 쉽고 생생하게 전해드리는 **AI 도슨트**입니다. 🌌✨
@@ -17,8 +17,8 @@ thumbnail: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&auto
 
 시원한 실내에서 눈과 귀가 황홀해지는 미디어아트 관람 꿀팁부터 울산 원도심(성남동) 감성 카페 거리까지 꼼꼼히 정리해 드릴게요!
 
-![울산시립미술관 몰입형 미디어아트 공간](https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1000&auto=format&fit=crop&q=80)
-*▲ 거대한 프로젝션과 인터랙티브 사운드로 가득 찬 실감 미디어아트 전시관*
+![어두운 공간 속 기하학적 네온 빛으로 완성된 인터랙티브 미디어아트 공간](https://images.pexels.com/photos/6727765/pexels-photo-6727765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 거대한 네온 프로젝션과 인터랙티브 사운드로 가득 찬 실감 미디어아트 전시관*
 
 ---
 

@@ -55,7 +55,7 @@ const EXHIBITION_POOL = [
     price: "무료",
     category: "전시 리뷰",
     tags: ["부산전시", "부산시립미술관", "해운대데이트", "센텀시티", "현대미술", "가을전시"],
-    photoKeywords: "modern art gallery exhibition museum contemporary",
+    photoKeywords: "art museum gallery modern sculpture minimalist",
     summary: "센텀시티 도심 속 예술의 오아시스 부산시립미술관의 특별 기획전! 시공간을 초월하는 현대미술 대작들과 벡스코, 영화의전당 나들이 코스를 총정리합니다.",
     nearbySpots: ["영화의전당", "신세계 센텀시티", "APEC 나루공원", "벡스코 야외광장"]
   },
@@ -70,7 +70,7 @@ const EXHIBITION_POOL = [
     price: "1,000원",
     category: "전시 리뷰",
     tags: ["울산전시", "울산시립미술관", "미디어아트", "울산중구", "실감체험", "태화강데이트"],
-    photoKeywords: "digital art projection light interactive museum",
+    photoKeywords: "digital art media immersive projection light show neon",
     summary: "세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 초대형 몰입형 미디어아트와 성남동 문화의 거리 감성 투어.",
     nearbySpots: ["성남동 문화의거리", "태화강 국가정원 십리대숲", "울산 동헌", "젊음의거리 맛집"]
   },
@@ -85,7 +85,7 @@ const EXHIBITION_POOL = [
     price: "무료 (진주성 입장료 별도)",
     category: "전시 리뷰",
     tags: ["경남전시", "국립진주박물관", "진주성", "촉석루", "진주데이트", "가을여행"],
-    photoKeywords: "ancient artifacts museum gallery historical pottery",
+    photoKeywords: "ancient artifacts museum gallery historical pottery ceramic",
     summary: "유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관의 가을 특별전! 영남의 역사적 숨결과 촉석루, 남강 산책로를 아우르는 낭만 예술 투어.",
     nearbySpots: ["촉석루", "진주성 공북문", "남강 유등체험관", "진주 중앙시장 육회비빔밥거리"]
   },
@@ -100,7 +100,7 @@ const EXHIBITION_POOL = [
     price: "성인 3,000원",
     category: "전시 리뷰",
     tags: ["경남전시", "통영전시", "통영옻칠미술관", "한국전통공예", "남해안드라이브", "통영나들이"],
-    photoKeywords: "lacquer art wooden craft traditional modern sculpture",
+    photoKeywords: "lacquer art wooden craft traditional mother of pearl sculpture",
     summary: "청정 남해 바다를 배경으로 영롱하게 빛나는 현대 옻칠 회화와 나전칠기 예술! 한국 옻칠 예술의 진수를 맛보는 통영 바다 드라이브 코스.",
     nearbySpots: ["동피랑 벽화마을", "이순신공원", "통영 해저터널", "서호시장 전통먹거리"]
   },
@@ -115,7 +115,7 @@ const EXHIBITION_POOL = [
     price: "성인 6,000원",
     category: "전시 리뷰",
     tags: ["부산전시", "영화의전당", "시네마틱아트", "해운대전시", "수영강산책", "영화제핫플"],
-    photoKeywords: "cinema screen modern projection digital exhibition gallery",
+    photoKeywords: "cinema screen modern projection cinematic digital exhibition gallery",
     summary: "세계적인 건축미를 자랑하는 영화의전당에서 만나는 스크린 예술의 모든 것! 환상적인 야외 루프 LED 조명과 수영강변 야경 데이트 코스.",
     nearbySpots: ["수영강변 나루공원", "센텀 신세계 스파랜드", "밀락더마켓", "민락수변공원"]
   },
@@ -130,7 +130,7 @@ const EXHIBITION_POOL = [
     price: "무료",
     category: "전시 리뷰",
     tags: ["거제전시", "거제문화예술회관", "남해바다", "야외조각", "거제도데이트", "가을힐링"],
-    photoKeywords: "ocean sea sculpture gallery modern art outdoor museum",
+    photoKeywords: "ocean sea outdoor sculpture modern art sea view museum",
     summary: "에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스.",
     nearbySpots: ["장승포 수변공원", "지세포항 해양레저타운", "공곶이 수목원", "바람의 언덕"]
   }
@@ -141,9 +141,9 @@ async function fetchPexelsPhotos(query, count = 4) {
   if (!PEXELS_API_KEY) {
     console.warn("⚠️ PEXELS_API_KEY 없음: 기본 사진으로 대체합니다.");
     return [
-      { url: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80", alt: "미술관 갤러리 전시" },
-      { url: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1000&auto=format&fit=crop&q=80", alt: "전시 작품 감상" },
-      { url: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1000&auto=format&fit=crop&q=80", alt: "현대 전시 공간" }
+      { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
+      { url: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "미술관 모던 조각 작품" },
+      { url: "https://images.pexels.com/photos/6727765/pexels-photo-6727765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "디지털 미디어아트 공간" }
     ];
   }
 
@@ -170,8 +170,8 @@ async function fetchPexelsPhotos(query, count = 4) {
   }
 
   return [
-    { url: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80", alt: "미술관 갤러리 전시" },
-    { url: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1000&auto=format&fit=crop&q=80", alt: "전시 작품 감상" }
+    { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
+    { url: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "미술관 모던 조각 작품" }
   ];
 }
 

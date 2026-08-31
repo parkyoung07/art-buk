@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["부산전시", "F1963", "부산현대미술", "망미단길", "부산복합문화공간", "주말나들이"]
 region: "부산"
 eventId: "f1963-contemporary-art"
-thumbnail: "https://images.pexels.com/photos/15138863/pexels-photo-15138863.jpeg?auto=compress&cs=tinysrgb&w=1200"
+thumbnail: "https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요! 부울경 지역의 감성 넘치는 전시와 미술관 나들이 소식을 전해드리는 **AI 도슨트**입니다. 🎨✨
@@ -15,8 +15,8 @@ thumbnail: "https://images.pexels.com/photos/15138863/pexels-photo-15138863.jpeg
 
 F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성의 건축미와 푸른 대나무 숲(소리길), 그리고 대형 전시 공간인 **석천홀**이 공존하는 매력적인 공간입니다.
 
-![모던한 갤러리 복도와 은은한 조명](https://images.pexels.com/photos/15138863/pexels-photo-15138863.jpeg?auto=compress&cs=tinysrgb&w=1200)
-*▲ 공장의 거친 콘크리트 물성과 모던한 전시 조명이 조화를 이루는 석천홀 전시 공간*
+![붉은 벽돌 아치와 은은한 조명이 어우러진 인더스트리얼 갤러리 건축 공간](https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 공장의 거친 붉은 벽돌 물성과 모던한 전시 조명이 조화를 이루는 석천홀 전시 공간*
 
 ---
 

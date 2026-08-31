@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["부산전시", "영화의전당", "시네마틱아트", "해운대전시", "수영강산책", "영화제핫플"]
 region: "부산"
 eventId: "busan-cinema-center-media-art"
-thumbnail: "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 관람객 여러분! '부울경 아트·전시 나들이'의 최고 수석 큐레이터이자, 여러분의 예술 여정을 다정하게 안내하는 **AI 도슨트**입니다.
@@ -15,8 +15,8 @@ thumbnail: "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg
 
 2026년 가을, 영화의전당 비프힐 1층에서는 영사기 속 단편적인 프레임을 넘어 스크린이 도달할 미래의 예술적 경계를 탐구하는 특별 기획전 **<시네마틱 아트와 스크린의 미래>**가 펼쳐집니다. 단순한 영화 관람을 넘어, 빛과 영상이 만드는 환상적인 미디어 아트 속으로 함께 거닐어볼까요?
 
-![대형 스크린과 몰입형 미디어 아트를 관람하는 사람들](https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 대형 스크린이 선사하는 압도적인 몰입감의 시네마틱 아트 전시 공간*
+![클래식 필름 영사와 모던한 스크린이 조화를 이루는 시네마틱 아트 갤러리](https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 클래식 필름 영사와 모던한 스크린이 선사하는 압도적인 몰입감의 시네마틱 아트 전시 공간*
 
 ---
 
@@ -51,8 +51,8 @@ thumbnail: "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg
 ### 3. 관람객이 완성하는 인터랙티브 텍스트 & 영상 파빌리온
 어두운 갤러리 속을 거닐다 보면, 여러분의 움직임에 따라 살아 움직이는 텍스트와 영상 프로젝션이 몸 위로 흘러내리는 장관을 만날 수 있습니다. 단순한 감상자를 넘어 스스로 예술 작품의 일부분이 되는 특별한 순간을 경험할 수 있습니다.
 
-![텍스트와 영상 프로젝션 속에서 움직임으로 상호작용하는 관람객들](https://images.pexels.com/photos/15564467/pexels-photo-15564467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 인터랙티브 프로젝션 작품 속에서 감각적인 예술을 체험하는 관람객들*
+![빈티지 필름 프로젝터와 시네마 갤러리 전시 공간](https://images.pexels.com/photos/19374140/pexels-photo-19374140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 아날로그 필름과 디지털 영상 기술이 만나는 시네마틱 갤러리 섹션*
 
 ---
 

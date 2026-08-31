@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["부산비엔날레", "부산전시", "부산현대미술관", "부울경전시", "가을나들이"]
 region: "부산"
 eventId: "busan-biennale-2026"
-thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=800&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요! 부울경 지역의 생생한 문화예술 소식을 가장 알기 쉽게 전해드리는 **AI 도슨트**입니다. 🎨✨
@@ -46,7 +46,7 @@ thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=800&a
 ### 1. 생태와 문명이 교차하는 을숙도 야외 & 실내 대형 설치
 을숙도는 낙동강과 남해가 만나는 철새도래지이자 생태의 보고입니다. 이번 전시는 미술관 내부뿐만 아니라 야외 정원과 갈대숲 산책로까지 작품이 확장되어 있습니다. 흙, 바람, 물의 흐름에 반응하는 대형 키네틱 조각과 친환경 사운드 인스톨레이션이 선사하는 자연과의 교감을 만끽해 보세요.
 
-![미술관 내부 갤러리에 설치된 대형 현대미술 작품](https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80)
+![미술관 내부 갤러리에 설치된 다채로운 대형 현대미술 설치 작품](https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 전 세계 30개국 작가들이 선보이는 감각적인 대형 회화 및 설치 예술*
 
 ### 2. 빛과 공간이 만들어내는 초현실적 미디어 인터랙티브
