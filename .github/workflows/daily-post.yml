@@ -28,12 +28,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate Daily AI Post with Gemini & Pexels
+      - name: Generate Daily AI Post with Gemini & Pexels & Naver
         run: node scripts/generate-daily-post.mjs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
 
       - name: Commit and Push new post if changed
         run: |

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getNaverLocalPlaces } from "@/lib/naver";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -55,6 +56,11 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
   if (!exhibition) {
     notFound();
   }
+
+  // 네이버 실시간 주변 맛집 & 핫플레이스 조회
+  const cleanVenue = (exhibition.venueName || exhibition.location).split(" 및 ")[0].split(" ")[0];
+  const localQuery = `${exhibition.region} ${cleanVenue} 맛집`;
+  const localPlaces = await getNaverLocalPlaces(localQuery, 4);
 
   // Google Event Schema (JSON-LD)
   const eventJsonLd = {
@@ -235,21 +241,55 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
               </div>
             )}
 
-            {/* 주변 나들이 & 연계 스팟 */}
-            {exhibition.nearbySpots && exhibition.nearbySpots.length > 0 && (
-              <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs space-y-4">
-                <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                  <span>🚗</span>
-                  <span>전시 관람 후 함께 가기 좋은 주변 나들이 명소</span>
-                </h3>
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {exhibition.nearbySpots.map((spot, index) => (
-                    <span
-                      key={index}
-                      className="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 text-slate-700 text-xs sm:text-sm font-medium border border-slate-200/80 transition-colors"
-                    >
-                      📍 {spot}
+            {/* 네이버 실시간 주변 핫플레이스 & 맛집 (NAVER API HUB 연동) */}
+            {localPlaces && localPlaces.length > 0 && (
+              <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs space-y-4">
+                <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-200">
+                  <div className="flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-md bg-[#03C75A] text-white flex items-center justify-center font-black text-xs">
+                      N
                     </span>
+                    <h3 className="text-base font-bold text-slate-900">
+                      네이버 추천 주변 핫플 & 맛집
+                    </h3>
+                  </div>
+                  <a
+                    href={`https://map.naver.com/v5/search/${encodeURIComponent(exhibition.venueName || exhibition.location)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-bold text-[#03C75A] hover:underline flex items-center gap-1"
+                  >
+                    <span>네이버 지도에서 보기</span>
+                    <span>↗</span>
+                  </a>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                  {localPlaces.map((place, pIdx) => (
+                    <a
+                      key={pIdx}
+                      href={place.link || `https://search.naver.com/search.naver?query=${encodeURIComponent(place.title)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3.5 rounded-2xl bg-white border border-slate-200/80 hover:border-[#03C75A]/50 hover:shadow-xs transition-all flex flex-col justify-between gap-1 group"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between gap-1 mb-1">
+                          <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
+                            {place.category?.split(">").pop()?.trim() || "장소"}
+                          </span>
+                        </div>
+                        <h4 className="text-sm font-bold text-slate-800 group-hover:text-[#03C75A] transition-colors line-clamp-1">
+                          {place.title}
+                        </h4>
+                        <p className="text-xs text-slate-500 line-clamp-1 mt-0.5">
+                          {place.roadAddress || place.address}
+                        </p>
+                      </div>
+                      <span className="text-[11px] text-[#03C75A] font-semibold pt-2 text-right">
+                        상세보기 →
+                      </span>
+                    </a>
                   ))}
                 </div>
               </div>

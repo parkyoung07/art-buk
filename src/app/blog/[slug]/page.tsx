@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { getNaverBlogReviews, getNaverCafeReviews } from "@/lib/naver";
+import NaverLiveReviews from "@/components/NaverLiveReviews";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -69,6 +71,13 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
   if (!post) {
     notFound();
   }
+
+  // 네이버 실시간 블로그 및 카페 후기 조회
+  const searchKeyword = post.title.split(":")[0]?.replace(/\[.*?\]/g, "").trim() || post.tags[0] || "부울경 전시";
+  const [blogReviews, cafeReviews] = await Promise.all([
+    getNaverBlogReviews(searchKeyword, 2),
+    getNaverCafeReviews(searchKeyword, 2),
+  ]);
 
   // BlogPosting JSON-LD 구조화 데이터
   const jsonLd = {
@@ -168,6 +177,13 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
           <div className="prose prose-slate max-w-none sm:prose-lg prose-headings:font-bold prose-headings:text-slate-900 prose-a:text-indigo-600 hover:prose-a:text-indigo-700 prose-img:rounded-2xl prose-blockquote:border-l-indigo-500 prose-blockquote:bg-slate-50 prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-xl">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
           </div>
+
+          {/* 실시간 네이버 관람객 생생 후기 (NAVER API HUB 연동) */}
+          <NaverLiveReviews
+            keyword={searchKeyword}
+            blogReviews={blogReviews}
+            cafeReviews={cafeReviews}
+          />
 
           {/* 연계 전시 카드 */}
           {(() => {

@@ -36,10 +36,57 @@ loadEnv();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
+const NAVER_CLIENT_ID = process.env.NAVER_CLIENT_ID;
+const NAVER_CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET;
 
 if (!GEMINI_API_KEY) {
   console.error("❌ GEMINI_API_KEY가 설정되지 않았습니다.");
   process.exit(1);
+}
+
+// 네이버 API HUB 검색 호출 함수
+async function fetchNaverSearchData(query) {
+  if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) {
+    console.warn("ℹ️ NAVER API 키 없음: 네이버 실시간 검색 데이터를 건너뜁니다.");
+    return { blogReviews: [], localPlaces: [] };
+  }
+
+  try {
+    const q = encodeURIComponent(query);
+    // 1. 블로그 후기 검색
+    const blogRes = await fetch(`https://naverapihub.apigw.ntruss.com/search/v1/blog?query=${q}&display=3&sort=sim`, {
+      headers: {
+        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
+      }
+    });
+    const blogData = blogRes.ok ? await blogRes.json() : { items: [] };
+
+    // 2. 주변 맛집/핫플 검색
+    const localRes = await fetch(`https://naverapihub.apigw.ntruss.com/search/v1/local?query=${q}+맛집&display=3&sort=comment`, {
+      headers: {
+        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
+      }
+    });
+    const localData = localRes.ok ? await localRes.json() : { items: [] };
+
+    return {
+      blogReviews: (blogData.items || []).map(item => ({
+        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
+        description: (item.description || "").replace(/<[^>]*>?/gm, ""),
+        blogger: item.bloggername || ""
+      })),
+      localPlaces: (localData.items || []).map(item => ({
+        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
+        category: (item.category || "").split(">").pop() || "",
+        address: item.roadAddress || item.address || ""
+      }))
+    };
+  } catch (err) {
+    console.warn("⚠️ 네이버 검색 API 호출 중 오류:", err.message);
+    return { blogReviews: [], localPlaces: [] };
+  }
 }
 
 // 2. 부울경 전시 후보 풀 (추후 공공데이터 API와 결합 가능)
@@ -188,7 +235,15 @@ function getKSTDateString() {
 }
 
 // 4. Gemini API로 마크다운 글 생성
-async function generatePostWithGemini(exhibition, photos, dateStr) {
+async function generatePostWithGemini(exhibition, photos, dateStr, naverData = { blogReviews: [], localPlaces: [] }) {
+  const naverBlogContext = naverData.blogReviews.length > 0 
+    ? naverData.blogReviews.map((r, i) => `  ${i+1}. [${r.blogger}] ${r.title} - ${r.description}`).join("\n")
+    : "네이버 블로그 후기 검색 결과 없음";
+
+  const naverLocalContext = naverData.localPlaces.length > 0
+    ? naverData.localPlaces.map((p, i) => `  ${i+1}. ${p.title} (${p.category}) - ${p.address}`).join("\n")
+    : "네이버 주변 장소 검색 결과 없음";
+
   const prompt = `
 너는 '부울경(부산, 울산, 경남) 아트·전시 나들이' 웹사이트의 최고 수석 큐레이터이자 다정하고 박학다식한 **AI 도슨트**야.
 관람객이 미술관에 직접 가고 싶어지도록 흥미롭고, 감성적이며, 실용적인 정보를 듬뿍 담은 고품질의 블로그 포스트를 마크다운(Markdown) 형식으로 작성해줘.
@@ -202,6 +257,12 @@ async function generatePostWithGemini(exhibition, photos, dateStr) {
 - 요약: ${exhibition.summary}
 - 주변 명소/카페: ${exhibition.nearbySpots.join(", ")}
 - 추천 태그: ${exhibition.tags.join(", ")}
+
+### [네이버 실시간 실제 관람객 반응 & 주변 핫플 데이터]
+- 실제 네이버 블로그 관람 후기 요약:
+${naverBlogContext}
+- 네이버 실시간 추천 인근 핫플/맛집:
+${naverLocalContext}
 
 ### [활용 가능한 고화질 Pexels 사진 목록]
 ${photos.map((p, idx) => `${idx + 1}. URL: ${p.url} (설명: ${p.alt})`).join("\n")}
@@ -224,46 +285,70 @@ thumbnail: "${photos[0]?.url || ''}"
 - **첫 번째 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
 - **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 전시 기간, 전시 장소, 관람 시간, 정기 휴관, 관람료, 문의 등)
 - **🌟 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 작품/전시관 해설. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url}))과 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url}))을 적절히 배치할 것.
-- **☕ 함께 즐기는 주변 감성 카페 & 나들이 코스**: 전시 관람 후 들르기 좋은 인근 명소(${exhibition.nearbySpots.join(", ")})를 1, 2, 3번으로 정리하여 추천.
+- **☕ 함께 즐기는 주변 감성 카페 & 나들이 코스**: 전시 관람 후 들르기 좋은 인근 명소(${exhibition.nearbySpots.join(", ")}) 및 네이버 실시간 핫플을 자연스럽게 엮어 추천.
 - **💡 AI 도슨트의 관람 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 팁 등 실용 정보.
 - **마무리 총평**: 주말 나들이를 독려하는 따뜻한 마무리 멘트.
 
 3. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).
 `;
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${GEMINI_API_KEY}`;
-  
-  const response = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 8192
+  const candidateModels = [
+    "gemini-2.5-flash-lite",
+    "gemini-3.5-flash-lite",
+    "gemini-flash-latest",
+    "gemini-3.5-flash"
+  ];
+
+  let lastError = null;
+
+  for (const modelName of candidateModels) {
+    try {
+      console.log(`🤖 Gemini 모델 시도 중: ${modelName}...`);
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${GEMINI_API_KEY}`;
+      
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.7,
+            maxOutputTokens: 8192
+          }
+        })
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.warn(`⚠️ [${modelName}] 호출 실패 (${response.status}): 다음 모델로 재시도합니다.`);
+        lastError = new Error(`Gemini API Error (${response.status}): ${errorText}`);
+        continue;
       }
-    })
-  });
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Gemini API Error (${response.status}): ${errorText}`);
+      const result = await response.json();
+      let generatedText = result.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      
+      if (generatedText) {
+        // 마크다운 코드 블록 래핑 제거 (있을 경우)
+        if (generatedText.startsWith("```markdown")) {
+          generatedText = generatedText.slice(11);
+        } else if (generatedText.startsWith("```")) {
+          generatedText = generatedText.slice(3);
+        }
+        if (generatedText.endsWith("```")) {
+          generatedText = generatedText.slice(0, -3);
+        }
+
+        console.log(`✨ [${modelName}] 성공적으로 본문을 작성했습니다!`);
+        return generatedText.trim();
+      }
+    } catch (err) {
+      console.warn(`⚠️ [${modelName}] 요청 에러: ${err.message}. 다음 모델로 시도합니다.`);
+      lastError = err;
+    }
   }
 
-  const result = await response.json();
-  let generatedText = result.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  
-  // 마크다운 코드 블록 래핑 제거 (있을 경우)
-  if (generatedText.startsWith("```markdown")) {
-    generatedText = generatedText.slice(11);
-  } else if (generatedText.startsWith("```")) {
-    generatedText = generatedText.slice(3);
-  }
-  if (generatedText.endsWith("```")) {
-    generatedText = generatedText.slice(0, -3);
-  }
-
-  return generatedText.trim();
+  throw lastError || new Error("모든 Gemini 모델 호출에 실패했습니다.");
 }
 
 // 5. 메인 실행 루틴
@@ -291,14 +376,19 @@ async function main() {
 
   console.log(`📌 선택된 전시: [${targetExhibition.region}] ${targetExhibition.title}`);
 
+  // 네이버 실시간 블로그 후기 및 주변 핫플 검색
+  console.log(`🔍 네이버 API HUB 실시간 후기 및 주변 핫플 검색 중 (${targetExhibition.venueName})...`);
+  const naverData = await fetchNaverSearchData(targetExhibition.venueName);
+  console.log(`✅ 네이버 블로그 후기 ${naverData.blogReviews.length}건, 주변 장소 ${naverData.localPlaces.length}건 수집 완료.`);
+
   // Pexels에서 고화질 사진 검색
   console.log(`📸 Pexels 고화질 사진 검색 중 (키워드: ${targetExhibition.photoKeywords})...`);
   const photos = await fetchPexelsPhotos(targetExhibition.photoKeywords, 4);
   console.log(`✅ ${photos.length}장의 고화질 사진 준비 완료.`);
 
   // Gemini AI로 글 작성
-  console.log("✍️ Gemini AI로 전시 리뷰 본문 작성 중...");
-  const postContent = await generatePostWithGemini(targetExhibition, photos, today);
+  console.log("✍️ Gemini AI로 네이버 데이터 기반 전시 리뷰 본문 작성 중...");
+  const postContent = await generatePostWithGemini(targetExhibition, photos, today, naverData);
 
   // 파일명 지정: YYYY-MM-DD-slug.md
   const fileName = `${today}-${targetExhibition.slug}.md`;
