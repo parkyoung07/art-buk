@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface KakaoSubscribeModalProps {
   isOpen: boolean;
@@ -12,32 +12,52 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
 
+  // ESC 키로 모달 닫기
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!phoneNumber.trim()) return;
     setIsSubmitted(true);
-    setTimeout(() => {
-      // 3초 후 초기화
-    }, 3000);
   };
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText("https://pf.kakao.com/_artbuk");
+    navigator.clipboard.writeText("https://pf.kakao.com");
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2500);
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden text-slate-800">
-        
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in"
+      style={{ margin: 0 }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-slate-100 overflow-hidden text-slate-800 animate-scale-up"
+      >
         {/* 상단 옐로우 헤더 */}
         <div className="bg-[#FEE500] px-6 pt-7 pb-6 text-center relative">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center text-slate-900 transition-colors text-sm font-bold"
+            className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 active:scale-95 flex items-center justify-center text-slate-900 transition-all text-base font-bold cursor-pointer"
             aria-label="닫기"
           >
             ✕
@@ -79,9 +99,9 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
               </p>
               <button
                 onClick={onClose}
-                className="mt-4 px-6 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors"
+                className="mt-4 px-6 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors cursor-pointer"
               >
-                확인
+                닫기
               </button>
             </div>
           ) : (
@@ -92,7 +112,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                   href="https://pf.kakao.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 px-4 rounded-2xl bg-[#FEE500] hover:bg-[#ebd300] active:scale-98 text-[#191919] font-black text-sm transition-all flex items-center justify-center gap-2 shadow-md shadow-amber-200/50"
+                  className="w-full py-3.5 px-4 rounded-2xl bg-[#FEE500] hover:bg-[#ebd300] active:scale-98 text-[#191919] font-black text-sm transition-all flex items-center justify-center gap-2 shadow-md shadow-amber-200/50 cursor-pointer"
                 >
                   <svg
                     className="w-5 h-5 fill-current"
@@ -133,7 +153,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
 
                 <button
                   type="submit"
-                  className="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold transition-all"
+                  className="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 active:scale-98 text-white text-xs sm:text-sm font-bold transition-all cursor-pointer"
                 >
                   무료 알림 신청하기 ✉️
                 </button>
@@ -144,7 +164,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                 <button
                   type="button"
                   onClick={handleCopyLink}
-                  className="hover:text-slate-600 transition-colors flex items-center gap-1 font-medium"
+                  className="hover:text-slate-600 transition-colors flex items-center gap-1 font-medium cursor-pointer"
                 >
                   <span>🔗 채널 링크 복사</span>
                   {isCopied && <span className="text-emerald-600 font-bold">✓ 복사됨</span>}
