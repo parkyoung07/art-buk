@@ -105,7 +105,7 @@ async function fetchNaverSearchData(venueName, region) {
   }
 }
 
-// 2. 부울경 전시 후보 풀 (추후 공공데이터 API와 결합 가능)
+// 2. 부울경 전시 후보 풀 (순차 큐레이션)
 const EXHIBITION_POOL = [
   {
     slug: "busan-museum-of-art-modern",
@@ -196,6 +196,66 @@ const EXHIBITION_POOL = [
     photoKeywords: "ocean sea outdoor sculpture modern art sea view museum",
     summary: "에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스.",
     nearbySpots: ["장승포 수변공원", "지세포항 해양레저타운", "공곶이 수목원", "바람의 언덕"]
+  },
+  {
+    slug: "busan-f1963-art-exhibition",
+    title: "F1963 현대미술 특별전 : 재생과 창조의 숲",
+    region: "부산",
+    subRegion: "수영구",
+    venueName: "F1963 석천홀",
+    address: "부산광역시 수영구 구락로123번길 20",
+    period: "2026.09.05 ~ 2026.11.30",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["부산전시", "F1963", "망미단길", "복합문화공간", "대나무숲", "부산데이트"],
+    photoKeywords: "industrial architecture art gallery installation nature bamboo",
+    summary: "옛 와이어 공장을 리노베이션한 복합문화공간 F1963의 가을 특별전! 소리길 대나무숲 산책과 테라로사 커피 나들이.",
+    nearbySpots: ["F1963 대나무 소리길", "테라로사 수영점", "수영사적공원", "망미단길 감성카페"]
+  },
+  {
+    slug: "ulsan-culture-art-center-autumn",
+    title: "울산문화예술회관 가을 특별기획 : 영남 구상회화의 숨결",
+    region: "울산",
+    subRegion: "남구",
+    venueName: "울산문화예술회관 제1·2전시장",
+    address: "울산광역시 남구 번영로 200",
+    period: "2026.09.15 ~ 2026.11.10",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["울산전시", "울산문화예술회관", "구상회화", "울산남구", "삼산동데이트", "가을전시"],
+    photoKeywords: "oil painting gallery fine art exhibition classical frame",
+    summary: "영남 구상회화 거장들의 명품 원화와 조각을 만나는 특별전! 울산 도심 속 예술 힐링과 삼산동 맛집 투어.",
+    nearbySpots: ["태화강 삼호대숲", "울산 삼산동 디자인거리", "울산문화공원", "달동 문화공원"]
+  },
+  {
+    slug: "gimhae-clayarch-autumn",
+    title: "클레이아크김해미술관 기획전 : 흙과 미래 건축",
+    region: "경남",
+    subRegion: "김해시",
+    venueName: "클레이아크김해미술관 돔하우스",
+    address: "경상남도 김해시 진례면 진례로 275-51",
+    period: "2026.06.01 ~ 2026.09.28",
+    price: "3,000원",
+    category: "전시 리뷰",
+    tags: ["경남전시", "김해전시", "클레이아크김해", "건축도자", "돔하우스", "가족나들이"],
+    photoKeywords: "ceramic pottery architectural tile modern dome sculpture",
+    summary: "건축 도자의 무한한 가능성을 조명하는 돔하우스 특별 기획전! 자연광이 쏟아지는 아름다운 돔 미술관과 도자 체험.",
+    nearbySpots: ["진례 분청도자마을", "화포천습지생태공원", "김해분청도자박물관", "봉하마을 생태문화공원"]
+  },
+  {
+    slug: "gyeongnam-autumn-masterpiece",
+    title: "경남도립미술관 가을 기획전 : 남도의 붓길",
+    region: "경남",
+    subRegion: "창원시",
+    venueName: "경남도립미술관 전관",
+    address: "경상남도 창원시 의창구 용지로 296",
+    period: "2026.08.10 ~ 2026.11.15",
+    price: "2,000원",
+    category: "전시 리뷰",
+    tags: ["경남전시", "창원전시", "경남도립미술관", "한국근현대회화", "용지호수", "창원데이트"],
+    photoKeywords: "korean traditional ink painting modern canvas landscape",
+    summary: "영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어.",
+    nearbySpots: ["용지호수공원", "창원 가로수길 카페거리", "경남도청 연못", "창원역사민속관"]
   }
 ];
 
