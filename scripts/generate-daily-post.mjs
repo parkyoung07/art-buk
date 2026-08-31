@@ -44,48 +44,64 @@ if (!GEMINI_API_KEY) {
   process.exit(1);
 }
 
-// 네이버 API HUB 검색 호출 함수
-async function fetchNaverSearchData(query) {
+// 네이버 API HUB 다채로운 검색 호출 함수 (맛집, 볼거리, 행사, 블로그 후기)
+async function fetchNaverSearchData(venueName, region) {
   if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) {
     console.warn("ℹ️ NAVER API 키 없음: 네이버 실시간 검색 데이터를 건너뜁니다.");
-    return { blogReviews: [], localPlaces: [] };
+    return { blogReviews: [], localRestaurants: [], nearbyAttractions: [], localEvents: [] };
   }
 
+  const cleanVenue = venueName.split(" 및 ")[0].split(" (")[0].trim();
+  const baseHeaders = {
+    "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+    "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
+  };
+
   try {
-    const q = encodeURIComponent(query);
-    // 1. 블로그 후기 검색
-    const blogRes = await fetch(`https://naverapihub.apigw.ntruss.com/search/v1/blog?query=${q}&display=3&sort=sim`, {
-      headers: {
-        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
-        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
-      }
-    });
+    // 1. 블로그 생생 후기 검색
+    const blogUrl = `https://naverapihub.apigw.ntruss.com/search/v1/blog?query=${encodeURIComponent(cleanVenue + " 전시")}&display=3&sort=sim`;
+    const blogRes = await fetch(blogUrl, { headers: baseHeaders });
     const blogData = blogRes.ok ? await blogRes.json() : { items: [] };
 
-    // 2. 주변 맛집/핫플 검색
-    const localRes = await fetch(`https://naverapihub.apigw.ntruss.com/search/v1/local?query=${q}+맛집&display=3&sort=comment`, {
-      headers: {
-        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
-        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
-      }
-    });
-    const localData = localRes.ok ? await localRes.json() : { items: [] };
+    // 2. 전시장 주변 인기 맛집 & 감성 카페 검색
+    const foodUrl = `https://naverapihub.apigw.ntruss.com/search/v1/local?query=${encodeURIComponent(cleanVenue + " 맛집 카페")}&display=4&sort=comment`;
+    const foodRes = await fetch(foodUrl, { headers: baseHeaders });
+    const foodData = foodRes.ok ? await foodRes.json() : { items: [] };
+
+    // 3. 전시장 주변 가볼 만한 곳 & 핫플레이스 볼거리 검색
+    const spotUrl = `https://naverapihub.apigw.ntruss.com/search/v1/local?query=${encodeURIComponent(region + " " + cleanVenue + " 가볼만한곳")}&display=3&sort=comment`;
+    const spotRes = await fetch(spotUrl, { headers: baseHeaders });
+    const spotData = spotRes.ok ? await spotRes.json() : { items: [] };
+
+    // 4. 주변 최신 문화 행사 & 축제 뉴스 검색
+    const newsUrl = `https://naverapihub.apigw.ntruss.com/search/v1/news?query=${encodeURIComponent(region + " 문화 행사 축제")}&display=3&sort=sim`;
+    const newsRes = await fetch(newsUrl, { headers: baseHeaders });
+    const newsData = newsRes.ok ? await newsRes.json() : { items: [] };
 
     return {
       blogReviews: (blogData.items || []).map(item => ({
         title: (item.title || "").replace(/<[^>]*>?/gm, ""),
         description: (item.description || "").replace(/<[^>]*>?/gm, ""),
-        blogger: item.bloggername || ""
+        blogger: item.bloggername || "네이버 블로거"
       })),
-      localPlaces: (localData.items || []).map(item => ({
+      localRestaurants: (foodData.items || []).map(item => ({
         title: (item.title || "").replace(/<[^>]*>?/gm, ""),
-        category: (item.category || "").split(">").pop() || "",
+        category: (item.category || "").split(">").pop() || "맛집/카페",
         address: item.roadAddress || item.address || ""
+      })),
+      nearbyAttractions: (spotData.items || []).map(item => ({
+        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
+        category: (item.category || "").split(">").pop() || "명소",
+        address: item.roadAddress || item.address || ""
+      })),
+      localEvents: (newsData.items || []).map(item => ({
+        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
+        description: (item.description || "").replace(/<[^>]*>?/gm, "").slice(0, 100)
       }))
     };
   } catch (err) {
     console.warn("⚠️ 네이버 검색 API 호출 중 오류:", err.message);
-    return { blogReviews: [], localPlaces: [] };
+    return { blogReviews: [], localRestaurants: [], nearbyAttractions: [], localEvents: [] };
   }
 }
 
@@ -183,42 +199,48 @@ const EXHIBITION_POOL = [
   }
 ];
 
-// 3. Pexels API에서 고화질 사진 검색 함수
-async function fetchPexelsPhotos(query, count = 4) {
+// 3. 다채로운 테마별 고화질 사진 검색 (전시 3장 + 카페/맛집 1장 + 주변 명소/풍경 1장)
+async function fetchRichPhotos(artKeyword, count = 5) {
   if (!PEXELS_API_KEY) {
-    console.warn("⚠️ PEXELS_API_KEY 없음: 기본 사진으로 대체합니다.");
     return [
       { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
       { url: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "미술관 모던 조각 작품" },
-      { url: "https://images.pexels.com/photos/6727765/pexels-photo-6727765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "디지털 미디어아트 공간" }
+      { url: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "감성 카페 커피와 디저트" },
+      { url: "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "주변 힐링 자연 풍경" }
     ];
   }
 
-  try {
-    const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${count}&orientation=landscape`, {
-      headers: {
-        Authorization: PEXELS_API_KEY
-      }
-    });
-
-    if (!res.ok) {
-      throw new Error(`Pexels API Error: ${res.status}`);
-    }
-
-    const data = await res.json();
-    if (data.photos && data.photos.length > 0) {
-      return data.photos.map(p => ({
+  async function searchOne(q, perPage = 3) {
+    try {
+      const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=${perPage}&orientation=landscape`, {
+        headers: { Authorization: PEXELS_API_KEY }
+      });
+      if (!res.ok) return [];
+      const data = await res.json();
+      return (data.photos || []).map(p => ({
         url: p.src.large2x || p.src.large || p.src.original,
-        alt: p.alt || "부울경 문화예술 전시 작품"
+        alt: p.alt || "부울경 문화예술 및 나들이"
       }));
+    } catch {
+      return [];
     }
-  } catch (err) {
-    console.error("Pexels API 요청 실패:", err.message);
   }
 
-  return [
-    { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
-    { url: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "미술관 모던 조각 작품" }
+  const [artPhotos, cafePhotos, travelPhotos] = await Promise.all([
+    searchOne(artKeyword, 4),
+    searchOne("cafe coffee dessert gourmet food restaurant", 2),
+    searchOne("travel landscape scenic nature city view", 2)
+  ]);
+
+  const combined = [];
+  if (artPhotos[0]) combined.push(artPhotos[0]);
+  if (artPhotos[1]) combined.push(artPhotos[1]);
+  if (cafePhotos[0]) combined.push(cafePhotos[0]);
+  if (artPhotos[2]) combined.push(artPhotos[2]);
+  if (travelPhotos[0]) combined.push(travelPhotos[0]);
+
+  return combined.length > 0 ? combined : [
+    { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" }
   ];
 }
 
@@ -234,19 +256,29 @@ function getKSTDateString() {
   return `${year}-${month}-${day}`;
 }
 
-// 4. Gemini API로 마크다운 글 생성
-async function generatePostWithGemini(exhibition, photos, dateStr, naverData = { blogReviews: [], localPlaces: [] }) {
-  const naverBlogContext = naverData.blogReviews.length > 0 
-    ? naverData.blogReviews.map((r, i) => `  ${i+1}. [${r.blogger}] ${r.title} - ${r.description}`).join("\n")
-    : "네이버 블로그 후기 검색 결과 없음";
+// 4. Gemini API로 마크다운 글 생성 (네이버 맛집, 볼거리, 행사, 생생 후기 완벽 반영)
+async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {}) {
+  const { blogReviews = [], localRestaurants = [], nearbyAttractions = [], localEvents = [] } = naverData;
 
-  const naverLocalContext = naverData.localPlaces.length > 0
-    ? naverData.localPlaces.map((p, i) => `  ${i+1}. ${p.title} (${p.category}) - ${p.address}`).join("\n")
-    : "네이버 주변 장소 검색 결과 없음";
+  const naverBlogContext = blogReviews.length > 0 
+    ? blogReviews.map((r, i) => `  ${i+1}. [${r.blogger}] ${r.title} - ${r.description}`).join("\n")
+    : "네이버 블로그 후기 수집 정보 없음";
+
+  const naverFoodContext = localRestaurants.length > 0
+    ? localRestaurants.map((p, i) => `  ${i+1}. ${p.title} (${p.category}) - 주소: ${p.address}`).join("\n")
+    : "네이버 주변 맛집 수집 정보 없음";
+
+  const naverSpotContext = nearbyAttractions.length > 0
+    ? nearbyAttractions.map((s, i) => `  ${i+1}. ${s.title} (${s.category}) - 주소: ${s.address}`).join("\n")
+    : "네이버 주변 볼거리 수집 정보 없음";
+
+  const naverEventContext = localEvents.length > 0
+    ? localEvents.map((e, i) => `  ${i+1}. ${e.title} (${e.description})`).join("\n")
+    : "네이버 주변 문화 축제 정보 없음";
 
   const prompt = `
 너는 '부울경(부산, 울산, 경남) 아트·전시 나들이' 웹사이트의 최고 수석 큐레이터이자 다정하고 박학다식한 **AI 도슨트**야.
-관람객이 미술관에 직접 가고 싶어지도록 흥미롭고, 감성적이며, 실용적인 정보를 듬뿍 담은 고품질의 블로그 포스트를 마크다운(Markdown) 형식으로 작성해줘.
+관람객이 이번 주말 당장 전시를 보러 떠나고 싶어지도록, **전시 작품 해설 + 네이버 실시간 맛집 & 카페 + 주변 볼거리 핫플 + 지역 축제/행사 소식**을 매우 풍부하고 감성 넘치게 작성해줘.
 
 ### [전시 기본 정보]
 - 전시명: ${exhibition.title}
@@ -255,20 +287,23 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
 - 기간: ${exhibition.period}
 - 관람료: ${exhibition.price}
 - 요약: ${exhibition.summary}
-- 주변 명소/카페: ${exhibition.nearbySpots.join(", ")}
 - 추천 태그: ${exhibition.tags.join(", ")}
 
-### [네이버 실시간 실제 관람객 반응 & 주변 핫플 데이터]
-- 실제 네이버 블로그 관람 후기 요약:
+### [네이버 실시간 검색 빅데이터]
+- 1. 실제 네이버 블로그 관람객 생생 후기:
 ${naverBlogContext}
-- 네이버 실시간 추천 인근 핫플/맛집:
-${naverLocalContext}
+- 2. 전시장 주변 네이버 인기 맛집 & 감성 카페:
+${naverFoodContext}
+- 3. 전시장 주변 네이버 추천 볼거리 & 핫플레이스:
+${naverSpotContext}
+- 4. 주변 최신 문화 예술 행사 & 축제 소식:
+${naverEventContext}
 
-### [활용 가능한 고화질 Pexels 사진 목록]
-${photos.map((p, idx) => `${idx + 1}. URL: ${p.url} (설명: ${p.alt})`).join("\n")}
+### [본문에 배치할 테마별 고화질 사진 목록]
+${photos.map((p, idx) => `${idx + 1}. URL: ${p.url} (테마 설명: ${p.alt})`).join("\n")}
 
-### [반드시 지켜야 할 작성 규칙]
-1. 최상단에 마크다운 Frontmatter(---)를 반드시 포함할 것:
+### [반드시 지켜야 할 마크다운 작성 규칙]
+1. 최상단 Frontmatter(---):
 ---
 title: "${exhibition.title}"
 date: "${dateStr}"
@@ -280,14 +315,16 @@ eventId: "${exhibition.slug}"
 thumbnail: "${photos[0]?.url || ''}"
 ---
 
-2. 본문 구성:
-- **도입부**: 'AI 도슨트' 인사와 함께 계절감 및 해당 전시와 장소의 매력을 서정적으로 소개
-- **첫 번째 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
-- **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 전시 기간, 전시 장소, 관람 시간, 정기 휴관, 관람료, 문의 등)
-- **🌟 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 작품/전시관 해설. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url}))과 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url}))을 적절히 배치할 것.
-- **☕ 함께 즐기는 주변 감성 카페 & 나들이 코스**: 전시 관람 후 들르기 좋은 인근 명소(${exhibition.nearbySpots.join(", ")}) 및 네이버 실시간 핫플을 자연스럽게 엮어 추천.
-- **💡 AI 도슨트의 관람 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 팁 등 실용 정보.
-- **마무리 총평**: 주말 나들이를 독려하는 따뜻한 마무리 멘트.
+2. 본문 구성 (매우 중요):
+- **도입부**: 'AI 도슨트'의 다정한 인사와 계절감, 전시장소의 분위기 소개
+- **첫 번째 대표 전시 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 기간, 장소, 관람시간, 휴관일, 관람료, 문의 등)
+- **🌟 놓칠 수 없는 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 도슨트 해설. 중간에 두 번째 전시 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **🍽️ 전시장 주변 핫플레이스 맛집 & 감성 카페 BEST**: 네이버 검색 데이터에 있는 실제 맛집/카페 상호명과 특징을 소개하고, 세 번째 감성 카페/미식 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치!
+- **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치!
+- **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내.
+- **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트.
+- **따뜻한 마무리 멘트**.
 
 3. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).
 `;
@@ -376,18 +413,18 @@ async function main() {
 
   console.log(`📌 선택된 전시: [${targetExhibition.region}] ${targetExhibition.title}`);
 
-  // 네이버 실시간 블로그 후기 및 주변 핫플 검색
-  console.log(`🔍 네이버 API HUB 실시간 후기 및 주변 핫플 검색 중 (${targetExhibition.venueName})...`);
-  const naverData = await fetchNaverSearchData(targetExhibition.venueName);
-  console.log(`✅ 네이버 블로그 후기 ${naverData.blogReviews.length}건, 주변 장소 ${naverData.localPlaces.length}건 수집 완료.`);
+  // 네이버 실시간 블로그 후기, 주변 맛집, 볼거리, 행사 검색
+  console.log(`🔍 네이버 API HUB 실시간 맛집/볼거리/행사/후기 검색 중 (${targetExhibition.venueName})...`);
+  const naverData = await fetchNaverSearchData(targetExhibition.venueName, targetExhibition.region);
+  console.log(`✅ 네이버 데이터 수집 완료: 블로그 ${naverData.blogReviews.length}건, 맛집 ${naverData.localRestaurants.length}건, 볼거리 ${naverData.nearbyAttractions.length}건, 행사 ${naverData.localEvents.length}건`);
 
-  // Pexels에서 고화질 사진 검색
-  console.log(`📸 Pexels 고화질 사진 검색 중 (키워드: ${targetExhibition.photoKeywords})...`);
-  const photos = await fetchPexelsPhotos(targetExhibition.photoKeywords, 4);
+  // Pexels에서 전시 + 카페/미식 + 주변 풍경 고화질 사진 다채롭게 검색
+  console.log(`📸 Pexels 전시 & 감성 카페/풍경 사진 다채로운 검색 중...`);
+  const photos = await fetchRichPhotos(targetExhibition.photoKeywords, 5);
   console.log(`✅ ${photos.length}장의 고화질 사진 준비 완료.`);
 
   // Gemini AI로 글 작성
-  console.log("✍️ Gemini AI로 네이버 데이터 기반 전시 리뷰 본문 작성 중...");
+  console.log("✍️ Gemini AI로 네이버 맛집/행사/볼거리 포함 프리미엄 전시 리뷰 본문 작성 중...");
   const postContent = await generatePostWithGemini(targetExhibition, photos, today, naverData);
 
   // 파일명 지정: YYYY-MM-DD-slug.md
