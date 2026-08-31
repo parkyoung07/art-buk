@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { getNaverBlogReviews, getNaverCafeReviews } from "@/lib/naver";
 import NaverLiveReviews from "@/components/NaverLiveReviews";
+import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -184,6 +185,9 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
             blogReviews={blogReviews}
             cafeReviews={cafeReviews}
           />
+
+          {/* 카카오톡 전시 소식 구독 카드 */}
+          <KakaoSubscribeBanner variant="card" />
 
           {/* 연계 전시 카드 */}
           {(() => {

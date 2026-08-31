@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 
 export const metadata = {
   title: "전시 블로그 & AI 도슨트 | 부울경 아트·전시 나들이",
@@ -71,6 +72,9 @@ export default function BlogListPage() {
           </p>
         </div>
       </section>
+
+      {/* 카카오톡 전시 소식 무료 알림 배너 */}
+      <KakaoSubscribeBanner variant="hero" />
 
       {/* 3. 블로그 글 목록 */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">

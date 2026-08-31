@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import rawData from "../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -210,6 +211,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 카카오톡 전시 소식 무료 알림 배너 */}
+      <KakaoSubscribeBanner variant="hero" />
 
       {/* 3. 본문: 필터 탭 & 전시 그리드 영역 */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">

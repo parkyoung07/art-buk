@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNaverLocalPlaces } from "@/lib/naver";
+import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -294,6 +295,9 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                 </div>
               </div>
             )}
+
+            {/* 카카오톡 무료 알림 구독 배너 */}
+            <KakaoSubscribeBanner variant="card" />
           </div>
 
           {/* 우측: 기본 정보 요약 박스 & 액션 버튼 (사이드바) */}
