@@ -43,8 +43,9 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
                     이번 주 어디 갈까? <span className="underline decoration-[#191919]/30 underline-offset-4">카톡으로 전시·나들이 소식 받기</span>
                   </h2>
 
-                  <p className="text-xs sm:text-sm text-[#3C1E1E]/90 font-medium max-w-xl">
-                    부산 · 울산 · 경남의 숨은 무료 전시와 AI 도슨트 추천 데이트 코스를 카카오톡으로 편하게 받아보세요.
+                  <p className="text-xs sm:text-sm text-[#3C1E1E]/90 font-medium max-w-xl leading-relaxed">
+                    부산 · 울산 · 경남의 숨은 무료 전시와 AI 도슨트 추천 데이트 코스를,<br className="hidden sm:inline" />
+                    카카오톡으로 편하게 받아보세요.
                   </p>
                 </div>
               </div>
@@ -87,7 +88,8 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
           </div>
 
           <p className="text-xs text-[#3C1E1E]/90 leading-relaxed font-medium">
-            매주 새롭게 열리는 미술관 특별전과 핫한 갤러리 나들이 코스를 카카오톡으로 가장 먼저 만나보세요!
+            매주 새롭게 열리는 미술관 특별전과 핫한 갤러리 나들이 코스를,<br className="hidden sm:inline" />
+            카카오톡으로 가장 먼저 만나보세요!
           </p>
 
           <button
