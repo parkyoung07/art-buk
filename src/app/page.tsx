@@ -169,8 +169,9 @@ export default function HomePage() {
             </span>
           </h1>
 
-          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            현재 진행 중인 {exhibitionsData.length}개 주요 전시의 관람료, AI 도슨트 해설, 주변 네이버 맛집 및 지도 길찾기까지 원클릭으로 연결됩니다.
+          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed [word-break:keep-all]">
+            현재 진행 중인 {exhibitionsData.length}개 주요 전시의 관람료부터 AI 도슨트 해설, <br className="hidden sm:inline" />
+            주변 네이버 맛집과 지도 길찾기까지 한 번에 확인하세요.
           </p>
 
           {/* 검색창 */}

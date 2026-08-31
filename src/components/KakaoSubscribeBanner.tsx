@@ -30,19 +30,15 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
   return (
     <>
       {variant === "hero" ? (
-        /* 메인 및 블로그 목록 Hero 아래용 대형 프리미엄 배너 */
-        <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 z-30">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#FEE500] via-[#ffeb3b] to-[#ffe082] p-6 sm:p-8 shadow-xl border border-amber-300/60 transition-all hover:shadow-2xl">
-            {/* 배경 은은한 데코 */}
-            <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 rounded-full bg-white/20 blur-2xl pointer-events-none"></div>
-            <div className="absolute bottom-0 left-1/3 -mb-10 w-40 h-40 rounded-full bg-amber-400/20 blur-xl pointer-events-none"></div>
-
-            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 text-[#191919]">
+        /* 메인 및 블로그 목록용 슬림하고 세련된 카카오 구독 바 */
+        <section className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-5 sm:-mt-6 z-30">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#FEE500] via-[#ffeb3b] to-[#ffe082] py-3.5 px-4 sm:px-6 shadow-md border border-amber-300/80 transition-all hover:shadow-lg">
+            <div className="relative flex flex-col md:flex-row items-center justify-between gap-3 text-[#191919]">
               {/* 좌측 텍스트 & 아이콘 */}
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-5 text-center sm:text-left">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#191919] text-[#FEE500] flex items-center justify-center shrink-0 shadow-lg shadow-black/10 group-hover:scale-105 transition-transform">
+              <div className="flex items-center gap-3 text-center sm:text-left w-full md:w-auto">
+                <div className="w-10 h-10 rounded-xl bg-[#191919] text-[#FEE500] flex items-center justify-center shrink-0 shadow-sm">
                   <svg
-                    className="w-8 h-8 sm:w-9 sm:h-9 fill-current"
+                    className="w-5 h-5 fill-current"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -50,42 +46,40 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
                   </svg>
                 </div>
 
-                <div className="space-y-1.5">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/80 text-[#FEE500] text-[11px] sm:text-xs font-bold shadow-xs">
-                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    <span>🔔 매주 월·수·금 아침 8시 발송 · 100% 무료</span>
+                <div className="text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-block text-[10px] font-extrabold bg-[#191919] text-[#FEE500] px-2 py-0.5 rounded-md">
+                      월·수·금 알림
+                    </span>
+                    <h3 className="text-xs sm:text-sm font-extrabold text-[#191919] tracking-tight">
+                      카톡으로 부울경 무료 전시 & 주말 나들이 소식 받기
+                    </h3>
                   </div>
-
-                  <h2 className="text-lg sm:text-2xl font-black tracking-tight text-[#191919] leading-snug">
-                    이번 주 어디 갈까? <span className="underline decoration-[#191919]/30 underline-offset-4">카톡으로 전시·나들이 소식 받기</span>
-                  </h2>
-
-                  <p className="text-xs sm:text-sm text-[#3C1E1E]/90 font-medium max-w-xl leading-relaxed">
-                    부산 · 울산 · 경남의 숨은 무료 전시와 AI 도슨트 추천 데이트 코스를,<br className="hidden sm:inline" />
-                    카카오톡으로 편하게 받아보세요.
+                  <p className="text-[11px] sm:text-xs text-[#3C1E1E]/80 font-medium hidden sm:block mt-0.5">
+                    매주 엄선된 미술관 전시와 AI 도슨트 추천 코스를 카카오톡으로 편하게 받아보세요.
                   </p>
                 </div>
               </div>
 
-              {/* 우측 CTA 액션 버튼 그룹 */}
-              <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto shrink-0">
+              {/* 우측 액션 버튼 그룹 */}
+              <div className="flex items-center gap-2 w-full md:w-auto shrink-0 justify-end">
                 <a
                   href="https://pf.kakao.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto py-3.5 px-6 rounded-2xl bg-[#191919] hover:bg-[#333333] active:scale-95 text-white font-extrabold text-xs sm:text-sm transition-all shadow-lg shadow-black/20 flex items-center justify-center gap-2.5 cursor-pointer group"
+                  className="flex-1 md:flex-initial py-2 px-3.5 rounded-xl bg-[#191919] hover:bg-[#333333] active:scale-95 text-white font-extrabold text-xs transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer"
                 >
-                  <span className="text-[#FEE500] group-hover:rotate-12 transition-transform">💬</span>
-                  <span>카카오톡 채널 바로 추가</span>
+                  <span className="text-[#FEE500]">💬</span>
+                  <span>채널 추가</span>
                   <span className="text-amber-300">↗</span>
                 </a>
 
                 <button
                   type="button"
                   onClick={() => setIsModalOpen(true)}
-                  className="w-full sm:w-auto py-3.5 px-5 rounded-2xl bg-white/80 hover:bg-white active:scale-95 text-slate-900 font-bold text-xs sm:text-sm transition-all border border-amber-400/80 shadow-sm flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="flex-1 md:flex-initial py-2 px-3.5 rounded-xl bg-white/90 hover:bg-white active:scale-95 text-slate-900 font-bold text-xs transition-all border border-amber-400 shadow-2xs flex items-center justify-center gap-1 cursor-pointer"
                 >
-                  <span>✉️ 번호로 신청</span>
+                  <span>✉️ 번호 신청</span>
                 </button>
               </div>
             </div>
