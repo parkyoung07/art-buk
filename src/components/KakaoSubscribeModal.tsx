@@ -54,13 +54,13 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
           </div>
 
           <span className="inline-block px-3 py-1 rounded-full text-[11px] font-extrabold bg-[#191919] text-[#FEE500] mb-2 shadow-xs">
-            💬 매주 금요일 아침 8시 발송
+            💬 매주 월·수·금 아침 8시 발송
           </span>
           <h3 className="text-xl font-black text-[#191919] tracking-tight">
             부울경 전시·나들이 소식 받기
           </h3>
           <p className="text-xs text-[#3C1E1E]/80 mt-1 font-medium">
-            부산 · 울산 · 경남의 이번 주말 무료 전시 & 핫플레이스
+            부산 · 울산 · 경남의 엄선된 무료 전시 & 핫플레이스
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                 알림 신청이 완료되었습니다! 🎉
               </h4>
               <p className="text-xs text-slate-500 max-w-xs mx-auto leading-relaxed">
-                매주 금요일 아침, 이번 주말 가기 좋은 부울경의 감성 전시와 나들이 코스를 카카오톡으로 전해드릴게요!
+                매주 월·수·금 아침 8시, 엄선된 부울경의 감성 전시와 나들이 코스를 카카오톡으로 전해드릴게요!
               </p>
               <button
                 onClick={onClose}
@@ -149,7 +149,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                   <span>🔗 채널 링크 복사</span>
                   {isCopied && <span className="text-emerald-600 font-bold">✓ 복사됨</span>}
                 </button>
-                <span>🔒 스팸 없이 주 1회만 발송</span>
+                <span>🔒 스팸 없이 주 3회(월·수·금)만 발송</span>
               </div>
             </>
           )}

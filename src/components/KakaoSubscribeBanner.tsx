@@ -36,11 +36,11 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
                 <div className="space-y-1.5">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/80 text-[#FEE500] text-[11px] sm:text-xs font-bold shadow-xs">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    <span>🔔 매주 금요일 아침 8시 발송 · 100% 무료</span>
+                    <span>🔔 매주 월·수·금 아침 8시 발송 · 100% 무료</span>
                   </div>
 
                   <h2 className="text-lg sm:text-2xl font-black tracking-tight text-[#191919] leading-snug">
-                    이번 주말 어디 갈까? <span className="underline decoration-[#191919]/30 underline-offset-4">카톡으로 전시·나들이 소식 받기</span>
+                    이번 주 어디 갈까? <span className="underline decoration-[#191919]/30 underline-offset-4">카톡으로 전시·나들이 소식 받기</span>
                   </h2>
 
                   <p className="text-xs sm:text-sm text-[#3C1E1E]/90 font-medium max-w-xl">
