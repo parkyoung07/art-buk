@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 interface KakaoSubscribeModalProps {
   isOpen: boolean;
@@ -11,8 +12,13 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  // ESC 키로 모달 닫기
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // ESC 키로 모달 닫기 & 스크롤 방지
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
@@ -29,11 +35,21 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!phoneNumber.trim()) return;
+
+    // 로컬 스토리지에 신청 번호 임시 저장 (중복 신청 방지 및 보존)
+    try {
+      const existing = JSON.parse(localStorage.getItem("artbuk_subscribers") || "[]");
+      existing.push({ phone: phoneNumber, date: new Date().toISOString() });
+      localStorage.setItem("artbuk_subscribers", JSON.stringify(existing));
+    } catch {
+      // ignore
+    }
+
     setIsSubmitted(true);
   };
 
@@ -43,11 +59,11 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
     setTimeout(() => setIsCopied(false), 2500);
   };
 
-  return (
+  const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in"
-      style={{ margin: 0 }}
+      className="fixed inset-0 z-[99999] flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fade-in"
+      style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0 }}
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -56,6 +72,7 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
         {/* 상단 옐로우 헤더 */}
         <div className="bg-[#FEE500] px-6 pt-7 pb-6 text-center relative">
           <button
+            type="button"
             onClick={onClose}
             className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 active:scale-95 flex items-center justify-center text-slate-900 transition-all text-base font-bold cursor-pointer"
             aria-label="닫기"
@@ -95,13 +112,14 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                 알림 신청이 완료되었습니다! 🎉
               </h4>
               <p className="text-xs text-slate-500 max-w-xs mx-auto leading-relaxed">
-                매주 월·수·금 아침 8시, 엄선된 부울경의 감성 전시와 나들이 코스를 카카오톡으로 전해드릴게요!
+                매주 월·수·금 아침 8시, 엄선된 부울경의 감성 전시와 나들이 코스를 문자/카카오톡으로 전해드릴게요!
               </p>
               <button
+                type="button"
                 onClick={onClose}
                 className="mt-4 px-6 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800 transition-colors cursor-pointer"
               >
-                닫기
+                확인 및 닫기
               </button>
             </div>
           ) : (
@@ -147,7 +165,8 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#FEE500] focus:border-slate-400 transition-all bg-slate-50 focus:bg-white"
+                    autoFocus
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#FEE500] focus:border-slate-400 transition-all bg-slate-50 focus:bg-white text-slate-900"
                   />
                 </div>
 
@@ -178,4 +197,6 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }

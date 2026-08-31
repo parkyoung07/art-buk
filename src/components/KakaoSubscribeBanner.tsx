@@ -15,6 +15,15 @@ export default function KakaoSubscribeBanner({ variant = "hero" }: KakaoSubscrib
   const handleInlineSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!inlinePhone.trim()) return;
+
+    try {
+      const existing = JSON.parse(localStorage.getItem("artbuk_subscribers") || "[]");
+      existing.push({ phone: inlinePhone, date: new Date().toISOString() });
+      localStorage.setItem("artbuk_subscribers", JSON.stringify(existing));
+    } catch {
+      // ignore
+    }
+
     setInlineSubmitted(true);
   };
 
