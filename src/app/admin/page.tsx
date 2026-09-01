@@ -20,7 +20,16 @@ interface ChatMessage {
 const VALID_PASSWORDS = ["artbuk2026", "admin1234", "artbuk"];
 
 export default function AdminPage() {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        return sessionStorage.getItem("artbuk_admin_auth") === "true";
+      } catch {
+        return false;
+      }
+    }
+    return false;
+  });
   const [passwordInput, setPasswordInput] = useState<string>("");
   const [authError, setAuthError] = useState<string>("");
 
@@ -36,34 +45,7 @@ export default function AdminPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const replyInputRef = useRef<HTMLTextAreaElement>(null);
 
-  // 1. 세션 로그인 상태 확인
-  useEffect(() => {
-    try {
-      const savedAuth = sessionStorage.getItem("artbuk_admin_auth");
-      if (savedAuth === "true") {
-        setIsAuthenticated(true);
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  // 2. 대화방 목록 조회 (API)
-  const fetchRooms = async (showToastNotice = false) => {
-    try {
-      const res = await fetch("/api/messages");
-      if (res.ok) {
-        const data = await res.json();
-        setRooms(data.rooms || []);
-        const now = new Date();
-        setLastSyncTime(now.toTimeString().split(" ")[0]);
-      }
-    } catch (err) {
-      console.warn("대화방 목록 조회 실패:", err);
-    }
-  };
-
-  // 3. 특정 사용자의 메시지 내역 조회 (API)
+  // 1. 특정 사용자의 메시지 내역 조회 (API)
   const fetchMessages = async (userId: string, shouldScroll = false) => {
     try {
       const res = await fetch(`/api/messages?userId=${encodeURIComponent(userId)}`);
@@ -76,24 +58,57 @@ export default function AdminPage() {
           }, 100);
         }
       }
-    } catch (err) {
-      console.warn("메시지 조회 실패:", err);
+    } catch (_err) {
+      console.warn("메시지 조회 실패:", _err);
     }
   };
 
-  // 4. 로그인 완료 시 초기 로드 및 3초 주기 실시간 폴링 (Polling)
+  // 2. 대화방 목록 조회 (API)
+  const fetchRooms = async () => {
+    try {
+      const res = await fetch("/api/messages");
+      if (res.ok) {
+        const data = await res.json();
+        setRooms(data.rooms || []);
+        const now = new Date();
+        setLastSyncTime(now.toTimeString().split(" ")[0]);
+      }
+    } catch (_err) {
+      console.warn("대화방 목록 조회 실패:", _err);
+    }
+  };
+
+  // 3. 로그인 완료 시 초기 로드 및 3초 주기 실시간 폴링 (Polling)
   useEffect(() => {
     if (!isAuthenticated) return;
 
-    fetchRooms();
+    let isMounted = true;
+    const pollRooms = async () => {
+      try {
+        const res = await fetch("/api/messages");
+        if (res.ok && isMounted) {
+          const data = await res.json();
+          setRooms(data.rooms || []);
+          const now = new Date();
+          setLastSyncTime(now.toTimeString().split(" ")[0]);
+        }
+      } catch (_err) {
+        console.warn("대화방 목록 조회 실패:", _err);
+      }
+    };
+
+    pollRooms();
     const interval = setInterval(() => {
-      fetchRooms();
+      pollRooms();
       if (selectedUserId) {
         fetchMessages(selectedUserId, false);
       }
     }, 3000);
 
-    return () => clearInterval(interval);
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
   }, [isAuthenticated, selectedUserId]);
 
   // 5. 로그인 처리
@@ -151,7 +166,7 @@ export default function AdminPage() {
       } else {
         alert("메시지 전송에 실패했습니다.");
       }
-    } catch (err) {
+    } catch {
       alert("전송 중 네트워크 오류가 발생했습니다.");
     } finally {
       setIsSending(false);
@@ -173,7 +188,7 @@ export default function AdminPage() {
         setMessages([]);
         fetchRooms();
       }
-    } catch (err) {
+    } catch {
       alert("삭제 실패");
     }
   };
@@ -261,7 +276,7 @@ export default function AdminPage() {
           </div>
 
           <button
-            onClick={() => fetchRooms(true)}
+            onClick={() => fetchRooms()}
             className="p-2 text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all text-xs font-semibold flex items-center gap-1 border border-slate-200 cursor-pointer"
             title="새로고침"
           >

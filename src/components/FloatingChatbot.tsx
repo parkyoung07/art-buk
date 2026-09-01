@@ -65,33 +65,55 @@ function formatCurrentTime() {
     .padStart(2, "0")}`;
 }
 
+function generateMsgId(prefix: string) {
+  return `${prefix}-${Math.random().toString(36).substring(2, 9)}`;
+}
+
 export default function FloatingChatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [chatData, setChatData] = useState<ChatData>(DEFAULT_CHAT_DATA);
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>(() => [
+    {
+      id: "welcome-msg",
+      sender: "bot",
+      text: DEFAULT_CHAT_DATA.welcomeMessage,
+      timestamp: formatCurrentTime(),
+    },
+  ]);
   const [isTyping, setIsTyping] = useState(false);
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState("");
-  const [userId, setUserId] = useState<string>("");
+  const [userId] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        let storedId = localStorage.getItem("artbuk_chat_uid");
+        if (!storedId) {
+          storedId = `user_${Math.random().toString(36).substring(2, 7)}`;
+          localStorage.setItem("artbuk_chat_uid", storedId);
+        }
+        return storedId;
+      } catch {
+        return "";
+      }
+    }
+    return "";
+  });
   const [isLiveMode, setIsLiveMode] = useState(false); // 상담원 1:1 실시간 모드 플래그
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 1. 고유 사용자 세션 ID 초기화 (localStorage)
+  // 1. Ensure userId is synced to localStorage on mount
   useEffect(() => {
     try {
-      let storedId = localStorage.getItem("artbuk_chat_uid");
-      if (!storedId) {
-        storedId = `user_${Math.random().toString(36).substring(2, 7)}`;
-        localStorage.setItem("artbuk_chat_uid", storedId);
+      if (userId) {
+        localStorage.setItem("artbuk_chat_uid", userId);
       }
-      setUserId(storedId);
     } catch {
-      setUserId(`user_${Date.now().toString().slice(-4)}`);
+      // ignore
     }
-  }, []);
+  }, [userId]);
 
   // 2. Load chat-data.json on mount
   useEffect(() => {
@@ -110,21 +132,7 @@ export default function FloatingChatbot() {
       });
   }, []);
 
-  // 3. Initialize welcome message
-  useEffect(() => {
-    if (messages.length === 0 && chatData.welcomeMessage) {
-      setMessages([
-        {
-          id: "welcome-msg",
-          sender: "bot",
-          text: chatData.welcomeMessage,
-          timestamp: formatCurrentTime(),
-        },
-      ]);
-    }
-  }, [chatData, messages.length]);
-
-  // 4. Auto-scroll to bottom
+  // 3. Auto-scroll to bottom
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -162,7 +170,7 @@ export default function FloatingChatbot() {
                   !existingTexts.has(`${m.sender === "admin" ? "bot" : "user"}:${m.text}`)
                 )
                 .map((m: { id: string; sender: string; text: string; timestamp: string }) => ({
-                  id: m.id || `kv-${Date.now()}-${Math.random()}`,
+                  id: m.id || generateMsgId("kv"),
                   sender: (m.sender === "admin" ? "bot" : "user") as "bot" | "user",
                   text: m.text,
                   timestamp: new Date(m.timestamp).toLocaleTimeString([], {
@@ -190,8 +198,8 @@ export default function FloatingChatbot() {
   const handleSelectQuestion = (qItem: QuestionItem) => {
     if (isTyping) return;
 
-    const userMsgId = `user-${Date.now()}`;
-    const botMsgId = `bot-${Date.now() + 1}`;
+    const userMsgId = generateMsgId("user");
+    const botMsgId = generateMsgId("bot");
 
     const userMessage: Message = {
       id: userMsgId,
@@ -220,7 +228,7 @@ export default function FloatingChatbot() {
     setIsLiveMode(true);
 
     const botMessage: Message = {
-      id: `sys-${Date.now()}`,
+      id: generateMsgId("sys"),
       sender: "bot",
       text: "상담원과 연결 중입니다... 👩‍💼\n궁금하신 내용을 입력창에 남겨주시면 상담원이 실시간으로 확인 후 친절히 답변해 드립니다.",
       timestamp: formatCurrentTime(),
@@ -252,8 +260,8 @@ export default function FloatingChatbot() {
     const query = inputValue.trim();
     if (!query || isTyping) return;
 
-    const userMsgId = `user-${Date.now()}`;
-    const botMsgId = `bot-${Date.now() + 1}`;
+    const userMsgId = generateMsgId("user");
+    const botMsgId = generateMsgId("bot");
 
     const userMessage: Message = {
       id: userMsgId,

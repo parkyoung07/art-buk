@@ -1,7 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
+
+const emptySubscribe = () => () => {};
 
 interface KakaoSubscribeModalProps {
   isOpen: boolean;
@@ -12,11 +14,11 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
 
   // ESC 키로 모달 닫기 & 스크롤 방지
   useEffect(() => {
