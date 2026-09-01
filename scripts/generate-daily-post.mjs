@@ -51,7 +51,11 @@ async function fetchNaverSearchData(venueName, region) {
     return { blogReviews: [], localRestaurants: [], nearbyAttractions: [], localEvents: [] };
   }
 
-  const cleanVenue = venueName.split(" 및 ")[0].split(" (")[0].trim();
+  const cleanVenue = venueName
+    .replace(/\s*(제?\d+[·,\-~0-9]*전시장|전관|돔하우스|석천홀|비프힐.*|미술관\s*$)/g, "")
+    .split(" 및 ")[0]
+    .split(" (")[0]
+    .trim() || venueName;
   const baseHeaders = {
     "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
     "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
@@ -390,10 +394,10 @@ thumbnail: "${photos[0]?.url || ''}"
 `;
 
   const candidateModels = [
-    "gemini-2.5-flash-lite",
     "gemini-3.5-flash-lite",
     "gemini-flash-latest",
-    "gemini-3.5-flash"
+    "gemini-2.5-flash",
+    "gemini-2.0-flash"
   ];
 
   let lastError = null;
