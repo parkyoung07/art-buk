@@ -260,11 +260,116 @@ const EXHIBITION_POOL = [
     photoKeywords: "korean traditional ink painting modern canvas landscape",
     summary: "영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어.",
     nearbySpots: ["용지호수공원", "창원 가로수길 카페거리", "경남도청 연못", "창원역사민속관"]
+  },
+  {
+    slug: "yangsan-ssangbyeongnu-autumn",
+    title: "양산 쌍벽루아트홀 가을 기획전 : 영남알프스와 양산천의 사계",
+    region: "경남",
+    subRegion: "양산시",
+    venueName: "양산 쌍벽루아트홀",
+    address: "경상남도 양산시 중앙우회로 149",
+    period: "2026.09.10 ~ 2026.11.20",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "양산전시", "쌍벽루아트홀", "영남알프스", "황산공원", "양산데이트"],
+    photoKeywords: "mountain landscape river nature fine art gallery",
+    summary: "영남알프스의 웅장한 능선과 맑은 양산천의 사계절 풍경을 서정적 화폭으로 담아낸 가을 명품 무료 기획전! 통도사와 황산공원 연계 나들이 코스.",
+    nearbySpots: ["통도사", "황산공원 댑싸리생태숲", "양산타워", "양산천 음악분수"]
+  },
+  {
+    slug: "miryang-arirang-art-center",
+    title: "밀양아리랑아트센터 특별기획 : 아리랑의 선율과 영남루의 미학",
+    region: "경남",
+    subRegion: "밀양시",
+    venueName: "밀양아리랑아트센터",
+    address: "경상남도 밀양시 밀양대공원로 112",
+    period: "2026.09.15 ~ 2026.11.30",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "밀양전시", "밀양아리랑아트센터", "영남루", "위양지", "밀양나들이"],
+    photoKeywords: "traditional korean architecture pavillion river historic art",
+    summary: "국보로 승격된 영남루의 우아한 건축미와 유네스코 인류무형유산 밀양아리랑의 흥을 현대 시각예술로 재해석한 특별전! 위양지 드라이브 추천 코스.",
+    nearbySpots: ["영남루 (국보)", "위양지", "밀양아리랑우주천문대", "표충사 계곡"]
+  },
+  {
+    slug: "changnyeong-gaya-tumuli-museum",
+    title: "창녕박물관 유네스코 세계유산 등재 기념전 : 비화가야의 숨결",
+    region: "경남",
+    subRegion: "창녕군",
+    venueName: "창녕박물관",
+    address: "경상남도 창녕군 창녕읍 창녕장터로 28",
+    period: "2026.09.01 ~ 2026.11.30",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "창녕전시", "창녕박물관", "비화가야", "우포늪", "창녕여행"],
+    photoKeywords: "ancient gold artifact pottery museum excavation relics",
+    summary: "유네스코 세계유산으로 등재된 창녕 교동과 송현동 고분군의 찬란한 비화가야 황금 유물과 토기 예술을 집대성한 가을 특별전! 우포늪 생태 나들이.",
+    nearbySpots: ["교동과 송현동 고분군", "우포늪 생태공원", "부곡온천 특구", "화왕산 억새군락"]
+  },
+  {
+    slug: "goseong-sogaya-heritage-museum",
+    title: "고성박물관 가을 기획전 : 소가야의 해양 교류와 남해의 미학",
+    region: "경남",
+    subRegion: "고성군",
+    venueName: "고성박물관",
+    address: "경상남도 고성군 고성읍 송학로113번길 50",
+    period: "2026.09.05 ~ 2026.11.25",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "고성전시", "고성박물관", "소가야", "상족암", "고성나들이"],
+    photoKeywords: "ocean coast sea cliff ancient bronze pottery museum",
+    summary: "해상 실크로드를 주름잡던 해상왕국 소가야의 고대 토기와 해양 교류 유물을 조명하는 고성박물관 가을 기획전! 송학동 고분군과 상족암 해안 절경 투어.",
+    nearbySpots: ["송학동 고분군", "상족암 군립공원", "당항포 관광지", "고성 공룡박물관"]
+  },
+  {
+    slug: "sacheon-ocean-art-museum",
+    title: "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술",
+    region: "경남",
+    subRegion: "사천시",
+    venueName: "사천미술관",
+    address: "경상남도 사천시 사천대로 17 (대방동)",
+    period: "2026.09.01 ~ 2026.10.31",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "사천전시", "사천미술관", "삼천포대교", "사천바다케이블카", "사천데이트"],
+    photoKeywords: "ocean sea bridge modern art gallery coastal view",
+    summary: "한려수도 푸른 바다와 붉은 삼천포대교를 배경으로 펼쳐지는 현대미술 기획전! 사천바다케이블카 탑승과 실안낙조 카페거리 드라이브 코스.",
+    nearbySpots: ["사천바다케이블카", "삼천포대교공원", "실안낙조 카페거리", "삼천포 용궁수산시장"]
+  },
+  {
+    slug: "namhae-wind-trace-museum",
+    title: "남해 바람흔적미술관 기획전 : 쪽빛 바다와 바람의 조각",
+    region: "경남",
+    subRegion: "남해군",
+    venueName: "남해 바람흔적미술관",
+    address: "경상남도 남해군 삼동면 바람흔적길 39",
+    period: "2026.09.10 ~ 2026.11.30",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "남해전시", "바람흔적미술관", "독일마을", "남해드라이브", "남해여행"],
+    photoKeywords: "outdoor sculpture windmill nature lake sea garden art",
+    summary: "푸른 남해 산과 호수가 어우러진 언덕에 수십 개의 붉은 바람개비 조각이 돌아가는 동화 같은 무인 미술관 특별전! 남해 독일마을 연계 투어.",
+    nearbySpots: ["남해 독일마을", "원예예술촌", "물건항 방조어부림", "보리암 금산"]
+  },
+  {
+    slug: "hadong-jirisan-art-farm",
+    title: "지리산아트팜 특별기획 : 섬진강의 서정과 지리산 대지예술",
+    region: "경남",
+    subRegion: "하동군",
+    venueName: "지리산아트팜",
+    address: "경상남도 하동군 적량면 삼화실로 506-1",
+    period: "2026.09.15 ~ 2026.12.10",
+    price: "5,000원",
+    category: "전시 리뷰",
+    tags: ["경남전시", "하동전시", "지리산아트팜", "섬진강", "최참판댁", "하동여행"],
+    photoKeywords: "nature land art forest stream modern organic sculpture",
+    summary: "자연과 예술이 하나 되는 지리산 자락의 복합 문화예술 공간 지리산아트팜 특별전! 평사리 최참판댁, 화개장터와 함께 엮는 감성 슬로트래블 코스.",
+    nearbySpots: ["악양 평사리 최참판댁", "화개장터", "쌍계사 십리벚꽃길", "스타웨이 하동 전망대"]
   }
 ];
 
 // 3. 다채로운 테마별 고화질 사진 검색 (전시 3장 + 카페/맛집 1장 + 주변 명소/풍경 1장)
-async function fetchRichPhotos(artKeyword, count = 5) {
+async function fetchRichPhotos(artKeyword) {
   if (!PEXELS_API_KEY) {
     return [
       { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
