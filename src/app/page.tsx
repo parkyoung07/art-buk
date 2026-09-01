@@ -289,41 +289,66 @@ export default function HomePage() {
       />
 
       {/* 1. 상단 네비게이션 헤더 */}
-      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-xl shadow-md shadow-indigo-500/20">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
+          {/* 좌측 브랜드 로고 */}
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedRegion("전체");
+              setSelectedSubRegion("전체");
+              setSelectedTheme("전체 테마");
+              setShowOnlyFree(false);
+              setShowOnlyClosingSoon(false);
+              setSearchQuery("");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="flex items-center gap-2 sm:gap-3 text-left group cursor-pointer"
+          >
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm sm:text-lg shadow-md shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
               A
             </div>
-            <div>
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 flex items-center gap-2">
-                부울경 아트·전시
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-1.5">
+                <span className="font-black text-base sm:text-lg tracking-tight text-slate-900 leading-tight">
+                  부울경 아트·전시
+                </span>
+                <span className="hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
                   art-buk
                 </span>
-              </span>
-              <p className="text-[11px] text-slate-500 hidden sm:block">부산 · 울산 · 경남 문화예술 나들이 포털</p>
+              </div>
+              <p className="text-[10px] sm:text-[11px] text-slate-500 leading-none mt-0.5">
+                <span className="sm:hidden text-indigo-600 font-semibold">art-buk</span>
+                <span className="hidden sm:inline">부산 · 울산 · 경남 문화예술 나들이 포털</span>
+              </p>
             </div>
-          </div>
+          </button>
 
-          <nav className="flex items-center gap-1 sm:gap-3 text-xs sm:text-sm font-medium">
+          {/* 우측 네비게이션 메뉴 버튼 */}
+          <nav className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold shrink-0">
             <button
+              type="button"
               onClick={() => {
                 setSelectedRegion("전체");
+                setSelectedSubRegion("전체");
+                setSelectedTheme("전체 테마");
                 setShowOnlyFree(false);
+                setShowOnlyClosingSoon(false);
                 setSearchQuery("");
+                const section = document.getElementById("exhibitions-list-section");
+                if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-3 py-1.5 text-indigo-600 font-bold bg-indigo-50 rounded-lg transition-colors cursor-pointer"
+              className="px-2.5 sm:px-3.5 py-1.5 text-indigo-600 font-bold bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap"
             >
-              전시 둘러보기
+              <span>전시 둘러보기</span>
             </button>
             <Link
               href="/blog"
-              className="px-3 py-1.5 text-slate-700 hover:text-indigo-600 transition-colors"
+              className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
             >
-              전시 블로그 & 맛집
+              <span>전시 블로그</span>
             </Link>
-            <div className="hidden md:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+            <div className="hidden lg:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               실시간 연동 완료
             </div>

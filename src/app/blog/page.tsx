@@ -13,29 +13,38 @@ export default function BlogListPage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
       {/* 1. 상단 네비게이션 헤더 */}
-      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-xl shadow-md shadow-indigo-500/20">
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 text-left group">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm sm:text-lg shadow-md shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
               A
             </div>
-            <div>
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 flex items-center gap-2">
-                부울경 아트·전시
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-1.5">
+                <span className="font-black text-base sm:text-lg tracking-tight text-slate-900 leading-tight">
+                  부울경 아트·전시
+                </span>
+                <span className="hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
                   art-buk
                 </span>
-              </span>
+              </div>
+              <p className="text-[10px] sm:text-[11px] text-slate-500 leading-none mt-0.5">
+                <span className="sm:hidden text-indigo-600 font-semibold">art-buk</span>
+                <span className="hidden sm:inline">부산 · 울산 · 경남 문화예술 나들이 포털</span>
+              </p>
             </div>
           </Link>
 
-          <nav className="flex items-center gap-1 sm:gap-4 text-xs sm:text-sm font-medium">
-            <Link href="/" className="px-3 py-1.5 text-slate-700 hover:text-indigo-600 transition-colors">
+          <nav className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold shrink-0">
+            <Link
+              href="/"
+              className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
+            >
               전시 둘러보기
             </Link>
             <Link
               href="/blog"
-              className="px-3 py-1.5 text-indigo-600 font-bold bg-indigo-50 rounded-lg transition-colors"
+              className="px-2.5 sm:px-3.5 py-1.5 text-indigo-600 font-bold bg-indigo-50 rounded-xl transition-all whitespace-nowrap shadow-2xs"
             >
               전시 블로그
             </Link>
