@@ -345,19 +345,24 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs sm:text-sm font-medium mb-5 backdrop-blur-md shadow-sm">
+          {/* 상단 뱃지 */}
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-[11px] sm:text-xs font-medium mb-4 sm:mb-5 backdrop-blur-md shadow-sm">
             <span>🎨</span>
-            <span>2026 부울경 현재 진행 중인 전체 미술관 & 전시 통합 가이드</span>
+            <span>2026 부울경 미술관 & 전시 통합 가이드</span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight sm:leading-tight">
-            부산 · 울산 · 경남의 모든 전시를 <br className="hidden sm:inline" />
-            <span className="bg-gradient-to-r from-indigo-200 via-sky-200 to-pink-200 bg-clip-text text-transparent">
+          {/* 메인 헤드라인 (모바일/데스크톱 모두 깔끔한 2단 분리 & 자연스러운 행간) */}
+          <h1 className="font-extrabold tracking-tight text-white max-w-3xl mx-auto [word-break:keep-all]">
+            <span className="block text-base sm:text-2xl md:text-3xl font-bold text-slate-200 mb-1 sm:mb-2">
+              부산 · 울산 · 경남의 모든 전시를
+            </span>
+            <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug sm:leading-tight bg-gradient-to-r from-indigo-200 via-sky-200 to-pink-200 bg-clip-text text-transparent">
               한 페이지에서 한눈에 비교하고 떠나세요!
             </span>
           </h1>
 
-          <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed [word-break:keep-all]">
+          {/* 서브 설명 */}
+          <p className="mt-3.5 sm:mt-4 text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed [word-break:keep-all] px-2">
             현재 진행 중인 {exhibitionsData.length}개 주요 전시의 관람료부터 AI 도슨트 해설, <br className="hidden sm:inline" />
             주변 네이버 맛집과 지도 길찾기까지 한 번에 확인하세요.
           </p>
