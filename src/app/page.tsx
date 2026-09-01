@@ -74,8 +74,81 @@ export default function HomePage() {
     return true;
   };
 
+  // 검색 핸들러: 엔터 키 또는 검색 버튼 클릭 시
+  const handleSearchSubmit = (e?: React.FormEvent | React.KeyboardEvent) => {
+    if (e) e.preventDefault();
+    if (typeof document !== "undefined" && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+
+    const trimmed = searchQuery.trim();
+    if (trimmed) {
+      // 특정 필터(지역/테마 등) 때문에 결과가 0개이지만 전체 전시 중에는 일치하는 전시가 있는 경우,
+      // 엔터를 쳤을 때 전체 전시에서 바로 찾을 수 있도록 필터를 자동으로 '전체'로 풀어줍니다.
+      const queryTokens = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
+      const hasOverallMatches = exhibitionsData.some((item) => {
+        const searchableContent = [
+          item.title,
+          item.venueName || "",
+          item.location,
+          item.region,
+          item.subRegion || "",
+          item.category,
+          item.description,
+          item.curatorNote || "",
+          item.tag || "",
+          item.address || "",
+          (item.nearbySpots || []).join(" "),
+          item.isFree ? "무료 free" : (item.price || ""),
+        ]
+          .join(" ")
+          .toLowerCase();
+        return queryTokens.every((token) => searchableContent.includes(token));
+      });
+
+      if (hasOverallMatches) {
+        setSelectedRegion("전체");
+        setSelectedSubRegion("전체");
+        setSelectedTheme("전체 테마");
+        setShowOnlyFree(false);
+        setShowOnlyClosingSoon(false);
+      }
+    }
+
+    const section = document.getElementById("search-results-section") || document.getElementById("exhibitions-list-section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  // 추천 검색어 태그 클릭 핸들러
+  const handleQuickTagClick = (tag: string) => {
+    setSearchQuery(tag);
+    // 추천 태그 클릭 시 전체 지역/테마에서 바로 찾을 수 있도록 기본값으로 전환
+    setSelectedRegion("전체");
+    setSelectedSubRegion("전체");
+    setSelectedTheme("전체 테마");
+    const section = document.getElementById("exhibitions-list-section");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  // 모든 필터 및 검색어 초기화 핸들러
+  const handleResetFilters = () => {
+    setSelectedRegion("전체");
+    setSelectedSubRegion("전체");
+    setShowOnlyFree(false);
+    setShowOnlyClosingSoon(false);
+    setSelectedTheme("전체 테마");
+    setSearchQuery("");
+  };
+
   // 필터링된 전시 목록
   const filteredExhibitions = useMemo(() => {
+    const trimmedQuery = searchQuery.trim().toLowerCase();
+    const queryTokens = trimmedQuery ? trimmedQuery.split(/\s+/).filter(Boolean) : [];
+
     return exhibitionsData.filter((item) => {
       // 1. 지역 필터
       if (selectedRegion !== "전체" && item.region !== selectedRegion) {
@@ -100,21 +173,71 @@ export default function HomePage() {
       if (!matchesTheme(item, selectedTheme)) {
         return false;
       }
-      // 5. 검색어 필터
-      if (searchQuery.trim() !== "") {
-        const query = searchQuery.toLowerCase();
-        const matchTitle = item.title.toLowerCase().includes(query);
-        const matchLocation = item.location.toLowerCase().includes(query);
-        const matchCategory = item.category.toLowerCase().includes(query);
-        const matchVenue = (item.venueName || "").toLowerCase().includes(query);
-        const matchSubRegion = (item.subRegion || "").toLowerCase().includes(query);
-        if (!matchTitle && !matchLocation && !matchCategory && !matchVenue && !matchSubRegion) {
+      // 5. 검색어 필터 (제목, 미술관, 주소, 카테고리, 설명, 큐레이터노트, 태그, 인근명소, 가격 등 모든 정보 포괄 검색 및 띄어쓰기 무관 검색)
+      if (queryTokens.length > 0) {
+        const searchableContent = [
+          item.title,
+          item.venueName || "",
+          item.location,
+          item.region,
+          item.subRegion || "",
+          item.category,
+          item.description,
+          item.curatorNote || "",
+          item.tag || "",
+          item.address || "",
+          (item.nearbySpots || []).join(" "),
+          item.isFree ? "무료 free" : (item.price || ""),
+        ]
+          .join(" ")
+          .toLowerCase();
+
+        const normalizedContent = searchableContent.replace(/\s+/g, "");
+
+        const isMatch = queryTokens.every((token) => {
+          const cleanToken = token.replace(/\s+/g, "");
+          return searchableContent.includes(token) || (cleanToken && normalizedContent.includes(cleanToken));
+        });
+        if (!isMatch) {
           return false;
         }
       }
       return true;
     });
   }, [selectedRegion, selectedSubRegion, showOnlyFree, showOnlyClosingSoon, selectedTheme, searchQuery]);
+
+  // 지역/테마 제한 없이 전체 전시 데이터 중 검색어와 일치하는 개수 계산
+  const allMatchingExhibitionsCount = useMemo(() => {
+    const trimmedQuery = searchQuery.trim().toLowerCase();
+    if (!trimmedQuery) return exhibitionsData.length;
+    const queryTokens = trimmedQuery.split(/\s+/).filter(Boolean);
+
+    return exhibitionsData.filter((item) => {
+      const searchableContent = [
+        item.title,
+        item.venueName || "",
+        item.location,
+        item.region,
+        item.subRegion || "",
+        item.category,
+        item.description,
+        item.curatorNote || "",
+        item.tag || "",
+        item.address || "",
+        (item.nearbySpots || []).join(" "),
+        item.isFree ? "무료 free" : (item.price || ""),
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      const normalizedContent = searchableContent.replace(/\s+/g, "");
+
+      return queryTokens.every((token) => {
+        const cleanToken = token.replace(/\s+/g, "");
+        return searchableContent.includes(token) || (cleanToken && normalizedContent.includes(cleanToken));
+      });
+    }).length;
+  }, [searchQuery]);
 
   // Google Event List JSON-LD 스키마
   const eventListJsonLd = {
@@ -241,24 +364,65 @@ export default function HomePage() {
 
           {/* 검색창 */}
           <div className="mt-8 max-w-xl mx-auto">
-            <div className="relative flex items-center">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="전시명, 미술관명, 지역 검색 (예: 부산시립, 미디어아트, 통영, 거제)"
-                className="w-full pl-11 pr-24 py-3.5 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:bg-white/15 backdrop-blur-md transition-all"
-              />
-              <span className="absolute left-4 text-slate-400 text-base">🔍</span>
-              {searchQuery && (
+            <form onSubmit={handleSearchSubmit} className="relative">
+              <div className="relative flex items-center bg-white/10 rounded-2xl border border-white/20 backdrop-blur-md shadow-lg transition-all focus-within:ring-2 focus-within:ring-indigo-400 focus-within:bg-white/15 focus-within:border-white/40">
+                <span className="pl-4 text-slate-300 text-base select-none">🔍</span>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleSearchSubmit(e);
+                    }
+                  }}
+                  placeholder="전시명, 미술관명, 지역 검색 (예: 부산시립, 미디어아트, 통영, 거제)"
+                  className="w-full py-3.5 pl-3 pr-24 text-white placeholder-slate-300 text-xs sm:text-sm bg-transparent focus:outline-none"
+                />
+                <div className="absolute right-2 flex items-center gap-1.5">
+                  {searchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery("")}
+                      className="px-2 py-1 text-xs text-slate-300 hover:text-white bg-white/10 hover:bg-white/20 rounded-lg transition-colors cursor-pointer"
+                      title="검색어 지우기"
+                    >
+                      ✕
+                    </button>
+                  )}
+                  <button
+                    type="submit"
+                    className="px-3.5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-xl transition-all shadow-md cursor-pointer flex items-center gap-1 shrink-0"
+                    title="검색하기 (Enter)"
+                  >
+                    <span>검색</span>
+                    <span className="text-[10px] opacity-80">↵</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            {/* 인기 추천 검색어 태그 */}
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 text-xs text-slate-300">
+              <span className="text-indigo-300 font-semibold text-[11px] sm:text-xs">🔥 추천:</span>
+              {[
+                "부산비엔날레",
+                "부산시립미술관",
+                "울산시립미술관",
+                "경남도립미술관",
+                "미디어아트",
+                "무료",
+                "가족체험"
+              ].map((tag) => (
                 <button
+                  key={tag}
                   type="button"
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3 px-2 py-1 text-xs text-slate-300 hover:text-white bg-white/10 rounded-md cursor-pointer"
+                  onClick={() => handleQuickTagClick(tag)}
+                  className="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/25 border border-white/15 text-[11px] text-slate-200 hover:text-white transition-all cursor-pointer"
                 >
-                  지우기
+                  #{tag}
                 </button>
-              )}
+              ))}
             </div>
           </div>
 
@@ -289,7 +453,7 @@ export default function HomePage() {
         <ArtRoadmapSection />
 
         {/* 3. 필터 컨트롤 바 (지역 + 무료/마감임박 + 테마) */}
-        <div className="space-y-4 pb-6 border-b border-slate-200">
+        <div id="exhibitions-list-section" className="space-y-4 pb-6 border-b border-slate-200 scroll-mt-24">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             {/* 1차 지역 필터 탭 */}
             <div className="flex flex-wrap items-center gap-2 p-1.5 bg-slate-200/70 rounded-2xl">
@@ -323,8 +487,49 @@ export default function HomePage() {
               })}
             </div>
 
-            {/* 우측 컨트롤 (무료 전시, 마감 임박, 뷰 모드 전환) */}
+            {/* 우측 컨트롤 (목록 내 검색창, 무료 전시, 마감 임박, 뷰 모드 전환) */}
             <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto justify-between md:justify-end">
+              {/* 목록 내 빠른 검색창 */}
+              <form
+                onSubmit={handleSearchSubmit}
+                className="relative flex-1 sm:flex-initial min-w-[220px] max-w-xs"
+              >
+                <div className="relative flex items-center">
+                  <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs select-none pointer-events-none">🔍</span>
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleSearchSubmit(e);
+                      }
+                    }}
+                    placeholder="목록 내 검색 (전시명, 미술관)..."
+                    className="w-full pl-8 pr-16 py-2 text-xs bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-slate-800 placeholder-slate-400 shadow-2xs"
+                  />
+                  <div className="absolute right-1.5 flex items-center gap-1">
+                    {searchQuery && (
+                      <button
+                        type="button"
+                        onClick={() => setSearchQuery("")}
+                        className="text-slate-400 hover:text-slate-600 text-xs px-1 py-0.5 rounded hover:bg-slate-100 transition-colors cursor-pointer"
+                        title="검색어 지우기"
+                      >
+                        ✕
+                      </button>
+                    )}
+                    <button
+                      type="submit"
+                      className="px-2 py-1 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-[11px] font-bold shadow-2xs transition-all cursor-pointer flex items-center gap-0.5"
+                      title="검색하기 (Enter)"
+                    >
+                      <span>검색</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
               {/* 무료 전시 필터 */}
               <button
                 type="button"
@@ -458,6 +663,32 @@ export default function HomePage() {
           </div>
         )}
 
+        {/* 검색 활성화 상태 배너 */}
+        <div id="search-results-section" className="scroll-mt-24">
+          {searchQuery.trim() !== "" && (
+            <div className="mt-5 p-4 rounded-2xl bg-indigo-50/90 border border-indigo-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-xs animate-in fade-in duration-200">
+              <div className="flex items-center gap-2.5">
+                <span className="text-xl">🔍</span>
+                <div>
+                  <span className="text-sm font-bold text-slate-900">
+                    &apos;<span className="text-indigo-700 font-extrabold">{searchQuery}</span>&apos; 검색 결과: 총 <span className="text-indigo-700 font-black">{filteredExhibitions.length}</span>건
+                  </span>
+                  <span className="text-xs text-slate-500 ml-2">(전체 {exhibitionsData.length}개 전시 중)</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="px-3 py-1.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold transition-all shadow-2xs cursor-pointer flex items-center gap-1"
+                >
+                  <span>✕ 검색어 초기화</span>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* 결과 현황 문구 */}
         <div className="flex items-center justify-between my-5">
           <p className="text-sm text-slate-600 font-medium">
@@ -468,14 +699,7 @@ export default function HomePage() {
           {(selectedRegion !== "전체" || selectedSubRegion !== "전체" || showOnlyFree || showOnlyClosingSoon || selectedTheme !== "전체 테마" || searchQuery) && (
             <button
               type="button"
-              onClick={() => {
-                setSelectedRegion("전체");
-                setSelectedSubRegion("전체");
-                setShowOnlyFree(false);
-                setShowOnlyClosingSoon(false);
-                setSelectedTheme("전체 테마");
-                setSearchQuery("");
-              }}
+              onClick={handleResetFilters}
               className="text-xs text-slate-500 hover:text-indigo-600 underline underline-offset-2 cursor-pointer font-medium"
             >
               전체 목록으로 초기화
@@ -720,26 +944,76 @@ export default function HomePage() {
           )
         ) : (
           /* 빈 검색 결과 안내 */
-          <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 p-8 shadow-xs">
+          <div className="text-center py-16 bg-white rounded-3xl border border-slate-200 p-8 shadow-xs">
             <span className="text-5xl block mb-3">🔍</span>
-            <h3 className="text-lg font-bold text-slate-800">조건에 맞는 전시가 없습니다.</h3>
-            <p className="text-sm text-slate-500 mt-1">
-              지역 필터나 테마, 검색어를 변경해보시거나 초기화 버튼을 눌러보세요.
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                setSelectedRegion("전체");
-                setSelectedSubRegion("전체");
-                setShowOnlyFree(false);
-                setShowOnlyClosingSoon(false);
-                setSelectedTheme("전체 테마");
-                setSearchQuery("");
-              }}
-              className="mt-5 px-5 py-2.5 bg-indigo-600 text-white font-bold text-sm rounded-xl hover:bg-indigo-700 transition-all cursor-pointer shadow-md"
-            >
-              전체 전시 보기
-            </button>
+            
+            {allMatchingExhibitionsCount > 0 && searchQuery ? (
+              /* 현재 필터에는 없지만 다른 지역/테마에 결과가 있는 경우 */
+              <div className="max-w-lg mx-auto">
+                <h3 className="text-lg font-bold text-slate-800">
+                  선택하신 필터({selectedRegion !== "전체" ? selectedRegion : ""}{selectedRegion !== "전체" && selectedTheme !== "전체 테마" ? " / " : ""}{selectedTheme !== "전체 테마" ? selectedTheme : ""})에서는 검색 결과가 없습니다.
+                </h3>
+                <p className="text-sm text-slate-600 mt-2">
+                  하지만 <b>전체 지역</b>에서 &apos;<span className="text-indigo-600 font-bold">{searchQuery}</span>&apos;와 일치하는 전시가 <b className="text-indigo-600 font-extrabold">{allMatchingExhibitionsCount}건</b> 있습니다!
+                </p>
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedRegion("전체");
+                      setSelectedSubRegion("전체");
+                      setSelectedTheme("전체 테마");
+                      setShowOnlyFree(false);
+                      setShowOnlyClosingSoon(false);
+                    }}
+                    className="px-5 py-2.5 bg-indigo-600 text-white font-bold text-sm rounded-xl hover:bg-indigo-700 transition-all cursor-pointer shadow-md"
+                  >
+                    전체 지역에서 &apos;{searchQuery}&apos; 결과 ({allMatchingExhibitionsCount}건) 보기 ➔
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleResetFilters}
+                    className="px-4 py-2.5 bg-slate-100 text-slate-700 font-semibold text-sm rounded-xl hover:bg-slate-200 transition-all cursor-pointer"
+                  >
+                    필터 초기화
+                  </button>
+                </div>
+              </div>
+            ) : (
+              /* 전체 데이터에도 결과가 없는 경우 */
+              <div className="max-w-lg mx-auto">
+                <h3 className="text-lg font-bold text-slate-800">
+                  {searchQuery ? `'${searchQuery}'에 대한 검색 결과를 찾을 수 없습니다.` : "조건에 맞는 전시가 없습니다."}
+                </h3>
+                <p className="text-sm text-slate-500 mt-2">
+                  검색어가 올바른지 확인하시거나, 아래 인기 추천 검색어를 선택해보세요.
+                </p>
+
+                {/* 추천 검색어 바로가기 버튼 */}
+                <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+                  {["부산비엔날레", "부산시립미술관", "울산시립미술관", "경남도립미술관", "미디어아트", "무료", "가족체험"].map((tag) => (
+                    <button
+                      key={tag}
+                      type="button"
+                      onClick={() => handleQuickTagClick(tag)}
+                      className="px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-all cursor-pointer border border-indigo-100"
+                    >
+                      #{tag}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="mt-6">
+                  <button
+                    type="button"
+                    onClick={handleResetFilters}
+                    className="px-5 py-2.5 bg-slate-900 text-white font-bold text-sm rounded-xl hover:bg-indigo-600 transition-all cursor-pointer shadow-md"
+                  >
+                    전체 전시 목록 보기
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         )}
 
