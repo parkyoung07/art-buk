@@ -10,6 +10,7 @@ const exhibitionsData: Exhibition[] = rawData as Exhibition[];
 
 export default function HomePage() {
   const [selectedRegion, setSelectedRegion] = useState<string>("전체");
+  const [selectedSubRegion, setSelectedSubRegion] = useState<string>("전체");
   const [showOnlyFree, setShowOnlyFree] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
@@ -25,11 +26,27 @@ export default function HomePage() {
     return counts;
   }, []);
 
+  // 선택된 광역 지역의 하위 구·군 목록 계산
+  const availableSubRegions = useMemo(() => {
+    if (selectedRegion === "전체") return [];
+    const set = new Set<string>();
+    exhibitionsData.forEach((item) => {
+      if (item.region === selectedRegion && item.subRegion) {
+        set.add(item.subRegion);
+      }
+    });
+    return Array.from(set);
+  }, [selectedRegion]);
+
   // 필터링된 전시 목록
   const filteredExhibitions = useMemo(() => {
     return exhibitionsData.filter((item) => {
       // 1. 지역 필터
       if (selectedRegion !== "전체" && item.region !== selectedRegion) {
+        return false;
+      }
+      // 1-2. 세부 구·군 필터
+      if (selectedSubRegion !== "전체" && item.subRegion !== selectedSubRegion) {
         return false;
       }
       // 2. 무료 필터
@@ -43,13 +60,14 @@ export default function HomePage() {
         const matchLocation = item.location.toLowerCase().includes(query);
         const matchCategory = item.category.toLowerCase().includes(query);
         const matchVenue = (item.venueName || "").toLowerCase().includes(query);
-        if (!matchTitle && !matchLocation && !matchCategory && !matchVenue) {
+        const matchSubRegion = (item.subRegion || "").toLowerCase().includes(query);
+        if (!matchTitle && !matchLocation && !matchCategory && !matchVenue && !matchSubRegion) {
           return false;
         }
       }
       return true;
     });
-  }, [selectedRegion, showOnlyFree, searchQuery]);
+  }, [selectedRegion, selectedSubRegion, showOnlyFree, searchQuery]);
 
   // Google Event List JSON-LD 스키마
   const eventListJsonLd = {
@@ -228,7 +246,10 @@ export default function HomePage() {
                 <button
                   key={region}
                   type="button"
-                  onClick={() => setSelectedRegion(region)}
+                  onClick={() => {
+                    setSelectedRegion(region);
+                    setSelectedSubRegion("전체");
+                  }}
                   className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${
                     isActive
                       ? "bg-white text-indigo-600 shadow-xs scale-100 font-bold"
@@ -289,16 +310,74 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* 2차 세부 구·군/시·군 바로가기 칩 영역 */}
+        {selectedRegion !== "전체" && availableSubRegions.length > 0 && (
+          <div className="mt-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2.5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
+                  📍 {selectedRegion === "부산" ? "부산 16개 구·군 전수 등록" : selectedRegion === "경남" ? "경남 18개 시·군 전수 등록" : "울산 5개 구·군 전수 등록"}
+                </span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 font-bold border border-indigo-200">
+                  {availableSubRegions.length}개 지자체 완료
+                </span>
+              </div>
+              {selectedSubRegion !== "전체" && (
+                <button
+                  type="button"
+                  onClick={() => setSelectedSubRegion("전체")}
+                  className="text-xs text-indigo-600 hover:underline font-bold cursor-pointer"
+                >
+                  전체 구·군 다시보기
+                </button>
+              )}
+            </div>
+
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <button
+                type="button"
+                onClick={() => setSelectedSubRegion("전체")}
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  selectedSubRegion === "전체"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+              >
+                전체 ({availableSubRegions.length})
+              </button>
+              {availableSubRegions.map((sub) => {
+                const isSubActive = selectedSubRegion === sub;
+                return (
+                  <button
+                    key={sub}
+                    type="button"
+                    onClick={() => setSelectedSubRegion(sub)}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                      isSubActive
+                        ? "bg-indigo-600 text-white font-bold shadow-xs"
+                        : "bg-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600"
+                    }`}
+                  >
+                    {sub}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* 결과 현황 문구 */}
         <div className="flex items-center justify-between my-5">
           <p className="text-sm text-slate-600 font-medium">
             현재 진행 중인 전시 <span className="font-extrabold text-indigo-600">{filteredExhibitions.length}</span>건
+            {selectedRegion !== "전체" && <span className="text-xs text-slate-500 ml-1.5">({selectedRegion} {selectedSubRegion !== "전체" ? `· ${selectedSubRegion}` : "전역"})</span>}
           </p>
-          {(selectedRegion !== "전체" || showOnlyFree || searchQuery) && (
+          {(selectedRegion !== "전체" || selectedSubRegion !== "전체" || showOnlyFree || searchQuery) && (
             <button
               type="button"
               onClick={() => {
                 setSelectedRegion("전체");
+                setSelectedSubRegion("전체");
                 setShowOnlyFree(false);
                 setSearchQuery("");
               }}
