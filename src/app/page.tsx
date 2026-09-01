@@ -3,15 +3,29 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
+import EditorPickSection from "@/components/EditorPickSection";
+import ArtRoadmapSection from "@/components/ArtRoadmapSection";
+import { calculateDDay } from "@/utils/date";
 import rawData from "../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
 const exhibitionsData: Exhibition[] = rawData as Exhibition[];
 
+const THEME_OPTIONS = [
+  "전체 테마",
+  "📸 인생샷/포토존",
+  "🌿 자연/힐링",
+  "🏛️ 역사/세계유산",
+  "👶 가족/체험",
+  "🎬 미디어/현대미술"
+] as const;
+
 export default function HomePage() {
   const [selectedRegion, setSelectedRegion] = useState<string>("전체");
   const [selectedSubRegion, setSelectedSubRegion] = useState<string>("전체");
   const [showOnlyFree, setShowOnlyFree] = useState<boolean>(false);
+  const [showOnlyClosingSoon, setShowOnlyClosingSoon] = useState<boolean>(false);
+  const [selectedTheme, setSelectedTheme] = useState<string>("전체 테마");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
@@ -38,6 +52,28 @@ export default function HomePage() {
     return Array.from(set);
   }, [selectedRegion]);
 
+  // 테마 매칭 헬퍼 함수
+  const matchesTheme = (item: Exhibition, theme: string) => {
+    if (theme === "전체 테마") return true;
+    const text = `${item.title} ${item.category} ${item.description} ${item.tag || ""} ${(item.nearbySpots || []).join(" ")}`.toLowerCase();
+    if (theme === "📸 인생샷/포토존") {
+      return text.includes("포토") || text.includes("뷰") || text.includes("야경") || text.includes("오션") || text.includes("인생샷") || text.includes("사진") || text.includes("풍경");
+    }
+    if (theme === "🌿 자연/힐링") {
+      return text.includes("자연") || text.includes("숲") || text.includes("힐링") || text.includes("공원") || text.includes("바다") || text.includes("산책") || text.includes("정원");
+    }
+    if (theme === "🏛️ 역사/세계유산") {
+      return text.includes("유네스코") || text.includes("고분") || text.includes("역사") || text.includes("박물관") || text.includes("가야") || text.includes("유물") || text.includes("문화재");
+    }
+    if (theme === "👶 가족/체험") {
+      return text.includes("체험") || text.includes("가족") || text.includes("동화") || text.includes("어린이") || text.includes("옹기") || text.includes("아이") || text.includes("나들이");
+    }
+    if (theme === "🎬 미디어/현대미술") {
+      return text.includes("미디어") || text.includes("비엔날레") || text.includes("현대미술") || text.includes("시네마") || text.includes("xr") || text.includes("설치") || text.includes("빛");
+    }
+    return true;
+  };
+
   // 필터링된 전시 목록
   const filteredExhibitions = useMemo(() => {
     return exhibitionsData.filter((item) => {
@@ -53,7 +89,18 @@ export default function HomePage() {
       if (showOnlyFree && !item.isFree) {
         return false;
       }
-      // 3. 검색어 필터
+      // 3. 마감 임박 필터 (D-30 이내)
+      if (showOnlyClosingSoon) {
+        const dDayInfo = calculateDDay(item.endDate);
+        if (dDayInfo.diffDays > 30 || dDayInfo.badgeType === "ended") {
+          return false;
+        }
+      }
+      // 4. 감성 테마 필터
+      if (!matchesTheme(item, selectedTheme)) {
+        return false;
+      }
+      // 5. 검색어 필터
       if (searchQuery.trim() !== "") {
         const query = searchQuery.toLowerCase();
         const matchTitle = item.title.toLowerCase().includes(query);
@@ -67,7 +114,7 @@ export default function HomePage() {
       }
       return true;
     });
-  }, [selectedRegion, selectedSubRegion, showOnlyFree, searchQuery]);
+  }, [selectedRegion, selectedSubRegion, showOnlyFree, showOnlyClosingSoon, selectedTheme, searchQuery]);
 
   // Google Event List JSON-LD 스키마
   const eventListJsonLd = {
@@ -233,80 +280,125 @@ export default function HomePage() {
       {/* 카카오톡 전시 소식 무료 알림 배너 */}
       <KakaoSubscribeBanner variant="hero" />
 
-      {/* 3. 본문: 필터 탭 & 전시 그리드/리스트 영역 */}
+      {/* 3. 본문: 에디터스 픽, 아트 로드맵 & 필터 탭/전시 그리드 */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-        {/* 필터 컨트롤 바 */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-slate-200">
-          {/* 1차 지역 필터 탭 */}
-          <div className="flex flex-wrap items-center gap-2 p-1.5 bg-slate-200/70 rounded-2xl">
-            {(["전체", "부산", "울산", "경남"] as const).map((region) => {
-              const count = regionCounts[region];
-              const isActive = selectedRegion === region;
-              return (
-                <button
-                  key={region}
-                  type="button"
-                  onClick={() => {
-                    setSelectedRegion(region);
-                    setSelectedSubRegion("전체");
-                  }}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${
-                    isActive
-                      ? "bg-white text-indigo-600 shadow-xs scale-100 font-bold"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-white/50"
-                  }`}
-                >
-                  <span>{region}</span>
-                  <span
-                    className={`text-xs px-1.5 py-0.5 rounded-full ${
-                      isActive ? "bg-indigo-50 text-indigo-600 font-bold" : "bg-slate-300/60 text-slate-600"
+        {/* 🌟 1. 이번 주 에디터스 픽 TOP 3 명품전 */}
+        <EditorPickSection exhibitions={exhibitionsData} />
+
+        {/* 🗺️ 2. 부울경 4대 테마 아트 로드맵 (Gallery Hopping) */}
+        <ArtRoadmapSection />
+
+        {/* 3. 필터 컨트롤 바 (지역 + 무료/마감임박 + 테마) */}
+        <div className="space-y-4 pb-6 border-b border-slate-200">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            {/* 1차 지역 필터 탭 */}
+            <div className="flex flex-wrap items-center gap-2 p-1.5 bg-slate-200/70 rounded-2xl">
+              {(["전체", "부산", "울산", "경남"] as const).map((region) => {
+                const count = regionCounts[region];
+                const isActive = selectedRegion === region;
+                return (
+                  <button
+                    key={region}
+                    type="button"
+                    onClick={() => {
+                      setSelectedRegion(region);
+                      setSelectedSubRegion("전체");
+                    }}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${
+                      isActive
+                        ? "bg-white text-indigo-600 shadow-xs scale-100 font-bold"
+                        : "text-slate-600 hover:text-slate-900 hover:bg-white/50"
                     }`}
                   >
-                    {count}
-                  </span>
+                    <span>{region}</span>
+                    <span
+                      className={`text-xs px-1.5 py-0.5 rounded-full ${
+                        isActive ? "bg-indigo-50 text-indigo-600 font-bold" : "bg-slate-300/60 text-slate-600"
+                      }`}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* 우측 컨트롤 (무료 전시, 마감 임박, 뷰 모드 전환) */}
+            <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto justify-between md:justify-end">
+              {/* 무료 전시 필터 */}
+              <button
+                type="button"
+                onClick={() => setShowOnlyFree((prev) => !prev)}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer ${
+                  showOnlyFree
+                    ? "bg-emerald-600 text-white border-emerald-600 shadow-sm"
+                    : "bg-white text-slate-700 border-slate-200 hover:border-emerald-500 hover:text-emerald-700"
+                }`}
+              >
+                <span>{showOnlyFree ? "✓" : "🎁"}</span>
+                <span>무료 ({exhibitionsData.filter((d) => d.isFree).length})</span>
+              </button>
+
+              {/* 마감 임박 필터 (D-30 이내) */}
+              <button
+                type="button"
+                onClick={() => setShowOnlyClosingSoon((prev) => !prev)}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer ${
+                  showOnlyClosingSoon
+                    ? "bg-rose-600 text-white border-rose-600 shadow-sm"
+                    : "bg-white text-slate-700 border-slate-200 hover:border-rose-500 hover:text-rose-700"
+                }`}
+              >
+                <span>{showOnlyClosingSoon ? "✓" : "⏳"}</span>
+                <span>마감 임박 (D-30)</span>
+              </button>
+
+              {/* 보기 모드 (카드 vs 일정표 리스트) */}
+              <div className="flex items-center p-1 bg-slate-200/80 rounded-xl">
+                <button
+                  type="button"
+                  onClick={() => setViewMode("grid")}
+                  className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                    viewMode === "grid" ? "bg-white text-indigo-600 shadow-xs" : "text-slate-600 hover:text-slate-900"
+                  }`}
+                  title="카드 그리드 뷰"
+                >
+                  🎴 카드 뷰
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewMode("list")}
+                  className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
+                    viewMode === "list" ? "bg-white text-indigo-600 shadow-xs" : "text-slate-600 hover:text-slate-900"
+                  }`}
+                  title="일정표 리스트 뷰"
+                >
+                  📋 일정표 뷰
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* 감성 테마 태그 필터 바 */}
+          <div className="flex items-center gap-2 overflow-x-auto pt-2 pb-1 no-scrollbar">
+            <span className="text-xs font-bold text-slate-500 shrink-0">🏷️ 테마:</span>
+            {THEME_OPTIONS.map((theme) => {
+              const isThemeActive = selectedTheme === theme;
+              return (
+                <button
+                  key={theme}
+                  type="button"
+                  onClick={() => setSelectedTheme(theme)}
+                  className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                    isThemeActive
+                      ? "bg-slate-900 text-white shadow-xs"
+                      : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900"
+                  }`}
+                >
+                  {theme}
                 </button>
               );
             })}
-          </div>
-
-          {/* 우측 컨트롤 (무료 전시 필터 & 뷰 모드 전환) */}
-          <div className="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
-            <button
-              type="button"
-              onClick={() => setShowOnlyFree((prev) => !prev)}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer ${
-                showOnlyFree
-                  ? "bg-emerald-600 text-white border-emerald-600 shadow-sm"
-                  : "bg-white text-slate-700 border-slate-200 hover:border-emerald-500 hover:text-emerald-700"
-              }`}
-            >
-              <span className="text-base">{showOnlyFree ? "✓" : "🎁"}</span>
-              <span>무료 전시만 ({exhibitionsData.filter((d) => d.isFree).length})</span>
-            </button>
-
-            {/* 보기 모드 (카드 vs 일정표 리스트) */}
-            <div className="flex items-center p-1 bg-slate-200/80 rounded-xl">
-              <button
-                type="button"
-                onClick={() => setViewMode("grid")}
-                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                  viewMode === "grid" ? "bg-white text-indigo-600 shadow-xs" : "text-slate-600 hover:text-slate-900"
-                }`}
-                title="카드 그리드 뷰"
-              >
-                🎴 카드 뷰
-              </button>
-              <button
-                type="button"
-                onClick={() => setViewMode("list")}
-                className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all cursor-pointer ${
-                  viewMode === "list" ? "bg-white text-indigo-600 shadow-xs" : "text-slate-600 hover:text-slate-900"
-                }`}
-                title="일정표 리스트 뷰"
-              >
-                📋 일정표 뷰
-              </button>
-            </div>
           </div>
         </div>
 
@@ -371,14 +463,17 @@ export default function HomePage() {
           <p className="text-sm text-slate-600 font-medium">
             현재 진행 중인 전시 <span className="font-extrabold text-indigo-600">{filteredExhibitions.length}</span>건
             {selectedRegion !== "전체" && <span className="text-xs text-slate-500 ml-1.5">({selectedRegion} {selectedSubRegion !== "전체" ? `· ${selectedSubRegion}` : "전역"})</span>}
+            {selectedTheme !== "전체 테마" && <span className="text-xs font-bold text-indigo-600 ml-1.5">· {selectedTheme}</span>}
           </p>
-          {(selectedRegion !== "전체" || selectedSubRegion !== "전체" || showOnlyFree || searchQuery) && (
+          {(selectedRegion !== "전체" || selectedSubRegion !== "전체" || showOnlyFree || showOnlyClosingSoon || selectedTheme !== "전체 테마" || searchQuery) && (
             <button
               type="button"
               onClick={() => {
                 setSelectedRegion("전체");
                 setSelectedSubRegion("전체");
                 setShowOnlyFree(false);
+                setShowOnlyClosingSoon(false);
+                setSelectedTheme("전체 테마");
                 setSearchQuery("");
               }}
               className="text-xs text-slate-500 hover:text-indigo-600 underline underline-offset-2 cursor-pointer font-medium"
@@ -393,120 +488,139 @@ export default function HomePage() {
           viewMode === "grid" ? (
             /* [모드 A] 감성 카드 그리드 뷰 */
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {filteredExhibitions.map((exhibition) => (
-                <article
-                  key={exhibition.id}
-                  className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  {/* 포스터 / 고화질 사진 영역 */}
-                  <Link
-                    href={`/events/${exhibition.id}`}
-                    className="relative h-48 w-full overflow-hidden block bg-slate-900"
+              {filteredExhibitions.map((exhibition) => {
+                const dDayInfo = calculateDDay(exhibition.endDate, exhibition.startDate);
+                return (
+                  <article
+                    key={exhibition.id}
+                    className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                   >
-                    {exhibition.thumbnailUrl ? (
-                      <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style={{ backgroundImage: `url('${exhibition.thumbnailUrl}')` }}
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
-                      </div>
-                    ) : (
-                      <div
-                        className={`absolute inset-0 ${exhibition.posterTheme || "bg-gradient-to-br from-indigo-950 to-slate-900"}`}
-                      ></div>
-                    )}
-
-                    {/* 상단 뱃지 영역 */}
-                    <div className="relative z-10 p-4 flex items-center justify-between">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-black bg-black/60 backdrop-blur-md text-white border border-white/20">
-                        {exhibition.region} · {exhibition.subRegion}
-                      </span>
-                      {exhibition.isFree ? (
-                        <span className="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-emerald-500 text-white shadow-md">
-                          무료 관람
-                        </span>
+                    {/* 포스터 / 고화질 사진 영역 */}
+                    <Link
+                      href={`/events/${exhibition.id}`}
+                      className="relative h-48 w-full overflow-hidden block bg-slate-900"
+                    >
+                      {exhibition.thumbnailUrl ? (
+                        <div
+                          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                          style={{ backgroundImage: `url('${exhibition.thumbnailUrl}')` }}
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+                        </div>
                       ) : (
-                        <span className="px-2.5 py-1 rounded-full text-[11px] font-bold bg-black/70 backdrop-blur-xs text-amber-300 border border-white/10">
-                          {exhibition.price}
-                        </span>
+                        <div
+                          className={`absolute inset-0 ${exhibition.posterTheme || "bg-gradient-to-br from-indigo-950 to-slate-900"}`}
+                        ></div>
                       )}
-                    </div>
 
-                    {/* 포스터 하단 전시명 */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                      <span className="text-[10px] tracking-wider uppercase font-bold text-indigo-300 block mb-1">
-                        {exhibition.category}
-                      </span>
-                      <h3 className="text-sm sm:text-base font-extrabold text-white leading-snug line-clamp-2 group-hover:text-indigo-200 transition-colors">
-                        {exhibition.title}
-                      </h3>
-                    </div>
-                  </Link>
+                      {/* 상단 뱃지 영역 (지역 + D-Day + 관람료) */}
+                      <div className="relative z-10 p-3.5 flex items-center justify-between gap-1.5">
+                        <span className="px-2.5 py-1 rounded-full text-[11px] font-black bg-black/60 backdrop-blur-md text-white border border-white/20">
+                          {exhibition.region} · {exhibition.subRegion}
+                        </span>
 
-                  {/* 카드 본문 상세 정보 */}
-                  <div className="p-5 flex-1 flex flex-col justify-between gap-4">
-                    <div className="space-y-2.5">
-                      {/* 장소 & 일정 */}
-                      <div className="space-y-1.5 text-xs">
-                        <div className="flex items-start gap-2">
-                          <span className="text-indigo-500 shrink-0 mt-0.5">🏛️</span>
-                          <span className="font-bold text-slate-800 line-clamp-1">{exhibition.venueName || exhibition.location}</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-slate-600">
-                          <span className="text-indigo-500 shrink-0">📅</span>
-                          <span className="font-medium text-slate-600">{exhibition.period}</span>
+                        <div className="flex items-center gap-1.5">
+                          {/* D-Day 뱃지 */}
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-black shadow-xs ${
+                              dDayInfo.badgeType === "urgent"
+                                ? "bg-rose-600 text-white"
+                                : dDayInfo.badgeType === "soon"
+                                ? "bg-amber-500 text-slate-950 font-bold"
+                                : "bg-black/60 text-slate-200 border border-white/20"
+                            }`}
+                          >
+                            {dDayInfo.badgeText}
+                          </span>
+
+                          {exhibition.isFree ? (
+                            <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500 text-white shadow-xs">
+                              무료
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-black/70 backdrop-blur-xs text-amber-300 border border-white/10">
+                              {exhibition.price}
+                            </span>
+                          )}
                         </div>
                       </div>
 
-                      {/* 요약 설명 */}
-                      <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed pt-1">
-                        {exhibition.description}
-                      </p>
+                      {/* 포스터 하단 전시명 */}
+                      <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+                        <span className="text-[10px] tracking-wider uppercase font-bold text-indigo-300 block mb-1">
+                          {exhibition.category}
+                        </span>
+                        <h3 className="text-sm sm:text-base font-extrabold text-white leading-snug line-clamp-2 group-hover:text-indigo-200 transition-colors">
+                          {exhibition.title}
+                        </h3>
+                      </div>
+                    </Link>
 
-                      {/* AI 도슨트 리뷰 바로가기 뱃지 */}
-                      {exhibition.blogSlug && (
-                        <div className="pt-1">
-                          <Link
-                            href={`/blog/${exhibition.blogSlug}`}
-                            className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-lg w-full justify-between"
-                          >
-                            <span>✍️ AI 해설 & 주변 맛집/코스</span>
-                            <span>→</span>
-                          </Link>
+                    {/* 카드 본문 상세 정보 */}
+                    <div className="p-5 flex-1 flex flex-col justify-between gap-4">
+                      <div className="space-y-2.5">
+                        {/* 장소 & 일정 */}
+                        <div className="space-y-1.5 text-xs">
+                          <div className="flex items-start gap-2">
+                            <span className="text-indigo-500 shrink-0 mt-0.5">🏛️</span>
+                            <span className="font-bold text-slate-800 line-clamp-1">{exhibition.venueName || exhibition.location}</span>
+                          </div>
+                          <div className="flex items-center gap-2 text-slate-600">
+                            <span className="text-indigo-500 shrink-0">📅</span>
+                            <span className="font-medium text-slate-600">{exhibition.period}</span>
+                          </div>
                         </div>
-                      )}
-                    </div>
 
-                    {/* 하단 4-Way 원클릭 액션 버튼 그룹 */}
-                    <div className="pt-3 border-t border-slate-100 flex items-center gap-1.5">
-                      <Link
-                        href={`/events/${exhibition.id}`}
-                        className="flex-1 py-2 px-2.5 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold transition-all text-center shadow-xs"
-                      >
-                        전시 상세 →
-                      </Link>
-                      <a
-                        href={`https://map.naver.com/p/search/${encodeURIComponent(exhibition.venueName || exhibition.location)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-2 px-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold transition-all border border-emerald-200"
-                        title="네이버 지도 길찾기"
-                      >
-                        길찾기 📍
-                      </a>
-                      <a
-                        href={exhibition.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="py-2 px-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-all"
-                        title="공식 홈페이지"
-                      >
-                        공식 ↗
-                      </a>
+                        {/* 요약 설명 */}
+                        <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed pt-1">
+                          {exhibition.description}
+                        </p>
+
+                        {/* AI 도슨트 리뷰 바로가기 뱃지 */}
+                        {exhibition.blogSlug && (
+                          <div className="pt-1">
+                            <Link
+                              href={`/blog/${exhibition.blogSlug}`}
+                              className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1 rounded-lg w-full justify-between"
+                            >
+                              <span>✍️ AI 해설 & 주변 맛집/코스</span>
+                              <span>→</span>
+                            </Link>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* 하단 4-Way 원클릭 액션 버튼 그룹 */}
+                      <div className="pt-3 border-t border-slate-100 flex items-center gap-1.5">
+                        <Link
+                          href={`/events/${exhibition.id}`}
+                          className="flex-1 py-2 px-2.5 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white text-xs font-bold transition-all text-center shadow-xs"
+                        >
+                          전시 상세 →
+                        </Link>
+                        <a
+                          href={`https://map.naver.com/p/search/${encodeURIComponent(exhibition.venueName || exhibition.location)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-2 px-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold transition-all border border-emerald-200"
+                          title="네이버 지도 길찾기"
+                        >
+                          길찾기 📍
+                        </a>
+                        <a
+                          href={exhibition.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="py-2 px-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-all"
+                          title="공식 홈페이지"
+                        >
+                          공식 ↗
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
           ) : (
             /* [모드 B] 한눈에 비교하는 타임라인/일정표 리스트 뷰 */
@@ -517,101 +631,112 @@ export default function HomePage() {
                     <tr className="bg-slate-100/90 text-slate-700 text-xs font-bold border-b border-slate-200">
                       <th className="py-4 px-5">지역</th>
                       <th className="py-4 px-5">전시명 및 미술관</th>
-                      <th className="py-4 px-5">전시 기간</th>
+                      <th className="py-4 px-5">전시 기간 및 D-Day</th>
                       <th className="py-4 px-5">관람료</th>
                       <th className="py-4 px-5 text-center">원클릭 바로가기</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-xs sm:text-sm">
-                    {filteredExhibitions.map((exhibition) => (
-                      <tr key={exhibition.id} className="hover:bg-slate-50/80 transition-colors">
-                        {/* 지역 */}
-                        <td className="py-4 px-5 whitespace-nowrap">
-                          <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-800 border border-slate-200">
-                            {exhibition.region}
-                          </span>
-                          <span className="block text-[11px] text-slate-400 mt-1 font-medium">
-                            {exhibition.subRegion}
-                          </span>
-                        </td>
-
-                        {/* 전시명 & 장소 */}
-                        <td className="py-4 px-5">
-                          <Link href={`/events/${exhibition.id}`} className="font-bold text-slate-900 hover:text-indigo-600 transition-colors block">
-                            {exhibition.title}
-                          </Link>
-                          <p className="text-xs text-slate-500 mt-0.5 font-medium flex items-center gap-1">
-                            <span>🏛️</span>
-                            <span>{exhibition.venueName || exhibition.location}</span>
-                          </p>
-                        </td>
-
-                        {/* 기간 */}
-                        <td className="py-4 px-5 whitespace-nowrap text-slate-600 font-medium">
-                          {exhibition.period}
-                        </td>
-
-                        {/* 가격 */}
-                        <td className="py-4 px-5 whitespace-nowrap">
-                          {exhibition.isFree ? (
-                            <span className="font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
-                              무료
+                    {filteredExhibitions.map((exhibition) => {
+                      const dDayInfo = calculateDDay(exhibition.endDate, exhibition.startDate);
+                      return (
+                        <tr key={exhibition.id} className="hover:bg-slate-50/80 transition-colors">
+                          {/* 지역 */}
+                          <td className="py-4 px-5 whitespace-nowrap">
+                            <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-800 border border-slate-200">
+                              {exhibition.region}
                             </span>
-                          ) : (
-                            <span className="font-bold text-slate-800">
-                              {exhibition.price}
+                            <span className="block text-[11px] text-slate-400 mt-1 font-medium">
+                              {exhibition.subRegion}
                             </span>
-                          )}
-                        </td>
+                          </td>
 
-                        {/* 액션 버튼 */}
-                        <td className="py-4 px-5 text-center whitespace-nowrap">
-                          <div className="inline-flex items-center gap-1.5">
-                            <Link
-                              href={`/events/${exhibition.id}`}
-                              className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition-all shadow-xs"
-                            >
-                              전시 안내
+                          {/* 전시명 & 장소 */}
+                          <td className="py-4 px-5">
+                            <Link href={`/events/${exhibition.id}`} className="font-bold text-slate-900 hover:text-indigo-600 transition-colors block">
+                              {exhibition.title}
                             </Link>
-                            {exhibition.blogSlug && (
-                              <Link
-                                href={`/blog/${exhibition.blogSlug}`}
-                                className="px-2.5 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-all"
-                              >
-                                AI 해설
-                              </Link>
-                            )}
-                            <a
-                              href={`https://map.naver.com/p/search/${encodeURIComponent(exhibition.venueName || exhibition.location)}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-2.5 py-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold transition-all border border-emerald-200"
+                            <p className="text-xs text-slate-500 mt-0.5 font-medium flex items-center gap-1">
+                              <span>🏛️</span>
+                              <span>{exhibition.venueName || exhibition.location}</span>
+                            </p>
+                          </td>
+
+                          {/* 기간 & D-Day */}
+                          <td className="py-4 px-5 whitespace-nowrap text-slate-600 font-medium">
+                            <div>{exhibition.period}</div>
+                            <span
+                              className={`inline-block mt-1 px-2 py-0.5 rounded-md text-[10px] font-bold ${
+                                dDayInfo.badgeType === "urgent"
+                                  ? "bg-rose-100 text-rose-700 font-extrabold"
+                                  : dDayInfo.badgeType === "soon"
+                                  ? "bg-amber-100 text-amber-800"
+                                  : "bg-slate-100 text-slate-600"
+                              }`}
                             >
-                              길찾기 📍
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
+                              {dDayInfo.badgeText}
+                            </span>
+                          </td>
+
+                          {/* 가격 */}
+                          <td className="py-4 px-5 whitespace-nowrap">
+                            {exhibition.isFree ? (
+                              <span className="font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                                무료
+                              </span>
+                            ) : (
+                              <span className="font-bold text-slate-800">
+                                {exhibition.price}
+                              </span>
+                            )}
+                          </td>
+
+                          {/* 액션 버튼 */}
+                          <td className="py-4 px-5 text-center whitespace-nowrap">
+                            <div className="inline-flex items-center gap-1.5">
+                              <Link
+                                href={`/events/${exhibition.id}`}
+                                className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold transition-all shadow-xs"
+                              >
+                                전시 안내
+                              </Link>
+                              {exhibition.blogSlug && (
+                                <Link
+                                  href={`/blog/${exhibition.blogSlug}`}
+                                  className="px-2.5 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-all"
+                                >
+                                  AI 해설 ➔
+                                </Link>
+                              )}
+                            </div>
+                          </td>
+                        </tr>
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>
             </div>
           )
         ) : (
-          /* 검색/필터 결과 없음 */
-          <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 p-8">
-            <div className="text-4xl mb-3">🔍</div>
-            <h3 className="text-lg font-bold text-slate-800 mb-1">조건에 맞는 전시를 찾을 수 없습니다.</h3>
-            <p className="text-sm text-slate-500 mb-6">지역 필터를 변경하거나 다른 검색어로 찾아보세요.</p>
+          /* 빈 검색 결과 안내 */
+          <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 p-8 shadow-xs">
+            <span className="text-5xl block mb-3">🔍</span>
+            <h3 className="text-lg font-bold text-slate-800">조건에 맞는 전시가 없습니다.</h3>
+            <p className="text-sm text-slate-500 mt-1">
+              지역 필터나 테마, 검색어를 변경해보시거나 초기화 버튼을 눌러보세요.
+            </p>
             <button
               type="button"
               onClick={() => {
                 setSelectedRegion("전체");
+                setSelectedSubRegion("전체");
                 setShowOnlyFree(false);
+                setShowOnlyClosingSoon(false);
+                setSelectedTheme("전체 테마");
                 setSearchQuery("");
               }}
-              className="px-5 py-2.5 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition-colors shadow-sm cursor-pointer"
+              className="mt-5 px-5 py-2.5 bg-indigo-600 text-white font-bold text-sm rounded-xl hover:bg-indigo-700 transition-all cursor-pointer shadow-md"
             >
               전체 전시 보기
             </button>
