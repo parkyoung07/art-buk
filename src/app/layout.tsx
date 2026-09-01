@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://art-buk.pages.dev"),
+  metadataBase: new URL("https://nadriai.com"),
   title: {
     default: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 가이드",
     template: "%s | 부울경 아트·전시 나들이",
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     "주말나들이",
   ],
   authors: [{ name: "부울경 아트·전시 나들이 팀" }],
-  creator: "art-buk",
-  publisher: "art-buk",
+  creator: "nadriai",
+  publisher: "nadriai",
   openGraph: {
     title: "부울경 아트·전시 나들이 | 부산·울산·경남 전시 가이드",
     description: "부산, 울산, 경남의 특별한 전시와 문화 예술 소식 및 AI 도슨트 추천 코스",
-    url: "https://art-buk.pages.dev",
+    url: "https://nadriai.com",
     siteName: "부울경 아트·전시 나들이",
     locale: "ko_KR",
     type: "website",

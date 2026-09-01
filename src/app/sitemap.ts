@@ -5,7 +5,7 @@ import { Exhibition } from "@/types/art";
 
 export const dynamic = "force-static";
 
-const SITE_URL = "https://art-buk.pages.dev";
+const SITE_URL = "https://nadriai.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();

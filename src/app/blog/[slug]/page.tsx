@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: PageProps) {
   const post = getPostBySlug(slug);
   if (!post) return { title: "글을 찾을 수 없습니다." };
 
-  const url = `https://art-buk.pages.dev/blog/${post.slug}/`;
-  const image = post.thumbnail || "https://art-buk.pages.dev/og-default.jpg";
+  const url = `https://nadriai.com/blog/${post.slug}/`;
+  const image = post.thumbnail || "https://nadriai.com/og-default.jpg";
 
   return {
     title: `${post.title} | 부울경 전시 블로그`,
@@ -92,20 +92,20 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     author: {
       "@type": "Organization",
       name: "부울경 아트·전시 나들이 AI 도슨트",
-      url: "https://art-buk.pages.dev",
+      url: "https://nadriai.com",
     },
     publisher: {
       "@type": "Organization",
-      name: "art-buk",
-      url: "https://art-buk.pages.dev",
+      name: "nadriai",
+      url: "https://nadriai.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://art-buk.pages.dev/favicon.ico",
+        url: "https://nadriai.com/favicon.ico",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://art-buk.pages.dev/blog/${post.slug}/`,
+      "@id": `https://nadriai.com/blog/${post.slug}/`,
     },
   };
 

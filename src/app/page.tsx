@@ -269,7 +269,7 @@ export default function HomePage() {
           price: item.isFree ? "0" : item.price.replace(/[^0-9]/g, ""),
           priceCurrency: "KRW",
           availability: "https://schema.org/InStock",
-          url: `https://art-buk.pages.dev/events/${item.id}/`,
+          url: `https://nadriai.com/events/${item.id}/`,
         },
         organizer: {
           "@type": "Organization",

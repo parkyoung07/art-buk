@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps) {
   const exhibition = exhibitions.find((item) => item.id === id);
   if (!exhibition) return { title: "전시를 찾을 수 없습니다." };
 
-  const url = `https://art-buk.pages.dev/events/${exhibition.id}/`;
+  const url = `https://nadriai.com/events/${exhibition.id}/`;
 
   return {
     title: `${exhibition.title} | ${exhibition.venueName || exhibition.location}`,
@@ -88,7 +88,7 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
       price: exhibition.isFree ? "0" : exhibition.price.replace(/[^0-9]/g, ""),
       priceCurrency: "KRW",
       availability: "https://schema.org/InStock",
-      url: exhibition.link || `https://art-buk.pages.dev/events/${exhibition.id}/`,
+      url: exhibition.link || `https://nadriai.com/events/${exhibition.id}/`,
     },
     organizer: {
       "@type": "Organization",
