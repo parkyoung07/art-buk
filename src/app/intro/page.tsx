@@ -26,7 +26,7 @@ export default function IntroPage() {
   const handleCopyPromo = (type: 'general' | 'feedback' | 'link') => {
     let text = '';
     if (type === 'general') {
-      text = `[🎨 나드리 AI - 부울경 문화·나들이 포털]\n\n"이번 주말 어디 갈까?" 고민 끝!\n부산·울산·경남 최신 미술관 전시부터 70년 전통 5일장 먹거리, 아이와 함께 가기 좋은 숲속 쌈지 도서관까지 단 하나의 사이트에서 만나보세요.\n\n✨ AI 도슨트 작품 해설 & 인근 맛집 코스\n🧺 오늘 열리는 부울경 5일장 실시간 검색\n📚 아이와 힐링하는 복합&쌈지 도서관 22선\n💬 24시간 실시간 AI 문화비서 챗봇\n\n👉 지금 바로 구경하기: https://nadriai.com`;
+      text = `[🎨 나드리 AI - 부울경 문화·나들이 포털]\n\n"이번 주말 어디 갈까?" 고민 끝!\n부산·울산·경남 최신 미술관 전시부터 70년 전통 5일장 먹거리, 아이와 함께 가기 좋은 숲속 쌈지 도서관까지 단 하나의 사이트에서 만나보세요.\n\n✨ 매일 아침·저녁 2회 AI 도슨트 작품 해설 & 맛집 코스\n🧺 오늘 열리는 부울경 5일장 실시간 검색\n📚 아이와 힐링하는 복합&쌈지 도서관 22선\n💬 24시간 실시간 AI 문화비서 챗봇\n💌 주 3회 (월·수·금) 무료 문화 소식지\n\n👉 지금 바로 구경하기: https://nadriai.com`;
     } else if (type === 'feedback') {
       text = `[📢 나드리 AI - 지인 피드백 부탁드립니다!]\n\n안녕하세요! 이번에 부울경 전시, 전통 5일장, 쌈지 도서관을 한눈에 찾아주는 문화 나들이 포털 '나드리 AI'를 준비했습니다.\n\n직접 들어와서 둘러보시고, 좋았던 점이나 개선/보완할 점에 대해 솔직한 의견을 남겨주시면 서비스 발전에 큰 도움이 됩니다! 🙏\n\n👉 사이트 둘러보기 및 의견 남기기: https://nadriai.com/intro`;
     } else {
@@ -234,14 +234,14 @@ export default function IntroPage() {
               ✍️
             </div>
             <h3 className="text-lg font-black text-white mb-2 group-hover:text-violet-300 transition-colors">
-              4. 매일 아침 AI 도슨트 & 맛집 추천
+              4. 매일 아침·저녁 2회 AI 도슨트 & 맛집 추천
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
-              Gemini AI가 미술관 큐레이터의 시선으로 쓴 친절한 작품 해설, 감상 포인트, 
-              그리고 관람 후 들르기 좋은 인근 네이버 실시간 인기 맛집과 감성 카페 코스를 연계합니다.
+              Gemini AI가 아침(07:00)과 저녁(18:00) 하루 2회, 미술관 큐레이터의 시선으로 쓴 친절한 작품 해설, 감상 포인트, 
+              그리고 관람 후 들르기 좋은 인근 네이버 실시간 인기 맛집과 감성 카페 코스를 정기 발행합니다.
             </p>
             <div className="flex flex-wrap gap-1.5 text-[11px] font-bold text-violet-300">
-              <span className="px-2 py-0.5 rounded-md bg-violet-950/60 border border-violet-800/50">🤖 자동 포스팅</span>
+              <span className="px-2 py-0.5 rounded-md bg-violet-950/60 border border-violet-800/50">🤖 아침·저녁 2회 발행</span>
               <span className="px-2 py-0.5 rounded-md bg-violet-950/60 border border-violet-800/50">☕ 맛집·카페 연계</span>
               <span className="px-2 py-0.5 rounded-md bg-violet-950/60 border border-violet-800/50">📸 포토존 가이드</span>
             </div>
@@ -272,14 +272,15 @@ export default function IntroPage() {
               🔔
             </div>
             <h3 className="text-lg font-black text-white mb-2 group-hover:text-yellow-300 transition-colors">
-              6. 매주 금요일 무료 알림 소식지
+              6. 주 3회 (월·수·금) 무료 알림 소식지
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
-              카카오톡 및 이메일 구독을 통해 이번 주말 꼭 가봐야 할 전시 3선, 
-              주말에 열리는 5일장, 특별 문화 행사 소식을 매주 무료로 받아보실 수 있습니다.
+              카카오톡 및 알림 신청을 통해 매주 월·수·금 아침 8시, 엄선된 부울경의 감성 전시와 
+              5일장 먹거리, 특별 문화 행사 소식을 정기적으로 무료 배달해 드립니다.
             </p>
             <div className="flex flex-wrap gap-1.5 text-[11px] font-bold text-yellow-300">
-              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💌 금요일 주간 브리핑</span>
+              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💌 월·수·금 정기 브리핑</span>
+              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💬 카카오톡 알림톡</span>
               <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">🎉 100% 무료</span>
             </div>
           </div>
