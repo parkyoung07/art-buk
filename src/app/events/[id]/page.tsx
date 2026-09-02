@@ -2,8 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNaverLocalPlaces } from "@/lib/naver";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
+import MarketInfoCard from "@/components/MarketInfoCard";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
+import { getMarketForExhibition } from "@/utils/market";
 
 const exhibitions: Exhibition[] = rawData as Exhibition[];
 
@@ -62,6 +64,9 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
   const cleanVenue = (exhibition.venueName || exhibition.location).split(" 및 ")[0].split(" ")[0];
   const localQuery = `${exhibition.region} ${cleanVenue} 맛집`;
   const localPlaces = await getNaverLocalPlaces(localQuery, 4);
+
+  // 인근 전통시장 및 5일장 매핑
+  const nearbyMarket = getMarketForExhibition(exhibition.region, exhibition.subRegion);
 
   // Google Event Schema (JSON-LD)
   const eventJsonLd = {
@@ -293,6 +298,19 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                     </a>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {/* 미술관 옆 전통 재래시장 & 5일장 장날 나들이 */}
+            {nearbyMarket && (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-6 rounded-full bg-amber-500 inline-block"></span>
+                  <h2 className="text-xl font-bold text-slate-900">
+                    미술관 옆 전통시장 & 장날 나들이
+                  </h2>
+                </div>
+                <MarketInfoCard market={nearbyMarket} />
               </div>
             )}
 

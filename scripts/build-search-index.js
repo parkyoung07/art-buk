@@ -111,7 +111,55 @@ function buildSearchIndex() {
     }
   }
 
-  // 3. 디렉토리 생성 및 JSON 파일 출력
+  // 3. 전통시장 및 5일장 데이터 (public/data/markets.json) 색인화
+  const MARKETS_DATA_FILE = path.join(ROOT_DIR, "public", "data", "markets.json");
+  if (fs.existsSync(MARKETS_DATA_FILE)) {
+    try {
+      const marketRaw = fs.readFileSync(MARKETS_DATA_FILE, "utf-8");
+      const marketList = JSON.parse(marketRaw);
+
+      for (const m of marketList) {
+        const fullContent = [
+          m.name,
+          m.region,
+          m.subRegion,
+          m.marketType,
+          m.scheduleDescription,
+          (m.specialties || []).join(" "),
+          m.address,
+          m.description,
+          m.tips,
+          "전통시장",
+          "5일장",
+          "장날",
+          "재래시장",
+          "시장먹거리"
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        indexEntries.push({
+          id: m.id,
+          type: "market",
+          title: `[전통시장] ${m.name} (${m.region} ${m.subRegion})`,
+          url: `/#market-section`,
+          category: `전통시장 (${m.marketType})`,
+          region: m.region || "",
+          subRegion: m.subRegion || "",
+          venue: m.name,
+          period: m.scheduleDescription,
+          price: (m.specialties || []).slice(0, 3).join(", "),
+          summary: `${m.scheduleDescription} - ${m.description}`,
+          content: fullContent,
+          updatedAt: new Date().toISOString(),
+        });
+      }
+    } catch (err) {
+      console.warn("⚠️ markets.json 읽기 실패:", err.message);
+    }
+  }
+
+  // 4. 디렉토리 생성 및 JSON 파일 출력
   const outputDataDir = path.dirname(OUTPUT_DATA_FILE);
   if (!fs.existsSync(outputDataDir)) {
     fs.mkdirSync(outputDataDir, { recursive: true });

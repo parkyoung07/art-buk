@@ -5,6 +5,7 @@ import Link from "next/link";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import EditorPickSection from "@/components/EditorPickSection";
 import ArtRoadmapSection from "@/components/ArtRoadmapSection";
+import MarketSection from "@/components/MarketSection";
 import { calculateDDay } from "@/utils/date";
 import rawData from "../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
@@ -1047,7 +1048,12 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* 5. AI 도슨트 & 나들이 추천 안내 배너 섹션 */}
+        {/* 5. 부울경 5일장 & 전통 재래시장 나들이 섹션 */}
+        <div className="mt-16">
+          <MarketSection />
+        </div>
+
+        {/* 6. AI 도슨트 & 나들이 추천 안내 배너 섹션 */}
         <section id="ai-docent-section" className="mt-16 bg-gradient-to-br from-indigo-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
           <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-500/10 rounded-full blur-2xl"></div>
           <div className="relative z-10 max-w-2xl">
