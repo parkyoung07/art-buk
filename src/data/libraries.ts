@@ -1,6 +1,7 @@
 export interface LibraryItem {
   id: string;
   name: string;
+  searchQuery?: string;
   region: '부산' | '울산' | '경남';
   subRegion: string;
   type: '시·도립 대표도서관' | '복합문화도서관' | '어린이·가족특화' | '쌈지·숲속 작은도서관' | '인문·전문도서관';
@@ -18,6 +19,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-sasang-busan-library",
     name: "부산도서관 (본관)",
+    searchQuery: "부산도서관",
     region: "부산",
     subRegion: "사상구",
     type: "시·도립 대표도서관",
@@ -32,6 +34,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-gangseo-national-assembly",
     name: "국회부산도서관",
+    searchQuery: "국회부산도서관",
     region: "부산",
     subRegion: "강서구",
     type: "복합문화도서관",
@@ -46,6 +49,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-jin-simin-library",
     name: "부산시립시민도서관 & 어린이창의체험관",
+    searchQuery: "부산광역시립시민도서관",
     region: "부산",
     subRegion: "부산진구",
     type: "어린이·가족특화",
@@ -60,6 +64,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-gijang-jeonggwan-children",
     name: "기장 정관어린이도서관 & 소두방공원 숲도서관",
+    searchQuery: "정관어린이도서관",
     region: "부산",
     subRegion: "기장군",
     type: "어린이·가족특화",
@@ -74,6 +79,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-yeongdo-jonaegi-forest",
     name: "영도 조내기 숲속작은도서관",
+    searchQuery: "조내기고구마역사기념관",
     region: "부산",
     subRegion: "영도구",
     type: "쌈지·숲속 작은도서관",
@@ -88,6 +94,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-suyeong-mangmi-alley",
     name: "망미골목 비콘그라운드 작은도서관",
+    searchQuery: "비콘그라운드",
     region: "부산",
     subRegion: "수영구",
     type: "쌈지·숲속 작은도서관",
@@ -102,6 +109,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "busan-haeundae-humanities",
     name: "해운대인문학도서관 & 숲속책놀이터",
+    searchQuery: "해운대인문학도서관",
     region: "부산",
     subRegion: "해운대구",
     type: "인문·전문도서관",
@@ -118,6 +126,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "ulsan-namgu-ulsan-library",
     name: "울산도서관 (본관)",
+    searchQuery: "울산도서관",
     region: "울산",
     subRegion: "남구",
     type: "시·도립 대표도서관",
@@ -132,6 +141,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "ulsan-ulju-seonbawi",
     name: "울주선바위도서관 & 생태 숲마루",
+    searchQuery: "울주선바위도서관",
     region: "울산",
     subRegion: "울주군",
     type: "복합문화도서관",
@@ -146,6 +156,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "ulsan-bukgu-creative-forest",
     name: "울산북구 세대공감창의놀이터 숲속작은도서관",
+    searchQuery: "세대공감창의놀이터",
     region: "울산",
     subRegion: "북구",
     type: "쌈지·숲속 작은도서관",
@@ -160,6 +171,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "ulsan-junggu-jonggatjib-library",
     name: "울산중구 종갓집도서관 & 어린이과학체험관",
+    searchQuery: "종갓집도서관",
     region: "울산",
     subRegion: "중구",
     type: "어린이·가족특화",
@@ -176,6 +188,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-gimhae-wisdom-sea",
     name: "김해 지혜의바다도서관",
+    searchQuery: "김해지혜의바다도서관",
     region: "경남",
     subRegion: "김해시",
     type: "복합문화도서관",
@@ -190,6 +203,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-changwon-masan-wisdom-sea",
     name: "마산 지혜의바다도서관",
+    searchQuery: "마산지혜의바다도서관",
     region: "경남",
     subRegion: "창원시",
     type: "복합문화도서관",
@@ -204,6 +218,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-jinju-yeonam",
     name: "진주시립 연암도서관 & 비봉산 숲속도서관",
+    searchQuery: "연암도서관",
     region: "경남",
     subRegion: "진주시",
     type: "복합문화도서관",
@@ -218,6 +233,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-geoje-miracle-library",
     name: "거제 기적의도서관",
+    searchQuery: "거제기적의도서관",
     region: "경남",
     subRegion: "거제시",
     type: "어린이·가족특화",
@@ -232,6 +248,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-tongyeong-ottchil-pocket",
     name: "통영 꿈이랑도서관 (어린이 미식&그림책 특화)",
+    searchQuery: "통영시립꿈이랑도서관",
     region: "경남",
     subRegion: "통영시",
     type: "어린이·가족특화",
@@ -246,6 +263,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-hadong-pyeongsari-pocket",
     name: "하동 평사리 토지문학관 작은도서관",
+    searchQuery: "평사리문학관",
     region: "경남",
     subRegion: "하동군",
     type: "쌈지·숲속 작은도서관",
@@ -260,6 +278,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-namhae-hwareon-pocket",
     name: "남해 화전도서관 & 독일마을 북카페 작은도서관",
+    searchQuery: "화전도서관",
     region: "경남",
     subRegion: "남해군",
     type: "복합문화도서관",
@@ -274,6 +293,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-hamyang-sangrim-forest",
     name: "함양 상림 천년의 숲속 작은도서관",
+    searchQuery: "함양 상림공원",
     region: "경남",
     subRegion: "함양군",
     type: "쌈지·숲속 작은도서관",
@@ -288,6 +308,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-geochang-wisdom-pocket",
     name: "거창도서관 & 수승대 물빛 작은도서관",
+    searchQuery: "거창도서관",
     region: "경남",
     subRegion: "거창군",
     type: "복합문화도서관",
@@ -302,6 +323,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-changnyeong-upo-swamp",
     name: "창녕 우포늪 생태작은도서관 & 영산도서관",
+    searchQuery: "우포늪생태관",
     region: "경남",
     subRegion: "창녕군",
     type: "쌈지·숲속 작은도서관",
@@ -316,6 +338,7 @@ export const LIBRARIES_DATA: LibraryItem[] = [
   {
     id: "gyeongnam-sancheong-donguibogam-pocket",
     name: "산청 동의보감촌 한의학 힐링작은도서관",
+    searchQuery: "산청한의학박물관",
     region: "경남",
     subRegion: "산청군",
     type: "인문·전문도서관",

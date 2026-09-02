@@ -8,8 +8,20 @@ interface LibraryInfoCardProps {
   compact?: boolean;
 }
 
+export function getLibraryMapUrl(library: LibraryItem): string {
+  if (library.searchQuery) {
+    return `https://map.naver.com/v5/search/${encodeURIComponent(library.searchQuery)}`;
+  }
+  const cleanName = library.name
+    .split('&')[0]
+    .replace(/\(.*?\)/g, '')
+    .trim();
+  return `https://map.naver.com/v5/search/${encodeURIComponent(cleanName || library.address)}`;
+}
+
 export default function LibraryInfoCard({ library, compact = false }: LibraryInfoCardProps) {
   const [copied, setCopied] = useState(false);
+  const naverMapUrl = getLibraryMapUrl(library);
 
   const handleCopyAddress = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -37,44 +49,50 @@ export default function LibraryInfoCard({ library, compact = false }: LibraryInf
 
   if (compact) {
     return (
-      <div className="bg-gradient-to-br from-emerald-50/60 via-teal-50/30 to-white rounded-2xl p-4 border border-emerald-200/80 shadow-xs hover:shadow-md transition-all">
-        <div className="flex items-center justify-between gap-2 mb-2">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-200">
-              {library.region} · {library.subRegion}
+      <div className="bg-gradient-to-br from-emerald-50/60 via-teal-50/30 to-white rounded-2xl p-4 border border-emerald-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 border border-emerald-200">
+                {library.region} · {library.subRegion}
+              </span>
+            </div>
+            <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${getTypeBadgeStyle()}`}>
+              {library.type}
             </span>
           </div>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${getTypeBadgeStyle()}`}>
-            {library.type}
+
+          <h4 className="text-sm font-extrabold text-slate-900 mb-1 flex items-center gap-1.5">
+            <span>📚</span>
+            <span>{library.name}</span>
+          </h4>
+          
+          <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-2.5">
+            {library.description}
+          </p>
+
+          <div className="flex flex-wrap gap-1 mb-3">
+            {library.features.slice(0, 3).map((item, idx) => (
+              <span key={idx} className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-white text-emerald-950 border border-emerald-200">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between text-[11px] text-slate-500 pt-2.5 border-t border-emerald-100 mt-auto">
+          <span className="truncate max-w-[170px] text-slate-600" title={library.address}>
+            {library.address}
           </span>
-        </div>
-
-        <h4 className="text-sm font-extrabold text-slate-900 mb-1 flex items-center gap-1.5">
-          <span>📚</span>
-          <span>{library.name}</span>
-        </h4>
-        
-        <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-2.5">
-          {library.description}
-        </p>
-
-        <div className="flex flex-wrap gap-1 mb-2.5">
-          {library.features.slice(0, 3).map((item, idx) => (
-            <span key={idx} className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-white text-emerald-950 border border-emerald-200">
-              {item}
-            </span>
-          ))}
-        </div>
-
-        <div className="flex items-center justify-between text-[11px] text-slate-500 pt-2 border-t border-emerald-100">
-          <span className="truncate max-w-[180px]">{library.address}</span>
           <a
-            href={`https://map.naver.com/v5/search/${encodeURIComponent(library.name)}`}
+            href={naverMapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-emerald-700 hover:text-emerald-900 font-bold shrink-0 hover:underline"
+            className="inline-flex items-center gap-0.5 px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-2xs transition-colors shrink-0"
+            title={`${library.name} 네이버 지도 길찾기`}
           >
-            길찾기 →
+            <span>길찾기</span>
+            <span>→</span>
           </a>
         </div>
       </div>
@@ -171,10 +189,11 @@ export default function LibraryInfoCard({ library, compact = false }: LibraryInf
         </div>
 
         <a
-          href={`https://map.naver.com/v5/search/${encodeURIComponent(library.name)}`}
+          href={naverMapUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 font-bold text-xs px-3 py-1.5 rounded-xl bg-slate-900 text-white hover:bg-emerald-800 transition-colors shadow-xs shrink-0"
+          className="inline-flex items-center gap-1 font-bold text-xs px-3.5 py-2 rounded-xl bg-slate-900 text-white hover:bg-emerald-800 transition-colors shadow-xs shrink-0 cursor-pointer"
+          title={`${library.name} 네이버 지도 길찾기`}
         >
           <span>네이버 지도로 보기</span>
           <span>→</span>
