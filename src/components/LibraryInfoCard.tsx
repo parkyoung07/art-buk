@@ -9,15 +9,10 @@ interface LibraryInfoCardProps {
 }
 
 export function getLibraryMapUrl(library: LibraryItem): string {
-  if (library.searchQuery) {
-    return `https://map.naver.com/v5/search/${encodeURIComponent(library.searchQuery)}`;
-  }
-  const cleanName = library.name
-    .split('&')[0]
-    .replace(/\(.*?\)/g, '')
-    .trim();
-  return `https://map.naver.com/v5/search/${encodeURIComponent(cleanName || library.address)}`;
+  const query = library.searchQuery || library.name.split('&')[0].replace(/\(.*?\)/g, '').trim();
+  return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
 }
+
 
 export default function LibraryInfoCard({ library, compact = false }: LibraryInfoCardProps) {
   const [copied, setCopied] = useState(false);

@@ -293,7 +293,7 @@ export default function HomePage() {
       {/* 1. 상단 네비게이션 헤더 */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
-          {/* 좌측 브랜드 로고 */}
+          {/* 좌측 브랜드 로고 (모바일 세로 줄바꿈 방지 및 가로 일자 정렬) */}
           <button
             type="button"
             onClick={() => {
@@ -305,29 +305,29 @@ export default function HomePage() {
               setSearchQuery("");
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="flex items-center gap-2 sm:gap-3 text-left group cursor-pointer"
+            className="flex items-center gap-1.5 sm:gap-2.5 text-left group cursor-pointer shrink-0"
+            title="나드리 AI 홈으로"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm sm:text-lg shadow-md shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
-              A
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white text-base sm:text-lg shadow-sm shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
+              🎨
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-black text-base sm:text-lg tracking-tight text-slate-900 leading-tight">
-                  부울경 아트·전시
+              <div className="flex items-center gap-1">
+                <span className="font-black text-sm sm:text-base md:text-lg tracking-tight text-slate-900 leading-none whitespace-nowrap">
+                  나드리 AI
                 </span>
-                <span className="hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
-                  art-buk
+                <span className="hidden md:inline-block text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">
+                  부울경
                 </span>
               </div>
-              <p className="text-[10px] sm:text-[11px] text-slate-500 leading-none mt-0.5">
-                <span className="sm:hidden text-indigo-600 font-semibold">art-buk</span>
-                <span className="hidden sm:inline">부산 · 울산 · 경남 문화예술 나들이 포털</span>
+              <p className="text-[10px] text-slate-400 leading-none mt-0.5 whitespace-nowrap hidden sm:block">
+                부산 · 울산 · 경남 문화 나들이
               </p>
             </div>
           </button>
 
-          {/* 우측 네비게이션 메뉴 버튼 */}
-          <nav className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold shrink-0">
+          {/* 우측 네비게이션 메뉴 버튼 (모바일 가로 스크롤 대응) */}
+          <nav className="flex items-center gap-1 sm:gap-2 text-xs font-semibold overflow-x-auto no-scrollbar shrink-0 py-0.5">
             <button
               type="button"
               onClick={() => {
@@ -340,9 +340,9 @@ export default function HomePage() {
                 const section = document.getElementById("exhibitions-list-section");
                 if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-2.5 sm:px-3.5 py-1.5 text-indigo-600 font-bold bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap"
+              className="px-2.5 sm:px-3 py-1.5 text-indigo-600 font-bold bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap shrink-0"
             >
-              <span>전시 둘러보기</span>
+              <span>전시</span>
             </button>
             <button
               type="button"
@@ -350,11 +350,11 @@ export default function HomePage() {
                 const marketSec = document.getElementById("market-section");
                 if (marketSec) marketSec.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-2.5 sm:px-3.5 py-1.5 text-amber-900 hover:text-amber-950 font-bold bg-amber-100/90 hover:bg-amber-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1.5 border border-amber-300"
+              className="px-2.5 sm:px-3 py-1.5 text-amber-900 hover:text-amber-950 font-bold bg-amber-100/90 hover:bg-amber-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1 border border-amber-300 shrink-0"
               title="부울경 5일장 & 전통시장 장날 검색"
             >
               <span>🧺</span>
-              <span>5일장·장날</span>
+              <span>5일장</span>
               <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>
             </button>
             <button
@@ -363,7 +363,7 @@ export default function HomePage() {
                 const libSec = document.getElementById("library-section");
                 if (libSec) libSec.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-2.5 sm:px-3.5 py-1.5 text-emerald-900 hover:text-emerald-950 font-bold bg-emerald-100/90 hover:bg-emerald-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1.5 border border-emerald-300"
+              className="px-2.5 sm:px-3 py-1.5 text-emerald-900 hover:text-emerald-950 font-bold bg-emerald-100/90 hover:bg-emerald-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1 border border-emerald-300 shrink-0"
               title="부울경 대표 도서관 & 쌈지 작은도서관 탐방"
             >
               <span>📚</span>
@@ -371,26 +371,26 @@ export default function HomePage() {
             </button>
             <Link
               href="/blog"
-              className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
+              className="px-2.5 sm:px-3 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap shrink-0 hidden xs:inline-block"
             >
-              <span>전시 블로그</span>
+              <span>블로그</span>
             </Link>
             <Link
               href="/intro"
-              className="px-2.5 sm:px-3 py-1.5 text-indigo-900 font-extrabold bg-gradient-to-r from-violet-100 to-indigo-100 hover:from-violet-200 hover:to-indigo-200 rounded-xl transition-all whitespace-nowrap flex items-center gap-1 border border-indigo-300 shadow-2xs"
+              className="px-2.5 sm:px-3 py-1.5 text-indigo-900 font-extrabold bg-gradient-to-r from-violet-100 to-indigo-100 hover:from-violet-200 hover:to-indigo-200 rounded-xl transition-all whitespace-nowrap flex items-center gap-1 border border-indigo-300 shadow-2xs shrink-0"
               title="나드리AI 1장 소개서 & 지인 피드백"
             >
               <span>🌟</span>
-              <span className="hidden sm:inline">서비스 소개</span>
-              <span className="sm:hidden">소개</span>
+              <span>소개</span>
             </Link>
-            <div className="hidden lg:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+            <div className="hidden lg:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              실시간 연동 완료
+              실시간 연동
             </div>
           </nav>
         </div>
       </header>
+
 
       {/* 2. Hero 섹션 */}
       <section className="relative overflow-hidden text-white py-14 sm:py-16">
