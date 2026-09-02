@@ -157,14 +157,22 @@ export default function IntroPage() {
           </p>
 
           {/* 겸손하고 정중한 지인 피드백 요청 안내 박스 */}
-          <div className="max-w-2xl mx-auto bg-indigo-950/70 border border-indigo-500/30 rounded-2xl p-3.5 sm:p-4 text-xs sm:text-sm text-indigo-200 leading-relaxed mb-6 break-keep shadow-inner text-left">
+          <div className="max-w-2xl mx-auto bg-indigo-950/70 border border-indigo-500/30 rounded-2xl p-4 sm:p-5 text-xs sm:text-sm text-indigo-200 leading-relaxed mb-6 break-keep shadow-inner text-left">
             <div className="flex items-start gap-2.5">
               <span className="text-base shrink-0 mt-0.5">💬</span>
-              <div>
-                <strong className="text-white font-bold block mb-0.5">방문자 및 지인 여러분께 드리는 말씀</strong>
-                <span>
-                  아직 처음 선보이는 서비스라 약간 부족하거나 보완할 점이 있을 수 있습니다. 사이트를 둘러보시며 <strong className="text-amber-300 font-bold">수정할 점, 보완할 점, 추가하고 싶은 기능</strong>을 아낌없이 편하게 지적해 주시면 적극 반영하여 더 완성도 높은 서비스로 가꾸어 가겠습니다! 🙏
-                </span>
+              <div className="space-y-1.5">
+                <strong className="text-white font-bold block text-sm sm:text-base tracking-tight">
+                  방문자 및 지인 여러분께 드리는 말씀
+                </strong>
+                <p className="text-slate-200 leading-relaxed">
+                  아직 처음 선보이는 서비스라 약간 부족하거나 보완할 점이 있을 수 있습니다. 사이트를 둘러보시며,
+                </p>
+                <p className="text-amber-200/95 leading-relaxed pt-0.5">
+                  <strong className="text-amber-300 font-bold underline underline-offset-4 decoration-amber-400/50">
+                    수정할 점, 보완할 점, 추가하고 싶은 기능
+                  </strong>
+                  을 아낌없이 편하게 지적해 주시면 적극 반영하여 더 완성도 높은 서비스로 가꾸어 가겠습니다! 🙏
+                </p>
               </div>
             </div>
           </div>
