@@ -375,6 +375,15 @@ export default function HomePage() {
             >
               <span>전시 블로그</span>
             </Link>
+            <Link
+              href="/intro"
+              className="px-2.5 sm:px-3 py-1.5 text-indigo-900 font-extrabold bg-gradient-to-r from-violet-100 to-indigo-100 hover:from-violet-200 hover:to-indigo-200 rounded-xl transition-all whitespace-nowrap flex items-center gap-1 border border-indigo-300 shadow-2xs"
+              title="나드리AI 1장 소개서 & 지인 피드백"
+            >
+              <span>🌟</span>
+              <span className="hidden sm:inline">서비스 소개</span>
+              <span className="sm:hidden">소개</span>
+            </Link>
             <div className="hidden lg:flex items-center gap-1.5 text-xs text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               실시간 연동 완료
