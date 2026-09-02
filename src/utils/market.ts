@@ -105,13 +105,18 @@ export function getMarketStatus(market: TraditionalMarket, targetDate?: Date): M
   };
 }
 
-/**
- * 전시장 정보(region, subRegion)를 바탕으로 가장 적합한 인근 전통시장을 찾습니다.
- */
 export function getMarketForExhibition(region: string, subRegion?: string): TraditionalMarket | undefined {
   if (subRegion) {
+    const cleanSub = subRegion.replace(/시|군|구/g, "").trim();
+    // 1. 정확한 행정구역명 우선 일치 (예: 동구 vs 동래구 구분)
+    const exact = TRADITIONAL_MARKETS.find(
+      m => m.region === region && m.subRegion.replace(/시|군|구/g, "").trim() === cleanSub
+    );
+    if (exact) return exact;
+
+    // 2. 부분 일치 검색
     const matched = TRADITIONAL_MARKETS.find(
-      m => m.region === region && m.subRegion.includes(subRegion.replace(/시|군|구/g, ""))
+      m => m.region === region && m.subRegion.includes(cleanSub)
     );
     if (matched) return matched;
   }
