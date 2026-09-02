@@ -1,11 +1,22 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 interface QuestionItem {
   id: string;
   question: string;
   answer: string;
+}
+
+interface ReferenceItem {
+  id?: string;
+  title: string;
+  url: string;
+  type?: string;
+  category?: string;
+  region?: string;
+  subRegion?: string;
 }
 
 interface ChatData {
@@ -18,7 +29,9 @@ interface Message {
   sender: "bot" | "user";
   text: string;
   timestamp: string;
+  references?: ReferenceItem[];
 }
+
 
 const DEFAULT_CHAT_DATA: ChatData = {
   welcomeMessage:
@@ -117,6 +130,7 @@ export default function FloatingChatbot() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const searchIndexRef = useRef<any[]>([]);
 
   // 1. Ensure userId is synced to localStorage on mount
   useEffect(() => {
@@ -129,7 +143,7 @@ export default function FloatingChatbot() {
     }
   }, [userId]);
 
-  // 2. Load chat-data.json on mount
+  // 2. Load chat-data.json and search-index.json on mount
   useEffect(() => {
     fetch("/data/chat-data.json")
       .then((res) => {
@@ -144,6 +158,15 @@ export default function FloatingChatbot() {
       .catch(() => {
         setChatData(DEFAULT_CHAT_DATA);
       });
+
+    fetch("/data/search-index.json")
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          searchIndexRef.current = data;
+        }
+      })
+      .catch(() => {});
   }, []);
 
   // 3. Auto-scroll to bottom
@@ -329,6 +352,7 @@ export default function FloatingChatbot() {
       if (response.ok) {
         const data = await response.json();
         const replyText = data?.reply || data?.response;
+        const references: ReferenceItem[] = data?.references || [];
 
         if (replyText) {
           setIsTyping(false);
@@ -337,6 +361,7 @@ export default function FloatingChatbot() {
             sender: "bot",
             text: replyText,
             timestamp: formatCurrentTime(),
+            references: references.length > 0 ? references : undefined,
           };
           setMessages((prev) => [...prev, botMessage]);
 
@@ -353,31 +378,103 @@ export default function FloatingChatbot() {
 
       throw new Error("서버 응답 오류");
     } catch (error) {
-      console.warn("API 호출 실패, 로컬 데이터 매칭:", error);
+      console.warn("API 호출 실패, 종합 로컬 데이터 스마트 RAG 매칭:", error);
 
-      const matched = chatData.questions.find(
-        (q) =>
-          q.question.toLowerCase().includes(query.toLowerCase()) ||
-          (query.includes("부산") && q.question.includes("부산")) ||
-          (query.includes("울산") && q.question.includes("울산")) ||
-          (query.includes("경남") && q.question.includes("가을")) ||
-          (query.includes("가격") && q.question.includes("가성비")) ||
-          (query.includes("블로그") && q.question.includes("블로그"))
-      );
+      // 로컬 searchIndex 기반 스마트 검색
+      const indexList = searchIndexRef.current || [];
+      const rawKeywords = query
+        .toLowerCase()
+        .replace(/[^\w\sㄱ-ㅎ가-힣]/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length >= 2);
+
+      let matchedReferences: ReferenceItem[] = [];
+      let generatedReply = "";
+
+      if (indexList.length > 0 && rawKeywords.length > 0) {
+        const isMarketQuery = /장날|5일장|오일장|시장|재래시장|먹거리|국수|국밥|수구레|통닭|꼼장어|꿀빵|대게/i.test(query);
+        const isLibQuery = /도서관|작은도서관|쌈지|숲속도서관|어린이도서관|북카페|지혜의바다|책|아이|가족/i.test(query);
+
+        const scored = indexList.map((entry) => {
+          let score = 0;
+          const type = entry.type || "";
+          const title = (entry.title || "").toLowerCase();
+          const content = (entry.content || "").toLowerCase();
+          const region = (entry.region || "").toLowerCase();
+          const subRegion = (entry.subRegion || "").toLowerCase();
+          const venue = (entry.venue || "").toLowerCase();
+
+          if (isMarketQuery && type === "market") score += 15;
+          if (isLibQuery && type === "library") score += 15;
+
+          for (const kw of rawKeywords) {
+            if (title.includes(kw)) score += 8;
+            if (region.includes(kw) || subRegion.includes(kw)) score += 7;
+            if (venue.includes(kw)) score += 6;
+            if (content.includes(kw)) score += 2;
+          }
+          return { entry, score };
+        });
+
+        const topMatches = scored
+          .filter((item) => item.score > 0)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 3)
+          .map((item) => item.entry);
+
+        if (topMatches.length > 0) {
+          matchedReferences = topMatches.map((m) => ({
+            id: m.id,
+            title: m.title,
+            url: m.url,
+            type: m.type,
+            category: m.category,
+            region: m.region,
+            subRegion: m.subRegion,
+          }));
+
+          const first = topMatches[0];
+          if (first.type === "market") {
+            generatedReply = `문의하신 전통시장 & 5일장 정보입니다. 🧺\n'${first.title}'은(는) ${first.summary || first.content.slice(0, 150)} 대표 먹거리와 상세 일정은 아래 바로가기에서 확인해 보세요!`;
+          } else if (first.type === "library") {
+            generatedReply = `아이와 함께 가기 좋은 도서관 정보입니다. 📚\n'${first.title}'은(는) ${first.summary || first.content.slice(0, 150)} 편안한 가족 나들이 쉼터로 추천합니다!`;
+          } else if (first.type === "exhibition") {
+            generatedReply = `추천 전시 정보입니다. 🎨\n'${first.title}' (${first.venue || first.region}) 전시가 진행 중입니다. 관람료: ${first.price || "상세 확인"}, 일정: ${first.period || "상시"}.`;
+          } else {
+            generatedReply = `관련 도슨트 리뷰 및 나들이 가이드입니다. ✍️\n'${first.title}'에 대한 생생한 작품 감상 포인트와 맛집 코스를 확인해 보세요!`;
+          }
+        }
+      }
+
+      if (!generatedReply) {
+        const matchedFaq = chatData.questions.find(
+          (q) =>
+            q.question.toLowerCase().includes(query.toLowerCase()) ||
+            (query.includes("부산") && q.question.includes("부산")) ||
+            (query.includes("울산") && q.question.includes("울산")) ||
+            (query.includes("경남") && q.question.includes("가을")) ||
+            (query.includes("장날") && q.question.includes("5일장")) ||
+            (query.includes("도서관") && q.question.includes("도서관"))
+        );
+
+        generatedReply = matchedFaq
+          ? matchedFaq.answer
+          : "질문해 주신 내용에 맞춰 부울경 전시, 5일장 장날, 복합 도서관 정보를 실시간으로 연결해 드립니다. 아래 메뉴나 바로가기 링크를 통해 상세 정보를 확인해 보세요! 😊";
+      }
 
       setIsTyping(false);
 
       const botMessage: Message = {
         id: botMsgId,
         sender: "bot",
-        text: matched
-          ? matched.answer
-          : "죄송합니다. 서버와의 연결에 실패했습니다. '상담원 연결하기'를 이용해 주시거나 잠시 후 다시 질문해 주세요.",
+        text: generatedReply,
         timestamp: formatCurrentTime(),
+        references: matchedReferences.length > 0 ? matchedReferences : undefined,
       };
       setMessages((prev) => [...prev, botMessage]);
     }
   };
+
 
   // 10. Handle Copy to Clipboard with 1.5s Green Check Animation
   const handleCopyText = (text: string, msgId: string) => {
@@ -537,6 +634,77 @@ export default function FloatingChatbot() {
                     }`}
                   >
                     <div className="break-words">{msg.text}</div>
+
+                    {/* Bot Message Connected Data Action Cards */}
+                    {isBot && msg.references && msg.references.length > 0 && (
+                      <div className="mt-3 pt-2.5 border-t border-slate-100 flex flex-col gap-1.5">
+                        <span className="text-[11px] font-extrabold text-indigo-900 flex items-center gap-1">
+                          <span>🔗</span>
+                          <span>관련 사이트 데이터 바로가기:</span>
+                        </span>
+                        <div className="flex flex-col gap-1">
+                          {msg.references.map((ref, rIdx) => {
+                            const isHashLink = ref.url.startsWith("/#");
+                            const badgeIcon =
+                              ref.type === "market"
+                                ? "🧺"
+                                : ref.type === "library"
+                                ? "📚"
+                                : ref.type === "article"
+                                ? "✍️"
+                                : "🎨";
+
+                            const badgeLabel =
+                              ref.type === "market"
+                                ? "5일장·전통시장"
+                                : ref.type === "library"
+                                ? "도서관"
+                                : ref.type === "article"
+                                ? "AI 도슨트"
+                                : "전시·미술관";
+
+                            const badgeColor =
+                              ref.type === "market"
+                                ? "bg-amber-100 text-amber-900 border-amber-200"
+                                : ref.type === "library"
+                                ? "bg-emerald-100 text-emerald-900 border-emerald-200"
+                                : ref.type === "article"
+                                ? "bg-violet-100 text-violet-900 border-violet-200"
+                                : "bg-indigo-100 text-indigo-900 border-indigo-200";
+
+                            return (
+                              <a
+                                key={rIdx}
+                                href={ref.url}
+                                onClick={(e) => {
+                                  if (isHashLink) {
+                                    e.preventDefault();
+                                    const targetId = ref.url.replace("/#", "");
+                                    const el = document.getElementById(targetId);
+                                    if (el) {
+                                      el.scrollIntoView({ behavior: "smooth", block: "start" });
+                                    }
+                                  }
+                                }}
+                                className="flex items-center justify-between p-2 rounded-xl bg-slate-50 hover:bg-indigo-50/80 border border-slate-200/80 hover:border-indigo-300 text-slate-800 hover:text-indigo-950 transition-all text-xs font-semibold group cursor-pointer shadow-2xs"
+                              >
+                                <div className="flex items-center gap-1.5 truncate mr-2">
+                                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md border ${badgeColor} shrink-0`}>
+                                    {badgeIcon} {badgeLabel}
+                                  </span>
+                                  <span className="truncate text-slate-900 group-hover:text-indigo-900 font-bold">
+                                    {ref.title.replace(/^\[.*?\]\s*/, "")}
+                                  </span>
+                                </div>
+                                <span className="text-[11px] font-bold text-indigo-600 group-hover:translate-x-0.5 transition-transform shrink-0">
+                                  이동 →
+                                </span>
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
 
                     {/* Bot Message Bottom Copy Icon */}
                     {isBot && (
