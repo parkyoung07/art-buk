@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import KakaoSubscribeModal from '@/components/KakaoSubscribeModal';
 
 export default function IntroPage() {
   const [rating, setRating] = useState<number>(5);
@@ -15,6 +16,7 @@ export default function IntroPage() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [copiedType, setCopiedType] = useState<string | null>(null);
+  const [isKakaoModalOpen, setIsKakaoModalOpen] = useState(false);
 
   const toggleFeature = (feature: string) => {
     if (selectedFeatures.includes(feature)) {
@@ -29,7 +31,7 @@ export default function IntroPage() {
     if (type === 'general') {
       text = `[🎨 나드리 AI - 부울경 문화·나들이 포털]\n\n"이번 주말 어디 갈까?" 고민 끝!\n부산·울산·경남 최신 미술관 전시부터 70년 전통 5일장 먹거리, 아이와 함께 가기 좋은 숲속 쌈지 도서관까지 단 하나의 사이트에서 만나보세요.\n\n✨ 매일 아침·저녁 2회 AI 도슨트 작품 해설 & 맛집 코스\n🧺 오늘 열리는 부울경 5일장 실시간 검색\n📚 아이와 힐링하는 복합&쌈지 도서관 22선\n💬 24시간 실시간 AI 문화비서 챗봇\n💌 주 3회 (월·수·금) 무료 문화 소식지\n\n👉 지금 바로 구경하기: https://nadriai.com`;
     } else if (type === 'feedback') {
-      text = `[📢 나드리 AI - 지인 피드백 부탁드립니다!]\n\n안녕하세요! 이번에 부울경 전시, 전통 5일장, 쌈지 도서관을 한눈에 찾아주는 문화 나들이 포털 '나드리 AI'를 준비했습니다.\n\n직접 들어와서 둘러보시고, 좋았던 점이나 개선/보완할 점에 대해 솔직한 의견을 남겨주시면 서비스 발전에 큰 도움이 됩니다! 🙏\n\n👉 사이트 둘러보기 및 의견 남기기: https://nadriai.com/intro`;
+      text = `[📢 나드리 AI - 지인 피드백 부탁드립니다!]\n\n안녕하세요! 이번에 부울경 전시, 전통 5일장, 쌈지 도서관을 한눈에 찾아주는 문화 나들이 포털 '나드리 AI'를 준비했습니다.\n\n처음 선보이는 서비스라 부족한 점이 있을 수 있으니, 둘러보시고 수정할 점이나 보완할 점, 추가하고 싶은 점을 편하게 남겨주시면 큰 도움이 됩니다! 🙏\n\n👉 사이트 둘러보기 및 의견 남기기: https://nadriai.com/intro`;
     } else {
       text = 'https://nadriai.com';
     }
@@ -96,17 +98,32 @@ export default function IntroPage() {
             </div>
           </Link>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            {/* 카카오톡 알림 신청 콤팩트 버튼 */}
+            <button
+              type="button"
+              onClick={() => setIsKakaoModalOpen(true)}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-[#FEE500] hover:bg-[#ebd300] active:scale-95 text-[#191919] text-xs font-black transition-all cursor-pointer shadow-xs"
+              title="카카오톡 알림 신청하기"
+            >
+              <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3C6.48 3 2 6.58 2 11c0 2.82 1.83 5.3 4.6 6.74-.2.74-.74 2.68-.85 3.1-.14.5.18.5.38.36.26-.18 3.56-2.42 4.14-2.82.57.08 1.15.12 1.73.12 5.52 0 10-3.58 10-8s-4.48-8-10-8z" />
+              </svg>
+              <span className="hidden sm:inline">카톡 알림</span>
+              <span className="sm:hidden">카톡</span>
+            </button>
+
             <button
               onClick={() => handleCopyPromo('feedback')}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition-colors cursor-pointer"
             >
               <span>📢</span>
-              <span className="hidden sm:inline">홍보문구 복사</span>
+              <span className="hidden md:inline">홍보문구 복사</span>
             </button>
+
             <Link
               href="/"
-              className="inline-flex items-center gap-1 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-xs sm:text-sm font-bold shadow-md shadow-indigo-600/30 transition-all hover:scale-102"
+              className="inline-flex items-center gap-1 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-xs sm:text-sm font-bold shadow-md shadow-indigo-600/30 transition-all hover:scale-102"
             >
               <span>포털 둘러보기</span>
               <span>→</span>
@@ -115,18 +132,19 @@ export default function IntroPage() {
         </div>
       </header>
 
-      {/* Hero 소개 섹션 (자간, 행간, 정렬 최적화) */}
-      <section className="relative overflow-hidden pt-10 sm:pt-16 pb-12 sm:pb-16 px-4 sm:px-6">
+      {/* Hero 소개 섹션 (글자 크기 20% 축소 & 정중한 피드백 요청 안내) */}
+      <section className="relative overflow-hidden pt-8 sm:pt-14 pb-10 sm:pb-14 px-4 sm:px-6">
         {/* 은은한 배경 오로라 */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[320px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[300px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/90 border border-indigo-500/40 text-indigo-300 text-xs font-bold mb-5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/90 border border-indigo-500/40 text-indigo-300 text-xs font-bold mb-4 shadow-inner">
             <span>✨</span>
             <span>부울경 1등 스마트 문화 나들이 포털 공식 소개서</span>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-snug sm:leading-tight mb-4 break-keep">
+          {/* 메인 헤드라인 (기존 대비 약 20% 축소하여 정갈하고 세련된 비율) */}
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-snug sm:leading-snug mb-3.5 break-keep">
             문화와 예술이 흐르는 부울경,
             <br />
             <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
@@ -134,37 +152,57 @@ export default function IntroPage() {
             </span>
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto mb-8 break-keep">
+          <p className="text-xs sm:text-sm md:text-base text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto mb-4 break-keep">
             <strong className="font-bold text-white">나드리 AI (nadriai.com)</strong>는 부울경 최신 미술관 전시부터 70년 전통 5일장 먹거리, 아이와 함께하는 숲속 쌈지 도서관까지 한곳에서 찾아주는 <strong className="font-bold text-indigo-300">올인원 스마트 문화 나들이 포털</strong>입니다.
           </p>
 
+          {/* 겸손하고 정중한 지인 피드백 요청 안내 박스 */}
+          <div className="max-w-2xl mx-auto bg-indigo-950/70 border border-indigo-500/30 rounded-2xl p-3.5 sm:p-4 text-xs sm:text-sm text-indigo-200 leading-relaxed mb-6 break-keep shadow-inner text-left">
+            <div className="flex items-start gap-2.5">
+              <span className="text-base shrink-0 mt-0.5">💬</span>
+              <div>
+                <strong className="text-white font-bold block mb-0.5">방문자 및 지인 여러분께 드리는 말씀</strong>
+                <span>
+                  아직 처음 선보이는 서비스라 약간 부족하거나 보완할 점이 있을 수 있습니다. 사이트를 둘러보시며 <strong className="text-amber-300 font-bold">수정할 점, 보완할 점, 추가하고 싶은 기능</strong>을 아낌없이 편하게 지적해 주시면 적극 반영하여 더 완성도 높은 서비스로 가꾸어 가겠습니다! 🙏
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* 주요 액션 버튼 그룹 */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3.5 max-w-md mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 max-w-lg mx-auto">
             <Link
               href="/"
-              className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-indigo-600/30 transition-all hover:scale-102"
+              className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold text-xs sm:text-sm shadow-xl shadow-indigo-600/30 transition-all hover:scale-102"
             >
-              <span>🚀 지금 바로 포털 체험하기</span>
+              <span>🚀 포털 바로 체험하기</span>
               <span>→</span>
             </Link>
             <a
               href="#feedback-section"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-sm sm:text-base border border-slate-700 transition-colors"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm border border-slate-700 transition-colors"
             >
               <span>📋 장·단점 피드백 남기기</span>
               <span>↓</span>
             </a>
+            <button
+              type="button"
+              onClick={() => setIsKakaoModalOpen(true)}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-2xl bg-[#FEE500] hover:bg-[#ebd300] active:scale-95 text-[#191919] font-black text-xs sm:text-sm transition-all shadow-md cursor-pointer"
+            >
+              <span>💬 카톡 알림 신청</span>
+            </button>
           </div>
         </div>
       </section>
 
       {/* 5대 핵심 가치 & 차별점 카드 그리드 */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-xl sm:text-3xl font-black text-white mb-2 sm:mb-3 tracking-tight break-keep">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+        <div className="text-center mb-6 sm:mb-10">
+          <h2 className="text-lg sm:text-2xl font-black text-white mb-2 tracking-tight break-keep">
             💡 왜 <span className="text-indigo-400">나드리 AI</span>를 선택해야 할까요?
           </h2>
-          <p className="text-xs sm:text-base text-slate-400 leading-relaxed break-keep">
+          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed break-keep">
             기존의 복잡한 검색 없이, 부울경 가족과 연인들을 위한 5가지 특화 기능을 한곳에 정갈하게 담았습니다.
           </p>
         </div>
@@ -283,22 +321,30 @@ export default function IntroPage() {
                 카카오톡 및 알림 신청을 통해 매주 월·수·금 아침 8시, 엄선된 부울경의 감성 전시와 5일장 소식을 무료로 배달해 드립니다.
               </p>
             </div>
-            <div className="flex flex-wrap gap-1.5 text-[11px] font-bold text-yellow-300 pt-2 border-t border-slate-700/60">
-              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💌 월·수·금 정기 브리핑</span>
-              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💬 카카오톡 알림톡</span>
-              <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">🎉 100% 무료</span>
+            <div className="flex flex-wrap items-center justify-between gap-1.5 pt-2 border-t border-slate-700/60">
+              <div className="flex flex-wrap gap-1 text-[11px] font-bold text-yellow-300">
+                <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">💌 월·수·금 브리핑</span>
+                <span className="px-2 py-0.5 rounded-md bg-yellow-950/60 border border-yellow-800/50">🎉 무료</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsKakaoModalOpen(true)}
+                className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-[#FEE500] hover:bg-[#ebd300] text-[#191919] transition-colors cursor-pointer"
+              >
+                신청하기 ↗
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* 홍보 문구 원클릭 복사 코너 (지인 카톡/SNS 전송용) */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <div className="bg-gradient-to-br from-indigo-950/90 via-slate-900 to-purple-950/80 rounded-3xl p-5 sm:p-8 border border-indigo-500/30 shadow-2xl">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        <div className="bg-gradient-to-br from-indigo-950/90 via-slate-900 to-purple-950/80 rounded-3xl p-5 sm:p-7 border border-indigo-500/30 shadow-2xl">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-2xl sm:text-3xl shrink-0">📢</span>
             <div>
-              <h2 className="text-lg sm:text-2xl font-black text-white tracking-tight leading-snug break-keep">
+              <h2 className="text-base sm:text-xl font-black text-white tracking-tight leading-snug break-keep">
                 지인들에게 1초 만에 사이트 소개해 주기
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mt-0.5 break-keep">
@@ -307,7 +353,7 @@ export default function IntroPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4 mt-4">
             {/* 문구 1: 나들이 추천형 */}
             <div className="bg-slate-900/90 rounded-2xl p-4 sm:p-5 border border-slate-700/80 flex flex-col justify-between">
               <div>
@@ -339,7 +385,7 @@ export default function IntroPage() {
                 </span>
                 <p className="text-xs text-slate-300 leading-relaxed font-mono whitespace-pre-wrap mb-3.5 break-keep bg-slate-950/60 p-3 rounded-xl border border-slate-800">
                   {`[📢 나드리 AI - 피드백 부탁드립니다!]
-안녕하세요! 부울경 전시, 5일장, 도서관을 찾아주는 '나드리 AI' 포털을 오픈했습니다. 둘러보시고 좋았던 점이나 보완할 점을 편하게 남겨주세요! 🙏
+안녕하세요! 부울경 전시, 5일장, 도서관을 찾아주는 '나드리 AI' 포털을 오픈했습니다. 처음이라 부족한 점이 있을 수 있으니 편하게 의견 남겨주세요! 🙏
 
 👉 https://nadriai.com/intro`}
                 </p>
@@ -357,16 +403,16 @@ export default function IntroPage() {
       </section>
 
       {/* 지인/방문객 장·단점 피드백 설문 접수 폼 */}
-      <section id="feedback-section" className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 scroll-mt-20">
+      <section id="feedback-section" className="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10 scroll-mt-20">
         <div className="bg-slate-800/90 rounded-3xl p-5 sm:p-8 border border-slate-700 shadow-2xl">
           <div className="text-center mb-6 sm:mb-8">
             <span className="text-3xl mb-1.5 inline-block">📝</span>
-            <h2 className="text-xl sm:text-3xl font-black text-white mb-2 tracking-tight break-keep">
+            <h2 className="text-lg sm:text-2xl font-black text-white mb-2 tracking-tight break-keep">
               여러분의 솔직한 피드백을 들려주세요!
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg mx-auto break-keep">
-              둘러보시며 <strong>좋았던 점, 아쉬웠던 점, 추가되었으면 하는 기능</strong>을 남겨주시면
-              더 멋진 서비스로 보완해 나가겠습니다.
+              이용해 보시며 <strong>수정할 점, 보완할 점, 추가되었으면 하는 기능</strong>을 남겨주시면
+              더 멋진 서비스로 발전시켜 나가겠습니다.
             </p>
           </div>
 
@@ -468,14 +514,14 @@ export default function IntroPage() {
               {/* 3. 보완할 점 / 아이디어 입력 */}
               <div>
                 <label className="block text-xs sm:text-sm font-bold text-slate-200 mb-2 leading-normal break-keep">
-                  3. 보완해야 할 점이나 추가되었으면 하는 기능이 있다면 자유롭게 적어주세요! (필수)
+                  3. 보완해야 할 점, 수정할 점, 추가되었으면 하는 기능 (필수)
                 </label>
                 <textarea
                   required
                   rows={4}
                   value={feedbackText}
                   onChange={(e) => setFeedbackText(e.target.value)}
-                  placeholder="예: 특정 지역 전시가 더 추가되면 좋겠어요 / 5일장 주차장 정보도 있으면 좋겠어요 / 챗봇 답변이 매우 유용했습니다 등"
+                  placeholder="예: 아직 처음이라 이런 점이 아쉬워요 / 특정 지역 전시가 더 추가되면 좋겠어요 / 5일장 주차장 정보가 있으면 좋겠어요 / 챗봇 답변이 유용했습니다 등 솔직하게 적어주세요!"
                   className="w-full px-3.5 py-3 rounded-2xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 text-xs sm:text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                 />
               </div>
@@ -514,7 +560,7 @@ export default function IntroPage() {
         </div>
       </section>
 
-      {/* 하단 고정 플로팅 바 (모바일/PC 여백 및 정렬 최적화) */}
+      {/* 하단 고정 플로팅 바 */}
       <div className="fixed bottom-0 left-0 right-0 z-30 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-2.5 sm:p-3.5">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2 sm:gap-3">
           <div className="hidden sm:flex items-center gap-2 text-xs text-slate-400">
@@ -523,6 +569,13 @@ export default function IntroPage() {
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+            <button
+              type="button"
+              onClick={() => setIsKakaoModalOpen(true)}
+              className="px-3 py-2 rounded-xl bg-[#FEE500] hover:bg-[#ebd300] active:scale-95 text-[#191919] text-xs font-black transition-all shrink-0 cursor-pointer shadow-xs whitespace-nowrap flex items-center gap-1"
+            >
+              <span>💬 카톡 알림</span>
+            </button>
             <button
               onClick={() => handleCopyPromo('link')}
               className="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition-colors shrink-0 cursor-pointer whitespace-nowrap"
@@ -533,12 +586,18 @@ export default function IntroPage() {
               href="/"
               className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-xs sm:text-sm font-extrabold shadow-md shadow-indigo-600/30 transition-all whitespace-nowrap"
             >
-              <span>🚀 본 포털 바로가기</span>
+              <span>🚀 본 포털 가기</span>
               <span>→</span>
             </Link>
           </div>
         </div>
       </div>
+
+      {/* 카카오톡 알림 신청 모달 */}
+      <KakaoSubscribeModal
+        isOpen={isKakaoModalOpen}
+        onClose={() => setIsKakaoModalOpen(false)}
+      />
     </div>
   );
 }
