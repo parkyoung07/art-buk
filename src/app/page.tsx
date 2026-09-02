@@ -292,7 +292,7 @@ export default function HomePage() {
 
       {/* 1. 상단 네비게이션 헤더 */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-1 sm:gap-2">
+        <div className="max-w-7xl mx-auto px-1.5 sm:px-6 lg:px-8 h-13 sm:h-16 flex items-center justify-between gap-1 sm:gap-2">
           {/* 좌측 브랜드 로고 */}
           <button
             type="button"
@@ -308,7 +308,7 @@ export default function HomePage() {
             className="flex items-center gap-1 sm:gap-2 text-left group cursor-pointer shrink-0"
             title="나드리 AI 홈으로"
           >
-            <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white text-xs sm:text-lg shadow-sm shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
+            <div className="w-6.5 h-6.5 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white text-xs sm:text-lg shadow-sm shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
               🎨
             </div>
             <div className="flex flex-col">
@@ -326,8 +326,8 @@ export default function HomePage() {
             </div>
           </button>
 
-          {/* 우측 네비게이션 메뉴 버튼 (전시, 5일장, 도서관, 블로그, 소개 5개 전체 모바일 표시) */}
-          <nav className="flex items-center gap-1 sm:gap-1.5 text-xs font-semibold shrink-0 py-0.5 overflow-x-auto no-scrollbar">
+          {/* 우측 네비게이션 메뉴 버튼 (5개 버튼 모바일 완벽 1줄 노출) */}
+          <nav className="flex items-center gap-0.5 sm:gap-1.5 text-xs font-semibold shrink-0 py-0.5">
             {/* 1. 전시 */}
             <button
               type="button"
@@ -341,10 +341,10 @@ export default function HomePage() {
                 const section = document.getElementById("exhibitions-list-section");
                 if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 text-indigo-700 font-extrabold bg-indigo-50 hover:bg-indigo-100 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-indigo-200 shrink-0"
+              className="px-1.5 sm:px-2.5 py-1 sm:py-1.5 text-indigo-700 font-extrabold bg-indigo-50 hover:bg-indigo-100 rounded-md sm:rounded-xl text-[10.5px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-indigo-200 shrink-0"
               title="부울경 전시 목록"
             >
-              <span>🖼️</span>
+              <span className="text-[11px] sm:text-xs">🖼️</span>
               <span>전시</span>
             </button>
 
@@ -355,10 +355,10 @@ export default function HomePage() {
                 const marketSec = document.getElementById("market-section");
                 if (marketSec) marketSec.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 text-amber-900 hover:text-amber-950 font-bold bg-amber-100/90 hover:bg-amber-200 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-amber-300 shrink-0"
+              className="px-1.5 sm:px-2.5 py-1 sm:py-1.5 text-amber-900 hover:text-amber-950 font-bold bg-amber-100/90 hover:bg-amber-200 rounded-md sm:rounded-xl text-[10.5px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-amber-300 shrink-0"
               title="부울경 5일장 & 전통시장 장날 검색"
             >
-              <span>🧺</span>
+              <span className="text-[11px] sm:text-xs">🧺</span>
               <span>5일장</span>
             </button>
 
@@ -369,30 +369,30 @@ export default function HomePage() {
                 const libSec = document.getElementById("library-section");
                 if (libSec) libSec.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 text-emerald-900 hover:text-emerald-950 font-bold bg-emerald-100/90 hover:bg-emerald-200 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-emerald-300 shrink-0"
+              className="px-1.5 sm:px-2.5 py-1 sm:py-1.5 text-emerald-900 hover:text-emerald-950 font-bold bg-emerald-100/90 hover:bg-emerald-200 rounded-md sm:rounded-xl text-[10.5px] sm:text-xs transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-emerald-300 shrink-0"
               title="부울경 대표 도서관 & 쌈지 작은도서관 탐방"
             >
-              <span>📚</span>
+              <span className="text-[11px] sm:text-xs">📚</span>
               <span>도서관</span>
             </button>
 
-            {/* 4. 블로그 (모바일에서도 완벽 표시) */}
+            {/* 4. 블로그 */}
             <Link
               href="/blog"
-              className="px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 text-slate-800 hover:text-indigo-600 font-bold bg-slate-100/90 hover:bg-slate-200 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition-all whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-slate-300 shadow-2xs shrink-0"
+              className="px-1.5 sm:px-2.5 py-1 sm:py-1.5 text-slate-800 hover:text-indigo-600 font-bold bg-slate-100/90 hover:bg-slate-200 rounded-md sm:rounded-xl text-[10.5px] sm:text-xs transition-all whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-slate-300 shadow-2xs shrink-0"
               title="AI 도슨트 전시 리뷰 & 나들이 블로그"
             >
-              <span>📝</span>
+              <span className="text-[11px] sm:text-xs">📝</span>
               <span>블로그</span>
             </Link>
 
-            {/* 5. 소개 */}
+            {/* 5. 소개 (모바일에서도 완벽하게 끝까지 표시) */}
             <Link
               href="/intro"
-              className="px-1.5 xs:px-2 sm:px-3 py-1 sm:py-1.5 text-indigo-900 font-extrabold bg-gradient-to-r from-violet-100 to-indigo-100 hover:from-violet-200 hover:to-indigo-200 rounded-lg sm:rounded-xl text-[11px] sm:text-xs transition-all whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-indigo-300 shadow-2xs shrink-0"
+              className="px-1.5 sm:px-2.5 py-1 sm:py-1.5 text-indigo-900 font-extrabold bg-gradient-to-r from-violet-100 to-indigo-100 hover:from-violet-200 hover:to-indigo-200 rounded-md sm:rounded-xl text-[10.5px] sm:text-xs transition-all whitespace-nowrap flex items-center gap-0.5 sm:gap-1 border border-indigo-300 shadow-2xs shrink-0"
               title="나드리AI 1장 소개서 & 지인 피드백"
             >
-              <span>🌟</span>
+              <span className="text-[11px] sm:text-xs">🌟</span>
               <span>소개</span>
             </Link>
 
