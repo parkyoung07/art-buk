@@ -159,7 +159,58 @@ function buildSearchIndex() {
     }
   }
 
-  // 4. 디렉토리 생성 및 JSON 파일 출력
+  // 4. 대표 도서관 및 쌈지 작은도서관 데이터 (public/data/libraries.json) 색인화
+  const LIBRARIES_DATA_FILE = path.join(ROOT_DIR, "public", "data", "libraries.json");
+  if (fs.existsSync(LIBRARIES_DATA_FILE)) {
+    try {
+      const libRaw = fs.readFileSync(LIBRARIES_DATA_FILE, "utf-8");
+      const libList = JSON.parse(libRaw);
+
+      for (const lib of libList) {
+        const fullContent = [
+          lib.name,
+          lib.region,
+          lib.subRegion,
+          lib.type,
+          (lib.features || []).join(" "),
+          lib.address,
+          lib.openingHours,
+          lib.closedDays,
+          lib.description,
+          lib.familyTips,
+          (lib.nearbySpots || []).join(" "),
+          "도서관",
+          "작은도서관",
+          "어린이도서관",
+          "북카페",
+          "가족나들이",
+          "아이와함께"
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        indexEntries.push({
+          id: lib.id,
+          type: "library",
+          title: `[도서관] ${lib.name} (${lib.region} ${lib.subRegion})`,
+          url: `/#library-section`,
+          category: `도서관 (${lib.type})`,
+          region: lib.region || "",
+          subRegion: lib.subRegion || "",
+          venue: lib.name,
+          period: lib.openingHours || "상시 운영",
+          price: (lib.features || []).slice(0, 3).join(", "),
+          summary: `${lib.type} - ${lib.description}`,
+          content: fullContent,
+          updatedAt: new Date().toISOString(),
+        });
+      }
+    } catch (err) {
+      console.warn("⚠️ libraries.json 읽기 실패:", err.message);
+    }
+  }
+
+  // 5. 디렉토리 생성 및 JSON 파일 출력
   const outputDataDir = path.dirname(OUTPUT_DATA_FILE);
   if (!fs.existsSync(outputDataDir)) {
     fs.mkdirSync(outputDataDir, { recursive: true });

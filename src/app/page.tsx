@@ -6,6 +6,7 @@ import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import EditorPickSection from "@/components/EditorPickSection";
 import ArtRoadmapSection from "@/components/ArtRoadmapSection";
 import MarketSection from "@/components/MarketSection";
+import LibrarySection from "@/components/LibrarySection";
 import { calculateDDay } from "@/utils/date";
 import rawData from "../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
@@ -356,6 +357,18 @@ export default function HomePage() {
               <span>5일장·장날</span>
               <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>
             </button>
+            <button
+              type="button"
+              onClick={() => {
+                const libSec = document.getElementById("library-section");
+                if (libSec) libSec.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="px-2.5 sm:px-3.5 py-1.5 text-emerald-900 hover:text-emerald-950 font-bold bg-emerald-100/90 hover:bg-emerald-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1.5 border border-emerald-300"
+              title="부울경 대표 도서관 & 쌈지 작은도서관 탐방"
+            >
+              <span>📚</span>
+              <span>도서관</span>
+            </button>
             <Link
               href="/blog"
               className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
@@ -479,7 +492,19 @@ export default function HomePage() {
                 <span>오늘 5일장 장날 검색</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping"></span>
               </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const libSec = document.getElementById("library-section");
+                  if (libSec) libSec.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="px-2.5 py-0.5 rounded-full bg-emerald-500/30 hover:bg-emerald-500/50 border border-emerald-400/60 text-[11px] text-emerald-200 hover:text-white font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs"
+              >
+                <span>📚</span>
+                <span>아이와 도서관 나들이</span>
+              </button>
             </div>
+
 
           </div>
 
@@ -628,6 +653,21 @@ export default function HomePage() {
                 <span>🧺</span>
                 <span>5일장·장날</span>
               </button>
+
+              {/* 도서관 & 작은도서관 바로가기 */}
+              <button
+                type="button"
+                onClick={() => {
+                  const libSec = document.getElementById("library-section");
+                  if (libSec) libSec.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold border transition-all cursor-pointer bg-emerald-50/90 text-emerald-900 border-emerald-300 hover:border-emerald-400 hover:bg-emerald-100 shadow-2xs"
+                title="부울경 대표 도서관 & 쌈지 작은도서관 탐방"
+              >
+                <span>📚</span>
+                <span>도서관</span>
+              </button>
+
 
               {/* 보기 모드 (카드 vs 일정표 리스트) */}
               <div className="flex items-center p-1 bg-slate-200/80 rounded-xl">
@@ -1093,7 +1133,12 @@ export default function HomePage() {
           <MarketSection />
         </div>
 
-        {/* 6. AI 도슨트 & 나들이 추천 안내 배너 섹션 */}
+        {/* 6. 부울경 대표 도서관 & 쌈지 작은도서관 나들이 섹션 */}
+        <div className="mt-16">
+          <LibrarySection />
+        </div>
+
+        {/* 7. AI 도슨트 & 나들이 추천 안내 배너 섹션 */}
         <section id="ai-docent-section" className="mt-16 bg-gradient-to-br from-indigo-900 to-slate-900 rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden shadow-xl">
           <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-500/10 rounded-full blur-2xl"></div>
           <div className="relative z-10 max-w-2xl">

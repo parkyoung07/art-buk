@@ -3,9 +3,11 @@ import { notFound } from "next/navigation";
 import { getNaverLocalPlaces } from "@/lib/naver";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import MarketInfoCard from "@/components/MarketInfoCard";
+import LibraryInfoCard from "@/components/LibraryInfoCard";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 import { getMarketForExhibition } from "@/utils/market";
+import { getLibraryForExhibition } from "@/utils/library";
 
 const exhibitions: Exhibition[] = rawData as Exhibition[];
 
@@ -67,6 +69,9 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
 
   // 인근 전통시장 및 5일장 매핑
   const nearbyMarket = getMarketForExhibition(exhibition.region, exhibition.subRegion);
+
+  // 인근 대표 도서관 & 쌈지 작은도서관 매핑
+  const nearbyLibrary = getLibraryForExhibition(exhibition.region, exhibition.subRegion);
 
   // Google Event Schema (JSON-LD)
   const eventJsonLd = {
@@ -311,6 +316,19 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                   </h2>
                 </div>
                 <MarketInfoCard market={nearbyMarket} />
+              </div>
+            )}
+
+            {/* 미술관 옆 가족 도서관 & 쌈지 작은도서관 탐방 */}
+            {nearbyLibrary && (
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-6 rounded-full bg-emerald-600 inline-block"></span>
+                  <h2 className="text-xl font-bold text-slate-900">
+                    아이와 함께! 미술관 옆 도서관 & 쌈지 작은도서관
+                  </h2>
+                </div>
+                <LibraryInfoCard library={nearbyLibrary} />
               </div>
             )}
 
