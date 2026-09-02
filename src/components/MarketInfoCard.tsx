@@ -33,53 +33,76 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
       case 'dawn':
         return 'bg-sky-50 text-sky-700 border border-sky-200';
       default:
-        return 'bg-indigo-50 text-indigo-700 border border-indigo-200';
+        return 'bg-slate-100 text-slate-700 border border-slate-200';
     }
+  };
+
+  const getMarketTypeBadge = () => {
+    if (market.marketType === '5일장') {
+      return (
+        <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-900 border border-amber-300/80">
+          🔴 5일장 ({market.scheduleDays.join('·')}일)
+        </span>
+      );
+    }
+    if (market.marketType === '상설시장') {
+      return (
+        <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-900 border border-emerald-300/80">
+          🏛️ 상설시장 (매일)
+        </span>
+      );
+    }
+    return (
+      <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-sky-500/15 text-sky-900 border border-sky-300/80">
+        🌅 새벽시장
+      </span>
+    );
   };
 
   if (compact) {
     return (
-      <div className="bg-gradient-to-br from-amber-50/70 via-orange-50/40 to-white rounded-2xl p-4 border border-amber-200/80 shadow-xs hover:shadow-md transition-all">
-        <div className="flex items-center justify-between gap-2 mb-2">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-200">
-              {market.region} · {market.subRegion}
-            </span>
-            <span className="text-[11px] font-medium text-slate-500">
-              {market.marketType}
+      <div className="bg-gradient-to-br from-amber-50/70 via-orange-50/40 to-white rounded-2xl p-4 border border-amber-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+        <div>
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-200">
+                {market.region} · {market.subRegion}
+              </span>
+              {getMarketTypeBadge()}
+            </div>
+            <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full shrink-0 ${getBadgeStyle()}`}>
+              {status.badgeText}
             </span>
           </div>
-          <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${getBadgeStyle()}`}>
-            {status.badgeText}
-          </span>
-        </div>
 
-        <h4 className="text-sm font-extrabold text-slate-900 mb-1 flex items-center gap-1.5">
-          <span>🛒</span>
-          <span>{market.name}</span>
-        </h4>
-        
-        <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-2.5">
-          {market.description}
-        </p>
+          <h4 className="text-sm font-extrabold text-slate-900 mb-1 flex items-center gap-1.5">
+            <span>🛒</span>
+            <span>{market.name}</span>
+          </h4>
+          
+          <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-2.5">
+            {market.description}
+          </p>
 
-        <div className="flex flex-wrap gap-1 mb-2.5">
-          {market.specialties.slice(0, 3).map((item, idx) => (
-            <span key={idx} className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200">
-              {item}
-            </span>
-          ))}
+          <div className="flex flex-wrap gap-1 mb-3">
+            {market.specialties.slice(0, 3).map((item, idx) => (
+              <span key={idx} className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-white text-slate-700 border border-slate-200">
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="flex items-center justify-between text-[11px] text-slate-500 pt-2 border-t border-amber-100">
           <span className="truncate max-w-[180px]">{market.address}</span>
           <a
-            href={`https://map.naver.com/v5/search/${encodeURIComponent(market.name)}`}
+            href={`https://map.naver.com/p/search/${encodeURIComponent(market.name)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-800 hover:text-amber-900 font-bold shrink-0 hover:underline"
+            className="text-amber-800 hover:text-amber-900 font-bold shrink-0 hover:underline flex items-center gap-0.5"
           >
-            길찾기 →
+            <span>길찾기</span>
+            <span>→</span>
           </a>
         </div>
       </div>
@@ -98,8 +121,9 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
         <div className="flex items-center gap-2 flex-wrap">
           <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-amber-600 text-white shadow-xs">
             <span>🛒</span>
-            <span>{market.region} {market.subRegion} 전통시장</span>
+            <span>{market.region} {market.subRegion}</span>
           </span>
+          {getMarketTypeBadge()}
           <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-white text-slate-700 border border-amber-200">
             {market.scheduleDescription}
           </span>
@@ -167,7 +191,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
         </div>
 
         <a
-          href={`https://map.naver.com/v5/search/${encodeURIComponent(market.name)}`}
+          href={`https://map.naver.com/p/search/${encodeURIComponent(market.name)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 font-bold text-xs px-3 py-1.5 rounded-xl bg-slate-900 text-white hover:bg-amber-900 transition-colors shadow-xs"

@@ -6,7 +6,7 @@ import { getMarketStatus } from '@/utils/market';
 import MarketInfoCard from '@/components/MarketInfoCard';
 
 export default function MarketSection() {
-  const [selectedFilter, setSelectedFilter] = useState<'전체' | '오늘장날' | '부산' | '울산' | '경남'>('오늘장날');
+  const [selectedFilter, setSelectedFilter] = useState<'오늘장날' | '정기5일장' | '상설시장' | '전체' | '부산' | '울산' | '경남'>('오늘장날');
 
   // 시장별 상태 계산 및 필터링
   const marketsWithStatus = useMemo(() => {
@@ -20,6 +20,12 @@ export default function MarketSection() {
     if (selectedFilter === '오늘장날') {
       return marketsWithStatus.filter(item => item.status.badgeType === 'today' || item.status.badgeType === 'tomorrow');
     }
+    if (selectedFilter === '정기5일장') {
+      return marketsWithStatus.filter(item => item.market.marketType === '5일장');
+    }
+    if (selectedFilter === '상설시장') {
+      return marketsWithStatus.filter(item => item.market.marketType === '상설시장' || item.market.marketType === '새벽시장');
+    }
     if (selectedFilter === '전체') {
       return marketsWithStatus;
     }
@@ -29,6 +35,18 @@ export default function MarketSection() {
   const todayCount = useMemo(() => {
     return marketsWithStatus.filter(item => item.status.badgeType === 'today').length;
   }, [marketsWithStatus]);
+
+  const fiveDayCount = useMemo(() => {
+    return marketsWithStatus.filter(item => item.market.marketType === '5일장').length;
+  }, [marketsWithStatus]);
+
+  const permanentCount = useMemo(() => {
+    return marketsWithStatus.filter(item => item.market.marketType === '상설시장' || item.market.marketType === '새벽시장').length;
+  }, [marketsWithStatus]);
+
+  const busanCount = useMemo(() => marketsWithStatus.filter(item => item.market.region === '부산').length, [marketsWithStatus]);
+  const ulsanCount = useMemo(() => marketsWithStatus.filter(item => item.market.region === '울산').length, [marketsWithStatus]);
+  const gyeongnamCount = useMemo(() => marketsWithStatus.filter(item => item.market.region === '경남').length, [marketsWithStatus]);
 
   return (
     <section id="market-section" className="py-12 sm:py-16 bg-gradient-to-b from-amber-50/40 via-orange-50/20 to-transparent border-t border-b border-amber-100/70 relative overflow-hidden scroll-mt-16">
@@ -46,24 +64,44 @@ export default function MarketSection() {
               )}
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-              <span>부울경 5일장 & 전통 재래시장 나들이</span>
+              <span>부울경 5일장 & 전통 상설시장 나들이</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl">
-              전시 관람 후 들르기 좋은 39개 시·군·구 대표 전통시장과 5일장 장날 정보를 실시간으로 확인하세요.
+              전시 관람 후 들르기 좋은 {TRADITIONAL_MARKETS.length}개 시·군·구 대표 전통 상설시장과 5일장 장날 정보를 실시간으로 확인하세요.
             </p>
           </div>
 
-          {/* 필터 탭 */}
+          {/* 필터 탭 (상설시장 vs 5일장 구분 명확화) */}
           <div className="flex flex-wrap items-center gap-1.5 bg-white p-1.5 rounded-2xl border border-slate-200 shadow-2xs">
             <button
               onClick={() => setSelectedFilter('오늘장날')}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 selectedFilter === '오늘장날'
+                  ? 'bg-rose-600 text-white shadow-xs'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              }`}
+            >
+              🔥 오늘 열린 장 ({todayCount})
+            </button>
+            <button
+              onClick={() => setSelectedFilter('정기5일장')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                selectedFilter === '정기5일장'
                   ? 'bg-amber-600 text-white shadow-xs'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              🔥 오늘/내일 장날
+              🔴 정기 5일장 ({fiveDayCount})
+            </button>
+            <button
+              onClick={() => setSelectedFilter('상설시장')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                selectedFilter === '상설시장'
+                  ? 'bg-emerald-700 text-white shadow-xs'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              }`}
+            >
+              🏛️ 상설 재래시장 ({permanentCount})
             </button>
             <button
               onClick={() => setSelectedFilter('전체')}
@@ -83,7 +121,7 @@ export default function MarketSection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              부산 (16)
+              부산 ({busanCount})
             </button>
             <button
               onClick={() => setSelectedFilter('울산')}
@@ -93,7 +131,7 @@ export default function MarketSection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              울산 (6)
+              울산 ({ulsanCount})
             </button>
             <button
               onClick={() => setSelectedFilter('경남')}
@@ -103,7 +141,7 @@ export default function MarketSection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              경남 (17)
+              경남 ({gyeongnamCount})
             </button>
           </div>
         </div>
