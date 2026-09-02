@@ -343,6 +343,19 @@ export default function HomePage() {
             >
               <span>전시 둘러보기</span>
             </button>
+            <button
+              type="button"
+              onClick={() => {
+                const marketSec = document.getElementById("market-section");
+                if (marketSec) marketSec.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="px-2.5 sm:px-3.5 py-1.5 text-amber-900 hover:text-amber-950 font-bold bg-amber-100/90 hover:bg-amber-200 rounded-xl transition-all cursor-pointer shadow-2xs whitespace-nowrap flex items-center gap-1.5 border border-amber-300"
+              title="부울경 5일장 & 전통시장 장날 검색"
+            >
+              <span>🧺</span>
+              <span>5일장·장날</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>
+            </button>
             <Link
               href="/blog"
               className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
@@ -454,7 +467,20 @@ export default function HomePage() {
                   #{tag}
                 </button>
               ))}
+              <button
+                type="button"
+                onClick={() => {
+                  const marketSec = document.getElementById("market-section");
+                  if (marketSec) marketSec.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="px-2.5 py-0.5 rounded-full bg-amber-500/30 hover:bg-amber-500/50 border border-amber-400/60 text-[11px] text-amber-200 hover:text-white font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs"
+              >
+                <span>🧺</span>
+                <span>오늘 5일장 장날 검색</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping"></span>
+              </button>
             </div>
+
           </div>
 
           {/* 실시간 통계 칩 */}
@@ -587,6 +613,20 @@ export default function HomePage() {
               >
                 <span>{showOnlyClosingSoon ? "✓" : "⏳"}</span>
                 <span>마감 임박 (D-30)</span>
+              </button>
+
+              {/* 5일장 & 장날 검색 바로가기 */}
+              <button
+                type="button"
+                onClick={() => {
+                  const marketSec = document.getElementById("market-section");
+                  if (marketSec) marketSec.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs sm:text-sm font-bold border transition-all cursor-pointer bg-amber-50/90 text-amber-900 border-amber-300 hover:border-amber-400 hover:bg-amber-100 shadow-2xs"
+                title="부울경 5일장 및 전통시장 장날 확인"
+              >
+                <span>🧺</span>
+                <span>5일장·장날</span>
               </button>
 
               {/* 보기 모드 (카드 vs 일정표 리스트) */}
