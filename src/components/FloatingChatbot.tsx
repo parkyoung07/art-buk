@@ -126,8 +126,9 @@ export default function FloatingChatbot() {
     return "";
   });
   const [isLiveMode, setIsLiveMode] = useState(false); // 상담원 1:1 실시간 모드 플래그
+  const [showFaqDrawer, setShowFaqDrawer] = useState(false);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const searchIndexRef = useRef<any[]>([]);
@@ -169,16 +170,51 @@ export default function FloatingChatbot() {
       .catch(() => {});
   }, []);
 
-  // 3. Auto-scroll to bottom
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  // 3. Smart container-only scrolling (never shifts or jumps the parent webpage)
+  const scrollToMessage = (msgId?: string) => {
+    if (!chatContainerRef.current) return;
+
+    if (msgId) {
+      setTimeout(() => {
+        const targetEl = document.getElementById(`msg-${msgId}`);
+        if (targetEl && chatContainerRef.current) {
+          const targetTop = targetEl.offsetTop - 12;
+          chatContainerRef.current.scrollTo({
+            top: Math.max(0, targetTop),
+            behavior: "smooth",
+          });
+          return;
+        }
+        if (chatContainerRef.current) {
+          chatContainerRef.current.scrollTo({
+            top: chatContainerRef.current.scrollHeight,
+            behavior: "smooth",
+          });
+        }
+      }, 60);
+      return;
+    }
+
+    setTimeout(() => {
+      if (chatContainerRef.current) {
+        chatContainerRef.current.scrollTo({
+          top: chatContainerRef.current.scrollHeight,
+          behavior: "smooth",
+        });
+      }
+    }, 60);
   };
 
   useEffect(() => {
     if (isOpen) {
-      scrollToBottom();
+      const lastMsg = messages[messages.length - 1];
+      if (lastMsg && lastMsg.sender === "bot") {
+        scrollToMessage(lastMsg.id);
+      } else {
+        scrollToMessage();
+      }
     }
-  }, [messages, isTyping, isOpen]);
+  }, [messages.length, isTyping, isOpen]);
 
   // 5. Focus input on open
   useEffect(() => {
@@ -613,8 +649,11 @@ export default function FloatingChatbot() {
             </div>
           </div>
 
-          {/* Messages Area */}
-          <div className="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50/70 text-slate-800 text-xs sm:text-sm">
+          {/* Messages Area (Container-only scrolling, perfectly positions bot answers) */}
+          <div
+            ref={chatContainerRef}
+            className="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50/70 text-slate-800 text-xs sm:text-sm scroll-smooth"
+          >
             {messages.map((msg) => {
               const isBot = msg.sender === "bot";
               const isCopied = copiedMessageId === msg.id;
@@ -622,12 +661,13 @@ export default function FloatingChatbot() {
               return (
                 <div
                   key={msg.id}
+                  id={`msg-${msg.id}`}
                   className={`flex flex-col ${
                     isBot ? "items-start" : "items-end"
                   }`}
                 >
                   <div
-                    className={`relative max-w-[85%] sm:max-w-[82%] rounded-2xl p-3.5 shadow-xs leading-relaxed whitespace-pre-wrap ${
+                    className={`relative max-w-[88%] sm:max-w-[82%] rounded-2xl p-3.5 shadow-xs leading-relaxed whitespace-pre-wrap ${
                       isBot
                         ? "bg-white text-slate-800 border border-slate-200/80 rounded-tl-xs shadow-slate-200/50"
                         : "bg-indigo-600 text-white rounded-tr-xs shadow-indigo-500/10"
@@ -723,7 +763,7 @@ export default function FloatingChatbot() {
                             onClick={() => handleCopyText(msg.text, msg.id)}
                             title={isCopied ? "복사 완료" : "답변 복사하기"}
                             aria-label={isCopied ? "복사 완료" : "답변 복사하기"}
-                            className="p-1 rounded-md hover:bg-slate-100 text-slate-500 hover:text-slate-700 transition-colors flex items-center justify-center focus:outline-none"
+                            className="p-1 rounded-md hover:bg-slate-100 text-slate-500 hover:text-slate-700 transition-colors flex items-center justify-center focus:outline-none cursor-pointer"
                           >
                             {isCopied ? (
                               <svg
@@ -799,49 +839,93 @@ export default function FloatingChatbot() {
             {/* Quick Questions & Live Agent Button Area */}
             {!isLiveMode && (
               <div className="pt-2">
-                <p className="text-[11px] font-semibold text-slate-500 mb-2 flex items-center gap-1">
-                  <span>💡 자주 묻는 추천 질문</span>
-                  <span className="text-[10px] font-normal text-slate-400">
-                    (클릭 시 빠른 답변)
-                  </span>
-                </p>
-                <div className="flex flex-col gap-1.5">
-                  {chatData.questions.map((q) => (
-                    <button
-                      key={q.id}
-                      type="button"
-                      disabled={isTyping}
-                      onClick={() => handleSelectQuestion(q)}
-                      className="text-left text-xs bg-white hover:bg-indigo-50/80 active:bg-indigo-100 disabled:opacity-50 text-slate-700 hover:text-indigo-700 p-2.5 rounded-xl border border-slate-200/90 hover:border-indigo-200 transition-all duration-200 shadow-2xs hover:shadow-xs flex items-center justify-between group cursor-pointer"
-                    >
-                      <span className="line-clamp-1">{q.question}</span>
-                      <span className="text-slate-300 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all text-xs shrink-0 ml-1">
-                        →
+                {messages.length <= 1 ? (
+                  <>
+                    <p className="text-[11px] font-semibold text-slate-500 mb-2 flex items-center gap-1">
+                      <span>💡 자주 묻는 추천 질문</span>
+                      <span className="text-[10px] font-normal text-slate-400">
+                        (클릭 시 빠른 답변)
                       </span>
-                    </button>
-                  ))}
+                    </p>
+                    <div className="flex flex-col gap-1.5">
+                      {chatData.questions.map((q) => (
+                        <button
+                          key={q.id}
+                          type="button"
+                          disabled={isTyping}
+                          onClick={() => handleSelectQuestion(q)}
+                          className="text-left text-xs bg-white hover:bg-indigo-50/80 active:bg-indigo-100 disabled:opacity-50 text-slate-700 hover:text-indigo-700 p-2.5 rounded-xl border border-slate-200/90 hover:border-indigo-200 transition-all duration-200 shadow-2xs hover:shadow-xs flex items-center justify-between group cursor-pointer"
+                        >
+                          <span className="line-clamp-1">{q.question}</span>
+                          <span className="text-slate-300 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all text-xs shrink-0 ml-1">
+                            →
+                          </span>
+                        </button>
+                      ))}
 
-                  {/* 1. 실시간 상담원 연결하기 버튼 */}
-                  <button
-                    type="button"
-                    disabled={isTyping}
-                    onClick={handleConnectAgent}
-                    className="mt-1 text-left text-xs bg-gradient-to-r from-violet-50 to-indigo-50 hover:from-violet-100 hover:to-indigo-100 active:scale-98 text-indigo-900 font-bold p-3 rounded-xl border border-indigo-200/80 transition-all duration-200 shadow-xs flex items-center justify-between group cursor-pointer"
-                  >
-                    <div className="flex items-center gap-2">
-                      <span className="text-base">👩‍💼</span>
-                      <span>실시간 상담원 1:1 연결하기</span>
+                      {/* 실시간 상담원 연결하기 버튼 */}
+                      <button
+                        type="button"
+                        disabled={isTyping}
+                        onClick={handleConnectAgent}
+                        className="mt-1 text-left text-xs bg-gradient-to-r from-violet-50 to-indigo-50 hover:from-violet-100 hover:to-indigo-100 active:scale-98 text-indigo-900 font-bold p-3 rounded-xl border border-indigo-200/80 transition-all duration-200 shadow-xs flex items-center justify-between group cursor-pointer"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-base">👩‍💼</span>
+                          <span>실시간 상담원 1:1 연결하기</span>
+                        </div>
+                        <span className="px-2 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-bold group-hover:bg-indigo-700 transition-colors">
+                          연결 →
+                        </span>
+                      </button>
                     </div>
-                    <span className="px-2 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-bold group-hover:bg-indigo-700 transition-colors">
-                      연결 →
-                    </span>
-                  </button>
-                </div>
+                  </>
+                ) : (
+                  <div className="mt-2 pt-2 border-t border-slate-200/60">
+                    <div className="flex items-center justify-between gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() => setShowFaqDrawer((prev) => !prev)}
+                        className="text-[11px] font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 px-2.5 py-1.5 rounded-xl border border-indigo-200 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                      >
+                        <span>💡 추천 질문 {showFaqDrawer ? "접기 ▲" : "더보기 ▼"}</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleConnectAgent}
+                        className="text-[11px] font-bold text-violet-800 bg-violet-50 hover:bg-violet-100 px-2.5 py-1.5 rounded-xl border border-violet-200 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                      >
+                        <span>👩‍💼 1:1 상담원 연결</span>
+                      </button>
+                    </div>
+
+                    {showFaqDrawer && (
+                      <div className="flex flex-col gap-1.5 mt-2 animate-in fade-in duration-200">
+                        {chatData.questions.map((q) => (
+                          <button
+                            key={q.id}
+                            type="button"
+                            disabled={isTyping}
+                            onClick={() => {
+                              handleSelectQuestion(q);
+                              setShowFaqDrawer(false);
+                            }}
+                            className="text-left text-xs bg-white hover:bg-indigo-50/80 active:bg-indigo-100 disabled:opacity-50 text-slate-700 hover:text-indigo-700 p-2.5 rounded-xl border border-slate-200/90 hover:border-indigo-200 transition-all duration-200 shadow-2xs hover:shadow-xs flex items-center justify-between group cursor-pointer"
+                          >
+                            <span className="line-clamp-1">{q.question}</span>
+                            <span className="text-slate-300 group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all text-xs shrink-0 ml-1">
+                              →
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )}
-
-            <div ref={messagesEndRef} />
           </div>
+
 
           {/* Input Footer Form */}
           <form
