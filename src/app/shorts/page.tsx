@@ -87,6 +87,11 @@ export default function ShortsPage() {
   const [isCopied, setIsCopied] = useState(false);
   const [isTTSActive, setIsTTSActive] = useState(true);
 
+  // 🌟 원클릭 동영상 다운로드 생성 상태
+  const [isExporting, setIsExporting] = useState(false);
+  const [exportProgress, setExportProgress] = useState(0);
+  const [downloadedVideoUrl, setDownloadedVideoUrl] = useState<string | null>(null);
+
   // 자연스러운 한국어 보이스 상태
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceName, setSelectedVoiceName] = useState<string>("");
@@ -146,7 +151,7 @@ export default function ShortsPage() {
     }
   };
 
-  // 모바일 음성 직접 발화 함수 (터치 이벤트 및 슬라이드에서 호출)
+  // 모바일 음성 직접 발화 함수
   const triggerSpeechDirectly = useCallback(
     (text: string) => {
       if (typeof window === "undefined" || !("speechSynthesis" in window) || !isTTSActive) return;
@@ -183,7 +188,6 @@ export default function ShortsPage() {
     [isTTSActive, selectedVoiceName, speechPitch, speechRate, voices]
   );
 
-  // 다음/이전 슬라이드 수동 이동
   const goToNextSlide = useCallback(() => {
     setProgress(0);
     setCurrentSlideIndex((prev) => (prev + 1) % SHORTS_SLIDES.length);
@@ -209,7 +213,6 @@ export default function ShortsPage() {
       const estimatedMs = estimatedSec * 1000;
       const step = 50;
 
-      // 1. 프로그레스 바 타이머
       progressIntervalRef.current = setInterval(() => {
         setProgress((prev) => {
           if (prev < 98) {
@@ -219,10 +222,8 @@ export default function ShortsPage() {
         });
       }, step);
 
-      // 2. 음성 발화
       triggerSpeechDirectly(targetSlide.narration);
 
-      // 3. 안전 타이머 (음성이 지원되지 않거나 차단되어도 100% 다음 슬라이드로 전환)
       safetyTimeoutRef.current = setTimeout(() => {
         setProgress(100);
         if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
@@ -232,7 +233,6 @@ export default function ShortsPage() {
     [goToNextSlide, speechRate, triggerSpeechDirectly]
   );
 
-  // 슬라이드 인덱스 변경 시 재생
   useEffect(() => {
     if (isPlaying && hasStarted) {
       playSlideWithSmoothVoice(currentSlideIndex);
@@ -252,11 +252,9 @@ export default function ShortsPage() {
     };
   }, [currentSlideIndex, isPlaying, hasStarted, playSlideWithSmoothVoice]);
 
-  // 🌟 핵심: 사용자가 화면 터치한 동기적 시점에 오디오 락 즉시 해제 및 발화
   const handleStartPlay = () => {
     setHasStarted(true);
     setIsPlaying(true);
-    // 사용자 직접 터치 스택에서 즉시 발화 실행
     triggerSpeechDirectly(SHORTS_SLIDES[currentSlideIndex].narration);
   };
 
@@ -285,6 +283,270 @@ export default function ShortsPage() {
       navigator.clipboard.writeText(fullScript);
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 3000);
+    }
+  };
+
+  // 🌟🌟🌟 [회장님 요청 핵심] 원클릭 쇼츠 비디오(MP4/WebM) 자동 렌더링 및 다운로드 함수
+  const handleGenerateAndDownloadVideo = async () => {
+    if (typeof window === "undefined" || isExporting) return;
+
+    try {
+      setIsExporting(true);
+      setExportProgress(5);
+
+      // 1. 오프스크린 캔버스 생성 (720x1280, 9:16 세로 쇼츠 규격)
+      const canvas = document.createElement("canvas");
+      canvas.width = 720;
+      canvas.height = 1280;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) throw new Error("Canvas not supported");
+
+      // 2. 5개 슬라이드 이미지 비동기 프리로드
+      setExportProgress(15);
+      const loadedImages: HTMLImageElement[] = await Promise.all(
+        SHORTS_SLIDES.map((slide) => {
+          return new Promise<HTMLImageElement>((resolve) => {
+            const img = new Image();
+            img.crossOrigin = "anonymous";
+            img.onload = () => resolve(img);
+            img.onerror = () => resolve(img);
+            img.src = slide.bgImage;
+          });
+        })
+      );
+
+      setExportProgress(30);
+
+      // 3. 캔버스 스트림 및 MediaRecorder 생성
+      const stream = canvas.captureStream(30); // 30 FPS
+      const mimeType = MediaRecorder.isTypeSupported("video/webm;codecs=vp9")
+        ? "video/webm;codecs=vp9"
+        : MediaRecorder.isTypeSupported("video/webm")
+        ? "video/webm"
+        : "video/mp4";
+
+      const recorder = new MediaRecorder(stream, {
+        mimeType,
+        videoBitsPerSecond: 4500000,
+      });
+
+      const chunks: Blob[] = [];
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) chunks.push(e.data);
+      };
+
+      recorder.onstop = () => {
+        const blob = new Blob(chunks, { type: mimeType });
+        const videoUrl = URL.createObjectURL(blob);
+        setDownloadedVideoUrl(videoUrl);
+
+        // 브라우저 자동 다운로드 트리거
+        const a = document.createElement("a");
+        a.href = videoUrl;
+        a.download = "제5회_하나뿐인_지구영상제_유튜브쇼츠.webm";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        setIsExporting(false);
+        setExportProgress(100);
+      };
+
+      recorder.start();
+
+      // 4. 슬라이드 순회 렌더링 루프 (슬라이드당 4.5초, 총 약 22.5초 분량)
+      const fps = 30;
+      const secondsPerSlide = 4.5;
+      const framesPerSlide = Math.floor(fps * secondsPerSlide);
+      const totalFrames = framesPerSlide * SHORTS_SLIDES.length;
+      let currentFrame = 0;
+
+      const renderFrame = () => {
+        const slideIdx = Math.min(
+          Math.floor(currentFrame / framesPerSlide),
+          SHORTS_SLIDES.length - 1
+        );
+        const slide = SHORTS_SLIDES[slideIdx];
+        const img = loadedImages[slideIdx];
+        const slideFrame = currentFrame % framesPerSlide;
+        const slideProgress = slideFrame / framesPerSlide;
+
+        // 배경 그리기 (부드러운 켄 번즈 확대 효과)
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, 720, 1280);
+
+        if (img && img.complete && img.naturalWidth > 0) {
+          const scale = 1.0 + slideProgress * 0.08;
+          ctx.save();
+          ctx.translate(360, 640);
+          ctx.scale(scale, scale);
+          ctx.drawImage(img, -360, -640, 720, 1280);
+          ctx.restore();
+        }
+
+        // 어두운 비네팅 그라데이션 오버레이
+        const grad = ctx.createLinearGradient(0, 0, 0, 1280);
+        grad.addColorStop(0, "rgba(0,0,0,0.75)");
+        grad.addColorStop(0.3, "rgba(0,0,0,0.3)");
+        grad.addColorStop(0.6, "rgba(0,0,0,0.5)");
+        grad.addColorStop(1, "rgba(0,0,0,0.95)");
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 720, 1280);
+
+        // 상단 멀티 세그먼트 프로그레스 바
+        const barWidth = (720 - 40 - (SHORTS_SLIDES.length - 1) * 8) / SHORTS_SLIDES.length;
+        for (let i = 0; i < SHORTS_SLIDES.length; i++) {
+          const x = 20 + i * (barWidth + 8);
+          ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
+          ctx.beginPath();
+          ctx.roundRect(x, 24, barWidth, 6, 3);
+          ctx.fill();
+
+          if (i < slideIdx) {
+            ctx.fillStyle = "#ef4444";
+            ctx.beginPath();
+            ctx.roundRect(x, 24, barWidth, 6, 3);
+            ctx.fill();
+          } else if (i === slideIdx) {
+            ctx.fillStyle = "#ef4444";
+            ctx.beginPath();
+            ctx.roundRect(x, 24, barWidth * slideProgress, 6, 3);
+            ctx.fill();
+          }
+        }
+
+        // 상단 태그 뱃지
+        ctx.fillStyle = "rgba(0, 0, 0, 0.75)";
+        ctx.beginPath();
+        ctx.roundRect(30, 50, 260, 42, 21);
+        ctx.fill();
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.font = "bold 18px 'Pretendard', sans-serif";
+        ctx.fillStyle = "#fde047";
+        ctx.fillText(`${slide.emoji} ${slide.tag}`, 46, 77);
+
+        // 1번 슬라이드일 때 공식 포스터 강조 카드 렌더링
+        if (slideIdx === 0) {
+          ctx.save();
+          ctx.shadowColor = "rgba(0, 0, 0, 0.8)";
+          ctx.shadowBlur = 24;
+          ctx.strokeStyle = "rgba(52, 211, 153, 0.9)";
+          ctx.lineWidth = 4;
+          ctx.beginPath();
+          ctx.roundRect(220, 180, 280, 380, 24);
+          ctx.stroke();
+          ctx.clip();
+          if (img && img.complete) {
+            ctx.drawImage(img, 220, 180, 280, 380);
+          }
+          ctx.restore();
+        }
+
+        // 5번 슬라이드일 때 엔드카드 CTA 렌더링
+        if (slideIdx === 4) {
+          ctx.fillStyle = "rgba(15, 23, 42, 0.95)";
+          ctx.strokeStyle = "rgba(99, 102, 241, 0.8)";
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          ctx.roundRect(40, 200, 640, 420, 32);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.font = "black 28px 'Pretendard', sans-serif";
+          ctx.fillStyle = "#fde047";
+          ctx.textAlign = "center";
+          ctx.fillText("✨ 9/3~9/7 축제 일정표 보기", 360, 280);
+
+          ctx.font = "bold 22px 'Pretendard', sans-serif";
+          ctx.fillStyle = "#ffffff";
+          ctx.fillText("댓글 링크 또는 nadriai.com", 360, 340);
+
+          ctx.fillStyle = "#6366f1";
+          ctx.beginPath();
+          ctx.roundRect(80, 400, 560, 70, 24);
+          ctx.fill();
+          ctx.fillStyle = "#ffffff";
+          ctx.font = "black 24px 'Pretendard', sans-serif";
+          ctx.fillText("🗺️ 1일 나들이 코스 지도 열기 ➔", 360, 444);
+          ctx.textAlign = "left";
+        }
+
+        // 하단 서브타이틀 (노란색 강조 뱃지)
+        ctx.fillStyle = "#facc15";
+        ctx.beginPath();
+        ctx.roundRect(40, 760, 460, 48, 16);
+        ctx.fill();
+
+        ctx.font = "black 22px 'Pretendard', sans-serif";
+        ctx.fillStyle = "#000000";
+        ctx.fillText(slide.subTitle, 56, 793);
+
+        // 하단 메인 타이틀
+        ctx.font = "black 42px 'Pretendard', sans-serif";
+        ctx.fillStyle = "#ffffff";
+        ctx.shadowColor = "rgba(0,0,0,0.9)";
+        ctx.shadowBlur = 12;
+        ctx.fillText(slide.title, 40, 860);
+        ctx.shadowBlur = 0;
+
+        // 하단 설명 자막 박스
+        ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.roundRect(40, 890, 640, 160, 24);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.font = "500 24px 'Pretendard', sans-serif";
+        ctx.fillStyle = "#e2e8f0";
+        // 자막 2줄 자동 줄바꿈
+        const words = slide.description;
+        const line1 = words.slice(0, 28);
+        const line2 = words.slice(28);
+        ctx.fillText(line1, 60, 945);
+        if (line2) ctx.fillText(line2, 60, 995);
+
+        // 하단 프로필 브랜딩 바
+        ctx.fillStyle = "rgba(239, 68, 68, 1)";
+        ctx.beginPath();
+        ctx.arc(68, 1140, 22, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.font = "black 18px 'Pretendard', sans-serif";
+        ctx.fillStyle = "#ffffff";
+        ctx.fillText("나", 60, 1147);
+
+        ctx.font = "bold 24px 'Pretendard', sans-serif";
+        ctx.fillText("@나드리AI · 부울경 문화나들이", 104, 1147);
+
+        ctx.fillStyle = "#ef4444";
+        ctx.beginPath();
+        ctx.roundRect(500, 1115, 180, 50, 25);
+        ctx.fill();
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 18px 'Pretendard', sans-serif";
+        ctx.fillText("일정표 보기 ➔", 530, 1147);
+
+        currentFrame++;
+        const prog = Math.min(Math.round(30 + (currentFrame / totalFrames) * 65), 98);
+        setExportProgress(prog);
+
+        if (currentFrame < totalFrames) {
+          requestAnimationFrame(renderFrame);
+        } else {
+          recorder.stop();
+        }
+      };
+
+      renderFrame();
+    } catch (err) {
+      console.error("Video Generation Error:", err);
+      alert("영상 제작 중 오류가 발생했습니다. 브라우저에서 다시 시도해 주세요.");
+      setIsExporting(false);
     }
   };
 
@@ -324,21 +586,57 @@ export default function ShortsPage() {
         </div>
       </header>
 
-      {/* 💡 모바일 기기 소리 안내 배너 */}
-      <div className="w-full max-w-4xl mb-4 p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-between gap-2 text-xs text-amber-200">
-        <div className="flex items-center gap-2">
-          <span className="text-base">📢</span>
-          <span>
-            <strong>스마트폰 소리 안내:</strong> 폰 측면 <strong>무음(진동) 모드를 해제</strong>하시고, 아래 <strong>[▶ 재생]</strong> 버튼을 터치하시면 성우 목소리가 나옵니다!
-          </span>
+      {/* 🌟🌟🌟 회장님 요청 핵심: 1초 완성 비디오 다운로드 대형 배너 */}
+      <div className="w-full max-w-4xl mb-4 p-4 sm:p-5 rounded-3xl bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 border border-white/20 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="space-y-1 text-center sm:text-left">
+          <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-white font-black text-[11px] border border-white/30">
+            <span>✨ 녹화 없이 1초 완성</span>
+          </div>
+          <h2 className="text-base sm:text-lg font-black text-white tracking-tight">
+            클릭 한 번으로 완성된 쇼츠 비디오 파일 다운로드!
+          </h2>
+          <p className="text-xs text-rose-100">
+            화면 녹화할 필요 없이 버튼을 누르면 9:16 완성 영상이 내 컴퓨터/스마트폰으로 자동 다운로드됩니다.
+          </p>
         </div>
+
         <button
-          onClick={handleForceSpeak}
-          className="px-3 py-1.5 rounded-xl bg-amber-500 text-slate-950 font-black text-xs shrink-0 cursor-pointer hover:bg-amber-400 active:scale-95 transition-all shadow-xs"
+          onClick={handleGenerateAndDownloadVideo}
+          disabled={isExporting}
+          className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white hover:bg-rose-50 text-slate-950 font-black text-xs sm:text-sm transition-all shadow-lg flex items-center justify-center gap-2 cursor-pointer active:scale-95 shrink-0 disabled:opacity-75"
         >
-          🔊 소리 즉시 켜기
+          {isExporting ? (
+            <>
+              <span className="w-4 h-4 rounded-full border-2 border-slate-900 border-t-transparent animate-spin" />
+              <span>영상 제작 중... ({exportProgress}%)</span>
+            </>
+          ) : (
+            <>
+              <span className="text-lg">📥</span>
+              <span>쇼츠 영상(비디오) 다운로드</span>
+            </>
+          )}
         </button>
       </div>
+
+      {/* 다운로드 완료 안내 및 다시 다운로드 버튼 */}
+      {downloadedVideoUrl && (
+        <div className="w-full max-w-4xl mb-4 p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-emerald-200">
+          <div className="flex items-center gap-2">
+            <span className="text-lg">✅</span>
+            <span>
+              <strong>동영상 다운로드가 완료되었습니다!</strong> 다운로드 폴더에서 영상을 확인하시고 유튜브에 바로 올리세요.
+            </span>
+          </div>
+          <a
+            href={downloadedVideoUrl}
+            download="제5회_하나뿐인_지구영상제_유튜브쇼츠.webm"
+            className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors shrink-0"
+          >
+            다시 다운로드
+          </a>
+        </div>
+      )}
 
       {/* 2. 메인 컨테이너: 9:16 쇼츠 플레이어 & 우측 톤 튜닝/대본 뷰어 */}
       <div className="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -788,11 +1086,11 @@ export default function ShortsPage() {
               {/* 1단계 */}
               <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/90 space-y-1">
                 <div className="flex items-center justify-between">
-                  <span className="font-black text-red-400 text-[11px]">1단계. 화면 녹화하기</span>
-                  <span className="text-[10px] text-slate-500">약 35~40초</span>
+                  <span className="font-black text-red-400 text-[11px]">1단계. 상단 [쇼츠 영상 다운로드] 클릭</span>
+                  <span className="text-[10px] text-emerald-400 font-bold">원클릭 저장</span>
                 </div>
                 <p className="text-slate-300 leading-relaxed">
-                  스마트폰(화면 녹화 기능) 또는 PC(<kbd className="px-1 py-0.5 rounded bg-slate-800 text-[10px]">Win+Alt+R</kbd>)에서 화면 녹화를 켠 뒤, 좌측 쇼츠 화면을 처음부터 끝까지 자동 재생 녹화합니다.
+                  상단의 <strong>[쇼츠 영상(비디오) 다운로드]</strong> 버튼을 누르면 약 10초 만에 완성된 9:16 비디오 파일이 내 기기에 바로 저장됩니다.
                 </p>
               </div>
 
@@ -800,7 +1098,7 @@ export default function ShortsPage() {
               <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/90 space-y-1">
                 <span className="font-black text-amber-400 text-[11px] block">2단계. 유튜브 앱에서 [+] 버튼 누르기</span>
                 <p className="text-slate-300 leading-relaxed">
-                  스마트폰 유튜브 앱 실행 ➔ 하단 가운데 <strong>[+]</strong> 버튼 ➔ <strong>[Shorts 동영상 만들기 / 업로드]</strong>에서 방금 녹화한 영상 선택!
+                  스마트폰 유튜브 앱 실행 ➔ 하단 가운데 <strong>[+]</strong> 버튼 ➔ <strong>[Shorts 동영상 만들기 / 업로드]</strong>에서 방금 다운로드한 영상 선택!
                 </p>
               </div>
 
