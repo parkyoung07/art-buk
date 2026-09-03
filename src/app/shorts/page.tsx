@@ -1133,6 +1133,75 @@ export default function ShortsPage() {
               </div>
             </div>
           </div>
+
+          {/* 🌟 4. 고화질 썸네일 2종 세트 다운로드 (16:9 유튜브 & 9:16 쇼츠/릴스) */}
+          <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 shadow-lg">
+            <div className="flex items-center justify-between pb-2 border-b border-slate-800">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">🖼️</span>
+                <h3 className="font-extrabold text-sm sm:text-base text-white">
+                  유튜브 썸네일 2종 세트 다운로드
+                </h3>
+              </div>
+              <span className="px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-bold text-[10px]">
+                8K 고화질
+              </span>
+            </div>
+
+            <p className="text-xs text-slate-300 leading-relaxed">
+              클릭률(CTR)을 극대화할 수 있도록 영화의전당 야외극장과 홀로그램 지구, 볼드한 한글 타이포그래피가 적용된 전용 썸네일입니다.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+              {/* 1. 16:9 유튜브 일반 영상 썸네일 */}
+              <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col justify-between gap-2.5">
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-amber-300 text-xs">16:9 가로형 썸네일</span>
+                    <span className="text-[10px] text-slate-500">유튜브/블로그용</span>
+                  </div>
+                  <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-md">
+                    <img
+                      src="/images/earth-festival-thumbnail-16x9.jpg"
+                      alt="16:9 제5회 하나뿐인 지구영상제 썸네일"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="/images/earth-festival-thumbnail-16x9.jpg"
+                  download="하나뿐인지구영상제_유튜브_썸네일_16x9.jpg"
+                  className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-xs transition-all active:scale-95"
+                >
+                  <span>📥 16:9 썸네일 다운로드</span>
+                </a>
+              </div>
+
+              {/* 2. 9:16 쇼츠 / 릴스 세로형 커버 썸네일 */}
+              <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 flex flex-col justify-between gap-2.5">
+                <div className="space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="font-black text-emerald-400 text-xs">9:16 세로형 쇼츠 커버</span>
+                    <span className="text-[10px] text-slate-500">쇼츠/릴스/틱톡용</span>
+                  </div>
+                  <div className="relative aspect-[9/16] max-h-48 mx-auto rounded-xl overflow-hidden border border-white/10 shadow-md">
+                    <img
+                      src="/images/earth-festival-thumbnail-9x16.jpg"
+                      alt="9:16 제5회 하나뿐인 지구영상제 쇼츠 커버"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="/images/earth-festival-thumbnail-9x16.jpg"
+                  download="하나뿐인지구영상제_쇼츠_커버_9x16.jpg"
+                  className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-xs transition-all active:scale-95"
+                >
+                  <span>📥 9:16 쇼츠 커버 다운로드</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
