@@ -717,6 +717,67 @@ export default function ShortsPage() {
               ))}
             </div>
           </div>
+
+          {/* 🌟 3. 초보자도 3분 완성! 유튜브 쇼츠 업로드 4단계 가이드 */}
+          <div className="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4 shadow-lg">
+            <div className="flex items-center gap-2 pb-2 border-b border-slate-800">
+              <span className="text-xl">🚀</span>
+              <h3 className="font-extrabold text-sm sm:text-base text-white">
+                유튜브 쇼츠 3분 업로드 4단계 가이드
+              </h3>
+            </div>
+
+            <div className="space-y-3 text-xs">
+              {/* 1단계 */}
+              <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/90 space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="font-black text-red-400 text-[11px]">1단계. 화면 녹화하기</span>
+                  <span className="text-[10px] text-slate-500">약 35~40초</span>
+                </div>
+                <p className="text-slate-300 leading-relaxed">
+                  스마트폰(화면 녹화 기능) 또는 PC(<kbd className="px-1 py-0.5 rounded bg-slate-800 text-[10px]">Win+Alt+R</kbd>)에서 화면 녹화를 켠 뒤, 좌측 쇼츠 화면을 처음부터 끝까지 자동 재생 녹화합니다.
+                </p>
+              </div>
+
+              {/* 2단계 */}
+              <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/90 space-y-1">
+                <span className="font-black text-amber-400 text-[11px] block">2단계. 유튜브 앱에서 [+] 버튼 누르기</span>
+                <p className="text-slate-300 leading-relaxed">
+                  스마트폰 유튜브 앱 실행 ➔ 하단 가운데 <strong>[+]</strong> 버튼 ➔ <strong>[Shorts 동영상 만들기 / 업로드]</strong>에서 방금 녹화한 영상 선택!
+                </p>
+              </div>
+
+              {/* 3단계 */}
+              <div className="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800/90 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-black text-emerald-400 text-[11px]">3단계. 제목 &amp; 태그 붙여넣기</span>
+                  <button
+                    onClick={handleCopyScript}
+                    className="text-[10px] font-bold text-emerald-300 hover:underline cursor-pointer"
+                  >
+                    제목 복사
+                  </button>
+                </div>
+                <div className="p-2 rounded-xl bg-black/50 text-[11px] text-slate-300 font-mono select-all">
+                  9.3(목)~9.7(월) 부산 영화의전당 &apos;제5회 하나뿐인 지구영상제&apos; 무료 야외영화 &amp; 에코 플리마켓 꿀팁 🎬 #shorts #부산축제
+                </div>
+              </div>
+
+              {/* 4단계 */}
+              <div className="p-3.5 rounded-2xl bg-indigo-950/40 border border-indigo-500/40 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="font-black text-indigo-300 text-[11px]">4단계. 첫 댓글에 사이트 링크 고정 (유입 핵심!)</span>
+                  <span className="text-[10px] text-indigo-400 font-bold">클릭 유입</span>
+                </div>
+                <p className="text-slate-300 leading-relaxed text-[11px]">
+                  영상이 업로드되면 본인 댓글로 아래 링크를 작성하고 <strong>[댓글 고정]</strong>을 누르세요:
+                </p>
+                <div className="p-2 rounded-xl bg-black/60 text-[11px] text-amber-300 font-mono select-all">
+                  👉 9/3~9/7 영화제 전체 상영시간표 &amp; 나들이 지도 보기: https://nadriai.com/daangn
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
