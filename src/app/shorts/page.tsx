@@ -10,7 +10,7 @@ interface Slide {
   title: string;
   subTitle: string;
   description: string;
-  narration: string; // 자연스러운 구어체 나레이션 전용 대본
+  narration: string;
   bgImage: string;
   emoji: string;
   accent: string;
@@ -81,8 +81,8 @@ const SHORTS_SLIDES: Slide[] = [
 
 export default function ShortsPage() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false); // 모바일 터치 시작 여부
-  const [isPlaying, setIsPlaying] = useState(false); // 사용자 터치 후 재생
+  const [hasStarted, setHasStarted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isCopied, setIsCopied] = useState(false);
   const [isTTSActive, setIsTTSActive] = useState(true);
@@ -100,7 +100,7 @@ export default function ShortsPage() {
 
   const currentSlide = SHORTS_SLIDES[currentSlideIndex];
 
-  // 보이스 로드 및 고품질 자연스러운 한국어 성우 선택
+  // 보이스 로드 및 고품질 한국어 성우 자동 매칭
   useEffect(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
@@ -146,7 +146,44 @@ export default function ShortsPage() {
     }
   };
 
-  // 다음 슬라이드로 부드럽게 이동하는 함수
+  // 모바일 음성 직접 발화 함수 (터치 이벤트 및 슬라이드에서 호출)
+  const triggerSpeechDirectly = useCallback(
+    (text: string) => {
+      if (typeof window === "undefined" || !("speechSynthesis" in window) || !isTTSActive) return;
+
+      try {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "ko-KR";
+        utterance.rate = speechRate;
+        utterance.pitch = speechPitch;
+        utterance.volume = 1.0;
+
+        if (selectedVoiceName && voices.length > 0) {
+          const voiceObj = voices.find((v) => v.name === selectedVoiceName);
+          if (voiceObj) utterance.voice = voiceObj;
+        }
+
+        utterance.onend = () => {
+          setProgress(100);
+          if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+          if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
+
+          speechEndTimeoutRef.current = setTimeout(() => {
+            setProgress(0);
+            setCurrentSlideIndex((prev) => (prev + 1) % SHORTS_SLIDES.length);
+          }, 450);
+        };
+
+        window.speechSynthesis.speak(utterance);
+      } catch (e) {
+        console.warn("TTS Error:", e);
+      }
+    },
+    [isTTSActive, selectedVoiceName, speechPitch, speechRate, voices]
+  );
+
+  // 다음/이전 슬라이드 수동 이동
   const goToNextSlide = useCallback(() => {
     setProgress(0);
     setCurrentSlideIndex((prev) => (prev + 1) % SHORTS_SLIDES.length);
@@ -157,12 +194,11 @@ export default function ShortsPage() {
     setCurrentSlideIndex((prev) => (prev - 1 + SHORTS_SLIDES.length) % SHORTS_SLIDES.length);
   }, []);
 
-  // 🌟 핵심: 모바일에서도 절대 멈추지 않는 스마트 이중 타이머 재생 엔진
+  // 슬라이드 재생 엔진
   const playSlideWithSmoothVoice = useCallback(
     (slideIdx: number) => {
       if (typeof window === "undefined") return;
 
-      // 이전 타이머 초기화
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
       if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
@@ -183,54 +219,22 @@ export default function ShortsPage() {
         });
       }, step);
 
-      // 2. 모바일 음성 재생
-      if (isTTSActive && "speechSynthesis" in window) {
-        try {
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(targetSlide.narration);
-          utterance.lang = "ko-KR";
-          utterance.rate = speechRate;
-          utterance.pitch = speechPitch;
-          utterance.volume = 1.0;
+      // 2. 음성 발화
+      triggerSpeechDirectly(targetSlide.narration);
 
-          if (selectedVoiceName) {
-            const voiceObj = voices.find((v) => v.name === selectedVoiceName);
-            if (voiceObj) utterance.voice = voiceObj;
-          }
-
-          utterance.onend = () => {
-            setProgress(100);
-            if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
-            if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
-
-            speechEndTimeoutRef.current = setTimeout(() => {
-              goToNextSlide();
-            }, 450);
-          };
-
-          utterance.onerror = () => {
-            // 음성 오류 시 안전 타이머가 작동하도록 유지
-          };
-
-          window.speechSynthesis.speak(utterance);
-        } catch {
-          // fallback to safety timer
-        }
-      }
-
-      // 3. 모바일 안전 타이머 (브라우저가 onend를 안 보내도 100% 다음 장면으로 자동 전환)
+      // 3. 안전 타이머 (음성이 지원되지 않거나 차단되어도 100% 다음 슬라이드로 전환)
       safetyTimeoutRef.current = setTimeout(() => {
         setProgress(100);
         if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
         goToNextSlide();
-      }, estimatedMs + 650);
+      }, estimatedMs + 700);
     },
-    [goToNextSlide, isTTSActive, speechPitch, speechRate, selectedVoiceName, voices]
+    [goToNextSlide, speechRate, triggerSpeechDirectly]
   );
 
-  // 재생 상태 변경 시 동작
+  // 슬라이드 인덱스 변경 시 재생
   useEffect(() => {
-    if (isPlaying) {
+    if (isPlaying && hasStarted) {
       playSlideWithSmoothVoice(currentSlideIndex);
     } else {
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
@@ -246,20 +250,32 @@ export default function ShortsPage() {
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
       if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
     };
-  }, [currentSlideIndex, isPlaying, playSlideWithSmoothVoice]);
+  }, [currentSlideIndex, isPlaying, hasStarted, playSlideWithSmoothVoice]);
 
-  // 모바일 사용자가 중앙 터치했을 때 잠금 해제 및 재생 시작
+  // 🌟 핵심: 사용자가 화면 터치한 동기적 시점에 오디오 락 즉시 해제 및 발화
   const handleStartPlay = () => {
     setHasStarted(true);
     setIsPlaying(true);
+    // 사용자 직접 터치 스택에서 즉시 발화 실행
+    triggerSpeechDirectly(SHORTS_SLIDES[currentSlideIndex].narration);
   };
 
   const handleTogglePlay = () => {
     if (!hasStarted) {
       handleStartPlay();
     } else {
-      setIsPlaying((prev) => !prev);
+      const nextPlay = !isPlaying;
+      setIsPlaying(nextPlay);
+      if (nextPlay) {
+        triggerSpeechDirectly(SHORTS_SLIDES[currentSlideIndex].narration);
+      }
     }
+  };
+
+  const handleForceSpeak = () => {
+    if (!hasStarted) setHasStarted(true);
+    setIsPlaying(true);
+    triggerSpeechDirectly(currentSlide.narration);
   };
 
   const handleCopyScript = () => {
@@ -275,7 +291,7 @@ export default function ShortsPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-start p-4 sm:p-6 font-sans">
       {/* 1. 상단 바 */}
-      <header className="w-full max-w-4xl flex items-center justify-between py-3 mb-4 border-b border-white/10">
+      <header className="w-full max-w-4xl flex items-center justify-between py-3 mb-3 border-b border-white/10">
         <div className="flex items-center gap-2">
           <Link
             href="/"
@@ -308,6 +324,22 @@ export default function ShortsPage() {
         </div>
       </header>
 
+      {/* 💡 모바일 기기 소리 안내 배너 */}
+      <div className="w-full max-w-4xl mb-4 p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-between gap-2 text-xs text-amber-200">
+        <div className="flex items-center gap-2">
+          <span className="text-base">📢</span>
+          <span>
+            <strong>스마트폰 소리 안내:</strong> 폰 측면 <strong>무음(진동) 모드를 해제</strong>하시고, 아래 <strong>[▶ 재생]</strong> 버튼을 터치하시면 성우 목소리가 나옵니다!
+          </span>
+        </div>
+        <button
+          onClick={handleForceSpeak}
+          className="px-3 py-1.5 rounded-xl bg-amber-500 text-slate-950 font-black text-xs shrink-0 cursor-pointer hover:bg-amber-400 active:scale-95 transition-all shadow-xs"
+        >
+          🔊 소리 즉시 켜기
+        </button>
+      </div>
+
       {/* 2. 메인 컨테이너: 9:16 쇼츠 플레이어 & 우측 톤 튜닝/대본 뷰어 */}
       <div className="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* 좌측: 9:16 유튜브 쇼츠 모바일 시뮬레이터 (6열) */}
@@ -333,20 +365,20 @@ export default function ShortsPage() {
             {/* 어두운 그라데이션 오버레이 */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60 z-10 pointer-events-none" />
 
-            {/* 🌟 모바일 최초 진입 시 나타나는 '터치하여 쇼츠 재생' 오버레이 (모바일 브라우저 자동재생 차단 완벽 해소) */}
+            {/* 🌟 모바일 최초 진입 시 나타나는 '터치하여 쇼츠 재생' 오버레이 (소리 잠금 해제) */}
             {!hasStarted && (
               <div
                 onClick={handleStartPlay}
-                className="absolute inset-0 z-40 bg-black/60 backdrop-blur-xs flex flex-col items-center justify-center p-6 text-center cursor-pointer group"
+                className="absolute inset-0 z-40 bg-black/70 backdrop-blur-xs flex flex-col items-center justify-center p-6 text-center cursor-pointer group"
               >
-                <div className="w-20 h-20 rounded-full bg-red-600 group-hover:bg-red-500 text-white flex items-center justify-center text-3xl shadow-2xl border-4 border-white/80 animate-bounce transition-transform group-active:scale-95 pl-1">
+                <div className="w-20 h-20 rounded-full bg-red-600 group-hover:bg-red-500 text-white flex items-center justify-center text-3xl shadow-2xl border-4 border-white animate-bounce transition-transform group-active:scale-95 pl-1">
                   ▶
                 </div>
-                <span className="mt-4 px-4 py-2 rounded-full bg-slate-900/90 text-white font-black text-sm border border-white/20 shadow-lg">
+                <span className="mt-4 px-4 py-2 rounded-full bg-slate-900/95 text-white font-black text-sm border border-white/30 shadow-lg">
                   화면을 터치하여 쇼츠 재생하기
                 </span>
-                <span className="mt-2 text-xs text-amber-300 font-bold">
-                  스마트폰 소리를 켜고 눌러주세요 🔊
+                <span className="mt-2 text-xs text-amber-300 font-bold bg-black/60 px-3 py-1 rounded-full">
+                  스마트폰 볼륨을 켜주세요 🔊
                 </span>
               </div>
             )}
@@ -571,29 +603,25 @@ export default function ShortsPage() {
             </div>
           </div>
 
-          {/* 슬라이드 컨트롤 및 다시 듣기 바 */}
+          {/* 슬라이드 컨트롤 및 소리 다시 듣기 바 */}
           <div className="flex items-center gap-2 w-full max-w-[360px] justify-between text-xs">
             <button
               onClick={goToPrevSlide}
               className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors cursor-pointer"
             >
-              ◀ 이전 장면
+              ◀ 이전
             </button>
             <button
-              onClick={() => {
-                if (!hasStarted) setHasStarted(true);
-                setIsPlaying(true);
-                playSlideWithSmoothVoice(currentSlideIndex);
-              }}
-              className="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer"
+              onClick={handleForceSpeak}
+              className="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer active:scale-95"
             >
-              <span>🔊 음성 다시 듣기</span>
+              <span>🔊 소리 켜기 / 다시 듣기</span>
             </button>
             <button
               onClick={goToNextSlide}
               className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors cursor-pointer"
             >
-              다음 장면 ▶
+              다음 ▶
             </button>
           </div>
         </div>
@@ -606,7 +634,7 @@ export default function ShortsPage() {
               <div className="flex items-center gap-2">
                 <span className="text-xl">🎙️</span>
                 <h3 className="font-extrabold text-sm sm:text-base text-white">
-                  AI 성우 목소리 &amp; 장면 자동 연결 설정
+                  AI 성우 목소리 &amp; 사운드 설정
                 </h3>
               </div>
               <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
@@ -697,12 +725,8 @@ export default function ShortsPage() {
             </div>
 
             <button
-              onClick={() => {
-                if (!hasStarted) setHasStarted(true);
-                setIsPlaying(true);
-                playSlideWithSmoothVoice(currentSlideIndex);
-              }}
-              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+              onClick={handleForceSpeak}
+              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
             >
               <span>🔊 현재 설정으로 음성 테스트하기</span>
             </button>
@@ -731,6 +755,7 @@ export default function ShortsPage() {
                     if (!hasStarted) setHasStarted(true);
                     setIsPlaying(true);
                     setCurrentSlideIndex(idx);
+                    triggerSpeechDirectly(slide.narration);
                   }}
                   className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                     currentSlideIndex === idx
