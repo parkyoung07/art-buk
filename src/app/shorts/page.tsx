@@ -263,6 +263,94 @@ export default function ShortsPage() {
               />
             </div>
 
+            {/* 우측 유튜브 쇼츠 플로팅 액션 아이콘 바 */}
+            <div className="absolute right-3 bottom-24 z-30 flex flex-col items-center gap-4 text-white">
+              {/* 1. 나드리 AI 사이트 바로가기 아이콘 (회장님 요청 핵심) */}
+              <Link
+                href="/daangn"
+                className="group flex flex-col items-center gap-1 cursor-pointer"
+                title="나드리 AI 사이트로 이동"
+              >
+                <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center text-white text-lg shadow-lg border-2 border-white group-hover:scale-110 group-active:scale-95 transition-all animate-bounce">
+                  🌐
+                </div>
+                <span className="text-[10px] font-black text-amber-300 drop-shadow-md tracking-tight">
+                  사이트 이동
+                </span>
+              </Link>
+
+              {/* 2. 좋아요 아이콘 */}
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-lg border border-white/20">
+                  ❤️
+                </div>
+                <span className="text-[10px] font-bold text-slate-200">2.8만</span>
+              </div>
+
+              {/* 3. 댓글 아이콘 */}
+              <Link href="/events/busan-only-one-earth-film-festival-2026" className="flex flex-col items-center gap-0.5">
+                <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-lg border border-white/20">
+                  💬
+                </div>
+                <span className="text-[10px] font-bold text-slate-200">342</span>
+              </Link>
+
+              {/* 4. 공유 아이콘 */}
+              <button
+                onClick={handleCopyScript}
+                className="flex flex-col items-center gap-0.5 cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-lg border border-white/20">
+                  🔗
+                </div>
+                <span className="text-[10px] font-bold text-slate-200">공유</span>
+              </button>
+            </div>
+
+            {/* 마지막 5번 슬라이드일 때 나타나는 쇼츠 엔딩 대형 오버레이 카드 */}
+            {currentSlideIndex === 4 && (
+              <div className="absolute inset-x-4 top-20 bottom-36 z-25 bg-slate-900/90 backdrop-blur-lg rounded-3xl p-5 border-2 border-indigo-500/80 shadow-2xl flex flex-col justify-between text-center animate-in fade-in zoom-in-95 duration-300">
+                <div className="space-y-2">
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-indigo-500 text-white font-black text-xs shadow-xs">
+                    ✨ 나드리 AI 공식 포털
+                  </span>
+                  <h3 className="text-base sm:text-lg font-black text-white leading-tight">
+                    영화제 상영시간표 &amp;<br />
+                    <span className="text-amber-300">주차·맛집 나들이 코스</span> 보기
+                  </h3>
+                  <p className="text-[11px] text-slate-300 leading-relaxed">
+                    지금 바로 아래 버튼을 눌러 부울경 40+개 무료 전시와 5일장 장날 지도를 확인하세요!
+                  </p>
+                </div>
+
+                {/* 대형 원클릭 사이트 유입 버튼 */}
+                <div className="space-y-2">
+                  <Link
+                    href="/events/busan-only-one-earth-film-festival-2026"
+                    className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-black text-xs sm:text-sm transition-all shadow-lg flex items-center justify-center gap-2 border border-white/20 active:scale-95"
+                  >
+                    <span>🗺️ 1일 나들이 코스 지도 열기</span>
+                    <span>➔</span>
+                  </Link>
+
+                  <Link
+                    href="/daangn"
+                    className="w-full py-2.5 px-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs transition-all flex items-center justify-center gap-1.5"
+                  >
+                    <span>🥕 당근 이웃 꿀팁 페이지</span>
+                    <span>➔</span>
+                  </Link>
+
+                  <Link
+                    href="/"
+                    className="w-full py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-slate-300 font-bold text-[11px] transition-all"
+                  >
+                    🎨 나드리 AI 메인 홈 둘러보기
+                  </Link>
+                </div>
+              </div>
+            )}
+
             {/* 하단 자막 & 볼드 타이포그래피 (쇼츠 스타일) */}
             <div className="relative z-20 p-5 space-y-3">
               {/* 노란색 강조 헤드라인 */}
@@ -280,20 +368,28 @@ export default function ShortsPage() {
                 {currentSlide.description}
               </p>
 
-              {/* 하단 프로필 & CTA */}
+              {/* 하단 프로필 & 사이트 바로가기 버튼 */}
               <div className="pt-2 flex items-center justify-between border-t border-white/10">
-                <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-[10px] font-black">
+                <Link href="/" className="flex items-center gap-2 group">
+                  <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-[11px] font-black text-white shadow-xs group-hover:scale-105 transition-transform">
                     나
                   </div>
-                  <span className="text-xs font-bold text-white">@나드리AI · 부울경</span>
-                </div>
+                  <div className="flex flex-col text-left">
+                    <span className="text-xs font-black text-white leading-none">
+                      나드리 AI
+                    </span>
+                    <span className="text-[9px] text-amber-300 font-bold leading-none mt-0.5">
+                      클릭 시 사이트 이동 ➔
+                    </span>
+                  </div>
+                </Link>
 
                 <Link
                   href="/daangn"
-                  className="px-3 py-1 rounded-full bg-red-600 hover:bg-red-700 text-white font-black text-[11px] transition-all shadow-md"
+                  className="px-3.5 py-1.5 rounded-full bg-red-600 hover:bg-red-700 text-white font-black text-xs transition-all shadow-md flex items-center gap-1 active:scale-95"
                 >
-                  일정표 보기 ➔
+                  <span>일정표 보기</span>
+                  <span>➔</span>
                 </Link>
               </div>
             </div>
