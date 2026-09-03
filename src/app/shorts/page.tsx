@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 
 interface Slide {
@@ -36,7 +36,7 @@ const SHORTS_SLIDES: Slide[] = [
     title: "거목들의 웅장한 사운드",
     subTitle: "진재운 감독의 화제작 대형 스크린 상영",
     description: "시원한 가을밤, 빅루프 아래서 만나는 자연의 경이로운 울림!",
-    narration: "개막작 <나무의 노래>를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.",
+    narration: "개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.",
     bgImage: "https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     emoji: "🌿",
     accent: "from-emerald-600 to-teal-500",
@@ -83,23 +83,23 @@ export default function ShortsPage() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
-  const [isMuted, setIsMuted] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const [isTTSActive, setIsTTSActive] = useState(true); // 기본으로 음성 켜기
+  const [isTTSActive, setIsTTSActive] = useState(true);
 
-  // 자연스러운 한국어 보이스 선택 및 톤 조절 상태
+  // 자연스러운 한국어 보이스 상태
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [selectedVoiceName, setSelectedVoiceName] = useState<string>("");
-  const [speechRate, setSpeechRate] = useState<number>(1.0); // 1.0 (가장 자연스러운 보통 속도)
-  const [speechPitch, setSpeechPitch] = useState<number>(1.0); // 1.0 (자연스러운 기본 톤)
+  const [speechRate, setSpeechRate] = useState<number>(1.0);
+  const [speechPitch, setSpeechPitch] = useState<number>(1.0);
   const [selectedTonePreset, setSelectedTonePreset] = useState<"natural_female" | "soft_female" | "calm_male">("natural_female");
 
-  const durationPerSlide = 7000; // 7초당 1슬라이드
-  const progressTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const progressIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const speechEndTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isSpeakingRef = useRef<boolean>(false);
 
   const currentSlide = SHORTS_SLIDES[currentSlideIndex];
 
-  // 브라우저 보이스 로드 및 고음질 자연스러운 한국어 성우 자동 선택
+  // 보이스 로드 및 고품질 자연스러운 한국어 성우 선택
   useEffect(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
@@ -108,7 +108,6 @@ export default function ShortsPage() {
       const koreanVoices = allVoices.filter((v) => v.lang.includes("ko") || v.lang.includes("KR"));
       setVoices(koreanVoices.length > 0 ? koreanVoices : allVoices);
 
-      // 자연스러운 여성 성우 우선 순위 매칭 (SunHi Natural > Google > Yuna > Heami)
       const naturalVoice =
         koreanVoices.find((v) => v.name.includes("SunHi") || v.name.includes("Natural")) ||
         koreanVoices.find((v) => v.name.includes("Google")) ||
@@ -125,7 +124,7 @@ export default function ShortsPage() {
     window.speechSynthesis.onvoiceschanged = updateVoices;
   }, [selectedVoiceName]);
 
-  // 성우 톤 프리셋 변경 핸들러
+  // 성우 프리셋 변경
   const handleTonePresetChange = (preset: "natural_female" | "soft_female" | "calm_male") => {
     setSelectedTonePreset(preset);
     if (preset === "natural_female") {
@@ -146,73 +145,126 @@ export default function ShortsPage() {
     }
   };
 
-  // 자연스러운 TTS 음성 재생 함수 (문장 간 호흡 및 부드러운 연결)
-  const speakText = (text: string) => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window) || isMuted || !isTTSActive) return;
-    window.speechSynthesis.cancel();
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "ko-KR";
-    utterance.rate = speechRate;
-    utterance.pitch = speechPitch;
-    utterance.volume = 1.0;
-
-    if (selectedVoiceName) {
-      const voiceObj = voices.find((v) => v.name === selectedVoiceName);
-      if (voiceObj) utterance.voice = voiceObj;
-    }
-
-    window.speechSynthesis.speak(utterance);
-  };
-
-  // 슬라이드 변경 시 자연스러운 나레이션 재생
-  useEffect(() => {
-    if (isPlaying && isTTSActive) {
-      speakText(currentSlide.narration);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentSlideIndex, isPlaying, isTTSActive, selectedVoiceName, speechRate, speechPitch]);
-
-  // 프로그레스 바 및 자동 슬라이드 제어
-  useEffect(() => {
-    if (!isPlaying) {
-      if (progressTimerRef.current) clearInterval(progressTimerRef.current);
-      return;
-    }
-
-    const intervalStep = 50;
-    progressTimerRef.current = setInterval(() => {
-      setProgress((prev) => {
-        const next = prev + (intervalStep / durationPerSlide) * 100;
-        if (next >= 100) {
-          setCurrentSlideIndex((idx) => (idx + 1) % SHORTS_SLIDES.length);
-          return 0;
-        }
-        return next;
-      });
-    }, intervalStep);
-
-    return () => {
-      if (progressTimerRef.current) clearInterval(progressTimerRef.current);
-    };
-  }, [isPlaying]);
-
-  const handleNext = () => {
+  // 다음 슬라이드로 부드럽게 이동하는 함수
+  const goToNextSlide = useCallback(() => {
     setProgress(0);
     setCurrentSlideIndex((prev) => (prev + 1) % SHORTS_SLIDES.length);
-  };
+  }, []);
 
-  const handlePrev = () => {
+  const goToPrevSlide = useCallback(() => {
     setProgress(0);
     setCurrentSlideIndex((prev) => (prev - 1 + SHORTS_SLIDES.length) % SHORTS_SLIDES.length);
-  };
+  }, []);
 
-  const handleReplayVoice = () => {
-    speakText(currentSlide.narration);
-  };
+  // 🌟 핵심: 음성과 장면 전환을 100% 매끄럽게 동기화하는 재생 엔진
+  const playSlideWithSmoothVoice = useCallback(
+    (slideIdx: number) => {
+      if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+
+      // 이전 타이머 정리
+      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+      if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+      setProgress(0);
+
+      const targetSlide = SHORTS_SLIDES[slideIdx];
+
+      if (!isTTSActive) {
+        // 음성이 꺼져 있을 때는 6초 타이머로 부드럽게 전환
+        const duration = 6000;
+        const step = 50;
+        progressIntervalRef.current = setInterval(() => {
+          setProgress((prev) => {
+            const next = prev + (step / duration) * 100;
+            if (next >= 100) {
+              clearInterval(progressIntervalRef.current!);
+              goToNextSlide();
+              return 0;
+            }
+            return next;
+          });
+        }, step);
+        return;
+      }
+
+      // 음성이 켜져 있을 때: 음성 길이에 맞춰 프로그레스 바를 채우고, 말이 완전히 끝난 후 0.4초 숨고르기 후 자연스럽게 다음 장면 전환
+      window.speechSynthesis.cancel(); // 새 슬라이드 진입 시 초기화
+
+      const utterance = new SpeechSynthesisUtterance(targetSlide.narration);
+      utterance.lang = "ko-KR";
+      utterance.rate = speechRate;
+      utterance.pitch = speechPitch;
+      utterance.volume = 1.0;
+
+      if (selectedVoiceName) {
+        const voiceObj = voices.find((v) => v.name === selectedVoiceName);
+        if (voiceObj) utterance.voice = voiceObj;
+      }
+
+      // 음성 길이 예상치 (한글 글자수 / 속도 기준)
+      const estimatedSec = Math.max((targetSlide.narration.length / (7 * speechRate)), 4.5);
+      const estimatedMs = estimatedSec * 1000;
+      const step = 50;
+
+      progressIntervalRef.current = setInterval(() => {
+        setProgress((prev) => {
+          if (prev < 95) {
+            return prev + (step / estimatedMs) * 95;
+          }
+          return prev;
+        });
+      }, step);
+
+      utterance.onstart = () => {
+        isSpeakingRef.current = true;
+      };
+
+      utterance.onend = () => {
+        isSpeakingRef.current = false;
+        setProgress(100);
+        if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+
+        // 말이 끝난 후 0.4초(400ms) 여유를 두어 "뚝" 끊김 없는 편안한 숨고르기 후 전환
+        if (isPlaying) {
+          speechEndTimeoutRef.current = setTimeout(() => {
+            goToNextSlide();
+          }, 450);
+        }
+      };
+
+      utterance.onerror = () => {
+        isSpeakingRef.current = false;
+        if (isPlaying) {
+          speechEndTimeoutRef.current = setTimeout(() => {
+            goToNextSlide();
+          }, 3000);
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+    },
+    [goToNextSlide, isPlaying, isTTSActive, speechPitch, speechRate, selectedVoiceName, voices]
+  );
+
+  // 슬라이드 번호 변경 시 부드러운 재생 시작
+  useEffect(() => {
+    if (isPlaying) {
+      playSlideWithSmoothVoice(currentSlideIndex);
+    } else {
+      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+      if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    return () => {
+      if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+      if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+    };
+  }, [currentSlideIndex, isPlaying, playSlideWithSmoothVoice]);
 
   const handleCopyScript = () => {
-    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보]\n\n📌 영상 제목:\n오늘 개막! 부산 영화의전당 무료 야외 영화제 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 여러분, 오늘 저녁 센텀 영화의전당에서, 거대한 무료 야외 영화제가 개막한다는 사실, 알고 계셨나요?\n(8~17초) 개막작 <나무의 노래>를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 무료 주차 팁과 전체 일정표는, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 영화제 상세 일정표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #shorts`;
+    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보]\n\n📌 영상 제목:\n오늘 개막! 부산 영화의전당 무료 야외 영화제 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 여러분, 오늘 저녁 센텀 영화의전당에서, 거대한 무료 야외 영화제가 개막한다는 사실, 알고 계셨나요?\n(8~17초) 개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 무료 주차 팁과 전체 일정표는, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 영화제 상세 일정표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #shorts`;
 
     if (navigator?.clipboard) {
       navigator.clipboard.writeText(fullScript);
@@ -262,13 +314,25 @@ export default function ShortsPage() {
         {/* 좌측: 9:16 유튜브 쇼츠 모바일 시뮬레이터 (6열) */}
         <div className="lg:col-span-6 flex flex-col items-center w-full space-y-4">
           <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-[36px] overflow-hidden border-[6px] border-slate-800 shadow-2xl bg-black flex flex-col justify-between select-none">
-            {/* 배경 이미지 */}
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-all duration-700 scale-105"
-              style={{ backgroundImage: `url('${currentSlide.bgImage}')` }}
-            />
+            {/* 🌟 5개 배경 이미지 크로스-페이드 레이어 (화면이 깜빡이거나 끊기지 않고 부드럽게 디졸브) */}
+            {SHORTS_SLIDES.map((slide, idx) => (
+              <div
+                key={slide.id}
+                className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
+                  idx === currentSlideIndex
+                    ? "opacity-100 scale-105"
+                    : "opacity-0 scale-100 pointer-events-none"
+                }`}
+                style={{
+                  backgroundImage: `url('${slide.bgImage}')`,
+                  transitionProperty: "opacity, transform",
+                  transitionDuration: "1000ms",
+                }}
+              />
+            ))}
+
             {/* 어두운 그라데이션 오버레이 */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60 z-10 pointer-events-none" />
 
             {/* 최상단 프로그레스 바 */}
             <div className="relative z-20 px-3 pt-3 flex items-center gap-1">
@@ -278,7 +342,7 @@ export default function ShortsPage() {
                   className="flex-1 h-1 rounded-full bg-white/30 overflow-hidden"
                 >
                   <div
-                    className="h-full bg-red-500 transition-all duration-75"
+                    className="h-full bg-red-500 transition-all duration-100"
                     style={{
                       width:
                         idx < currentSlideIndex
@@ -313,22 +377,22 @@ export default function ShortsPage() {
                 </button>
                 <button
                   onClick={() => setIsPlaying(!isPlaying)}
-                  className="w-7 h-7 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md"
+                  className="w-7 h-7 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md cursor-pointer hover:bg-black/80"
                 >
                   {isPlaying ? "⏸" : "▶"}
                 </button>
               </div>
             </div>
 
-            {/* 터치/클릭 영역 (좌/우 클릭으로 슬라이드 이동) */}
-            <div className="absolute inset-y-16 inset-x-0 z-10 flex">
+            {/* 터치/클릭 영역 (좌/우 클릭으로 슬라이드 수동 이동) */}
+            <div className="absolute inset-y-16 inset-x-0 z-15 flex">
               <div
-                onClick={handlePrev}
+                onClick={goToPrevSlide}
                 className="w-1/2 h-full cursor-pointer active:bg-white/5 transition-colors"
                 title="이전 슬라이드"
               />
               <div
-                onClick={handleNext}
+                onClick={goToNextSlide}
                 className="w-1/2 h-full cursor-pointer active:bg-white/5 transition-colors"
                 title="다음 슬라이드"
               />
@@ -336,7 +400,7 @@ export default function ShortsPage() {
 
             {/* 우측 유튜브 쇼츠 플로팅 액션 아이콘 바 */}
             <div className="absolute right-3 bottom-24 z-30 flex flex-col items-center gap-4 text-white">
-              {/* 1. 나드리 AI 사이트 바로가기 아이콘 (회장님 요청 핵심) */}
+              {/* 1. 나드리 AI 사이트 바로가기 아이콘 */}
               <Link
                 href="/daangn"
                 className="group flex flex-col items-center gap-1 cursor-pointer"
@@ -380,7 +444,7 @@ export default function ShortsPage() {
 
             {/* 마지막 5번 슬라이드일 때 나타나는 쇼츠 엔딩 대형 오버레이 카드 */}
             {currentSlideIndex === 4 && (
-              <div className="absolute inset-x-4 top-20 bottom-36 z-25 bg-slate-900/95 backdrop-blur-lg rounded-3xl p-5 border-2 border-indigo-500/80 shadow-2xl flex flex-col justify-between text-center animate-in fade-in zoom-in-95 duration-300">
+              <div className="absolute inset-x-4 top-20 bottom-36 z-25 bg-slate-900/95 backdrop-blur-lg rounded-3xl p-5 border-2 border-indigo-500/80 shadow-2xl flex flex-col justify-between text-center animate-in fade-in zoom-in-95 duration-500">
                 <div className="space-y-2">
                   <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-indigo-500 text-white font-black text-xs shadow-xs">
                     ✨ 나드리 AI 공식 포털
@@ -422,8 +486,11 @@ export default function ShortsPage() {
               </div>
             )}
 
-            {/* 하단 자막 & 볼드 타이포그래피 (쇼츠 스타일) */}
-            <div className="relative z-20 p-5 space-y-3">
+            {/* 하단 자막 & 볼드 타이포그래피 (자연스러운 전환 애니메이션) */}
+            <div
+              key={currentSlide.id}
+              className="relative z-20 p-5 space-y-3 transition-all duration-700 ease-out animate-in fade-in slide-in-from-bottom-3"
+            >
               {/* 노란색 강조 헤드라인 */}
               <div className="inline-block px-3 py-1 rounded-xl bg-amber-400 text-black font-black text-xs tracking-tight shadow-md">
                 {currentSlide.subTitle}
@@ -469,20 +536,20 @@ export default function ShortsPage() {
           {/* 슬라이드 컨트롤 및 다시 듣기 바 */}
           <div className="flex items-center gap-2 w-full max-w-[360px] justify-between text-xs">
             <button
-              onClick={handlePrev}
-              className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors"
+              onClick={goToPrevSlide}
+              className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors cursor-pointer"
             >
               ◀ 이전 장면
             </button>
             <button
-              onClick={handleReplayVoice}
-              className="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-all shadow-xs flex items-center gap-1"
+              onClick={() => playSlideWithSmoothVoice(currentSlideIndex)}
+              className="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer"
             >
               <span>🔊 음성 다시 듣기</span>
             </button>
             <button
-              onClick={handleNext}
-              className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors"
+              onClick={goToNextSlide}
+              className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition-colors cursor-pointer"
             >
               다음 장면 ▶
             </button>
@@ -497,11 +564,11 @@ export default function ShortsPage() {
               <div className="flex items-center gap-2">
                 <span className="text-xl">🎙️</span>
                 <h3 className="font-extrabold text-sm sm:text-base text-white">
-                  AI 성우 목소리 &amp; 자연스러운 톤 조절
+                  AI 성우 목소리 &amp; 장면 자동 연결 설정
                 </h3>
               </div>
               <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
-                실시간 튜닝
+                음성 싱크 연결 ON
               </span>
             </div>
 
@@ -588,8 +655,8 @@ export default function ShortsPage() {
             </div>
 
             <button
-              onClick={handleReplayVoice}
-              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5"
+              onClick={() => playSlideWithSmoothVoice(currentSlideIndex)}
+              className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
               <span>🔊 현재 설정으로 음성 테스트하기</span>
             </button>
@@ -616,7 +683,6 @@ export default function ShortsPage() {
                   key={slide.id}
                   onClick={() => {
                     setCurrentSlideIndex(idx);
-                    setProgress(0);
                   }}
                   className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                     currentSlideIndex === idx
