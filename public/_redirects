@@ -1,0 +1,34 @@
+# Cloudflare Pages Redirects & Case-Insensitive Route Rules
+
+/shorts /shorts/ 301
+/Shorts /shorts/ 301
+/SHORTS /shorts/ 301
+/Shorts/ /shorts/ 301
+/SHORTS/ /shorts/ 301
+/short /shorts/ 301
+/short/ /shorts/ 301
+
+/daangn /daangn/ 301
+/Daangn /daangn/ 301
+/DAANGN /daangn/ 301
+/Daangn/ /daangn/ 301
+/DAANGN/ /daangn/ 301
+/dangn /daangn/ 301
+/dangn/ /daangn/ 301
+
+/intro /intro/ 301
+/Intro /intro/ 301
+/INTRO /intro/ 301
+/Intro/ /intro/ 301
+
+/blog /blog/ 301
+/Blog /blog/ 301
+/BLOG /blog/ 301
+/Blog/ /blog/ 301
+
+/earth /shorts/ 301
+/earth/ /shorts/ 301
+/festival /shorts/ 301
+/festival/ /shorts/ 301
+/cinema /shorts/ 301
+/cinema/ /shorts/ 301
