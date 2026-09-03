@@ -4,6 +4,8 @@ import { getNaverLocalPlaces } from "@/lib/naver";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import MarketInfoCard from "@/components/MarketInfoCard";
 import LibraryInfoCard from "@/components/LibraryInfoCard";
+import PointOfViewCard from "@/components/PointOfViewCard";
+import CourseTimelinePlanner from "@/components/CourseTimelinePlanner";
 import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 import { getMarketForExhibition } from "@/utils/market";
@@ -204,6 +206,9 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* 좌측: 전시 소개 및 큐레이터 노트 (2열 차지) */}
           <div className="lg:col-span-2 space-y-8">
+            {/* 29CM 에디토리얼 Point of View 3줄 요약 & 꿀팁 배지 */}
+            <PointOfViewCard exhibition={exhibition} />
+
             {/* AI 도슨트 블로그 가이드 배너 */}
             {exhibition.blogSlug && (
               <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-900 rounded-3xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border border-indigo-500/30">
@@ -251,6 +256,14 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                 </p>
               </div>
             )}
+
+            {/* 트리플 스타일 추천 나들이 동선 플래너 & 카카오톡 코스 공유 */}
+            <CourseTimelinePlanner
+              exhibition={exhibition}
+              nearbyMarket={nearbyMarket}
+              nearbyLibrary={nearbyLibrary}
+              localPlaces={localPlaces}
+            />
 
             {/* 네이버 실시간 주변 핫플레이스 & 맛집 (NAVER API HUB 연동) */}
             {localPlaces && localPlaces.length > 0 && (

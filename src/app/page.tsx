@@ -7,6 +7,7 @@ import EditorPickSection from "@/components/EditorPickSection";
 import ArtRoadmapSection from "@/components/ArtRoadmapSection";
 import MarketSection from "@/components/MarketSection";
 import LibrarySection from "@/components/LibrarySection";
+import EditorialMoodFilter from "@/components/EditorialMoodFilter";
 import { calculateDDay } from "@/utils/date";
 import rawData from "../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
@@ -28,8 +29,43 @@ export default function HomePage() {
   const [showOnlyFree, setShowOnlyFree] = useState<boolean>(false);
   const [showOnlyClosingSoon, setShowOnlyClosingSoon] = useState<boolean>(false);
   const [selectedTheme, setSelectedTheme] = useState<string>("전체 테마");
+  const [selectedMood, setSelectedMood] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+
+  // 29CM 감성 무드 필터 선택 핸들러
+  const handleSelectMood = (moodId: string) => {
+    setSelectedMood(moodId);
+    if (moodId === "all") {
+      setShowOnlyFree(false);
+      setShowOnlyClosingSoon(false);
+      setSelectedTheme("전체 테마");
+    } else if (moodId === "free") {
+      setShowOnlyFree(true);
+      setShowOnlyClosingSoon(false);
+      setSelectedTheme("전체 테마");
+    } else if (moodId === "closing") {
+      setShowOnlyClosingSoon(true);
+      setShowOnlyFree(false);
+      setSelectedTheme("전체 테마");
+    } else if (moodId === "healing") {
+      setSelectedTheme("🌿 자연/힐링");
+      setShowOnlyFree(false);
+      setShowOnlyClosingSoon(false);
+    } else if (moodId === "kids") {
+      setSelectedTheme("👶 가족/체험");
+      setShowOnlyFree(false);
+      setShowOnlyClosingSoon(false);
+    } else if (moodId === "rainy") {
+      setSelectedTheme("🎬 미디어/현대미술");
+      setShowOnlyFree(false);
+      setShowOnlyClosingSoon(false);
+    } else if (moodId === "hot") {
+      setSelectedTheme("전체 테마");
+      setShowOnlyFree(false);
+      setShowOnlyClosingSoon(false);
+    }
+  };
 
   // 지역별 개수 계산
   const regionCounts = useMemo(() => {
@@ -143,6 +179,7 @@ export default function HomePage() {
     setShowOnlyFree(false);
     setShowOnlyClosingSoon(false);
     setSelectedTheme("전체 테마");
+    setSelectedMood("all");
     setSearchQuery("");
   };
 
@@ -555,6 +592,13 @@ export default function HomePage() {
 
         {/* 🗺️ 2. 부울경 4대 테마 아트 로드맵 (Gallery Hopping) */}
         <ArtRoadmapSection />
+
+        {/* 29CM 감성 퀵 무드 필터 바 */}
+        <EditorialMoodFilter
+          selectedMood={selectedMood}
+          onSelectMood={handleSelectMood}
+          resultCount={filteredExhibitions.length}
+        />
 
         {/* 3. 필터 컨트롤 바 (지역 + 무료/마감임박 + 테마) */}
         <div id="exhibitions-list-section" className="space-y-4 pb-6 border-b border-slate-200 scroll-mt-24">
