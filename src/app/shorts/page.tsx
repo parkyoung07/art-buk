@@ -81,7 +81,8 @@ const SHORTS_SLIDES: Slide[] = [
 
 export default function ShortsPage() {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [hasStarted, setHasStarted] = useState(false); // 모바일 터치 시작 여부
+  const [isPlaying, setIsPlaying] = useState(false); // 사용자 터치 후 재생
   const [progress, setProgress] = useState(0);
   const [isCopied, setIsCopied] = useState(false);
   const [isTTSActive, setIsTTSActive] = useState(true);
@@ -94,8 +95,8 @@ export default function ShortsPage() {
   const [selectedTonePreset, setSelectedTonePreset] = useState<"natural_female" | "soft_female" | "calm_male">("natural_female");
 
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const safetyTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const speechEndTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const isSpeakingRef = useRef<boolean>(false);
 
   const currentSlide = SHORTS_SLIDES[currentSlideIndex];
 
@@ -156,97 +157,85 @@ export default function ShortsPage() {
     setCurrentSlideIndex((prev) => (prev - 1 + SHORTS_SLIDES.length) % SHORTS_SLIDES.length);
   }, []);
 
-  // 🌟 핵심: 음성과 장면 전환을 100% 매끄럽게 동기화하는 재생 엔진
+  // 🌟 핵심: 모바일에서도 절대 멈추지 않는 스마트 이중 타이머 재생 엔진
   const playSlideWithSmoothVoice = useCallback(
     (slideIdx: number) => {
-      if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+      if (typeof window === "undefined") return;
 
+      // 이전 타이머 초기화
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+      if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
       setProgress(0);
 
       const targetSlide = SHORTS_SLIDES[slideIdx];
-
-      if (!isTTSActive) {
-        const duration = 6500;
-        const step = 50;
-        progressIntervalRef.current = setInterval(() => {
-          setProgress((prev) => {
-            const next = prev + (step / duration) * 100;
-            if (next >= 100) {
-              clearInterval(progressIntervalRef.current!);
-              goToNextSlide();
-              return 0;
-            }
-            return next;
-          });
-        }, step);
-        return;
-      }
-
-      window.speechSynthesis.cancel();
-
-      const utterance = new SpeechSynthesisUtterance(targetSlide.narration);
-      utterance.lang = "ko-KR";
-      utterance.rate = speechRate;
-      utterance.pitch = speechPitch;
-      utterance.volume = 1.0;
-
-      if (selectedVoiceName) {
-        const voiceObj = voices.find((v) => v.name === selectedVoiceName);
-        if (voiceObj) utterance.voice = voiceObj;
-      }
-
-      const estimatedSec = Math.max((targetSlide.narration.length / (7 * speechRate)), 4.8);
+      const estimatedSec = Math.max(targetSlide.narration.length / (7 * speechRate), 5.0);
       const estimatedMs = estimatedSec * 1000;
       const step = 50;
 
+      // 1. 프로그레스 바 타이머
       progressIntervalRef.current = setInterval(() => {
         setProgress((prev) => {
-          if (prev < 95) {
-            return prev + (step / estimatedMs) * 95;
+          if (prev < 98) {
+            return prev + (step / (estimatedMs + 400)) * 98;
           }
           return prev;
         });
       }, step);
 
-      utterance.onstart = () => {
-        isSpeakingRef.current = true;
-      };
+      // 2. 모바일 음성 재생
+      if (isTTSActive && "speechSynthesis" in window) {
+        try {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(targetSlide.narration);
+          utterance.lang = "ko-KR";
+          utterance.rate = speechRate;
+          utterance.pitch = speechPitch;
+          utterance.volume = 1.0;
 
-      utterance.onend = () => {
-        isSpeakingRef.current = false;
+          if (selectedVoiceName) {
+            const voiceObj = voices.find((v) => v.name === selectedVoiceName);
+            if (voiceObj) utterance.voice = voiceObj;
+          }
+
+          utterance.onend = () => {
+            setProgress(100);
+            if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
+            if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
+
+            speechEndTimeoutRef.current = setTimeout(() => {
+              goToNextSlide();
+            }, 450);
+          };
+
+          utterance.onerror = () => {
+            // 음성 오류 시 안전 타이머가 작동하도록 유지
+          };
+
+          window.speechSynthesis.speak(utterance);
+        } catch {
+          // fallback to safety timer
+        }
+      }
+
+      // 3. 모바일 안전 타이머 (브라우저가 onend를 안 보내도 100% 다음 장면으로 자동 전환)
+      safetyTimeoutRef.current = setTimeout(() => {
         setProgress(100);
         if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
-
-        if (isPlaying) {
-          speechEndTimeoutRef.current = setTimeout(() => {
-            goToNextSlide();
-          }, 450);
-        }
-      };
-
-      utterance.onerror = () => {
-        isSpeakingRef.current = false;
-        if (isPlaying) {
-          speechEndTimeoutRef.current = setTimeout(() => {
-            goToNextSlide();
-          }, 3000);
-        }
-      };
-
-      window.speechSynthesis.speak(utterance);
+        goToNextSlide();
+      }, estimatedMs + 650);
     },
-    [goToNextSlide, isPlaying, isTTSActive, speechPitch, speechRate, selectedVoiceName, voices]
+    [goToNextSlide, isTTSActive, speechPitch, speechRate, selectedVoiceName, voices]
   );
 
-  // 슬라이드 번호 변경 시 부드러운 재생 시작
+  // 재생 상태 변경 시 동작
   useEffect(() => {
     if (isPlaying) {
       playSlideWithSmoothVoice(currentSlideIndex);
     } else {
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+      if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
       if (typeof window !== "undefined" && "speechSynthesis" in window) {
         window.speechSynthesis.cancel();
       }
@@ -255,8 +244,23 @@ export default function ShortsPage() {
     return () => {
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
+      if (safetyTimeoutRef.current) clearTimeout(safetyTimeoutRef.current);
     };
   }, [currentSlideIndex, isPlaying, playSlideWithSmoothVoice]);
+
+  // 모바일 사용자가 중앙 터치했을 때 잠금 해제 및 재생 시작
+  const handleStartPlay = () => {
+    setHasStarted(true);
+    setIsPlaying(true);
+  };
+
+  const handleTogglePlay = () => {
+    if (!hasStarted) {
+      handleStartPlay();
+    } else {
+      setIsPlaying((prev) => !prev);
+    }
+  };
 
   const handleCopyScript = () => {
     const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보 (9/3~9/7 축제 기간용)]\n\n📌 영상 제목:\n9.3(목)~9.7(월) 부산 영화의전당 '제5회 하나뿐인 지구영상제' 무료 야외영화 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 9월 3일부터 9월 7일까지 5일간, 센텀 영화의전당에서 거대한 무료 야외 영화제가 열린다는 사실, 알고 계셨나요?\n(8~17초) 개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 9월 7일까지 펼쳐지는 축제 일정표와 무료 주차 팁은, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 9/3~9/7 영화제 전체 상영시간표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #환경영화제 #shorts`;
@@ -329,6 +333,24 @@ export default function ShortsPage() {
             {/* 어두운 그라데이션 오버레이 */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60 z-10 pointer-events-none" />
 
+            {/* 🌟 모바일 최초 진입 시 나타나는 '터치하여 쇼츠 재생' 오버레이 (모바일 브라우저 자동재생 차단 완벽 해소) */}
+            {!hasStarted && (
+              <div
+                onClick={handleStartPlay}
+                className="absolute inset-0 z-40 bg-black/60 backdrop-blur-xs flex flex-col items-center justify-center p-6 text-center cursor-pointer group"
+              >
+                <div className="w-20 h-20 rounded-full bg-red-600 group-hover:bg-red-500 text-white flex items-center justify-center text-3xl shadow-2xl border-4 border-white/80 animate-bounce transition-transform group-active:scale-95 pl-1">
+                  ▶
+                </div>
+                <span className="mt-4 px-4 py-2 rounded-full bg-slate-900/90 text-white font-black text-sm border border-white/20 shadow-lg">
+                  화면을 터치하여 쇼츠 재생하기
+                </span>
+                <span className="mt-2 text-xs text-amber-300 font-bold">
+                  스마트폰 소리를 켜고 눌러주세요 🔊
+                </span>
+              </div>
+            )}
+
             {/* 최상단 프로그레스 바 */}
             <div className="relative z-20 px-3 pt-3 flex items-center gap-1">
               {SHORTS_SLIDES.map((slide, idx) => (
@@ -371,7 +393,7 @@ export default function ShortsPage() {
                   <span>{isTTSActive ? "🗣️ 음성 ON" : "🔇 음성 OFF"}</span>
                 </button>
                 <button
-                  onClick={() => setIsPlaying(!isPlaying)}
+                  onClick={handleTogglePlay}
                   className="w-7 h-7 rounded-full bg-black/60 text-white flex items-center justify-center text-xs backdrop-blur-md cursor-pointer hover:bg-black/80"
                 >
                   {isPlaying ? "⏸" : "▶"}
@@ -558,7 +580,11 @@ export default function ShortsPage() {
               ◀ 이전 장면
             </button>
             <button
-              onClick={() => playSlideWithSmoothVoice(currentSlideIndex)}
+              onClick={() => {
+                if (!hasStarted) setHasStarted(true);
+                setIsPlaying(true);
+                playSlideWithSmoothVoice(currentSlideIndex);
+              }}
               className="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-all shadow-xs flex items-center gap-1 cursor-pointer"
             >
               <span>🔊 음성 다시 듣기</span>
@@ -671,7 +697,11 @@ export default function ShortsPage() {
             </div>
 
             <button
-              onClick={() => playSlideWithSmoothVoice(currentSlideIndex)}
+              onClick={() => {
+                if (!hasStarted) setHasStarted(true);
+                setIsPlaying(true);
+                playSlideWithSmoothVoice(currentSlideIndex);
+              }}
               className="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
               <span>🔊 현재 설정으로 음성 테스트하기</span>
@@ -698,6 +728,8 @@ export default function ShortsPage() {
                 <div
                   key={slide.id}
                   onClick={() => {
+                    if (!hasStarted) setHasStarted(true);
+                    setIsPlaying(true);
                     setCurrentSlideIndex(idx);
                   }}
                   className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
