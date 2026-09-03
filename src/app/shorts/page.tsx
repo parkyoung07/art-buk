@@ -20,19 +20,19 @@ const SHORTS_SLIDES: Slide[] = [
   {
     id: 1,
     time: "0:00 ~ 0:08",
-    tag: "🔥 오늘(9/3) 개막!",
-    title: "영화의전당 무료 야외 영화제?",
-    subTitle: "오늘 저녁 18:30 야외극장 무료 상영!",
-    description: "부산 센텀 영화의전당에서 5일간 펼쳐지는 아시아 최대 환경 영상 축제!",
-    narration: "여러분, 오늘 저녁 센텀 영화의전당에서, 거대한 무료 야외 영화제가 개막한다는 사실, 알고 계셨나요?",
-    bgImage: "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    emoji: "🎬",
-    accent: "from-rose-600 to-amber-500",
+    tag: "🌿 9.3(목) ~ 9.7(월) 5일간!",
+    title: "제5회 하나뿐인 지구영상제",
+    subTitle: "영화의전당 무료 야외 시네마 축제!",
+    description: "'다시 지구(Earth and Us)'를 슬로건으로 영화의전당에서 5일간 펼쳐지는 아시아 최대 환경 영상 축제!",
+    narration: "9월 3일부터 9월 7일까지 5일간, 센텀 영화의전당에서 거대한 무료 야외 영화제가 열린다는 사실, 알고 계셨나요?",
+    bgImage: "/images/earth-festival-poster.jpg",
+    emoji: "🌍",
+    accent: "from-emerald-600 via-teal-600 to-blue-600",
   },
   {
     id: 2,
     time: "0:08 ~ 0:17",
-    tag: "🌳 오늘 개막작 <나무의 노래>",
+    tag: "🌳 개막작 <나무의 노래>",
     title: "거목들의 웅장한 사운드",
     subTitle: "진재운 감독의 화제작 대형 스크린 상영",
     description: "시원한 가을밤, 빅루프 아래서 만나는 자연의 경이로운 울림!",
@@ -68,12 +68,12 @@ const SHORTS_SLIDES: Slide[] = [
   {
     id: 5,
     time: "0:35 ~ 0:45",
-    tag: "👉 무료 주차 & 일정표 보기",
+    tag: "👉 9/7까지 축제 일정표 보기",
     title: "나드리 AI에서 지금 확인!",
     subTitle: "화면 아래 링크 클릭 또는 nadriai.com",
-    description: "부울경 40+개 무료 전시 & 5일장 일정표를 한눈에 만나보세요!",
-    narration: "무료 주차 팁과 전체 일정표는, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!",
-    bgImage: "https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    description: "9월 7일까지 펼쳐지는 축제 상영시간표와 무료 주차 꿀팁을 지금 확인하세요!",
+    narration: "9월 7일까지 펼쳐지는 축제 일정표와 무료 주차 팁은, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!",
+    bgImage: "/images/earth-festival-poster.jpg",
     emoji: "✨",
     accent: "from-purple-600 to-pink-600",
   },
@@ -161,7 +161,6 @@ export default function ShortsPage() {
     (slideIdx: number) => {
       if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
-      // 이전 타이머 정리
       if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
       if (speechEndTimeoutRef.current) clearTimeout(speechEndTimeoutRef.current);
       setProgress(0);
@@ -169,8 +168,7 @@ export default function ShortsPage() {
       const targetSlide = SHORTS_SLIDES[slideIdx];
 
       if (!isTTSActive) {
-        // 음성이 꺼져 있을 때는 6초 타이머로 부드럽게 전환
-        const duration = 6000;
+        const duration = 6500;
         const step = 50;
         progressIntervalRef.current = setInterval(() => {
           setProgress((prev) => {
@@ -186,8 +184,7 @@ export default function ShortsPage() {
         return;
       }
 
-      // 음성이 켜져 있을 때: 음성 길이에 맞춰 프로그레스 바를 채우고, 말이 완전히 끝난 후 0.4초 숨고르기 후 자연스럽게 다음 장면 전환
-      window.speechSynthesis.cancel(); // 새 슬라이드 진입 시 초기화
+      window.speechSynthesis.cancel();
 
       const utterance = new SpeechSynthesisUtterance(targetSlide.narration);
       utterance.lang = "ko-KR";
@@ -200,8 +197,7 @@ export default function ShortsPage() {
         if (voiceObj) utterance.voice = voiceObj;
       }
 
-      // 음성 길이 예상치 (한글 글자수 / 속도 기준)
-      const estimatedSec = Math.max((targetSlide.narration.length / (7 * speechRate)), 4.5);
+      const estimatedSec = Math.max((targetSlide.narration.length / (7 * speechRate)), 4.8);
       const estimatedMs = estimatedSec * 1000;
       const step = 50;
 
@@ -223,7 +219,6 @@ export default function ShortsPage() {
         setProgress(100);
         if (progressIntervalRef.current) clearInterval(progressIntervalRef.current);
 
-        // 말이 끝난 후 0.4초(400ms) 여유를 두어 "뚝" 끊김 없는 편안한 숨고르기 후 전환
         if (isPlaying) {
           speechEndTimeoutRef.current = setTimeout(() => {
             goToNextSlide();
@@ -264,7 +259,7 @@ export default function ShortsPage() {
   }, [currentSlideIndex, isPlaying, playSlideWithSmoothVoice]);
 
   const handleCopyScript = () => {
-    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보]\n\n📌 영상 제목:\n오늘 개막! 부산 영화의전당 무료 야외 영화제 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 여러분, 오늘 저녁 센텀 영화의전당에서, 거대한 무료 야외 영화제가 개막한다는 사실, 알고 계셨나요?\n(8~17초) 개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 무료 주차 팁과 전체 일정표는, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 영화제 상세 일정표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #shorts`;
+    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보 (9/3~9/7 축제 기간용)]\n\n📌 영상 제목:\n9.3(목)~9.7(월) 부산 영화의전당 '제5회 하나뿐인 지구영상제' 무료 야외영화 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 9월 3일부터 9월 7일까지 5일간, 센텀 영화의전당에서 거대한 무료 야외 영화제가 열린다는 사실, 알고 계셨나요?\n(8~17초) 개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 9월 7일까지 펼쳐지는 축제 일정표와 무료 주차 팁은, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 9/3~9/7 영화제 전체 상영시간표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #환경영화제 #shorts`;
 
     if (navigator?.clipboard) {
       navigator.clipboard.writeText(fullScript);
@@ -287,8 +282,8 @@ export default function ShortsPage() {
           <span className="font-extrabold text-sm sm:text-base tracking-tight text-white">
             나드리 AI 쇼츠 스튜디오
           </span>
-          <span className="px-2 py-0.5 rounded-full bg-red-600 text-white font-black text-[10px] tracking-wider uppercase animate-pulse">
-            SHORTS 9:16
+          <span className="px-2 py-0.5 rounded-full bg-emerald-600 text-white font-black text-[10px] tracking-wider uppercase animate-pulse">
+            9.3 ~ 9.7 [5일간]
           </span>
         </div>
 
@@ -314,7 +309,7 @@ export default function ShortsPage() {
         {/* 좌측: 9:16 유튜브 쇼츠 모바일 시뮬레이터 (6열) */}
         <div className="lg:col-span-6 flex flex-col items-center w-full space-y-4">
           <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-[36px] overflow-hidden border-[6px] border-slate-800 shadow-2xl bg-black flex flex-col justify-between select-none">
-            {/* 🌟 5개 배경 이미지 크로스-페이드 레이어 (화면이 깜빡이거나 끊기지 않고 부드럽게 디졸브) */}
+            {/* 🌟 5개 배경 이미지 크로스-페이드 레이어 */}
             {SHORTS_SLIDES.map((slide, idx) => (
               <div
                 key={slide.id}
@@ -384,6 +379,27 @@ export default function ShortsPage() {
               </div>
             </div>
 
+            {/* 🌟 1번 슬라이드일 때 공식 메인 포스터 부각 뱃지 & 미니 포스터 카드 */}
+            {currentSlideIndex === 0 && (
+              <div className="relative z-20 mx-auto px-4 mt-2 flex flex-col items-center gap-2 animate-in fade-in zoom-in-95 duration-500">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-emerald-400/80 w-36 h-48 group">
+                  <img
+                    src="/images/earth-festival-poster.jpg"
+                    alt="제5회 하나뿐인 지구영상제 공식 포스터"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-1.5 text-center">
+                    <span className="text-[10px] font-black text-amber-300 block">
+                      공식 포스터
+                    </span>
+                    <span className="text-[9px] text-emerald-200 font-bold block">
+                      &quot;다시 지구 (Earth and Us)&quot;
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* 터치/클릭 영역 (좌/우 클릭으로 슬라이드 수동 이동) */}
             <div className="absolute inset-y-16 inset-x-0 z-15 flex">
               <div
@@ -446,15 +462,15 @@ export default function ShortsPage() {
             {currentSlideIndex === 4 && (
               <div className="absolute inset-x-4 top-20 bottom-36 z-25 bg-slate-900/95 backdrop-blur-lg rounded-3xl p-5 border-2 border-indigo-500/80 shadow-2xl flex flex-col justify-between text-center animate-in fade-in zoom-in-95 duration-500">
                 <div className="space-y-2">
-                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-indigo-500 text-white font-black text-xs shadow-xs">
-                    ✨ 나드리 AI 공식 포털
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-600 text-white font-black text-xs shadow-xs">
+                    📅 9.3(목) ~ 9.7(월) 5일간
                   </span>
                   <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                    영화제 상영시간표 &amp;<br />
+                    지구영상제 상영시간표 &amp;<br />
                     <span className="text-amber-300">주차·맛집 나들이 코스</span> 보기
                   </h3>
                   <p className="text-[11px] text-slate-300 leading-relaxed">
-                    지금 바로 아래 버튼을 눌러 부울경 40+개 무료 전시와 5일장 장날 지도를 확인하세요!
+                    지금 바로 아래 버튼을 눌러 9월 7일까지 펼쳐지는 축제 일정표와 부울경 40+개 무료 전시를 확인하세요!
                   </p>
                 </div>
 
@@ -568,7 +584,7 @@ export default function ShortsPage() {
                 </h3>
               </div>
               <span className="text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
-                음성 싱크 연결 ON
+                9/3 ~ 9/7 축제 기간용
               </span>
             </div>
 
@@ -667,7 +683,7 @@ export default function ShortsPage() {
             <div className="flex items-center justify-between">
               <h3 className="font-extrabold text-sm sm:text-base text-white flex items-center gap-2">
                 <span>📝</span>
-                <span>자연스러운 구어체 나레이션 대본</span>
+                <span>축제 기간(9/3~9/7) 구어체 나레이션 대본</span>
               </h3>
               <button
                 onClick={handleCopyScript}

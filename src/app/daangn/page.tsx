@@ -81,12 +81,12 @@ export default function DaangnLandingPage() {
 
         <div className="relative max-w-3xl mx-auto text-center space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-black text-xs border border-white/30 shadow-xs">
-            <span>🥕 당근 이웃님들 주목! 오늘 개막</span>
+            <span>🥕 9.3(목) ~ 9.7(월) [5일간 축제]</span>
             <span className="w-1.5 h-1.5 rounded-full bg-amber-300 animate-ping" />
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight sm:leading-snug">
-            오늘 영화의전당에서<br />
+            부산 영화의전당에서 5일간!<br />
             <span className="text-amber-200 underline decoration-white/40 underline-offset-4">
               무료 야외 영화제 & 에코 플리마켓
             </span>
@@ -94,7 +94,7 @@ export default function DaangnLandingPage() {
           </h1>
 
           <p className="text-xs sm:text-base text-orange-100 max-w-xl mx-auto leading-relaxed">
-            2026.09.03(목) 오늘부터 9.7(월)까지 5일간! 영화의전당 빅루프 아래서 시원한 가을밤 야외 시네마와 아이 동반 무료 체험까지 모두 즐겨보세요 🌿
+            2026.09.03(목)부터 9.7(월)까지 5일간! 영화의전당 빅루프 아래서 시원한 가을밤 야외 시네마와 아이 동반 무료 체험까지 모두 즐겨보세요 🌿
           </p>
 
           {/* 퀵 액션 버튼 바 */}
@@ -121,34 +121,57 @@ export default function DaangnLandingPage() {
 
       {/* 3. 본문 컨테이너 */}
       <main className="flex-1 max-w-3xl w-full mx-auto px-4 py-8 sm:py-12 space-y-8">
-        {/* 핵심 요약 카드 */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-4">
-          <div className="flex items-center gap-2 pb-3 border-b border-slate-100">
-            <span className="text-lg">🎬</span>
-            <h2 className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
-              제5회 하나뿐인 지구영상제 (Only One Earth Film Festival)
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-            <div className="p-3.5 rounded-2xl bg-orange-50/70 border border-orange-100 space-y-1">
-              <span className="font-bold text-[#FF6F0F] text-[11px] block">📅 축제 일정</span>
-              <p className="font-extrabold text-slate-900">2026.09.03(목) ~ 09.07(월) [5일간]</p>
+        {/* 🌟 공식 메인 포스터 & 핵심 요약 통합 카드 */}
+        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6">
+          <div className="flex flex-col sm:flex-row gap-6 items-center">
+            {/* 공식 포스터 이미지 */}
+            <div className="relative w-44 sm:w-52 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-2 border-emerald-500/80 shrink-0 group">
+              <img
+                src="/images/earth-festival-poster.jpg"
+                alt="제5회 하나뿐인 지구영상제 공식 포스터 (다시 지구)"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2 text-center text-white">
+                <span className="text-[11px] font-black text-amber-300 block">
+                  공식 포스터
+                </span>
+                <span className="text-[10px] text-emerald-200 font-bold block">
+                  &quot;다시 지구 (Earth and Us)&quot;
+                </span>
+              </div>
             </div>
 
-            <div className="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-1">
-              <span className="font-bold text-emerald-700 text-[11px] block">📍 개최 장소</span>
-              <p className="font-extrabold text-slate-900">부산 영화의전당 일원 (센텀시티역)</p>
-            </div>
+            {/* 행사 정보 */}
+            <div className="flex-1 space-y-3">
+              <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
+                <span className="text-xl">🎬</span>
+                <h2 className="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+                  제5회 하나뿐인 지구영상제<br />
+                  <span className="text-xs sm:text-sm text-emerald-600 font-bold">The 5th Only One Earth Film Festival</span>
+                </h2>
+              </div>
 
-            <div className="p-3.5 rounded-2xl bg-indigo-50/70 border border-indigo-100 space-y-1">
-              <span className="font-bold text-indigo-700 text-[11px] block">🎟️ 관람료 혜택</span>
-              <p className="font-extrabold text-slate-900">야외 개막식 & 광장 에코 부스 무료!</p>
-            </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                <div className="p-3 rounded-2xl bg-orange-50/70 border border-orange-100 space-y-0.5">
+                  <span className="font-bold text-[#FF6F0F] text-[10px] block">📅 축제 일정</span>
+                  <p className="font-black text-slate-900">2026.09.03(목) ~ 09.07(월) [5일간]</p>
+                </div>
 
-            <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100 space-y-1">
-              <span className="font-bold text-amber-800 text-[11px] block">🌟 대표 슬로건</span>
-              <p className="font-extrabold text-slate-900">&quot;다시 지구 (Earth and Us)&quot;</p>
+                <div className="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-100 space-y-0.5">
+                  <span className="font-bold text-emerald-700 text-[10px] block">📍 개최 장소</span>
+                  <p className="font-black text-slate-900">부산 영화의전당 일원</p>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-indigo-50/70 border border-indigo-100 space-y-0.5">
+                  <span className="font-bold text-indigo-700 text-[10px] block">🎟️ 관람료 혜택</span>
+                  <p className="font-black text-slate-900">야외 개막식 &amp; 에코광장 무료!</p>
+                </div>
+
+                <div className="p-3 rounded-2xl bg-amber-50/70 border border-amber-100 space-y-0.5">
+                  <span className="font-bold text-amber-800 text-[10px] block">🌍 주제 슬로건</span>
+                  <p className="font-black text-slate-900">&quot;다시 지구 (Earth and Us)&quot;</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
