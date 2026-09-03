@@ -1,5 +1,37 @@
 [
   {
+    "id": "busan-only-one-earth-film-festival-2026",
+    "title": "제5회 하나뿐인 지구영상제 (Only One Earth Film Festival)",
+    "region": "부산",
+    "subRegion": "해운대구",
+    "venueName": "부산 영화의전당",
+    "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
+    "location": "부산 영화의전당 및 APEC 나루공원 일원",
+    "period": "2026.09.03 ~ 2026.09.07",
+    "startDate": "2026-09-03",
+    "endDate": "2026-09-07",
+    "price": "5,000원 ~ 8,000원 (야외행사 무료)",
+    "isFree": false,
+    "category": "문화축제/영화제",
+    "openingHours": "10:00 ~ 21:30 (개막식 18:30)",
+    "closedDays": "축제 기간 무휴",
+    "tel": "051-711-0054",
+    "description": "아시아 최대 기후·환경 영상 축제! '다시 지구(Earth and Us)'를 슬로건으로 전 세계 30개국의 수려한 자연 다큐멘터리와 환경 예술 영화를 상영합니다. 개막작 <나무의 노래>부터 야외 에코 플리마켓, 시민 환경 포럼까지 푸른 지구의 가치를 되새기는 특별한 축제입니다.",
+    "curatorNote": "오늘(9월 3일) 개막하는 아시아 대표 환경 영상제입니다. 영화의전당 대형 스크린과 야외극장에서 상영작을 감상하고 APEC 나루공원 수영강변 산책을 함께 즐겨보세요.",
+    "nearbySpots": [
+      "APEC 나루공원",
+      "신세계 센텀시티",
+      "밀락더마켓",
+      "부산시립미술관"
+    ],
+    "tag": "🔥 오늘 개막 (9/3~9/7)",
+    "posterTheme": "bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950",
+    "accentColor": "#10b981",
+    "link": "https://www.blueplanet.or.kr",
+    "blogSlug": "2026-09-03-busan-only-one-earth-film-festival",
+    "thumbnailUrl": "https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
     "id": "busan-biennale-2026",
     "title": "2026 부산비엔날레 (Busan Biennale 2026)",
     "region": "부산",
