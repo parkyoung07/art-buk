@@ -306,11 +306,11 @@ export default function IntroPage() {
                 5. 전 데이터 실시간 연동 AI 비서 챗봇
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4 break-keep">
-                "구포시장 장날", "아이랑 갈 만한 도서관" 등을 질문하면 123개 사이트 데이터를 0.1초 만에 찾아 바로가기 카드로 안내합니다.
+                "구포시장 장날", "아이랑 갈 만한 도서관" 등을 질문하면 178개 부울경 데이터를 빠르게 찾아 바로가기 카드로 안내합니다.
               </p>
             </div>
             <div className="flex flex-wrap gap-1.5 text-[11px] font-bold text-pink-300 pt-2 border-t border-slate-700/60">
-              <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">⚡ 0.1초 즉시 답변</span>
+              <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">⚡ 실시간 즉시 답변</span>
               <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">🔗 바로가기 카드</span>
               <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">👩‍💼 1:1 상담원 연결</span>
             </div>
@@ -353,8 +353,9 @@ export default function IntroPage() {
             <span className="text-2xl sm:text-3xl shrink-0">📢</span>
             <div>
               <h2 className="text-base sm:text-xl font-black text-white tracking-tight leading-snug break-keep">
-                지인들에게 1초 만에 사이트 소개해 주기
+                지인들에게 원클릭으로 사이트 소개해 주기
               </h2>
+
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mt-0.5 break-keep">
                 아래 문구를 복사하여 단체 카톡방, 밴드, SNS 등에 손쉽게 공유해 보세요!
               </p>

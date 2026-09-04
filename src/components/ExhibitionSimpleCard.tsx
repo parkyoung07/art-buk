@@ -10,7 +10,7 @@ interface ExhibitionSimpleCardProps {
 }
 
 export default function ExhibitionSimpleCard({ exhibition }: ExhibitionSimpleCardProps) {
-  const dDayInfo = calculateDDay(exhibition.endDate || exhibition.period);
+  const dDayInfo = calculateDDay(exhibition.endDate || exhibition.period, exhibition.startDate);
 
   // AI 한 줄 추천 텍스트 추출/정제
   const aiOneLiner =

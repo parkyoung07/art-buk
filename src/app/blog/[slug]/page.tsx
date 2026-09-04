@@ -35,11 +35,11 @@ export async function generateMetadata({ params }: PageProps) {
   const image = post.thumbnail || "https://nadriai.com/og-default.jpg";
 
   return {
-    title: `${post.title} | 부울경 전시 블로그`,
+    title: `${post.title} | 나드리 AI`,
     description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
-    keywords: [...post.tags, post.region, "부울경전시", "미술관나들이"],
+    keywords: [...post.tags, post.region, "부울경전시", "미술관나들이", "나드리AI"],
     openGraph: {
-      title: `${post.title} | 부울경 전시 블로그`,
+      title: `${post.title} | 나드리 AI`,
       description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
       url,
       type: "article",
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: PageProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: `${post.title} | 나드리 AI`,
       description: post.summary,
       images: [image],
     },

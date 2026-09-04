@@ -586,11 +586,11 @@ export default function ShortsPage() {
         </div>
       </header>
 
-      {/* 🌟🌟🌟 회장님 요청 핵심: 1초 완성 비디오 다운로드 대형 배너 */}
+      {/* 🌟🌟🌟 비디오 다운로드 대형 배너 */}
       <div className="w-full max-w-4xl mb-4 p-4 sm:p-5 rounded-3xl bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 border border-white/20 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="space-y-1 text-center sm:text-left">
           <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-white font-black text-[11px] border border-white/30">
-            <span>✨ 녹화 없이 1초 완성</span>
+            <span>✨ 녹화 없이 원클릭 완성</span>
           </div>
           <h2 className="text-base sm:text-lg font-black text-white tracking-tight">
             클릭 한 번으로 완성된 쇼츠 비디오 파일 다운로드!

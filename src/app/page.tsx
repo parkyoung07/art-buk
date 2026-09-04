@@ -108,7 +108,7 @@ export default function HomePage() {
             </h1>
             <p className="text-sm sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed [word-break:keep-all]">
               부산·울산·경남의 전시 · 5일장 · 도서관 · 문화공간을 <br className="hidden sm:inline" />
-              AI가 오늘 날짜와 취향에 맞춰 10초 만에 찾아드립니다.
+              AI가 오늘 날짜와 취향에 맞춰 맞춤 코스를 찾아드립니다.
             </p>
           </div>
 
@@ -283,7 +283,7 @@ export default function HomePage() {
                 ✨
               </span>
               <span className="text-[11px] font-bold text-indigo-700 bg-indigo-100/70 px-2 py-0.5 rounded-full">
-                맞춤 코스 완성
+                AI 맞춤 코스
               </span>
             </div>
             <div>

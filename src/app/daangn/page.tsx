@@ -12,7 +12,7 @@ export default function DaangnLandingPage() {
   const handleCopyText = (type: "post" | "link") => {
     let text = "";
     if (type === "post") {
-      text = `[🥕 당근 이웃님들! 오늘 영화의전당에서 무료 야외 영화제 열려요 🎬]\n\n오늘(9/3 목)부터 9/7(월)까지 센텀 영화의전당에서 '제5회 하나뿐인 지구영상제'가 열린다고 하네요!\n\n✨ 핵심 꿀팁 요약:\n1. 오늘 저녁 18:30 야외극장에서 개막작 <나무의 노래> 무료 상영 (야외 빅루프 아래서 시원하게 관람!)\n2. 주말에 야외광장에서 친환경 에코 플리마켓이랑 아이들 무료 체험 부스(화분 심기, 텀블러백) 진행\n3. 영화 보고 바로 앞 APEC 나루공원 산책이나 수영 팔도시장 먹거리 코스로 딱입니다 🌿\n\n👉 세부 일정 & 주차/맛집 코스 지도 보기:\nhttps://nadriai.com/daangn`;
+      text = `[🥕 당근 이웃님들! 영화의전당에서 무료 야외 영화제 열려요 🎬]\n\n센텀 영화의전당에서 '제5회 하나뿐인 지구영상제'가 열린다고 하네요!\n\n✨ 핵심 꿀팁 요약:\n1. 저녁 18:30 야외극장에서 개막작 <나무의 노래> 무료 상영 (야외 빅루프 아래서 시원하게 관람!)\n2. 주말에 야외광장에서 친환경 에코 플리마켓이랑 아이들 무료 체험 부스(화분 심기, 텀블러백) 진행\n3. 영화 보고 바로 앞 APEC 나루공원 산책이나 수영 팔도시장 먹거리 코스로 딱입니다 🌿\n\n👉 세부 일정 & 주차/맛집 코스 지도 보기:\nhttps://nadriai.com/daangn`;
     } else {
       text = "https://nadriai.com/daangn";
     }
@@ -27,7 +27,7 @@ export default function DaangnLandingPage() {
   // 카카오톡/메시지 공유 핸들러
   const handleShare = async () => {
     const shareUrl = "https://nadriai.com/daangn";
-    const shareText = `[🥕 당근 이웃 특화] 오늘 개막! 영화의전당 제5회 하나뿐인 지구영상제 무료 야외영화 & 맛집 나들이 코스 총정리 🌿\n${shareUrl}`;
+    const shareText = `[🥕 당근 이웃 특화] 영화의전당 제5회 하나뿐인 지구영상제 무료 야외영화 & 맛집 나들이 코스 총정리 🌿\n${shareUrl}`;
 
     if (navigator.share) {
       try {
