@@ -55,6 +55,7 @@ jobs:
             echo "ℹ️ 새로 생성된 글이 없거나 변경 사항이 없습니다."
           else
             git commit -m "🤖 Auto: Daily AI exhibition post generation [$(date +'%Y-%m-%d')]"
+            git pull --rebase origin main || true
             git push origin main
           fi
 
