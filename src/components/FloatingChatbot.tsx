@@ -37,7 +37,7 @@ interface Message {
 
 const DEFAULT_CHAT_DATA: ChatData = {
   welcomeMessage:
-    "안녕하세요! 🎨 부울경 아트·전시 나들이 AI 안내원입니다.\n궁금하신 전시나 코스를 자유롭게 질문하시거나 아래 추천 질문을 눌러보세요!",
+    "안녕하세요! ✨ 나드리 AI 문화·나들이 안내원입니다.\n궁금하신 전시, 5일장 장날, 도서관, 맞춤 코스를 자유롭게 질문해 보세요!",
   questions: [
     {
       id: "q1",

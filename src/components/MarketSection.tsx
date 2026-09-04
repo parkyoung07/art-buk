@@ -1,11 +1,16 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { TRADITIONAL_MARKETS } from '@/data/markets';
 import { getMarketStatus } from '@/utils/market';
 import MarketInfoCard from '@/components/MarketInfoCard';
 
-export default function MarketSection() {
+interface MarketSectionProps {
+  maxItems?: number;
+}
+
+export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
   const [selectedFilter, setSelectedFilter] = useState<'오늘장날' | '정기5일장' | '상설시장' | '전체' | '부산' | '울산' | '경남'>('오늘장날');
 
   // 시장별 상태 계산 및 필터링
@@ -48,8 +53,10 @@ export default function MarketSection() {
   const ulsanCount = useMemo(() => marketsWithStatus.filter(item => item.market.region === '울산').length, [marketsWithStatus]);
   const gyeongnamCount = useMemo(() => marketsWithStatus.filter(item => item.market.region === '경남').length, [marketsWithStatus]);
 
+  const displayMarkets = maxItems ? filteredMarkets.slice(0, maxItems) : filteredMarkets;
+
   return (
-    <section id="market-section" className="py-12 sm:py-16 bg-gradient-to-b from-amber-50/40 via-orange-50/20 to-transparent border-t border-b border-amber-100/70 relative overflow-hidden scroll-mt-16">
+    <section id="market-section" className="py-12 sm:py-16 bg-gradient-to-b from-amber-50/40 via-orange-50/20 to-transparent border-t border-b border-amber-100/70 relative overflow-hidden scroll-mt-16 rounded-3xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* 섹션 타이틀 헤더 */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
@@ -64,7 +71,7 @@ export default function MarketSection() {
               )}
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-              <span>부울경 5일장 & 전통 상설시장 나들이</span>
+              <span>오늘 열리는 5일장 & 추천 시장</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl">
               전시 관람 후 들르기 좋은 {TRADITIONAL_MARKETS.length}개 시·군·구 대표 전통 상설시장과 5일장 장날 정보를 실시간으로 확인하세요.
@@ -147,7 +154,7 @@ export default function MarketSection() {
         </div>
 
         {/* 시장 카드 그리드 */}
-        {filteredMarkets.length === 0 ? (
+        {displayMarkets.length === 0 ? (
           <div className="bg-white rounded-3xl p-10 text-center border border-dashed border-slate-300">
             <span className="text-4xl block mb-2">🧺</span>
             <p className="font-bold text-slate-700 text-sm">해당 조건의 전통시장 정보가 없습니다.</p>
@@ -160,12 +167,24 @@ export default function MarketSection() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filteredMarkets.map(({ market }) => (
+            {displayMarkets.map(({ market }) => (
               <MarketInfoCard key={market.id} market={market} compact={true} />
             ))}
           </div>
         )}
+
+        {/* 하단 전체보기 버튼 */}
+        <div className="mt-8 text-center">
+          <Link
+            href="/markets"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white hover:bg-amber-500 text-amber-900 hover:text-slate-950 font-black text-sm border border-amber-200 hover:border-amber-500 shadow-sm transition-all cursor-pointer"
+          >
+            <span>5일장 & 전통시장 전체보기 ({TRADITIONAL_MARKETS.length}곳)</span>
+            <span>➔</span>
+          </Link>
+        </div>
       </div>
     </section>
   );
 }
+

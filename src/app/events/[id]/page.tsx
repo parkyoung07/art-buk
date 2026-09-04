@@ -43,14 +43,14 @@ export async function generateMetadata({ params }: PageProps) {
       "미술관",
     ],
     openGraph: {
-      title: `${exhibition.title} | 부울경 아트·전시 나들이`,
+      title: `${exhibition.title} | 나드리 AI`,
       description: `${exhibition.period} (${exhibition.venueName || exhibition.location}) - ${exhibition.description}`,
       url,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: exhibition.title,
+      title: `${exhibition.title} | 나드리 AI`,
       description: `${exhibition.period} | ${exhibition.venueName || exhibition.location}`,
     },
   };
@@ -137,11 +137,11 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
               전시 블로그
             </Link>
             <Link href="/" className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-xs">
-                A
+              <span className="w-7 h-7 rounded-xl bg-gradient-to-tr from-indigo-600 via-sky-500 to-emerald-500 flex items-center justify-center text-white font-black text-xs">
+                ✨
               </span>
               <span className="font-bold text-sm tracking-tight text-slate-900 hidden sm:inline">
-                부울경 아트·전시
+                나드리 AI
               </span>
             </Link>
           </div>
@@ -441,16 +441,16 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
       <footer className="mt-auto bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center sm:text-left sm:flex sm:items-center sm:justify-between sm:space-y-0">
           <div>
-            <p className="font-bold text-slate-200 text-sm">부울경 아트·전시 나들이 (art-buk)</p>
+            <p className="font-bold text-slate-200 text-sm">나드리 AI</p>
             <p className="mt-1 text-slate-400">
-              부산광역시 · 울산광역시 · 경상남도 전시 및 미술관 공공데이터 통합 포털
+              부산·울산·경남 AI 문화·나들이 플랫폼 (전시 · 5일장 · 도서관 · AI 코스 추천)
             </p>
           </div>
           <div className="text-slate-500 sm:text-right">
             <Link href="/" className="hover:text-white transition-colors">
               메인으로 이동
             </Link>
-            <p className="mt-1">© 2026 art-buk. All rights reserved.</p>
+            <p className="mt-1">© 2026 NADRI AI. All rights reserved.</p>
           </div>
         </div>
       </footer>

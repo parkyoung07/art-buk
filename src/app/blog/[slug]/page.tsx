@@ -91,7 +91,7 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     dateModified: post.date,
     author: {
       "@type": "Organization",
-      name: "부울경 아트·전시 나들이 AI 도슨트",
+      name: "나드리 AI 도슨트",
       url: "https://nadriai.com",
     },
     publisher: {
@@ -141,11 +141,11 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
           </Link>
 
           <Link href="/" className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-black text-xs">
-              A
+            <span className="w-7 h-7 rounded-xl bg-gradient-to-tr from-indigo-600 via-sky-500 to-emerald-500 flex items-center justify-center text-white font-black text-xs">
+              ✨
             </span>
             <span className="font-bold text-sm tracking-tight text-slate-900 hidden sm:inline">
-              부울경 아트·전시
+              나드리 AI
             </span>
           </Link>
         </div>
@@ -277,7 +277,7 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
 
       {/* 3. 하단 푸터 */}
       <footer className="mt-auto bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-xs text-center">
-        <p>© 2026 art-buk. All rights reserved.</p>
+        <p>© 2026 NADRI AI. All rights reserved.</p>
       </footer>
     </div>
   );

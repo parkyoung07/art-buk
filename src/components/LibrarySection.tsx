@@ -1,11 +1,21 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { LIBRARIES_DATA, LibraryItem } from '@/data/libraries';
 import LibraryInfoCard from '@/components/LibraryInfoCard';
 
-export default function LibrarySection() {
+interface LibrarySectionProps {
+  maxItems?: number;
+}
+
+export default function LibrarySection({ maxItems = 6 }: LibrarySectionProps) {
   const [selectedFilter, setSelectedFilter] = useState<'전체' | '가족특화' | '작은도서관' | '복합문화' | '부산' | '울산' | '경남'>('가족특화');
+
+  // 100% 동적 계산
+  const busanCount = useMemo(() => LIBRARIES_DATA.filter(l => l.region === '부산').length, []);
+  const ulsanCount = useMemo(() => LIBRARIES_DATA.filter(l => l.region === '울산').length, []);
+  const gyeongnamCount = useMemo(() => LIBRARIES_DATA.filter(l => l.region === '경남').length, []);
 
   const filteredLibraries = useMemo(() => {
     return LIBRARIES_DATA.filter((item: LibraryItem) => {
@@ -23,8 +33,10 @@ export default function LibrarySection() {
     });
   }, [selectedFilter]);
 
+  const displayLibraries = maxItems ? filteredLibraries.slice(0, maxItems) : filteredLibraries;
+
   return (
-    <section id="library-section" className="py-12 sm:py-16 bg-gradient-to-b from-emerald-50/40 via-teal-50/20 to-transparent border-t border-b border-emerald-100/70 relative overflow-hidden scroll-mt-16">
+    <section id="library-section" className="py-12 sm:py-16 bg-gradient-to-b from-emerald-50/40 via-teal-50/20 to-transparent border-t border-b border-emerald-100/70 relative overflow-hidden scroll-mt-16 rounded-3xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* 섹션 타이틀 헤더 */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
@@ -37,7 +49,7 @@ export default function LibrarySection() {
               </span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-              <span>부울경 대표 도서관 & 쌈지 작은도서관 나들이</span>
+              <span>아이와 가기 좋은 도서관</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1.5 max-w-2xl">
               웅장한 북타워 랜드마크부터 숲속 힐링 쌈지 작은도서관까지, 아이들과 함께 책과 쉼을 즐길 수 있는 특별한 문화공간을 소개합니다.
@@ -74,7 +86,7 @@ export default function LibrarySection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              🏛️ 복합문화 랜드마크
+              🏛️ 복합문화
             </button>
             <button
               onClick={() => setSelectedFilter('전체')}
@@ -94,7 +106,7 @@ export default function LibrarySection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              부산 (7)
+              부산 ({busanCount})
             </button>
             <button
               onClick={() => setSelectedFilter('울산')}
@@ -104,7 +116,7 @@ export default function LibrarySection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              울산 (4)
+              울산 ({ulsanCount})
             </button>
             <button
               onClick={() => setSelectedFilter('경남')}
@@ -114,18 +126,30 @@ export default function LibrarySection() {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              경남 (11)
+              경남 ({gyeongnamCount})
             </button>
           </div>
         </div>
 
         {/* 도서관 카드 그리드 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredLibraries.map((library: LibraryItem) => (
+          {displayLibraries.map((library: LibraryItem) => (
             <LibraryInfoCard key={library.id} library={library} compact={true} />
           ))}
+        </div>
+
+        {/* 하단 전체보기 버튼 */}
+        <div className="mt-8 text-center">
+          <Link
+            href="/libraries"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white hover:bg-emerald-600 text-emerald-800 hover:text-white font-black text-sm border border-emerald-200 hover:border-emerald-600 shadow-sm transition-all cursor-pointer"
+          >
+            <span>도서관 전체보기 ({LIBRARIES_DATA.length}곳)</span>
+            <span>➔</span>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
+

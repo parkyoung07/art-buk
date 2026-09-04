@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 
 export const metadata = {
-  title: "전시 블로그 & AI 도슨트 | 부울경 아트·전시 나들이",
+  title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
   description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
 };
 
@@ -12,45 +14,7 @@ export default function BlogListPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
-      {/* 1. 상단 네비게이션 헤더 */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-2xs">
-        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2">
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 text-left group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white font-black text-sm sm:text-lg shadow-md shadow-indigo-500/20 shrink-0 group-hover:scale-105 transition-transform">
-              A
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-black text-base sm:text-lg tracking-tight text-slate-900 leading-tight">
-                  부울경 아트·전시
-                </span>
-                <span className="hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200">
-                  art-buk
-                </span>
-              </div>
-              <p className="text-[10px] sm:text-[11px] text-slate-500 leading-none mt-0.5">
-                <span className="sm:hidden text-indigo-600 font-semibold">art-buk</span>
-                <span className="hidden sm:inline">부산 · 울산 · 경남 문화예술 나들이 포털</span>
-              </p>
-            </div>
-          </Link>
-
-          <nav className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold shrink-0">
-            <Link
-              href="/"
-              className="px-2.5 sm:px-3.5 py-1.5 text-slate-700 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-all whitespace-nowrap"
-            >
-              전시 둘러보기
-            </Link>
-            <Link
-              href="/blog"
-              className="px-2.5 sm:px-3.5 py-1.5 text-indigo-600 font-bold bg-indigo-50 rounded-xl transition-all whitespace-nowrap shadow-2xs"
-            >
-              전시 블로그
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* 2. 블로그 Hero 섹션 */}
       <section className="relative overflow-hidden text-white py-14 sm:py-16">
@@ -181,19 +145,7 @@ export default function BlogListPage() {
       </main>
 
       {/* 4. 하단 푸터 */}
-      <footer className="mt-auto bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center sm:text-left sm:flex sm:items-center sm:justify-between sm:space-y-0">
-          <div>
-            <p className="font-bold text-slate-200 text-sm">부울경 아트·전시 나들이 (art-buk)</p>
-            <p className="mt-1 text-slate-400">
-              부산광역시 · 울산광역시 · 경상남도 전시 및 미술관 공공데이터 통합 포털
-            </p>
-          </div>
-          <div className="text-slate-500 sm:text-right">
-            <p>© 2026 art-buk. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
