@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface QuestionItem {
   id: string;
   question: string;
   answer: string;
+  references?: ReferenceItem[];
 }
 
 interface ReferenceItem {
@@ -42,42 +44,130 @@ const DEFAULT_CHAT_DATA: ChatData = {
       question: "🏛️ 이번 주말 추천 전시는 어디인가요?",
       answer:
         "이번 주말 추천 전시 4선을 안내해 드립니다:\n\n1. [부산 사하구] 2026 부산비엔날레 (부산현대미술관)\n2. [울산 중구] 빛의 서사 미디어아트 특별전 (울산시립미술관)\n3. [경남 창원] 가을 기획전: 남도의 붓길 (경남도립미술관)\n4. [경남 김해] 흙과 미래 건축 (클레이아크김해미술관)\n\n원하시는 전시 카드를 클릭하시면 상세 정보와 AI 도슨트 해설을 확인하실 수 있습니다! ✨",
+      references: [
+        {
+          id: "busan-biennale-2026",
+          title: "2026 부산비엔날레 (부산현대미술관)",
+          url: "/events/busan-biennale-2026",
+          type: "exhibition",
+          region: "부산",
+          subRegion: "사하구",
+        },
+        {
+          id: "ulsan-art-museum-sound-light",
+          title: "울산시립미술관 기획전 : 빛과 소리의 교향곡",
+          url: "/events/ulsan-art-museum-sound-light",
+          type: "exhibition",
+          region: "울산",
+          subRegion: "중구",
+        },
+        {
+          id: "gyeongnam-art-museum-autumn-masterpiece",
+          title: "경남도립미술관 가을 기획전 : 남도의 붓길",
+          url: "/events/gyeongnam-art-museum-autumn-masterpiece",
+          type: "exhibition",
+          region: "경남",
+          subRegion: "창원시",
+        },
+      ],
     },
     {
       id: "q2",
       question: "🚗 부산현대미술관(비엔날레) 주변 나들이 코스는?",
       answer:
         "부산현대미술관 & 부산비엔날레 추천 나들이 코스입니다:\n\n📍 코스: 부산현대미술관 관람 ➔ 을숙도 생태공원 갈대숲 산책 ➔ 다대포 꿈의 낙조분수 일몰 감상\n💡 꿀팁: 비엔날레 입장권 소지 시 영도 및 초량의 야외 전시장도 함께 즐기실 수 있습니다.",
+      references: [
+        {
+          id: "busan-biennale-2026",
+          title: "2026 부산비엔날레 상세 안내 & 코스",
+          url: "/events/busan-biennale-2026",
+          type: "exhibition",
+          region: "부산",
+          subRegion: "사하구",
+        },
+      ],
     },
     {
       id: "q3",
       question: "🎟️ 1,000~2,000원대 가성비 좋은 전시는?",
       answer:
         "부담 없는 착한 가격의 고품격 전시를 추천합니다:\n\n1. 울산시립미술관 <빛의 서사> : 관람료 1,000원 (대형 몰입형 실감 미디어아트)\n2. 경남도립미술관 <남도의 붓길> : 관람료 2,000원 (영남 근현대 회화 명작전)\n\n가벼운 마음으로 풍성한 문화 힐링을 누려보세요! 🌿",
+      references: [
+        {
+          id: "ulsan-art-museum-sound-light",
+          title: "울산시립미술관 (관람료 1,000원)",
+          url: "/events/ulsan-art-museum-sound-light",
+          type: "exhibition",
+          region: "울산",
+          subRegion: "중구",
+        },
+        {
+          id: "gyeongnam-art-museum-autumn-masterpiece",
+          title: "경남도립미술관 (관람료 2,000원)",
+          url: "/events/gyeongnam-art-museum-autumn-masterpiece",
+          type: "exhibition",
+          region: "경남",
+          subRegion: "창원시",
+        },
+      ],
     },
     {
       id: "q4",
       question: "🤖 AI 도슨트 해설은 어디서 보나요?",
       answer:
         "상단 메뉴의 [전시 블로그] 탭이나 각 전시 카드의 'AI 도슨트 해설 & 코스' 버튼을 누르시면, Gemini AI가 작성한 친절한 작품 해설과 감상 포인트, 인근 맛집·카페 연계 코스를 만나보실 수 있습니다. 매일 새로운 해설이 업데이트됩니다!",
+      references: [
+        {
+          id: "blog-home",
+          title: "AI 도슨트 전시 리뷰 & 나들이 블로그",
+          url: "/blog",
+          type: "article",
+        },
+      ],
     },
     {
       id: "q5",
       question: "📍 울산시립미술관 관람 시간 & 위치 안내",
       answer:
         "울산시립미술관 안내 정보:\n\n• 운영시간: 10:00 ~ 18:00 (입장 마감 17:30)\n• 휴관일: 매주 월요일\n• 위치: 울산광역시 중구 미술관길 72\n• 추천 연계: 도보 5분 거리의 '문화의거리 카페골목'과 '태화강 국가정원' 산책을 함께 추천합니다.",
+      references: [
+        {
+          id: "ulsan-art-museum-sound-light",
+          title: "울산시립미술관 상세 정보",
+          url: "/events/ulsan-art-museum-sound-light",
+          type: "exhibition",
+          region: "울산",
+          subRegion: "중구",
+        },
+      ],
     },
     {
       id: "q6",
       question: "🧺 미술관 주변 유명한 5일장 & 장날 먹거리는?",
       answer:
         "부울경 대표 미술관 옆 전통시장 & 5일장 안내입니다:\n\n1. [부산] 구포시장 (3·8일 5일장) - 70년 전통 구포국수 & 가마솥 족발\n2. [울산] 태화종합시장 (5·10일 5일장) - 태화강변 선지국밥 & 장터 도넛\n3. [울산] 언양알프스시장 (2·7일 5일장) - 언양 한우불고기 & 소머리곰탕\n4. [경남] 창녕시장 (3·8일 5일장) - 수문장 수구레국밥\n5. [경남] 밀양아리랑시장 (2·7일 5일장) - 원조 밀양돼지국밥\n\n홈 화면의 '부울경 5일장 & 전통시장' 코너에서 오늘 장 서는 곳을 실시간으로 확인하실 수 있습니다! 🍜",
+      references: [
+        {
+          id: "market-section",
+          title: "부울경 5일장 & 전통시장 전체 목록 바로가기",
+          url: "/#market-section",
+          type: "market",
+        },
+      ],
     },
     {
       id: "q7",
       question: "📚 아이와 가기 좋은 복합도서관 & 숲속 쌈지 도서관은?",
       answer:
         "가족 나들이로 최고인 부울경 대표 도서관 & 쌈지 작은도서관입니다:\n\n1. [경남 김해] 김해 지혜의바다도서관 - 10m 대형 북타워 & 빈백 힐링존, 레고놀이\n2. [부산 강서] 국회부산도서관 - 통창 수변공원 뷰 & 어린이 숲속놀이터\n3. [울산 남구] 울산도서관 - 100m 벽면서가 & AR 동화 인터랙티브존\n4. [경남 거제] 거제 기적의도서관 - 어린이 눈높이 맞춤형 달팽이 책터\n5. [부산 영도] 조내기 숲속작은도서관 - 봉래산 편백숲 뷰 & 고구마라떼 북카페\n6. [경남 함양] 상림 천년의 숲속작은도서관 - 천년 숲길 통나무 책장 쉼표\n\n홈 화면의 '도서관 나들이' 탭에서 지역별 상세 정보를 확인해 보세요! 👶📖",
+      references: [
+        {
+          id: "library-section",
+          title: "부울경 대표 & 쌈지 작은도서관 목록 바로가기",
+          url: "/#library-section",
+          type: "library",
+        },
+      ],
     },
   ],
 };
@@ -97,6 +187,7 @@ function generateMsgId(prefix: string) {
 }
 
 export default function FloatingChatbot() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [chatData, setChatData] = useState<ChatData>(DEFAULT_CHAT_DATA);
   const [messages, setMessages] = useState<Message[]>(() => [
@@ -291,9 +382,59 @@ export default function FloatingChatbot() {
         sender: "bot",
         text: qItem.answer,
         timestamp: formatCurrentTime(),
+        references: qItem.references && qItem.references.length > 0 ? qItem.references : undefined,
       };
       setMessages((prev) => [...prev, botMessage]);
     }, 450);
+  };
+
+  // 7-1. [핵심] 관련 사이트 데이터 바로가기 클릭 스마트 라우팅 핸들러
+  const handleReferenceClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    ref: ReferenceItem
+  ) => {
+    e.preventDefault();
+    const rawUrl = (ref.url || "").trim();
+    if (!rawUrl) return;
+
+    // A. 외부 웹사이트 링크인 경우
+    if (rawUrl.startsWith("http://") || rawUrl.startsWith("https://")) {
+      window.open(rawUrl, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    // B. 내부 페이지 내 앵커 해시 링크인 경우 (예: "/#market-section", "#library-section")
+    if (rawUrl.includes("#")) {
+      const parts = rawUrl.split("#");
+      const targetId = parts[1];
+      const isCurrentHomePage =
+        typeof window !== "undefined" &&
+        (window.location.pathname === "/" || window.location.pathname === "");
+
+      // 1) 현재 홈 화면에 머무르고 있는 경우 -> 부드러운 스크롤 & 하이라이트 애니메이션
+      if (isCurrentHomePage) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          // 화면이 가려지지 않도록 챗봇 창 닫기
+          setIsOpen(false);
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+          targetElement.classList.add("ring-4", "ring-indigo-400", "ring-offset-2", "transition-all", "duration-500");
+          setTimeout(() => {
+            targetElement.classList.remove("ring-4", "ring-indigo-400", "ring-offset-2");
+          }, 2000);
+          return;
+        }
+      }
+
+      // 2) 다른 서브 페이지(블로그, 쇼츠 등)에 있거나 DOM이 아직 로드되지 않은 경우 -> 홈으로 이동
+      setIsOpen(false);
+      window.location.href = `/#${targetId}`;
+      return;
+    }
+
+    // C. 일반 서브페이지 링크인 경우 (예: "/events/busan-biennale-2026", "/blog")
+    setIsOpen(false);
+    router.push(rawUrl);
   };
 
   // 8. [핵심] '상담원 연결하기' 클릭 핸들러
@@ -716,16 +857,7 @@ export default function FloatingChatbot() {
                               <a
                                 key={rIdx}
                                 href={ref.url}
-                                onClick={(e) => {
-                                  if (isHashLink) {
-                                    e.preventDefault();
-                                    const targetId = ref.url.replace("/#", "");
-                                    const el = document.getElementById(targetId);
-                                    if (el) {
-                                      el.scrollIntoView({ behavior: "smooth", block: "start" });
-                                    }
-                                  }
-                                }}
+                                onClick={(e) => handleReferenceClick(e, ref)}
                                 className="flex items-center justify-between p-2 rounded-xl bg-slate-50 hover:bg-indigo-50/80 border border-slate-200/80 hover:border-indigo-300 text-slate-800 hover:text-indigo-950 transition-all text-xs font-semibold group cursor-pointer shadow-2xs"
                               >
                                 <div className="flex items-center gap-1.5 truncate mr-2">

@@ -831,10 +831,12 @@ thumbnail: "${photos[0]?.url || ''}"
 `;
 
   const candidateModels = [
-    "gemini-3.5-flash-lite",
+    "gemini-flash-lite-latest",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
     "gemini-flash-latest",
-    "gemini-2.5-flash",
-    "gemini-2.0-flash"
+    "gemini-2.5-pro"
   ];
 
   let lastError = null;
@@ -860,6 +862,7 @@ thumbnail: "${photos[0]?.url || ''}"
         const errorText = await response.text();
         console.warn(`⚠️ [${modelName}] 호출 실패 (${response.status}): 다음 모델로 재시도합니다.`);
         lastError = new Error(`Gemini API Error (${response.status}): ${errorText}`);
+        await new Promise(r => setTimeout(r, 1500));
         continue;
       }
 
@@ -883,6 +886,7 @@ thumbnail: "${photos[0]?.url || ''}"
     } catch (err) {
       console.warn(`⚠️ [${modelName}] 요청 에러: ${err.message}. 다음 모델로 시도합니다.`);
       lastError = err;
+      await new Promise(r => setTimeout(r, 1500));
     }
   }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import EditorPickSection from "@/components/EditorPickSection";
@@ -32,6 +32,26 @@ export default function HomePage() {
   const [selectedMood, setSelectedMood] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+
+  // URL 해시(#) 감지 후 해당 섹션(5일장/도서관 등)으로 자동 부드러운 스크롤 & 하이라이트
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+
+    const timer = setTimeout(() => {
+      const targetEl = document.getElementById(hash);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        targetEl.classList.add("ring-4", "ring-indigo-400", "ring-offset-2", "transition-all", "duration-500");
+        setTimeout(() => {
+          targetEl.classList.remove("ring-4", "ring-indigo-400", "ring-offset-2");
+        }, 2000);
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   // 29CM 감성 무드 필터 선택 핸들러
   const handleSelectMood = (moodId: string) => {
