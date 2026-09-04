@@ -1,12 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 
-export const metadata = {
-  title: "문화 나들이 블로그 & AI 도슨트",
+export const metadata: Metadata = {
+  title: {
+    absolute: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
+  },
   description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
+  openGraph: {
+    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
+    description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
+    url: "https://nadriai.com/blog/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
+    description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
+  },
 };
 
 export default function BlogListPage() {
