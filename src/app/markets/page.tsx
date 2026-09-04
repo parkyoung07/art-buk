@@ -202,11 +202,29 @@ export default function MarketsPage() {
           </div>
         </div>
 
-        {/* 결과 헤더 */}
-        <div className="flex items-center justify-between mb-4 px-1">
-          <p className="text-xs font-bold text-slate-600">
-            총 <span className="text-amber-600 font-black">{filteredMarkets.length}</span>개의 시장
-          </p>
+        {/* 결과 통계 헤더 */}
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4 px-1 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="font-medium text-slate-500">
+              전체 등록 시장 <b className="text-slate-900 font-bold">{TRADITIONAL_MARKETS.length}곳</b>
+            </span>
+            <span className="text-slate-300">|</span>
+            <span className="font-bold text-slate-700">
+              현재 조건 검색 결과 <b className="text-amber-600 font-black">{filteredMarkets.length}곳</b>
+            </span>
+          </div>
+          {filteredMarkets.length !== TRADITIONAL_MARKETS.length && (
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedFilter("전체");
+                setSearchQuery("");
+              }}
+              className="text-slate-500 hover:text-indigo-600 font-bold underline cursor-pointer"
+            >
+              전체 목록 보기 ({TRADITIONAL_MARKETS.length}곳)
+            </button>
+          )}
         </div>
 
         {/* 시장 그리드 */}

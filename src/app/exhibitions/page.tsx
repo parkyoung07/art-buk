@@ -258,10 +258,31 @@ export default function ExhibitionsPage() {
         </div>
 
         {/* 결과 통계 헤더 */}
-        <div className="flex items-center justify-between mb-4 px-1">
-          <p className="text-xs font-bold text-slate-600">
-            총 <span className="text-indigo-600 font-black">{filteredExhibitions.length}</span>개의 전시
-          </p>
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4 px-1 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="font-medium text-slate-500">
+              전체 등록 전시 <b className="text-slate-900 font-bold">{exhibitionsData.length}곳</b>
+            </span>
+            <span className="text-slate-300">|</span>
+            <span className="font-bold text-slate-700">
+              현재 조건 검색 결과 <b className="text-indigo-600 font-black">{filteredExhibitions.length}곳</b>
+            </span>
+          </div>
+          {filteredExhibitions.length !== exhibitionsData.length && (
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedRegion("전체");
+                setSelectedSubRegion("전체");
+                setSelectedTheme("전체 테마");
+                setShowOnlyFree(false);
+                setSearchQuery("");
+              }}
+              className="text-slate-500 hover:text-indigo-600 font-bold underline cursor-pointer"
+            >
+              전체 목록 보기 ({exhibitionsData.length}곳)
+            </button>
+          )}
         </div>
 
         {/* 전시 그리드 / 리스트 */}

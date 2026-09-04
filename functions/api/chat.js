@@ -172,7 +172,7 @@ export async function onRequestPost(context) {
       .join("\n\n");
 
     // 5. 사실 기반 올인원 답변을 유도하는 시스템 프롬프트(System Prompt) 생성
-    const systemPrompt = `당신은 부산·울산·경남 문화예술·전시·전통 5일장·도서관 통합 나들이 포털(art-buk, nadriai.com)의 전문 AI 도슨트이자 만능 문화 컨시어지 비서입니다.
+    const systemPrompt = `당신은 부산·울산·경남 문화예술·전시·전통 5일장·도서관 통합 AI 나들이 플랫폼(나드리 AI, nadriai.com)의 전문 AI 도슨트이자 만능 문화 컨시어지 비서입니다.
 반드시 아래 제공하는 [사이트 실제 검색 데이터]에 근거하여 사용자 질문에 가장 친절하고 정확하게 답변하세요.
 
 [사이트 실제 검색 데이터]

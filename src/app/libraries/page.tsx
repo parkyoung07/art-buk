@@ -10,7 +10,7 @@ import { LIBRARIES_DATA, LibraryItem } from "@/data/libraries";
 export default function LibrariesPage() {
   const [selectedFilter, setSelectedFilter] = useState<
     "전체" | "가족특화" | "작은도서관" | "복합문화" | "부산" | "울산" | "경남"
-  >("가족특화");
+  >("전체");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // 지역별 수치 동적 계산
@@ -193,11 +193,29 @@ export default function LibrariesPage() {
           </div>
         </div>
 
-        {/* 결과 헤더 */}
-        <div className="flex items-center justify-between mb-4 px-1">
-          <p className="text-xs font-bold text-slate-600">
-            총 <span className="text-emerald-700 font-black">{filteredLibraries.length}</span>개의 도서관
-          </p>
+        {/* 결과 통계 헤더 */}
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4 px-1 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="font-medium text-slate-500">
+              전체 등록 도서관 <b className="text-slate-900 font-bold">{LIBRARIES_DATA.length}곳</b>
+            </span>
+            <span className="text-slate-300">|</span>
+            <span className="font-bold text-slate-700">
+              현재 조건 검색 결과 <b className="text-emerald-700 font-black">{filteredLibraries.length}곳</b>
+            </span>
+          </div>
+          {filteredLibraries.length !== LIBRARIES_DATA.length && (
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedFilter("전체");
+                setSearchQuery("");
+              }}
+              className="text-slate-500 hover:text-indigo-600 font-bold underline cursor-pointer"
+            >
+              전체 목록 보기 ({LIBRARIES_DATA.length}곳)
+            </button>
+          )}
         </div>
 
         {/* 도서관 그리드 */}

@@ -385,7 +385,7 @@ export default function DaangnLandingPage() {
 
       {/* 4. 푸터 */}
       <footer className="mt-auto bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 space-y-2">
-        <p className="font-bold text-slate-700">부울경 아트·전시 나들이 (나드리 AI)</p>
+        <p className="font-bold text-slate-700">나드리 AI | 부산·울산·경남 AI 문화·나들이 플랫폼</p>
         <p className="text-[11px] text-slate-400">
           부산 영화의전당 x 당근 동네생활 문화 나들이 특별 가이드
         </p>

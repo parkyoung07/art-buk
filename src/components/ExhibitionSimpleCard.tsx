@@ -76,10 +76,21 @@ export default function ExhibitionSimpleCard({ exhibition }: ExhibitionSimpleCar
 
         {/* 오늘 관람 가능 태그 */}
         <div className="absolute bottom-2 left-2.5 z-10">
-          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/90 backdrop-blur-md text-slate-800 text-[10.5px] font-bold shadow-2xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-            오늘 관람 가능
-          </span>
+          {dDayInfo.isOpenToday ? (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/95 backdrop-blur-md text-slate-800 text-[10.5px] font-bold shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              오늘 관람 가능
+            </span>
+          ) : dDayInfo.badgeType === "upcoming" ? (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-sky-950/80 backdrop-blur-md text-sky-200 text-[10.5px] font-bold shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
+              개막 대기
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-900/80 backdrop-blur-md text-slate-300 text-[10.5px] font-medium shadow-2xs">
+              전시 마감
+            </span>
+          )}
         </div>
       </Link>
 

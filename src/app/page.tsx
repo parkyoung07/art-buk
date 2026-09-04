@@ -283,7 +283,7 @@ export default function HomePage() {
                 ✨
               </span>
               <span className="text-[11px] font-bold text-indigo-700 bg-indigo-100/70 px-2 py-0.5 rounded-full">
-                1초 맞춤 완성
+                맞춤 코스 완성
               </span>
             </div>
             <div>

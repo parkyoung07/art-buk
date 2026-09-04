@@ -909,7 +909,7 @@ export default function AdminPage() {
                   <span className="text-[11px] font-bold text-slate-400 shrink-0">빠른 답변:</span>
                   <button
                     onClick={() =>
-                      insertTemplate("안녕하세요! 부울경 아트·전시 상담원입니다. 어떤 점이 궁금하신가요? 😊")
+                      insertTemplate("안녕하세요! 나드리 AI 문화·나들이 상담원입니다. 어떤 점이 궁금하신가요? 😊")
                     }
                     className="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-600 text-slate-600 whitespace-nowrap transition-colors"
                   >
