@@ -15,6 +15,7 @@ import { Exhibition } from "@/types/art";
 import { TRADITIONAL_MARKETS } from "@/data/markets";
 import { LIBRARIES_DATA } from "@/data/libraries";
 import { getMarketStatus } from "@/utils/market";
+import NoticeModal from "@/components/NoticeModal";
 
 import { calculateDDay } from "@/utils/date";
 
@@ -483,6 +484,9 @@ export default function HomePage() {
 
       {/* 4. 나드리 AI 공식 푸터 */}
       <Footer />
+
+      {/* 메인 단순 공지 알림창 */}
+      <NoticeModal />
     </div>
   );
 }
