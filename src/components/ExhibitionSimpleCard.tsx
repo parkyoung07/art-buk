@@ -88,7 +88,8 @@ export default function ExhibitionSimpleCard({ exhibition }: ExhibitionSimpleCar
             </span>
           ) : (
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-900/80 backdrop-blur-md text-slate-300 text-[10.5px] font-medium shadow-2xs">
-              전시 마감
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+              종료
             </span>
           )}
         </div>
