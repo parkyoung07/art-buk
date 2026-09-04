@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps) {
   const url = `https://nadriai.com/events/${exhibition.id}/`;
 
   return {
-    title: `${exhibition.title} | 나드리 AI`,
+    title: exhibition.title,
     description: `${exhibition.period} | ${exhibition.location} - ${exhibition.description}`,
     keywords: [
       exhibition.region,

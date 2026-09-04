@@ -1281,5 +1281,35 @@
     "accentColor": "#dc2626",
     "link": "https://www.uiryeong.go.kr/tour/index.do",
     "thumbnailUrl": "https://images.pexels.com/photos/4588842/pexels-photo-4588842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": "busan-moca-summer-special-2026",
+    "title": "부산현대미술관 여름 특별전 : 자연과 인공지능의 공존",
+    "region": "부산",
+    "subRegion": "사하구",
+    "venueName": "부산현대미술관 (MoCA Busan)",
+    "address": "부산광역시 사하구 낙동남로 1191",
+    "location": "부산현대미술관 (부산 사하구 을숙도)",
+    "period": "2026.07.01 ~ 2026.08.31",
+    "startDate": "2026-07-01",
+    "endDate": "2026-08-31",
+    "price": "무료",
+    "isFree": true,
+    "category": "현대미술/미디어아트",
+    "openingHours": "10:00 ~ 18:00 (월요일 휴관)",
+    "closedDays": "매주 월요일",
+    "tel": "051-220-7400",
+    "description": "생태의 보고 을숙도에 위치한 부산현대미술관에서 펼쳐졌던 여름 대기획전. 생태 환경과 디지털 아트의 융합을 선보이며 성황리에 막을 내렸습니다.",
+    "curatorNote": "2026 여름 시즌 많은 사랑을 받았던 전시로, 현재는 공식 전시 일정이 종료되었습니다.",
+    "nearbySpots": [
+      "을숙도 철새공원",
+      "을숙도 생태공원",
+      "낙동강하구에코센터"
+    ],
+    "tag": "🌿 을숙도 생태예술",
+    "posterTheme": "bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900",
+    "accentColor": "#059669",
+    "link": "https://www.busan.go.kr/moca",
+    "thumbnailUrl": "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 ]
