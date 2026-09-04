@@ -10,14 +10,21 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    // 오늘 하루 보지 않기 여부 검사
-    const hideUntil = localStorage.getItem(`hide_${noticeId}`);
-    if (hideUntil) {
-      const expireTime = parseInt(hideUntil, 10);
-      if (Date.now() < expireTime) {
-        return;
+    // 미리보기 강제 실행 파라미터 확인 (?preview=modal 또는 ?preview=true)
+    const urlParams = new URLSearchParams(window.location.search);
+    const isPreview = urlParams.get("preview") === "modal" || urlParams.get("preview") === "true";
+
+    if (!isPreview) {
+      // 오늘 하루 보지 않기 여부 검사
+      const hideUntil = localStorage.getItem(`hide_${noticeId}`);
+      if (hideUntil) {
+        const expireTime = parseInt(hideUntil, 10);
+        if (Date.now() < expireTime) {
+          return;
+        }
       }
     }
+
     // 부드러운 팝업 등장 딜레이
     const timer = setTimeout(() => {
       setIsOpen(true);
