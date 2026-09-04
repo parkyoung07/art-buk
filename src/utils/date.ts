@@ -177,3 +177,76 @@ export function calculateDDay(endDateStr?: string, startDateStr?: string): {
     statusLabel: '진행 중',
   };
 }
+
+export const KOREAN_DAY_NAMES = ["일", "월", "화", "수", "목", "금", "토"];
+
+/**
+ * 이번 주말(토/일), 다음 주말(토/일) 계산
+ */
+export function getUpcomingWeekendDates(baseDate = getKoreanToday()): {
+  thisSat: Date;
+  thisSun: Date;
+  nextSat: Date;
+  nextSun: Date;
+} {
+  const day = baseDate.getDay(); // 0: Sun, 1: Mon, ..., 6: Sat
+  
+  let thisSatOffset = 0;
+  if (day === 6) {
+    thisSatOffset = 0; // 토요일 당일
+  } else if (day === 0) {
+    thisSatOffset = -1; // 일요일이면 어제 토요일
+  } else {
+    thisSatOffset = 6 - day; // 월~금
+  }
+
+  const thisSat = new Date(baseDate);
+  thisSat.setDate(baseDate.getDate() + thisSatOffset);
+  thisSat.setHours(0, 0, 0, 0);
+
+  const thisSun = new Date(thisSat);
+  thisSun.setDate(thisSat.getDate() + 1);
+  thisSun.setHours(0, 0, 0, 0);
+
+  const nextSat = new Date(thisSat);
+  nextSat.setDate(thisSat.getDate() + 7);
+  nextSat.setHours(0, 0, 0, 0);
+
+  const nextSun = new Date(thisSun);
+  nextSun.setDate(thisSun.getDate() + 7);
+  nextSun.setHours(0, 0, 0, 0);
+
+  return { thisSat, thisSun, nextSat, nextSun };
+}
+
+/**
+ * 한국식 날짜 포맷 (예: 9월 12일(토))
+ */
+export function formatDateKorean(date: Date): string {
+  const m = date.getMonth() + 1;
+  const d = date.getDate();
+  const dayName = KOREAN_DAY_NAMES[date.getDay()];
+  return `${m}월 ${d}일(${dayName})`;
+}
+
+/**
+ * 상세 한국식 날짜 포맷 (예: 2026년 9월 12일 토요일)
+ */
+export function formatDateFullKorean(date: Date): string {
+  const y = date.getFullYear();
+  const m = date.getMonth() + 1;
+  const d = date.getDate();
+  const dayName = KOREAN_DAY_NAMES[date.getDay()];
+  return `${y}년 ${m}월 ${d}일 ${dayName}요일`;
+}
+
+/**
+ * ISO 형식 날짜 (YYYY-MM-DD)
+ */
+export function formatDateISO(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+

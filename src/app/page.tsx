@@ -16,6 +16,8 @@ import { TRADITIONAL_MARKETS } from "@/data/markets";
 import { LIBRARIES_DATA } from "@/data/libraries";
 import { getMarketStatus } from "@/utils/market";
 
+import { calculateDDay } from "@/utils/date";
+
 const exhibitionsData: Exhibition[] = rawData as Exhibition[];
 
 export default function HomePage() {
@@ -27,8 +29,12 @@ export default function HomePage() {
     const todayMarketsCount = TRADITIONAL_MARKETS.filter(
       (m) => getMarketStatus(m).badgeType === "today"
     ).length;
+    const openTodayExhibitionsCount = exhibitionsData.filter(
+      (e) => calculateDDay(e.period).isOpenToday
+    ).length;
     return {
       totalExhibitions: exhibitionsData.length,
+      openTodayExhibitions: openTodayExhibitionsCount,
       freeExhibitions: exhibitionsData.filter((e) => e.isFree).length,
       totalMarkets: TRADITIONAL_MARKETS.length,
       todayMarkets: todayMarketsCount,
@@ -202,7 +208,7 @@ export default function HomePage() {
                 🎨
               </span>
               <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">
-                {stats.totalExhibitions}개 진행중
+                오늘 관람 가능 {stats.openTodayExhibitions}개
               </span>
             </div>
             <div>
@@ -210,7 +216,7 @@ export default function HomePage() {
                 전시 보러가기
               </h3>
               <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 line-clamp-1">
-                현재 진행 중인 전시와 무료 전시
+                전체 {stats.totalExhibitions}개 · 무료 전시 {stats.freeExhibitions}개
               </p>
             </div>
             <div className="text-[11px] font-bold text-slate-400 group-hover:text-indigo-600 flex items-center gap-1">
