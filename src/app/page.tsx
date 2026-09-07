@@ -4,7 +4,6 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TrustBadge from "@/components/TrustBadge";
 import ExhibitionSimpleCard from "@/components/ExhibitionSimpleCard";
 import AiTripPlanner from "@/components/AiTripPlanner";
 import MarketSection from "@/components/MarketSection";

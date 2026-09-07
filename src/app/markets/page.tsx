@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TrustBadge from "@/components/TrustBadge";
 import MarketInfoCard from "@/components/MarketInfoCard";
 import { TRADITIONAL_MARKETS } from "@/data/markets";
 import { getMarketStatus } from "@/utils/market";
@@ -94,7 +93,6 @@ export default function MarketsPage() {
                 </span>
               )}
             </div>
-            <TrustBadge source="지자체 시장정보 & 실시간 달력 계산" />
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-slate-900">

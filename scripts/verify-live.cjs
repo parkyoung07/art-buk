@@ -56,8 +56,7 @@ const requiredChecks = [
     name: 'AI 맞춤 코스 (/ai-trip/)',
     url: 'https://nadriai.com/ai-trip/', 
     keywords: [
-      '약 1분 만에 나들이 코스 완성', 
-      '공식정보 실시간 검증 완료'
+      '약 1분 만에 나들이 코스 완성'
     ] 
   },
   { 

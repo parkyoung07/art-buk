@@ -5,7 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExhibitionSimpleCard from "@/components/ExhibitionSimpleCard";
-import TrustBadge from "@/components/TrustBadge";
+import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 import rawData from "../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 
@@ -104,7 +104,6 @@ export default function ExhibitionsPage() {
               <span>🎨</span>
               <span>부울경 전체 미술관 & 전시 탐색</span>
             </div>
-            <TrustBadge />
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-slate-900">

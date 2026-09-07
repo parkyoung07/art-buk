@@ -4,8 +4,6 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AiTripPlanner from "@/components/AiTripPlanner";
-import TrustBadge from "@/components/TrustBadge";
-
 export default function AiTripPage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
@@ -24,9 +22,6 @@ export default function AiTripPage() {
           <p className="mt-2 text-xs sm:text-sm text-slate-600">
             출발지, 소요 시간, 동행자, 예산에 맞춰 부울경 최적 동선을 1분 만에 설계해 드립니다.
           </p>
-          <div className="mt-4 flex justify-center">
-            <TrustBadge />
-          </div>
         </div>
 
         {/* AI 나들이 플래너 코어 */}

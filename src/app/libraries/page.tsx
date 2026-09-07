@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TrustBadge from "@/components/TrustBadge";
 import LibraryInfoCard from "@/components/LibraryInfoCard";
 import { LIBRARIES_DATA, LibraryItem } from "@/data/libraries";
 
@@ -85,7 +84,6 @@ export default function LibrariesPage() {
               <span>📚</span>
               <span>부울경 대표 도서관 & 쌈지 작은도서관 탐방</span>
             </div>
-            <TrustBadge source="지자체 도서관 통합포털 & 공공데이터" />
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-slate-900">
