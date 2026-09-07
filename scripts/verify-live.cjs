@@ -57,8 +57,7 @@ const requiredChecks = [
     url: 'https://nadriai.com/ai-trip/', 
     keywords: [
       '약 1분 만에 나들이 코스 완성', 
-      '공식정보 확인',
-      '2026.09.04'
+      '공식정보 실시간 검증 완료'
     ] 
   },
   { 
