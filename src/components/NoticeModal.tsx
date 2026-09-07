@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface NoticeModalProps {
   noticeId?: string;
 }
 
-export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeModalProps) {
+export default function NoticeModal({ noticeId = "busan_museum_reopen_20260907" }: NoticeModalProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
     // 부드러운 팝업 등장 딜레이
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 250);
+    }, 100);
     return () => clearTimeout(timer);
   }, [noticeId]);
 
@@ -42,7 +43,7 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
     setIsOpen(false);
   };
 
-  const handleStart = () => {
+  const handleStartPlanner = () => {
     setIsOpen(false);
     // AI 나들이 플래너 섹션으로 부드럽게 스크롤
     const plannerEl = document.getElementById("ai-trip-planner-section");
@@ -54,10 +55,10 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-200">
       {/* 바깥쪽 오로라 그라데이션 글로우 테두리 프레임 */}
-      <div className="relative w-full max-w-lg p-[2px] rounded-[32px] bg-gradient-to-tr from-violet-600 via-indigo-500 to-emerald-400 shadow-2xl shadow-indigo-950/30 animate-in zoom-in-95 duration-200">
-        {/* 내부 메인 카드 (Apple · Toss 스타일 미니멀 화이트) */}
+      <div className="relative w-full max-w-lg p-[2px] rounded-[32px] bg-gradient-to-tr from-sky-500 via-indigo-500 to-emerald-400 shadow-2xl shadow-indigo-950/40 animate-in zoom-in-95 duration-200">
+        {/* 내부 메인 카드 */}
         <div className="relative bg-white/98 backdrop-blur-2xl rounded-[30px] p-6 sm:p-8 text-slate-800">
           {/* 상단 닫기 (X) 버튼 */}
           <button
@@ -71,61 +72,61 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
 
           <div className="text-center space-y-4">
             {/* 1. 상단 캡슐 뱃지 */}
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-800 text-white text-[11px] sm:text-xs font-extrabold shadow-xs">
-              <span className="text-amber-300">✨</span>
-              <span>부울경 대표 AI 나들이 플랫폼</span>
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-indigo-900 to-slate-900 text-white text-[11px] sm:text-xs font-extrabold shadow-xs">
+              <span className="text-amber-300">🎉</span>
+              <span>2년 만의 귀환 · 9월 17일 D-10 특별 소식</span>
             </div>
 
             {/* 2. 핵심 헤드라인 */}
-            <div className="space-y-1">
+            <div className="space-y-1.5">
               <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 leading-tight [word-break:keep-all]">
-                “이번 주말, 어디 갈까?” 고민 끝!
+                부산시립미술관 9월 17일 그랜드 재개관!
               </h2>
-              <p className="text-xs sm:text-sm text-slate-500 [word-break:keep-all]">
-                나드리 AI가 부울경의 오늘과 주말 갈 곳을 1분 만에 찾아드립니다.
+              <p className="text-xs sm:text-sm text-slate-600 [word-break:keep-all] font-medium">
+                약 2년간의 전면 리노베이션 완료! 5대 특별전과 센텀 나들이 가이드를 확인해보세요.
               </p>
             </div>
 
-            {/* 3. 3열 라운드 미니 카드 (전시·문화 / 5일장·로컬 / AI 맞춤 코스) */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-2 text-left">
-              {/* 카드 1: 전시 · 문화 */}
-              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-emerald-50/40 transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-emerald-100/70 text-emerald-700 flex items-center justify-center text-lg">
-                  🎨
+            {/* 3. 3열 라운드 미니 카드 */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-1 text-left">
+              {/* 카드 1: 5대 특별전 개막 */}
+              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-sky-50/50 transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-sky-100/80 text-sky-700 flex items-center justify-center text-lg">
+                  🏛️
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm">
-                    [전시 · 문화]
+                    5대 특별전
                   </h3>
                   <p className="text-[10.5px] sm:text-[11.5px] text-slate-500 mt-0.5 leading-snug line-clamp-3">
-                    부산·울산·경남 실시간 전시와 무료 관람 정보
+                    퓨처 뮤지올로지, 이우환공간, 어린이 미술관 무료 관람
                   </p>
                 </div>
               </div>
 
-              {/* 카드 2: 5일장 · 로컬 */}
-              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-amber-50/40 transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-amber-100/70 text-amber-700 flex items-center justify-center text-lg">
-                  🧺
+              {/* 카드 2: 센텀 아트 로드 */}
+              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-emerald-50/50 transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-emerald-100/80 text-emerald-700 flex items-center justify-center text-lg">
+                  ☕
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm">
-                    [5일장 · 로컬]
+                    센텀 아트투어
                   </h3>
                   <p className="text-[10.5px] sm:text-[11.5px] text-slate-500 mt-0.5 leading-snug line-clamp-3">
-                    오늘 열리는 전통시장과 주말 힐링 스팟
+                    뮤지엄 카페, 벡스코, 영화의전당 연계 힐링 코스
                   </p>
                 </div>
               </div>
 
-              {/* 카드 3: AI 맞춤 코스 */}
-              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-indigo-50/40 transition-colors">
-                <div className="w-9 h-9 rounded-xl bg-indigo-100/70 text-indigo-700 flex items-center justify-center text-lg">
+              {/* 카드 3: AI 맞춤 플래너 */}
+              <div className="bg-slate-50/90 rounded-2xl p-3 sm:p-3.5 border border-slate-100 flex flex-col justify-between space-y-2 hover:bg-indigo-50/50 transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-indigo-100/80 text-indigo-700 flex items-center justify-center text-lg">
                   🤖
                 </div>
                 <div>
                   <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm">
-                    [AI 맞춤 코스]
+                    AI 맞춤 코스
                   </h3>
                   <p className="text-[10.5px] sm:text-[11.5px] text-slate-500 mt-0.5 leading-snug line-clamp-3">
                     인원과 취향만 고르면 1분 만에 완성되는 동선
@@ -134,8 +135,20 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
               </div>
             </div>
 
-            {/* 4. 하단 액션 영역 */}
-            <div className="flex items-center justify-between gap-3 pt-3 border-t border-slate-100/80">
+            {/* 4. 특별전 자세히 보기 배너 버튼 */}
+            <div className="pt-1">
+              <Link
+                href="/blog/2026-09-07-busan-museum-of-art-reopening"
+                onClick={() => setIsOpen(false)}
+                className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-sky-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700 text-white text-xs sm:text-sm font-extrabold shadow-md shadow-indigo-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98"
+              >
+                <span>🎨 부산시립미술관 재개관 가이드 보러가기</span>
+                <span>➔</span>
+              </Link>
+            </div>
+
+            {/* 5. 하단 액션 영역 */}
+            <div className="flex items-center justify-between gap-3 pt-2 border-t border-slate-100/80">
               <button
                 type="button"
                 onClick={handleHideToday}
@@ -146,11 +159,11 @@ export default function NoticeModal({ noticeId = "nadri_welcome_v1" }: NoticeMod
 
               <button
                 type="button"
-                onClick={handleStart}
-                className="px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-violet-600 via-indigo-600 to-emerald-500 hover:from-violet-700 hover:to-emerald-600 text-white text-xs sm:text-sm font-extrabold shadow-lg shadow-indigo-500/25 transition-all cursor-pointer active:scale-95 flex items-center gap-1.5"
+                onClick={handleStartPlanner}
+                className="text-xs text-indigo-600 hover:text-indigo-800 font-extrabold flex items-center gap-1 cursor-pointer transition-colors"
               >
-                <span>나드리 AI 시작하기</span>
-                <span>➔</span>
+                <span>AI 플래너 둘러보기</span>
+                <span>→</span>
               </button>
             </div>
           </div>

@@ -102,10 +102,16 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          {/* 상단 뱃지 */}
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-bold backdrop-blur-md shadow-sm">
-            <span>✨</span>
-            <span>부산 · 울산 · 경남 AI 문화·나들이 플랫폼</span>
+          {/* 상단 뱃지 & 실시간 핫이슈 알림 바 */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 max-w-3xl mx-auto">
+            <Link
+              href="/blog/2026-09-07-busan-museum-of-art-reopening"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-indigo-500/20 hover:from-amber-500/30 hover:to-indigo-500/30 border border-amber-400/40 text-amber-200 hover:text-white text-xs font-bold backdrop-blur-md shadow-sm transition-all group"
+            >
+              <span className="px-1.5 py-0.5 rounded-md bg-amber-400 text-slate-950 text-[10px] font-black">HOT</span>
+              <span>🎉 부산시립미술관 9월 17일 그랜드 재개관! 5대 특별전 가이드</span>
+              <span className="group-hover:translate-x-0.5 transition-transform text-amber-300">➔</span>
+            </Link>
           </div>
 
           {/* 메인 카피 & 서브 카피 */}
