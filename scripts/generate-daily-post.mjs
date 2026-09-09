@@ -902,7 +902,8 @@ async function main() {
   }
 
   const existingFiles = fs.readdirSync(postsDir);
-  const today = getKSTDateString();
+  const targetDateArg = process.argv[2];
+  const today = (targetDateArg && /^\d{4}-\d{2}-\d{2}$/.test(targetDateArg)) ? targetDateArg : getKSTDateString();
 
   // 아직 작성되지 않은 전시 후보 선택
   let targetExhibition = EXHIBITION_POOL.find(ex => {

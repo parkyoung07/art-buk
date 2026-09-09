@@ -20,35 +20,35 @@ const SHORTS_SLIDES: Slide[] = [
   {
     id: 1,
     time: "0:00 ~ 0:08",
-    tag: "🌿 9.3(목) ~ 9.7(월) 5일간!",
-    title: "제5회 하나뿐인 지구영상제",
-    subTitle: "영화의전당 무료 야외 시네마 축제!",
-    description: "'다시 지구(Earth and Us)'를 슬로건으로 영화의전당에서 5일간 펼쳐지는 아시아 최대 환경 영상 축제!",
-    narration: "9월 3일부터 9월 7일까지 5일간, 센텀 영화의전당에서 거대한 무료 야외 영화제가 열린다는 사실, 알고 계셨나요?",
-    bgImage: "/images/earth-festival-poster.jpg",
-    emoji: "🌍",
-    accent: "from-emerald-600 via-teal-600 to-blue-600",
+    tag: "🎨 2026 부산비엔날레 공식 개막!",
+    title: "을숙도 현대미술관 & 부산 전역",
+    subTitle: "자연과 첨단 미디어가 어우러진 비엔날레!",
+    description: "세계적인 현대미술 거장들이 총출동하는 아시아 대표 미술 축제!",
+    narration: "올가을 꼭 가봐야 할 2026 부산비엔날레가 드디어 개막했다는 사실, 알고 계셨나요?",
+    bgImage: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    emoji: "🎨",
+    accent: "from-indigo-600 via-violet-600 to-purple-600",
   },
   {
     id: 2,
     time: "0:08 ~ 0:17",
-    tag: "🌳 개막작 <나무의 노래>",
-    title: "거목들의 웅장한 사운드",
-    subTitle: "진재운 감독의 화제작 대형 스크린 상영",
-    description: "시원한 가을밤, 빅루프 아래서 만나는 자연의 경이로운 울림!",
-    narration: "개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.",
-    bgImage: "https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    emoji: "🌿",
+    tag: "🌿 을숙도 갈대숲 & 야외 조각",
+    title: "압도적인 자연과 설치미술",
+    subTitle: "부산현대미술관 수직정원 & 대형 미디어아트",
+    description: "시원한 가을바람과 함께 감상하는 감성 충만 예술 힐링 투어!",
+    narration: "을숙도 천혜의 갈대숲과 어우러진 초대형 설치미술과 야외 조각을 감상할 수 있습니다.",
+    bgImage: "https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    emoji: "🌾",
     accent: "from-emerald-600 to-teal-500",
   },
   {
     id: 3,
     time: "0:17 ~ 0:26",
-    tag: "🧺 주말 에코 플리마켓",
-    title: "아이와 함께 무료 체험!",
-    subTitle: "재생화분 심기 & 제로웨이스트 굿즈",
-    description: "야외 광장 전체가 친환경 놀이터로 변신! 주말 가족 나들이 필수 코스",
-    narration: "이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.",
+    tag: "🧺 가족 피크닉 & 에코센터",
+    title: "아이 동반 나들이 필수 코스!",
+    subTitle: "생태공원 돗자리 피크닉 & 낙동강 철새 관찰",
+    description: "미술관 잔디마당 피크닉과 에코센터 생태 체험까지 완벽 연계!",
+    narration: "주말에는 아이들과 함께 생태공원 돗자리 피크닉과 에코센터 철새 체험까지 즐겨보세요.",
     bgImage: "https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     emoji: "👶",
     accent: "from-amber-500 to-orange-600",
@@ -57,10 +57,10 @@ const SHORTS_SLIDES: Slide[] = [
     id: 4,
     time: "0:26 ~ 0:35",
     tag: "🗺️ 하루 완성 나들이 동선",
-    title: "APEC 나루공원 & 수영시장",
-    subTitle: "수영강변 돗자리 산책 + 정겨운 장터 먹거리",
-    description: "영화 보고 바로 앞 강변 산책 후 떡볶이·닭강정 먹방까지!",
-    narration: "영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!",
+    title: "하단 5일장 & 다대포 낙조",
+    subTitle: "정겨운 전통장터 손국수 + 환상적인 일몰 분수",
+    description: "미술관 보고 하단 장터 먹방 후 다대포 노을 감상까지!",
+    narration: "미술관 보고 하단 5일장 먹거리와 다대포 낙조분수 코스로 완벽한 하루를 완성해보세요!",
     bgImage: "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     emoji: "📍",
     accent: "from-blue-600 to-indigo-600",
@@ -68,12 +68,12 @@ const SHORTS_SLIDES: Slide[] = [
   {
     id: 5,
     time: "0:35 ~ 0:45",
-    tag: "👉 9/7까지 축제 일정표 보기",
+    tag: "👉 비엔날레 전체 코스 & 지도",
     title: "나드리 AI에서 지금 확인!",
     subTitle: "화면 아래 링크 클릭 또는 nadriai.com",
-    description: "9월 7일까지 펼쳐지는 축제 상영시간표와 무료 주차 꿀팁을 지금 확인하세요!",
-    narration: "9월 7일까지 펼쳐지는 축제 일정표와 무료 주차 팁은, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!",
-    bgImage: "/images/earth-festival-poster.jpg",
+    description: "부울경 40+개 추천 전시와 맞춤 나들이 코스를 지금 바로 확인하세요!",
+    narration: "비엔날레 전체 관람 정보와 무료 주차 팁은 화면 아래 나드리 AI에서 지금 바로 확인하세요!",
+    bgImage: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     emoji: "✨",
     accent: "from-purple-600 to-pink-600",
   },
@@ -277,7 +277,7 @@ export default function ShortsPage() {
   };
 
   const handleCopyScript = () => {
-    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보 (9/3~9/7 축제 기간용)]\n\n📌 영상 제목:\n9.3(목)~9.7(월) 부산 영화의전당 '제5회 하나뿐인 지구영상제' 무료 야외영화 & 에코 플리마켓 꿀팁 🎬 #shorts #부산축제\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 9월 3일부터 9월 7일까지 5일간, 센텀 영화의전당에서 거대한 무료 야외 영화제가 열린다는 사실, 알고 계셨나요?\n(8~17초) 개막작 나무의 노래를 시원한 빅루프 야외극장에서, 전액 무료로 감상할 수 있습니다.\n(17~26초) 이번 주말에는 야외 광장에서 친환경 플리마켓과, 아이들이 좋아하는 무료 화분 심기 체험까지 열려요.\n(26~35초) 영화 보고 바로 앞 나루공원 돗자리 산책과, 수영 팔도시장 떡볶이 먹방 코스로 완벽한 하루를 만들어보세요!\n(35~40초) 9월 7일까지 펼쳐지는 축제 일정표와 무료 주차 팁은, 화면 아래 나드리 AI 링크에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 9/3~9/7 영화제 전체 상영시간표 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#하나뿐인지구영상제 #부산영화의전당 #부산축제 #부산가볼만한곳 #센텀시티 #주말나들이 #부산데이트 #환경영화제 #shorts`;
+    const fullScript = `[🎬 유튜브 쇼츠 업로드용 대본 & 세부 정보 (2026 부산비엔날레)]\n\n📌 영상 제목:\n2026 부산비엔날레 개막! 을숙도 현대미술관 & 다대포 낙조 인생샷 코스 총정리 🎨 #shorts #부산비엔날레\n\n📌 자연스러운 나레이션 대본 (총 40초):\n(0~8초) 올가을 꼭 가봐야 할 2026 부산비엔날레가 드디어 개막했다는 사실, 알고 계셨나요?\n(8~17초) 을숙도 천혜의 갈대숲과 어우러진 초대형 설치미술과 야외 조각을 감상할 수 있습니다.\n(17~26초) 주말에는 아이들과 함께 생태공원 돗자리 피크닉과 에코센터 철새 체험까지 즐겨보세요.\n(26~35초) 미술관 보고 하단 5일장 먹거리와 다대포 낙조분수 코스로 완벽한 하루를 완성해보세요!\n(35~40초) 비엔날레 전체 관람 정보와 무료 주차 팁은 화면 아래 나드리 AI에서 지금 바로 확인하세요!\n\n📌 고정 댓글 문구:\n👉 2026 부산비엔날레 전체 관람 가이드 & 나들이 지도 보기: https://nadriai.com/daangn\n\n📌 추천 해시태그:\n#부산비엔날레 #부산현대미술관 #을숙도 #부산전시 #부산가볼만한곳 #가을나들이 #다대포 #shorts`;
 
     if (navigator?.clipboard) {
       navigator.clipboard.writeText(fullScript);
@@ -734,18 +734,18 @@ export default function ShortsPage() {
             {/* 🌟 1번 슬라이드일 때 공식 메인 포스터 부각 뱃지 & 미니 포스터 카드 */}
             {currentSlideIndex === 0 && (
               <div className="relative z-20 mx-auto px-4 mt-2 flex flex-col items-center gap-2 animate-in fade-in zoom-in-95 duration-500">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-emerald-400/80 w-36 h-48 group">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-indigo-400/80 w-36 h-48 group">
                   <img
-                    src="/images/earth-festival-poster.jpg"
-                    alt="제5회 하나뿐인 지구영상제 공식 포스터"
+                    src="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="2026 부산비엔날레"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-1.5 text-center">
                     <span className="text-[10px] font-black text-amber-300 block">
-                      공식 포스터
+                      부울경 대표 전시
                     </span>
-                    <span className="text-[9px] text-emerald-200 font-bold block">
-                      &quot;다시 지구 (Earth and Us)&quot;
+                    <span className="text-[9px] text-indigo-200 font-bold block">
+                      2026 부산비엔날레
                     </span>
                   </div>
                 </div>
@@ -791,7 +791,7 @@ export default function ShortsPage() {
               </div>
 
               {/* 3. 댓글 아이콘 */}
-              <Link href="/events/busan-only-one-earth-film-festival-2026" className="flex flex-col items-center gap-0.5">
+              <Link href="/events/busan-biennale-2026" className="flex flex-col items-center gap-0.5">
                 <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-lg border border-white/20">
                   💬
                 </div>
@@ -814,22 +814,22 @@ export default function ShortsPage() {
             {currentSlideIndex === 4 && (
               <div className="absolute inset-x-4 top-20 bottom-36 z-25 bg-slate-900/95 backdrop-blur-lg rounded-3xl p-5 border-2 border-indigo-500/80 shadow-2xl flex flex-col justify-between text-center animate-in fade-in zoom-in-95 duration-500">
                 <div className="space-y-2">
-                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-600 text-white font-black text-xs shadow-xs">
-                    📅 9.3(목) ~ 9.7(월) 5일간
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-indigo-600 text-white font-black text-xs shadow-xs">
+                    📅 2026.08.17 ~ 10.20
                   </span>
                   <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                    지구영상제 상영시간표 &amp;<br />
+                    2026 부산비엔날레 &amp;<br />
                     <span className="text-amber-300">주차·맛집 나들이 코스</span> 보기
                   </h3>
                   <p className="text-[11px] text-slate-300 leading-relaxed">
-                    지금 바로 아래 버튼을 눌러 9월 7일까지 펼쳐지는 축제 일정표와 부울경 40+개 무료 전시를 확인하세요!
+                    지금 바로 아래 버튼을 눌러 비엔날레 전체 일정표와 부울경 40+개 무료 전시를 확인하세요!
                   </p>
                 </div>
 
                 {/* 대형 원클릭 사이트 유입 버튼 */}
                 <div className="space-y-2">
                   <Link
-                    href="/events/busan-only-one-earth-film-festival-2026"
+                    href="/events/busan-biennale-2026"
                     className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-black text-xs sm:text-sm transition-all shadow-lg flex items-center justify-center gap-2 border border-white/20 active:scale-95"
                   >
                     <span>🗺️ 1일 나들이 코스 지도 열기</span>
@@ -1114,7 +1114,7 @@ export default function ShortsPage() {
                   </button>
                 </div>
                 <div className="p-2 rounded-xl bg-black/50 text-[11px] text-slate-300 font-mono select-all">
-                  9.3(목)~9.7(월) 부산 영화의전당 &apos;제5회 하나뿐인 지구영상제&apos; 무료 야외영화 &amp; 에코 플리마켓 꿀팁 🎬 #shorts #부산축제
+                  2026 부산비엔날레 개막! 을숙도 현대미술관 &amp; 다대포 낙조 인생샷 코스 총정리 🎨 #shorts #부산비엔날레
                 </div>
               </div>
 
@@ -1128,7 +1128,7 @@ export default function ShortsPage() {
                   영상이 업로드되면 본인 댓글로 아래 링크를 작성하고 <strong>[댓글 고정]</strong>을 누르세요:
                 </p>
                 <div className="p-2 rounded-xl bg-black/60 text-[11px] text-amber-300 font-mono select-all">
-                  👉 9/3~9/7 영화제 전체 상영시간표 &amp; 나들이 지도 보기: https://nadriai.com/daangn
+                  👉 2026 부산비엔날레 전체 관람 가이드 &amp; 나들이 지도 보기: https://nadriai.com/daangn
                 </div>
               </div>
             </div>
@@ -1140,7 +1140,7 @@ export default function ShortsPage() {
               <div className="flex items-center gap-2">
                 <span className="text-xl">🖼️</span>
                 <h3 className="font-extrabold text-sm sm:text-base text-white">
-                  유튜브 썸네일 2종 세트 다운로드
+                  유튜브 썸네일 2종 세트
                 </h3>
               </div>
               <span className="px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-bold text-[10px]">
@@ -1149,7 +1149,7 @@ export default function ShortsPage() {
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed">
-              클릭률(CTR)을 극대화할 수 있도록 영화의전당 야외극장과 홀로그램 지구, 볼드한 한글 타이포그래피가 적용된 전용 썸네일입니다.
+              클릭률(CTR)을 극대화할 수 있도록 2026 부산비엔날레와 을숙도 현대미술관의 감성 비주얼이 적용된 썸네일입니다.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
@@ -1162,18 +1162,19 @@ export default function ShortsPage() {
                   </div>
                   <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10 shadow-md">
                     <img
-                      src="/images/earth-festival-thumbnail-16x9.jpg"
-                      alt="16:9 제5회 하나뿐인 지구영상제 썸네일"
+                      src="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                      alt="16:9 2026 부산비엔날레 썸네일"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <a
-                  href="/images/earth-festival-thumbnail-16x9.jpg"
-                  download="하나뿐인지구영상제_유튜브_썸네일_16x9.jpg"
+                  href="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-xs transition-all active:scale-95"
                 >
-                  <span>📥 16:9 썸네일 다운로드</span>
+                  <span>📥 16:9 썸네일 보기/다운로드</span>
                 </a>
               </div>
 
@@ -1186,18 +1187,19 @@ export default function ShortsPage() {
                   </div>
                   <div className="relative aspect-[9/16] max-h-48 mx-auto rounded-xl overflow-hidden border border-white/10 shadow-md">
                     <img
-                      src="/images/earth-festival-thumbnail-9x16.jpg"
-                      alt="9:16 제5회 하나뿐인 지구영상제 쇼츠 커버"
+                      src="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                      alt="9:16 2026 부산비엔날레 쇼츠 커버"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <a
-                  href="/images/earth-festival-thumbnail-9x16.jpg"
-                  download="하나뿐인지구영상제_쇼츠_커버_9x16.jpg"
+                  href="https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-xs transition-all active:scale-95"
                 >
-                  <span>📥 9:16 쇼츠 커버 다운로드</span>
+                  <span>📥 9:16 쇼츠 커버 보기/다운로드</span>
                 </a>
               </div>
             </div>
