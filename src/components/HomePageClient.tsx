@@ -51,18 +51,32 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
   // 최신 포스트 (Hero 상단 바 연동)
   const latestPost = posts.length > 0 ? posts[0] : null;
 
-  // 추천 전시 TOP 6
+  // 추천 전시 TOP 6 (최신 일일 AI 추천 전시 우선 배치 + 기존 전시 결합으로 매일 새로운 전시가 상단에 노출!)
   const topExhibitions = useMemo(() => {
-    return exhibitionsData.slice(0, 6);
-  }, []);
+    // 1. 포스트에서 언급된 전시 id나 제목 매칭
+    const postEventIds = posts.map((p) => p.eventId).filter(Boolean);
+    const postMatchedExhibitions = exhibitionsData.filter((e) => postEventIds.includes(e.id));
+    
+    // 2. 매칭되지 않은 나머지 전시
+    const remaining = exhibitionsData.filter((e) => !postEventIds.includes(e.id));
+    
+    // 3. 최신 AI 추천 전시를 앞에 두고 상위 6개 선정
+    const combined = [...postMatchedExhibitions, ...remaining];
+    return combined.slice(0, 6);
+  }, [posts]);
 
-  // 오늘의 나드리 큐레이션 (선택 지역 대표 스팟 3종)
+  // 오늘의 나드리 큐레이션 (선택 지역에서 가장 최근에 다룬 전시 및 장터, 도서관 매칭)
   const todayCurations = useMemo(() => {
-    const ex = exhibitionsData.find((e) => e.region === todayRegion) || exhibitionsData[0];
+    // 해당 지역의 최신 포스트 찾기
+    const regionPost = posts.find((p) => p.region.includes(todayRegion));
+    let ex = exhibitionsData.find((e) => regionPost?.eventId && e.id === regionPost.eventId);
+    if (!ex) {
+      ex = exhibitionsData.find((e) => e.region === todayRegion) || exhibitionsData[0];
+    }
     const mk = TRADITIONAL_MARKETS.find((m) => m.region === todayRegion) || TRADITIONAL_MARKETS[0];
     const lib = LIBRARIES_DATA.find((l) => l.region === todayRegion) || LIBRARIES_DATA[0];
-    return { ex, mk, lib };
-  }, [todayRegion]);
+    return { ex, mk, lib, regionPost };
+  }, [todayRegion, posts]);
 
   // 검색 제출 핸들러
   const handleSearchSubmit = (e: React.FormEvent) => {
