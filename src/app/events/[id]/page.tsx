@@ -10,6 +10,7 @@ import rawData from "../../../../public/data/art-sample.json";
 import { Exhibition } from "@/types/art";
 import { getMarketForExhibition } from "@/utils/market";
 import { getLibraryForExhibition } from "@/utils/library";
+import { getAllPosts } from "@/lib/posts";
 
 const exhibitions: Exhibition[] = rawData as Exhibition[];
 
@@ -65,6 +66,13 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
   if (!exhibition) {
     notFound();
   }
+
+  // 매칭된 최신 블로그 도슨트 글 찾기 (양방향 완벽 연결)
+  const allPosts = getAllPosts();
+  const matchedPost = allPosts.find(
+    (p) => p.eventId === exhibition.id || p.slug.includes(exhibition.id)
+  );
+  const activeBlogSlug = exhibition.blogSlug || matchedPost?.slug;
 
   // 네이버 실시간 주변 맛집 & 핫플레이스 조회
   const cleanVenue = (exhibition.venueName || exhibition.location).split(" 및 ")[0].split(" ")[0];
@@ -212,7 +220,7 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
             <PointOfViewCard exhibition={exhibition} />
 
             {/* AI 도슨트 블로그 가이드 배너 */}
-            {exhibition.blogSlug && (
+            {activeBlogSlug && (
               <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-900 rounded-3xl p-6 sm:p-8 text-white shadow-md relative overflow-hidden flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border border-indigo-500/30">
                 <div className="space-y-2 z-10 max-w-xl">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-bold border border-indigo-400/30">
@@ -226,7 +234,7 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                   </p>
                 </div>
                 <Link
-                  href={`/blog/${exhibition.blogSlug}`}
+                  href={`/blog/${activeBlogSlug}`}
                   className="z-10 shrink-0 px-5 py-3 rounded-2xl bg-white text-indigo-950 hover:bg-indigo-50 font-bold text-sm transition-all shadow-md inline-flex items-center gap-2 group"
                 >
                   <span>도슨트 글 읽기</span>
@@ -291,32 +299,42 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-                  {localPlaces.map((place, pIdx) => (
-                    <a
-                      key={pIdx}
-                      href={place.link || `https://search.naver.com/search.naver?query=${encodeURIComponent(place.title)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3.5 rounded-2xl bg-white border border-slate-200/80 hover:border-[#03C75A]/50 hover:shadow-xs transition-all flex flex-col justify-between gap-1 group"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-1 mb-1">
-                          <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
-                            {place.category?.split(">").pop()?.trim() || "장소"}
-                          </span>
+                  {localPlaces.map((place, pIdx) => {
+                    const cleanTitle = place.title.replace(/<[^>]*>?/gm, "");
+                    const placeUrl =
+                      place.link && place.link.startsWith("http")
+                        ? place.link
+                        : `https://map.naver.com/v5/search/${encodeURIComponent(
+                            `${exhibition.region} ${cleanTitle}`
+                          )}`;
+
+                    return (
+                      <a
+                        key={pIdx}
+                        href={placeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-3.5 rounded-2xl bg-white border border-slate-200/80 hover:border-[#03C75A]/50 hover:shadow-xs transition-all flex flex-col justify-between gap-1 group"
+                      >
+                        <div>
+                          <div className="flex items-center justify-between gap-1 mb-1">
+                            <span className="text-[11px] font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
+                              {place.category?.split(">").pop()?.trim() || "장소"}
+                            </span>
+                          </div>
+                          <h4 className="text-sm font-bold text-slate-800 group-hover:text-[#03C75A] transition-colors line-clamp-1">
+                            {cleanTitle}
+                          </h4>
+                          <p className="text-xs text-slate-500 line-clamp-1 mt-0.5">
+                            {place.roadAddress || place.address}
+                          </p>
                         </div>
-                        <h4 className="text-sm font-bold text-slate-800 group-hover:text-[#03C75A] transition-colors line-clamp-1">
-                          {place.title}
-                        </h4>
-                        <p className="text-xs text-slate-500 line-clamp-1 mt-0.5">
-                          {place.roadAddress || place.address}
-                        </p>
-                      </div>
-                      <span className="text-[11px] text-[#03C75A] font-semibold pt-2 text-right">
-                        상세보기 →
-                      </span>
-                    </a>
-                  ))}
+                        <span className="text-[11px] text-[#03C75A] font-semibold pt-2 text-right">
+                          상세보기 →
+                        </span>
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -407,9 +425,9 @@ export default async function ExhibitionDetailPage({ params }: PageProps) {
 
               {/* 액션 버튼 */}
               <div className="pt-3 border-t border-slate-100 space-y-3">
-                {exhibition.blogSlug && (
+                {activeBlogSlug && (
                   <Link
-                    href={`/blog/${exhibition.blogSlug}`}
+                    href={`/blog/${activeBlogSlug}`}
                     className="w-full py-3.5 px-4 rounded-2xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-sm transition-all border border-indigo-200 text-center flex items-center justify-center gap-2 group"
                   >
                     <span>✍️ AI 도슨트 추천 글 읽기</span>

@@ -92,7 +92,7 @@
     "posterTheme": "bg-gradient-to-br from-indigo-950 via-purple-900 to-slate-900",
     "accentColor": "#8b5cf6",
     "link": "https://www.dureraum.org/",
-    "blogSlug": "2026-08-31-busan-cinema-center-media-art",
+    "blogSlug": "2026-09-10-busan-cinema-center-media-art",
     "thumbnailUrl": "https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   },
   {
@@ -156,7 +156,8 @@
     "posterTheme": "bg-gradient-to-br from-indigo-950 via-slate-900 to-sky-950",
     "accentColor": "#0284c7",
     "link": "https://www.bscc.or.kr/",
-    "thumbnailUrl": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-01-busan-namgu-culture-center"
   },
   {
     "id": "busan-geumjeong-culture-center",
@@ -187,7 +188,8 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-900",
     "accentColor": "#059669",
     "link": "https://art.geumjeong.go.kr/",
-    "thumbnailUrl": "http://imgnews.naver.net/image/003/2023/12/04/NISI20231204_0020151439_web_20231204141927_20231204142109612.jpg"
+    "thumbnailUrl": "http://imgnews.naver.net/image/003/2023/12/04/NISI20231204_0020151439_web_20231204141927_20231204142109612.jpg",
+    "blogSlug": "2026-09-13-busan-geumjeong-culture-center"
   },
   {
     "id": "busan-dongnae-culture-center",
@@ -218,7 +220,8 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-orange-950 to-slate-900",
     "accentColor": "#f59e0b",
     "link": "https://www.dongnae.go.kr/culture/index.dongnae",
-    "thumbnailUrl": "https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-01-busan-dongnae-culture-center"
   },
   {
     "id": "busan-busanjin-citizens-park",
@@ -249,7 +252,8 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-lime-950 to-stone-900",
     "accentColor": "#10b981",
     "link": "http://www.citizenpark.or.kr/",
-    "thumbnailUrl": "https://images.pexels.com/photos/34614/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/34614/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-02-busan-busanjin-citizens-park"
   },
   {
     "id": "busan-yeongdo-culture-art-center",
@@ -280,7 +284,8 @@
     "posterTheme": "bg-gradient-to-br from-blue-950 via-teal-900 to-slate-900",
     "accentColor": "#06b6d4",
     "link": "https://www.yeongdo.go.kr/culture.web",
-    "thumbnailUrl": "https://images.pexels.com/photos/25473965/pexels-photo-25473965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/25473965/pexels-photo-25473965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-02-busan-yeongdo-culture-art-center"
   },
   {
     "id": "busan-junggu-modern-history-museum",
@@ -311,7 +316,8 @@
     "posterTheme": "bg-gradient-to-br from-stone-950 via-slate-900 to-amber-950",
     "accentColor": "#ca8a04",
     "link": "https://www.busan.go.kr/mhistory/index",
-    "thumbnailUrl": "https://images.pexels.com/photos/20610602/pexels-photo-20610602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/20610602/pexels-photo-20610602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-02-busan-junggu-modern-history-museum"
   },
   {
     "id": "busan-donggu-culture-platform",
@@ -342,7 +348,8 @@
     "posterTheme": "bg-gradient-to-br from-red-950 via-slate-900 to-amber-950",
     "accentColor": "#e11d48",
     "link": "https://www.bsdonggu.go.kr/tour/",
-    "thumbnailUrl": "https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-12-busan-donggu-culture-platform"
   },
   {
     "id": "busan-seogu-songdo-ocean-art",
@@ -373,7 +380,8 @@
     "posterTheme": "bg-gradient-to-br from-cyan-950 via-blue-900 to-slate-900",
     "accentColor": "#0ea5e9",
     "link": "https://www.bsseogu.go.kr/tour/",
-    "thumbnailUrl": "http://imgnews.naver.net/image/5614/2025/12/02/0000033640_001_20251202161214762.jpg"
+    "thumbnailUrl": "http://imgnews.naver.net/image/5614/2025/12/02/0000033640_001_20251202161214762.jpg",
+    "blogSlug": "2026-09-14-busan-seogu-songdo-ocean-art"
   },
   {
     "id": "busan-bukgu-culture-center",
@@ -404,7 +412,8 @@
     "posterTheme": "bg-gradient-to-br from-green-950 via-emerald-950 to-slate-900",
     "accentColor": "#10b981",
     "link": "https://www.bsbukgu.go.kr/tour/index.bsbukgu",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&auto=format&fit=crop&q=80"
+    "thumbnailUrl": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&auto=format&fit=crop&q=80",
+    "blogSlug": "2026-09-03-busan-bukgu-culture-center"
   },
   {
     "id": "busan-sasang-living-culture",
@@ -435,7 +444,8 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-yellow-950 to-slate-900",
     "accentColor": "#eab308",
     "link": "https://www.sasang.go.kr/danurim/index.sasang",
-    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-04-busan-sasang-living-culture"
   },
   {
     "id": "busan-gangseo-nakdong-river-center",
@@ -466,7 +476,8 @@
     "posterTheme": "bg-gradient-to-br from-teal-950 via-emerald-950 to-slate-900",
     "accentColor": "#14b8a6",
     "link": "https://www.kwater.or.kr/culture/nakdong/",
-    "thumbnailUrl": "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-04-busan-gangseo-nakdong-river-center"
   },
   {
     "id": "busan-yeonje-culture-art",
@@ -497,7 +508,8 @@
     "posterTheme": "bg-gradient-to-br from-rose-950 via-slate-900 to-amber-950",
     "accentColor": "#f43f5e",
     "link": "http://www.yjcc.or.kr/",
-    "thumbnailUrl": "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg"
+    "thumbnailUrl": "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg",
+    "blogSlug": "2026-09-12-busan-yeonje-culture-art"
   },
   {
     "id": "busan-gijang-andersen-fairy-tale",
@@ -528,7 +540,8 @@
     "posterTheme": "bg-gradient-to-br from-indigo-950 via-purple-950 to-slate-900",
     "accentColor": "#8b5cf6",
     "link": "https://www.gijang.go.kr/tour/",
-    "thumbnailUrl": "https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-07-busan-gijang-andersen-fairy-tale"
   },
   {
     "id": "ulsan-media-art-2026",
@@ -559,7 +572,7 @@
     "posterTheme": "bg-gradient-to-br from-purple-950 via-slate-900 to-fuchsia-950",
     "accentColor": "#d946ef",
     "link": "https://www.ulsan.go.kr/s/uam/main.ulsan",
-    "blogSlug": "2026-08-30-ulsan-art-museum-sound-light",
+    "blogSlug": "2026-08-26-ulsan-media-art",
     "thumbnailUrl": "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   },
   {
@@ -591,7 +604,7 @@
     "posterTheme": "bg-gradient-to-br from-rose-950 via-slate-900 to-amber-950",
     "accentColor": "#f43f5e",
     "link": "https://ucac.ulsan.go.kr/",
-    "blogSlug": "2026-08-26-ulsan-media-art",
+    "blogSlug": "2026-09-11-ulsan-culture-art-center-autumn",
     "thumbnailUrl": "https://images.pexels.com/photos/6727765/pexels-photo-6727765.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   },
   {
@@ -623,7 +636,8 @@
     "posterTheme": "bg-gradient-to-br from-blue-950 via-cyan-950 to-slate-900",
     "accentColor": "#0284c7",
     "link": "https://www.donggu.ulsan.kr/tour/",
-    "thumbnailUrl": "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-05-ulsan-donggu-daewangam-art"
   },
   {
     "id": "ulsan-bukgu-soeburi-art",
@@ -654,7 +668,8 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-orange-950 to-slate-900",
     "accentColor": "#f97316",
     "link": "https://www.bukgu.ulsan.kr/art/",
-    "thumbnailUrl": "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-13-ulsan-bukgu-soeburi-art"
   },
   {
     "id": "ulsan-uljugun-onggi-museum",
@@ -685,7 +700,8 @@
     "posterTheme": "bg-gradient-to-br from-stone-950 via-amber-950 to-slate-900",
     "accentColor": "#d97706",
     "link": "https://www.ulju.ulsan.kr/onggi/",
-    "thumbnailUrl": "https://images.pexels.com/photos/6611208/pexels-photo-6611208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/6611208/pexels-photo-6611208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-10-ulsan-uljugun-onggi-museum"
   },
   {
     "id": "gyeongnam-jinju-national-museum",
@@ -748,7 +764,7 @@
     "posterTheme": "bg-gradient-to-br from-cyan-950 via-slate-900 to-indigo-950",
     "accentColor": "#06b6d4",
     "link": "http://www.ottchil.or.kr",
-    "blogSlug": "2026-08-31-tongyeong-ottchil-art-museum",
+    "blogSlug": "2026-09-11-tongyeong-ottchil-art-museum",
     "thumbnailUrl": "https://images.pexels.com/photos/4611337/pexels-photo-4611337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   },
   {
@@ -812,7 +828,7 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-slate-900 to-stone-900",
     "accentColor": "#d97706",
     "link": "https://clayarch.ghct.or.kr/",
-    "blogSlug": "2026-08-26-gimhae-clayarch",
+    "blogSlug": "2026-09-13-gimhae-clayarch-autumn",
     "thumbnailUrl": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop&q=80"
   },
   {
@@ -844,7 +860,7 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950",
     "accentColor": "#14b8a6",
     "link": "https://www.gyeongnam.go.kr/gam/index.do",
-    "blogSlug": "2026-08-26-gyeongnam-art-museum",
+    "blogSlug": "2026-09-01-gyeongnam-autumn-masterpiece",
     "thumbnailUrl": "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=800&auto=format&fit=crop&q=80"
   },
   {
@@ -876,7 +892,8 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-900",
     "accentColor": "#10b981",
     "link": "https://ssangbyeoklu.ycf.or.kr",
-    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-01-yangsan-ssangbyeongnu-autumn"
   },
   {
     "id": "miryang-arirang-art-center",
@@ -907,7 +924,8 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-orange-950 to-slate-900",
     "accentColor": "#f59e0b",
     "link": "https://www.mycf.or.kr/main/",
-    "thumbnailUrl": "https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1484759/pexels-photo-1484759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-10-miryang-arirang-art-center"
   },
   {
     "id": "changnyeong-gaya-tumuli-museum",
@@ -938,7 +956,8 @@
     "posterTheme": "bg-gradient-to-br from-yellow-950 via-stone-900 to-amber-950",
     "accentColor": "#eab308",
     "link": "http://museum.cng.go.kr",
-    "thumbnailUrl": "http://imgnews.naver.net/image/421/2018/05/18/0003379243_001_20180518134821341.jpg"
+    "thumbnailUrl": "http://imgnews.naver.net/image/421/2018/05/18/0003379243_001_20180518134821341.jpg",
+    "blogSlug": "2026-09-10-changnyeong-gaya-tumuli-museum"
   },
   {
     "id": "goseong-sogaya-heritage-museum",
@@ -969,7 +988,8 @@
     "posterTheme": "bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950",
     "accentColor": "#06b6d4",
     "link": "https://www.goseong.go.kr/museum/index.goseong",
-    "thumbnailUrl": "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-11-goseong-sogaya-heritage-museum"
   },
   {
     "id": "sacheon-ocean-art-museum",
@@ -1000,7 +1020,8 @@
     "posterTheme": "bg-gradient-to-br from-blue-950 via-sky-900 to-slate-900",
     "accentColor": "#0284c7",
     "link": "https://www.sccf.or.kr",
-    "thumbnailUrl": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-07-sacheon-ocean-art-museum"
   },
   {
     "id": "namhae-wind-trace-museum",
@@ -1031,7 +1052,8 @@
     "posterTheme": "bg-gradient-to-br from-teal-950 via-emerald-900 to-slate-900",
     "accentColor": "#14b8a6",
     "link": "https://www.namhaetour.org",
-    "thumbnailUrl": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-08-namhae-wind-trace-museum"
   },
   {
     "id": "hadong-jirisan-art-farm",
@@ -1062,7 +1084,8 @@
     "posterTheme": "bg-gradient-to-br from-green-950 via-lime-950 to-stone-900",
     "accentColor": "#84cc16",
     "link": "http://kiad.ac.kr",
-    "thumbnailUrl": "https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-09-hadong-jirisan-art-farm"
   },
   {
     "id": "hamyang-sangrim-art-center",
@@ -1093,7 +1116,8 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-green-950 to-stone-900",
     "accentColor": "#059669",
     "link": "https://www.hygn.go.kr/tour.web",
-    "thumbnailUrl": "http://imgnews.naver.net/image/421/2024/11/19/0007916743_001_20241119153620811.jpg"
+    "thumbnailUrl": "http://imgnews.naver.net/image/421/2024/11/19/0007916743_001_20241119153620811.jpg",
+    "blogSlug": "2026-09-08-hamyang-sangrim-art-center"
   },
   {
     "id": "geochang-suseungdae-museum",
@@ -1124,7 +1148,8 @@
     "posterTheme": "bg-gradient-to-br from-amber-950 via-orange-950 to-slate-900",
     "accentColor": "#ea580c",
     "link": "https://www.geochang.go.kr/museum/Index.do",
-    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-08-geochang-suseungdae-museum"
   },
   {
     "id": "hapcheon-okjeon-tumuli-museum",
@@ -1155,7 +1180,8 @@
     "posterTheme": "bg-gradient-to-br from-yellow-950 via-amber-900 to-slate-900",
     "accentColor": "#ca8a04",
     "link": "https://www.hc.go.kr/museum.web",
-    "thumbnailUrl": "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-08-hapcheon-okjeon-tumuli-museum"
   },
   {
     "id": "sancheong-donguibogam-museum",
@@ -1186,7 +1212,8 @@
     "posterTheme": "bg-gradient-to-br from-emerald-950 via-teal-950 to-slate-900",
     "accentColor": "#0d9488",
     "link": "https://donguibogam-village.sancheong.go.kr",
-    "thumbnailUrl": "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-09-sancheong-donguibogam-museum"
   },
   {
     "id": "haman-marisan-tumuli-museum",
@@ -1217,7 +1244,8 @@
     "posterTheme": "bg-gradient-to-br from-rose-950 via-slate-900 to-amber-950",
     "accentColor": "#e11d48",
     "link": "https://www.haman.go.kr/01460/01461.web",
-    "thumbnailUrl": "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-10-haman-marisan-tumuli-museum"
   },
   {
     "id": "uiryeong-righteous-army-museum",
@@ -1248,7 +1276,8 @@
     "posterTheme": "bg-gradient-to-br from-red-950 via-slate-900 to-amber-950",
     "accentColor": "#dc2626",
     "link": "https://www.uiryeong.go.kr/tour/index.do",
-    "thumbnailUrl": "https://images.pexels.com/photos/4588842/pexels-photo-4588842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "thumbnailUrl": "https://images.pexels.com/photos/4588842/pexels-photo-4588842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "blogSlug": "2026-09-11-uiryeong-righteous-army-museum"
   },
   {
     "id": "busan-moca-summer-special-2026",

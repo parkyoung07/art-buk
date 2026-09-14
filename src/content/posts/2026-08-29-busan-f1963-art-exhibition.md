@@ -5,7 +5,7 @@ summary: "폐와이어 공장에서 영남 최고의 예술 핫플레이스로 �
 category: "전시 리뷰"
 tags: ["부산전시", "F1963", "부산현대미술", "망미단길", "부산복합문화공간", "주말나들이"]
 region: "부산"
-eventId: "f1963-contemporary-art"
+eventId: "busan-f1963-art-exhibition"
 thumbnail: "https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
