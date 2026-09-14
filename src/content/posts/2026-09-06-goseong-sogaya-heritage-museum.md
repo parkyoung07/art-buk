@@ -56,7 +56,7 @@ thumbnail: "https://images.pexels.com/photos/35418756/pexels-photo-35418756.jpeg
   * **주소:** 경상남도 고성군 고성읍 신월2길 64
   * **특징:** 고성의 아름다운 바다 풍경을 조망하며 여유로운 커피 한 잔을 즐길 수 있는 감성 카페입니다. 신선한 원두로 내린 향긋한 커피와 눈과 입이 즐거운 수제 디저트가 준비되어 있어, 전시 관람 후 여운을 나누며 쉬어가기에 더할 나위 없이 좋은 공간입니다.
 
-![감성적인 디저트와 커피 힐링](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성적인 디저트와 커피 힐링](https://pup-post-phinf.pstatic.net/MjAyNTEwMjdfMTkz/MDAxNzYxNTMyMTg3NTc2.sNi7581Ru5cqbVcYA-9Sz1GVQa5JWiaj9CdvVlxW_YQg.M9V-_LBR3x8lIlHEMkyCC052xuEtCHuqtm2eh3iAsXog.JPEG/POST_IMAGE_ENCODING_20251027_112946_440.jpg)
 *▲ 고성의 여유로운 풍경 속에서 즐기는 달콤한 디저트와 커피 한 잔의 힐링.*
 
 ---

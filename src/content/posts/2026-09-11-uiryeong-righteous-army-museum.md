@@ -57,7 +57,7 @@ thumbnail: "https://images.pexels.com/photos/31474665/pexels-photo-31474665.jpeg
 * **중동식당 (의령읍 전통 맛집):** 오랜 세월 의령의 자리를 지켜온 전통 소고기국밥 전문점입니다. 얼큰하고 진한 국물에 부드러운 한우 양지머리가 듬뿍 들어가 있어, 한 그릇 비우고 나면 온몸이 따뜻해지는 든든함을 느낄 수 있습니다.
 * **카페 뜰 / 의령 감성 베이커리 카페:** 박물관 관람 후 조용히 커피 향을 즐기며 여유를 만끽할 수 있는 공간입니다. 향긋한 핸드드립 커피와 함께 가을 감성을 더해주는 디저트를 맛보며 오늘 나들이의 소중한 추억을 정리해 보세요.
 
-![커피와 감성 디저트 나들이](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![커피와 감성 디저트 나들이](https://www.uiryeong.go.kr/images/new/Culture/content/Museum_intro.jpg)
 *▲ 사진 설명: 따스한 햇살 아래 즐기는 향긋한 커피와 디저트 타임*
 
 ---

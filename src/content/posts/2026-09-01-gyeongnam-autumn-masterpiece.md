@@ -61,7 +61,7 @@ thumbnail: "https://images.pexels.com/photos/3222285/pexels-photo-3222285.jpeg?a
 - **히포히포 창원**: 경상남도 창원시 성산구 창이대로460번길 20 1층
   - 특색 있는 아시아 요리를 선보이며, 감각적인 플레이팅으로 눈과 입이 모두 즐거운 핫플레이스입니다.
 
-![감성 카페의 디저트와 커피](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성 카페의 디저트와 커피](http://www.ktin.net/Spac_Editor/upload/pkp123/2020/NE_2020_CRMWFC97282.jpg)
 *▲ 미술관 관람 후 달콤한 휴식을 선사하는 감성 카페의 디저트 타임*
 
 ---

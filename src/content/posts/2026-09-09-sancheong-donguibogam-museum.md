@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/5480036/pexels-photo-5480036.jpeg?a
 * **동의보감촌 내 약초 전문 향토 음식점들**: 지리산에서 채취한 신선한 나물과 약초를 듬뿍 넣은 '약초 한상차림'과 '산채비빔밥', 따끈한 한방 오리·토종닭 백숙은 금강산도 식후경인 나들이 길에 든든한 활력을 채워줍니다.
 * **동의보감촌 뷰 감성 카페**: 통유리창 너머로 지리산 능선이 한눈에 파노라마처럼 펼쳐지는 산청의 루프탑·숲세권 카페들. 향긋한 수제 대추차, 오미자 에이드와 함께 곁들이는 담백한 디저트는 예술 관람의 여운을 길게 이어줍니다.
 
-![자연 속에서 여유를 즐기는 감성 디저트와 티 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![자연 속에서 여유를 즐기는 감성 디저트와 티 타임](https://pup-post-phinf.pstatic.net/MjAyNTEyMTdfMTQ2/MDAxNzY1OTY4OTEzOTg5.OqFHuyfZzwP2e5Wf7EEavBHblxvgiSQO79XY55AlL4Qg.cH8sBmC5Kvv-o-6H9ZvZFGAm7SrZME702UGkVNDbF4Ug.JPEG/POST_IMAGE_ENCODING_20251217_195512_050.jpg)
 *▲ 산청의 맑은 공기와 함께 즐기는 여유로운 티타임과 디저트 힐링.*
 
 ---

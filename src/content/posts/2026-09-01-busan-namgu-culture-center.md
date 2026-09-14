@@ -62,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/2328867/pexels-photo-2328867.jpeg?a
   * **주소:** 부산광역시 남구 신선로 424
   * **특징:** 가볍고 빠르게 드라이브나 산책 코스 동선에서 간식이나 커피를 테이크아웃하기 좋은 편리한 스팟입니다.
 
-![야외 테라스에서 즐기는 민트 가니쉬 커피 판나코타 디저트와 파인애플, 피오니 넛츠](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 민트 가니쉬 커피 판나코타 디저트와 파인애플, 피오니 넛츠](https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMzYg/MDAxNzgzNjc1NjczNjQ2.ABf7QPN_wZ5UlVUeXHTaGN6kNw5yNztsK1GnvWkS_XEg.EXgMGI6FmkME45yrqWpDLyPaoVuRI4qV8j3F3ApBEL8g.JPEG/PostEncodingTask.77690DBB-29BB-495E-8594-4596B989CB1F.jpg)
 *▲ 사진 설명: 싱그러운 허브와 달콤한 디저트가 어우러져 전시 나들이의 기분을 한층 더 북돋아 주는 감성 카페의 풍경.*
 
 ---

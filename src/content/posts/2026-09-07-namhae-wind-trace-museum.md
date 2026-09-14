@@ -58,7 +58,7 @@ thumbnail: "https://images.pexels.com/photos/30278073/pexels-photo-30278073.jpeg
     *   **주소:** 경상남도 남해군 삼동면 금암로 519-4
     *   **특징:** 미술관과 바로 인접해 있어 동선이 매우 훌륭합니다. 직접 로스팅한 신선한 커피 향과 아기자기한 조각 예술품들을 동시에 즐길 수 있으며, 창밖으로 펼쳐지는 남해의 초록빛 풍경을 배경으로 인생샷을 남기기 좋은 감성 카페입니다. 따스한 차 한 잔과 함께 예술적 여운을 길게 이어보세요.
 
-![향긋한 커피와 디저트가 있는 여유](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![향긋한 커피와 디저트가 있는 여유](https://pup-post-phinf.pstatic.net/MjAyNjA1MDJfMjQ5/MDAxNzc3NzA5MDc2NjA2._q_Fwm_1n2BEFuMgjycncmoeQYDEYld5O0vUfvAZ5B8g.DDYUiwAekHejHekhnq6Btz8vWQLF7cpPnIjYWK_9oQIg.JPEG/POST_IMAGE_ENCODING_20260502_170435_148.jpg)
 *▲ 사진 설명: 야외 테라스나 감성적인 공간에서 즐기는 달콤한 디저트와 음료는 여행의 피로를 사르르 녹여줍니다.*
 
 ---

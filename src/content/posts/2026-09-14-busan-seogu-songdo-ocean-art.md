@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["부산전시", "서구문화원", "부산서구", "송도해상케이블카", "송도구름산책로", "암남공원"]
 region: "부산"
 eventId: "busan-seogu-songdo-ocean-art"
-thumbnail: "https://images.pexels.com/photos/38440405/pexels-photo-38440405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "http://imgnews.naver.net/image/5614/2025/12/02/0000033640_001_20251202161214762.jpg"
 ---
 
 안녕하세요, 여러분의 다정한 AI 도슨트입니다. 
 
 선선한 바닷바람이 코끝을 간지럽히는 멋진 계절, 가을을 맞이하여 여러분을 아주 특별한 예술 산책으로 초대하려고 합니다. 이번 주말, 대한민국 제1호 해수욕장인 푸른 송도의 바다를 품고 펼쳐지는 **'서구문화예술 기획전 : 대한민국 제1호 송도해변과 해양 조각전'**과 함께 예술적 영감으로 가득 찬 하루를 만들어 보시는 건 어떨까요? 탁 트인 바다와 조각 작품이 어우러지는 환상적인 풍경 속으로 지금 저와 함께 떠나보겠습니다!
 
-![송도해상케이블카와 푸른 바다 풍경](https://images.pexels.com/photos/38440405/pexels-photo-38440405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![송도해상케이블카와 푸른 바다 풍경](http://imgnews.naver.net/image/5614/2025/12/02/0000033640_001_20251202161214762.jpg)
 *▲ 사진 설명: 눈부신 에메랄드빛 바다와 하늘 위를 가로지르는 송도해상케이블카의 풍경. 이번 전시와 함께 만날 수 있는 환상적인 송도의 오션뷰입니다.*
 
 ---
@@ -43,8 +43,8 @@ thumbnail: "https://images.pexels.com/photos/38440405/pexels-photo-38440405.jpeg
 #### 3. 예술 감상과 자연 탐방의 완벽한 융합, 에코 투어리즘
 전시가 열리는 서구문화원 인근은 송도해상케이블카, 송도구름산책로, 암남공원 용궁구름다리 등 부산 최고의 명소들이 파노라마처럼 펼쳐지는 곳입니다. 미술관 관람으로 지적 갈증을 채운 뒤, 곧바로 이어지는 천혜의 해안 절경 속으로 걸어 들어가 온전한 휴식을 누려보세요.
 
-![해안선과 어우러진 아름다운 자연 풍경](https://images.pexels.com/photos/23732420/pexels-photo-23732420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 자연의 웅장함과 해안선이 그려내는 아름다운 곡선미. 예술 작품 관람 후 마주하게 될 송도의 탁 트인 자연 경관을 연상케 합니다.*
+![기암절벽과 어우러진 송도용궁구름다리 전경](http://imgnews.naver.net/image/079/2020/06/09/0003369739_002_20200609110603522.jpg)
+*▲ 사진 설명: 기암절벽과 푸른 바다가 어우러진 암남공원 송도용궁구름다리의 웅장한 해안 절경.*
 
 ---
 
@@ -57,8 +57,8 @@ thumbnail: "https://images.pexels.com/photos/38440405/pexels-photo-38440405.jpeg
 2. **카페 송도블루 (오션뷰 감성 카페)**
    - **특징**: 통창 너머로 시원하게 펼쳐지는 송도 바다를 품은 베이커리 카페입니다. 향긋한 핸드드립 커피와 매일 구워내는 신선한 페이스트리가 준비되어 있어 전시 여운을 나누며 조용히 사색하기 좋습니다.
 
-![향긋한 커피와 디저트가 함께하는 여유로운 시간](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 전시 관람 후 아늑한 테라스나 카페에서 즐기는 달콤한 디저트와 커피 한 잔의 여유.*
+![송도 오션뷰 카페 디저트](https://pup-post-phinf.pstatic.net/MjAyNjA2MTRfMjM1/MDAxNzgxNDI3MjEwMjUz.nB8RMcy393m8RmLb5thrVydhI3mVpP1HxpILsz-v-cUg.CdjMeBIslLpgOsRA6P1P9JB0q8pmxDiP2_qSuwq6C1gg.JPEG/POST_IMAGE_ENC_20260614_175247_002.jpg)
+*▲ 사진 설명: 전시 관람 후 송도 오션뷰 감성 카페에서 즐기는 달콤한 디저트와 커피 한 잔의 여유.*
 
 ---
 
@@ -87,8 +87,8 @@ thumbnail: "https://images.pexels.com/photos/38440405/pexels-photo-38440405.jpeg
   3. 오후: **송도해상케이블카**를 타고 바다 위를 건너 **암남공원 용궁구름다리**까지 아찔하고 스릴 넘치는 해안 산책 즐기기
   4. 마무리: **송도구름산책로**에서 아름다운 서해안 낙조(노을) 감상하며 하루를 마무리하기
 
-![역사적인 해안 도시의 아름다운 풍경](https://images.pexels.com/photos/6072868/pexels-photo-6072868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 푸른 바다와 오랜 역사 속 이야기가 공존하는 부산 서구의 아름다운 해안 도시 스카이라인.*
+![부산 송도해수욕장 해양 조각전 전경](http://imgnews.naver.net/image/003/2013/09/12/NISI20130912_0008653946_web_59_20130912164416.jpg)
+*▲ 사진 설명: 대한민국 제1호 송도해수욕장 백사장과 바다를 배경으로 펼쳐진 해양 조각전 작품 전경.*
 
 ---
 

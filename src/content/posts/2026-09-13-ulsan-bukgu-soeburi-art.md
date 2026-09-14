@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg
 * **정자항 활어회센터 & 대게 직판장**: 울산 북구 하면 단연 싱싱한 해산물과 명물 '정자 대게'를 빼놓을 수 없습니다. 갓 잡아 올린 싱싱한 회와 입안 가득 퍼지는 풍미 가득한 대게찬은 예술 관람으로 지친 몸과 마음에 활력을 불어넣어 줍니다.
 * **강동 바다뷰 오션뷰 감성 카페 거리**: 탁 트인 동해 바다가 한눈에 내려다보이는 강동 일대에는 감각적인 인테리어와 향긋한 스페셜티 커피를 자랑하는 대형 베이커리 카페들이 즐비합니다. 파도 소리를 들으며 즐기는 따뜻한 라떼와 달콤한 디저트는 완벽한 주말 나들이의 화룡점정입니다.
 
-![Coffee panna cotta dessert and treats in an outdoor setting](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![Coffee panna cotta dessert and treats in an outdoor setting](https://img.newsro.kr/wp-content/uploads/2023/03/%EC%A7%80%EA%B8%88-%EB%B6%81%EA%B5%AC%EB%A5%BC-%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8B%A4-2023-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg)
 *▲ 바다 인근 감성 카페에서 즐기는 향긋한 커피와 디저트 타임*
 
 ---

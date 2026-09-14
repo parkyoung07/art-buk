@@ -62,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/2231506/pexels-photo-2231506.jpeg?a
   * **주소:** 경상남도 거창군 거창읍 강변로 127 한성시티빌 더무그 103호
   * **특징:** 매일 구워내는 고소한 빵 냄새가 가득한 베이커리 맛집입니다. 따뜻한 차 한 잔과 함께 달콤한 빵을 맛보며 힐링해 보세요.
 
-![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://img.siksinhot.com/place/1521432895973443.jpg)
 *▲ 사진 설명: 전시 나들이의 감성을 한층 더 높여줄 향긋한 커피와 근사한 디저트.*
 
 ---

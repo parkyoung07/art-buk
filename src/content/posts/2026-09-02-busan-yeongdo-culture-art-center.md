@@ -62,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg
   * **주소:** 부산광역시 영도구 동삼로 25
   * **특징:** 가볍고 친숙하게 허기를 달이고 싶을 때 찾기 좋은 도심 속 편리한 휴식처입니다.
 
-![야외 테라스에서 즐기는 향긋한 디저트와 커피 한 잔의 여유](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 향긋한 디저트와 커피 한 잔의 여유](http://shop1.phinf.naver.net/20250227_45/1740616778113wpavk_JPEG/74749639217766393_194470118.jpg)
 *▲ 예술 나들이의 여운을 달콤하게 채워줄 영도 감성 카페의 디저트.*
 
 ---

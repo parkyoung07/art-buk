@@ -56,7 +56,7 @@ thumbnail: "https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg
 - **온양읍 로컬 손국수집**: 따뜻하고 진한 국물이 생각날 때 방문하기 좋은 곳으로, 직접 뽑은 쫄깃한 면발이 지친 발걸음을 위로해 줍니다.
 - **외고산 옹기마을 인근 감성 카페**: 전통 가옥의 멋을 살리거나 초록빛 자연을 품은 뷰티풀 카페들에서 향긋한 핸드드립 커피와 달콤한 디저트를 즐기며 여유로운 사색을 즐겨보세요.
 
-![감성 카페 디저트](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성 카페 디저트](http://tong.visitkorea.or.kr/cms/resource/40/3538040_image2_1.jpg)
 *▲ 사진 설명: 싱그러운 자연을 바라보며 즐기는 감성 카페의 달콤한 디저트 타임*
 
 ---

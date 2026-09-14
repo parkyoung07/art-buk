@@ -56,7 +56,7 @@ thumbnail: "https://images.pexels.com/photos/34160211/pexels-photo-34160211.jpeg
   - **주소:** 부산광역시 사상구 대동로159번길 107 ㅌㅌㅌ센터
   - **특징:** 전시 관람의 여운을 이어가기 좋은 사상구의 대표 복합문화공간입니다. 트렌디한 인테리어와 감성적인 분위기 속에서 맛있는 커피와 디저트를 즐기며 오늘 본 전시의 감상을 나누기에 더할 나위 없이 좋은 장소입니다.
 
-![달콤하고 향긋한 디저트와 커피 한 잔의 여유](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![달콤하고 향긋한 디저트와 커피 한 잔의 여유](https://d12zq4w4guyljn.cloudfront.net/750_750_20240128123413_photo1_cb655c432f91.jpg)
 *▲ 사진 설명: 감성 넘치는 공간에서 즐기는 달콤한 디저트와 향긋한 커피.*
 
 ---

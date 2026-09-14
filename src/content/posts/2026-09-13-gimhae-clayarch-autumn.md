@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/6611208/pexels-photo-6611208.jpeg?a
 - **옹기짜장&밀면** (경남 김해시 진례면 서부로 614 1층)
   - 든든하고 맛깔스러운 한 끼를 원하신다면 추천하는 로컬 맛집입니다. 남녀노소 누구나 좋아하는 중식 메뉴를 깔끔하게 즐길 수 있어 가족 단위 관람객들에게 특히 인기가 높습니다.
 
-![야외 테라스에서 민트로 장식된 커피 판나코타 디저트와 파인애플, 잣이 곁들여진 모습](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 민트로 장식된 커피 판나코타 디저트와 파인애플, 잣이 곁들여진 모습](https://d12zq4w4guyljn.cloudfront.net/750_750_20250905011832880_photo_2ad4c9afed8d.webp)
 *▲ 사진 설명: 미술관 나들이의 달콤한 낭만을 더해주는 감성 카페의 디저트와 음료.*
 
 ---

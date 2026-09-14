@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/5663614/pexels-photo-5663614.jpeg?a
 * **스트릿624 (문화·예술 공간 인근 카페):** 감각적인 인테리어와 향긋한 스페셜티 커피가 반겨주는 곳입니다. 전시 여운을 나누며 달콤한 디저트를 즐기기 완벽한 장소입니다.
 * **구포국시 테마 거리 맛집들:** 구포에 왔다면 오랜 전통의 명물 '구포국수'를 놓칠 수 없습니다. 멸치 육수의 진한 풍미가 일품인 잔치국수 한 그릇으로 든든한 허기를 채워보세요.
 
-![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinjsrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://www.busan.go.kr/comm/getImage?srvcId=BBSTY3&upperNo=1646998&fileTy=ATTACH&fileNo=8)
 *▲ 사진 설명: 감성 카페에서 여유롭게 즐기는 향긋한 커피와 달콤한 디저트*
 
 ---

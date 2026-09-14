@@ -57,7 +57,7 @@ thumbnail: "https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg
 - **전포카페거리 감성 브런치 & 디저트 카페 추천**: 전시 관람 후 향긋한 스페셜티 커피 한 잔과 함께 정성스러운 디저트를 맛볼 수 있는 개성 만점의 로컬 카페들이 여러분을 기다립니다. 아기자기한 인테리어 속에서 여유로운 오후의 햇살을 즐겨보세요.
 - **서면·시민공원 인근 미식 투어**: 신선한 식재료를 활용한 파스타부터 부산의 로컬 맛집까지, 취향에 따라 골라 먹는 재미가 가득한 다채로운 다이닝 공간들이 인근에 밀집해 있어 당일치기 데이트나 나들이 코스로 완벽합니다.
 
-![야외 테라스에서 즐기는 향긋한 커피와 디저트](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 향긋한 커피와 디저트](https://pup-post-phinf.pstatic.net/MjAyNjA3MDdfNjcg/MDAxNzgzMzUyNDAwOTYw.dunWy6fgN8ufnFfFmzD2MFaooqXMvcRzvf7YwfpxGBwg.43LnPSIYPdVKgXGfD02gNJ9mCG-o8j8Q2Bgh_qvM_50g.JPEG/POST_IMAGE_ENC_20260707_003850_497.jpg)
 *▲ 사진 설명: 전포카페거리와 인근 감성 카페에서 여유롭게 즐기는 향긋한 디저트 타임.*
 
 ---

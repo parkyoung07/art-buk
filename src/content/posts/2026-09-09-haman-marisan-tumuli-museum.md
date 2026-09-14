@@ -63,7 +63,7 @@ thumbnail: "https://images.pexels.com/photos/20610602/pexels-photo-20610602.jpeg
   - **위치:** 경상남도 함안군 가야읍 중앙남2길 26-14 1층
   - **특징:** 깔끔하고 정갈한 일식을 선보이는 현지인 추천 맛집입니다. 신선한 재료로 만들어낸 다채로운 메뉴들이 준비되어 있어, 전시 나들이 후 든든하고 기분 좋은 한 끼를 책임져 줍니다.
 
-![야외 테라스에서 즐기는 달콤한 디저트와 커피](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 달콤한 디저트와 커피](https://www.haman.go.kr/board/image.do?idx=17217488&name=2026%EC%84%B8%EA%B3%84%EC%9C%A0%EC%82%B0%EC%B6%95%EC%A0%84_%EC%9A%B4%EC%98%81%EC%95%88%EB%82%B4.png&gcode=5001&s=)
 *▲ 따사로운 가을 햇살 아래, 카페에서 즐기는 여유로운 커피 한 잔과 달콤한 디저트.*
 
 ---

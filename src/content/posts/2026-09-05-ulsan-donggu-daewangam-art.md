@@ -57,7 +57,7 @@ thumbnail: "https://images.pexels.com/photos/8344103/pexels-photo-8344103.jpeg?a
 * **일산해수욕장 오션뷰 회센터 및 해물 요리 전문점들**: 전시 관람 후 싱싱한 동해안 자연산 회와 칼칼한 매운탕으로 든든하게 배를 채우기 좋습니다. 창밖으로 펼쳐지는 일산 바다의 풍경은 덤이랍니다.
 * **대왕암공원 & 슬도 인근 오션뷰 감성 카페 거리**: 통창 너머로 하얗게 부서지는 파도를 감상하며 향긋한 드립 커피와 달콤한 디저트를 즐길 수 있는 로스터리 카페들이 즐비해 있습니다. 바다를 배경으로 인생 사진을 남기기에 이보다 더 좋을 순 없겠죠?
 
-![감성 카페 디저트와 여유](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성 카페 디저트와 여유](https://pup-post-phinf.pstatic.net/MjAyNjA5MDhfMTYx/MDAxNzg4ODcyMTY4OTYx.zaEbhdAIvaRvzw6SWjenulIq0D537XQEyefD9toF4Q4g.XcLqmCp9qUQ67M6Z2nSx2S44_E-_eQRgGgLu4CeDVGEg.JPEG/POST_IMAGE_ENC_20260908_215531_012.jpg)
 *▲ 야외 테라스에서 즐기는 달콤한 디저트와 향긋한 커피, 나들이의 여유를 더해주는 완벽한 미식 타임.*
 
 ---

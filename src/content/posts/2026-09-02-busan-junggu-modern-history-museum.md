@@ -62,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/14804467/pexels-photo-14804467.jpeg
   - **위치:** 부산광역시 중구 대청로 99 1층
   - **특징:** 든든하고 바삭한 수제 돈가스로 입소문 난 맛집입니다. 남녀노소 누구나 호불호 없이 맛있게 즐길 수 있는 정갈한 한 끼를 선사합니다.
 
-![달콤한 디저트와 커피](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![달콤한 디저트와 커피](https://www.tu.ac.kr/_attach/tongmyong/editor-image/2024/05/JErGwwuoLESDNfDwehbTmnIfhK.png)
 *▲ 전시 나들이의 감성을 더해줄 향긋한 커피와 디저트 타임.*
 
 ---

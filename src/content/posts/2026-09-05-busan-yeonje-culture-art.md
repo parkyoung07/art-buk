@@ -58,7 +58,7 @@ thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg
   * **위치:** 부산광역시 연제구 아시아드대로46번길 15 상가동 2층 201호
   * **특징:** 바쁜 일상 속에서 깊은 향의 전통 차와 함께 마음을 차분히 가라앉힐 수 있는 고즈넉한 찻집입니다. 은은한 차 향기를 맡으며 전시의 여운을 차분히 정리하기에 이보다 더 좋을 순 없답니다.
 
-![감성 가득한 카페와 달콤한 디저트 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성 가득한 카페와 달콤한 디저트 타임](http://cfile202.uf.daum.net/image/1252944D4E9CC9EF2379B6)
 *▲ 전시 관람 후 즐기는 향긋한 차와 달콤한 디저트의 여유*
 
 ---

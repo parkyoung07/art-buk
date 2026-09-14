@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/15053731/pexels-photo-15053731.jpeg
 *   **동래파전 명가 탐방**: 동래에 왔다면 바삭하고 촉촉한 진짜 '동래파전'을 맛보셔야 합니다! 신선한 해산물과 쪽파가 어우러진 전통 파전과 막걸리 한 잔의 여유는 나들이의 완벽한 마침표가 되어줍니다.
 *   **온천천 카페거리 감성 카페**: 전시장 가까이에 위치한 온천천 카페거리로 향해보세요. 통창 너머로 가을 풍경이 시원하게 펼쳐지는 분위기 좋은 로스터리 카페에서 향긋한 커피 한 잔과 달콤한 디저트를 즐기며 전시의 여운을 차분히 나누어 보시길 추천합니다.
 
-![야외 테라스에서 즐기는 커피와 디저트](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![야외 테라스에서 즐기는 커피와 디저트](https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMTI5/MDAxNzgzNjc1Njc1NDEz.DI7MXDHCO1mdQy3d1AhjgaF7YlAwryz6FtZdAwB9nu4g.Mxvy4hlt4z-4uHY4SE7Ez39jlp2Qi0S59TK_hE35V3Mg.JPEG/PostEncodingTask.D7CA97CF-7E7E-48A4-A05D-40827C7D4EAC.jpg)
 *▲ 전시 관람 후 온천천 카페거리에서 즐기는 향긋한 커피와 여유로운 오후*
 
 ---

@@ -56,7 +56,7 @@ thumbnail: "https://images.pexels.com/photos/2090082/pexels-photo-2090082.jpeg?a
   - **위치:** 부산광역시 해운대구 해운대로 407 신세계프라자빌딩 105호
   - **특징:** 미술관 관람 전후 가볍게 들러 맛있는 커피와 음료를 테이크아웃하거나, 잠시 숨을 고르기 가장 좋은 최적의 접근성을 자랑합니다. 친숙하고 편안한 분위기 속에서 리프레시하기 딱 좋아요.
 
-![향긋한 커피와 함께 즐기는 감성적인 디저트 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![향긋한 커피와 함께 즐기는 감성적인 디저트 타임](https://pup-post-phinf.pstatic.net/MjAyNjA0MThfNzMg/MDAxNzc2NDc1NDEyNTQz.NC3hTdLVZ13afCtiRyBWkhT4A6FZnmoa6SOxp22e--Ig.iLGVhoXHNOkpdDlvd5hsXduqdJtRYj7aVyhGe9W9Woog.JPEG/POST_IMAGE_ENCODING_20260418_102330_911.jpg)
 *▲ 전시 관람 후 센텀시티의 세련된 카페에서 즐기는 여유로운 디저트 타임*
 
 ---

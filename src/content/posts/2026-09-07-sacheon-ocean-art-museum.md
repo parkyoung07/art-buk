@@ -64,7 +64,7 @@ thumbnail: "https://images.pexels.com/photos/18061306/pexels-photo-18061306.jpeg
 * **스타벅스 경남사천DT점 & 사천벌리점**
   * 믿고 찾는 익숙한 맛과 편안함을 원하신다면 언제든 방문하기 좋은 인근 드라이브 스루 및 시내 거점 카페입니다.
 
-![커피와 감성적인 디저트 플레이팅](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![커피와 감성적인 디저트 플레이팅](https://pup-post-phinf.pstatic.net/MjAyNjA0MjhfMjk5/MDAxNzc3Mzc4NTA4MDA2.OwRD570oWvJuAUzxlsCYBmdtbpqQuoQUGWJoSDnYCS4g.JZ2Q_ZfWr0yhMD-5ElYqggxlvfZGXZuzgjiHNJnafCcg.JPEG/A608FDD8-EBAE-4404-8EDD-C3254126FA3F.jpg)
 *▲ 예술 산책 후 즐기는 향긋한 커피 한 잔과 달콤한 디저트는 나들이의 행복을 배로 만들어 줍니다.*
 
 ---

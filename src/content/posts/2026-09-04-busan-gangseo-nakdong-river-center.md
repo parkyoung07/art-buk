@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/19390850/pexels-photo-19390850.jpeg
 * **을숙도·하단 뷰 맛집 브런치 카페**: 낙동강변을 따라 탁 트인 리버뷰를 자랑하며, 신선한 원두로 내린 드립 커피와 수제 디저트를 맛볼 수 있습니다. 통창 너머로 떨어지는 노을을 감상하기에 이만한 곳이 없답니다.
 * **강서구 로컬 향토 맛집(재래식 손두부·민물장어)**: 청정 낙동강 인근에서 오랜 세월 자리를 지켜온 노포 감성의 맛집들입니다. 담백하고 고소한 손두부 전골이나 몸보신을 책임지는 보양식으로 전시 관람 후 든든하게 속을 채워보세요.
 
-![향긋한 커피와 감성적인 디저트가 어우러진 휴식 시간](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![향긋한 커피와 감성적인 디저트가 어우러진 휴식 시간](https://img1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/3XWJ/image/iAUmBvAcTajLzf5-kR6HsmqpnGw.png)
 *▲ 전시 관람 후 감성 카페에서 즐기는 달콤한 디저트와 여유.*
 
 ---

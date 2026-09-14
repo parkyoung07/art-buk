@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/31474665/pexels-photo-31474665.jpeg
 *   **중앙식당 (의령국밥 골목)**: 진하고 깊은 국물 맛이 일품인 의령식 소고기국밥을 제대로 즐길 수 있는 곳으로, 든든한 한 끼 식사로 제격입니다.
 *   **카페 의령뜰 (감성 카페)**: 푸른 농경지와 남강의 풍경이 한눈에 들어오는 따뜻한 인테리어의 카페입니다. 향긋한 핸드드립 커피와 함께 가을의 여유를 만끽할 수 있습니다.
 
-![의령 나들이 속 여유를 더하는 감성 디저트와 음료](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![의령 나들이 속 여유를 더하는 감성 디저트와 음료](https://pup-post-phinf.pstatic.net/MjAyNjA4MTFfMjYg/MDAxNzg2NDMyNTIzMjAz.Xgn9EnlN6FsI2YD3uD6JrOe2chYxhzxiec6VPW-yT1og.PXG-DLEFHzYmPj1wCOSC5BFbxnnexgkTeOZzYLz6N44g.JPEG/PostEncodingTask.D02334B6-A933-4175-8E28-ED02DE286C34.jpg)
 *▲ 사진 설명: 따뜻한 햇살 아래, 고즈넉한 의령에서 즐기는 달콤한 디저트와 음료 타임.*
 
 ---

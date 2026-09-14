@@ -57,7 +57,7 @@ thumbnail: "https://images.pexels.com/photos/30278073/pexels-photo-30278073.jpeg
   * **주소:** 경상남도 남해군 삼동면 금암로 519-4 (바람흔적아트센터 내)
   * **특징:** 미술관 관람 전후로 여유롭게 향긋한 커피 한 잔을 즐기기 좋은 감성 카페입니다. 직접 로스팅한 신선한 원두로 내린 커피와 더불어, 눈과 입이 모두 즐거운 정성스러운 디저트류가 준비되어 있어 창밖의 푸른 남해 풍경을 바라보며 깊은 휴식을 취하기에 완벽한 장소입니다.
 
-![감성적인 디저트와 음료 플레이팅](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![감성적인 디저트와 음료 플레이팅](https://pup-post-phinf.pstatic.net/MjAyNjA1MDJfMTUw/MDAxNzc3NzA5MDc3Njk1.uezllszTrlq03O3LphYsTFkYZ-1ZWMph1Pt716wkoywg.JS4G5j_Zhy3aIjwPFaIJGEiP0nqFO5H7UG-4uPvkvLAg.JPEG/POST_IMAGE_ENCODING_20260502_170435_248.jpg)
 *▲ 감성 가득한 야외 테라스나 창가에서 즐기는 향긋한 디저트와 커피 한 잔의 여유*
 
 ---

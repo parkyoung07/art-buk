@@ -56,7 +56,7 @@ thumbnail: "https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg
 *   **문화공감 수정 (전통찻집)**: 옛 적가옥의 풍취를 고스란히 간직한 공간에서 향긋한 전통차를 즐기며 고즈넉한 시간을 보낼 수 있는 최고의 감성 스폿입니다.
 *   **초량 이바구길 카페 거리**: 아기자기한 골목길 사이에 숨어 있는 로컬 카페들에서 창밖으로 펼쳐지는 부산항의 풍경을 내려다보며 달콤한 디저트를 즐겨보세요.
 
-![신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](https://tong.visitkorea.or.kr/cms/resource/96/3016696_image2_1.JPG)
 *▲ 전시 관람 후 아늑한 카페에서 즐기는 달콤한 디저트와 여유로운 휴식.*
 
 ---

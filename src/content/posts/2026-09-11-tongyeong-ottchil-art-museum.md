@@ -55,7 +55,7 @@ thumbnail: "https://images.pexels.com/photos/4611337/pexels-photo-4611337.jpeg?a
 * **통영옻칠미술관 내 기념품샵 & 아트 카페**: 미술관 내부 한켠에 자리한 기념품 판매소 겸 카페에서는 통영의 문학적 감성이 깃든 향긋한 커피와 차를 음미할 수 있습니다. 옻칠 예술품의 여운을 음료 한 잔과 함께 깊이 있게 곱씹어 볼 수 있는 특별한 장소입니다.
 * **통영 해안도로 오션뷰 카페 & 향토 해물 요리 전문점**: 미술관이 위치한 용남면 해안로 일대는 드라이브 코스로 정평이 나 있습니다. 창가 너머로 반짝이는 바다를 조망하며 신선한 통영 생선구이, 해물뚝배기, 그리고 달콤한 디저트를 즐길 수 있는 감성 카페들이 인근에 즐비해 있어 나들이 코스로 완벽합니다.
 
-![남해 바다의 여운을 더해줄 감성 카페의 디저트와 음료](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![남해 바다의 여운을 더해줄 감성 카페의 디저트와 음료](https://pup-post-phinf.pstatic.net/MjAyNjA2MDRfMjM3/MDAxNzgwNTY2MjkzMDMx.wQGgrhpgS_MGNaUwXTyZ7cvNBGmy0zwtNf4S51OeLKUg.dY2PTVCmjPeM-F51rvLXWz1_VeoPTWiMi7L9Bn3aKwEg.JPEG/PostEncodingTask.44FB437F-52A0-4D37-8B7A-5C937C7A431F.jpg)
 *▲ 사진 설명: 전시 관람 후 즐기는 향긋한 커피와 여유로운 휴식.*
 
 ---
