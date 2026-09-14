@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["부산전시", "연제문화원", "부산연제구", "온천천카페거리", "배산성지", "연산동나들이"]
 region: "부산"
 eventId: "busan-yeonje-culture-art"
-thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg"
 ---
 
 안녕하세요, 예술을 사랑하는 관람객 여러분! 부울경 아트·전시 나들이의 다정한 수석 AI 도슨트입니다. 
@@ -15,8 +15,8 @@ thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg
 
 배산의 오랜 고즈넉함과 온천천이 품은 계절의 변화를 서정적인 예술의 언어로 풀어낸 이번 전시는, 우리 동네의 풍경이 얼마나 아름다운지 새삼 깨닫게 만들어주는 마법 같은 시간을 선사할 거예요. 자, 저와 함께 설레는 발걸음을 옮겨볼까요?
 
-![연제문화예술 특별전 전시장 전경](https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 배산의 녹음과 도심의 풍경이 어우러진 연제구의 서정적인 가을 정취*
+![연제문화예술 특별전 수변 풍경](https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg)
+*▲ 배산의 녹음과 온천천의 맑은 물길이 어우러진 연제구의 서정적인 가을 정취*
 
 ---
 
@@ -39,11 +39,14 @@ thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg
 #### 1. 천년의 세월을 품은 산, 배산(盃山)의 역사적 숨결
 부산의 진산 중 하나인 배산은 삼국시대부터 영남 지역의 중요한 요충지이자 역사적 흔적이 가득한 곳입니다. 이번 전시의 첫 번째 섹션에서는 배산 성지를 중심으로 펼쳐졌던 과거의 이야기들을 고증과 상상력을 더해 시각화한 회화 및 기록 예술 작품들을 만날 수 있습니다. 묵직하면서도 섬세한 붓놀림 속에서 옛 선조들의 발자취가 느껴지는 듯합니다.
 
+![부산 연제구 배산성지 유적](http://imgnews.naver.net/image/421/2024/08/13/0007727264_001_20240813104430577.jpg)
+*▲ 삼국시대 천년의 역사를 품은 부산 연제구 배산성지의 고즈넉한 풍경*
+
 #### 2. 온천천, 사계절의 색채를 입다
 도심 속 오아시스이자 연제구민들의 사랑을 한 몸에 받는 온천천! 봄의 흩날리는 벚꽃부터 여름의 짙푸른 녹음, 가을의 황금빛 낙엽과 겨울의 설경까지—온천천이 품은 사계절의 변화가 작가들의 시선을 거쳐 캔버스 위에 생생하게 피어납니다. 물결에 비친 햇살과 바람의 흔적을 담은 작품들을 보고 있노라면, 당장이라도 온천천 산책로를 걷고 싶어질 거예요.
 
-![온천천 수변 산책로를 닮은 평화로운 풍경](https://images.pexels.com/photos/37560475/pexels-photo-37560475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 온천천의 잔잔한 물길과 초록빛 가로수가 연상되는 평화로운 전시 작품 연출 컷*
+![온천천 수변 산책로 풍경](http://imgnews.naver.net/image/421/2021/10/05/0005638793_001_20211005171023832.jpg)
+*▲ 온천천의 잔잔한 물길과 가을 테마 정원의 서정을 담아낸 수변 풍경*
 
 #### 3. 지역 예술가들이 완성한 연제의 자화상
 이번 전시는 외부 작가 초대에 그치지 않고, 부산과 연제구에서 활동하는 지역 작가들이 대거 참여하여 의미를 더했습니다. 우리 동네의 골목길, 오래된 가로수, 일상의 풍경을 작가만의 따뜻한 시선으로 재해석하여 관람객들에게 깊은 공감과 친근한 감동을 선사합니다.
@@ -58,7 +61,7 @@ thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg
   * **위치:** 부산광역시 연제구 아시아드대로46번길 15 상가동 2층 201호
   * **특징:** 바쁜 일상 속에서 깊은 향의 전통 차와 함께 마음을 차분히 가라앉힐 수 있는 고즈넉한 찻집입니다. 은은한 차 향기를 맡으며 전시의 여운을 차분히 정리하기에 이보다 더 좋을 순 없답니다.
 
-![감성 가득한 카페와 달콤한 디저트 타임](http://cfile202.uf.daum.net/image/1252944D4E9CC9EF2379B6)
+![감성 가득한 전통 차와 다과 타임](https://pup-post-phinf.pstatic.net/MjAyNjA1MTFfMTQw/MDAxNzc4NDYyODUyNzIw.ILBZ17QLQu4p6eOwiD3ibjA2ZXBMEztlrmoKfHEijLsg.DXj7jXpuROJyq3MkZ4MrNNOzw3P27tCrVYXyDJiil0cg.JPEG/POST_IMAGE_ENCODING_20260511_102731_907.jpg)
 *▲ 전시 관람 후 즐기는 향긋한 차와 달콤한 디저트의 여유*
 
 ---
@@ -83,10 +86,10 @@ thumbnail: "https://images.pexels.com/photos/37448124/pexels-photo-37448124.jpeg
 
 1. **컬처클럽 이마트 연제점 및 홈플러스문화센터 아시아드점:** 다양한 문화 강좌와 트렌디한 쇼핑·휴식 공간이 인접해 있어 동선이 매우 편리합니다.
 2. **반려동물복지문화센터:** 반려동물과 함께 나들이 나온 분들이라면 꼭 주목해야 할 곳! 반려동물과 교감하고 올바른 문화를 배울 수 있는 복합 문화 공간입니다.
-3. **부산아시아드주경기장 일대:** 탁 트인 광장과 거대한 건축미를 자랑하는 주경기장 주변을 산책하며 인증샷을 남기기 좋습니다.
+3. **온천천 카페거리 산책:** 아기자기한 브런치 카페와 수변 산책로가 이어지는 연제구 최고의 핫플레이스입니다.
 
-![도심 속 푸른 공원과 산책로 뷰](https://images.pexels.com/photos/35272139/pexels-photo-35272139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 탁 트인 녹지와 산책로가 반겨주는 연제구 인근의 힐링 핫플레이스*
+![온천천 카페거리 전경](http://imgnews.naver.net/image/5369/2018/05/29/0000058475_001_20180529170238973.jpg)
+*▲ 온천천을 따라 감성적인 브런치 카페와 산책로가 이어지는 온천천 카페거리 풍경*
 
 ---
 
