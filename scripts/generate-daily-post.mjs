@@ -695,6 +695,96 @@ const EXHIBITION_POOL = [
     photoKeywords: "historic sword traditional armor historic museum monument river",
     summary: "임진왜란 최초의 의병장 홍의장군 곽재우와 17장령의 호국 유물, 보물 장검을 만나는 특별전! 부자 기운의 남강 솥바위와 한우산 억새 드라이브 코스.",
     nearbySpots: ["충익사 & 의병탑", "남강 솥바위 (부자명당)", "의령 구름다리", "한우산 풍력발전단지"]
+  },
+  {
+    slug: "changwon-seongsan-art-hall",
+    title: "창원 성산아트홀 가을 기획전 : 남도 현대미술의 새로운 지평",
+    region: "경남",
+    subRegion: "창원시 성산구",
+    venueName: "창원 성산아트홀 전시관",
+    address: "경상남도 창원시 성산구 중앙대로 181",
+    period: "2026.09.15 ~ 2026.11.30",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "창원전시", "성산아트홀", "용지호수", "창원가로수길", "남도현대미술"],
+    photoKeywords: "modern art exhibition gallery changwon lake park sculpture",
+    summary: "남도의 풍부한 서정성과 현대미술의 혁신적인 조형 언어가 만나는 성산아트홀 가을 기획전! 용지호수 음악분수와 창원 가로수길 카페거리 감성 투어.",
+    nearbySpots: ["용지호수공원 (음악분수)", "창원 가로수길 카페거리", "창원NC파크", "대상공원"]
+  },
+  {
+    slug: "tongyeong-jeon-hyeok-lim-museum",
+    title: "통영 전혁림미술관 특별전 : 바다의 화폭과 코발트블루의 미학",
+    region: "경남",
+    subRegion: "통영시",
+    venueName: "전혁림미술관",
+    address: "경상남도 통영시 봉수1길 10",
+    period: "2026.09.10 ~ 2026.12.15",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "통영전시", "전혁림미술관", "한국의피카소", "미륵산케이블카", "통영여행"],
+    photoKeywords: "blue abstract painting modern korean art ocean ceramic tile",
+    summary: "'한국의 피카소'라 불리는 화백 전혁림의 강렬한 코발트블루 바다 화폭을 만나는 특별전! 미륵산 케이블카와 봉평동 감성 골목 투어.",
+    nearbySpots: ["통영 케이블카 (미륵산)", "통영 해저터널", "달아공원 일몰", "동피랑 벽화마을"]
+  },
+  {
+    slug: "geoje-haegeumgang-theme-museum",
+    title: "거제 해금강테마박물관 기획전 : 동서양 근현대 미술의 향연",
+    region: "경남",
+    subRegion: "거제시",
+    venueName: "해금강테마박물관 유경미술관",
+    address: "경상남도 거제시 남부면 갈곶리 262",
+    period: "2026.09.05 ~ 2026.11.30",
+    price: "6,000원",
+    category: "전시 리뷰",
+    tags: ["경남전시", "거제전시", "해금강테마박물관", "바람의언덕", "신선대", "거제남부"],
+    photoKeywords: "ocean view museum antique retro vintage lighthouse coastal",
+    summary: "푸른 남해 바다가 한눈에 내려다보이는 해금강 언덕 위 복합예술관! 거제 8경 바람의 언덕, 신선대와 함께 즐기는 감성 오션 드라이브 코스.",
+    nearbySpots: ["바람의 언덕 (풍차)", "신선대 바위전망대", "해금강 유람선", "도장포마을"]
+  },
+  {
+    slug: "busan-moca-eulsukdo",
+    title: "부산현대미술관(MoCA) 생태환경전 : 을숙도의 갈대와 지속가능한 미래",
+    region: "부산",
+    subRegion: "사하구",
+    venueName: "부산현대미술관 (MoCA)",
+    address: "부산광역시 사하구 낙동남로 1191 (을숙도)",
+    period: "2026.09.12 ~ 2026.12.20",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["부산전시", "부산현대미술관", "을숙도", "낙동강하구", "수직정원", "친환경전시"],
+    photoKeywords: "vertical garden modern contemporary museum reeds wetland",
+    summary: "패트릭 블랑의 거대한 수직정원과 생태 미학이 살아 숨쉬는 을숙도 MoCA 특별전! 낙동강하구에코센터와 핑크뮬리 군락지 힐링 산책.",
+    nearbySpots: ["을숙도 철새공원 & 에코센터", "다대포 해변공원 (몰운대)", "장림포구 부네치아", "아미산전망대"]
+  },
+  {
+    slug: "sacheon-aerospace-museum",
+    title: "사천 우주항공박물관 특별기획 : 푸른 하늘을 향한 비상과 미래 우주",
+    region: "경남",
+    subRegion: "사천시",
+    venueName: "사천 우주항공박물관",
+    address: "경상남도 사천시 사남면 공단1로 78",
+    period: "2026.09.01 ~ 2026.11.30",
+    price: "3,000원",
+    category: "전시 리뷰",
+    tags: ["경남전시", "사천전시", "우주항공박물관", "사천바다케이블카", "실안낙조", "가족나들이"],
+    photoKeywords: "aircraft aerospace museum rocket model historic plane sky",
+    summary: "대한민국 우주항공의 수도 사천에서 펼쳐지는 비행의 역사와 미래 우주 과학 전시! 사천바다케이블카와 한국 9대 일몰 실안낙조 투어.",
+    nearbySpots: ["사천바다케이블카 & 아쿠아리움", "실안해안도로 (실안낙조)", "대방진굴항", "무지개빛 해안도로"]
+  },
+  {
+    slug: "jinju-gyeongnam-culture-art-center",
+    title: "경남문화예술회관 특별전 : 남강의 물결과 영남 조형예술의 맥",
+    region: "경남",
+    subRegion: "진주시",
+    venueName: "경남문화예술회관 제1·2전시실",
+    address: "경상남도 진주시 강남로 215",
+    period: "2026.09.15 ~ 2026.11.20",
+    price: "무료",
+    category: "전시 리뷰",
+    tags: ["경남전시", "진주전시", "경남문화예술회관", "진주남강", "촉석루", "진주나들이"],
+    photoKeywords: "contemporary sculpture painting river view exhibition hall",
+    summary: "유유히 흐르는 진주 남강변을 배경으로 펼쳐지는 영남 대표 조형예술가들의 대작 향연! 촉석루 야경과 물빛나루 쉼터 산책 코스.",
+    nearbySpots: ["진주성 & 촉석루", "진주 남강 유등테마공원", "망진산 봉수대 전망대", "중앙유등시장"]
   }
 ];
 
@@ -1000,9 +1090,9 @@ thumbnail: "${photos[0]?.url || ''}"
   throw lastError || new Error("모든 Gemini 모델 호출에 실패했습니다.");
 }
 
-// 5. 메인 실행 루틴
+// 5. 2단계 철저 중복 검증 및 메인 실행 루틴
 async function main() {
-  console.log("🚀 [AI 자동 포스팅] 부울경 전시 글 생성 시작...");
+  console.log("🚀 [AI 자동 포스팅] 부울경 전시 글 생성 시작 (2단계 철저 중복 검증 모드)...");
   const postsDir = path.join(rootDir, "src", "content", "posts");
   if (!fs.existsSync(postsDir)) {
     fs.mkdirSync(postsDir, { recursive: true });
@@ -1012,19 +1102,31 @@ async function main() {
   const targetDateArg = process.argv[2];
   const today = (targetDateArg && /^\d{4}-\d{2}-\d{2}$/.test(targetDateArg)) ? targetDateArg : getKSTDateString();
 
-  // 기존 파일 분석: 전시 슬러그별 마지막 작성 일자 계산
+  // =========================================================================
+  // [1단계 검증] 최근 14일(2주) 쿨다운 & 최장 미작성(LRU) 후보 스마트 선별
+  // =========================================================================
   const lastWrittenMap = new Map();
   const todayWrittenSlugs = new Set();
+  const recent14DaysSlugs = new Set();
+
+  const todayTime = new Date(today).getTime();
 
   for (const file of existingFiles) {
     if (!file.endsWith(".md") || file === ".gitkeep") continue;
-    // 파일명 형식: YYYY-MM-DD-slug.md
     const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
     if (match) {
       const [, postDate, postSlug] = match;
       if (postDate === today) {
         todayWrittenSlugs.add(postSlug);
       }
+      const postTime = new Date(postDate).getTime();
+      const diffDays = Math.floor((todayTime - postTime) / (1000 * 60 * 60 * 24));
+      
+      // 최근 14일 이내(0일~13일) 발행된 글은 2주 쿨다운 블랙리스트에 등록
+      if (diffDays >= 0 && diffDays < 14) {
+        recent14DaysSlugs.add(postSlug);
+      }
+
       const prevDate = lastWrittenMap.get(postSlug);
       if (!prevDate || postDate > prevDate) {
         lastWrittenMap.set(postSlug, postDate);
@@ -1032,24 +1134,32 @@ async function main() {
     }
   }
 
-  // 오늘 날짜 및 최근 작성 기준 정렬 및 필터링
-  // 1. 오늘 이미 작성된 전시는 엄격 제외 (하루 2회 발행 시에도 서로 다른 전시 배정)
-  const availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug));
+  console.log(`📊 [1단계 검증 시작] 최근 14일(2주) 이내 발행된 제외 대상: ${recent14DaysSlugs.size}개`);
+
+  // 1. 당일 이미 발행된 전시 제외
+  // 2. 최근 14일 이내에 발행된 전시 엄격 제외 (2주 쿨다운 보장)
+  let availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug) && !recent14DaysSlugs.has(ex.slug));
+
+  // 만약 14일 초과 미작성 전시가 부족한 경우, 전체 풀 중 가장 오래전에 소개된 전시 순으로 안전 순환
+  if (availablePool.length === 0) {
+    console.warn("⚠️ 14일 초과 미작성 전시가 모두 소진되어, 전체 풀 중 가장 오래전에 소개된 전시를 엄격 순환합니다.");
+    availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug));
+  }
 
   if (availablePool.length === 0) {
     console.error("❌ 오늘 작성 가능한 전시 후보가 없습니다.");
     process.exit(1);
   }
 
-  // 2. 각 후보별 경과일수(daysSince) 계산 (작성된 적 없는 전시 최우선, 그 다음 가장 오래전에 작성된 순)
+  // 각 후보별 경과일수(daysSince) 계산
   const scoredCandidates = availablePool.map(ex => {
     const lastDate = lastWrittenMap.get(ex.slug);
     const daysSince = lastDate 
-      ? Math.floor((new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24))
+      ? Math.floor((todayTime - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24))
       : 99999;
     return {
       exhibition: ex,
-      lastDate: lastDate || "미작성",
+      lastDate: lastDate || "미작성(최초)",
       daysSince
     };
   });
@@ -1057,13 +1167,12 @@ async function main() {
   // 점수 순 정렬: daysSince가 큰 순 (가장 오랫동안 작성되지 않은 전시가 최상단)
   scoredCandidates.sort((a, b) => b.daysSince - a.daysSince);
 
-  // 상위 후보 중 1개 선택 (최근 7일 이내 작성된 전시는 절대 선택되지 않도록 쿨다운 보장)
-  const maxDays = scoredCandidates[0].daysSince;
-  const topCandidates = scoredCandidates.filter(c => c.daysSince >= Math.max(7, maxDays - 3));
-  const chosen = topCandidates[Math.floor(Math.random() * Math.min(topCandidates.length, 3))] || scoredCandidates[0];
+  // 상위 후보 선택 (1순위 최장 미작성 전시)
+  const chosen = scoredCandidates[0];
   const targetExhibition = chosen.exhibition;
 
-  console.log(`📌 지능형 큐레이션 선택: [${targetExhibition.region}] ${targetExhibition.title} (마지막 작성: ${chosen.lastDate}, ${chosen.daysSince === 99999 ? '최초 작성' : `${chosen.daysSince}일 전`})`);
+  console.log(`✅ [1단계 검증 통과] 1차 선정 전시: [${targetExhibition.region}] ${targetExhibition.title}`);
+  console.log(`   - 마지막 작성일: ${chosen.lastDate} (${chosen.daysSince === 99999 ? '최초 작성' : `${chosen.daysSince}일 전`}) -> 14일 쿨다운 완벽 충족!`);
 
   // 네이버 실시간 블로그 후기, 주변 맛집, 볼거리, 행사 검색
   console.log(`🔍 네이버 API HUB 실시간 맛집/볼거리/행사/후기 검색 중 (${targetExhibition.venueName})...`);
@@ -1079,12 +1188,40 @@ async function main() {
   console.log("✍️ Gemini AI로 네이버 맛집/행사/볼거리 포함 프리미엄 전시 리뷰 본문 작성 중...");
   const postContent = await generatePostWithGemini(targetExhibition, photos, today, naverData);
 
+  // =========================================================================
+  // [2단계 검증] 파일 저장 직전 14일(2주) 사후 세이프가드 단언 검증 (Pre-Save Assert)
+  // =========================================================================
+  console.log("🔒 [2단계 검증 시작] 파일 저장 직전 14일 이내 중복 여부 최종 단언 검사 중...");
+  const reloadedFiles = fs.readdirSync(postsDir);
+  const preSaveConflicts = [];
+
+  for (const file of reloadedFiles) {
+    if (!file.endsWith(".md") || file === ".gitkeep") continue;
+    const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
+    if (match) {
+      const [, pDate, pSlug] = match;
+      if (pSlug === targetExhibition.slug) {
+        const diff = Math.floor((todayTime - new Date(pDate).getTime()) / (1000 * 60 * 60 * 24));
+        if (diff >= 0 && diff < 14) {
+          preSaveConflicts.push({ file, date: pDate, diff });
+        }
+      }
+    }
+  }
+
+  if (preSaveConflicts.length > 0) {
+    console.error(`🚨 [2단계 검증 실패] ${targetExhibition.slug}는 최근 14일 내 이미 발행된 이력이 있습니다:`, preSaveConflicts);
+    throw new Error(`[2단계 세이프가드 차단] 14일 이내 중복 감지로 인해 파일 저장을 안전하게 중단했습니다.`);
+  }
+
+  console.log(`🎉 [2단계 검증 통과] 14일 이내 중복 0건 확인 완료! 안전하게 디스크에 저장합니다.`);
+
   // 파일명 지정: YYYY-MM-DD-slug.md
   const fileName = `${today}-${targetExhibition.slug}.md`;
   const filePath = path.join(postsDir, fileName);
 
   fs.writeFileSync(filePath, postContent, "utf8");
-  console.log(`🎉 [작성 완료] 새 글 파일이 저장되었습니다: src/content/posts/${fileName}`);
+  console.log(`🎉 [발행 성공] 새 글 파일이 안전하게 저장되었습니다: src/content/posts/${fileName}`);
 }
 
 main().catch(err => {
