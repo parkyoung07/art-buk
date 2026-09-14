@@ -238,6 +238,65 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
               ))}
             </div>
           </div>
+
+          {/* 🔥 오늘자 AI 도슨트 정기 추천 2편 실시간 라이브 카드 쇼케이스 (접속하자마자 변화 체감!) */}
+          <div className="pt-4 max-w-4xl mx-auto text-left">
+            <div className="p-4 sm:p-5 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+                  <span className="text-xs font-black text-amber-300 tracking-wide">
+                    TODAY AI 큐레이션 실시간 소글 ({posts[0]?.date} 최신 완비)
+                  </span>
+                </div>
+                <Link
+                  href="/blog"
+                  className="text-[11px] font-bold text-slate-300 hover:text-white flex items-center gap-1"
+                >
+                  <span>매거진 전체보기</span>
+                  <span>➔</span>
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {posts.slice(0, 2).map((p, idx) => (
+                  <Link
+                    key={p.slug}
+                    href={`/blog/${p.slug}`}
+                    className="p-3.5 rounded-2xl bg-slate-900/70 hover:bg-slate-900/90 border border-white/10 hover:border-amber-400/50 transition-all flex items-start gap-3 group"
+                  >
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 bg-slate-800">
+                      {p.thumbnail ? (
+                        <img src={p.thumbnail} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-2xl">🎨</div>
+                      )}
+                      <span className="absolute top-1 left-1 px-1.5 py-0.5 rounded text-[9px] font-black bg-rose-600 text-white">
+                        {idx === 0 ? "1차 PICK" : "2차 PICK"}
+                      </span>
+                    </div>
+
+                    <div className="flex-1 min-w-0 space-y-1">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[10px] font-bold text-amber-300 bg-amber-500/20 px-1.5 py-0.5 rounded border border-amber-400/30">
+                          {p.region}
+                        </span>
+                        <span className="text-[10px] text-slate-400 truncate">
+                          {p.date}
+                        </span>
+                      </div>
+                      <h4 className="font-bold text-xs sm:text-sm text-white group-hover:text-amber-300 transition-colors line-clamp-1 leading-snug">
+                        {p.title}
+                      </h4>
+                      <p className="text-[11px] text-slate-300 line-clamp-1 leading-relaxed">
+                        💬 {p.summary}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
