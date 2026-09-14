@@ -235,23 +235,30 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
         )}
       </div>
 
-      {/* 3차 포스트가 있을 경우 (주말 등 3편 발행 시 추가 노출) */}
-      {tertiaryPost && (
-        <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <span className="px-2 py-1 rounded-md bg-amber-500 text-white text-[11px] font-black shrink-0">
-              주말 특별 3차 PICK
-            </span>
-            <span className="font-extrabold text-slate-900 text-sm truncate">
-              {tertiaryPost.title}
-            </span>
-          </div>
-          <Link
-            href={`/blog/${tertiaryPost.slug}`}
-            className="px-3 py-1.5 rounded-xl bg-white hover:bg-amber-600 text-amber-900 hover:text-white font-bold text-xs border border-amber-300 transition-all shrink-0"
-          >
-            특별 추천글 읽기 →
-          </Link>
+      {/* 3차 이상 추가 포스트가 있을 경우 (3편/4편 발행 시 누락 없이 전체 노출) */}
+      {activePosts.length > 2 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {activePosts.slice(2).map((extraPost, idx) => (
+            <div
+              key={extraPost.slug}
+              className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 flex flex-col sm:flex-row items-center justify-between gap-3"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="px-2 py-1 rounded-md bg-amber-500 text-white text-[11px] font-black shrink-0">
+                  {idx === 0 ? "3차 추천 PICK" : "4차 추천 PICK"}
+                </span>
+                <span className="font-extrabold text-slate-900 text-sm truncate">
+                  {extraPost.title}
+                </span>
+              </div>
+              <Link
+                href={`/blog/${extraPost.slug}`}
+                className="px-3 py-1.5 rounded-xl bg-white hover:bg-amber-600 text-amber-900 hover:text-white font-bold text-xs border border-amber-300 transition-all shrink-0"
+              >
+                추천글 읽기 →
+              </Link>
+            </div>
+          ))}
         </div>
       )}
 
