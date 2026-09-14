@@ -41,14 +41,16 @@ async function searchNaverImage(query) {
   (data.items || []).forEach((item, idx) => {
     console.log(`${idx + 1}. Title: ${item.title.replace(/<[^>]*>?/gm, "")}`);
     console.log(`   Link: ${item.link}`);
+    console.log(`   Thumb: ${item.thumbnail}`);
   });
 }
 
 async function run() {
-  await searchNaverImage("부산 송도해수욕장 조각");
-  await searchNaverImage("부산 송도해상케이블카 오션뷰");
-  await searchNaverImage("송도 암남공원 용궁구름다리");
-  await searchNaverImage("부산 송도 카페 오션뷰 디저트");
+  await searchNaverImage("함양문화예술회관 전경");
+  await searchNaverImage("함양 상림공원 가을 단풍");
+  await searchNaverImage("함양 상림공원 꽃무릇");
+  await searchNaverImage("함양 개평한옥마을 일두고택 가을");
+  await searchNaverImage("지리산 천왕봉 가을 사계");
 }
 
 run();
