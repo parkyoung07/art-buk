@@ -698,49 +698,156 @@ const EXHIBITION_POOL = [
   }
 ];
 
-// 3. 다채로운 테마별 고화질 사진 검색 (전시 3장 + 카페/맛집 1장 + 주변 명소/풍경 1장)
-async function fetchRichPhotos(artKeyword) {
-  if (!PEXELS_API_KEY) {
-    return [
-      { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" },
-      { url: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "미술관 모던 조각 작품" },
-      { url: "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "감성 카페 커피와 디저트" },
-      { url: "https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "주변 힐링 자연 풍경" }
-    ];
+// 네이버 API HUB 이미지 검색 단일 쿼리 호출 함수
+async function fetchNaverImages(query, count = 2) {
+  if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) return [];
+  const cleanQuery = query.replace(/\(.*?\)/g, "").replace(/&/g, " ").trim();
+  const hubUrl = `https://naverapihub.apigw.ntruss.com/search/v1/image?query=${encodeURIComponent(cleanQuery)}&display=${count}&sort=sim&filter=all`;
+  const baseHeaders = {
+    "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+    "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
+  };
+
+  try {
+    const res = await fetch(hubUrl, { headers: baseHeaders });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return (data.items || []).map(item => {
+      const rawTitle = (item.title || "").replace(/<[^>]*>?/gm, "").trim();
+      const secureUrl = item.link.startsWith("https://")
+        ? item.link
+        : `https://search.pstatic.net/common/?src=${encodeURIComponent(item.link)}`;
+      return {
+        url: secureUrl,
+        alt: rawTitle || cleanQuery
+      };
+    });
+  } catch (err) {
+    console.warn(`⚠️ 네이버 이미지 수집 실패 [${query}]:`, err.message);
+    return [];
+  }
+}
+
+// 현재 KST 기준 계절 및 시기 정보 계산 함수
+function getSeasonInfo(dateStr) {
+  const date = dateStr ? new Date(dateStr) : new Date();
+  const kstOffset = 9 * 60;
+  const utc = date.getTime() + date.getTimezoneOffset() * 60000;
+  const kst = new Date(utc + kstOffset * 60000);
+  const month = kst.getMonth() + 1; // 1~12
+
+  if (month >= 3 && month <= 5) {
+    return { name: "봄", keyword: "봄", themes: ["봄", "신록", "봄꽃"], desc: "화사한 봄빛과 싱그러운 신록" };
+  } else if (month >= 6 && month <= 8) {
+    return { name: "여름", keyword: "여름", themes: ["여름", "녹음", "바다"], desc: "푸르른 녹음과 시원한 풍경" };
+  } else if (month >= 9 && month <= 11) {
+    return { name: "가을", keyword: "가을", themes: ["가을", "단풍", "꽃무릇"], desc: "고즈넉한 가을 단풍과 정취" };
+  } else {
+    return { name: "겨울", keyword: "겨울", themes: ["겨울", "설경", "차분한"], desc: "포근하고 아늑한 겨울 풍경" };
+  }
+}
+
+// 3. 실제 해당 지역/장소와 계절(봄/여름/가을/겨울)을 네이버에서 정밀 매칭 수집하는 함수
+async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr) {
+  const photos = [];
+  const season = getSeasonInfo(dateStr);
+  const cleanVenue = (exhibition.venueName || exhibition.location || "")
+    .replace(/\s*(제?\d+[·,\-~0-9]*전시장|전관|돔하우스|석천홀|비프힐.*|미술관\s*$)/g, "")
+    .split(" 및 ")[0]
+    .split(" (")[0]
+    .trim();
+
+  console.log(`📸 [네이버 정밀 매칭 시작] 장소: ${cleanVenue} | 계절: ${season.name} (${season.desc})`);
+
+  // 검색 헬퍼: 계절 키워드 우선 검색 후 필요시 일반 검색 폴백
+  async function searchSeasonPlace(baseQuery, count = 2) {
+    const seasonQuery = `${baseQuery} ${season.keyword}`;
+    let res = await fetchNaverImages(seasonQuery, count);
+    if (res.length === 0) {
+      // 계절 키워드로 결과가 없으면 기본 장소명으로 재검색
+      res = await fetchNaverImages(baseQuery, count);
+    }
+    return res;
   }
 
-  async function searchOne(q, perPage = 3) {
+  // 1) 대표 전시장 / 전시 공간 실제 사진 (장소 + 계절)
+  const venueImgs = await searchSeasonPlace(`${exhibition.region} ${cleanVenue}`, 2);
+  if (venueImgs[0]) {
+    photos.push({
+      url: venueImgs[0].url,
+      alt: `${exhibition.venueName || cleanVenue} ${season.name} 전경 및 전시 공간`
+    });
+  }
+
+  // 2) 주변 대표 명소 1번 실제 현장 사진 (장소 + 계절 연계: 예: 상림공원 가을, 충익사 가을)
+  const spot1 = (exhibition.nearbySpots && exhibition.nearbySpots[0]) || cleanVenue;
+  const spot1Imgs = await searchSeasonPlace(spot1, 2);
+  if (spot1Imgs[0]) {
+    photos.push({
+      url: spot1Imgs[0].url,
+      alt: `${spot1}의 아름다운 ${season.name} 실제 풍경`
+    });
+  }
+
+  // 3) 주변 인기 맛집 / 감성 카페 실제 사진 (현장 플레이스 매칭)
+  const foodSpot = (naverData.localRestaurants && naverData.localRestaurants[0]?.title) || `${cleanVenue} 맛집 카페`;
+  const foodImgs = await fetchNaverImages(foodSpot, 2);
+  if (foodImgs[0]) {
+    photos.push({
+      url: foodImgs[0].url,
+      alt: `${foodSpot} 대표 미식 & 감성 공간`
+    });
+  }
+
+  // 4) 주변 대표 명소 2번 실제 사진 (고택/자연/산책로 + 계절: 예: 개평한옥마을 일두고택 가을)
+  const spot2 = (exhibition.nearbySpots && exhibition.nearbySpots[1]) || `${exhibition.region} ${season.name} 명소`;
+  const spot2Imgs = await searchSeasonPlace(spot2, 2);
+  if (spot2Imgs[0]) {
+    photos.push({
+      url: spot2Imgs[0].url,
+      alt: `${spot2} 고즈넉한 ${season.name} 정취`
+    });
+  }
+
+  // 5) 추가 전시 안내 / 연계 문화 공간 사진 보강
+  if (venueImgs[1]) {
+    photos.push({
+      url: venueImgs[1].url,
+      alt: `${exhibition.title} ${season.name} 전시 안내 풍경`
+    });
+  }
+
+  // 안전장치: 네이버 검색으로 3장 미만 확보된 경우에만 Pexels로 보강
+  if (photos.length < 3 && PEXELS_API_KEY) {
     try {
-      const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=${perPage}&orientation=landscape`, {
+      const pexelsRes = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(exhibition.photoKeywords || "korean gallery culture")}&per_page=3&orientation=landscape`, {
         headers: { Authorization: PEXELS_API_KEY }
       });
-      if (!res.ok) return [];
-      const data = await res.json();
-      return (data.photos || []).map(p => ({
-        url: p.src.large2x || p.src.large || p.src.original,
-        alt: p.alt || "부울경 문화예술 및 나들이"
-      }));
+      if (pexelsRes.ok) {
+        const pData = await pexelsRes.json();
+        for (const p of pData.photos || []) {
+          if (photos.length >= 4) break;
+          photos.push({
+            url: p.src.large2x || p.src.large || p.src.original,
+            alt: `부울경 ${season.name} 문화예술 및 나들이`
+          });
+        }
+      }
     } catch {
-      return [];
+      // ignore
     }
   }
 
-  const [artPhotos, cafePhotos, travelPhotos] = await Promise.all([
-    searchOne(artKeyword, 4),
-    searchOne("cafe coffee dessert gourmet food restaurant", 2),
-    searchOne("travel landscape scenic nature city view", 2)
-  ]);
+  // 최종 기본 안전 이미지
+  if (photos.length === 0) {
+    photos.push({
+      url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      alt: `${exhibition.title}`
+    });
+  }
 
-  const combined = [];
-  if (artPhotos[0]) combined.push(artPhotos[0]);
-  if (artPhotos[1]) combined.push(artPhotos[1]);
-  if (cafePhotos[0]) combined.push(cafePhotos[0]);
-  if (artPhotos[2]) combined.push(artPhotos[2]);
-  if (travelPhotos[0]) combined.push(travelPhotos[0]);
-
-  return combined.length > 0 ? combined : [
-    { url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt: "현대미술 갤러리 전시" }
-  ];
+  console.log(`✅ [장소+계절 정밀 매칭 완료] 총 ${photos.length}장의 ${season.name} 현장 사진 확보`);
+  return photos;
 }
 
 // 한국 시간(KST, UTC+9) 기준 오늘 날짜 문자열(YYYY-MM-DD) 반환 함수
@@ -905,29 +1012,68 @@ async function main() {
   const targetDateArg = process.argv[2];
   const today = (targetDateArg && /^\d{4}-\d{2}-\d{2}$/.test(targetDateArg)) ? targetDateArg : getKSTDateString();
 
-  // 아직 작성되지 않은 전시 후보 선택
-  let targetExhibition = EXHIBITION_POOL.find(ex => {
-    return !existingFiles.some(file => file.includes(ex.slug));
-  });
+  // 기존 파일 분석: 전시 슬러그별 마지막 작성 일자 계산
+  const lastWrittenMap = new Map();
+  const todayWrittenSlugs = new Set();
 
-  if (!targetExhibition) {
-    // 모든 전시가 작성되었다면 무작위로 하나 골라 새로운 날짜로 업데이트 작성
-    console.log("ℹ️ 기존 후보가 모두 작성되어 최신 추천 전시를 큐레이션합니다.");
-    const randomIndex = Math.floor(Math.random() * EXHIBITION_POOL.length);
-    targetExhibition = EXHIBITION_POOL[randomIndex];
+  for (const file of existingFiles) {
+    if (!file.endsWith(".md") || file === ".gitkeep") continue;
+    // 파일명 형식: YYYY-MM-DD-slug.md
+    const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
+    if (match) {
+      const [, postDate, postSlug] = match;
+      if (postDate === today) {
+        todayWrittenSlugs.add(postSlug);
+      }
+      const prevDate = lastWrittenMap.get(postSlug);
+      if (!prevDate || postDate > prevDate) {
+        lastWrittenMap.set(postSlug, postDate);
+      }
+    }
   }
 
-  console.log(`📌 선택된 전시: [${targetExhibition.region}] ${targetExhibition.title}`);
+  // 오늘 날짜 및 최근 작성 기준 정렬 및 필터링
+  // 1. 오늘 이미 작성된 전시는 엄격 제외 (하루 2회 발행 시에도 서로 다른 전시 배정)
+  const availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug));
+
+  if (availablePool.length === 0) {
+    console.error("❌ 오늘 작성 가능한 전시 후보가 없습니다.");
+    process.exit(1);
+  }
+
+  // 2. 각 후보별 경과일수(daysSince) 계산 (작성된 적 없는 전시 최우선, 그 다음 가장 오래전에 작성된 순)
+  const scoredCandidates = availablePool.map(ex => {
+    const lastDate = lastWrittenMap.get(ex.slug);
+    const daysSince = lastDate 
+      ? Math.floor((new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24))
+      : 99999;
+    return {
+      exhibition: ex,
+      lastDate: lastDate || "미작성",
+      daysSince
+    };
+  });
+
+  // 점수 순 정렬: daysSince가 큰 순 (가장 오랫동안 작성되지 않은 전시가 최상단)
+  scoredCandidates.sort((a, b) => b.daysSince - a.daysSince);
+
+  // 상위 후보 중 1개 선택 (최근 7일 이내 작성된 전시는 절대 선택되지 않도록 쿨다운 보장)
+  const maxDays = scoredCandidates[0].daysSince;
+  const topCandidates = scoredCandidates.filter(c => c.daysSince >= Math.max(7, maxDays - 3));
+  const chosen = topCandidates[Math.floor(Math.random() * Math.min(topCandidates.length, 3))] || scoredCandidates[0];
+  const targetExhibition = chosen.exhibition;
+
+  console.log(`📌 지능형 큐레이션 선택: [${targetExhibition.region}] ${targetExhibition.title} (마지막 작성: ${chosen.lastDate}, ${chosen.daysSince === 99999 ? '최초 작성' : `${chosen.daysSince}일 전`})`);
 
   // 네이버 실시간 블로그 후기, 주변 맛집, 볼거리, 행사 검색
   console.log(`🔍 네이버 API HUB 실시간 맛집/볼거리/행사/후기 검색 중 (${targetExhibition.venueName})...`);
   const naverData = await fetchNaverSearchData(targetExhibition.venueName, targetExhibition.region);
   console.log(`✅ 네이버 데이터 수집 완료: 블로그 ${naverData.blogReviews.length}건, 맛집 ${naverData.localRestaurants.length}건, 볼거리 ${naverData.nearbyAttractions.length}건, 행사 ${naverData.localEvents.length}건`);
 
-  // Pexels에서 전시 + 카페/미식 + 주변 풍경 고화질 사진 다채롭게 검색
-  console.log(`📸 Pexels 전시 & 감성 카페/풍경 사진 다채로운 검색 중...`);
-  const photos = await fetchRichPhotos(targetExhibition.photoKeywords, 5);
-  console.log(`✅ ${photos.length}장의 고화질 사진 준비 완료.`);
+  // 네이버 API 기반 실제 해당 장소/명소 및 계절(봄/여름/가을/겨울) 현장 고화질 사진 정밀 검색
+  console.log(`📸 네이버 OpenAPI/API HUB 실제 장소 현장 및 계절 사진 정밀 검색 중...`);
+  const photos = await fetchRealPlacePhotos(targetExhibition, naverData, today);
+  console.log(`✅ ${photos.length}장의 실제 장소 & 계절 맞춤 현장 사진 준비 완료.`);
 
   // Gemini AI로 글 작성
   console.log("✍️ Gemini AI로 네이버 맛집/행사/볼거리 포함 프리미엄 전시 리뷰 본문 작성 중...");

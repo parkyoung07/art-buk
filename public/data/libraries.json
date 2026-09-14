@@ -2,7 +2,7 @@
   {
     "id": "busan-sasang-busan-library",
     "name": "부산도서관 (본관)",
-    "searchQuery": "부산도서관",
+    "searchQuery": "사상구 부산도서관",
     "region": "부산",
     "subRegion": "사상구",
     "type": "시·도립 대표도서관",
@@ -387,7 +387,7 @@
   {
     "id": "ulsan-namgu-ulsan-library",
     "name": "울산도서관 (본관)",
-    "searchQuery": "울산도서관",
+    "searchQuery": "울산시립도서관",
     "region": "울산",
     "subRegion": "남구",
     "type": "시·도립 대표도서관",
@@ -580,7 +580,7 @@
   {
     "id": "gyeongnam-jinju-yeonam",
     "name": "진주시립 연암도서관 & 비봉산 숲속도서관",
-    "searchQuery": "연암도서관",
+    "searchQuery": "진주시립연암도서관",
     "region": "경남",
     "subRegion": "진주시",
     "type": "복합문화도서관",
@@ -602,23 +602,23 @@
     ]
   },
   {
-    "id": "gyeongnam-geoje-miracle-library",
-    "name": "거제 기적의도서관",
-    "searchQuery": "거제 기적의도서관",
+    "id": "gyeongnam-geoje-okpo-library",
+    "name": "거제시립 옥포도서관 & 아주도서관",
+    "searchQuery": "거제시립옥포도서관",
     "region": "경남",
     "subRegion": "거제시",
     "type": "어린이·가족특화",
     "features": [
-      "기적의도서관 어린이전용설계",
-      "달팽이 책터",
-      "수유실 & 아기그림책방",
-      "야외 잔디마당"
+      "옥포 바다전망 테라스",
+      "어린이 동화나라 자료실",
+      "모자열람실",
+      "가족 독서문화공간"
     ],
-    "address": "경상남도 거제시 덕포동 502-3",
+    "address": "경상남도 거제시 진목로 20 (옥포동)",
     "openingHours": "09:00 ~ 18:00",
     "closedDays": "매주 월요일 및 공휴일",
-    "description": "어린이의 눈높이에 맞춰 모든 가구와 동선이 유선형으로 설계된 대한민국 대표 어린이 전용 '기적의도서관'입니다.",
-    "familyTips": "책장 높이가 낮아 아이들이 스스로 책을 꺼내 바닥에 뒹굴며 읽을 수 있고, 덕포해수욕장이 차로 3분 거리입니다.",
+    "description": "거제 옥포항과 덕포해수욕장 인근에 위치한 거제시의 대표 어린이·가족 특화 시립도서관입니다. 따뜻한 온돌 마루형 모자열람실과 바다 뷰 휴게공간이 잘 갖춰져 있습니다.",
+    "familyTips": "옥포대첩기념공원 관람 후 도서관 어린이실에서 바다를 바라보며 동화책을 읽고 덕포해변 산책을 즐겨보세요.",
     "nearbySpots": [
       "거제문화예술회관",
       "옥포대첩기념공원",
@@ -676,7 +676,7 @@
   {
     "id": "gyeongnam-namhae-hwareon-pocket",
     "name": "남해 화전도서관 & 독일마을 북카페 작은도서관",
-    "searchQuery": "화전도서관",
+    "searchQuery": "남해 화전도서관",
     "region": "경남",
     "subRegion": "남해군",
     "type": "복합문화도서관",
@@ -893,21 +893,21 @@
   },
   {
     "id": "gyeongnam-uiryeong-library",
-    "name": "의령군립 의병도서관",
-    "searchQuery": "의병도서관",
+    "name": "경상남도교육청 의령도서관 & 의병문고",
+    "searchQuery": "의령도서관",
     "region": "경남",
     "subRegion": "의령군",
     "type": "인문·전문도서관",
     "features": [
       "의병 역사 특화서가",
       "어린이 모자열람실",
-      "남강 뷰 야외 쉼터",
+      "가족 독서체험실",
       "동화구연 교실"
     ],
-    "address": "경상남도 의령군 의령읍 의병로8길 44",
+    "address": "경상남도 의령군 의령읍 의병로25길 9-8",
     "openingHours": "09:00 ~ 18:00",
     "closedDays": "매주 월요일 및 공휴일",
-    "description": "곽재우 장군의 의병 정신과 충절의 역사를 기리며 남강변에 조성된 의령의 대표 공공도서관입니다.",
+    "description": "의병의 고장 의령읍 중심에 위치한 대표 공공도서관으로, 곽재우 장군과 의병 역사자료 및 어린이 감성 책놀이터를 운영합니다.",
     "familyTips": "의병박물관과 남강 솥바위를 보고 의령 5일장에서 소바와 망개떡을 즐긴 뒤 아이들과 책놀이를 하기에 좋습니다.",
     "nearbySpots": [
       "의병박물관",

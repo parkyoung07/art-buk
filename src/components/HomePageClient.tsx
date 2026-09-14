@@ -51,9 +51,9 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
   // 최신 포스트 (Hero 상단 바 연동)
   const latestPost = posts.length > 0 ? posts[0] : null;
 
-  // 추천 전시 TOP 6 (최신 일일 AI 추천 전시 우선 배치 + 기존 전시 결합으로 매일 새로운 전시가 상단에 노출!)
-  const topExhibitions = useMemo(() => {
-    // 1. 포스트에서 언급된 전시 id나 제목 매칭
+  // 추천 전시 TOP 6 (최신 일일 AI 추천 전시 우선 배치 + 해당 전시와 매칭된 블로그 소글 실시간 연동!)
+  const topExhibitionsWithPosts = useMemo(() => {
+    // 1. 포스트에서 언급된 전시 id 매칭
     const postEventIds = posts.map((p) => p.eventId).filter(Boolean);
     const postMatchedExhibitions = exhibitionsData.filter((e) => postEventIds.includes(e.id));
     
@@ -61,13 +61,17 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
     const remaining = exhibitionsData.filter((e) => !postEventIds.includes(e.id));
     
     // 3. 최신 AI 추천 전시를 앞에 두고 상위 6개 선정
-    const combined = [...postMatchedExhibitions, ...remaining];
-    return combined.slice(0, 6);
+    const combined = [...postMatchedExhibitions, ...remaining].slice(0, 6);
+
+    return combined.map((ex) => {
+      const matchedPost = posts.find((p) => p.eventId === ex.id || p.slug.includes(ex.id));
+      return { exhibition: ex, post: matchedPost };
+    });
   }, [posts]);
 
-  // 오늘의 나드리 큐레이션 (선택 지역에서 가장 최근에 다룬 전시 및 장터, 도서관 매칭)
+  // 오늘의 나드리 큐레이션 (선택 지역에서 가장 최근에 다룬 실시간 블로그 소글 및 장터, 도서관 매칭)
   const todayCurations = useMemo(() => {
-    // 해당 지역의 최신 포스트 찾기
+    // 해당 지역의 최신 포스트 찾기 (가장 최신순)
     const regionPost = posts.find((p) => p.region.includes(todayRegion));
     let ex = exhibitionsData.find((e) => regionPost?.eventId && e.id === regionPost.eventId);
     if (!ex) {
@@ -127,28 +131,26 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           {/* 상단 뱃지 & 실시간 핫이슈 알림 바 (매일 올라오는 최신 글로 실시간 연동!) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 max-w-3xl mx-auto">
-            {latestPost ? (
+          <div className="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto">
+            {posts.slice(0, 2).map((p, idx) => (
               <Link
-                href={`/blog/${latestPost.slug}`}
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-indigo-500/20 hover:from-amber-500/30 hover:to-indigo-500/30 border border-amber-400/40 text-amber-200 hover:text-white text-xs font-bold backdrop-blur-md shadow-sm transition-all group max-w-full"
+                key={p.slug}
+                href={`/blog/${p.slug}`}
+                className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border text-xs font-bold backdrop-blur-md shadow-sm transition-all group max-w-full ${
+                  idx === 0
+                    ? "bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-indigo-500/20 hover:from-amber-500/30 hover:to-indigo-500/30 border-amber-400/50 text-amber-200 hover:text-white"
+                    : "bg-white/10 hover:bg-white/20 border-white/20 text-slate-200 hover:text-white hidden sm:inline-flex"
+                }`}
               >
-                <span className="px-1.5 py-0.5 rounded-md bg-amber-400 text-slate-950 text-[10px] font-black shrink-0">
-                  오늘의 추천
+                <span className={`px-1.5 py-0.5 rounded-md text-[10px] font-black shrink-0 ${
+                  idx === 0 ? "bg-amber-400 text-slate-950" : "bg-indigo-500 text-white"
+                }`}>
+                  {idx === 0 ? "오늘의 1차" : "최신 추천"}
                 </span>
-                <span className="truncate">📢 {latestPost.title}</span>
+                <span className="truncate max-w-[280px] sm:max-w-[360px]">📢 {p.title}</span>
                 <span className="group-hover:translate-x-0.5 transition-transform text-amber-300 shrink-0">➔</span>
               </Link>
-            ) : (
-              <Link
-                href="/blog/2026-09-07-busan-museum-of-art-reopening"
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/20 via-rose-500/20 to-indigo-500/20 hover:from-amber-500/30 hover:to-indigo-500/30 border border-amber-400/40 text-amber-200 hover:text-white text-xs font-bold backdrop-blur-md shadow-sm transition-all group"
-              >
-                <span className="px-1.5 py-0.5 rounded-md bg-amber-400 text-slate-950 text-[10px] font-black">HOT</span>
-                <span>🎉 부산시립미술관 9월 17일 그랜드 재개관! 5대 특별전 가이드</span>
-                <span className="group-hover:translate-x-0.5 transition-transform text-amber-300">➔</span>
-              </Link>
-            )}
+            ))}
           </div>
 
           {/* 메인 카피 & 서브 카피 */}
@@ -397,44 +399,72 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
 
             {/* 3종 큐레이션 카드 그리드 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {/* 전시 추천 */}
-              <div className="p-5 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-3 flex flex-col justify-between">
+              {/* 전시 추천 (최신 AI 도슨트 소글 연동) */}
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-indigo-50/80 to-white border border-indigo-200/80 space-y-3 flex flex-col justify-between shadow-xs">
                 <div>
-                  <span className="text-xs font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-md">
-                    🎨 오늘 추천 전시
-                  </span>
-                  <h4 className="font-bold text-slate-900 text-base mt-2 line-clamp-1">
-                    {todayCurations.ex.title}
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-md flex items-center gap-1">
+                      <span>🎨</span>
+                      <span>오늘 {todayRegion} 추천 전시</span>
+                    </span>
+                    {todayCurations.regionPost && (
+                      <span className="text-[10px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded-md border border-rose-100">
+                        {todayCurations.regionPost.date} 도슨트
+                      </span>
+                    )}
+                  </div>
+                  <h4 className="font-extrabold text-slate-900 text-base mt-2 line-clamp-1">
+                    {todayCurations.regionPost?.title || todayCurations.ex.title}
                   </h4>
-                  <p className="text-xs text-slate-500 font-medium">
-                    {todayCurations.ex.venueName || todayCurations.ex.location}
+                  <p className="text-xs text-indigo-600 font-bold">
+                    🏛️ {todayCurations.ex.venueName || todayCurations.ex.location}
                   </p>
-                  <p className="text-xs text-slate-600 mt-2 line-clamp-2">
-                    {todayCurations.ex.curatorNote || todayCurations.ex.description}
+                  <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed bg-white/70 p-2 rounded-xl border border-indigo-100/50">
+                    💬 {todayCurations.regionPost?.summary || todayCurations.ex.curatorNote || todayCurations.ex.description}
                   </p>
                 </div>
-                <Link
-                  href={`/events/${todayCurations.ex.id}`}
-                  className="text-xs font-bold text-indigo-600 hover:underline inline-flex items-center gap-1"
-                >
-                  <span>전시 상세정보 보기</span>
-                  <span>→</span>
-                </Link>
+                <div className="flex items-center justify-between pt-1">
+                  {todayCurations.regionPost ? (
+                    <Link
+                      href={`/blog/${todayCurations.regionPost.slug}`}
+                      className="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1"
+                    >
+                      <span>✨ 도슨트 코스 보기</span>
+                      <span>➔</span>
+                    </Link>
+                  ) : (
+                    <Link
+                      href={`/events/${todayCurations.ex.id}`}
+                      className="text-xs font-bold text-indigo-600 hover:text-indigo-800 inline-flex items-center gap-1"
+                    >
+                      <span>전시 상세정보 보기</span>
+                      <span>➔</span>
+                    </Link>
+                  )}
+                  <span className="text-[11px] text-slate-400">
+                    {todayCurations.ex.isFree ? "무료 관람" : "관람료 확인"}
+                  </span>
+                </div>
               </div>
 
               {/* 5일장/시장 추천 */}
-              <div className="p-5 rounded-2xl bg-amber-50/50 border border-amber-100 space-y-3 flex flex-col justify-between">
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-50/80 to-white border border-amber-200/80 space-y-3 flex flex-col justify-between shadow-xs">
                 <div>
-                  <span className="text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md">
-                    🧺 로컬 미식 장터
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md">
+                      🧺 로컬 미식 장터
+                    </span>
+                    <span className="text-[10px] font-bold text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded">
+                      {todayCurations.mk.marketType}
+                    </span>
+                  </div>
                   <h4 className="font-bold text-slate-900 text-base mt-2 line-clamp-1">
                     {todayCurations.mk.name}
                   </h4>
                   <p className="text-xs text-slate-500 font-medium">
-                    {todayCurations.mk.region} {todayCurations.mk.subRegion} · {todayCurations.mk.marketType}
+                    {todayCurations.mk.region} {todayCurations.mk.subRegion} · {todayCurations.mk.scheduleDescription}
                   </p>
-                  <p className="text-xs text-slate-600 mt-2 line-clamp-2">
+                  <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed bg-white/70 p-2 rounded-xl border border-amber-100/50">
                     대표 특산물: {todayCurations.mk.specialties.join(", ")}
                   </p>
                 </div>
@@ -448,18 +478,23 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
               </div>
 
               {/* 도서관 추천 */}
-              <div className="p-5 rounded-2xl bg-emerald-50/50 border border-emerald-100 space-y-3 flex flex-col justify-between">
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-emerald-50/80 to-white border border-emerald-200/80 space-y-3 flex flex-col justify-between shadow-xs">
                 <div>
-                  <span className="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md">
-                    📚 힐링 도서관
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-md">
+                      📚 힐링 도서관
+                    </span>
+                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded">
+                      {todayCurations.lib.type}
+                    </span>
+                  </div>
                   <h4 className="font-bold text-slate-900 text-base mt-2 line-clamp-1">
                     {todayCurations.lib.name}
                   </h4>
                   <p className="text-xs text-slate-500 font-medium">
-                    {todayCurations.lib.region} {todayCurations.lib.subRegion} · {todayCurations.lib.type}
+                    {todayCurations.lib.region} {todayCurations.lib.subRegion}
                   </p>
-                  <p className="text-xs text-slate-600 mt-2 line-clamp-2">
+                  <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed bg-white/70 p-2 rounded-xl border border-emerald-100/50">
                     {todayCurations.lib.features.join(" · ")}
                   </p>
                 </div>
@@ -478,19 +513,19 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
         {/* ✨ 3. AI 나들이 플래너 코어 위젯 */}
         <AiTripPlanner />
 
-        {/* 🎨 4. 이번 주 추천 전시 TOP 6 */}
+        {/* 🎨 4. 이번 주 추천 전시 TOP 6 (최신 AI 블로그 도슨트 소글 연동) */}
         <section className="space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold mb-2">
                 <span>🎨</span>
-                <span>이번 주말 어디 갈까?</span>
+                <span>실시간 도슨트 큐레이션 연동</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
                 이번 주 추천 전시 TOP 6
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mt-1">
-                현재 관람객 평점과 화제성이 가장 높은 부울경 대표 전시입니다.
+                매일 연재되는 AI 도슨트 매거진의 최신 소글과 화제성 높은 대표 전시를 함께 확인하세요.
               </p>
             </div>
 
@@ -504,8 +539,8 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {topExhibitions.map((exhibition) => (
-              <ExhibitionSimpleCard key={exhibition.id} exhibition={exhibition} />
+            {topExhibitionsWithPosts.map(({ exhibition, post }) => (
+              <ExhibitionSimpleCard key={exhibition.id} exhibition={exhibition} post={post} />
             ))}
           </div>
 

@@ -1,0 +1,682 @@
+[
+  {
+    "status": "✅ 일치",
+    "id": "busan-bukgu-gupo-5day",
+    "name": "구포 5일장 (구포시장)",
+    "searchQuery": "구포시장",
+    "registeredAddress": "부산광역시 북구 구포시장1길 17",
+    "naverPlaceTitle": "바른흑염소 구포시장점",
+    "naverAddress": "부산광역시 북구 구포시장길 55 1층",
+    "naverCategory": "음식점>한식"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-gijang-market-5day",
+    "name": "기장 5일장 (기장시장)",
+    "searchQuery": "기장시장",
+    "registeredAddress": "부산광역시 기장군 기장읍 읍내로104번길 16",
+    "naverPlaceTitle": "원조기장손칼국수 기장시장본점",
+    "naverAddress": "부산광역시 기장군 기장읍 읍내로104번길 16 2층 원조기장손칼국수 기장시장본점",
+    "naverCategory": "한식>칼국수,만두"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-gangseo-daejeo-5day",
+    "name": "대저 5일장 (대저시장)",
+    "searchQuery": "대저시장",
+    "registeredAddress": "부산광역시 강서구 대저1동 2343-4",
+    "naverPlaceTitle": "시장분식",
+    "naverAddress": "부산광역시 강서구 대저2동 2014-31",
+    "naverCategory": "한식>칼국수,만두"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-junggu-jagalchi",
+    "name": "자갈치시장 & 국제시장",
+    "searchQuery": "자갈치시장",
+    "registeredAddress": "부산광역시 중구 자갈치해안로 52 (자갈치시장)",
+    "naverPlaceTitle": "부산자갈치시장",
+    "naverAddress": "부산광역시 중구 자갈치해안로 52 자갈치시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-busanjin-bujeon",
+    "name": "부전마켓타운 (부전시장)",
+    "searchQuery": "부전시장",
+    "registeredAddress": "부산광역시 부산진구 중앙대로 783번길 23",
+    "naverPlaceTitle": "부전마켓타운",
+    "naverAddress": "부산광역시 부산진구 중앙대로 717",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-dongnae-market",
+    "name": "동래시장",
+    "searchQuery": "동래시장",
+    "registeredAddress": "부산광역시 동래구 동래시장길 14",
+    "naverPlaceTitle": "이디야커피 부산동래시장점",
+    "naverAddress": "부산광역시 동래구 명륜로112번길 36 1층",
+    "naverCategory": "카페,디저트>카페"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-haeundae-market",
+    "name": "해운대전통시장",
+    "searchQuery": "해운대전통시장",
+    "registeredAddress": "부산광역시 해운대구 구남로41번길 22-1",
+    "naverPlaceTitle": "해운대시장",
+    "naverAddress": "부산광역시 해운대구 중동1로 42-16",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-yeongdo-namhang",
+    "name": "남항시장 (영도 전통시장)",
+    "searchQuery": "남항시장",
+    "registeredAddress": "부산광역시 영도구 절영로35번길 34",
+    "naverPlaceTitle": "남항시장",
+    "naverAddress": "부산광역시 영도구",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-geumjeong-seodong",
+    "name": "서동 미로시장",
+    "searchQuery": "서동미로시장",
+    "registeredAddress": "부산광역시 금정구 서동시장길 44",
+    "naverPlaceTitle": "서동미로시장",
+    "naverAddress": "부산광역시 금정구 서동로141번길 16",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-saha-goejeong",
+    "name": "괴정골목시장 & 다대씨파크",
+    "searchQuery": "괴정골목시장",
+    "registeredAddress": "부산광역시 사하구 사하로197번길 19",
+    "naverPlaceTitle": "괴정골목시장",
+    "naverAddress": "부산광역시 사하구 사하로198번길 7",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-suyeong-paldo",
+    "name": "수영팔도시장",
+    "searchQuery": "수영팔도시장",
+    "registeredAddress": "부산광역시 수영구 수영성로 18",
+    "naverPlaceTitle": "남해즉석횟집 수영팔도시장점",
+    "naverAddress": "부산광역시 수영구 수미로26번길 80 1층",
+    "naverCategory": "한식>생선회"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-namgu-motgol",
+    "name": "못골골목시장",
+    "searchQuery": "못골골목시장",
+    "registeredAddress": "부산광역시 남구 못골로 59",
+    "naverPlaceTitle": "못골골목시장 고객편의시설",
+    "naverAddress": "부산광역시 남구 수영로219번길 27-1 못골골목시장 고객편의시설",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-donggu-choryang",
+    "name": "초량전통시장 & 부산진시장",
+    "searchQuery": "초량전통시장",
+    "registeredAddress": "부산광역시 동구 중앙대로221번길 9-1",
+    "naverPlaceTitle": "초량전통시장",
+    "naverAddress": "부산광역시 동구 초량로13번길 24",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-sasang-station-market",
+    "name": "사상기차역전통시장 & 괘법시장",
+    "searchQuery": "괘법시장",
+    "registeredAddress": "부산광역시 사상구 사상로 200번길",
+    "naverPlaceTitle": "르네시떼",
+    "naverAddress": "부산광역시 사상구 광장로 7 르네시떼",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-yeonje-yeonil",
+    "name": "연일전통시장 & 거제시장",
+    "searchQuery": "부산 연일전통시장",
+    "registeredAddress": "부산광역시 연제구 연수로11번길 45",
+    "naverPlaceTitle": "연일골목시장",
+    "naverAddress": "부산광역시 연제구 고분로 20",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "busan-seogu-chungmu",
+    "name": "충무동 새벽시장 & 해안시장",
+    "searchQuery": "충무동새벽시장",
+    "registeredAddress": "부산광역시 서구 충무대로282번길 15",
+    "naverPlaceTitle": "충무동새벽시장",
+    "naverAddress": "부산광역시 서구 해안새벽시장길 68",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-junggu-taehwa-5day",
+    "name": "태화 5일장 (태화종합시장)",
+    "searchQuery": "태화종합시장",
+    "registeredAddress": "울산광역시 중구 신기길 115",
+    "naverPlaceTitle": "태화종합시장",
+    "naverAddress": "울산광역시 중구 화진4길 20",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-ulju-eonyang-5day",
+    "name": "언양 5일장 (언양알프스시장)",
+    "searchQuery": "언양알프스시장",
+    "registeredAddress": "울산광역시 울주군 언양읍 장터2길 11-5",
+    "naverPlaceTitle": "언양알프스시장",
+    "naverAddress": "울산광역시 울주군 언양읍 장터1길 12-1 전체",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-ulju-namchang-5day",
+    "name": "남창 5일장 (남창옹기종기시장)",
+    "searchQuery": "남창옹기종기시장",
+    "registeredAddress": "울산광역시 울주군 온양읍 남창장터길 24",
+    "naverPlaceTitle": "남창옹기종기시장",
+    "naverAddress": "울산광역시 울주군 온양읍 남창장터길 24 남창옹기종기시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-ulju-deokha-5day",
+    "name": "덕하 5일장 (덕하시장)",
+    "searchQuery": "덕하시장",
+    "registeredAddress": "울산광역시 울주군 청량읍 덕하로 225-1",
+    "naverPlaceTitle": "덕하시장",
+    "naverAddress": "울산광역시 울주군 청량읍 상남리 578",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-bukgu-hogye-5day",
+    "name": "호계 5일장 (호계시장)",
+    "searchQuery": "호계공설시장",
+    "registeredAddress": "울산광역시 북구 호계동 850-2",
+    "naverPlaceTitle": "호계공설시장",
+    "naverAddress": "울산광역시 북구 호계3길 17-11 호계공설시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-namgu-suam-sinjeong",
+    "name": "신정상설시장 & 수암한우야시장",
+    "searchQuery": "신정시장",
+    "registeredAddress": "울산광역시 남구 월평로47번길 15 (신정시장)",
+    "naverPlaceTitle": "신정시장",
+    "naverAddress": "울산광역시 남구 월평로47번길 7",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-junggu-jungang",
+    "name": "울산중앙전통시장 (성남동)",
+    "searchQuery": "울산중앙전통시장",
+    "registeredAddress": "울산광역시 중구 번영로 329",
+    "naverPlaceTitle": "울산중앙전통시장",
+    "naverAddress": "울산광역시 중구",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "ulsan-donggu-bangeojin",
+    "name": "방어진항 수산시장 (동울산종합시장)",
+    "searchQuery": "동울산종합시장",
+    "registeredAddress": "울산광역시 동구 중진길 39",
+    "naverPlaceTitle": "동울산종합시장",
+    "naverAddress": "울산광역시 동구 진성14길 77",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-miryang-arirang",
+    "name": "밀양아리랑시장",
+    "searchQuery": "밀양아리랑시장",
+    "registeredAddress": "경상남도 밀양시 상설시장3길 18-16",
+    "naverPlaceTitle": "밀양아리랑시장",
+    "naverAddress": "경상남도 밀양시 상설시장1길 11",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-miryang-gago-5day",
+    "name": "밀양 가곡 5일장 (가곡시장 / 시외버스터미널)",
+    "searchQuery": "밀양 가곡시장",
+    "registeredAddress": "경상남도 밀양시 가곡13길 12 (가곡동 시외터미널 일대)",
+    "naverPlaceTitle": "시장떡집",
+    "naverAddress": "경상남도 밀양시 가곡6길 28",
+    "naverCategory": "전통식품>떡,한과"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-miryang-samnangjin-5day",
+    "name": "삼랑진 5일장 (송지시장)",
+    "searchQuery": "삼랑진 송지시장",
+    "registeredAddress": "경상남도 밀양시 삼랑진읍 송지백인길 16 (삼랑진역 앞)",
+    "naverPlaceTitle": "삼랑진송지시장",
+    "naverAddress": "경상남도 밀양시 삼랑진읍 송지리 359-16",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-miryang-muan-5day",
+    "name": "무안 5일장 (밀양 무안시장)",
+    "searchQuery": "밀양 무안시장",
+    "registeredAddress": "경상남도 밀양시 무안면 무안리 803-1",
+    "naverPlaceTitle": "무안시장",
+    "naverAddress": "경상남도 밀양시 무안면 사명로 502-10 502-12",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-miryang-susan-5day",
+    "name": "수산 5일장 (하남 수산시장)",
+    "searchQuery": "밀양 수산시장",
+    "registeredAddress": "경상남도 밀양시 하남읍 수산중앙로 45",
+    "naverPlaceTitle": "수산시장",
+    "naverAddress": "경상남도 밀양시 하남읍 시서길 16",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changwon-masan-fish",
+    "name": "마산어시장",
+    "searchQuery": "마산어시장",
+    "registeredAddress": "경상남도 창원시 마산합포구 복요리로 37",
+    "naverPlaceTitle": "남다른감자탕 마산어시장점",
+    "naverAddress": "경상남도 창원시 마산합포구 해안대로 289 1층 남다른감자탕",
+    "naverCategory": "한식>감자탕"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changwon-jinhae-jungang",
+    "name": "진해중앙시장",
+    "searchQuery": "진해중앙시장",
+    "registeredAddress": "경상남도 창원시 진해구 벚꽃로60번길 19-2",
+    "naverPlaceTitle": "진해중앙시장",
+    "naverAddress": "경상남도 창원시 진해구 벚꽃로 72",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changwon-masan-station-5day",
+    "name": "마산 번개 5일장 (마산역)",
+    "searchQuery": "마산역 번개시장",
+    "registeredAddress": "경상남도 창원시 마산회원구 마산역광장로 18",
+    "naverPlaceTitle": "마산역번개시장",
+    "naverAddress": "경상남도 창원시 마산회원구 석전동 267",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changwon-jindong-5day",
+    "name": "진동 5일장 (진동시장)",
+    "searchQuery": "진동시장",
+    "registeredAddress": "경상남도 창원시 마산합포구 진동면 진동시장길 47",
+    "naverPlaceTitle": "진동시장",
+    "naverAddress": "경상남도 창원시 마산합포구 진동면 서촌길 3-29 쌍둥이과일집",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-gimhae-dongsang",
+    "name": "김해동상시장 (칼국수타운)",
+    "searchQuery": "김해동상시장",
+    "registeredAddress": "경상남도 김해시 분성로335번길 22",
+    "naverPlaceTitle": "김해동상시장",
+    "naverAddress": "경상남도 김해시 구지로180번길 27-10 시장아파트",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-gimhae-jinyeong-5day",
+    "name": "진영 5일장 (진영대창시장)",
+    "searchQuery": "진영전통시장",
+    "registeredAddress": "경상남도 김해시 진영읍 진영로160번길 13",
+    "naverPlaceTitle": "진영전통시장",
+    "naverAddress": "경상남도 김해시 진영읍 진영산복로115번길 9",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-jinju-jungang",
+    "name": "진주중앙유등시장 & 논개시장",
+    "searchQuery": "진주중앙유등시장",
+    "registeredAddress": "경상남도 진주시 진양호로547번길 8-1",
+    "naverPlaceTitle": "진주중앙시장",
+    "naverAddress": "경상남도 진주시 진양호로547번길 8-1",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-jinju-munsan-5day",
+    "name": "문산 5일장 (문산시장)",
+    "searchQuery": "진주 문산시장",
+    "registeredAddress": "경상남도 진주시 문산읍 삼곡길 4-1",
+    "naverPlaceTitle": "문산상설시장",
+    "naverAddress": "경상남도 진주시 문산읍 소문길 68",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-jinju-banseong-5day",
+    "name": "반성 5일장 (일반성시장)",
+    "searchQuery": "일반성시장",
+    "registeredAddress": "경상남도 진주시 일반성면 동부로1960번길 6",
+    "naverPlaceTitle": "반성시장무료주차장입구1",
+    "naverAddress": "경상남도 진주시 일반성면 창촌리",
+    "naverCategory": "도로시설>방면정보"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-yangsan-nambu",
+    "name": "양산남부시장 (상설 + 1·6일 5일장)",
+    "searchQuery": "양산남부시장",
+    "registeredAddress": "경상남도 양산시 탑골길 7",
+    "naverPlaceTitle": "남부시장",
+    "naverAddress": "경상남도 양산시 중앙로 133",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-yangsan-deokgye-5day",
+    "name": "덕계 5일장 (웅상시장)",
+    "searchQuery": "덕계종합상설시장",
+    "registeredAddress": "경상남도 양산시 덕계2길 11",
+    "naverPlaceTitle": "덕계종합상설시장",
+    "naverAddress": "경상남도 양산시 덕계2길 7",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-tongyeong-seoho",
+    "name": "통영 서호전통시장 & 중앙전통시장",
+    "searchQuery": "서호전통시장",
+    "registeredAddress": "경상남도 통영시 새터길 42-9 (서호시장)",
+    "naverPlaceTitle": "심가네해물짬뽕",
+    "naverAddress": "경상남도 통영시 새터길 74-4 심가네해물짬뽕",
+    "naverCategory": "중식>중식당"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-sacheon-samcheonpo",
+    "name": "삼천포용궁수산시장",
+    "searchQuery": "삼천포용궁수산시장",
+    "registeredAddress": "경상남도 사천시 어시장길 64",
+    "naverPlaceTitle": "삼천포용궁수산시장",
+    "naverAddress": "경상남도 사천시 어시장길 64 삼천포 용궁수산시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-sacheon-eup-5day",
+    "name": "사천읍 5일장 (사천읍시장)",
+    "searchQuery": "사천읍시장",
+    "registeredAddress": "경상남도 사천시 사천읍 시장1길 16",
+    "naverPlaceTitle": "사천읍시장",
+    "naverAddress": "경상남도 사천시 사천읍 시장1길 16 사천읍시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-sacheon-gonyang-5day",
+    "name": "곤양 5일장 (곤양시장)",
+    "searchQuery": "곤양시장",
+    "registeredAddress": "경상남도 사천시 곤양면 구호서길 14",
+    "naverPlaceTitle": "곤양종합시장",
+    "naverAddress": "경상남도 사천시 곤양면 남산로 65 곤양종합시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-geoje-gohyeon",
+    "name": "거제 고현시장",
+    "searchQuery": "거제고현시장",
+    "registeredAddress": "경상남도 거제시 거제중앙로17길 6",
+    "naverPlaceTitle": "거제고현시장",
+    "naverAddress": "경상남도 거제시 거제중앙로17길 6",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-geoje-myeon-5day",
+    "name": "거제면 5일장 (거제장터)",
+    "searchQuery": "거제면 거제장터",
+    "registeredAddress": "경상남도 거제시 거제면 옥산로 10",
+    "naverPlaceTitle": "장터칼국수",
+    "naverAddress": "경상남도 거제시 거제면 기성로6길 8",
+    "naverCategory": "한식>칼국수,만두"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changnyeong-5day",
+    "name": "창녕 5일장 (창녕전통시장)",
+    "searchQuery": "창녕전통시장",
+    "registeredAddress": "경상남도 창녕군 창녕읍 창녕장터로 28",
+    "naverPlaceTitle": "이방시장",
+    "naverAddress": "경상남도 창녕군 이방면 이방대합로 353 이방시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changnyeong-yeongsan-5day",
+    "name": "영산 5일장 (영산시장)",
+    "searchQuery": "창녕 영산시장",
+    "registeredAddress": "경상남도 창녕군 영산면 영산시장길 15",
+    "naverPlaceTitle": "영산시장식육식당",
+    "naverAddress": "경상남도 창녕군 영산면 연지길 12 영산시장식육식당",
+    "naverCategory": "육류,고기요리>정육식당"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-changnyeong-namji-5day",
+    "name": "남지 5일장 (남지시장)",
+    "searchQuery": "창녕 남지시장",
+    "registeredAddress": "경상남도 창녕군 남지읍 남지중앙2길 21",
+    "naverPlaceTitle": "남지시장",
+    "naverAddress": "경상남도 창녕군 남지읍 본동길 4 남지시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-haman-gaya-5day",
+    "name": "가야 5일장 (함안가야시장)",
+    "searchQuery": "함안가야시장",
+    "registeredAddress": "경상남도 함안군 가야읍 가야시장길 41",
+    "naverPlaceTitle": "가야시장",
+    "naverAddress": "경상남도 함안군 가야읍 가야8길 8-5 가야시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-haman-gunbuk-5day",
+    "name": "군북 5일장 (군북시장)",
+    "searchQuery": "함안 군북시장",
+    "registeredAddress": "경상남도 함안군 군북면 중암8길 18",
+    "naverPlaceTitle": "군북공설시장",
+    "naverAddress": "경상남도 함안군 군북면 중암리 83-10",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-uiryeong-5day",
+    "name": "의령 5일장 (의령전통시장)",
+    "searchQuery": "의령전통시장",
+    "registeredAddress": "경상남도 의령군 의령읍 의병로20길 4-6",
+    "naverPlaceTitle": "의령전통시장",
+    "naverAddress": "경상남도 의령군 의령읍 서동리 490-7",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-uiryeong-sinban-5day",
+    "name": "신반 5일장 (신반시장)",
+    "searchQuery": "의령 신반시장",
+    "registeredAddress": "경상남도 의령군 부림면 신반로 91",
+    "naverPlaceTitle": "신반시장",
+    "naverAddress": "경상남도 의령군 부림면 신반리 519-2",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-goseong-5day",
+    "name": "고성 5일장 (고성시장)",
+    "searchQuery": "경남 고성시장",
+    "registeredAddress": "경상남도 고성군 고성읍 중앙로 43",
+    "naverPlaceTitle": "고성시장",
+    "naverAddress": "경상남도 고성군 고성읍 중앙로25번길 57 고성시장상가",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-goseong-baedun-5day",
+    "name": "배둔 5일장 (배둔시장)",
+    "searchQuery": "배둔시장",
+    "registeredAddress": "경상남도 고성군 회화면 배둔로 23",
+    "naverPlaceTitle": "배둔시장",
+    "naverAddress": "경상남도 고성군 회화면 배둔로31번길 31",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hadong-hwagae",
+    "name": "화개장터",
+    "searchQuery": "화개장터",
+    "registeredAddress": "경상남도 하동군 화개면 쌍계로 15",
+    "naverPlaceTitle": "화개장터",
+    "naverAddress": "경상남도 하동군 화개면 탑리",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hadong-gongseol-5day",
+    "name": "하동 5일장 (하동공설시장)",
+    "searchQuery": "하동공설시장",
+    "registeredAddress": "경상남도 하동군 하동읍 중앙로 52",
+    "naverPlaceTitle": "하동공설시장",
+    "naverAddress": "경상남도 하동군 하동읍 시장1길 16-3",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hadong-jingyo-5day",
+    "name": "진교 5일장 (진교시장)",
+    "searchQuery": "하동 진교시장",
+    "registeredAddress": "경상남도 하동군 진교면 민다리길 45",
+    "naverPlaceTitle": "진교시장",
+    "naverAddress": "경상남도 하동군 진교면 선창길 24",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-namhae-market-5day",
+    "name": "남해 5일장 (남해전통시장)",
+    "searchQuery": "남해전통시장",
+    "registeredAddress": "경상남도 남해군 남해읍 화전로 110",
+    "naverPlaceTitle": "남해전통시장",
+    "naverAddress": "경상남도 남해군 남해읍 화전로 110",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-namhae-jijok-5day",
+    "name": "지족 5일장 (지족시장)",
+    "searchQuery": "남해 지족시장",
+    "registeredAddress": "경상남도 남해군 삼동면 지족로 152",
+    "naverPlaceTitle": "남해지족시장",
+    "naverAddress": "경상남도 남해군 삼동면 동부대로1876번길 30-1",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-sancheong-5day",
+    "name": "산청 5일장 (산청시장)",
+    "searchQuery": "산청시장",
+    "registeredAddress": "경상남도 산청군 산청읍 꽃봉산로79번길 19",
+    "naverPlaceTitle": "산청시장",
+    "naverAddress": "경상남도 산청군 산청읍 꽃봉산로91번길 27",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-sancheong-deoksan-5day",
+    "name": "덕산 5일장 (덕산시장)",
+    "searchQuery": "산청 덕산시장",
+    "registeredAddress": "경상남도 산청군 시천면 남명로 212",
+    "naverPlaceTitle": "덕산시장",
+    "naverAddress": "경상남도 산청군 시천면 남명로 188-5 덕산시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hamyang-jirisang-5day",
+    "name": "함양지리산 5일장 (함양시장)",
+    "searchQuery": "함양지리산시장",
+    "registeredAddress": "경상남도 함양군 함양읍 중앙시장길 11-1",
+    "naverPlaceTitle": "지리산함양시장",
+    "naverAddress": "경상남도 함양군 함양읍 중앙시장길 8-9 옥계상회",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hamyang-anui-5day",
+    "name": "안의 5일장 (안의시장)",
+    "searchQuery": "함양 안의시장",
+    "registeredAddress": "경상남도 함양군 안의면 당본길 17",
+    "naverPlaceTitle": "함양토종약초시장",
+    "naverAddress": "경상남도 함양군 안의면 약초시장길 27 함양토종약초시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-geochang-5day",
+    "name": "거창 5일장 (거창전통시장)",
+    "searchQuery": "거창전통시장",
+    "registeredAddress": "경상남도 거창군 거창읍 시장1길 33",
+    "naverPlaceTitle": "거창전통시장",
+    "naverAddress": "경상남도 거창군 거창읍 중앙로 140 거창시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-geochang-gajo-5day",
+    "name": "가조 5일장 (가조시장)",
+    "searchQuery": "거창 가조시장",
+    "registeredAddress": "경상남도 거창군 가조면 지산로 1438",
+    "naverPlaceTitle": "시장분식",
+    "naverAddress": "경상남도 거창군 가조면 가조가야로 1110-13",
+    "naverCategory": "분식>종합분식"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hapcheon-wanghu-5day",
+    "name": "합천왕후 5일장 (합천왕후시장)",
+    "searchQuery": "합천왕후시장",
+    "registeredAddress": "경상남도 합천군 합천읍 옥산로 38",
+    "naverPlaceTitle": "합천왕후시장",
+    "naverAddress": "경상남도 합천군 합천읍 옥산로 44 합천시장",
+    "naverCategory": "쇼핑,유통>시장"
+  },
+  {
+    "status": "✅ 일치",
+    "id": "gyeongnam-hapcheon-samga-5day",
+    "name": "삼가 5일장 (삼가시장 한우거리)",
+    "searchQuery": "합천 삼가시장",
+    "registeredAddress": "경상남도 합천군 삼가면 삼가중앙길 26",
+    "naverPlaceTitle": "삼가시장",
+    "naverAddress": "경상남도 합천군 삼가면 일부5길 1",
+    "naverCategory": "쇼핑,유통>시장"
+  }
+]

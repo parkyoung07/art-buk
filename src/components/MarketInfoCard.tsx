@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { TraditionalMarket } from '@/data/markets';
-import { getMarketStatus } from '@/utils/market';
+import { getMarketStatus, getMarketMapUrl } from '@/utils/market';
 
 interface MarketInfoCardProps {
   market: TraditionalMarket;
@@ -12,6 +12,7 @@ interface MarketInfoCardProps {
 export default function MarketInfoCard({ market, compact = false }: MarketInfoCardProps) {
   const [copied, setCopied] = useState(false);
   const status = getMarketStatus(market);
+  const naverMapUrl = getMarketMapUrl(market);
 
   const handleCopyAddress = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -96,7 +97,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
         <div className="flex items-center justify-between text-[11px] text-slate-500 pt-2 border-t border-amber-100">
           <span className="truncate max-w-[180px]">{market.address}</span>
           <a
-            href={`https://map.naver.com/p/search/${encodeURIComponent(market.name)}`}
+            href={naverMapUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-amber-800 hover:text-amber-900 font-bold shrink-0 hover:underline flex items-center gap-0.5"
@@ -191,7 +192,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
         </div>
 
         <a
-          href={`https://map.naver.com/p/search/${encodeURIComponent(market.name)}`}
+          href={naverMapUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 font-bold text-xs px-3 py-1.5 rounded-xl bg-slate-900 text-white hover:bg-amber-900 transition-colors shadow-xs"

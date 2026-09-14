@@ -10,6 +10,36 @@ export interface MarketStatus {
 }
 
 /**
+ * 시장 객체를 바탕으로 네이버 지도 검색에 최적화된 URL을 반환합니다.
+ */
+export function getMarketMapUrl(market: TraditionalMarket): string {
+  if (market.searchQuery && market.searchQuery.trim()) {
+    return `https://map.naver.com/p/search/${encodeURIComponent(market.searchQuery.trim())}`;
+  }
+
+  // searchQuery가 없을 경우 스마트 정제
+  let query = market.name;
+  
+  // 1. 괄호 안의 명칭이 시장명인 경우 추출, 아니면 괄호 제거
+  const bracketMatch = query.match(/\((.*?)\)/);
+  if (bracketMatch && bracketMatch[1]) {
+    const inside = bracketMatch[1].split('/')[0].split('·')[0].trim();
+    if (inside && (inside.includes('시장') || inside.includes('장터'))) {
+      query = inside;
+    } else {
+      query = query.replace(/\(.*?\)/g, '').trim();
+    }
+  } else {
+    query = query.split('&')[0].trim();
+  }
+
+  // 2. 불필요한 특수문자 및 수식어 정리
+  query = query.replace(/5일장/g, '시장').replace(/\s+/g, ' ').trim();
+
+  return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
+}
+
+/**
  * 특정 날짜(기본: KST 오늘) 기준 시장의 장날 상태를 계산합니다.
  */
 export function getMarketStatus(market: TraditionalMarket, targetDate?: Date): MarketStatus {

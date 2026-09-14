@@ -35,6 +35,7 @@ export default function CourseTimelinePlanner({
         desc: nearbyMarket.specialties.join(", ") + " 먹거리",
         tag: "🧺 전통시장 5일장",
         address: nearbyMarket.address,
+        mapQuery: nearbyMarket.searchQuery || nearbyMarket.name,
       }
     : nearbyLibrary
     ? {
@@ -43,6 +44,7 @@ export default function CourseTimelinePlanner({
         desc: nearbyLibrary.features.slice(0, 2).join(", "),
         tag: "📚 복합문화도서관",
         address: nearbyLibrary.address,
+        mapQuery: nearbyLibrary.searchQuery || nearbyLibrary.name,
       }
     : {
         name: `${exhibition.region} 문화예술 산책길`,
@@ -50,6 +52,7 @@ export default function CourseTimelinePlanner({
         desc: "고즈넉한 원도심 골목 & 예술 쉼터",
         tag: "🌿 힐링 산책",
         address: exhibition.address || exhibition.location,
+        mapQuery: `${exhibition.region} 산책길`,
       };
 
   const cafeSpot = localPlaces[1]?.title
@@ -91,7 +94,7 @@ export default function CourseTimelinePlanner({
       duration: "약 1시간",
       highlight: marketOrLib.desc,
       address: marketOrLib.address,
-      mapQuery: marketOrLib.name,
+      mapQuery: marketOrLib.mapQuery,
     },
     {
       step: 4,

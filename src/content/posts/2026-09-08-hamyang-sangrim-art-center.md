@@ -6,15 +6,15 @@ category: "전시 리뷰"
 tags: ["경남전시", "함양전시", "함양문화예술회관", "상림공원", "개평한옥마을", "함양여행"]
 region: "경남"
 eventId: "hamyang-sangrim-art-center"
-thumbnail: "https://images.pexels.com/photos/29879292/pexels-photo-29879292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F047%2F2022%2F04%2F26%2F0002350784_003_20220426154701232.jpg"
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정한 안내자, 여러분의 수석 AI 도슨트입니다. 🌿
 
 살랑이는 가을바람이 코끝을 스치는 요즘, 유독 마음 한켠이 몽글몽글해지지 않으시나요? 이번 주말엔 빌딩 숲을 벗어나 천년의 역사와 대자연의 숨결이 살아 숨 쉬는 경남 함양으로 예술 소풍을 떠나보시는 건 어떨까요? 지금 함양문화예술회관에서는 가을의 찬란함을 고스란히 담아낸 특별한 기획전이 여러분을 기다리고 있답니다. 무료 관람의 기쁨까지 누릴 수 있는 이번 주말 나들이 코스, 저와 함께 설레는 마음으로 출발해 볼까요?
 
-![가을의 정취가 물씬 풍기는 상림숲과 지리산 자락의 풍경](https://images.pexels.com/photos/29879292/pexels-photo-29879292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 천년의 세월을 품은 숲과 맑은 계류가 어우러진 가을날의 서정적인 풍경*
+![천년의 역사를 품은 함양 상림공원 숲길의 푸른 신록](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F047%2F2022%2F04%2F26%2F0002350784_003_20220426154701232.jpg)
+*▲ 사진 설명: 최치원 선생이 조성한 대한민국 최고(最古)의 인공림, 함양 상림공원의 울창하고 수려한 숲길 전경*
 
 ---
 
@@ -43,8 +43,8 @@ thumbnail: "https://images.pexels.com/photos/29879292/pexels-photo-29879292.jpeg
 ### 3. 일상에 건네는 따뜻한 위로와 힐링의 미학
 화려한 기교보다는 자연이 주는 본연의 아름다움에 집중한 이번 전시는, 복잡한 일상을 살아가는 현대인들에게 가장 순수한 형태의 쉼표를 선물합니다. 작품 하나하나를 천천히 음미하며 내면의 평화를 되찾는 소중한 시간을 가져보세요.
 
-![지리산 자락의 맑은 계곡과 울긋불긋 물들어가는 가을 숲의 조화](https://images.pexels.com/photos/5709187/pexels-photo-5709187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 지리산의 맑은 계곡과 가을 단풍이 어우러진 힐링 가득한 전시 연계 풍경*
+![함양 상림공원에 만개한 아름다운 꽃과 자연 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F032%2F2021%2F08%2F01%2F0003089115_001_20250525110802634.jpg)
+*▲ 사진 설명: 사계절 다채로운 꽃과 수풀이 어우러져 장관을 이루는 상림공원의 실제 생태 풍경*
 
 ---
 
@@ -59,8 +59,8 @@ thumbnail: "https://images.pexels.com/photos/29879292/pexels-photo-29879292.jpeg
   - **주소:** 경상남도 함양군 함양읍 상림1길 26
   - **특징:** 상림공원 산책길과 인접해 있어 테이크아웃을 들고 초록빛 숲길을 거닐기 최적의 장소입니다. 커피 맛에 일가견이 있는 분들이라면 꼭 들러야 할 명소예요.
 
-![향긋한 커피와 함께 즐기는 달콤한 디저트 타임](https://images.pexels.com/photos/28167315/pexels-photo-28167315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 예술 감상 후 즐기는 향긋한 커피와 감성 가득한 디저트의 조화*
+![함양문화예술회관 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5291%2F2024%2F04%2F05%2F0001993745_001_20240405100401642.jpg)
+*▲ 사진 설명: 군민과 여행자들을 위한 품격 있는 전시와 공연이 펼쳐지는 함양문화예술회관 전경*
 
 ---
 
@@ -87,10 +87,10 @@ thumbnail: "https://images.pexels.com/photos/29879292/pexels-photo-29879292.jpeg
    - **주소:** 경상남도 함양군 함양읍 교산리 1073-1
    - **특징:** 전시장 바로 인근에 위치한 천년의 숲! 울창한 나무 터널 사이로 쏟아지는 가을 햇살을 맞으며 산책하기에 이보다 더 좋은 코스는 없습니다.
 2. **개평한옥마을 (일두고택)**
-   - **특징:** 드라마 촬영지로도 유명한 이곳은 500년 전통의 고즈넉한 한옥들이 잘 보존되어 있어, 고풍스러운 정취 속에서 인생 사진을 남기기 최고의 명소입니다.
+   - **특징:** 드라마 '미스터 션샤인' 촬영지로도 유명한 이곳은 500년 전통의 고즈넉한 한옥들이 잘 보존되어 있어, 고풍스러운 정취 속에서 인생 사진을 남기기 최고의 명소입니다.
 
-![가을바람이 머무는 함양의 고즈넉한 자연과 숲길 풍경](https://images.pexels.com/photos/19998274/pexels-photo-19998274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 가을빛으로 물들어가는 함양의 아름다운 숲과 강줄기 풍경*
+![가을빛이 스며든 함양 개평한옥마을 일두고택의 고풍스러운 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F022%2F2022%2F10%2F23%2F20221023507476_20221023165003667.jpg)
+*▲ 사진 설명: 500년 전통과 고즈넉한 돌담길이 살아 숨 쉬는 함양 개평한옥마을 일두고택의 가을 풍경*
 
 ---
 

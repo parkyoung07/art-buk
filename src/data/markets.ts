@@ -1,6 +1,7 @@
 export interface TraditionalMarket {
   id: string;
   name: string;
+  searchQuery?: string;
   region: '부산' | '울산' | '경남';
   subRegion: string;
   marketType: '5일장' | '상설시장' | '새벽시장' | '야시장';
@@ -19,6 +20,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-bukgu-gupo-5day",
     name: "구포 5일장 (구포시장)",
+    searchQuery: "구포시장",
     region: "부산",
     subRegion: "북구",
     marketType: "5일장",
@@ -32,6 +34,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-gijang-market-5day",
     name: "기장 5일장 (기장시장)",
+    searchQuery: "기장시장",
     region: "부산",
     subRegion: "기장군",
     marketType: "5일장",
@@ -45,6 +48,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-gangseo-daejeo-5day",
     name: "대저 5일장 (대저시장)",
+    searchQuery: "대저시장",
     region: "부산",
     subRegion: "강서구",
     marketType: "5일장",
@@ -58,6 +62,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-junggu-jagalchi",
     name: "자갈치시장 & 국제시장",
+    searchQuery: "자갈치시장",
     region: "부산",
     subRegion: "중구",
     marketType: "상설시장",
@@ -71,6 +76,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-busanjin-bujeon",
     name: "부전마켓타운 (부전시장)",
+    searchQuery: "부전시장",
     region: "부산",
     subRegion: "부산진구",
     marketType: "상설시장",
@@ -84,6 +90,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-dongnae-market",
     name: "동래시장",
+    searchQuery: "동래시장",
     region: "부산",
     subRegion: "동래구",
     marketType: "상설시장",
@@ -97,6 +104,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-haeundae-market",
     name: "해운대전통시장",
+    searchQuery: "해운대전통시장",
     region: "부산",
     subRegion: "해운대구",
     marketType: "상설시장",
@@ -110,6 +118,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-yeongdo-namhang",
     name: "남항시장 (영도 전통시장)",
+    searchQuery: "남항시장",
     region: "부산",
     subRegion: "영도구",
     marketType: "상설시장",
@@ -123,6 +132,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-geumjeong-seodong",
     name: "서동 미로시장",
+    searchQuery: "서동미로시장",
     region: "부산",
     subRegion: "금정구",
     marketType: "상설시장",
@@ -136,6 +146,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-saha-goejeong",
     name: "괴정골목시장 & 다대씨파크",
+    searchQuery: "괴정골목시장",
     region: "부산",
     subRegion: "사하구",
     marketType: "상설시장",
@@ -149,6 +160,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-suyeong-paldo",
     name: "수영팔도시장",
+    searchQuery: "수영팔도시장",
     region: "부산",
     subRegion: "수영구",
     marketType: "상설시장",
@@ -162,6 +174,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-namgu-motgol",
     name: "못골골목시장",
+    searchQuery: "못골골목시장",
     region: "부산",
     subRegion: "남구",
     marketType: "상설시장",
@@ -175,6 +188,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-donggu-choryang",
     name: "초량전통시장 & 부산진시장",
+    searchQuery: "초량전통시장",
     region: "부산",
     subRegion: "동구",
     marketType: "상설시장",
@@ -188,6 +202,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-sasang-station-market",
     name: "사상기차역전통시장 & 괘법시장",
+    searchQuery: "괘법시장",
     region: "부산",
     subRegion: "사상구",
     marketType: "상설시장",
@@ -201,6 +216,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-yeonje-yeonil",
     name: "연일전통시장 & 거제시장",
+    searchQuery: "부산 연일전통시장",
     region: "부산",
     subRegion: "연제구",
     marketType: "상설시장",
@@ -214,6 +230,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "busan-seogu-chungmu",
     name: "충무동 새벽시장 & 해안시장",
+    searchQuery: "충무동새벽시장",
     region: "부산",
     subRegion: "서구",
     marketType: "새벽시장",
@@ -231,6 +248,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-junggu-taehwa-5day",
     name: "태화 5일장 (태화종합시장)",
+    searchQuery: "태화종합시장",
     region: "울산",
     subRegion: "중구",
     marketType: "5일장",
@@ -244,6 +262,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-ulju-eonyang-5day",
     name: "언양 5일장 (언양알프스시장)",
+    searchQuery: "언양알프스시장",
     region: "울산",
     subRegion: "울주군",
     marketType: "5일장",
@@ -257,6 +276,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-ulju-namchang-5day",
     name: "남창 5일장 (남창옹기종기시장)",
+    searchQuery: "남창옹기종기시장",
     region: "울산",
     subRegion: "울주군",
     marketType: "5일장",
@@ -270,6 +290,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-ulju-deokha-5day",
     name: "덕하 5일장 (덕하시장)",
+    searchQuery: "덕하시장",
     region: "울산",
     subRegion: "울주군",
     marketType: "5일장",
@@ -283,6 +304,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-bukgu-hogye-5day",
     name: "호계 5일장 (호계시장)",
+    searchQuery: "호계공설시장",
     region: "울산",
     subRegion: "북구",
     marketType: "5일장",
@@ -296,6 +318,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-namgu-suam-sinjeong",
     name: "신정상설시장 & 수암한우야시장",
+    searchQuery: "신정시장",
     region: "울산",
     subRegion: "남구",
     marketType: "상설시장",
@@ -309,6 +332,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-junggu-jungang",
     name: "울산중앙전통시장 (성남동)",
+    searchQuery: "울산중앙전통시장",
     region: "울산",
     subRegion: "중구",
     marketType: "상설시장",
@@ -322,6 +346,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "ulsan-donggu-bangeojin",
     name: "방어진항 수산시장 (동울산종합시장)",
+    searchQuery: "동울산종합시장",
     region: "울산",
     subRegion: "동구",
     marketType: "상설시장",
@@ -341,6 +366,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-miryang-arirang",
     name: "밀양아리랑시장",
+    searchQuery: "밀양아리랑시장",
     region: "경남",
     subRegion: "밀양시",
     marketType: "상설시장",
@@ -353,20 +379,22 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   },
   {
     id: "gyeongnam-miryang-gago-5day",
-    name: "밀양 5일장 (가곡시장 / 밀양역·터미널)",
+    name: "밀양 가곡 5일장 (가곡시장 / 시외버스터미널)",
+    searchQuery: "밀양 가곡시장",
     region: "경남",
     subRegion: "밀양시",
     marketType: "5일장",
     scheduleDays: [2, 7],
     scheduleDescription: "매월 2일 · 7일 5일장 (2일, 7일, 12일, 17일, 22일, 27일)",
     specialties: ["장터 소머리국밥", "가마솥 통닭", "얼음골 사과", "제철 산나물", "장터 찹쌀도넛"],
-    address: "경상남도 밀양시 가곡13길 12 (가곡동 일대)",
-    description: "밀양역과 시외버스터미널 인근 가곡동 일대에 2일과 7일마다 대규모로 서는 밀양 대표 정기 5일장입니다. 시골 어르신들이 직접 가꾼 싱싱한 농산물과 풍성한 장터 먹거리가 열립니다.",
-    tips: "2·7일 장날에 맞춰 밀양역에 내리면 기차 여행과 함께 흥겨운 시골 5일장의 정취를 만끽할 수 있습니다."
+    address: "경상남도 밀양시 가곡13길 12 (가곡동 시외터미널 일대)",
+    description: "밀양 시외버스터미널과 가곡동 일대에 2일과 7일마다 대규모로 서는 밀양 대표 정기 5일장입니다. 시골 어르신들이 직접 가꾼 싱싱한 농산물과 풍성한 장터 먹거리가 열립니다.",
+    tips: "2·7일 장날에 맞춰 밀양 시외버스터미널 주변 가곡 장터에 들러 흥겨운 시골 5일장의 정취와 따끈한 장터 먹거리를 만끽해 보세요."
   },
   {
     id: "gyeongnam-miryang-samnangjin-5day",
     name: "삼랑진 5일장 (송지시장)",
+    searchQuery: "삼랑진 송지시장",
     region: "경남",
     subRegion: "밀양시",
     marketType: "5일장",
@@ -380,6 +408,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-miryang-muan-5day",
     name: "무안 5일장 (밀양 무안시장)",
+    searchQuery: "밀양 무안시장",
     region: "경남",
     subRegion: "밀양시",
     marketType: "5일장",
@@ -393,6 +422,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-miryang-susan-5day",
     name: "수산 5일장 (하남 수산시장)",
+    searchQuery: "밀양 수산시장",
     region: "경남",
     subRegion: "밀양시",
     marketType: "5일장",
@@ -408,6 +438,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changwon-masan-fish",
     name: "마산어시장",
+    searchQuery: "마산어시장",
     region: "경남",
     subRegion: "창원시",
     marketType: "상설시장",
@@ -421,6 +452,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changwon-jinhae-jungang",
     name: "진해중앙시장",
+    searchQuery: "진해중앙시장",
     region: "경남",
     subRegion: "창원시",
     marketType: "상설시장",
@@ -434,6 +466,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changwon-masan-station-5day",
     name: "마산 번개 5일장 (마산역)",
+    searchQuery: "마산역 번개시장",
     region: "경남",
     subRegion: "창원시",
     marketType: "5일장",
@@ -447,6 +480,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changwon-jindong-5day",
     name: "진동 5일장 (진동시장)",
+    searchQuery: "진동시장",
     region: "경남",
     subRegion: "창원시",
     marketType: "5일장",
@@ -462,6 +496,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-gimhae-dongsang",
     name: "김해동상시장 (칼국수타운)",
+    searchQuery: "김해동상시장",
     region: "경남",
     subRegion: "김해시",
     marketType: "상설시장",
@@ -475,6 +510,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-gimhae-jinyeong-5day",
     name: "진영 5일장 (진영대창시장)",
+    searchQuery: "진영전통시장",
     region: "경남",
     subRegion: "김해시",
     marketType: "5일장",
@@ -490,6 +526,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-jinju-jungang",
     name: "진주중앙유등시장 & 논개시장",
+    searchQuery: "진주중앙유등시장",
     region: "경남",
     subRegion: "진주시",
     marketType: "상설시장",
@@ -503,6 +540,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-jinju-munsan-5day",
     name: "문산 5일장 (문산시장)",
+    searchQuery: "진주 문산시장",
     region: "경남",
     subRegion: "진주시",
     marketType: "5일장",
@@ -516,6 +554,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-jinju-banseong-5day",
     name: "반성 5일장 (일반성시장)",
+    searchQuery: "일반성시장",
     region: "경남",
     subRegion: "진주시",
     marketType: "5일장",
@@ -531,6 +570,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-yangsan-nambu",
     name: "양산남부시장 (상설 + 1·6일 5일장)",
+    searchQuery: "양산남부시장",
     region: "경남",
     subRegion: "양산시",
     marketType: "5일장",
@@ -544,6 +584,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-yangsan-deokgye-5day",
     name: "덕계 5일장 (웅상시장)",
+    searchQuery: "덕계종합상설시장",
     region: "경남",
     subRegion: "양산시",
     marketType: "5일장",
@@ -559,6 +600,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-tongyeong-seoho",
     name: "통영 서호전통시장 & 중앙전통시장",
+    searchQuery: "서호전통시장",
     region: "경남",
     subRegion: "통영시",
     marketType: "상설시장",
@@ -574,6 +616,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-sacheon-samcheonpo",
     name: "삼천포용궁수산시장",
+    searchQuery: "삼천포용궁수산시장",
     region: "경남",
     subRegion: "사천시",
     marketType: "상설시장",
@@ -587,6 +630,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-sacheon-eup-5day",
     name: "사천읍 5일장 (사천읍시장)",
+    searchQuery: "사천읍시장",
     region: "경남",
     subRegion: "사천시",
     marketType: "5일장",
@@ -600,6 +644,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-sacheon-gonyang-5day",
     name: "곤양 5일장 (곤양시장)",
+    searchQuery: "곤양시장",
     region: "경남",
     subRegion: "사천시",
     marketType: "5일장",
@@ -615,6 +660,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-geoje-gohyeon",
     name: "거제 고현시장",
+    searchQuery: "거제고현시장",
     region: "경남",
     subRegion: "거제시",
     marketType: "상설시장",
@@ -628,6 +674,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-geoje-myeon-5day",
     name: "거제면 5일장 (거제장터)",
+    searchQuery: "거제면 거제장터",
     region: "경남",
     subRegion: "거제시",
     marketType: "5일장",
@@ -643,6 +690,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changnyeong-5day",
     name: "창녕 5일장 (창녕전통시장)",
+    searchQuery: "창녕전통시장",
     region: "경남",
     subRegion: "창녕군",
     marketType: "5일장",
@@ -656,6 +704,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changnyeong-yeongsan-5day",
     name: "영산 5일장 (영산시장)",
+    searchQuery: "창녕 영산시장",
     region: "경남",
     subRegion: "창녕군",
     marketType: "5일장",
@@ -669,6 +718,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-changnyeong-namji-5day",
     name: "남지 5일장 (남지시장)",
+    searchQuery: "창녕 남지시장",
     region: "경남",
     subRegion: "창녕군",
     marketType: "5일장",
@@ -684,6 +734,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-haman-gaya-5day",
     name: "가야 5일장 (함안가야시장)",
+    searchQuery: "함안가야시장",
     region: "경남",
     subRegion: "함안군",
     marketType: "5일장",
@@ -697,6 +748,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-haman-gunbuk-5day",
     name: "군북 5일장 (군북시장)",
+    searchQuery: "함안 군북시장",
     region: "경남",
     subRegion: "함안군",
     marketType: "5일장",
@@ -712,6 +764,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-uiryeong-5day",
     name: "의령 5일장 (의령전통시장)",
+    searchQuery: "의령전통시장",
     region: "경남",
     subRegion: "의령군",
     marketType: "5일장",
@@ -725,6 +778,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-uiryeong-sinban-5day",
     name: "신반 5일장 (신반시장)",
+    searchQuery: "의령 신반시장",
     region: "경남",
     subRegion: "의령군",
     marketType: "5일장",
@@ -740,6 +794,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-goseong-5day",
     name: "고성 5일장 (고성시장)",
+    searchQuery: "경남 고성시장",
     region: "경남",
     subRegion: "고성군",
     marketType: "5일장",
@@ -753,6 +808,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-goseong-baedun-5day",
     name: "배둔 5일장 (배둔시장)",
+    searchQuery: "배둔시장",
     region: "경남",
     subRegion: "고성군",
     marketType: "5일장",
@@ -768,6 +824,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hadong-hwagae",
     name: "화개장터",
+    searchQuery: "화개장터",
     region: "경남",
     subRegion: "하동군",
     marketType: "상설시장",
@@ -781,6 +838,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hadong-gongseol-5day",
     name: "하동 5일장 (하동공설시장)",
+    searchQuery: "하동공설시장",
     region: "경남",
     subRegion: "하동군",
     marketType: "5일장",
@@ -794,6 +852,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hadong-jingyo-5day",
     name: "진교 5일장 (진교시장)",
+    searchQuery: "하동 진교시장",
     region: "경남",
     subRegion: "하동군",
     marketType: "5일장",
@@ -809,6 +868,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-namhae-market-5day",
     name: "남해 5일장 (남해전통시장)",
+    searchQuery: "남해전통시장",
     region: "경남",
     subRegion: "남해군",
     marketType: "5일장",
@@ -822,6 +882,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-namhae-jijok-5day",
     name: "지족 5일장 (지족시장)",
+    searchQuery: "남해 지족시장",
     region: "경남",
     subRegion: "남해군",
     marketType: "5일장",
@@ -837,6 +898,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-sancheong-5day",
     name: "산청 5일장 (산청시장)",
+    searchQuery: "산청시장",
     region: "경남",
     subRegion: "산청군",
     marketType: "5일장",
@@ -850,6 +912,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-sancheong-deoksan-5day",
     name: "덕산 5일장 (덕산시장)",
+    searchQuery: "산청 덕산시장",
     region: "경남",
     subRegion: "산청군",
     marketType: "5일장",
@@ -865,6 +928,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hamyang-jirisang-5day",
     name: "함양지리산 5일장 (함양시장)",
+    searchQuery: "함양지리산시장",
     region: "경남",
     subRegion: "함양군",
     marketType: "5일장",
@@ -878,6 +942,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hamyang-anui-5day",
     name: "안의 5일장 (안의시장)",
+    searchQuery: "함양 안의시장",
     region: "경남",
     subRegion: "함양군",
     marketType: "5일장",
@@ -893,6 +958,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-geochang-5day",
     name: "거창 5일장 (거창전통시장)",
+    searchQuery: "거창전통시장",
     region: "경남",
     subRegion: "거창군",
     marketType: "5일장",
@@ -906,6 +972,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-geochang-gajo-5day",
     name: "가조 5일장 (가조시장)",
+    searchQuery: "거창 가조시장",
     region: "경남",
     subRegion: "거창군",
     marketType: "5일장",
@@ -921,6 +988,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hapcheon-wanghu-5day",
     name: "합천왕후 5일장 (합천왕후시장)",
+    searchQuery: "합천왕후시장",
     region: "경남",
     subRegion: "합천군",
     marketType: "5일장",
@@ -934,6 +1002,7 @@ export const TRADITIONAL_MARKETS: TraditionalMarket[] = [
   {
     id: "gyeongnam-hapcheon-samga-5day",
     name: "삼가 5일장 (삼가시장 한우거리)",
+    searchQuery: "합천 삼가시장",
     region: "경남",
     subRegion: "합천군",
     marketType: "5일장",

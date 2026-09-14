@@ -84,7 +84,7 @@ thumbnail: "https://images.pexels.com/photos/31474665/pexels-photo-31474665.jpeg
 2.  **부자 기운 솥바위(정암루)**: 삼성, LG, 효성 등 대한민국 대기업 창업주들의 탄생지 반경 8km 내에 위치해 '부자의 기운'을 받을 수 있다는 전설의 명소! 남강변에 우뚝 솟은 가마솥 모양의 바위 앞에서 이번 가을 부자 기운을 듬뿍 받아가세요.
 3.  **한우산 억새 드라이브 코스**: 가을이면 능선을 따라 은빛 억새가 장관을 이루는 드라이브 코스입니다. 정상에 오르면 의령의 아름다운 가을 산세를 한눈에 담을 수 있습니다.
 
-![의령의 자연과 문화가 어우러진 아름다운 풍경 뷰](https://images.pexels.com/photos/2046779/pexels-photo-2046779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![의령의 자연과 문화가 어우러진 아름다운 풍경 뷰](https://images.pexels.com/photos/14061352/pexels-photo-14061352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 가을 하늘과 어우러진 의령의 탁 트인 풍경 속에서 힐링을 만끽해 보세요.*
 
 ---
