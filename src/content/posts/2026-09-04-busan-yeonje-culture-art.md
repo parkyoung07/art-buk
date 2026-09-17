@@ -75,7 +75,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3
 2. **온천천 카페거리:** 시원한 수변 바람을 맞으며 즐기는 산책과 브런치
 3. **배산 치유숲길:** 가벼운 트레킹으로 피톤치드 충전하기
 
-![온천천 카페거리 전경](http://imgnews.naver.net/image/5369/2018/05/29/0000058475_001_20180529170238973.jpg)
+![온천천 카페거리 전경](https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1200&auto=format&fit=crop&q=80)
 *▲ 온천천을 따라 감성적인 카페와 산책로가 이어지는 온천천 카페거리 풍경*
 
 ---

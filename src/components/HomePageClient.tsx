@@ -120,7 +120,7 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 transition-transform duration-1000 scale-105"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1920&auto=format&fit=crop&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&auto=format&fit=crop&q=80')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/80 via-slate-900/90 to-slate-950/95"></div>

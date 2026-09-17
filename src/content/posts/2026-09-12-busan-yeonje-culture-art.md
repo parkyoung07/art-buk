@@ -83,7 +83,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3
 3. **힐링 타임:** **행담차문화원**에서 향긋한 전통차를 즐기며 휴식 취하기
 4. **마무리 코스:** 인근 **이마트 연제점 컬처클럽**이나 **홈플러스 아시아드점** 문화센터 주변 상권에서 가벼운 쇼핑과 저녁 식사로 하루 완성하기!
 
-![온천천 카페거리 전경](http://imgnews.naver.net/image/5369/2018/05/29/0000058475_001_20180529170238973.jpg)
+![온천천 카페거리 전경](https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&auto=format&fit=crop&q=80)
 *▲ 도심 속 힐링과 여유를 만끽할 수 있는 부산 연제구 온천천 카페거리 전경*
 
 ---

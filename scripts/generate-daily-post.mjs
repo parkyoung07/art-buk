@@ -788,8 +788,249 @@ const EXHIBITION_POOL = [
   }
 ];
 
-// 네이버 API HUB 이미지 검색 단일 쿼리 호출 함수
-async function fetchNaverImages(query, count = 2) {
+// =========================================================================
+// 회장님 특명 반영: 오후 4대 테마 스마트 순환 나들이 풀 (소재 무한 확장)
+// 1. 이색 갤러리 & 복합문화공간
+// 2. 5일장 & 전통시장 먹거리 투어
+// 3. 특화 도서관 & 가족 북캉스
+// 4. 계절 힐링로드 & 감성 드라이브
+// =========================================================================
+const AFTERNOON_THEME_POOL = [
+  // --- [테마 1: 이색 갤러리 & 복합문화공간] ---
+  {
+    slug: "gallery-busan-haeundae-dalmaji",
+    themeType: "gallery",
+    title: "해운대 달맞이길 감성 갤러리 투어 : 청사포 오션뷰와 현대미술의 향연",
+    region: "부산",
+    subRegion: "해운대구",
+    venueName: "달맞이길 화랑가 (조현화랑 & 갤러리아트숲)",
+    address: "부산광역시 해운대구 달맞이길65번길 171",
+    period: "상설 및 기획전시 운영",
+    price: "무료 (카페 음료 별도)",
+    category: "감성 갤러리",
+    tags: ["부산갤러리", "달맞이길", "해운대데이트", "청사포", "오션뷰갤러리", "가을감성"],
+    photoKeywords: "haeundae ocean view art gallery modern interior cafe",
+    summary: "청사포 푸른 바다를 내려다보며 감상하는 수준 높은 현대미술 기획전! 문텐로드 숲길 산책과 달맞이 언덕 감성 카페 투어.",
+    nearbySpots: ["청사포 다릿돌전망대", "해운대 블루라인파크 미포정거장", "문텐로드 산책로", "달맞이길 카페거리"]
+  },
+  {
+    slug: "gallery-busan-jeonpo-art-space",
+    themeType: "gallery",
+    title: "서면 전포 카페거리 아트스페이스 : 골목 속 숨은 독립 갤러리와 문화살롱",
+    region: "부산",
+    subRegion: "부산진구",
+    venueName: "전포 아트스페이스 & 복합문화공간",
+    address: "부산광역시 부산진구 동성로 25 (전포동)",
+    period: "화~일 11:00 ~ 20:00",
+    price: "무료",
+    category: "감성 갤러리",
+    tags: ["부산갤러리", "전포카페거리", "서면핫플", "독립예술", "아트스페이스", "부산주말데이트"],
+    photoKeywords: "urban art space hipster gallery coffee indie cafe",
+    summary: "트렌디한 전포동 카페골목 사이 숨겨진 감각적인 독립 갤러리! 개성 넘치는 청년 작가들의 작품과 스페셜티 커피를 함께 즐기는 도심 속 예술 쉼터.",
+    nearbySpots: ["전포사잇길 감성카페", "서면 만취골목", "부산시민공원", "송상현광장"]
+  },
+  {
+    slug: "gallery-busan-yeongdo-park-culture",
+    themeType: "gallery",
+    title: "영도 피아크(P.ARK) 복합문화공간 : 오션뷰 라운지와 감성 기획전",
+    region: "부산",
+    subRegion: "영도구",
+    venueName: "피아크 (P.ARK) 2·3층 복합문화전시장",
+    address: "부산광역시 영도구 해양로 195",
+    period: "매일 10:00 ~ 23:00",
+    price: "무료 (전시에 따라 상이)",
+    category: "감성 갤러리",
+    tags: ["부산복합문화공간", "영도피아크", "부산항오션뷰", "영도핫플", "가을바다", "주말나들이"],
+    photoKeywords: "large modern culture complex maritime architecture sea view",
+    summary: "초대형 통창 너머로 부산항의 웅장한 바다 풍경이 펼쳐지는 복합예술 플랫폼! 베이커리 카페와 야외 인조잔디 광장, 기획 전시를 한곳에서 만납니다.",
+    nearbySpots: ["흰여울문화마을", "태종대 유원지", "깡깡이예술마을", "청학배수지전망대"]
+  },
+  {
+    slug: "gallery-namhae-space-mijo",
+    themeType: "gallery",
+    title: "남해 스페이스 미조 : 옛 냉동창고의 부활, 남해안 재생 문화예술 플랫폼",
+    region: "경남",
+    subRegion: "남해군",
+    venueName: "스페이스 미조 (Space Mijo)",
+    address: "경상남도 남해군 미조면 미조로 2",
+    period: "화~일 11:00 ~ 19:00 (월요일 휴무)",
+    price: "무료",
+    category: "감성 갤러리",
+    tags: ["경남문화공간", "남해여행", "스페이스미조", "재생건축", "미조항", "남해바다"],
+    photoKeywords: "industrial architecture art gallery sea harbor namhae",
+    summary: "남해 끝자락 미조항의 버려진 수협 냉동창고가 세련된 복합문화공간으로 재탄생! 남해 바다의 파도 소리와 함께 현대미술, 전시, 로컬 미식을 만나는 힐링 스팟.",
+    nearbySpots: ["미조항 해안산책로", "송정솔바람해수욕장", "설리 스카이워크", "독일마을"]
+  },
+
+  // --- [테마 2: 5일장 & 전통시장 먹거리 투어] ---
+  {
+    slug: "market-hadong-hwagae-autumn",
+    themeType: "market",
+    title: "하동 화개장터 5일장 가을 미식 기행 : 지리산 약초와 섬진강 재첩의 정겨운 만남",
+    region: "경남",
+    subRegion: "하동군",
+    venueName: "하동 화개장터 (1·6일 5일장 및 상설)",
+    address: "경상남도 하동군 화개면 쌍계로 15",
+    period: "매월 1, 6, 11, 16, 21, 26일 (상설 매일 운영)",
+    price: "무료 입장",
+    category: "전통시장 나들이",
+    tags: ["경남전통시장", "하동화개장터", "5일장", "섬진강재첩국", "지리산약초", "하동가을여행"],
+    photoKeywords: "traditional korean market outdoor market street food",
+    summary: "영호남의 화합을 상징하는 대한민국 대표 장터 화개장터! 지리산 산나물과 구수한 수수부꾸미, 시원한 섬진강 재첩진국을 맛보는 가을 로컬 장터 투어.",
+    nearbySpots: ["쌍계사 십리벚꽃길", "최참판댁 (박경리문학관)", "화개천 계곡", "하동 송림공원"]
+  },
+  {
+    slug: "market-ulsan-namchang-onggi",
+    themeType: "market",
+    title: "울산 남창옹기종기시장 5일장 : 100년 전통의 소머리국밥과 옹기마을 장터 나들이",
+    region: "울산",
+    subRegion: "울주군",
+    venueName: "남창옹기종기시장 (3·8일 5일장)",
+    address: "울산광역시 울주군 온양읍 남창2길 8-8",
+    period: "매월 3, 8, 13, 18, 23, 28일",
+    price: "무료 입장",
+    category: "전통시장 나들이",
+    tags: ["울산전통시장", "남창옹기종기시장", "울산5일장", "남창소머리국밥", "외고산옹기마을", "울주여행"],
+    photoKeywords: "korean traditional market rural bustling street soup",
+    summary: "남창역 바로 앞, 동해남부선 기차를 타고 떠나는 활기찬 100년 전통 5일장! 진한 소머리국밥 한 뚝배기와 외고산 옹기마을 연계 가을 나들이 코스.",
+    nearbySpots: ["외고산 옹기마을", "간절곶 등대", "진하해수욕장 & 명선도", "서생포왜성"]
+  },
+  {
+    slug: "market-miryang-arirang-autumn",
+    themeType: "market",
+    title: "밀양 아리랑시장 5일장 : 국보 영남루 아래서 맛보는 원조 돼지국밥과 메밀묵",
+    region: "경남",
+    subRegion: "밀양시",
+    venueName: "밀양 아리랑시장 (2·7일 5일장)",
+    address: "경상남도 밀양시 상설시장3길 18",
+    period: "매월 2, 7, 12, 17, 22, 27일 (상설 매일 운영)",
+    price: "무료 입장",
+    category: "전통시장 나들이",
+    tags: ["경남전통시장", "밀양아리랑시장", "밀양5일장", "밀양돼지국밥", "영남루", "가을장터"],
+    photoKeywords: "traditional market food alley pork soup bustling stalls",
+    summary: "조선 시대부터 이어져 온 500년 전통의 영남 대표 장터! 국보 영남루 산책 후 맛보는 토렴식 밀양 돼지국밥과 손 메밀묵의 구수한 미식 여행.",
+    nearbySpots: ["밀양 영남루 (국보)", "밀양강 둔치 산책로", "위양지", "밀양 관아"]
+  },
+  {
+    slug: "market-busan-jagalchi-nampo",
+    themeType: "market",
+    title: "부산 자갈치시장 & 국제시장 가을 나들이 : 싱싱한 해산물과 부산 근현대 골목 투어",
+    region: "부산",
+    subRegion: "중구",
+    venueName: "부산 자갈치시장 및 남포동 비프광장",
+    address: "부산광역시 중구 자갈치해안로 52",
+    period: "매일 05:00 ~ 22:00 (첫째·셋째 화요일 휴무)",
+    price: "무료 입장",
+    category: "전통시장 나들이",
+    tags: ["부산전통시장", "자갈치시장", "국제시장", "남포동비프광장", "부산먹거리", "부산가을여행"],
+    photoKeywords: "seafood market fish stalls bustling harbor busan",
+    summary: "살아 숨 쉬는 부산의 활력소 자갈치시장! 남포동 비프광장의 씨앗호떡, 국제시장 꽃분이네, 자갈치 옥상 전망대에서 바라보는 영도대교 가을 풍경.",
+    nearbySpots: ["용두산공원 부산타워", "영도대교 (도개행사)", "보수동 책방골목", "자갈치 하늘전망대"]
+  },
+
+  // --- [테마 3: 특화 도서관 & 가족 북캉스] ---
+  {
+    slug: "library-busan-sasang-main",
+    themeType: "library",
+    title: "부산도서관 가을 북캉스 : 웅장한 서가와 미디어아트, 숲속 테라스가 있는 책의 성전",
+    region: "부산",
+    subRegion: "사상구",
+    venueName: "부산도서관 본관",
+    address: "부산광역시 사상구 사상로310번길 33 (덕포동)",
+    period: "화~일 09:00 ~ 22:00 (월요일 휴관)",
+    price: "무료 (도서 대출 무료)",
+    category: "도서관 북캉스",
+    tags: ["부산도서관", "북캉스", "복합문화공간", "가족나들이", "어린이도서관", "가을독서"],
+    photoKeywords: "modern public library interior wooden book shelves reading",
+    summary: "부산 최고 규모를 자랑하는 지식과 문화의 랜드마크! 감각적인 인테리어 서가, 미디어아트 갤러리, 아이들을 위한 꿈뜨락 어린이실과 옥상 하늘정원 산책.",
+    nearbySpots: ["삼락생태공원 갈대숲", "사상인디스테이션", "백양산 숲길", "사상 명품가로공원"]
+  },
+  {
+    slug: "library-gimhae-sea-of-wisdom",
+    themeType: "library",
+    title: "김해 지혜의바다도서관 : 폐교의 화려한 변신, 웅장한 테트리스 서가와 문화 살롱",
+    region: "경남",
+    subRegion: "김해시",
+    venueName: "김해 지혜의바다도서관",
+    address: "경상남도 김해시 주촌면 서부로 1492",
+    period: "매일 09:00 ~ 18:00 (어린이실 별도)",
+    price: "무료",
+    category: "도서관 북캉스",
+    tags: ["경남도서관", "김해지혜의바다", "폐교재생", "이색도서관", "아이와가볼만한곳", "김해주말나들이"],
+    photoKeywords: "magnificent large bookshelf library interior architecture cozy",
+    summary: "버려진 폐교 체육관이 거대한 책의 바다로 탈바꿈한 경남 대표 특화 도서관! 웅장한 벽면 서가와 편안한 빈백 소파, 다채로운 인형극과 북토크가 가득합니다.",
+    nearbySpots: ["연지공원 음악분수", "국립김해박물관", "김해 수로왕릉", "클레이아크김해미술관"]
+  },
+  {
+    slug: "library-ulsan-city-library",
+    themeType: "library",
+    title: "울산도서관 가을 인문학 산책 : 여천천 물길 옆 친환경 복합문화 도서관",
+    region: "울산",
+    subRegion: "남구",
+    venueName: "울산도서관",
+    address: "울산광역시 남구 꽃대나리로 140",
+    period: "화~일 09:00 ~ 18:00 (월요일 휴관)",
+    price: "무료",
+    category: "도서관 북캉스",
+    tags: ["울산도서관", "울산북캉스", "여천천", "어린이자료실", "인문학산책", "가을힐링"],
+    photoKeywords: "large modern public library open space peaceful architecture",
+    summary: "고래의 고장 울산의 기상을 담은 웅장한 건축미와 여천천 생태하천 전망을 품은 대표 도서관! 가을바람 맞으며 책 한 권과 함께하는 도심 속 진정한 쉼터.",
+    nearbySpots: ["여천천 생태산책로", "울산박물관", "울산대공원 장미원", "선암호수공원"]
+  },
+
+  // --- [테마 4: 계절 힐링로드 & 감성 드라이브] ---
+  {
+    slug: "healing-changnyeong-upo-wetland",
+    themeType: "healing",
+    title: "창녕 우포늪 가을 생태 힐링로드 : 1억 4천만 년 태고의 신비와 물안개 갈대숲 걷기",
+    region: "경남",
+    subRegion: "창녕군",
+    venueName: "우포늪 생태공원 & 탐방로",
+    address: "경상남도 창녕군 유어면 우포늪길 220",
+    period: "연중무휴 (자전거 대여 운영)",
+    price: "무료 입장",
+    category: "계절 힐링로드",
+    tags: ["경남힐링로드", "창녕우포늪", "람사르습지", "가을갈대", "생태관광", "당일치기드라이브"],
+    photoKeywords: "natural wetland morning mist reeds lake reflection nature",
+    summary: "국내 최대의 자연 늪지 우포늪! 황금빛으로 물드는 가을 갈대와 은빛 억새, 따오기의 날갯짓과 새벽 물안개가 선사하는 자연 그대로의 평온한 힐링 로드.",
+    nearbySpots: ["우포생태촌", "산토끼노래동산", "창녕 교동과 송현동 고분군", "화왕산 군립공원"]
+  },
+  {
+    slug: "healing-miryang-wiyangji-autumn",
+    themeType: "healing",
+    title: "밀양 위양지 가을 감성 산책 : 완재정 연못에 비친 고즈넉한 단풍과 반영의 미학",
+    region: "경남",
+    subRegion: "밀양시",
+    venueName: "밀양 위양지 (위양못)",
+    address: "경상남도 밀양시 부북면 위양리 294",
+    period: "연중무휴 상시 개방",
+    price: "무료",
+    category: "계절 힐링로드",
+    tags: ["경남힐링로드", "밀양위양지", "완재정", "단풍명소", "반영사진핫플", "가을드라이브"],
+    photoKeywords: "korean traditional pavilion lake reflection autumn trees serene",
+    summary: "신라 시대에 축조된 유서 깊은 저수지 위양지! 연못 한가운데 떠 있는 고즈넉한 정자 완재정과 물가에 드리운 붉은 단풍, 고요한 수면 위를 걷는 감성 힐링 산책.",
+    nearbySpots: ["밀양아리랑우주천문대", "영남루", "밀양 연극촌", "표충사 단풍숲"]
+  },
+  {
+    slug: "healing-geoje-windy-hill-autumn",
+    themeType: "healing",
+    title: "거제 바람의 언덕 & 신선대 오션로드 : 쪽빛 남해 바다와 이국적인 풍차 언덕 드라이브",
+    region: "경남",
+    subRegion: "거제시",
+    venueName: "거제 바람의 언덕 및 신선대",
+    address: "경상남도 거제시 남부면 갈곶리 산14-47",
+    period: "연중무휴 상시 개방",
+    price: "무료",
+    category: "계절 힐링로드",
+    tags: ["경남힐링로드", "거제바람의언덕", "거제드라이브", "신선대", "남해안오션뷰", "가을여행"],
+    photoKeywords: "green coastal hill windmill sea view ocean rocks sunny",
+    summary: "에메랄드빛 남해 바다가 시원하게 내려다보이는 거제 제일의 뷰포인트! 이국적인 대형 풍차 언덕과 기암괴석 신선대, 해금강을 잇는 명품 가을 드라이브 코스.",
+    nearbySpots: ["거제 해금강", "도장포 유람선선착장", "구조라해수욕장", "여차홍포 해안도로"]
+  }
+];
+
+// 네이버 API HUB 이미지 검색 단일 쿼리 호출 함수 (충분한 후보 확보 및 엄격한 품질 필터링 적용)
+async function fetchNaverImages(query, count = 10) {
   if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) return [];
   const cleanQuery = query.replace(/\(.*?\)/g, "").replace(/&/g, " ").trim();
   const hubUrl = `https://naverapihub.apigw.ntruss.com/search/v1/image?query=${encodeURIComponent(cleanQuery)}&display=${count}&sort=sim&filter=all`;
@@ -798,20 +1039,58 @@ async function fetchNaverImages(query, count = 2) {
     "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
   };
 
+  // 신뢰성을 떨어뜨리는 저품질/무관 이미지 배제 블랙리스트
+  const blockedDomains = [
+    "googleusercontent.com",
+    "yes24.com",
+    "aladin.co.kr",
+    "kyobobook.co.kr",
+    "newsro.kr",
+    "yt3.ggpht.com"
+  ];
+
+  const blockedWords = [
+    "포스터", "현수막", "표지", "도서", "공고", "모집", "사건", "사고", "부고",
+    "기자", "신문", "뉴스", "로고", "캐릭터", "배너", "책", "단행본", "인터뷰", "부검"
+  ];
+
+  // 과거 구형 뉴스 자료 배제 (2010~2023 구형 뉴스 사진)
+  const outdatedYears = [
+    "/2010/", "/2011/", "/2012/", "/2013/", "/2014/", "/2015/",
+    "/2016/", "/2017/", "/2018/", "/2019/", "/2020/", "/2021/", "/2022/", "/2023/"
+  ];
+
   try {
     const res = await fetch(hubUrl, { headers: baseHeaders });
     if (!res.ok) return [];
     const data = await res.json();
-    return (data.items || []).map(item => {
+    const items = data.items || [];
+
+    const validPhotos = [];
+    for (const item of items) {
+      const link = item.link || "";
       const rawTitle = (item.title || "").replace(/<[^>]*>?/gm, "").trim();
-      const secureUrl = item.link.startsWith("https://")
-        ? item.link
-        : `https://search.pstatic.net/common/?src=${encodeURIComponent(item.link)}`;
-      return {
+
+      // 1. 도메인 필터
+      if (blockedDomains.some(d => link.includes(d))) continue;
+
+      // 2. 과거 구형 뉴스 연도 필터
+      if (outdatedYears.some(yr => link.includes(yr))) continue;
+
+      // 3. 키워드 필터
+      if (blockedWords.some(w => rawTitle.includes(w) || link.toLowerCase().includes(w))) continue;
+
+      const secureUrl = link.startsWith("https://")
+        ? link
+        : `https://search.pstatic.net/common/?src=${encodeURIComponent(link)}`;
+
+      validPhotos.push({
         url: secureUrl,
         alt: rawTitle || cleanQuery
-      };
-    });
+      });
+    }
+
+    return validPhotos;
   } catch (err) {
     console.warn(`⚠️ 네이버 이미지 수집 실패 [${query}]:`, err.message);
     return [];
@@ -837,9 +1116,10 @@ function getSeasonInfo(dateStr) {
   }
 }
 
-// 3. 실제 해당 지역/장소와 계절(봄/여름/가을/겨울)을 네이버에서 정밀 매칭 수집하는 함수
-async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr) {
+// 3. 실제 해당 지역/장소와 계절(봄/여름/가을/겨울)을 네이버에서 정밀 매칭 수집하는 함수 (글·이미지 무중복 제1원칙 적용)
+async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalUsedImages = new Set()) {
   const photos = [];
+  const localUsedUrls = new Set();
   const season = getSeasonInfo(dateStr);
   const cleanVenue = (exhibition.venueName || exhibition.location || "")
     .replace(/\s*(제?\d+[·,\-~0-9]*전시장|전관|돔하우스|석천홀|비프힐.*|미술관\s*$)/g, "")
@@ -847,80 +1127,88 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr) {
     .split(" (")[0]
     .trim();
 
-  console.log(`📸 [네이버 정밀 매칭 시작] 장소: ${cleanVenue} | 계절: ${season.name} (${season.desc})`);
+  console.log(`📸 [제1원칙: 이미지 무중복 정밀 수집] 장소: ${cleanVenue} | 계절: ${season.name} (${season.desc})`);
+
+  // 중복 이미지 원천 배제 헬퍼 (과거 포스트 사용 URL 및 현재 글 내 중복 절대 차단)
+  function selectUniquePhoto(candidates, defaultAlt) {
+    if (!candidates || candidates.length === 0) return null;
+    
+    // 1순위: 이전 글에서도 전혀 사용되지 않았고, 이번 글에서도 처음 쓰이는 사진
+    for (const c of candidates) {
+      if (!globalUsedImages.has(c.url) && !localUsedUrls.has(c.url)) {
+        localUsedUrls.add(c.url);
+        globalUsedImages.add(c.url);
+        return { url: c.url, alt: defaultAlt || c.alt };
+      }
+    }
+
+    // 2순위: 최소한 이번 글 내부에서 중복되지 않는 사진
+    for (const c of candidates) {
+      if (!localUsedUrls.has(c.url)) {
+        localUsedUrls.add(c.url);
+        return { url: c.url, alt: defaultAlt || c.alt };
+      }
+    }
+
+    return null;
+  }
 
   // 검색 헬퍼: 계절 키워드 우선 검색 후 필요시 일반 검색 폴백
-  async function searchSeasonPlace(baseQuery, count = 2) {
+  async function searchSeasonPlace(baseQuery, count = 8) {
     const seasonQuery = `${baseQuery} ${season.keyword}`;
     let res = await fetchNaverImages(seasonQuery, count);
     if (res.length === 0) {
-      // 계절 키워드로 결과가 없으면 기본 장소명으로 재검색
       res = await fetchNaverImages(baseQuery, count);
     }
     return res;
   }
 
   // 1) 대표 전시장 / 전시 공간 실제 사진 (장소 + 계절)
-  const venueImgs = await searchSeasonPlace(`${exhibition.region} ${cleanVenue}`, 2);
-  if (venueImgs[0]) {
-    photos.push({
-      url: venueImgs[0].url,
-      alt: `${exhibition.venueName || cleanVenue} ${season.name} 전경 및 전시 공간`
-    });
-  }
+  const venueImgs = await searchSeasonPlace(`${exhibition.region} ${cleanVenue}`, 8);
+  const photo1 = selectUniquePhoto(venueImgs, `${exhibition.venueName || cleanVenue} ${season.name} 전경 및 전시 공간`);
+  if (photo1) photos.push(photo1);
 
   // 2) 주변 대표 명소 1번 실제 현장 사진 (장소 + 계절 연계: 예: 상림공원 가을, 충익사 가을)
   const spot1 = (exhibition.nearbySpots && exhibition.nearbySpots[0]) || cleanVenue;
-  const spot1Imgs = await searchSeasonPlace(spot1, 2);
-  if (spot1Imgs[0]) {
-    photos.push({
-      url: spot1Imgs[0].url,
-      alt: `${spot1}의 아름다운 ${season.name} 실제 풍경`
-    });
-  }
+  const spot1Imgs = await searchSeasonPlace(spot1, 8);
+  const photo2 = selectUniquePhoto(spot1Imgs, `${spot1}의 아름다운 ${season.name} 실제 풍경`);
+  if (photo2) photos.push(photo2);
 
   // 3) 주변 인기 맛집 / 감성 카페 실제 사진 (현장 플레이스 매칭)
   const foodSpot = (naverData.localRestaurants && naverData.localRestaurants[0]?.title) || `${cleanVenue} 맛집 카페`;
-  const foodImgs = await fetchNaverImages(foodSpot, 2);
-  if (foodImgs[0]) {
-    photos.push({
-      url: foodImgs[0].url,
-      alt: `${foodSpot} 대표 미식 & 감성 공간`
-    });
-  }
+  const foodImgs = await fetchNaverImages(foodSpot, 8);
+  const photo3 = selectUniquePhoto(foodImgs, `${foodSpot} 대표 미식 & 감성 공간`);
+  if (photo3) photos.push(photo3);
 
   // 4) 주변 대표 명소 2번 실제 사진 (고택/자연/산책로 + 계절: 예: 개평한옥마을 일두고택 가을)
   const spot2 = (exhibition.nearbySpots && exhibition.nearbySpots[1]) || `${exhibition.region} ${season.name} 명소`;
-  const spot2Imgs = await searchSeasonPlace(spot2, 2);
-  if (spot2Imgs[0]) {
-    photos.push({
-      url: spot2Imgs[0].url,
-      alt: `${spot2} 고즈넉한 ${season.name} 정취`
-    });
-  }
+  const spot2Imgs = await searchSeasonPlace(spot2, 8);
+  const photo4 = selectUniquePhoto(spot2Imgs, `${spot2} 고즈넉한 ${season.name} 정취`);
+  if (photo4) photos.push(photo4);
 
   // 5) 추가 전시 안내 / 연계 문화 공간 사진 보강
-  if (venueImgs[1]) {
-    photos.push({
-      url: venueImgs[1].url,
-      alt: `${exhibition.title} ${season.name} 전시 안내 풍경`
-    });
-  }
+  const photo5 = selectUniquePhoto(venueImgs, `${exhibition.title} ${season.name} 전시 안내 풍경`);
+  if (photo5) photos.push(photo5);
 
   // 안전장치: 네이버 검색으로 3장 미만 확보된 경우에만 Pexels로 보강
   if (photos.length < 3 && PEXELS_API_KEY) {
     try {
-      const pexelsRes = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(exhibition.photoKeywords || "korean gallery culture")}&per_page=3&orientation=landscape`, {
+      const pexelsRes = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(exhibition.photoKeywords || "korean gallery culture")}&per_page=6&orientation=landscape`, {
         headers: { Authorization: PEXELS_API_KEY }
       });
       if (pexelsRes.ok) {
         const pData = await pexelsRes.json();
         for (const p of pData.photos || []) {
           if (photos.length >= 4) break;
-          photos.push({
-            url: p.src.large2x || p.src.large || p.src.original,
-            alt: `부울경 ${season.name} 문화예술 및 나들이`
-          });
+          const pUrl = p.src.large2x || p.src.large || p.src.original;
+          if (!globalUsedImages.has(pUrl) && !localUsedUrls.has(pUrl)) {
+            localUsedUrls.add(pUrl);
+            globalUsedImages.add(pUrl);
+            photos.push({
+              url: pUrl,
+              alt: `부울경 ${season.name} 문화예술 및 나들이`
+            });
+          }
         }
       }
     } catch {
@@ -928,7 +1216,7 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr) {
     }
   }
 
-  // 최종 기본 안전 이미지
+  // 최종 기본 안전 이미지 (극단적 예외 대비)
   if (photos.length === 0) {
     photos.push({
       url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -936,7 +1224,7 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr) {
     });
   }
 
-  console.log(`✅ [장소+계절 정밀 매칭 완료] 총 ${photos.length}장의 ${season.name} 현장 사진 확보`);
+  console.log(`✅ [장소+계절 정밀 매칭 & 무중복 통과] 총 ${photos.length}장의 고유한 현장 사진 확보`);
   return photos;
 }
 
@@ -972,25 +1260,94 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
     ? localEvents.map((e, i) => `  ${i+1}. ${e.title} (${e.description})`).join("\n")
     : "네이버 주변 문화 축제 정보 없음";
 
-  const prompt = `
-너는 '부울경(부산, 울산, 경남) 아트·전시 나들이' 웹사이트의 최고 수석 큐레이터이자 다정하고 박학다식한 **AI 도슨트**야.
-관람객이 이번 주말 당장 전시를 보러 떠나고 싶어지도록, **전시 작품 해설 + 네이버 실시간 맛집 & 카페 + 주변 볼거리 핫플 + 지역 축제/행사 소식**을 매우 풍부하고 감성 넘치게 작성해줘.
+  // 테마별 큐레이터 페르소나 및 작성 지침 분기
+  const themeType = exhibition.themeType || "exhibition";
+  
+  let roleTitle = "최고 수석 큐레이터이자 다정하고 박학다식한 **AI 도슨트**";
+  let contentGuide = "";
 
-### [전시 기본 정보]
-- 전시명: ${exhibition.title}
-- 지역: ${exhibition.region} (${exhibition.subRegion})
+  if (themeType === "market") {
+    roleTitle = "부울경 정겨운 오일장과 골목 미식을 꿰뚫고 있는 **전통시장 전문 로컬 큐레이터**";
+    contentGuide = `
+- **도입부**: 장날의 설렘과 북적이는 활기, 계절의 싱그러운 공기를 전하는 친근하고 따뜻한 인사
+- **첫 번째 대표 시장 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 시장 핵심 정보 한눈에 보기**: 마크다운 표 형식 (시장명, 장날/운영일, 위치, 대표 품목, 주차, 편의시설 등)
+- **🔥 오일장에서 절대 놓칠 수 없는 대표 먹거리 TOP 3**: 장터 국밥, 손칼국수, 즉석 튀김, 제철 수산물/산나물 등 군침 도는 생생한 묘사. 중간에 두 번째 현장 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **☕ 시장 옆 감성 카페 & 디저트 쉼표**: 네이버 검색 데이터에 있는 인근 카페/맛집 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
+- **🧺 장바구니 가득! 추천 로컬 특산물 & 온누리상품권 꿀팁**: 장터 알뜰 쇼핑 팁.
+- **🎡 시장 보고 들르기 좋은 주변 명소 & 나들이 코스**: 네이버 볼거리 및 주변 관광지 연계. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **💡 알뜰 방문 & 주차 꿀팁**: 주차장 위치, 현금/상품권 결제 팁, 장날 피크 시간대.
+- **따뜻한 마무리 멘트**: 주말 가족, 연인과 함께 떠나는 정겨운 장터 나들이 초대.`;
+  } else if (themeType === "library") {
+    roleTitle = "책과 쉼, 공간의 미학을 전하는 **북캉스 & 문화공간 전문 큐레이터**";
+    contentGuide = `
+- **도입부**: 은은한 종이 향기와 사색의 여유, 가을의 정취를 담은 감성적이고 지적인 인사
+- **첫 번째 대표 도서관 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 도서관 핵심 정보 한눈에 보기**: 마크다운 표 형식 (도서관명, 이용시간, 휴관일, 위치, 특화 분야, 주차 등)
+- **✨ 이 도서관만의 특별한 공간 매력 TOP 3**: 웅장한 서가 뷰, 통창 뷰, 미디어아트, 건축적 미학 등 세부 소개. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **👶 아이와 함께! 유아·어린이 특화 북플레이존 꿀팁**: 가족 단위 방문객을 위한 편의시설과 추천 도서 코너.
+- **☕ 책 읽다 들르기 좋은 도서관 안팎 감성 카페 & 브런치**: 네이버 검색 기반 인근 맛집/카페 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
+- **🌿 도서관 산책로 & 함께 걷기 좋은 주변 힐링 스팟**: 주변 공원, 숲길, 문화공간 연계. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **💡 이용 꿀팁 & 주차 안내**: 회원가입/열람 팁, 대출 권수, 주차 팁.
+- **따뜻한 마무리 멘트**: 복잡한 일상을 벗어나 책 한 권과 함께하는 주말의 여유 권유.`;
+  } else if (themeType === "healing") {
+    roleTitle = "계절의 숨결과 로컬 힐링로드를 안내하는 **자연 감성 여행 도슨트**";
+    contentGuide = `
+- **도입부**: 코끝을 스치는 바람과 계절의 색채, 지친 마음에 쉼표를 찍어주는 서정적 인사
+- **첫 번째 대표 힐링로드 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 힐링 여행지 핵심 정보 한눈에 보기**: 마크다운 표 형식 (명소명, 위치, 개방시간, 코스 난이도, 입장료, 주차 등)
+- **📸 가을 낭만 가득! 인생샷 & 힐링 포인트 TOP 3**: 감성 포토존, 물안개/노을 조망점, 자연 산책길 묘사. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **🍽️ 금강산도 식후경! 힐링로드 주변 로컬 맛집 & 뷰맛집 카페**: 네이버 검색 기반 현지 맛집과 전망 좋은 카페 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
+- **🚗 당일치기 완성! 추천 드라이브 & 연계 코스**: 주변 명소들을 엮은 완벽한 당일치기 일정. 네 번째 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **💡 감성 나들이 꿀팁**: 걷기 편한 복장, 최적의 방문 시간대(일출/일몰), 주차 팁.
+- **따뜻한 마무리 멘트**: 소중한 사람과 함께 걸으며 마음을 채우는 힐링 여정 제안.`;
+  } else if (themeType === "gallery") {
+    roleTitle = "숨겨진 예술적 영감과 공간의 결을 읽어주는 **아트 스페이스 전문 디렉터**";
+    contentGuide = `
+- **도입부**: 골목길 속 숨겨진 예술의 향기와 트렌디한 공간의 미학을 전하는 세련된 인사
+- **첫 번째 대표 갤러리 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 갤러리 핵심 정보 한눈에 보기**: 마크다운 표 형식 (공간명, 위치, 관람시간, 휴관일, 입장료, 주차 등)
+- **🎨 이 공간이 선사하는 영감 포인트 TOP 3**: 건축 디자인, 기획전 콘셉트, 개성 넘치는 전시 작품 해설. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **☕ 예술과 커피의 만남! 아트 카페 & 로컬 핫플레이스**: 갤러리 내/인근 스페셜티 카페와 디저트 맛집 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
+- **🚶 예술 골목 투어 & 주변 힙플레이스 연계 코스**: 네이버 볼거리 및 편집숍/소품샵/산책로 연계. 네 번째 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **💡 방문 & 감상 꿀팁**: 전시 관람 매너, 도슨트 프로그램, 주차 및 대중교통 팁.
+- **따뜻한 마무리 멘트**: 일상에 신선한 감각을 불어넣는 예술 나들이 초대.`;
+  } else {
+    // 기존 정통 전시 모드
+    contentGuide = `
+- **도입부**: 'AI 도슨트'의 다정한 인사와 계절감, 전시장소의 분위기 소개
+- **첫 번째 대표 전시 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 기간, 장소, 관람시간, 휴관일, 관람료, 문의 등)
+- **🌟 놓칠 수 없는 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 도슨트 해설. 중간에 두 번째 전시 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **🍽️ 전시장 주변 핫플레이스 맛집 & 감성 카페 BEST**: 네이버 검색 데이터에 있는 실제 맛집/카페 상호명과 특징을 소개하고, 세 번째 감성 카페/미식 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치!
+- **🧺 미술관 옆 정겨운 전통시장 & 5일장 장터 나들이**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 전통 재래시장 및 5일장 장날 정보, 대표 장터 먹거리와 연계 힐링 코스 소개!
+- **📚 아이와 함께! 미술관 옆 도서관 & 쌈지 작은도서관 쉼표**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 복합문화도서관이나 감성 작은도서관, 북플레이존과 가족 힐링 포인트 소개!
+- **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치!
+- **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내.
+- **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트.
+- **따뜻한 마무리 멘트**.`;
+  }
+
+  const prompt = `
+너는 '부울경(부산, 울산, 경남) 아트·전시·문화 나들이' 웹사이트의 최고 수석 에디터이자 ${roleTitle}야.
+독자가 이번 주말 당장 이곳으로 훌쩍 떠나고 싶어지도록, **장소 해설 + 네이버 실시간 맛집/카페 + 주변 볼거리 핫플 + 지역 소식**을 매우 풍부하고 감성 넘치게 작성해줘.
+
+### [소재 기본 정보]
+- 테마 분류: ${exhibition.category || '문화 나들이'} (${themeType})
+- 명칭/제목: ${exhibition.title}
+- 지역: ${exhibition.region} (${exhibition.subRegion || ''})
 - 장소: ${exhibition.venueName} (${exhibition.address})
-- 기간: ${exhibition.period}
-- 관람료: ${exhibition.price}
+- 운영/장날: ${exhibition.period}
+- 이용료: ${exhibition.price}
 - 요약: ${exhibition.summary}
 - 추천 태그: ${exhibition.tags.join(", ")}
 
 ### [네이버 실시간 검색 빅데이터]
-- 1. 실제 네이버 블로그 관람객 생생 후기:
+- 1. 실제 네이버 블로그 생생 후기:
 ${naverBlogContext}
-- 2. 전시장 주변 네이버 인기 맛집 & 감성 카페:
+- 2. 주변 네이버 인기 맛집 & 감성 카페:
 ${naverFoodContext}
-- 3. 전시장 주변 네이버 추천 볼거리 & 핫플레이스:
+- 3. 주변 네이버 추천 볼거리 & 핫플레이스:
 ${naverSpotContext}
 - 4. 주변 최신 문화 예술 행사 & 축제 소식:
 ${naverEventContext}
@@ -1004,25 +1361,14 @@ ${photos.map((p, idx) => `${idx + 1}. URL: ${p.url} (테마 설명: ${p.alt})`).
 title: "${exhibition.title}"
 date: "${dateStr}"
 summary: "${exhibition.summary}"
-category: "전시 리뷰"
+category: "${exhibition.category || '전시 리뷰'}"
 tags: [${exhibition.tags.map(t => `"${t}"`).join(", ")}]
 region: "${exhibition.region}"
 eventId: "${exhibition.slug}"
 thumbnail: "${photos[0]?.url || ''}"
 ---
 
-2. 본문 구성 (매우 중요):
-- **도입부**: 'AI 도슨트'의 다정한 인사와 계절감, 전시장소의 분위기 소개
-- **첫 번째 대표 전시 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
-- **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 기간, 장소, 관람시간, 휴관일, 관람료, 문의 등)
-- **🌟 놓칠 수 없는 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 도슨트 해설. 중간에 두 번째 전시 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
-- **🍽️ 전시장 주변 핫플레이스 맛집 & 감성 카페 BEST**: 네이버 검색 데이터에 있는 실제 맛집/카페 상호명과 특징을 소개하고, 세 번째 감성 카페/미식 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치!
-- **🧺 미술관 옆 정겨운 전통시장 & 5일장 장터 나들이**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 전통 재래시장 및 5일장 장날 정보, 대표 장터 먹거리(국밥, 손국수, 전통 떡, 수산물 등)와 연계 장터 힐링 코스 소개!
-- **📚 아이와 함께! 미술관 옆 도서관 & 쌈지 작은도서관 쉼표**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 복합문화도서관이나 감성 쌈지·숲속 작은도서관, 아이들을 위한 북플레이존과 가족 힐링 포인트 소개!
-- **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치!
-- **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내.
-- **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트.
-- **따뜻한 마무리 멘트**.
+2. 본문 구성 가이드라인:${contentGuide}
 
 3. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).
 `;
@@ -1067,7 +1413,6 @@ thumbnail: "${photos[0]?.url || ''}"
       let generatedText = result.candidates?.[0]?.content?.parts?.[0]?.text || "";
       
       if (generatedText) {
-        // 마크다운 코드 블록 래핑 제거 (있을 경우)
         if (generatedText.startsWith("```markdown")) {
           generatedText = generatedText.slice(11);
         } else if (generatedText.startsWith("```")) {
@@ -1090,9 +1435,9 @@ thumbnail: "${photos[0]?.url || ''}"
   throw lastError || new Error("모든 Gemini 모델 호출에 실패했습니다.");
 }
 
-// 5. 2단계 철저 중복 검증 및 메인 실행 루틴
+// 5. 듀얼 슬롯(오전 정통전시 / 오후 4대테마) & 2단계 철저 중복 검증 메인 실행 루틴
 async function main() {
-  console.log("🚀 [AI 자동 포스팅] 부울경 전시 글 생성 시작 (2단계 철저 중복 검증 모드)...");
+  console.log("🚀 [AI 자동 포스팅 고도화 엔진] 부울경 듀얼 슬롯 자동 발행 시작...");
   const postsDir = path.join(rootDir, "src", "content", "posts");
   if (!fs.existsSync(postsDir)) {
     fs.mkdirSync(postsDir, { recursive: true });
@@ -1100,29 +1445,44 @@ async function main() {
 
   const existingFiles = fs.readdirSync(postsDir);
   const targetDateArg = process.argv[2];
+  const requestedSlotArg = process.argv[3]; // 'morning' | 'afternoon' | 'auto'
+
   const today = (targetDateArg && /^\d{4}-\d{2}-\d{2}$/.test(targetDateArg)) ? targetDateArg : getKSTDateString();
 
   // =========================================================================
-  // [1단계 검증] 최근 14일(2주) 쿨다운 & 최장 미작성(LRU) 후보 스마트 선별
+  // [1단계 검증] 기존 발행 내역 분석 및 이미지 블랙리스트 수집
   // =========================================================================
   const lastWrittenMap = new Map();
   const todayWrittenSlugs = new Set();
+  const todayWrittenFiles = [];
   const recent14DaysSlugs = new Set();
 
   const todayTime = new Date(today).getTime();
+  const globalUsedImages = new Set();
 
   for (const file of existingFiles) {
     if (!file.endsWith(".md") || file === ".gitkeep") continue;
+
+    try {
+      const postRaw = fs.readFileSync(path.join(postsDir, file), "utf8");
+      const imgMatches = postRaw.matchAll(/!\[.*?\]\((https?:\/\/[^\s\)]+)\)/g);
+      for (const m of imgMatches) {
+        if (m[1]) globalUsedImages.add(m[1].trim());
+      }
+    } catch {
+      // ignore
+    }
+
     const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
     if (match) {
       const [, postDate, postSlug] = match;
       if (postDate === today) {
         todayWrittenSlugs.add(postSlug);
+        todayWrittenFiles.push({ file, slug: postSlug });
       }
       const postTime = new Date(postDate).getTime();
       const diffDays = Math.floor((todayTime - postTime) / (1000 * 60 * 60 * 24));
       
-      // 최근 14일 이내(0일~13일) 발행된 글은 2주 쿨다운 블랙리스트에 등록
       if (diffDays >= 0 && diffDays < 14) {
         recent14DaysSlugs.add(postSlug);
       }
@@ -1134,62 +1494,84 @@ async function main() {
     }
   }
 
-  console.log(`📊 [1단계 검증 시작] 최근 14일(2주) 이내 발행된 제외 대상: ${recent14DaysSlugs.size}개`);
+  // =========================================================================
+  // 슬롯 결정 (오전: 정통 전시 / 오후: 4대 테마 스마트 순환)
+  // =========================================================================
+  let targetSlot = requestedSlotArg || "auto";
 
-  // 1. 당일 이미 발행된 전시 제외
-  // 2. 최근 14일 이내에 발행된 전시 엄격 제외 (2주 쿨다운 보장)
-  let availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug) && !recent14DaysSlugs.has(ex.slug));
+  if (targetSlot === "auto") {
+    // 자동 판별: 오늘 이미 오전 정통 전시(EXHIBITION_POOL) 글이 있으면 -> 오후 테마로 자동 전환!
+    const hasMorningExhibitionToday = todayWrittenFiles.some(item => 
+      EXHIBITION_POOL.some(ex => ex.slug === item.slug)
+    );
 
-  // 만약 14일 초과 미작성 전시가 부족한 경우, 전체 풀 중 가장 오래전에 소개된 전시 순으로 안전 순환
+    if (hasMorningExhibitionToday) {
+      targetSlot = "afternoon";
+      console.log("💡 [스마트 자동 감지] 오늘 오전 전시 글이 이미 존재하므로 [오후 4대 테마 모드]로 자동 발행합니다.");
+    } else {
+      // 현재 KST 시각 확인 (오후 14시 이후면 오후 모드, 아니면 오전 모드)
+      const nowKstHour = new Date(new Date().getTime() + (9 * 60 + new Date().getTimezoneOffset()) * 60000).getHours();
+      targetSlot = (nowKstHour >= 14) ? "afternoon" : "morning";
+      console.log(`💡 [스마트 자동 감지] 현재 시각(${nowKstHour}시) 기준 [${targetSlot === 'morning' ? '오전 정통 전시' : '오후 4대 테마'}] 모드로 선정되었습니다.`);
+    }
+  }
+
+  console.log(`🎯 [발행 대상 슬롯]: ${targetSlot.toUpperCase()} 모드`);
+  console.log(`📊 [제1원칙 검증] 최근 14일 쿨다운 대상: ${recent14DaysSlugs.size}개, 기사용 이미지 URL: ${globalUsedImages.size}개`);
+
+  // 모드별 후보 풀 분기
+  const candidatePool = (targetSlot === "afternoon") ? AFTERNOON_THEME_POOL : EXHIBITION_POOL;
+
+  // 14일 쿨다운 필터링
+  let availablePool = candidatePool.filter(item => !todayWrittenSlugs.has(item.slug) && !recent14DaysSlugs.has(item.slug));
+
   if (availablePool.length === 0) {
-    console.warn("⚠️ 14일 초과 미작성 전시가 모두 소진되어, 전체 풀 중 가장 오래전에 소개된 전시를 엄격 순환합니다.");
-    availablePool = EXHIBITION_POOL.filter(ex => !todayWrittenSlugs.has(ex.slug));
+    console.warn("⚠️ 14일 초과 미작성 후보가 모두 소진되어, 전체 풀 중 가장 오래전에 소개된 후보를 안전 순환합니다.");
+    availablePool = candidatePool.filter(item => !todayWrittenSlugs.has(item.slug));
   }
 
   if (availablePool.length === 0) {
-    console.error("❌ 오늘 작성 가능한 전시 후보가 없습니다.");
+    console.error("❌ 오늘 작성 가능한 후보가 없습니다.");
     process.exit(1);
   }
 
-  // 각 후보별 경과일수(daysSince) 계산
-  const scoredCandidates = availablePool.map(ex => {
-    const lastDate = lastWrittenMap.get(ex.slug);
+  // LRU 점수 계산 (가장 오랫동안 발행되지 않은 후보 최우선)
+  const scoredCandidates = availablePool.map(item => {
+    const lastDate = lastWrittenMap.get(item.slug);
     const daysSince = lastDate 
       ? Math.floor((todayTime - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24))
       : 99999;
     return {
-      exhibition: ex,
+      item,
       lastDate: lastDate || "미작성(최초)",
       daysSince
     };
   });
 
-  // 점수 순 정렬: daysSince가 큰 순 (가장 오랫동안 작성되지 않은 전시가 최상단)
   scoredCandidates.sort((a, b) => b.daysSince - a.daysSince);
 
-  // 상위 후보 선택 (1순위 최장 미작성 전시)
   const chosen = scoredCandidates[0];
-  const targetExhibition = chosen.exhibition;
+  const targetItem = chosen.item;
 
-  console.log(`✅ [1단계 검증 통과] 1차 선정 전시: [${targetExhibition.region}] ${targetExhibition.title}`);
-  console.log(`   - 마지막 작성일: ${chosen.lastDate} (${chosen.daysSince === 99999 ? '최초 작성' : `${chosen.daysSince}일 전`}) -> 14일 쿨다운 완벽 충족!`);
+  console.log(`✅ [선별 완료] [${targetItem.category || targetSlot}] [${targetItem.region}] ${targetItem.title}`);
+  console.log(`   - 마지막 작성일: ${chosen.lastDate} (${chosen.daysSince === 99999 ? '최초 작성' : `${chosen.daysSince}일 전`}) -> 14일 쿨다운 충족!`);
 
-  // 네이버 실시간 블로그 후기, 주변 맛집, 볼거리, 행사 검색
-  console.log(`🔍 네이버 API HUB 실시간 맛집/볼거리/행사/후기 검색 중 (${targetExhibition.venueName})...`);
-  const naverData = await fetchNaverSearchData(targetExhibition.venueName, targetExhibition.region);
+  // 네이버 실시간 검색
+  console.log(`🔍 네이버 API HUB 실시간 검색 중 (${targetItem.venueName})...`);
+  const naverData = await fetchNaverSearchData(targetItem.venueName, targetItem.region);
   console.log(`✅ 네이버 데이터 수집 완료: 블로그 ${naverData.blogReviews.length}건, 맛집 ${naverData.localRestaurants.length}건, 볼거리 ${naverData.nearbyAttractions.length}건, 행사 ${naverData.localEvents.length}건`);
 
-  // 네이버 API 기반 실제 해당 장소/명소 및 계절(봄/여름/가을/겨울) 현장 고화질 사진 정밀 검색
-  console.log(`📸 네이버 OpenAPI/API HUB 실제 장소 현장 및 계절 사진 정밀 검색 중...`);
-  const photos = await fetchRealPlacePhotos(targetExhibition, naverData, today);
-  console.log(`✅ ${photos.length}장의 실제 장소 & 계절 맞춤 현장 사진 준비 완료.`);
+  // 네이버 현장 사진 수집 (제1원칙 무중복 보장)
+  console.log(`📸 네이버 OpenAPI/API HUB 실제 장소 현장 및 계절 사진 정밀 검색 중 (제1원칙 무중복 보장)...`);
+  const photos = await fetchRealPlacePhotos(targetItem, naverData, today, globalUsedImages);
+  console.log(`✅ ${photos.length}장의 실제 장소 & 계절 맞춤 고유 현장 사진 준비 완료.`);
 
-  // Gemini AI로 글 작성
-  console.log("✍️ Gemini AI로 네이버 맛집/행사/볼거리 포함 프리미엄 전시 리뷰 본문 작성 중...");
-  const postContent = await generatePostWithGemini(targetExhibition, photos, today, naverData);
+  // Gemini AI 본문 작성
+  console.log(`✍️ Gemini AI로 [${targetItem.category}] 프리미엄 본문 작성 중...`);
+  const postContent = await generatePostWithGemini(targetItem, photos, today, naverData);
 
   // =========================================================================
-  // [2단계 검증] 파일 저장 직전 14일(2주) 사후 세이프가드 단언 검증 (Pre-Save Assert)
+  // [2단계 검증] 파일 저장 직전 사후 세이프가드 단언 검증 (Pre-Save Assert)
   // =========================================================================
   console.log("🔒 [2단계 검증 시작] 파일 저장 직전 14일 이내 중복 여부 최종 단언 검사 중...");
   const reloadedFiles = fs.readdirSync(postsDir);
@@ -1200,7 +1582,7 @@ async function main() {
     const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
     if (match) {
       const [, pDate, pSlug] = match;
-      if (pSlug === targetExhibition.slug) {
+      if (pSlug === targetItem.slug) {
         const diff = Math.floor((todayTime - new Date(pDate).getTime()) / (1000 * 60 * 60 * 24));
         if (diff >= 0 && diff < 14) {
           preSaveConflicts.push({ file, date: pDate, diff });
@@ -1210,14 +1592,14 @@ async function main() {
   }
 
   if (preSaveConflicts.length > 0) {
-    console.error(`🚨 [2단계 검증 실패] ${targetExhibition.slug}는 최근 14일 내 이미 발행된 이력이 있습니다:`, preSaveConflicts);
+    console.error(`🚨 [2단계 검증 실패] ${targetItem.slug}는 최근 14일 내 이미 발행된 이력이 있습니다:`, preSaveConflicts);
     throw new Error(`[2단계 세이프가드 차단] 14일 이내 중복 감지로 인해 파일 저장을 안전하게 중단했습니다.`);
   }
 
   console.log(`🎉 [2단계 검증 통과] 14일 이내 중복 0건 확인 완료! 안전하게 디스크에 저장합니다.`);
 
   // 파일명 지정: YYYY-MM-DD-slug.md
-  const fileName = `${today}-${targetExhibition.slug}.md`;
+  const fileName = `${today}-${targetItem.slug}.md`;
   const filePath = path.join(postsDir, fileName);
 
   fs.writeFileSync(filePath, postContent, "utf8");

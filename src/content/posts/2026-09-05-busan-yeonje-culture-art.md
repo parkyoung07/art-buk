@@ -88,7 +88,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3
 2. **반려동물복지문화센터:** 반려동물과 함께 나들이 나온 분들이라면 꼭 주목해야 할 곳! 반려동물과 교감하고 올바른 문화를 배울 수 있는 복합 문화 공간입니다.
 3. **온천천 카페거리 산책:** 아기자기한 브런치 카페와 수변 산책로가 이어지는 연제구 최고의 핫플레이스입니다.
 
-![온천천 카페거리 전경](http://imgnews.naver.net/image/5369/2018/05/29/0000058475_001_20180529170238973.jpg)
+![온천천 카페거리 전경](https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=1200&auto=format&fit=crop&q=80)
 *▲ 온천천을 따라 감성적인 브런치 카페와 산책로가 이어지는 온천천 카페거리 풍경*
 
 ---

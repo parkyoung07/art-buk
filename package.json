@@ -7,7 +7,9 @@
     "build": "node scripts/build-search-index.js && next build",
     "build:search": "node scripts/build-search-index.js",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "inspect": "node scripts/daily-inspect.mjs",
+    "daily": "node scripts/daily-master.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",
