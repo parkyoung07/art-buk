@@ -74,7 +74,7 @@ export default function NoticeModal({ noticeId = "busan_museum_grand_reopen_2026
             {/* 상단 시각적 배너 이미지 영역 (부산시립미술관 재개관 기념 비주얼) */}
             <div className="relative w-full h-36 sm:h-44 rounded-2xl overflow-hidden shadow-inner group bg-slate-900">
               <img
-                src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=1200&auto=format&fit=crop&q=80"
+                src="https://images.pexels.com/photos/1666667/pexels-photo-1666667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 alt="2026 부산시립미술관 그랜드 재개관"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
               />

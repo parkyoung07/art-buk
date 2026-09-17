@@ -39,7 +39,7 @@ thumbnail: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=1200&
 
 ### 🏛️ 무엇이 달라졌을까? 3대 핵심 리노베이션 포인트
 
-![층간 경계를 허물고 개방감을 극대화한 신규 오픈 플랫폼 전시장 전경](https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=1200&auto=format&fit=crop&q=80)
+![층간 경계를 허물고 개방감을 극대화한 신규 오픈 플랫폼 전시장 전경](https://images.pexels.com/photos/1666667/pexels-photo-1666667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 1~3층 수직·수평 시야를 틔워 예술과 자유롭게 소통하는 신규 오픈 플랫폼 전시장*
 
 #### 1. 폐쇄적 ‘방’ 구조 탈피, 수직·수평 시야가 트인 ‘오픈 플랫폼’
@@ -55,8 +55,8 @@ thumbnail: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=1200&
 
 ### 🌟 오늘(9.17) 개막! 놓칠 수 없는 4대 재개관 특별전
 
-![AI와 미래 기술, 생태를 아우르는 퓨처 뮤지올로지 전시](https://images.unsplash.com/photo-1545987796-200677ee1011?w=1200&auto=format&fit=crop&q=80)
-*▲ 기술과 예술의 경계를 넘나드는 국제전 《퓨처 뮤지올로지》 전시장*
+![현대미술과 미래 비전을 담은 재개관 특별전 전시장](https://images.pexels.com/photos/1671016/pexels-photo-1671016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 시대정신과 현대미술의 감동을 전하는 재개관 4대 특별전 전시장 전경*
 
 #### ① 《퓨처 뮤지올로지 (Future Museology)》
 - **전시 기간:** 2026.09.17 ~ 2027.03.14
