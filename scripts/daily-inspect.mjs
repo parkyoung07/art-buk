@@ -178,8 +178,42 @@ if (duplicateUrlCount === 0) {
   console.log(`ℹ️ [이미지 사용 현황] 다중 참조 이미지: ${duplicateUrlCount}건`);
 }
 
-// 5. 검색 색인(search-index.json) 점검
-console.log(`\n🔎 [4. 검색 색인 및 시스템 상태]`);
+// 5. [시스템 최고 가치] 이미지 신뢰성 & 연관성 무결성 감사 (포스터/공사/추상텍스처 0건 검증)
+console.log(`\n🛡️ [5. 이미지 신뢰성 & 연관성 무결성 감사 (신뢰도 직결)]`);
+
+const badImagePatterns = [
+  { name: "유튜브 프로필 아바타", pattern: "googleusercontent.com" },
+  { name: "인터넷 서점 책 표지", pattern: "image.yes24.com" },
+  { name: "지자체 공고 배너", pattern: "uiryeong.go.kr/images/new/Culture" },
+  { name: "구형 행사 포스터", pattern: "img.newsro.kr" },
+  { name: "과거 구형 포스터/뉴스", pattern: "0003619403_001_2018" },
+  { name: "추상 마블/물감 텍스처", pattern: "photo-1561214115-f2f134cc4912" },
+  { name: "공사 현장/크레인", pattern: "photo-1565008447742-97f6f38c985c" },
+];
+
+const suspiciousImages = [];
+
+postFiles.forEach(file => {
+  const content = fs.readFileSync(path.join(postsDir, file), "utf8");
+  badImagePatterns.forEach(({ name, pattern }) => {
+    if (content.includes(pattern)) {
+      suspiciousImages.push({ file, name, pattern });
+    }
+  });
+});
+
+if (suspiciousImages.length === 0) {
+  console.log(`✅ [이미지 신뢰성 절대 보장 통과] 포스터, 공사 현장, 추상 텍스처, 서점 표지 등 부적절 이미지 0건 (100% 무결성 합격)`);
+} else {
+  console.error(`🚨 [이미지 신뢰성 위반 감지] 총 ${suspiciousImages.length}건:`);
+  suspiciousImages.forEach(s => {
+    console.error(`   - [${s.name}] ${s.file}`);
+  });
+  process.exit(1);
+}
+
+// 6. 검색 색인(search-index.json) 점검
+console.log(`\n🔎 [6. 검색 색인 및 시스템 상태]`);
 if (fs.existsSync(searchIndexPath)) {
   try {
     const searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
