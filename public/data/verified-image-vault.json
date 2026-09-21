@@ -6,24 +6,24 @@
     "libraries": {
       "library-busan-sasang-main": [
         {
-          "url": "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&auto=format&fit=crop&q=80",
-          "alt": "부산도서관 웅장한 중앙 보이드홀과 계단식 원목 열람 스탠드 전경",
+          "url": "/images/library/busan-library-chaekmaru.png",
+          "alt": "부산도서관 공식 03 책마루 2층 대형 원목 테이블과 서가 전경",
           "theme": "architecture"
         },
         {
-          "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80",
-          "alt": "자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간",
+          "url": "/images/library/busan-library-chaeknuriter.png",
+          "alt": "부산도서관 공식 01 책누리터 일반도서 및 국외도서 서가",
           "theme": "bookshelf"
         },
         {
-          "url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80",
-          "alt": "사상구 도서관 주변 감성 북카페 & 향긋한 커피 디저트",
-          "theme": "cafe"
+          "url": "/images/library/busan-library-busanaettle.png",
+          "alt": "부산도서관 공식 02 부산애뜰 부산 관련 자료 및 전시코너",
+          "theme": "gallery"
         },
         {
-          "url": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          "alt": "도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로",
-          "theme": "autumn_reeds"
+          "url": "/images/library/busan-library-kkumtteurak.png",
+          "alt": "부산도서관 공식 06 꿈뜨락 어린이실 및 실감형 책놀이터",
+          "theme": "children"
         }
       ],
       "library-gimhae-sea-of-wisdom": [

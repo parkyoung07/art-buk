@@ -24,7 +24,14 @@ const files = fs.existsSync(postsDir) ? fs.readdirSync(postsDir) : [];
 const todayPosts = files.filter(f => f.startsWith(today) && f.endsWith(".md"));
 
 console.log(`📅 기준 일자: ${today} (현재 KST ${kstHour}시)`);
-console.log(`📝 오늘 이미 발행된 글: ${todayPosts.length}편`);
+// 1-1. 공식 실사 이미지 동기화
+try {
+  if (fs.existsSync(path.join(rootDir, "scripts/copy-busan-library-images.cjs"))) {
+    execSync("node scripts/copy-busan-library-images.cjs", { cwd: rootDir, stdio: "inherit" });
+  }
+} catch (e) {
+  console.warn("⚠️ 실사 이미지 동기화 실패:", e.message);
+}
 
 // 2. 글 발행 필요 여부 판단 및 1회 통합 실행
 let needGeneration = false;
