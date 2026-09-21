@@ -1090,7 +1090,7 @@ const CURATED_SAFE_PHOTOS = {
   // 테마 1 & 2: 전통시장
   "market-busan-jagalchi-nampo": [
     {
-      url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
       alt: "부산 자갈치시장 남항 바다와 푸른 포구의 탁 트인 전경 (초상권 없는 순수 풍경)"
     },
     {
@@ -1349,7 +1349,7 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
     autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
     autumn_landmark: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-    ocean_harbor: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80",
+    ocean_harbor: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
     cafe_dessert: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
     art_gallery: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",

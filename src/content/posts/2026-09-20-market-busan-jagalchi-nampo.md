@@ -6,7 +6,7 @@ category: "전통시장 나들이"
 tags: ["부산전통시장", "자갈치시장", "국제시장", "남포동비프광장", "부산먹거리", "부산가을여행"]
 region: "부산"
 eventId: "market-busan-jagalchi-nampo"
-thumbnail: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80"
 ---
 
 선선한 가을바람이 코끝을 간지럽히는 요즘, 부울경 로컬 큐레이터가 가장 먼저 추천하는 주말 나들이 장소가 있습니다. 바로 바다의 생명력이 파도처럼 밀려드는 부산의 상징, **자갈치시장과 남포동 골목 일대**입니다. 
@@ -15,7 +15,7 @@ thumbnail: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&aut
 
 ---
 
-![부산 자갈치시장 남항 바다와 푸른 포구의 탁 트인 전경](https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80)
+![부산 자갈치시장 남항 바다와 푸른 포구의 탁 트인 전경](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
 *▲ 가을 햇살 아래 푸른 남항 바다와 어우러진 부산 자갈치시장 일대 전경*
 
 ---

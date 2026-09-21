@@ -189,6 +189,7 @@ const badImagePatterns = [
   { name: "과거 구형 포스터/뉴스", pattern: "0003619403_001_2018" },
   { name: "추상 마블/물감 텍스처", pattern: "photo-1561214115-f2f134cc4912" },
   { name: "공사 현장/크레인", pattern: "photo-1565008447742-97f6f38c985c" },
+  { name: "강아지/반려동물(풍경 불일치)", pattern: "photo-1548199973-03cce0bbc87b" },
 ];
 
 const suspiciousImages = [];

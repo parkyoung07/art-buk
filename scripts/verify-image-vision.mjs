@@ -37,7 +37,8 @@ const CRITICAL_BLACKLIST = [
   { pattern: /photo-1481627834876-b7833e8f5570/i, reason: "어둡고 좁은 서가 복도 사진 (쾌적한 열람 공간 불일치)" },
   { pattern: /photo-1521587760476/i, reason: "오래된 고서적 책장 사진 (현대 공공도서관 열람실 불일치)" },
   { pattern: /pexels-photo-590493/i, reason: "어두운 서점 책장 사진 (현대 공공도서관 열람실 불일치)" },
-  { pattern: /photo-1565008447742-97f6f38c985c/i, reason: "공사 현장/크레인 사진 (미술관 전경 불일치)" },
+  { pattern: /photo-1548199973-03cce0bbc87b/i, reason: "강아지/반려동물 사진 (바다/시장 풍경 불일치)" },
+  { pattern: /dog\b|puppy|corgi|cat\b|kitten|강아지|개\b|고양이/i, reason: "동물/반려견 키워드 포함 (풍경 불일치)" },
   { pattern: /cherry blossom|cherry_blossom|sakura/i, reason: "봄철 벚꽃 키워드 (가을 불일치)" },
   { pattern: /snow\b|winter\b|snowman|설경/i, reason: "겨울 설경 키워드 (가을 불일치)" },
 
