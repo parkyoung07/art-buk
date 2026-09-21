@@ -7,7 +7,7 @@ subRegion: "해운대구"
 venueName: "부산시립미술관"
 category: "전시 리뷰"
 tags: ["부산시립미술관", "부산시립미술관재개관", "퓨처뮤지올로지", "해운대전시", "센텀시티", "이우환공간", "가을전시", "무료전시", "부산나들이"]
-thumbnail: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=1200&auto=format&fit=crop&q=80"
 summary: "총 469억 원 투입, 2년간의 대대적인 리노베이션을 마친 부산시립미술관이 전면 재개관했습니다! 세계 9대 기관 협업 '퓨처 뮤지올로지'부터 피란수도 역사전, 이우환 공간까지 전시별 완벽 심층 가이드 & 센텀 나들이."
 ---
 
@@ -19,7 +19,7 @@ summary: "총 469억 원 투입, 2년간의 대대적인 리노베이션을 마�
 
 재개관을 기념하여 펼쳐지는 글로벌 4대 기획전시와 거장의 숨결을 품은 이우환 공간, 그리고 센텀시티 연계 힐링 코스까지 도슨트의 생생한 시선으로 안내해 드립니다.
 
-![부산시립미술관 현대적인 건축 외관과 야외 조각 공원](https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&auto=format&fit=crop&q=80)
+![부산시립미술관 현대적인 건축 외관과 야외 조각 공원](https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=1200&auto=format&fit=crop&q=80)
 *▲ 2년 만에 전면 리노베이션을 마치고 새롭게 문을 연 부산시립미술관의 웅장한 건축 외관과 야외 조각광장*
 
 ---
