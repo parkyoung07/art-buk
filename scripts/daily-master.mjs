@@ -47,9 +47,17 @@ if (needGeneration) {
   console.log("✅ 현재 슬롯 발행이 이미 완료되어 있습니다.");
 }
 
+// 2. 글 시각 무결성 100% 사전 검증 및 자동 치유 (Tri-Shield Vision Verifier)
+try {
+  console.log("🛡️ [2/4] 3중 무결성 시각 감사관 (Vision Verifier) 검사 중...");
+  execSync("node scripts/verify-image-vision.mjs", { cwd: rootDir, stdio: "inherit" });
+} catch (e) {
+  console.error("⚠️ 시각 무결성 검증 중 오류:", e.message);
+}
+
 // 3. 검색 색인 갱신 (1회 통합)
 try {
-  console.log("🔍 [2/3] 검색 색인(search-index.json) 갱신 중...");
+  console.log("🔍 [3/4] 검색 색인(search-index.json) 갱신 중...");
   execSync("node scripts/build-search-index.js", { cwd: rootDir, stdio: "inherit" });
 } catch (e) {
   console.error("⚠️ 검색 색인 갱신 중 오류:", e.message);
@@ -57,7 +65,7 @@ try {
 
 // 4. 일일 정기 점검 실행 (1회 통합)
 try {
-  console.log("📊 [3/3] 일일 정기 점검 및 제1원칙 감사 수행 중...");
+  console.log("📊 [4/4] 일일 정기 점검 및 제1원칙 감사 수행 중...");
   execSync("node scripts/daily-inspect.mjs", { cwd: rootDir, stdio: "inherit" });
 } catch (e) {
   console.error("⚠️ 점검 스크립트 실행 중 오류:", e.message);

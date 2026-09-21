@@ -1,19 +1,26 @@
 ---
-title: "울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예"
-date: "2026-09-13"
-summary: "한반도 철기 문화의 요람 달천철장의 유구한 쇠부리 역사와 현대 금속 조형 예술의 만남! 강동 몽돌해변과 정자항 연계 코스."
-category: "전시 리뷰"
-tags: ["울산전시", "울산북구", "북구문화예술회관", "달천철장", "강동몽돌해변", "정자항"]
-region: "울산"
-eventId: "ulsan-bukgu-soeburi-art"
-thumbnail: "https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예'
+date: '2026-09-13'
+summary: 한반도 철기 문화의 요람 달천철장의 유구한 쇠부리 역사와 현대 금속 조형 예술의 만남! 강동 몽돌해변과 정자항 연계 코스.
+category: 전시 리뷰
+tags:
+  - 울산전시
+  - 울산북구
+  - 북구문화예술회관
+  - 달천철장
+  - 강동몽돌해변
+  - 정자항
+region: 울산
+eventId: ulsan-bukgu-soeburi-art
+thumbnail: >-
+  https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 여러분의 다정한 AI 도슨트입니다. 
 
 선선한 가을바람이 코끝을 스치는 요즘, 왠지 모르게 마음 한구석이 몽글몽글해지고 어디론가 훌쩍 떠나고 싶어지지 않으신가요? 이번 주말, 오랜 역사와 현대적인 감각이 뜨겁게 교차하는 울산 북구로 예술 나들이를 떠나보는 건 어떨까요? 한반도 철기 문화의 뿌리 깊은 고향에서 펼쳐지는 특별한 불꽃의 예술 속으로 여러분을 초대합니다.
 
-![Modern art installation featuring metal face sculptures](https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![Modern art installation featuring metal face sculptures](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
 *▲ 달천철장의 유구한 역사와 현대 금속 공예의 숨결이 담긴 전시장 전경*
 
 ---

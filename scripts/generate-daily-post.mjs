@@ -1312,10 +1312,26 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
 
   console.log(`📸 [제1원칙: 이미지 무중복 정밀 수집] 장소: ${cleanVenue} (slug: ${slug}) | 계절: ${season.name} (${season.desc})`);
 
-  // [최우선 1순위] 사전 검증된 100% 안전 고화질 큐레이션 사진 풀(Curated Safe Photos) 적용
-  if (CURATED_SAFE_PHOTOS[slug] && CURATED_SAFE_PHOTOS[slug].length > 0) {
-    console.log(`✨ [안전 사진 풀 매칭] ${slug} 에 대해 사전 검증된 100% 무결성 사진 ${CURATED_SAFE_PHOTOS[slug].length}장 적용`);
-    for (const cPhoto of CURATED_SAFE_PHOTOS[slug]) {
+  // [안전 제1원칙] 사전 검증된 100% 안전 금고(Vault) 사진 풀 우선 적용
+  const vaultPath = path.join(rootDir, "public/data/verified-image-vault.json");
+  let vaultData = null;
+  if (fs.existsSync(vaultPath)) {
+    try {
+      vaultData = JSON.parse(fs.readFileSync(vaultPath, "utf-8"));
+    } catch {}
+  }
+
+  // 1순위: CURATED_SAFE_PHOTOS 또는 vault 카테고리 내 명시된 사진
+  const safeList = CURATED_SAFE_PHOTOS[slug] || (vaultData?.categories && (
+    vaultData.categories.libraries?.[slug] ||
+    vaultData.categories.markets?.[slug] ||
+    vaultData.categories.healing_routes?.[slug] ||
+    vaultData.categories.museums_and_galleries?.[slug]
+  ));
+
+  if (safeList && safeList.length > 0) {
+    console.log(`✨ [안전 사진 금고 매칭] ${slug} 에 대해 사전 검증된 100% 무결성 사진 ${safeList.length}장 적용`);
+    for (const cPhoto of safeList) {
       photos.push({
         url: cPhoto.url,
         alt: cPhoto.alt
@@ -1365,7 +1381,7 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
   const photo1 = selectUniquePhoto(venueImgs, `${exhibition.venueName || cleanVenue} ${season.name} 전경 및 전시 공간`);
   if (photo1) photos.push(photo1);
 
-  // 2) 주변 대표 명소 1번 실제 현장 사진 (장소 + 계절 연계: 예: 상림공원 가을, 충익사 가을)
+  // 2) 주변 대표 명소 1번 실제 현장 사진 (장소 + 계절 연계)
   const spot1 = (exhibition.nearbySpots && exhibition.nearbySpots[0]) || cleanVenue;
   const spot1Imgs = await searchSeasonPlace(spot1, 8);
   const photo2 = selectUniquePhoto(spot1Imgs, `${spot1}의 아름다운 ${season.name} 실제 풍경`);
@@ -1377,48 +1393,30 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
   const photo3 = selectUniquePhoto(foodImgs, `${foodSpot} 대표 미식 & 감성 공간`);
   if (photo3) photos.push(photo3);
 
-  // 4) 주변 대표 명소 2번 실제 사진 (고택/자연/산책로 + 계절: 예: 개평한옥마을 일두고택 가을)
+  // 4) 주변 대표 명소 2번 실제 사진
   const spot2 = (exhibition.nearbySpots && exhibition.nearbySpots[1]) || `${exhibition.region} ${season.name} 명소`;
   const spot2Imgs = await searchSeasonPlace(spot2, 8);
   const photo4 = selectUniquePhoto(spot2Imgs, `${spot2} 고즈넉한 ${season.name} 정취`);
   if (photo4) photos.push(photo4);
 
-  // 5) 추가 전시 안내 / 연계 문화 공간 사진 보강
-  const photo5 = selectUniquePhoto(venueImgs, `${exhibition.title} ${season.name} 전시 안내 풍경`);
-  if (photo5) photos.push(photo5);
+  // 안전장치: 사진이 부족할 경우 외국 스톡 사진 대신 사전 검증 금고의 고화질 가을 테마 사진으로 100% 보강
+  if (photos.length < 3 && vaultData?.generic_fallbacks) {
+    const fb = vaultData.generic_fallbacks;
+    const fallbacks = [
+      { url: fb.autumn_park, alt: `부울경 ${season.name} 고즈넉한 공원 산책로` },
+      { url: fb.autumn_reeds, alt: `황금빛 갈대와 은빛 억새가 춤추는 가을 풍경` },
+      { url: fb.cafe_dessert, alt: `향긋한 핸드드립 커피와 달콤한 디저트` },
+      { url: fb.autumn_landmark, alt: `가을 하늘 아래 펼쳐진 영남의 명소 정취` }
+    ];
 
-  // 안전장치: 네이버 검색으로 3장 미만 확보된 경우에만 Pexels로 보강
-  if (photos.length < 3 && PEXELS_API_KEY) {
-    try {
-      const pexelsRes = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(exhibition.photoKeywords || "korean gallery culture")}&per_page=6&orientation=landscape`, {
-        headers: { Authorization: PEXELS_API_KEY }
-      });
-      if (pexelsRes.ok) {
-        const pData = await pexelsRes.json();
-        for (const p of pData.photos || []) {
-          if (photos.length >= 4) break;
-          const pUrl = p.src.large2x || p.src.large || p.src.original;
-          if (!globalUsedImages.has(pUrl) && !localUsedUrls.has(pUrl)) {
-            localUsedUrls.add(pUrl);
-            globalUsedImages.add(pUrl);
-            photos.push({
-              url: pUrl,
-              alt: `부울경 ${season.name} 문화예술 및 나들이`
-            });
-          }
-        }
+    for (const fItem of fallbacks) {
+      if (photos.length >= 4) break;
+      if (!localUsedUrls.has(fItem.url)) {
+        localUsedUrls.add(fItem.url);
+        globalUsedImages.add(fItem.url);
+        photos.push(fItem);
       }
-    } catch {
-      // ignore
     }
-  }
-
-  // 최종 기본 안전 이미지 (극단적 예외 대비)
-  if (photos.length === 0) {
-    photos.push({
-      url: "https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      alt: `${exhibition.title}`
-    });
   }
 
   console.log(`✅ [장소+계절 정밀 매칭 & 무중복 통과] 총 ${photos.length}장의 고유한 현장 사진 확보`);
