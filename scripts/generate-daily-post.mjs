@@ -1046,7 +1046,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "사상구 도서관 주변 감성 북카페 & 향긋한 커피 디저트"
     },
     {
-      url: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
       alt: "도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로"
     }
   ],
@@ -1082,7 +1082,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "울산 남구 여천천 인근 감성 로스팅 카페"
     },
     {
-      url: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
       alt: "여천천 생태 산책로와 울산대공원 가을 풍경"
     }
   ],
@@ -1176,7 +1176,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "위양지 앞 통창 뷰 감성 베이커리 카페"
     },
     {
-      url: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1470246973918-29a93221c455?w=1200&auto=format&fit=crop&q=80",
       alt: "밀양아리랑우주천문대 및 영남루 산책로"
     }
   ],
@@ -1186,7 +1186,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "거제 바람의 언덕 쪽빛 남해 바다와 이국적인 풍차 전경"
     },
     {
-      url: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
       alt: "기암괴석과 푸른 파도가 장관을 이루는 신선대 해안 절벽"
     },
     {
