@@ -22,7 +22,7 @@ if (fs.existsSync(vaultPath)) {
   }
 }
 
-// 2. 엄격한 블랙리스트 패턴 (초상권, 계절불일치, 엉뚱한 외국숲, 비위생, 포스터)
+// 2. 엄격한 블랙리스트 패턴 (초상권, 계절불일치, 엉뚱한 외국숲, 비위생, 포스터, 404 결함 URL)
 const CRITICAL_BLACKLIST = [
   // 초상권 / 셀카 / 인물 얼굴
   { pattern: /photo-1544005313/i, reason: "개인 인물 초상권 사진" },
@@ -36,15 +36,20 @@ const CRITICAL_BLACKLIST = [
   { pattern: /cherry blossom|cherry_blossom|sakura/i, reason: "봄철 벚꽃 키워드 (가을 불일치)" },
   { pattern: /snow\b|winter\b|snowman|설경/i, reason: "겨울 설경 키워드 (가을 불일치)" },
 
+  // 404 결함 및 삭제된 URL
+  { pattern: /photo-1508873696983-2df5293cb32f/i, reason: "삭제된 Unsplash 404 결함 이미지" },
+  { pattern: /photo-1507842229452-9b2f67644917/i, reason: "삭제된 Unsplash 404 결함 이미지" },
+
   // 비위생 / 공사현장 / 위험
   { pattern: /toilet|restroom|urinal|bathroom|화장실|변기|세면대/i, reason: "화장실 및 비위생 이미지" },
   { pattern: /construction|crane|철거|공사현장/i, reason: "공사 현장 이미지" },
   { pattern: /accident|사고사|부검|유엔묘지/i, reason: "부적절한 장소 및 사고 이미지" },
 
-  // 저품질 / 워터마크 / 책표지
+  // 저품질 / 워터마크 / 책표지 / 차단된 외부 도메인
   { pattern: /gettyimages|shutterstock|watermark/i, reason: "워터마크 스톡 이미지" },
   { pattern: /yes24\.com|aladin\.co\.kr|kyobobook\.co\.kr/i, reason: "서점 책 표지 이미지" },
-  { pattern: /yt3\.ggpht\.com/i, reason: "유튜브 프로필 아이콘" }
+  { pattern: /yt3\.ggpht\.com/i, reason: "유튜브 프로필 아이콘" },
+  { pattern: /cdninstagram\.com|facebook\.com/i, reason: "외부 차단(403) 인스타그램/페이스북 이미지" }
 ];
 
 // 3. 포스트 전수 감사 및 무결성 검사
