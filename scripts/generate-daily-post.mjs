@@ -1038,7 +1038,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "부산도서관 웅장한 서가와 현대적 건축 인테리어 전경"
     },
     {
-      url: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80",
       alt: "자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간"
     },
     {
