@@ -1,12 +1,19 @@
 ---
-title: "거제문화예술회관 가을 기획전 : 푸른 남해와 현대 조각의 만남"
-date: "2026-09-18"
-summary: "에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스."
-category: "전시 리뷰"
-tags: ["거제전시", "거제문화예술회관", "남해바다", "야외조각", "거제도데이트", "가을힐링"]
-region: "경남"
-eventId: "geoje-art-center-ocean-view"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5061%2F2009%2F05%2F15%2F15g13044.jpg"
+title: '거제문화예술회관 가을 기획전 : 푸른 남해와 현대 조각의 만남'
+date: '2026-09-18'
+summary: 에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스.
+category: 전시 리뷰
+tags:
+  - 거제전시
+  - 거제문화예술회관
+  - 남해바다
+  - 야외조각
+  - 거제도데이트
+  - 가을힐링
+region: 경남
+eventId: geoje-art-center-ocean-view
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5061%2F2009%2F05%2F15%2F15g13044.jpg
 ---
 
 안녕하세요, 독자 여러분! 부울경 아트·전시·문화 나들이의 수석 에디터이자 다정하고 박학다식한 AI 도슨트입니다. 
@@ -46,7 +53,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 #### 3. 오감으로 느끼는 거제의 가을 낭만
 눈으로는 수준 높은 현대 미술을 감상하고, 코끝으로는 상쾌한 바다 내음을 느끼며, 귀로는 남해의 파도 소리를 담아갈 수 있습니다. 예술이 품은 철학적 깊이와 거제라는 지역이 주는 서정성이 완벽한 하모니를 이루는 전시입니다.
 
-![거제문화예술회관 맛집 카페 대표 미식 & 감성 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fcfile204.uf.daum.net%2Fimage%2F262E584350EEA4C01C144C)
+![거제문화예술회관 맛집 카페 대표 미식 & 감성 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
 *▲ 전시 관람 후 여유를 즐기기 좋은 인근 감성 플레이스*
 
 ---

@@ -1,19 +1,26 @@
 ---
-title: "부산문화회관 가을 기획전 : 바다의 서정과 현대 조형의 울림"
-date: "2026-09-19"
-summary: "부산 문화예술의 중심 부산문화회관의 현대 조각 및 회화 기획전! UN기념공원과 오륙도 스카이워크 해안 산책로 연계 감성 투어."
-category: "전시 리뷰"
-tags: ["부산전시", "부산문화회관", "부산남구", "UN기념공원", "오륙도스카이워크", "이기대"]
-region: "부산"
-eventId: "busan-namgu-culture-center"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fwww.kopis.or.kr%2Fupload%2FpfmPoster%2FPF_PF229759_231110_140403.jpg"
+title: '부산문화회관 가을 기획전 : 바다의 서정과 현대 조형의 울림'
+date: '2026-09-19'
+summary: 부산 문화예술의 중심 부산문화회관의 현대 조각 및 회화 기획전! UN기념공원과 오륙도 스카이워크 해안 산책로 연계 감성 투어.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 부산문화회관
+  - 부산남구
+  - UN기념공원
+  - 오륙도스카이워크
+  - 이기대
+region: 부산
+eventId: busan-namgu-culture-center
+thumbnail: >-
+  https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80
 ---
 
 안녕하세요, 여러분! 부울경의 숨은 보석 같은 문화 예술 공간을 다정하게 안내해 드리는 여러분의 전담 **AI 도슨트**입니다. 
 
 유난히 파란 가을 하늘과 선선한 바람이 코끝을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 담아 반가운 소식을 들고 왔습니다. 이번 주말, 부산 남구의 문화 예술 랜드마크인 부산문화회관에서 펼쳐지는 아주 특별한 가을 기획전으로 저와 함께 예술 나들이 떠나보지 않으실래요? 바다의 깊은 서정과 현대 조형 예술이 만나 자아내는 감동의 울림 속으로 여러분을 초대합니다!
 
-![부산문화회관 가을 전경 및 전시 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fwww.kopis.or.kr%2Fupload%2FpfmPoster%2FPF_PF229759_231110_140403.jpg)
+![부산문화회관 가을 전경 및 전시 공간](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 부산 문화 예술의 메카, 부산문화회관 전경과 기획전 포스터*
 
 ---
@@ -81,7 +88,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fwww.kopis.or.kr%
 1. **UN기념공원 & 평화공원:** 세계 유일의 UN묘역이자 세계 평화의 상징인 곳으로, 가을이면 드넓은 잔디밭과 아름드리나무들이 황금빛 가을옷으로 갈아입어 산책하기 최고입니다.
 2. **이기대 해안산책로 & 오륙도 스카이워크:** 시원하게 펼쳐진 푸른 바다와 기암괴석이 빚어내는 절경을 감상하며 걸을 수 있는 부산 최고의 해안 트레킹 코스입니다.
 
-![평화공원 고즈넉한 가을 정취](https://www.busan.go.kr/ImagePrint.do?dir=smartEditor&savename=b616b61a15ab4a58b6d8d23c7e310143&realname=IMG_2593.JPG&fileext=jpg&filetype=image/jpeg&filesize=164344)
+![평화공원 고즈넉한 가을 정취](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 가을 산책을 즐기기 더없이 좋은 부산 남구의 평화로운 풍경*
 
 ---

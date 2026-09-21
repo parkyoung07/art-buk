@@ -1,12 +1,19 @@
 ---
-title: "부산북구문화예술회관 가을 기획전 : 낙동강의 숨결과 구포의 역사"
-date: "2026-09-03"
-summary: "유서 깊은 구포의 역사와 낙동강변의 서정을 담아낸 가을 명품 무료 기획전! 화명생태공원과 화명수목원 숲길 산책."
-category: "전시 리뷰"
-tags: ["부산전시", "북구문화예술회관", "부산북구", "화명생태공원", "화명수목원", "구포나들이"]
-region: "부산"
-eventId: "busan-bukgu-culture-center"
-thumbnail: "https://images.pexels.com/photos/5663614/pexels-photo-5663614.jpeg?auto=compress&cs=tinjsrgb&dpr=2&h=650&w=940"
+title: '부산북구문화예술회관 가을 기획전 : 낙동강의 숨결과 구포의 역사'
+date: '2026-09-03'
+summary: 유서 깊은 구포의 역사와 낙동강변의 서정을 담아낸 가을 명품 무료 기획전! 화명생태공원과 화명수목원 숲길 산책.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 북구문화예술회관
+  - 부산북구
+  - 화명생태공원
+  - 화명수목원
+  - 구포나들이
+region: 부산
+eventId: busan-bukgu-culture-center
+thumbnail: >-
+  https://images.pexels.com/photos/5663614/pexels-photo-5663614.jpeg?auto=compress&cs=tinjsrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 관람객 여러분! 나드리 AI 문화·나들이의 다정한 안내자, 여러분의 전담 **AI 도슨트**입니다. 
@@ -55,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/5663614/pexels-photo-5663614.jpeg?a
 * **스트릿624 (문화·예술 공간 인근 카페):** 감각적인 인테리어와 향긋한 스페셜티 커피가 반겨주는 곳입니다. 전시 여운을 나누며 달콤한 디저트를 즐기기 완벽한 장소입니다.
 * **구포국시 테마 거리 맛집들:** 구포에 왔다면 오랜 전통의 명물 '구포국수'를 놓칠 수 없습니다. 멸치 육수의 진한 풍미가 일품인 잔치국수 한 그릇으로 든든한 허기를 채워보세요.
 
-![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://www.busan.go.kr/comm/getImage?srvcId=BBSTY3&upperNo=1646998&fileTy=ATTACH&fileNo=8)
+![야외 테라스에서 즐기는 커피와 디저트 힐링 타임](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 감성 카페에서 여유롭게 즐기는 향긋한 커피와 달콤한 디저트*
 
 ---

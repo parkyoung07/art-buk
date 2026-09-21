@@ -1,19 +1,28 @@
 ---
-title: "밀양 아리랑시장 5일장 : 국보 영남루 아래서 맛보는 원조 돼지국밥과 메밀묵"
-date: "2026-09-19"
-summary: "조선 시대부터 이어져 온 500년 전통의 영남 대표 장터! 국보 영남루 산책 후 맛보는 토렴식 밀양 돼지국밥과 손 메밀묵의 구수한 미식 여행."
-category: "전통시장 나들이"
-tags: ["경남전통시장", "밀양아리랑시장", "밀양5일장", "밀양돼지국밥", "영남루", "가을장터"]
-region: "경남"
-eventId: "market-miryang-arirang-autumn"
-thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQwNzg4.PO6Ty4I9ydy_gOGeu7kRi9AIVhG-jWb85lgApDyHz6wg.CQhxnvKtQQ1GiwuPyNIW29xZtQ9uLdQzGm79EuGEe7sg.JPEG/POST_IMAGE_ENCODING_20251130_000859_583.jpg"
+title: '밀양 아리랑시장 5일장 : 국보 영남루 아래서 맛보는 원조 돼지국밥과 메밀묵'
+date: '2026-09-19'
+summary: >-
+  조선 시대부터 이어져 온 500년 전통의 영남 대표 장터! 국보 영남루 산책 후 맛보는 토렴식 밀양 돼지국밥과 손 메밀묵의 구수한 미식
+  여행.
+category: 전통시장 나들이
+tags:
+  - 경남전통시장
+  - 밀양아리랑시장
+  - 밀양5일장
+  - 밀양돼지국밥
+  - 영남루
+  - 가을장터
+region: 경남
+eventId: market-miryang-arirang-autumn
+thumbnail: >-
+  https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQwNzg4.PO6Ty4I9ydy_gOGeu7kRi9AIVhG-jWb85lgApDyHz6wg.CQhxnvKtQQ1GiwuPyNIW29xZtQ9uLdQzGm79EuGEe7sg.JPEG/POST_IMAGE_ENCODING_20251130_000859_583.jpg
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화와 다채로운 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬러 어디로 떠날지 고민이신가요? 
 
 이번 주말에는 조선 시대부터 500년 넘는 세월 동안 영남 사람들의 삶과 애환, 그리고 정겨운 인심이 고스란히 녹아 있는 곳으로 향해보려 합니다. 바로 밀양강의 푸른 물결과 국보 영남루가 품은 아름다운 도시, **밀양 아리랑시장 5일장**입니다. 장날 특유의 구수한 냄새와 사람 사는 온기가 가득한 그 현장 속으로 지금 바로 출발해 볼까요?
 
-![밀양 아리랑시장 5일장 가을 전경 및 전시 공간](https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQwNzg4.PO6Ty4I9ydy_gOGeu7kRi9AIVhG-jWb85lgApDyHz6wg.CQhxnvKtQQ1GiwuPyHz6wg.JPEG/POST_IMAGE_ENCODING_20251130_000859_583.jpg)
+![밀양 아리랑시장 5일장 가을 전경 및 전시 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
 *▲ 조선 시대부터 이어져 온 500년 전통의 활기 넘치는 밀양 아리랑시장 5일장 전경.*
 
 ---

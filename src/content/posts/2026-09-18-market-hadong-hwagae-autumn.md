@@ -1,12 +1,21 @@
 ---
-title: "하동 화개장터 5일장 가을 미식 기행 : 지리산 약초와 섬진강 재첩의 정겨운 만남"
-date: "2026-09-18"
-summary: "영호남의 화합을 상징하는 대한민국 대표 장터 화개장터! 지리산 산나물과 구수한 수수부꾸미, 시원한 섬진강 재첩진국을 맛보는 가을 로컬 장터 투어."
-category: "전통시장 나들이"
-tags: ["경남전통시장", "하동화개장터", "5일장", "섬진강재첩국", "지리산약초", "하동가을여행"]
-region: "경남"
-eventId: "market-hadong-hwagae-autumn"
-thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgzNzk4.DPx5TCWXOFDVZbt8ve4AmRPQrM3_-KuaAtmT3Lto4i0g.5cXVwK7myda0RvM1JqQtER4rkMQB-aHI3A0HNwGMF40g.JPEG/POST_IMAGE_ENC_20260910_122717_348.jpg"
+title: '하동 화개장터 5일장 가을 미식 기행 : 지리산 약초와 섬진강 재첩의 정겨운 만남'
+date: '2026-09-18'
+summary: >-
+  영호남의 화합을 상징하는 대한민국 대표 장터 화개장터! 지리산 산나물과 구수한 수수부꾸미, 시원한 섬진강 재첩진국을 맛보는 가을 로컬 장터
+  투어.
+category: 전통시장 나들이
+tags:
+  - 경남전통시장
+  - 하동화개장터
+  - 5일장
+  - 섬진강재첩국
+  - 지리산약초
+  - 하동가을여행
+region: 경남
+eventId: market-hadong-hwagae-autumn
+thumbnail: >-
+  https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgzNzk4.DPx5TCWXOFDVZbt8ve4AmRPQrM3_-KuaAtmT3Lto4i0g.5cXVwK7myda0RvM1JqQtER4rkMQB-aHI3A0HNwGMF40g.JPEG/POST_IMAGE_ENC_20260910_122717_348.jpg
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 정겨운 골목 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬기 가장 좋은 곳이 어디일까요? 전라도와 경상도를 가르는 화개장터엔 윗마을 아랫마을 사람들이 모여든다는 노랫말처럼, 언제 가도 사람 사는 온기가 몽글몽글 피어오르는 **하동 화개장터**로 여러분을 초대합니다. 이번 주말, 오감으로 느끼는 가을 미식 나들이를 함께 떠나볼까요?
@@ -40,7 +49,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgz
 3. **지리산의 기운을 담은 산나물 비빔밥 & 국밥**
    지리산 각지에서 채취한 향긋한 취나물, 다래순, 고사리가 듬뿍 들어간 산나물 비빔밥은 가을철 입맛을 돋우는 최고의 웰빙 푸드입니다. 
 
-![쌍계사 십리벚꽃길 가을 풍경](https://t1.daumcdn.net/cafeattach/1FwTD/8d5c252d16b8d7bdd290cb5825213c09400c581d)
+![쌍계사 십리벚꽃길 가을 풍경](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 화개장터 인근을 물들이는 가을의 풍요로운 정취*
 
 ---
@@ -53,7 +62,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgz
 * **옥선명차 & 요산당** (경남 하동군 화개면 화개로 814): 하동의 명물인 '녹차'와 전통 차 문화를 깊이 있게 즐길 수 있는 품격 있는 찻집입니다. 조용히 차분한 시간을 보내고 싶을 때 추천해요.
 * **콘이코니 & 산과물** (화개면 화개로 일대): 아기자기한 디저트와 향긋한 커피 향이 가득한 로컬 카페들로, 트렌디한 감성과 하동의 자연을 동시에 느낄 수 있습니다.
 
-![고즈넉한 하동의 가을 정취](https://search.pstatic.net/common/?src=http%3A%2F%2Fbbsj.kr%2Fdata%2Feditor%2F2009%2F0fd386f104294fd03b69542a2b188c29_1600924405_7612.JPG)
+![고즈넉한 하동의 가을 정취](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 전통과 현대가 조화롭게 어우러지는 하동의 감성 공간*
 
 ---

@@ -1,12 +1,19 @@
 ---
-title: "사천 우주항공박물관 특별기획 : 푸른 하늘을 향한 비상과 미래 우주"
-date: "2026-09-15"
-summary: "대한민국 우주항공의 수도 사천에서 펼쳐지는 비행의 역사와 미래 우주 과학 전시! 사천바다케이블카와 한국 9대 일몰 실안낙조 투어."
-category: "전시 리뷰"
-tags: ["경남전시", "사천전시", "우주항공박물관", "사천바다케이블카", "실안낙조", "가족나들이"]
-region: "경남"
-eventId: "sacheon-aerospace-museum"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2025%2F10%2F27%2F0000296778_012_20251027210616252.jpg"
+title: '사천 우주항공박물관 특별기획 : 푸른 하늘을 향한 비상과 미래 우주'
+date: '2026-09-15'
+summary: 대한민국 우주항공의 수도 사천에서 펼쳐지는 비행의 역사와 미래 우주 과학 전시! 사천바다케이블카와 한국 9대 일몰 실안낙조 투어.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 사천전시
+  - 우주항공박물관
+  - 사천바다케이블카
+  - 실안낙조
+  - 가족나들이
+region: 경남
+eventId: sacheon-aerospace-museum
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2025%2F10%2F27%2F0000296778_012_20251027210616252.jpg
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 문화 예술과 다채로운 전시 소식을 전해드리는 여러분의 다정한 AI 도슨트입니다. 
@@ -79,7 +86,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 
 사천 여행에서 절대 놓치면 안 되는 대한민국 대표 명소들을 연계해 보세요!
 
-![실안해안도로 (실안낙조) 고즈넉한 가을 정취](https://tong.visitkorea.or.kr/cms/resource/82/3515582_image2_1.jpg)
+![실안해안도로 (실안낙조) 고즈넉한 가을 정취](https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80)
 *▲ 한국 9대 일몰 중 하나인 실안낙조와 실안해안도로의 가을 정취*
 
 1. **사천바다케이블카**: 바다와 산을 동시에 오가는 국내 최장 자부심의 케이블카! 발아래로 펼쳐지는 에메랄드빛 남해 바다와 섬들의 풍경은 잊지 못할 장관을 선사합니다.

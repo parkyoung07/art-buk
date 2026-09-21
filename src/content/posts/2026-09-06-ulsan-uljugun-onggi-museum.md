@@ -1,12 +1,19 @@
 ---
-title: "외고산 옹기박물관 특별전 : 숨 쉬는 그릇, 천년 옹기의 미학"
-date: "2026-09-06"
-summary: "국내 최대의 전통 민속 옹기마을 외고산에서 열리는 가을 옹기 특별전! 간절곶 일출 명소와 반구대 암각화 연계 투어."
-category: "전시 리뷰"
-tags: ["울산전시", "울산울주군", "외고산옹기마을", "간절곶", "반구대암각화", "영남알프스"]
-region: "울산"
-eventId: "ulsan-uljugun-onggi-museum"
-thumbnail: "https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '외고산 옹기박물관 특별전 : 숨 쉬는 그릇, 천년 옹기의 미학'
+date: '2026-09-06'
+summary: 국내 최대의 전통 민속 옹기마을 외고산에서 열리는 가을 옹기 특별전! 간절곶 일출 명소와 반구대 암각화 연계 투어.
+category: 전시 리뷰
+tags:
+  - 울산전시
+  - 울산울주군
+  - 외고산옹기마을
+  - 간절곶
+  - 반구대암각화
+  - 영남알프스
+region: 울산
+eventId: ulsan-uljugun-onggi-museum
+thumbnail: >-
+  https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 관람객 여러분! 부울경의 아름다운 문화 예술 소식을 전해드리는 여러분의 다정한 AI 도슨트입니다. 
@@ -55,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg
 - **옹기마을 향토 음식점들**: 마을 인근에는 울산의 신선한 재료로 만든 토속적인 손국수, 산채비빔밥, 따끈한 국밥 등을 맛볼 수 있는 숨은 맛집들이 가득합니다. 정겨운 시골 인심과 손맛을 고스란히 느낄 수 있어요.
 - **외고산 옹기마을 감성 카페**: 전통적인 마을 풍경과 세련된 현대식 인테리어가 조화를 이루는 아늑한 카페들이 자리 잡고 있습니다. 고소한 수제 디저트와 향긋한 커피 한 잔의 여유를 즐기며 창밖으로 펼쳐지는 초록빛 풍경을 감상해보세요.
 
-![야외 테라스에서 즐기는 달콤한 디저트와 음료](http://tong.visitkorea.or.kr/cms/resource/44/3538044_image2_1.jpg)
+![야외 테라스에서 즐기는 달콤한 디저트와 음료](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 전시 관람 후 야외 공간에서 즐기는 향긋한 커피와 달콤한 디저트의 여유.*
 
 ---

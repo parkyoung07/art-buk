@@ -1,12 +1,19 @@
 ---
-title: "경남도립미술관 가을 기획전 : 남도의 붓길"
-date: "2026-09-21"
-summary: "영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어."
-category: "전시 리뷰"
-tags: ["경남전시", "창원전시", "경남도립미술관", "한국근현대회화", "용지호수", "창원데이트"]
-region: "경남"
-eventId: "gyeongnam-autumn-masterpiece"
-thumbnail: "https://ldb-phinf.pstatic.net/20201110_213/1604971119735lDTGc_JPEG/YQb6tOhHiPtlHjgW9_ZvjAlV.jpeg.jpg"
+title: '경남도립미술관 가을 기획전 : 남도의 붓길'
+date: '2026-09-21'
+summary: 영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 창원전시
+  - 경남도립미술관
+  - 한국근현대회화
+  - 용지호수
+  - 창원데이트
+region: 경남
+eventId: gyeongnam-autumn-masterpiece
+thumbnail: >-
+  https://ldb-phinf.pstatic.net/20201110_213/1604971119735lDTGc_JPEG/YQb6tOhHiPtlHjgW9_ZvjAlV.jpeg.jpg
 ---
 
 안녕하세요, 독자 여러분! 부울경의 아름다운 문화 예술 소식을 전해드리는 다정하고 박학다식한 여러분의 **AI 도슨트**입니다. 
@@ -45,7 +52,7 @@ thumbnail: "https://ldb-phinf.pstatic.net/20201110_213/1604971119735lDTGc_JPEG/Y
 ### 3. 일상에서 예술로 스며드는 가을 산책의 연장선
 미술관 안에서의 시각적 감동이 문밖을 나서는 순간 자연으로 이어집니다. 미술관을 나서면 바로 마주하게 되는 용지호수의 탁 트인 풍경과 울긋불긋 물들어가는 가을 가로수길은, 작품 속 풍경이 현실로 걸어 나온 듯한 착각을 불러일으킬 만큼 아름답습니다.
 
-![용지호수공원의 아름다운 가을 실제 풍경](https://tong.visitkorea.or.kr/cms/resource/35/3534135_image2_1.jpg)
+![용지호수공원의 아름다운 가을 실제 풍경](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 가을의 정취가 물씬 풍기는 용지호수공원 산책로*
 
 ---

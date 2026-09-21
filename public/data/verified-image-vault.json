@@ -11,7 +11,7 @@
           "theme": "architecture"
         },
         {
-          "url": "https://images.unsplash.com/photo-1507842229452-9b2f67644917?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80",
           "alt": "자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간",
           "theme": "bookshelf"
         },
@@ -21,7 +21,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
           "alt": "도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로",
           "theme": "autumn_reeds"
         }
@@ -155,7 +155,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
           "alt": "구포나루와 낙동강변의 황금빛 가을 억새 산책로",
           "theme": "autumn_reeds"
         }
@@ -269,7 +269,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
           "alt": "을숙도 철새도래지와 가을 핑크뮬리·억새 군락지",
           "theme": "autumn_reeds"
         }
@@ -277,7 +277,7 @@
     }
   },
   "generic_fallbacks": {
-    "autumn_reeds": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
+    "autumn_reeds": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
     "autumn_park": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
     "autumn_trail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
     "autumn_landmark": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
@@ -285,6 +285,6 @@
     "korean_food": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
     "cafe_dessert": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
     "art_gallery": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
-    "library_books": "https://images.unsplash.com/photo-1507842229452-9b2f67644917?w=1200&auto=format&fit=crop&q=80"
+    "library_books": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
   }
 }

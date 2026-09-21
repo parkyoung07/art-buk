@@ -1,12 +1,19 @@
 ---
-title: "부산현대미술관(MoCA) 생태환경전 : 을숙도의 갈대와 지속가능한 미래"
-date: "2026-09-15"
-summary: "패트릭 블랑의 거대한 수직정원과 생태 미학이 살아 숨쉬는 을숙도 MoCA 특별전! 낙동강하구에코센터와 핑크뮬리 군락지 힐링 산책."
-category: "전시 리뷰"
-tags: ["부산전시", "부산현대미술관", "을숙도", "낙동강하구", "수직정원", "친환경전시"]
-region: "부산"
-eventId: "busan-moca-eulsukdo"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2022%2F07%2F01%2FAKR20220701037600051_01_i_P4_20220701091514567.jpg"
+title: '부산현대미술관(MoCA) 생태환경전 : 을숙도의 갈대와 지속가능한 미래'
+date: '2026-09-15'
+summary: 패트릭 블랑의 거대한 수직정원과 생태 미학이 살아 숨쉬는 을숙도 MoCA 특별전! 낙동강하구에코센터와 핑크뮬리 군락지 힐링 산책.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 부산현대미술관
+  - 을숙도
+  - 낙동강하구
+  - 수직정원
+  - 친환경전시
+region: 부산
+eventId: busan-moca-eulsukdo
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2022%2F07%2F01%2FAKR20220701037600051_01_i_P4_20220701091514567.jpg
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
@@ -43,7 +50,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 ### 3. 지속 가능한 미래를 향한 예술적 실천
 이번 전시는 단순히 눈으로 보는 미술을 넘어, 기후 위기 시대에 우리가 나아가야 할 방향을 조용히 제안합니다. 친환경 재료로 만들어진 작품들과 관객 참여형 프로젝트를 통해, 예술이 우리의 일상과 지구를 어떻게 치유할 수 있는지 직접 경험해 보실 수 있습니다.
 
-![을숙도 철새공원 풍경](https://www.busan.go.kr/comm/getImage?srvcId=BBSTY3&upperNo=1506607&fileTy=ATTACH&fileNo=1)
+![을숙도 철새공원 풍경](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
 *▲ 미술관 관람 후 가볍게 거닐기 좋은 을숙도 생태공원의 아름다운 가을 풍경*
 
 ---

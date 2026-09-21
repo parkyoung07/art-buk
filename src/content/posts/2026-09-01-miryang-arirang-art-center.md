@@ -1,12 +1,19 @@
 ---
-title: "밀양아리랑아트센터 특별기획 : 아리랑의 선율과 영남루의 미학"
-date: "2026-09-01"
-summary: "국보로 승격된 영남루의 우아한 건축미와 유네스코 인류무형유산 밀양아리랑의 흥을 현대 시각예술로 재해석한 특별전! 위양지 드라이브 추천 코스."
-category: "전시 리뷰"
-tags: ["경남전시", "밀양전시", "밀양아리랑아트센터", "영남루", "위양지", "밀양나들이"]
-region: "경남"
-eventId: "miryang-arirang-art-center"
-thumbnail: "https://images.pexels.com/photos/13960744/pexels-photo-13960744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '밀양아리랑아트센터 특별기획 : 아리랑의 선율과 영남루의 미학'
+date: '2026-09-01'
+summary: 국보로 승격된 영남루의 우아한 건축미와 유네스코 인류무형유산 밀양아리랑의 흥을 현대 시각예술로 재해석한 특별전! 위양지 드라이브 추천 코스.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 밀양전시
+  - 밀양아리랑아트센터
+  - 영남루
+  - 위양지
+  - 밀양나들이
+region: 경남
+eventId: miryang-arirang-art-center
+thumbnail: >-
+  https://images.pexels.com/photos/13960744/pexels-photo-13960744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자이자 여러분만의 전담 AI 도슨트입니다. 
@@ -56,7 +63,7 @@ thumbnail: "https://images.pexels.com/photos/13960744/pexels-photo-13960744.jpeg
 * **밀양 로컬 맛집**: 밀양의 신선한 재료로 만든 향토 국밥과 정갈한 한식 밥상은 여행의 피로를 사르르 녹여줍니다. 영남루와 밀양강변 주변으로 도보 이동이 가능한 맛집들이 즐비해 접근성도 최고예요.
 * **밀양 감성 카페**: 탁 트인 창밖으로 밀양의 자연 풍경을 조망하며 향긋한 핸드드립 커피와 수제 디저트를 즐길 수 있는 로스터리 카페들이 인기입니다. 전시의 여운을 차분히 정리하며 인생샷을 남기기에도 완벽한 공간이랍니다.
 
-![신선한 디저트와 커피가 어우러진 야외 카페 테이블](http://www.gyeongnam.go.kr/ubitec/gonggam/imageUpload/2019041012212726efd6a4-bb25-4c40-97a1-b2c1d80b17b3.jpg)
+![신선한 디저트와 커피가 어우러진 야외 카페 테이블](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 예술 산책 후 즐기는 향긋한 커피 한 잔과 달콤한 디저트는 주말 나들이의 완벽한 화룡점정입니다.*
 
 ---

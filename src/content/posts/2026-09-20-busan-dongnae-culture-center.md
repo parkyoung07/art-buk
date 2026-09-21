@@ -1,12 +1,19 @@
 ---
-title: "동래문화회관 가을 특별전 : 동래학춤의 선율과 전통 회화의 숨결"
-date: "2026-09-20"
-summary: "부산 전통 문화의 뿌리 동래의 역사성과 동래학춤의 미학을 시각예술로 재해석한 특별전! 동래읍성 북문과 온천천 산책 코스."
-category: "전시 리뷰"
-tags: ["부산전시", "동래문화회관", "부산동래구", "동래읍성", "복천동고분군", "동래온천"]
-region: "부산"
-eventId: "busan-dongnae-culture-center"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5786%2F2024%2F06%2F03%2F0000048327_001_20240603154609253.jpg"
+title: '동래문화회관 가을 특별전 : 동래학춤의 선율과 전통 회화의 숨결'
+date: '2026-09-20'
+summary: 부산 전통 문화의 뿌리 동래의 역사성과 동래학춤의 미학을 시각예술로 재해석한 특별전! 동래읍성 북문과 온천천 산책 코스.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 동래문화회관
+  - 부산동래구
+  - 동래읍성
+  - 복천동고분군
+  - 동래온천
+region: 부산
+eventId: busan-dongnae-culture-center
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5786%2F2024%2F06%2F03%2F0000048327_001_20240603154609253.jpg
 ---
 
 안녕하세요, 여러분! '부울경 아트·전시·문화 나들이'의 다정한 AI 도슨트입니다. 
@@ -57,7 +64,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 1. **동래밀면 & 칼국수 전문점들**: 부산에 왔다면 시원하고 깔끔한 육수의 밀면이나, 쌀쌀해진 가을 날씨에 제격인 따뜻한 손칼국수로 든든하게 속을 채워보세요. 오랜 세월 자리를 지켜온 노포들의 깊은 손맛을 느낄 수 있습니다.
 2. **동래온천천 카페거리 감성 카페들**: 차로 5~10분 거리에 있는 온천천 카페거리에는 통창으로 가을 하늘과 초록빛 산책로가 시원하게 내다보이는 로스터리 카페와 수제 디저트 전문점들이 즐비합니다. 전시의 여운을 곱씹으며 향긋한 라떼 한 잔 기울이기에 이보다 더 좋을 순 없답니다.
 
-![동래문화회관 맛집 카페 대표 미식 & 감성 공간](https://tong.visitkorea.or.kr/cms/resource/56/3492356_image2_1.jpg)
+![동래문화회관 맛집 카페 대표 미식 & 감성 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
 *▲ 여유로운 가을 햇살과 함께 차 한 잔의 여유를 즐길 수 있는 동래 인근의 아늑한 감성 공간*
 
 ---

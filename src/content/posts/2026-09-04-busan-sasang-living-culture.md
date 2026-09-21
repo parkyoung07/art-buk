@@ -1,12 +1,19 @@
 ---
-title: "사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술"
-date: "2026-09-04"
-summary: "청년 작가들의 독창적인 감각과 생활 문화가 어우러진 현대 시각예술전! 광활한 삼락생태공원 갈대억새숲 연계 코스."
-category: "전시 리뷰"
-tags: ["부산전시", "사상생활문화센터", "부산사상구", "삼락생태공원", "사상인디스테이션", "갈대숲"]
-region: "부산"
-eventId: "busan-sasang-living-culture"
-thumbnail: "https://images.pexels.com/photos/34160211/pexels-photo-34160211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술'
+date: '2026-09-04'
+summary: 청년 작가들의 독창적인 감각과 생활 문화가 어우러진 현대 시각예술전! 광활한 삼락생태공원 갈대억새숲 연계 코스.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 사상생활문화센터
+  - 부산사상구
+  - 삼락생태공원
+  - 사상인디스테이션
+  - 갈대숲
+region: 부산
+eventId: busan-sasang-living-culture
+thumbnail: >-
+  https://images.pexels.com/photos/34160211/pexels-photo-34160211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 나드리 AI 문화·나들이의 다정한 안내자이자 여러분의 수석 AI 도슨트입니다. 
@@ -84,7 +91,7 @@ thumbnail: "https://images.pexels.com/photos/34160211/pexels-photo-34160211.jpeg
 3. **오후 코스:** 대한민국을 대표하는 생태 공원 중 하나인 **삼락생태공원 갈대억새숲** 산책하며 가을 인생샷 남기기
 4. **저녁 코스:** 사상인디스테이션 등 인근 문화예술 거점 공간 둘러보며 하루 마무리하기
 
-![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://images.pexels.com/photos/17688199/pexels-photo-17688199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 아침 햇살과 억새가 어우러진 삼락생태공원의 아름다운 풍경.*
 
 ---

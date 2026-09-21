@@ -1,12 +1,21 @@
 ---
-title: "부산도서관 가을 북캉스 : 웅장한 서가와 미디어아트, 숲속 테라스가 있는 책의 성전"
-date: "2026-09-20"
-summary: "부산 최고 규모를 자랑하는 지식과 문화의 랜드마크! 감각적인 인테리어 서가, 미디어아트 갤러리, 아이들을 위한 꿈뜨락 어린이실과 옥상 하늘정원 산책."
-category: "도서관 북캉스"
-tags: ["부산도서관", "북캉스", "복합문화공간", "가족나들이", "어린이도서관", "가을독서"]
-region: "부산"
-eventId: "library-busan-sasang-main"
-thumbnail: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
+title: '부산도서관 가을 북캉스 : 웅장한 서가와 미디어아트, 숲속 테라스가 있는 책의 성전'
+date: '2026-09-20'
+summary: >-
+  부산 최고 규모를 자랑하는 지식과 문화의 랜드마크! 감각적인 인테리어 서가, 미디어아트 갤러리, 아이들을 위한 꿈뜨락 어린이실과 옥상
+  하늘정원 산책.
+category: 도서관 북캉스
+tags:
+  - 부산도서관
+  - 북캉스
+  - 복합문화공간
+  - 가족나들이
+  - 어린이도서관
+  - 가을독서
+region: 부산
+eventId: library-busan-sasang-main
+thumbnail: >-
+  https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80
 ---
 
 유독 바람이 선선해지고, 마음 한구석이 헛헛해지는 계절, 가을이 찾아왔습니다. 복잡한 일상에서 벗어나 온전히 나만의 호흡을 찾고 싶을 때, 우리는 문득 활자가 주는 따뜻한 위로를 그리워하곤 하죠. 
@@ -45,7 +54,7 @@ thumbnail: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&
 #### 3. 사계절 자연 채광과 쾌적한 열람 공간
 채광 좋은 통창 뷰와 편안한 좌석이 마련되어 있어 누구나 자유롭게 몰입의 시간을 가질 수 있습니다.
 
-![자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간](https://images.unsplash.com/photo-1507842229452-9b2f67644917?w=1200&auto=format&fit=crop&q=80)
+![자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간](https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80)
 *▲ 감각적인 인테리어와 편안한 좌석이 마련된 부산도서관 내부 독서 공간*
 
 ---
@@ -72,7 +81,7 @@ thumbnail: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&
 
 부산도서관에서의 실내 독서가 끝났다면, 발걸음을 조금 옮겨 주변의 자연과 문화를 만끽해 보세요. 
 
-![도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로](https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80)
+![도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
 *▲ 은빛 억새와 황금빛 갈대가 파도치는 삼락생태공원의 가을 풍경*
 
 - **삼락생태공원 연계 코스**: 차로 멀지 않은 곳에 위치한 낙동강변의 거대한 생태공원에서 황금빛 갈대숲을 거닐며 가을 나들이의 코스를 완벽하게 마무리할 수 있습니다.

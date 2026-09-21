@@ -1,12 +1,19 @@
 ---
-title: "동구문화플랫폼 기획전 : 철길 위의 예술, 부산진역의 재탄생"
-date: "2026-09-03"
-summary: "117년 역사를 지닌 옛 부산진역사를 복합 문화공간으로 재탄생시킨 도심 갤러리! 초량 이바구길 168계단과 문화공감 수정 연계."
-category: "전시 리뷰"
-tags: ["부산전시", "동구문화플랫폼", "부산동구", "초량이바구길", "부산진역", "원도심투어"]
-region: "부산"
-eventId: "busan-donggu-culture-platform"
-thumbnail: "https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '동구문화플랫폼 기획전 : 철길 위의 예술, 부산진역의 재탄생'
+date: '2026-09-03'
+summary: 117년 역사를 지닌 옛 부산진역사를 복합 문화공간으로 재탄생시킨 도심 갤러리! 초량 이바구길 168계단과 문화공감 수정 연계.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 동구문화플랫폼
+  - 부산동구
+  - 초량이바구길
+  - 부산진역
+  - 원도심투어
+region: 부산
+eventId: busan-donggu-culture-platform
+thumbnail: >-
+  https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자이자 여러분의 전담 AI 도슨트입니다. 
@@ -56,7 +63,7 @@ thumbnail: "https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg
 *   **문화공감 수정 (전통찻집)**: 옛 적가옥의 풍취를 고스란히 간직한 공간에서 향긋한 전통차를 즐기며 고즈넉한 시간을 보낼 수 있는 최고의 감성 스폿입니다.
 *   **초량 이바구길 카페 거리**: 아기자기한 골목길 사이에 숨어 있는 로컬 카페들에서 창밖으로 펼쳐지는 부산항의 풍경을 내려다보며 달콤한 디저트를 즐겨보세요.
 
-![신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](https://tong.visitkorea.or.kr/cms/resource/96/3016696_image2_1.JPG)
+![신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 전시 관람 후 아늑한 카페에서 즐기는 달콤한 디저트와 여유로운 휴식.*
 
 ---

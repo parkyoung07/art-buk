@@ -1,12 +1,19 @@
 ---
-title: "경남도립미술관 가을 기획전 : 남도의 붓길"
-date: "2026-09-01"
-summary: "영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어."
-category: "전시 리뷰"
-tags: ["경남전시", "창원전시", "경남도립미술관", "한국근현대회화", "용지호수", "창원데이트"]
-region: "경남"
-eventId: "gyeongnam-autumn-masterpiece"
-thumbnail: "https://images.pexels.com/photos/3222285/pexels-photo-3222285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '경남도립미술관 가을 기획전 : 남도의 붓길'
+date: '2026-09-01'
+summary: 영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 창원전시
+  - 경남도립미술관
+  - 한국근현대회화
+  - 용지호수
+  - 창원데이트
+region: 경남
+eventId: gyeongnam-autumn-masterpiece
+thumbnail: >-
+  https://images.pexels.com/photos/3222285/pexels-photo-3222285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분의 다정한 문화 예술 길잡이이자 수석 AI 도슨트입니다. 
@@ -61,7 +68,7 @@ thumbnail: "https://images.pexels.com/photos/3222285/pexels-photo-3222285.jpeg?a
 - **히포히포 창원**: 경상남도 창원시 성산구 창이대로460번길 20 1층
   - 특색 있는 아시아 요리를 선보이며, 감각적인 플레이팅으로 눈과 입이 모두 즐거운 핫플레이스입니다.
 
-![감성 카페의 디저트와 커피](http://www.ktin.net/Spac_Editor/upload/pkp123/2020/NE_2020_CRMWFC97282.jpg)
+![감성 카페의 디저트와 커피](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 미술관 관람 후 달콤한 휴식을 선사하는 감성 카페의 디저트 타임*
 
 ---

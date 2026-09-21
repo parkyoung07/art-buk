@@ -1,12 +1,19 @@
 ---
-title: "울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예"
-date: "2026-09-05"
-summary: "한반도 철기 문화의 요람 달천철장의 유구한 쇠부리 역사와 현대 금속 조형 예술의 만남! 강동 몽돌해변과 정자항 연계 코스."
-category: "전시 리뷰"
-tags: ["울산전시", "울산북구", "북구문화예술회관", "달천철장", "강동몽돌해변", "정자항"]
-region: "울산"
-eventId: "ulsan-bukgu-soeburi-art"
-thumbnail: "https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예'
+date: '2026-09-05'
+summary: 한반도 철기 문화의 요람 달천철장의 유구한 쇠부리 역사와 현대 금속 조형 예술의 만남! 강동 몽돌해변과 정자항 연계 코스.
+category: 전시 리뷰
+tags:
+  - 울산전시
+  - 울산북구
+  - 북구문화예술회관
+  - 달천철장
+  - 강동몽돌해변
+  - 정자항
+region: 울산
+eventId: ulsan-bukgu-soeburi-art
+thumbnail: >-
+  https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 다정하고 박학다식한 여러분의 AI 도슨트입니다. 
@@ -55,7 +62,7 @@ thumbnail: "https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg
 - **정자항 회센터 & 대게 직판장**: 울산 북구를 대표하는 정자항에 위치해 있어, 싱싱한 제철 활어회와 쫄깃한 대게를 가장 합리적이고 신선하게 즐길 수 있습니다. 바다를 바라보며 맛보는 풍미는 그야말로 예술입니다.
 - **강동몽돌해변 오션뷰 감성 카페 거리**: 파도가 몽돌을 부딪치며 내는 청량한 자갈 소리를 배경으로, 탁 트인 동해 바다를 조망할 수 있는 대형 로스터리 카페와 베이커리들이 즐비해 있습니다. 전시의 여운을 커피 향과 함께 깊게 음미하기에 더할 나위 없이 좋습니다.
 
-![아늑한 야외 테라스에서 즐기는 감성 가득한 디저트와 음료](https://tong.visitkorea.or.kr/cms/resource/52/3077952_image2_1.bmp)
+![아늑한 야외 테라스에서 즐기는 감성 가득한 디저트와 음료](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 탁 트인 바다와 자연을 품은 북구 인근 감성 카페에서 즐기는 달콤한 휴식.*
 
 ---

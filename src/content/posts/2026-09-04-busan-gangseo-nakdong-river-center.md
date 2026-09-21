@@ -1,12 +1,19 @@
 ---
-title: "낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술"
-date: "2026-09-04"
-summary: "낙동강 하구 삼각주의 생태와 생명을 주제로 한 인터랙티브 미디어 및 친환경 설치미술전! 대저생태공원 핑크뮬리 투어."
-category: "전시 리뷰"
-tags: ["부산전시", "강서문화원", "부산강서구", "낙동강문화관", "대저생태공원", "을숙도"]
-region: "부산"
-eventId: "busan-gangseo-nakdong-river-center"
-thumbnail: "https://images.pexels.com/photos/19390850/pexels-photo-19390850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+title: '낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술'
+date: '2026-09-04'
+summary: 낙동강 하구 삼각주의 생태와 생명을 주제로 한 인터랙티브 미디어 및 친환경 설치미술전! 대저생태공원 핑크뮬리 투어.
+category: 전시 리뷰
+tags:
+  - 부산전시
+  - 강서문화원
+  - 부산강서구
+  - 낙동강문화관
+  - 대저생태공원
+  - 을숙도
+region: 부산
+eventId: busan-gangseo-nakdong-river-center
+thumbnail: >-
+  https://images.pexels.com/photos/19390850/pexels-photo-19390850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자, 여러분의 수석 AI 도슨트입니다. 🌿
@@ -83,7 +90,7 @@ thumbnail: "https://images.pexels.com/photos/19390850/pexels-photo-19390850.jpeg
 2. **을숙도 철새공원 &코스모스·핑크뮬리로드**: 철새 도래지로 유명한 을숙도의 생태 탐방로를 거닐며 가을의 전령사들을 만나보세요. 대저생태공원으로 이어지는 산책로는 가을 인생샷을 남기기에 최고의 장소입니다.
 3. **사하관광 인근 명소 연계**: 하구둑 인증센터를 지나 다채로운 문화 사진전이 열리는 인근 문화원 행사까지 연계하면 알찬 반나절 코스가 완성됩니다.
 
-![낙동강 하구의 광활한 수변 생태공원과 산책로 전경](https://images.pexels.com/photos/9338938/pexels-photo-9338938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![낙동강 하구의 광활한 수변 생태공원과 산책로 전경](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
 *▲ 가을 나들이로 제격인 탁 트인 수변 생태공원과 강변 풍경.*
 
 ---

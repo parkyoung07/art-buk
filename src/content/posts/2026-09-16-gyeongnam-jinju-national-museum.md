@@ -1,12 +1,21 @@
 ---
-title: "국립진주박물관 특별전 : 남강의 역사와 영남의 미학"
-date: "2026-09-16"
-summary: "유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관의 가을 특별전! 영남의 역사적 숨결과 촉석루, 남강 산책로를 아우르는 낭만 예술 투어."
-category: "전시 리뷰"
-tags: ["경남전시", "국립진주박물관", "진주성", " 촉석루", "진주데이트", "가을여행"]
-region: "경남"
-eventId: "gyeongnam-jinju-national-museum"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5127%2F2013%2F09%2F11%2F18185a_59_20130911105003.jpg"
+title: '국립진주박물관 특별전 : 남강의 역사와 영남의 미학'
+date: '2026-09-16'
+summary: >-
+  유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관의 가을 특별전! 영남의 역사적 숨결과 촉석루, 남강 산책로를 아우르는 낭만
+  예술 투어.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 국립진주박물관
+  - 진주성
+  - ' 촉석루'
+  - 진주데이트
+  - 가을여행
+region: 경남
+eventId: gyeongnam-jinju-national-museum
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5127%2F2013%2F09%2F11%2F18185a_59_20130911105003.jpg
 ---
 
 안녕하세요, 예술을 사랑하는 관람객 여러분! 부울경 아트·전시 나들이의 다정한 AI 도슨트입니다. 
@@ -40,7 +49,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 ### 2. 영남 미학의 정수를 담은 정교한 공예와 회화
 이번 전시는 실용적이면서도 아름다움을 잃지 않았던 선조들의 미적 감각을 조명합니다. 세밀한 붓질 속에서 피어나는 기품과 단아한 공예품들을 들여다보고 있으면, 시간과 공간을 초월한 예술적 교감이 온몸으로 전해집니다.
 
-![촉석루의 아름다운 가을 실제 풍경](https://www.jinju.go.kr/CmsMultiFile/view.do?multifileId=TOUR00621&idx=14983)
+![촉석루의 아름다운 가을 실제 풍경](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 촉석루의 아름다운 가을 실제 풍경*
 
 ### 3. 진주성 산책과 연계되는 입체적 문화 기행
@@ -56,7 +65,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
   * **주소:** 경상남도 진주시 창렬로 12
   * **특징:** 진주성 인근에서 가장 핫한 감성 레스토랑 중 하나입니다. 고풍스러운 인테리어 속에서 즐기는 파스타, 스테이크 등 훌륭한 양식 메뉴는 데이트 코스나 특별한 날의 식사로 손색이 없습니다. 맛과 분위기를 모두 잡은 힐링 공간이에요!
 
-![국립진주박물관 맛집 카페 대표 미식 & 감성 공간](https://tong.visitkorea.or.kr/cms/resource/07/3557007_image2_1.jpg)
+![국립진주박물관 맛집 카페 대표 미식 & 감성 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
 *▲ 국립진주박물관 주변 감성 미식 & 카페 공간*
 
 ---

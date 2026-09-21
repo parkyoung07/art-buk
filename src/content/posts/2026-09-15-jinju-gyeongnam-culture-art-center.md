@@ -1,12 +1,19 @@
 ---
-title: "경남문화예술회관 특별전 : 남강의 물결과 영남 조형예술의 맥"
-date: "2026-09-15"
-summary: "유유히 흐르는 진주 남강변을 배경으로 펼쳐지는 영남 대표 조형예술가들의 대작 향연! 촉석루 야경과 물빛나루 쉼터 산책 코스."
-category: "전시 리뷰"
-tags: ["경남전시", "진주전시", "경남문화예술회관", "진주남강", "촉석루", "진주나들이"]
-region: "경남"
-eventId: "jinju-gyeongnam-culture-art-center"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F028%2F2006%2F09%2F03%2F03532999_20060904.JPG"
+title: '경남문화예술회관 특별전 : 남강의 물결과 영남 조형예술의 맥'
+date: '2026-09-15'
+summary: 유유히 흐르는 진주 남강변을 배경으로 펼쳐지는 영남 대표 조형예술가들의 대작 향연! 촉석루 야경과 물빛나루 쉼터 산책 코스.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 진주전시
+  - 경남문화예술회관
+  - 진주남강
+  - 촉석루
+  - 진주나들이
+region: 경남
+eventId: jinju-gyeongnam-culture-art-center
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F028%2F2006%2F09%2F03%2F03532999_20060904.JPG
 ---
 
 안녕하세요, 예술을 사랑하는 관람객 여러분! 부울경 아트·전시 나들이의 다정한 안내자, 여러분의 **AI 도슨트**입니다. 
@@ -40,7 +47,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 #### 2. 자연과 건축이 하나 되는 공간, 경남문화예술회관의 미학
 통유리창 너머로 시원하게 펼쳐지는 진주 남강의 풍경은 그 자체로 하나의 거대한 예술 작품입니다. 작품을 감상하다 고개를 돌리면 마주하게 되는 남강의 물결은 전시 관람의 여운을 한층 더 깊게 만들어 줍니다. 실내 전시의 감동과 자연의 풍광이 완벽한 조화를 이루는 순간을 만끽해 보세요.
 
-![진주성 & 촉석루의 아름다운 가을 실제 풍경](https://www.jinju.go.kr/CmsMultiFile/view.do?multifileId=TOUR00621&idx=14983)
+![진주성 & 촉석루의 아름다운 가을 실제 풍경](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
 *▲ 진주 남강과 촉석루가 어우러진 고풍스러운 가을 풍경*
 
 #### 3. 남강의 물결과 예술이 빚어내는 사색의 시간
@@ -55,7 +62,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 * **남강변 리버뷰 감성 카페 (추천):** 전시실을 나와 강변을 따라 걷다 보면 만날 수 있는 따스한 햇살 맛집 카페들입니다. 향긋한 핸드드립 커피와 직접 구운 베이커리를 맛보며 창밖으로 흐르는 남강을 바라보는 것만으로도 완벽한 힐링이 됩니다.
 * **진주 향토 맛집 (추천):** 진주 방문 시 절대 놓칠 수 없는 진주냉면의 깊고 개운한 육수 맛부터, 따끈하게 속을 채워주는 전통 육회비빔밥까지! 예술 감상으로 채워진 눈과 마음을 든든한 지역 미식으로 채워보세요.
 
-![경남문화예술회관 제1·2전시실 맛집 카페 대표 미식 & 감성 공간](https://scontent-nrt1-2.cdninstagram.com/v/t39.30808-6/425341401_932467692219730_5954765288693647515_n.jpg)
+![경남문화예술회관 제1·2전시실 맛집 카페 대표 미식 & 감성 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
 *▲ 진주의 맛과 감성을 고스란히 담아낸 주변 미식 및 카페 공간*
 
 ---
