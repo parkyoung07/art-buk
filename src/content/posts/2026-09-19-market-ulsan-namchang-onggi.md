@@ -6,14 +6,16 @@ category: "전통시장 나들이"
 tags: ["울산전통시장", "남창옹기종기시장", "울산5일장", "남창소머리국밥", "외고산옹기마을", "울주여행"]
 region: "울산"
 eventId: "market-ulsan-namchang-onggi"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5906%2F2025%2F12%2F14%2F0000059323_002_20251214214300657.jpg"
+thumbnail: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80"
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 장터와 골목 미식을 전해드리는 전통시장 전문 로컬 큐레이터입니다! 
 
 선선한 가을바람이 옷깃을 스치는 요즘, 칙칙폭폭 기차 소리와 함께 왁자지껄한 사람 냄새가 그리워지지 않으시나요? 이번 주말에는 복잡한 일상을 잠시 내려놓고, 동해선 기차 타고 가볍게 떠나기 좋은 100년 전통의 울산 **남창옹기종기시장 5일장**으로 향해보려 합니다. 남창역 문을 나서자마자 코끝을 간지럽히는 구수한 국밥 냄새와 상인들의 정겨운 콧소리가 우리를 반기는 곳, 지금 바로 활기찬 장터 나들이를 시작해볼까요?
 
-![남창옹기종기시장 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5906%2F2025%2F12%2F14%2F0000059323_002_20251214214300657.jpg)
+---
+
+![남창옹기종기시장 가을 전경](https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80)
 *▲ 칙칙폭폭 기차 타고 떠나는 100년 역사 속 활기찬 장터, 남창옹기종기시장 전경*
 
 ---
@@ -39,7 +41,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.ne
 2. **손맛 가득 장터 손칼국수**: 멸치 육수를 진하게 우려내어 갓 뽑아낸 쫄깃한 면발과 투박하지만 정성스러운 고명이 올라간 칼국수. 찬 바람 불 때 호로록 들이켜면 온몸이 사르르 녹아내립니다.
 3. **갓 튀겨낸 바삭한 즉석 튀김과 옛날 통닭**: 시장 골목 어귀에서 고소한 기름 냄새로 발길을 붙잡는 튀김과 통닭. 고구마, 새우, 오징어 튀김을 종이봉투에 가득 담아 걸으며 먹는 재미가 장터 나들이의 또 다른 묘미입니다.
 
-![외고산 옹기마을 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5394%2F2025%2F07%2F27%2F0001145020_001_20250727085210733.jpg)
+![외고산 옹기마을 풍경](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
 *▲ 전통의 숨결이 살아 숨 쉬는 인근 외고산 옹기마을의 가을 풍경*
 
 ---

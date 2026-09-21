@@ -39,8 +39,8 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQw
 2. **할머니 손 메밀묵과 도토리묵**: 직접 쑤어 탱글탱글함이 살아있는 메밀묵에 갓 무쳐낸 겉절이를 얹어 먹으면, 가을철 입맛을 돋우는 최고의 별미가 됩니다.
 3. **갓 튀겨낸 바삭한 시장 튀김 및 전**: 시장 골목 어귀에서 모락모락 피어오르는 기름 냄새를 따라가면 만나게 되는 고소한 야채튀김과 빈대떡은 장보기의 즐거움을 배로 만들어 줍니다.
 
-![밀양 영남루 (국보)의 아름다운 가을 실제 풍경](https://thumb2.gettyimageskorea.com/image_preview/700/201801/MBRF/MBRF18004751.jpg)
-*▲ 시장에서 도보로 가권에 위치한 국보 영남루. 가을 단풍과 어우러져 한 폭의 그림 같은 풍경을 자랑합니다.*
+![밀양 영남루 (국보)의 아름다운 가을 실제 풍경](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
+*▲ 시장에서 도보 거리에 위치한 국보 영남루. 가을 단풍과 밀양강이 어우러져 한 폭의 그림 같은 풍경을 자랑합니다.*
 
 ---
 
@@ -50,8 +50,8 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQw
 
 시장 골목을 빠져나와 영남루와 밀양강변을 따라 걷다 보면, 고즈넉한 한옥을 개조한 전통찻집이나 감각적인 로스터리 카페들을 쉽게 발견할 수 있습니다. 따뜻한 대추차나 향긋한 핸드드립 커피 한 잔을 손에 들고, 밀양강에서 불어오는 가을바람을 맞으며 로컬 여행의 여유를 만끽해 보세요.
 
-![밀양 아리랑시장 인근 미식 및 감성 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F58%2F2774858_image2_1.JPG)
-*▲ 시장 인근의 고즈넉한 정취를 느끼며 쉬어가기 좋은 로컬 스팟.*
+![밀양 아리랑시장 인근 미식 및 감성 공간](https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80)
+*▲ 시장 인근의 고즈넉한 정취를 느끼며 쉬어가기 좋은 로컬 카페 스팟.*
 
 ---
 
