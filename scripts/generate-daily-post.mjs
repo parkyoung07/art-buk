@@ -1034,11 +1034,11 @@ const CURATED_SAFE_PHOTOS = {
   // 테마 3: 특화 도서관 & 가족 북캉스
   "library-busan-sasang-main": [
     {
-      url: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&auto=format&fit=crop&q=80",
       alt: "부산도서관 웅장한 서가와 현대적 건축 인테리어 전경"
     },
     {
-      url: "https://images.unsplash.com/photo-1507842229452-9b2f67644917?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&auto=format&fit=crop&q=80",
       alt: "자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간"
     },
     {
@@ -1046,7 +1046,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "사상구 도서관 주변 감성 북카페 & 향긋한 커피 디저트"
     },
     {
-      url: "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
       alt: "도서관 인근 삼락생태공원 가을 갈대숲과 은빛 억새 산책로"
     }
   ],
