@@ -50,7 +50,7 @@ thumbnail: >-
 ### 3. 지속 가능한 미래를 향한 예술적 실천
 이번 전시는 단순히 눈으로 보는 미술을 넘어, 기후 위기 시대에 우리가 나아가야 할 방향을 조용히 제안합니다. 친환경 재료로 만들어진 작품들과 관객 참여형 프로젝트를 통해, 예술이 우리의 일상과 지구를 어떻게 치유할 수 있는지 직접 경험해 보실 수 있습니다.
 
-![을숙도 철새공원 풍경](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
+![을숙도 철새공원 풍경](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 미술관 관람 후 가볍게 거닐기 좋은 을숙도 생태공원의 아름다운 가을 풍경*
 
 ---

@@ -91,7 +91,7 @@ thumbnail: >-
 3. **오후 코스:** 대한민국을 대표하는 생태 공원 중 하나인 **삼락생태공원 갈대억새숲** 산책하며 가을 인생샷 남기기
 4. **저녁 코스:** 사상인디스테이션 등 인근 문화예술 거점 공간 둘러보며 하루 마무리하기
 
-![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80)
+![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 아침 햇살과 억새가 어우러진 삼락생태공원의 아름다운 풍경.*
 
 ---

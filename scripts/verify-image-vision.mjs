@@ -30,9 +30,11 @@ const CRITICAL_BLACKLIST = [
   { pattern: /photo-1507003211169/i, reason: "개인 인물 초상권 사진" },
   { pattern: /portrait|selfie|face\b|people\b/i, reason: "인물/초상권 키워드 포함" },
   
-  // 계절 불일치 (가을 시즌 차단 대상)
+  // 계절 불일치 / 장소 불일치 (가을 억새/생태공원 차단 대상)
   { pattern: /photo-1522383225653/i, reason: "봄철 벚꽃 사진 (가을 계절 불일치)" },
   { pattern: /photo-1448375240586-882707db888b/i, reason: "어두운 외국 침엽수림 사진 (가을 억새/자연 불일치)" },
+  { pattern: /photo-1470071459604-3b5ec3a7fe05/i, reason: "외국 고산 절벽 계곡 사진 (가을 억새/낙동강변 불일치)" },
+  { pattern: /photo-1481627834876-b7833e8f5570/i, reason: "어둡고 좁은 서가 복도 사진 (쾌적한 열람 공간 불일치)" },
   { pattern: /cherry blossom|cherry_blossom|sakura/i, reason: "봄철 벚꽃 키워드 (가을 불일치)" },
   { pattern: /snow\b|winter\b|snowman|설경/i, reason: "겨울 설경 키워드 (가을 불일치)" },
 

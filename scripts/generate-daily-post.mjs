@@ -1150,7 +1150,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "창녕 우포늪 태고의 신비를 간직한 물안개와 갈대 습지"
     },
     {
-      url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "황금빛으로 물든 가을 갈대밭과 평화로운 탐방로"
     },
     {
@@ -1346,7 +1346,7 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
   console.log(`🛡️ [안전 금고 테마 매칭] ${slug} 에 대해 검증된 가을 실사 세트 구성`);
   const fb = vaultData?.generic_fallbacks || {
     autumn_park: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
-    autumn_reeds: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+    autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
     autumn_landmark: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
     ocean_harbor: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&auto=format&fit=crop&q=80",

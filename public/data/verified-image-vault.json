@@ -155,7 +155,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "구포나루와 낙동강변의 황금빛 가을 억새 산책로",
           "theme": "autumn_reeds"
         }
@@ -169,7 +169,7 @@
           "theme": "wetland"
         },
         {
-          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "황금빛으로 물든 가을 갈대밭과 평화로운 탐방로",
           "theme": "autumn_reeds"
         },
@@ -223,7 +223,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "가을 억새와 어우러진 남해안 해안 드라이브 코스",
           "theme": "autumn_reeds"
         }
@@ -269,7 +269,7 @@
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           "alt": "을숙도 철새도래지와 가을 핑크뮬리·억새 군락지",
           "theme": "autumn_reeds"
         }
@@ -277,7 +277,7 @@
     }
   },
   "generic_fallbacks": {
-    "autumn_reeds": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&auto=format&fit=crop&q=80",
+    "autumn_reeds": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "autumn_park": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
     "autumn_trail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
     "autumn_landmark": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
