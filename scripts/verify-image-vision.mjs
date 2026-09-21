@@ -28,7 +28,7 @@ const CRITICAL_BLACKLIST = [
   { pattern: /photo-1544005313/i, reason: "개인 인물 초상권 사진" },
   { pattern: /photo-1534528741775/i, reason: "개인 인물 초상권 사진" },
   { pattern: /photo-1507003211169/i, reason: "개인 인물 초상권 사진" },
-  { pattern: /portrait|selfie|face\b|people\b/i, reason: "인물/초상권 키워드 포함" },
+  { pattern: /metal face|face sculpture|portrait|selfie|face\b|people\b/i, reason: "인물/초상권 키워드 포함" },
   
   // 계절 불일치 / 장소 불일치 (가을 억새/생태공원 차단 대상)
   { pattern: /photo-1522383225653/i, reason: "봄철 벚꽃 사진 (가을 계절 불일치)" },
@@ -37,6 +37,7 @@ const CRITICAL_BLACKLIST = [
   { pattern: /photo-1481627834876-b7833e8f5570/i, reason: "어둡고 좁은 서가 복도 사진 (쾌적한 열람 공간 불일치)" },
   { pattern: /photo-1521587760476/i, reason: "오래된 고서적 책장 사진 (현대 공공도서관 열람실 불일치)" },
   { pattern: /pexels-photo-590493/i, reason: "어두운 서점 책장 사진 (현대 공공도서관 열람실 불일치)" },
+  { pattern: /photo-1565008447742-97f6f38c985c/i, reason: "공사 현장/크레인 사진 (미술관 전경 불일치)" },
   { pattern: /cherry blossom|cherry_blossom|sakura/i, reason: "봄철 벚꽃 키워드 (가을 불일치)" },
   { pattern: /snow\b|winter\b|snowman|설경/i, reason: "겨울 설경 키워드 (가을 불일치)" },
 
