@@ -43,7 +43,7 @@ summary: "부산 대표 랜드마크 도서관에서 즐기는 감성 북캉스!
 #### 3. 사계절 자연 채광과 쾌적한 열람 공간
 채광 좋은 통창 뷰와 편안한 좌석이 마련되어 있어 누구나 자유롭게 몰입의 시간을 가질 수 있습니다.
 
-![자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간](https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![자연 채광과 원목 서가가 어우러진 쾌적한 독서 열람 공간](https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80)
 *▲ 감각적인 인테리어와 편안한 좌석이 마련된 부산도서관 내부 독서 공간*
 
 ---

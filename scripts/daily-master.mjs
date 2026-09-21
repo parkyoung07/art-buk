@@ -65,12 +65,28 @@ try {
 
 // 4. 일일 정기 점검 실행 (1회 통합)
 try {
-  console.log("📊 [4/4] 일일 정기 점검 및 제1원칙 감사 수행 중...");
+  console.log("📊 [4/5] 일일 정기 점검 및 제1원칙 감사 수행 중...");
   execSync("node scripts/daily-inspect.mjs", { cwd: rootDir, stdio: "inherit" });
 } catch (e) {
   console.error("⚠️ 점검 스크립트 실행 중 오류:", e.message);
 }
 
+// 5. GitHub 자동 배포 (Git Commit & Push 원스톱 완결)
+try {
+  console.log("🚀 [5/5] GitHub 자동 배포(Push) 진행 중...");
+  execSync("git add .", { cwd: rootDir, stdio: "inherit" });
+  const status = execSync("git status --porcelain", { cwd: rootDir }).toString();
+  if (status.trim()) {
+    execSync('git commit -m "fix(images): 부산도서관 실사 사진 교체 및 이미지 무결성 최신화"', { cwd: rootDir, stdio: "inherit" });
+    execSync("git push origin main", { cwd: rootDir, stdio: "inherit" });
+    console.log("✅ GitHub 배포 완료! Cloudflare Pages 자동 빌드가 시작되었습니다.");
+  } else {
+    console.log("ℹ️ 변경된 파일이 없어 푸시를 건너뜁니다.");
+  }
+} catch (e) {
+  console.error("⚠️ Git 배포 중 오류:", e.message);
+}
+
 console.log("==================================================");
-console.log("🎉 [나드리 AI] 올인원 일일 작업 원스톱 완료!");
+console.log("🎉 [나드리 AI] 올인원 일일 작업 및 배포 원스톱 완료!");
 console.log("==================================================");
