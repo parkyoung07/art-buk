@@ -5,13 +5,29 @@ import Link from "next/link";
 
 interface NoticeModalProps {
   noticeId?: string;
+  isActive?: boolean;
+  startDate?: string; // YYYY-MM-DD
+  endDate?: string;   // YYYY-MM-DD
 }
 
-export default function NoticeModal({ noticeId = "busan_museum_grand_reopen_20260917" }: NoticeModalProps) {
+export default function NoticeModal({
+  noticeId = "busan_museum_grand_reopen_20260917",
+  isActive = false, // 회장님 지시: 오늘(9.17) 표기 배너 삭제 및 기본 비활성화
+  startDate = "2026-09-17",
+  endDate = "2026-09-17", // 9월 17일 당일 종료된 배너
+}: NoticeModalProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    // 미리보기 강제 실행 파라미터 확인 (?preview=modal 또는 ?preview=true)
+    // 1. 배너 활성화 여부 확인
+    if (!isActive) return;
+
+    // 2. 날짜 유효 기간(다음 날을 고려한 스마트 만료) 확인
+    const todayStr = new Date().toISOString().slice(0, 10);
+    if (startDate && todayStr < startDate) return;
+    if (endDate && todayStr > endDate) return;
+
+    // 3. 미리보기 강제 실행 파라미터 확인 (?preview=modal 또는 ?preview=true)
     const urlParams = new URLSearchParams(window.location.search);
     const isPreview = urlParams.get("preview") === "modal" || urlParams.get("preview") === "true";
 
@@ -31,7 +47,7 @@ export default function NoticeModal({ noticeId = "busan_museum_grand_reopen_2026
       setIsOpen(true);
     }, 100);
     return () => clearTimeout(timer);
-  }, [noticeId]);
+  }, [noticeId, isActive, startDate, endDate]);
 
   const handleClose = () => {
     setIsOpen(false);

@@ -627,8 +627,8 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
       {/* 4. 나드리 AI 공식 푸터 */}
       <Footer />
 
-      {/* 메인 단순 공지 알림창 */}
-      <NoticeModal />
+      {/* 메인 공지 알림창 (만료된 지난 공지는 비활성화) */}
+      <NoticeModal isActive={false} />
     </div>
   );
 }
