@@ -122,7 +122,7 @@ summary: "총 469억 원 투입, 2년간의 대대적인 리노베이션을 마�
 
 ### 🌿 가을바람과 함께 걷는 주변 연계 산책 코스
 
-![가을 단풍과 푸른 하늘이 어우러진 수영강변 APEC 나루공원 산책로](https://images.unsplash.com/photo-1470246973918-29a93221c455?w=1200&auto=format&fit=crop&q=80)
+![가을 단풍과 푸른 하늘이 어우러진 수영강변 APEC 나루공원 산책로](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
 *▲ 미술관 관람 후 여유롭게 거닐 수 있는 수영강변 APEC 나루공원의 가을 풍경*
 
 * **수영강변 APEC 나루공원 (도보 7분):**  
