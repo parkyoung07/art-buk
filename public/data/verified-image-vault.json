@@ -108,67 +108,89 @@
     "markets": {
       "market-busan-jagalchi-nampo": [
         {
-          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-          "alt": "부산 자갈치시장 남항 바다와 푸른 포구의 탁 트인 전경 (초상권 없는 순수 풍경)",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832",
+          "alt": "부산 자갈치시장 뒤편 남항 바다와 포구 전경 (실제 현장 실사)",
           "theme": "harbor"
         },
         {
-          "url": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80",
-          "alt": "남포동 비프광장 명물 길거리 미식과 정갈한 간식",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MzBfMjQw%2FMDAxNzU2NTQ1NzgzMTMw.Gz8q_bVYgwuCGJCwWovTgqbdB1I0y0TCBdPdh36NHOgg.WgCzBXNffjGLz_Fjs1-XlCxzM5SHCX6zk7gzNmKOkrgg.JPEG%2F1756545598984.jpg&type=sc960_832",
+          "alt": "남포동 비프광장 명물 씨앗호떡 먹거리 실사",
           "theme": "food"
         },
         {
-          "url": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-          "alt": "남포동 영도대교 오션뷰 감성 카페와 향긋한 스페셜티 커피",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMDVfNDQg%2FMDAxNzY0OTA0MDcyNjMw.Du8kGFrOdXBgm6GwQgIUZUQMuUOzXr1qEB3nAJ6uObQg.5RwP7zOHZF5N4D8KUtcUuqIFzbWDwoJuaiEo0kGg4bEg.JPEG%2F900%25A3%25DF20251203%25A3%25DF170233.jpg&type=sc960_832",
+          "alt": "남포동 영도대교 오션뷰 감성 카페와 향긋한 커피 디저트 실사",
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
-          "alt": "푸른 가을 하늘 아래 웅장하게 우뚝 솟은 용두산공원 부산타워 전경 (가을 정취)",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832",
+          "alt": "푸른 가을 하늘 아래 우뚝 솟은 용두산공원 부산타워 전경 실사",
           "theme": "autumn_landmark"
         }
       ],
       "market-miryang-arirang-autumn": [
         {
-          "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80",
-          "alt": "밀양 아리랑시장 정겨운 전통 5일장 골목 풍경",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDRfMjk2%2FMDAxNzU0MjcwMzEwMzUy.aOXj6lSApKFiAAtBaMQlS-QlvhZ6cgg8495GGDnACHcg.MG7ZZh6784qCjyPQ6kmxCm2Zm_gH9w8FttwVvojAODwg.JPEG%2F900%25A3%25DF20250802%25A3%25DF174536.jpg&type=sc960_832",
+          "alt": "밀양 아리랑시장 5일장 아케이드 골목 활기찬 전경 실사",
           "theme": "market"
         },
         {
-          "url": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
-          "alt": "뚝배기에 진하게 끓여낸 500년 전통 원조 밀양돼지국밥",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMDNfMTcw%2FMDAxNjc1MzkxMzY3NTUz.g53cf_IGNb5qPMAOtCvBttJska-NuQiBmYN5-84kIlsg.dWODsmGjbVRL9tPBRpcf6xhutvCdUWkEFuEV2V9o1iIg.JPEG.zzai0924%2F20230123_125213.jpg&type=sc960_832",
+          "alt": "뚝배기 안에 정갈하게 담긴 전통 토렴식 밀양 돼지국밥 실사",
           "theme": "food"
         },
         {
-          "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80",
-          "alt": "밀양강변 영남루 뷰 감성 한옥 카페",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDFfNjUg%2FMDAxNjE0NTg4ODI0MDk2.gnxn6yPzyzQMOX5kWPqSnj_2lcOGGq7kP3m7KjYumOQg.Nc07Xo14-JetBZh6w6Hk49q_d8Nl0GUrwuhce2Nbn1sg.JPEG.ektha4003%2FIMG_4374.jpg&type=sc960_832",
+          "alt": "밀양 감성 카페 야외 정원과 디저트 크로플 실사",
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-          "alt": "국보 밀양 영남루와 밀양강 둔치의 고즈넉한 가을빛",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832",
+          "alt": "국보 밀양 영남루 누각과 밀양강 가을 절경 실사",
           "theme": "autumn_landmark"
         }
       ],
       "market-ulsan-namchang-onggi": [
         {
-          "url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80",
-          "alt": "울산 남창옹기종기시장 활기 넘치는 100년 전통 5일장",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832",
+          "alt": "울산 남창옹기종기시장 활기찬 5일장 난전 거리 전경 (네이버 실사)",
           "theme": "market"
         },
         {
-          "url": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
-          "alt": "남창 장터의 명물 구수한 소머리국밥 한 상",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA5MTdfNjgg%2FMDAxNzU4MDk0NjY2MzE4.vvX7pD_6Un0aK6dBQ5kbaMgBzcWqF01dYrhEjkg-Qkcg.Qtrqm7yox7TkrwzwTqFzjO9Gc9HwueLe--igeA7JrQgg.JPEG%2Foutput%25A3%25DF570647189.jpg&type=sc960_832",
+          "alt": "뚝배기 안에 푸짐하게 담긴 100년 전통 남창 소머리국밥 한 상 (네이버 실사)",
           "theme": "food"
         },
         {
-          "url": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-          "alt": "울주 온양 감성 디저트 카페",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MDJfMTk1%2FMDAxNjE5OTYxMDIxMDg1.5due03WNb9eGxFsOCbHlDvPic9b_f5zL7GMdSXF5Kl0g.EAlu2YIO4sTmTPQz5_usj5CD1wtWtWoFQjoautulTewg.JPEG.minkyeong1990%2Foutput_3672126558.jpg&type=sc960_832",
+          "alt": "울주 서생/간절곶 감성 카페의 바삭한 크로플과 아이스 아메리카노 (네이버 실사)",
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-          "alt": "간절곶 등대와 외고산 옹기마을 가을 정취",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA5MDdfMTEx%2FMDAxNzU3MTk4NTk2NTMx.FesjX90DUDeWB_6sZe4F5KnyhEDqcI7cDAGen6im6Y4g.9MgvZ4z0NqY306_xySIgDNrXnhlosrezE50qQ6zMSxog.JPEG%2F900%25A3%25DF20250906%25A3%25DF162617.jpg&type=sc960_832",
+          "alt": "야외 마당에 크고 작은 전통 옹기 장독대들이 늘어선 외고산 옹기마을 (네이버 실사)",
+          "theme": "autumn_landmark"
+        }
+      ],
+      "market-hadong-hwagae-autumn": [
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832",
+          "alt": "영호남의 화합이 이루어지는 정겨운 초가 장옥과 활기찬 하동 화개장터 전경",
+          "theme": "market"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MTlfMjQ3%2FMDAxNzUwMjkzMTk5NDQ3.zprbE6ca9sbk1E8upZfsKntSalKQA040J3zoCm8VmFkg.HU_nez-giH-zvgJw1lbopJlX5HaA6vvmHQqiWU4ei9gg.JPEG%2F900%25A3%25DF20250616%25A3%25DF132900.jpg&type=sc960_832",
+          "alt": "보글보글 끓어오르는 맑은 국물과 싱그러운 초록 부추가 가득 담긴 섬진강 재첩국",
+          "theme": "food"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20141208_240%2Fjinspoon_1418015414678c3EU2_JPEG%2F%25C1%25A6%25B3%25EB%25B9%25D9%25BD%25BA%25C7%25AC_%25283%2529.jpg&type=sc960_832",
+          "alt": "단아한 찻잔 세트에 맑고 깊은 향의 전통 야생차가 정갈하게 우려지는 하동 다도 풍경",
+          "theme": "cafe"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMDdfMjkw%2FMDAxNjM4ODU3OTk1MTI3.evwh6gBdV8QP47Oe0F5F7kv4NcWT6kIWogMrbxHbMDwg.E8PEoeD1bgUP3mYmEP2b7Tc36dzxiSBQwSFkfIF_oGog.PNG.rgmcompany%2Fimage.png&type=sc960_832",
+          "alt": "바구니에 정갈하게 담겨 자연 건조된 지리산 말린 산나물과 약초",
           "theme": "autumn_landmark"
         }
       ],

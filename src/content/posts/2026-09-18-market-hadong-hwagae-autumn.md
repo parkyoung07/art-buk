@@ -14,14 +14,15 @@ tags:
   - 하동가을여행
 region: 경남
 eventId: market-hadong-hwagae-autumn
-thumbnail: >-
-  https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgzNzk4.DPx5TCWXOFDVZbt8ve4AmRPQrM3_-KuaAtmT3Lto4i0g.5cXVwK7myda0RvM1JqQtER4rkMQB-aHI3A0HNwGMF40g.JPEG/POST_IMAGE_ENC_20260910_122717_348.jpg
+thumbnail: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832'
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 정겨운 골목 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬기 가장 좋은 곳이 어디일까요? 전라도와 경상도를 가르는 화개장터엔 윗마을 아랫마을 사람들이 모여든다는 노랫말처럼, 언제 가도 사람 사는 온기가 몽글몽글 피어오르는 **하동 화개장터**로 여러분을 초대합니다. 이번 주말, 오감으로 느끼는 가을 미식 나들이를 함께 떠나볼까요?
 
-![하동 화개장터 가을 전경](https://pup-post-phinf.pstatic.net/MjAyNjA5MTBfOTIg/MDAxNzg5MDEwODgzNzk4.DPx5TCWXOFDVZbt8ve4AmRPQrM3_-KuaAtmT3Lto4i0g.5cXVwK7myda0RvM1JqQtER4rkMQB-aHI3A0HWoGMF40g.JPEG/POST_IMAGE_ENC_20260910_122717_348.jpg)
-*▲ 영호남의 만남이 이루어지는 활기찬 하동 화개장터의 가을 전경*
+---
+
+![하동 화개장터 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832)
+*▲ 영호남의 화합이 이루어지는 정겨운 초가 장옥과 활기찬 하동 화개장터 전경*
 
 ---
 
@@ -49,21 +50,21 @@ thumbnail: >-
 3. **지리산의 기운을 담은 산나물 비빔밥 & 국밥**
    지리산 각지에서 채취한 향긋한 취나물, 다래순, 고사리가 듬뿍 들어간 산나물 비빔밥은 가을철 입맛을 돋우는 최고의 웰빙 푸드입니다. 
 
-![쌍계사 십리벚꽃길 가을 풍경](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
-*▲ 화개장터 인근을 물들이는 가을의 풍요로운 정취*
+![섬진강 뚝배기 재첩국 한 상](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MTlfMjQ3%2FMDAxNzUwMjkzMTk5NDQ3.zprbE6ca9sbk1E8upZfsKntSalKQA040J3zoCm8VmFkg.HU_nez-giH-zvgJw1lbopJlX5HaA6vvmHQqiWU4ei9gg.JPEG%2F900%25A3%25DF20250616%25A3%25DF132900.jpg&type=sc960_832)
+*▲ 보글보글 끓어오르는 맑은 국물과 싱그러운 초록 부추가 가득 담긴 섬진강 재첩국 뚝배기 한 상*
 
 ---
 
 ### ☕ 시장 옆 감성 카페 & 디저트 쉼표
 
-장터 국밥으로 배를 든든히 채웠다면, 화개장터 인근에 숨어 있는 감성 가득한 카페와 맛집에서 여유로운 커피 한 잔의 호사를 누려보세요.
+장터 국밥으로 배를 든든히 채웠다면, 화개장터 인근에 숨어 있는 감성 가득한 카페와 찻집에서 여유로운 차 한 잔의 호사를 누려보세요.
 
 * **달인꽈배기** (경남 하동군 화개면 쌍계로 4, 화개옥로타운 1층): 겉은 바삭하고 속은 촉촉한 추억의 꽈배기를 맛볼 수 있는 베이커리 맛집. 장터 구경하며 하나씩 들고 먹기 딱 좋습니다.
-* **옥선명차 & 요산당** (경남 하동군 화개면 화개로 814): 하동의 명물인 '녹차'와 전통 차 문화를 깊이 있게 즐길 수 있는 품격 있는 찻집입니다. 조용히 차분한 시간을 보내고 싶을 때 추천해요.
-* **콘이코니 & 산과물** (화개면 화개로 일대): 아기자기한 디저트와 향긋한 커피 향이 가득한 로컬 카페들로, 트렌디한 감성과 하동의 자연을 동시에 느낄 수 있습니다.
+* **옥선명차 & 요산당** (경남 하동군 화개면 화개로 814): 하동의 명물인 '야생 녹차'와 전통 다도 문화를 깊이 있게 즐길 수 있는 품격 있는 찻집입니다. 조용히 차분한 시간을 보내고 싶을 때 추천해요.
+* **화개 감성 카페거리**: 지리산 맑은 계곡 물소리를 들으며 즐기는 스페셜티 커피와 정갈한 디저트는 여행의 운치를 더해줍니다.
 
-![고즈넉한 하동의 가을 정취](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
-*▲ 전통과 현대가 조화롭게 어우러지는 하동의 감성 공간*
+![하동 전통 야생차 다도 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20141208_240%2Fjinspoon_1418015414678c3EU2_JPEG%2F%25C1%25A6%25B3%25EB%25B9%25D9%25BD%25BA%25C7%25AC_%25283%2529.jpg&type=sc960_832)
+*▲ 단아한 찻잔 세트에 맑고 깊은 향의 전통 야생차가 정갈하게 우려지는 하동 다도 풍경*
 
 ---
 
@@ -71,7 +72,10 @@ thumbnail: >-
 
 * **지리산 약초와 버섯**: 엄나무, 오미자, 능이버섯 등 지리산의 자연이 키워낸 귀한 약재와 임산물이 가득합니다. 상인분들과 친근하게 흥정하는 재미도 오일장에서만 누릴 수 있는 특권이죠.
 * **하동 야생녹차**: 화개면 일대는 대한민국 녹차의 발원지입니다. 가을볕을 머금은 구수한 녹차 잎이나 티백을 선물용으로 챙겨보세요.
-* **결제 꿀팁**: 온누리상품권이나 하동사랑상품권을 미리 준비해 가시면 훨씬 알뜰하고 실속 있는 장보기 커버가 가능합니다.
+* **결제 꿀팁**: 온누리상품권이나 하동사랑상품권을 미리 준비해 가시면 훨씬 알뜰하고 실속 있는 장보기가 가능합니다.
+
+![지리산 말린 산나물과 약초 바구니](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMDdfMjkw%2FMDAxNjM4ODU3OTk1MTI3.evwh6gBdV8QP47Oe0F5F7kv4NcWT6kIWogMrbxHbMDwg.E8PEoeD1bgUP3mYmEP2b7Tc36dzxiSBQwSFkfIF_oGog.PNG.rgmcompany%2Fimage.png&type=sc960_832)
+*▲ 바구니에 정갈하게 담겨 자연 건조된 지리산 말린 산나물과 약초*
 
 ---
 
@@ -79,19 +83,16 @@ thumbnail: >-
 
 화개장터만 보고 돌아가기엔 하동의 가을이 너무나 아름답습니다. 주변의 멋진 핫플레이스들을 함께 엮어서 코스를 짜보세요.
 
-* **화개장터 그 자체**: 시장 안쪽의 초가집 상가와 옛 감성을 재현한 조형물들을 배경으로 남기는 인증샷은 필수입니다. 인근의 *나폴리 화덕피자*나 *벚꽃경양식* 등 이색적인 양식당도 선택의 폭을 넓혀줍니다.
-* **쌍계사 및 십리벚꽃길**: 봄뿐만 아니라 단풍이 짙게 물드는 가을의 드라이브 코스로도 환상적인 명소입니다.
-* **최참판댁 (박경리문학관)**: 슬로시티 하동의 고즈넉한 한옥 풍경과 소설 '토지'의 배경 속으로 시간 여행을 떠나보세요.
-
-![하동 가을 미식 기행 풍경](https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/31827c29-adda-4074-b874-a66dccac13d6.jpeg)
-*▲ 발길 닿는 곳마다 감탄을 자아내는 하동의 다채로운 매력*
+* **화개장터 장터길**: 시장 안쪽의 초가집 상가와 옛 감성을 재현한 조형물들을 배경으로 남기는 기념 촬영은 필수 코스입니다.
+* **쌍계사 및 십리벚꽃길**: 봄뿐만 아니라 울긋불긋 단풍이 짙게 물드는 가을 드라이브 코스로도 환상적인 명소입니다.
+* **최참판댁 (박경리문학관)**: 슬로시티 하동의 고즈넉한 한옥 풍경과 대하소설 '토지'의 무대 속으로 시간 여행을 떠나보세요.
 
 ---
 
 ### 💡 알뜰 방문 & 주차 꿀팁
 
-- **주차 안내**: 화개장터 인근에 전용 공영주차장이 잘 조성되어 있어 주차 걱정은 크게 덜 수 있습니다. 단, 장날(1, 6일) 주말과 겹치는 시간대에는 방문객이 많으니 **오전 10시 이전이나 점심시간 직후** 비교적 여유로운 시간대를 공략하는 것을 추천합니다.
-- **옷차림 팁**: 지리산 자락과 섬진강 인근이라 아침저녁으로 바람이 꽤 쌀쌀합니다. 가벼운 외투를 꼭 챙기셔서 감기 없는 따뜻한 나들이 되시길 바랍니다.
+- **주차 안내**: 화개장터 인근에 전용 공영주차장이 잘 조성되어 있어 주차 걱정을 덜 수 있습니다. 단, 장날(1, 6일) 주말과 겹치는 시간대에는 방문객이 많으니 **오전 10시 이전이나 점심시간 직후** 비교적 여유로운 시간대를 공략하는 것을 추천합니다.
+- **옷차림 팁**: 지리산 자락과 섬진강 인근이라 아침저녁으로 바람이 쌀쌀합니다. 가벼운 외투를 꼭 챙기셔서 따뜻하고 쾌적한 나들이 되시길 바랍니다.
 
 ---
 

@@ -6,7 +6,7 @@ category: "전통시장 나들이"
 tags: ["울산전통시장", "남창옹기종기시장", "울산5일장", "남창소머리국밥", "외고산옹기마을", "울주여행"]
 region: "울산"
 eventId: "market-ulsan-namchang-onggi"
-thumbnail: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832"
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 장터와 골목 미식을 전해드리는 전통시장 전문 로컬 큐레이터입니다! 
@@ -15,8 +15,8 @@ thumbnail: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&
 
 ---
 
-![남창옹기종기시장 가을 전경](https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&auto=format&fit=crop&q=80)
-*▲ 칙칙폭폭 기차 타고 떠나는 100년 역사 속 활기찬 장터, 남창옹기종기시장 전경*
+![남창옹기종기시장 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832)
+*▲ '남창옹기종기시장' 간판 아래 다채로운 파라솔과 난전이 펼쳐진 활기찬 장터 거리 전경*
 
 ---
 
@@ -41,8 +41,8 @@ thumbnail: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&
 2. **손맛 가득 장터 손칼국수**: 멸치 육수를 진하게 우려내어 갓 뽑아낸 쫄깃한 면발과 투박하지만 정성스러운 고명이 올라간 칼국수. 찬 바람 불 때 호로록 들이켜면 온몸이 사르르 녹아내립니다.
 3. **갓 튀겨낸 바삭한 즉석 튀김과 옛날 통닭**: 시장 골목 어귀에서 고소한 기름 냄새로 발길을 붙잡는 튀김과 통닭. 고구마, 새우, 오징어 튀김을 종이봉투에 가득 담아 걸으며 먹는 재미가 장터 나들이의 또 다른 묘미입니다.
 
-![외고산 옹기마을 풍경](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
-*▲ 전통의 숨결이 살아 숨 쉬는 인근 외고산 옹기마을의 가을 풍경*
+![남창 5일장 소머리국밥 한 상](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA5MTdfNjgg%2FMDAxNzU4MDk0NjY2MzE4.vvX7pD_6Un0aK6dBQ5kbaMgBzcWqF01dYrhEjkg-Qkcg.Qtrqm7yox7TkrwzwTqFzjO9Gc9HwueLe--igeA7JrQgg.JPEG%2Foutput%25A3%25DF570647189.jpg&type=sc960_832)
+*▲ 뚝배기 안에 푸짐한 고기와 진한 육수가 담긴 남창 5일장 소머리국밥 한 상 차림*
 
 ---
 
@@ -51,27 +51,27 @@ thumbnail: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1200&
 왁자지껄한 장터 구경을 마쳤다면, 잠시 숨을 고르며 달콤한 여유를 즐길 수 있는 인근 핫플레이스로 향해볼까요?
 
 * **남창옹기종기땅콩빵 본점** (울산광역시 울주군 온양읍 남창역길 39-1): 시장 바로 인근에 위치해 고소하고 달달한 냄새로 이끄는 곳입니다. 갓 구워낸 바삭 촉촉한 땅콩빵은 장터 구경의 피로를 싹 씻어주는 완벽한 디저트입니다.
-* **투플커피** (울산광역시 울주군 온양읍 남창역길 25 1층): 감각적인 인테리어와 향긋한 스페셜티 커피를 맛볼 수 있는 공간으로, 전통시장 나들이 중 현대적인 감성을 충전하기에 제격인 쉼터입니다.
+* **서생 & 간절곶 오션뷰 카페거리**: 남창역에서 차로 10분만 달리면 시원한 바다를 조망하며 바삭한 크로플과 스페셜티 아메리카노를 맛볼 수 있는 감성 카페들이 즐비합니다.
 
-![남창옹기종기땅콩빵 본점 디저트 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5118%2F2025%2F08%2F22%2F0000150203_001_20250822132615246.jpg)
-*▲ 장터 나들이에 달콤함을 더해주는 남창옹기종기땅콩빵 본점*
+![울주 감성 카페 크로플과 커피](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MDJfMTk1%2FMDAxNjE5OTYxMDIxMDg1.5due03WNb9eGxFsOCbHlDvPic9b_f5zL7GMdSXF5Kl0g.EAlu2YIO4sTmTPQz5_usj5CD1wtWtWoFQjoautulTewg.JPEG.minkyeong1990%2Foutput_3672126558.jpg&type=sc960_832)
+*▲ 바삭하고 달콤한 크로플과 시원한 아이스 아메리카노가 차려진 울주 감성 카페 테이블*
 
 ---
 
 ### 🧺 장바구니 가득! 추천 로컬 특산물 & 온누리상품권 꿀팁
 
 * **제철 농수산물과 촌두부**: 울주 지역 어르신들이 직접 길러 가꾸어 나온 싱싱한 나물과 채소들, 그리고 갓 만들어 묵직하고 고소한 손두부는 장바구니 필수 품목입니다.
-* **알뜰 구매 꿀팁**: 남창옹기종기시장은 **온누리상품권(모바일/纸)** 가맹점이 잘 되어 있습니다. 미리 상품권을 준비해가시면 더욱 알뜰하고 쏠쏠하게 장을 보실 수 있어요!
+* **알뜰 구매 꿀팁**: 남창옹기종기시장은 **온누리상품권(모바일/지류)** 가맹점이 잘 되어 있습니다. 미리 상품권을 준비해가시면 더욱 알뜰하고 쏠쏠하게 장을 보실 수 있어요!
 
 ---
 
 ### 🎡 시장 보고 들르기 좋은 주변 명소 & 나들이 코스
 
-* **외고산 옹기마을**: 국내 최대 규모의 옹기 집산지로, 거대한 옹기 조형물과 장인들의 손길을 직접 만나볼 수 있는 곳입니다. 전통 가마와 옹기 박물관이 있어 아이들과 함께 혹은 연인과 고즈넉한 산책을 즐기기에 안성맞춤입니다.
-* **울주세계산악영화제 및 인근 자연 코스**: 가을철 문화 예술의 향기를 더해주는 울주세계산악영화제 행사 소식과 함께, 푸른 바다가 펼쳐지는 인근 해안가로 드라이브를 확장해 보세요.
+* **외고산 옹기마을**: 국내 최대 규모의 옹기 집산지로, 수천 개의 옹기 장독대들이 야외 마당에 펼쳐진 고즈넉한 명소입니다. 전통 가마와 옹기 박물관이 있어 산책과 힐링을 즐기기에 안성맞춤입니다.
+* **간절곶 해안 드라이브**: 한반도에서 가장 먼저 해가 뜨는 간절곶으로 이어지는 해안 도로를 따라 푸른 동해 바다의 시원한 파도 소리를 만끽해 보세요.
 
-![간절곶 등대 고즈넉한 정취](https://r1.community.samsung.com/t5/image/serverpage/image-id/4977044i66841C96864D221A?v=v2)
-*▲ 남창시장 나들이와 함께 둘러보기 좋은 울산의 아름다운 해안 풍경*
+![외고산 옹기마을 야외 장독대 마당](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA5MDdfMTEx%2FMDAxNzU3MTk4NTk2NTMx.FesjX90DUDeWB_6sZe4F5KnyhEDqcI7cDAGen6im6Y4g.9MgvZ4z0NqY306_xySIgDNrXnhlosrezE50qQ6zMSxog.JPEG%2F900%25A3%25DF20250906%25A3%25DF162617.jpg&type=sc960_832)
+*▲ 야외 마당에 크고 작은 전통 옹기 장독대들이 자연스럽게 늘어선 외고산 옹기마을 풍경*
 
 ---
 

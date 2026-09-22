@@ -14,16 +14,15 @@ tags:
   - 가을장터
 region: 경남
 eventId: market-miryang-arirang-autumn
-thumbnail: >-
-  https://pup-post-phinf.pstatic.net/MjAyNTExMzBfNDIg/MDAxNzY0NDI4OTQwNzg4.PO6Ty4I9ydy_gOGeu7kRi9AIVhG-jWb85lgApDyHz6wg.CQhxnvKtQQ1GiwuPyNIW29xZtQ9uLdQzGm79EuGEe7sg.JPEG/POST_IMAGE_ENCODING_20251130_000859_583.jpg
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDRfMjk2%2FMDAxNzU0MjcwMzEwMzUy.aOXj6lSApKFiAAtBaMQlS-QlvhZ6cgg8495GGDnACHcg.MG7ZZh6784qCjyPQ6kmxCm2Zm_gH9w8FttwVvojAODwg.JPEG%2F900%25A3%25DF20250802%25A3%25DF174536.jpg&type=sc960_832"
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화와 다채로운 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬러 어디로 떠날지 고민이신가요? 
 
 이번 주말에는 조선 시대부터 500년 넘는 세월 동안 영남 사람들의 삶과 애환, 그리고 정겨운 인심이 고스란히 녹아 있는 곳으로 향해보려 합니다. 바로 밀양강의 푸른 물결과 국보 영남루가 품은 아름다운 도시, **밀양 아리랑시장 5일장**입니다. 장날 특유의 구수한 냄새와 사람 사는 온기가 가득한 그 현장 속으로 지금 바로 출발해 볼까요?
 
-![밀양 아리랑시장 5일장 가을 전경 및 전시 공간](https://images.unsplash.com/photo-1563245372-f21724e3856d?w=1200&auto=format&fit=crop&q=80)
-*▲ 조선 시대부터 이어져 온 500년 전통의 활기 넘치는 밀양 아리랑시장 5일장 전경.*
+![밀양 아리랑시장 5일장 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDRfMjk2%2FMDAxNzU0MjcwMzEwMzUy.aOXj6lSApKFiAAtBaMQlS-QlvhZ6cgg8495GGDnACHcg.MG7ZZh6784qCjyPQ6kmxCm2Zm_gH9w8FttwVvojAODwg.JPEG%2F900%25A3%25DF20250802%25A3%25DF174536.jpg&type=sc960_832)
+*▲ [밀양 아리랑시장 실사] 현대적인 아케이드 시설 아래 활기가 넘치는 500년 전통 밀양 아리랑시장 5일장 골목 전경*
 
 ---
 
@@ -48,8 +47,8 @@ thumbnail: >-
 2. **할머니 손 메밀묵과 도토리묵**: 직접 쑤어 탱글탱글함이 살아있는 메밀묵에 갓 무쳐낸 겉절이를 얹어 먹으면, 가을철 입맛을 돋우는 최고의 별미가 됩니다.
 3. **갓 튀겨낸 바삭한 시장 튀김 및 전**: 시장 골목 어귀에서 모락모락 피어오르는 기름 냄새를 따라가면 만나게 되는 고소한 야채튀김과 빈대떡은 장보기의 즐거움을 배로 만들어 줍니다.
 
-![밀양 영남루 (국보)의 아름다운 가을 실제 풍경](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
-*▲ 시장에서 도보 거리에 위치한 국보 영남루. 가을 단풍과 밀양강이 어우러져 한 폭의 그림 같은 풍경을 자랑합니다.*
+![밀양 원조 토렴식 돼지국밥 뚝배기 한 상](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAyMDNfMTcw%2FMDAxNjc1MzkxMzY3NTUz.g53cf_IGNb5qPMAOtCvBttJska-NuQiBmYN5-84kIlsg.dWODsmGjbVRL9tPBRpcf6xhutvCdUWkEFuEV2V9o1iIg.JPEG.zzai0924%2F20230123_125213.jpg&type=sc960_832)
+*▲ [밀양 원조 돼지국밥 실사] 뚝배기 안에 부드러운 수육 고기와 진한 육수가 보글보글 끓어오르는 토렴식 밀양 돼지국밥 한 상*
 
 ---
 
@@ -59,8 +58,8 @@ thumbnail: >-
 
 시장 골목을 빠져나와 영남루와 밀양강변을 따라 걷다 보면, 고즈넉한 한옥을 개조한 전통찻집이나 감각적인 로스터리 카페들을 쉽게 발견할 수 있습니다. 따뜻한 대추차나 향긋한 핸드드립 커피 한 잔을 손에 들고, 밀양강에서 불어오는 가을바람을 맞으며 로컬 여행의 여유를 만끽해 보세요.
 
-![밀양 아리랑시장 인근 미식 및 감성 공간](https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80)
-*▲ 시장 인근의 고즈넉한 정취를 느끼며 쉬어가기 좋은 로컬 카페 스팟.*
+![밀양 감성 카페 야외 정원과 디저트 크로플](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDFfNjUg%2FMDAxNjE0NTg4ODI0MDk2.gnxn6yPzyzQMOX5kWPqSnj_2lcOGGq7kP3m7KjYumOQg.Nc07Xo14-JetBZh6w6Hk49q_d8Nl0GUrwuhce2Nbn1sg.JPEG.ektha4003%2FIMG_4374.jpg&type=sc960_832)
+*▲ [밀양 감성 카페 실사] 푸른 정원이 내다보이는 테이블에서 즐기는 아이스크림 크로플과 시원한 음료 한 잔의 여유*
 
 ---
 
@@ -76,8 +75,8 @@ thumbnail: >-
 * **국보 영남루**: 진주 촉석루, 평양 부벽루와 함께 조선 시대 3대 누각으로 꼽히는 아름다운 건축물입니다. 시장에서 도보로 가깝기 때문에 장 구경 전후로 산책 코스로 제격입니다.
 * **밀양강 둔치 산책로**: 강물을 따라 조성된 산책로를 걸으며 가을의 정취를 온몸으로 느껴볼 수 있습니다. 예술의 거리 행사가 열리기도 하여 볼거리가 풍성합니다.
 
-![밀양강 둔치 산책로 고즈넉한 가을 정취](https://cdn.tourtoctoc.com/news/photo/202603/12049_67018_202.jpg)
-*▲ 탁 트인 밀양강 둔치와 산책로. 걷기만 해도 힐링이 되는 코스입니다.*
+![국보 밀양 영남루 누각과 밀양강 가을 절경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+*▲ [국보 밀양 영남루 실사] 누각 마루에서 바라본 푸른 밀양강 물길과 수려한 가을 산세의 탁 트인 절경*
 
 ---
 
