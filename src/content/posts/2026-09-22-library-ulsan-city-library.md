@@ -15,13 +15,13 @@ tags:
 region: 울산
 eventId: library-ulsan-city-library
 thumbnail: >-
-  https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832
 ---
 
 선선한 가을바람이 옷깃을 스치는 계절, 바쁜 일상 속에서 잠시 숨을 고르고 싶다면 책과 쉼, 공간의 미학이 공존하는 곳으로 발걸음을 옮겨보는 건 어떨까요? 부울경 아트·전시·문화 나들이의 오늘 큐레이션은 고래의 고장 울산의 기상을 품은 웅장한 건축미와 여천천의 싱그러운 생태하천 전망이 어우러진 **‘울산도서관’**으로 여러분을 초대합니다. 종이장처럼 얇고 깊은 사색이 채워지는 가을날, 도심 속 오아시스 같은 이 특별한 복합문화 공간에서 온전한 나만의 시간을 누려보세요.
 
-![울산도서관 웅장한 로비와 대형 벽면 서가 전경](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80)
-*▲ 울산의 문화적 자부심을 보여주는 울산도서관의 웅장한 로비와 대형 벽면 서가*
+![울산도서관 웅장한 외관 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
+*▲ 울산의 문화적 자부심이자 고래의 기상을 담은 울산도서관의 현대적인 건물 외관*
 
 ---
 
@@ -50,8 +50,8 @@ thumbnail: >-
 #### 3. 세심하게 큐레이션된 인문학·예술 서가
 단순히 책을 쌓아둔 공간이 아니라, 방문객의 감성과 지적 호기심을 자극하는 다양한 테마별 큐레이션이 돋보입니다. 인문, 예술, 디자인 분야의 깊이 있는 서적들이 손길을 기다리고 있어, 우연히 집어든 책 한 권이 인생의 새로운 영감이 되어주기도 합니다.
 
-![여천천 뷰가 내려다보이는 친환경 열람실과 사색 공간](https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&auto=format&fit=crop&q=80)
-*▲ 통창 너머 여천천의 풍경을 감상하며 사색에 잠길 수 있는 친환경 열람실*
+![울산도서관 1층 중앙 로비와 개방형 엘리베이터](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
+*▲ 높은 층고와 웅장한 원형 기둥, 채광이 쏟아지는 울산도서관 1층 중앙 로비 홀*
 
 ---
 
@@ -61,6 +61,9 @@ thumbnail: >-
 
 - **어린이자료실 및 유아실**: 아이들의 눈높이에 맞춘 아기자기한 인테리어와 편안한 좌식 공간이 마련되어 있어, 아이들이 책과 친해지기 가장 좋은 환경을 제공합니다.
 - **오감 자극 그림책 코너**: 전래동화부터 최신 창작 그림책까지 다양하게 구비되어 있으며, 주말에는 가족 단위 방문객을 위한 소소한 문화 프로그램이나 도서 전시가 열리기도 하니 방문 전 공식 홈페이지를 체크해보는 것을 추천합니다.
+
+![울산도서관 내부 종합자료실 서가](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA0MzBfMzcg%2FMDAxNTI1MDUyNDEzMTE3.Ec9M_A24WjoPVDcjaT5BDJQTxYQ4LbZxNzoZwGTiDVkg.-SRV9aCCxuoCRA1A6qF3xQXkw2LRTUaGI0fne1-jf94g.PNG.ulsannuri%2F4.PNG&type=sc960_832)
+*▲ 정돈된 서가와 아늑한 열람 공간이 갖춰진 울산도서관 내부 종합자료실*
 
 ---
 
@@ -72,9 +75,6 @@ thumbnail: >-
 - **쫀드기상회 우정혁신점**: 울산의 색다른 미식 문화를 경험하고 싶다면 가볼 만한 곳으로, 달콤 짭조름한 매력의 간식과 함께 활기찬 도심의 분위기를 느낄 수 있습니다.
 - **메가MGC커피 울산남부도서관점**: 인근 남부도서관 라인과 함께 연계 코스로 들러 테이크아웃 커피 한 잔 들고 여천천 산책로를 걷기 안성맞춤입니다.
 
-![울산도서관 주변 감성 북카페 & 커피 디저트](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80)
-*▲ 책과 커피, 그리고 달콤한 디저트가 함께하는 여유로운 주말 풍경*
-
 ---
 
 ### 🌿 도서관 산책로 & 함께 걷기 좋은 주변 힐링 스팟
@@ -83,8 +83,8 @@ thumbnail: >-
 
 또한, 최근 울산 지역에서는 '태화강 오픈 스크린' 보조사업자 공모 및 제11회 울산울주세계산악영화제 등 다채로운 문화 예술 축제 소식들이 이어지고 있어, 도서관 나들이 전후로 울산의 풍성한 문화 예술 인프라를 함께 즐기기 더할 나위 없이 좋은 시기입니다.
 
-![울산도서관 주변의 푸르른 자연과 힐링 스팟](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
-*▲ 도서관 주변의 싱그러운 가을 정취를 담은 산책길*
+![울산도서관 앞 여천천 생태하천과 수변 산책로](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMDdfMjEy%2FMDAxNzA0NjA4MzI5MTkz.4vfINZhvZX8336e-gf1WnKcUOE_1pe_Hv8X5dQ5Ad9Ig.b4PvieX1V5ATAejiMwPDbfHjc_dOLxevvr6qnbu_XKYg.JPEG.ulsan_nuri%2F20240104_112251.jpg&type=sc960_832)
+*▲ [울산 여천천 실사] 맑은 하늘 아래 도서관 바로 앞을 유유히 흐르는 여천천 생태하천과 호젓한 수변 산책로 전경*
 
 ---
 

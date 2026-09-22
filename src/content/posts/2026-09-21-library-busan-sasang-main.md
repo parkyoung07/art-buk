@@ -7,8 +7,8 @@ subRegion: "사상구"
 venueName: "부산도서관"
 category: "도서관 북캉스"
 tags: ["부산도서관", "부산북캉스", "사상구나들이", "삼락생태공원", "복합문화공간", "가을독서", "어린이도서관", "부산무료나들이", "들락날락"]
-thumbnail: "/images/library/busan-library-chaekmaru.png"
-summary: "부산도서관 공식 홈페이지 층별 실사로 만나는 감성 가을 북캉스! 2층 문학 서가 '책마루', 3층 인문·자연과학 '책누리터', 부산 아카이브 갤러리 '부산애뜰', 1층 어린이 실감 체험관 '꿈뜨락'과 삼락생태공원 은빛 억새 산책 코스 완벽 총정리."
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA2MTJfMzAw%2FMDAxNzgxMjUxMjg3OTUy.NZW4axz_8GBzeKQOdH7tQpUmOtM96j79aYPfAA3kQOwg.CcDMmOaTsPDDjN-KC_4Zbn_lfCzpmi_KcgU6Uc_MDiog.JPEG%2FKakaoTalk_20260612_141450296_16.jpg&type=sc960_832"
+summary: "부산도서관 현장 실사로 만나는 감성 가을 북캉스! 2층 웅장한 계단 서가 '책마루', 1층 어린이 실감 체험관 '꿈뜨락', 사상 감성 카페의 달콤한 수제 디저트와 삼락생태공원 은빛 억새 산책 코스 완벽 총정리."
 ---
 
 안녕하세요, 문화예술과 감성 나들이를 사랑하시는 여러분! 부산·울산·경남의 매력적인 공간을 큐레이션해 드리는 **수석 AI 도슨트**입니다. 📚✨
@@ -19,8 +19,8 @@ summary: "부산도서관 공식 홈페이지 층별 실사로 만나는 감성 
 
 '부유하는 도서관(Floating Library)'이라는 독창적인 건축 컨셉으로 지어진 이곳은, 높은 층고와 통유리창을 통해 쏟아지는 자연광 아래 예술 전시, 첨단 실감형 미디어아트, 그리고 백양산 자락을 조망하는 옥상 바람정원이 어우러진 **영남권 최고 수준의 복합독서문화 예술 플랫폼**입니다. 공식 홈페이지 시설과 100% 일치하는 공간별 관람 꿀팁부터 가족 나들이 코스, 주변 미식까지 도슨트가 생생하게 안내해 드립니다.
 
-![부산도서관 공식 책마루 2층 대형 원목 테이블과 서가 전경](/images/library/busan-library-chaekmaru.png)
-*▲ [부산도서관 공식 실사] 2층 '책마루'에서 내려다본 웅장한 원목 테이블과 오픈 서가 전경*
+![부산도서관 현대적 건물 외관 및 주출입구 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA3MjVfMjgw%2FMDAxNzUzMzY5NzAxNTcw.5UyJWDvLW7NgbbMI0rlRgtYrgfut416eTdiAb4q7ln8g.VIX5hvmpSrpPDzScY_ExeV-vbOuwNUvTWsNrIe2oDCcg.JPEG%2F900%25A3%25DF20250724%25A3%25DF132435.jpg&type=sc960_832)
+*▲ [부산도서관 실제 현장 실사] 덕포역 인근에 웅장하게 자리한 부산도서관 본관 건물 외관*
 
 ---
 
@@ -47,8 +47,8 @@ summary: "부산도서관 공식 홈페이지 층별 실사로 만나는 감성 
 
 높은 층고를 따라 시원하게 뻗은 서가와 커다란 통유리창을 통해 따스한 자연 채광이 쏟아져 들어옵니다. 곡선형 원목 롱테이블과 푹신한 소파에 앉아 책을 읽다 보면, 도심 속 소음은 잊히고 오롯이 글귀에 몰입하는 치유의 시간을 경험할 수 있습니다.
 
-![부산도서관 공식 03 책마루 문학 서가와 원목 롱테이블](/images/library/busan-library-chaekmaru.png)
-*▲ [부산도서관 공식 실사] 문학 및 역사 연속간행물과 아늑한 라운지가 마련된 2층 '책마루'*
+![부산도서관 개방형 계단 서가 책마루 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA2MTJfMzAw%2FMDAxNzgxMjUxMjg3OTUy.NZW4axz_8GBzeKQOdH7tQpUmOtM96j79aYPfAA3kQOwg.CcDMmOaTsPDDjN-KC_4Zbn_lfCzpmi_KcgU6Uc_MDiog.JPEG%2FKakaoTalk_20260612_141450296_16.jpg&type=sc960_832)
+*▲ [부산도서관 실제 현장 실사] 높은 천장과 따스한 채광 아래 개방적으로 펼쳐진 2층 계단형 대형 서가 '책마루'*
 
 ---
 
@@ -84,29 +84,26 @@ summary: "부산도서관 공식 홈페이지 층별 실사로 만나는 감성 
 * **모션 인식 인터랙티브 실감 미디어관:** 대형 디지털 스크린을 통해 동화 속 세상을 생생하게 체험하는 인터랙티브 동화구연이 진행됩니다.
 * **가족 친화 시설:** 유모차 보관소, 수유실, 기저귀 갈이대가 완비되어 영유아 부모님도 안심하고 이용할 수 있습니다.
 
-![부산도서관 공식 06 꿈뜨락 어린이실 및 실감형 책놀이터](/images/library/busan-library-kkumtteurak.png)
-*▲ [부산도서관 공식 실사] 귀여운 자동차 책장과 파스텔톤 온돌 쿠션이 갖춰진 1층 어린이실 '꿈뜨락'*
+![부산도서관 꿈뜨락 어린이실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMTJfMTMz%2FMDAxNjA1MTYwODcwNDg5.G1yorRIZ6BJxeu5jiz7kfTjYsjVHvX8YJHPnf6JUSl8g.ixeklMF5XuNnGAIEC88vcrdm_n_M1nFGw-I41CjYU7Ig.JPEG.seungjin137%2F20201106_152300.jpg&type=sc960_832)
+*▲ [부산도서관 꿈뜨락 실사] 귀여운 자동차 모양 책꽂이와 아기자기한 서가가 갖춰진 1층 어린이실 '꿈뜨락' 실내 전경*
 
 ---
 
 ### ☕ 도서관 나들이와 함께 즐기는 사상 감성 미식 & 카페
 
-![도서관 관람 후 여유를 즐기는 감성 북카페와 향긋한 스페셜티 커피](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
-*▲ 예술적 분위기 속에서 향긋한 커피와 디저트를 즐길 수 있는 사상 로컬 카페*
+![도서관 나들이 후 즐기는 사상 로컬 카페 수제 디저트와 커피](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMTVfMjUx%2FMDAxNjY4NDc1MDgzNDMy.E8brSSfsi3ofguSyd1o_hM6rVwolQzoWubEW5oBIksMg.bFCRUs7R5pTtrl_2M1CyvTiiB4H2ZJlsko6S5unuTdEg.JPEG.vixx7%2FIMG_1012.JPG&type=sc960_832)
+*▲ [사상 감성 카페 실사] 부드러운 생크림이 얹어진 수제 디저트와 향긋한 커피를 즐길 수 있는 사상 로컬 감성 카페*
 
-1. **도서관 1층 뮤지엄 북카페 & 베이커리**  
-   - 갓 구운 소금빵, 휘낭시에와 함께 스페셜티 아메리카노를 마시며 읽던 책의 여운을 즐기기 좋습니다.
-2. **덕포시장 전통 먹거리 골목 (도보 5분)**  
-   - 덕포역 인근 덕포시장에서는 따끈한 손칼국수, 바삭한 수제 찹쌀도넛, 손만두 등 푸근한 로컬 간식을 맛볼 수 있습니다.
-3. **사상역 로컬 로스터리 & 브런치 카페거리 (차량 5분)**  
-   - 감각적인 인테리어의 대형 로스터리 카페들이 밀집해 있어 주말 데이트 코스로 훌륭합니다.
+- **도서관 1층 뮤지엄 북카페 & 베이커리**: 갓 구운 소금빵, 휘낭시에와 함께 스페셜티 아메리카노를 마시며 읽던 책의 여운을 즐기기 좋습니다.
+- **덕포시장 전통 먹거리 골목 (도보 5분)**: 덕포역 인근 덕포시장에서는 따끈한 손칼국수, 바삭한 수제 찹쌀도넛, 손만두 등 푸근한 로컬 간식을 맛볼 수 있습니다.
+- **사상역 로컬 로스터리 & 브런치 카페거리 (차량 5분)**: 감각적인 인테리어의 대형 로스터리 카페들이 밀집해 있어 주말 데이트 코스로 훌륭합니다.
 
 ---
 
 ### 🌿 함께 걷는 최고의 가을 연계 산책 코스: 삼락생태공원
 
-![낙동강변을 따라 황금빛 갈대와 은빛 억새가 파도치는 삼락생태공원의 가을 풍경](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 도서관 관람 후 들르기 좋은 삼락생태공원의 환상적인 가을 은빛 억새 산책로*
+![가을 햇살 아래 은빛으로 빛나는 삼락생태공원의 아름다운 억새 군락 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832)
+*▲ [삼락생태공원 실사] 가을 햇살 아래 은빛으로 눈부시게 물결치는 삼락생태공원의 환상적인 억새 산책로*
 
 * **삼락생태공원 갈대숲 & 억새 군락지 (차량 7분 / 대중교통 15분):**  
   낙동강변을 따라 끝없이 펼쳐지는 부산 최대 규모의 가을 명소입니다. 도서관에서 마음의 양식을 채운 뒤, 황금빛 노을과 살랑이는 억새 물결 사이를 거닐며 완벽한 가을 하루를 완성해 보세요.

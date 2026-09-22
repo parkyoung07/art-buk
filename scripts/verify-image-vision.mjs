@@ -83,6 +83,9 @@ for (const file of postFiles) {
     auditedCount++;
     const [fullTag, altText, imgUrl] = match;
 
+    // 네이버 검증 실사 이미지(pstatic.net)는 안전하므로 자동 치환에서 제외하고 보존
+    if (imgUrl.includes("pstatic.net") || imgUrl.startsWith("/images/")) continue;
+
     // 블랙리스트 검사
     for (const rule of CRITICAL_BLACKLIST) {
       if (rule.pattern.test(imgUrl) || rule.pattern.test(altText)) {
@@ -121,7 +124,8 @@ for (const file of postFiles) {
   // 대표 썸네일(thumbnail)도 검사
   if (parsed.data && parsed.data.thumbnail) {
     const thumbUrl = parsed.data.thumbnail;
-    for (const rule of CRITICAL_BLACKLIST) {
+    if (!thumbUrl.includes("pstatic.net") && !thumbUrl.startsWith("/images/")) {
+      for (const rule of CRITICAL_BLACKLIST) {
       if (rule.pattern.test(thumbUrl)) {
         violations.push({
           file,
@@ -135,6 +139,7 @@ for (const file of postFiles) {
         break;
       }
     }
+  }
   }
 
   if (modified) {

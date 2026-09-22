@@ -6,15 +6,15 @@ category: "도서관 북캉스"
 tags: ["경남도서관", "김해지혜의바다", "폐교재생", "이색도서관", "아이와가볼만한곳", "김해주말나들이"]
 region: "경남"
 eventId: "library-gimhae-sea-of-wisdom"
-thumbnail: "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832"
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 사색의 쉼터를 전하는 북캉스 & 문화공간 큐레이터입니다. 
 
 문득 마음이 헛헛하고 일상의 소음에서 벗어나고 싶은 날, 여러분은 어디로 향하시나요? 책장 넘어가는 사각사각 소리와 은은한 종이 향기, 그리고 따뜻한 차 한 잔이 그리워지는 계절입니다. 오늘 소개해 드릴 곳은 단순히 책을 빌리는 공간을 넘어, 버려진 공간에 생명을 불어넣어 거대한 예술적 영감의 바다로 재탄생한 경남의 대표 문화 놀이터, **김해 지혜의바다도서관**입니다. 이번 주말, 책과 쉼이 어우러진 마법 같은 공간으로 함께 떠나볼까요?
 
-![김해 지혜의바다도서관 전경](https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&auto=format&fit=crop&q=80)
-*▲ 거대한 테트리스 서가가 압도적인 감동을 선사하는 김해 지혜의바다도서관 내부 풍경*
+![김해 지혜의바다도서관 외관 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
+*▲ 폐교의 놀라운 변신! 웅장한 규모와 감각적인 리모델링이 돋보이는 김해 지혜의바다도서관 외관*
 
 ---
 
@@ -40,8 +40,8 @@ thumbnail: "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&
 #### 2. 책과의 친밀감을 높이는 자유로운 독서 쉼터
 정숙을 강요하는 답답한 옛날식 독서실이 아닙니다. 탁 트인 개방형 공간 곳곳에는 계단식 마루, 독특한 디자인의 독서 테이블, 그리고 몸을 푹 파묻고 사색에 잠기기 좋은 아늑한 공간들이 마련되어 있어 책과 나만의 오롯한 시간을 즐기기에 더할 나위 없이 좋습니다.
 
-![아늑한 독서 쉼터](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80)
-*▲ 편안한 빈백과 소파에 기대어 책장을 넘기며 여유를 만끽할 수 있는 가족 독서 쉼터*
+![김해 지혜의바다도서관 시그니처 테트리스 벽면서가](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA2MTNfMjc2%2FMDAxNTYwMzg4Mjc4MzE4.qVWBX8dPB5AsSQrP6lDUiRrDL_zvmjC9oZZhqS9QK0Mg.g3Hh8COJdxhmElzUPXMEdv1shBfsnjoisnk8JnOr1Usg.JPEG.hie914%2FB612_20190427_145652_146.jpg&type=sc960_832)
+*▲ 천장까지 높게 솟은 웅장한 테트리스 벽면서가와 자유롭게 독서를 즐기는 복합 문화 공간*
 
 #### 3. 다채로운 문화 예술이 숨쉬는 복합 문화 살롱
 김해 지혜의바다도서관은 단순히 책을 읽는 곳을 넘어, 지역 주민과 방문객이 함께 소통하는 문화 예술 플랫폼입니다. 주말마다 아이들을 위한 동화 인형극, 청소년과 성인을 위한 작가 초청 북토크, 클래식 공연 등 오감이 즐거워지는 다채로운 문화 행사가 끊이지 않고 열려 방문할 때마다 새로운 즐거움을 선사합니다.
@@ -59,8 +59,8 @@ thumbnail: "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&
 
 지적 사색으로 채워진 마음만큼, 맛있는 향기로 허기진 감성을 채워줄 시간입니다. 김해 주촌 인근과 도서관 주변에는 조용히 여유를 즐기기 좋은 감성 베이커리 카페와 맛집들이 자리하고 있습니다.
 
-![감성 베이커리 카페 쉼터](https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80)
-*▲ 도서관 나들이 전후로 따뜻한 커피와 갓 구운 빵을 즐기며 여유를 이어갈 수 있는 인근 감성 카페*
+![김해 감성 로컬 카페 쉼터](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTBfMTM4%2FMDAxNjQxODEyMjk0OTY4.1HweN32E-lZW2tivQcj4pNkYGDOJZJyJqLzF5LAZvr8g.9kr3glzA9WhmBA7wuL1GA30I4S6XKfFna-nxaf-q3rUg.JPEG.freetime1206%2FIMG_9356.jpg&type=sc960_832)
+*▲ 도서관 나들이 전후로 향긋한 커피와 따뜻한 디저트를 즐길 수 있는 김해 로컬 카페*
 
 * **주변 미식 팁**: 도서관에서 책을 읽으며 받은 여운을 가지고, 인근의 따스한 햇살이 드는 베이커리 카페 창가 자리에 앉아보세요. 갓 내린 드립 커피 한 잔과 부드러운 스콘을 곁들이면, 완벽한 주말 북캉스의 마침표가 완성됩니다.
 
@@ -70,8 +70,8 @@ thumbnail: "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&
 
 실내에서 충분히 사색을 즐겼다면, 가을의 청명한 공기를 마시며 주변 자연을 거닐어보는 것은 어떨까요? 김해의 대표적인 힐링 명소인 **연지공원** 등 인근 자연 공원을 연계 코스로 추천합니다.
 
-![김해 연지공원 풍경](https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80)
-*▲ 선선한 바람과 잔잔한 호수가 어우러져 산책하기 좋은 김해의 힐링 스팟*
+![김해 연지공원 호수 가을 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTExMTFfMTQ4%2FMDAxNzYyODI4MzUyMTM3.zzgshcOTpbOpalTqU76qNIV-Nj5aoruZ3p7JqwHkR9gg.KFeRg6yoAq1NsPQf5_K6qX_bxGRseptJI-M7__4EeU0g.JPEG%2FA9_09194.jpg&type=sc960_832)
+*▲ 호수와 푸른 산책로가 어우러져 도서관 관람 후 걷기 좋은 김해 대표 명소 연지공원*
 
 * **추천 연계 코스**: 낮에는 지혜의바다도서관에서 시원하게 책 읽기와 문화 프로그램을 즐기고, 해질녘이 될 무렵 인근 호수 공원으로 이동해 노을빛으로 물드는 산책로를 걸어보세요. 일상의 스트레스가 봄날 눈 녹듯 사라지는 기분을 느끼실 수 있습니다.
 

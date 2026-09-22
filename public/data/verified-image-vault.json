@@ -3,71 +3,105 @@
   "season": "autumn",
   "description": "부울경 문화예술/도서관/전통시장/자연명소 100% 사전 시각 검증 실사 사진 금고 (초상권 0%, 계절 일치 100%)",
   "categories": {
-    "libraries": {
-      "library-busan-sasang-main": [
+    "museums": {
+      "busan-museum-of-art-grand-reopening": [
         {
-          "url": "/images/library/busan-library-chaekmaru.png",
-          "alt": "부산도서관 공식 03 책마루 2층 대형 원목 테이블과 서가 전경",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832",
+          "alt": "부산시립미술관 본관의 웅장한 건축 외관 전경 (실제 현장 실사)",
           "theme": "architecture"
         },
         {
-          "url": "/images/library/busan-library-chaeknuriter.png",
-          "alt": "부산도서관 공식 01 책누리터 일반도서 및 국외도서 서가",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832",
+          "alt": "부산시립미술관 기획전시실 내부 현대미술 설치 작품 실사",
+          "theme": "exhibition"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832",
+          "alt": "별관 이우환 공간 야외 조각정원의 바위와 철판 시그니처 조각 작품 실사",
+          "theme": "leeufan"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832",
+          "alt": "센텀시티 감성 카페의 신선한 수제 딸기 디저트 케이크와 커피 실사",
+          "theme": "cafe"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832",
+          "alt": "수영강변 APEC 나루공원 푸른 잔디와 센텀 마천루 산책로 실사",
+          "theme": "naru_park"
+        }
+      ]
+    },
+    "libraries": {
+      "library-busan-sasang-main": [
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA3MjVfMjgw%2FMDAxNzUzMzY5NzAxNTcw.5UyJWDvLW7NgbbMI0rlRgtYrgfut416eTdiAb4q7ln8g.VIX5hvmpSrpPDzScY_ExeV-vbOuwNUvTWsNrIe2oDCcg.JPEG%2F900%25A3%25DF20250724%25A3%25DF132435.jpg&type=sc960_832",
+          "alt": "부산도서관 본관 건물 외관 및 주출입구 전경 (실제 현장 실사)",
+          "theme": "architecture"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA2MTJfMzAw%2FMDAxNzgxMjUxMjg3OTUy.NZW4axz_8GBzeKQOdH7tQpUmOtM96j79aYPfAA3kQOwg.CcDMmOaTsPDDjN-KC_4Zbn_lfCzpmi_KcgU6Uc_MDiog.JPEG%2FKakaoTalk_20260612_141450296_16.jpg&type=sc960_832",
+          "alt": "부산도서관의 개방적이고 웅장한 2층 대형 계단형 서가 '책마루' 실사",
           "theme": "bookshelf"
         },
         {
-          "url": "/images/library/busan-library-busanaettle.png",
-          "alt": "부산도서관 공식 02 부산애뜰 부산 관련 자료 및 전시코너",
-          "theme": "gallery"
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMTJfMTMz%2FMDAxNjA1MTYwODcwNDg5.G1yorRIZ6BJxeu5jiz7kfTjYsjVHvX8YJHPnf6JUSl8g.ixeklMF5XuNnGAIEC88vcrdm_n_M1nFGw-I41CjYU7Ig.JPEG.seungjin137%2F20201106_152300.jpg&type=sc960_832",
+          "alt": "부산도서관 1층 어린이실 꿈뜨락 자동차 책꽂이와 온돌 마루 실사",
+          "theme": "children"
         },
         {
-          "url": "/images/library/busan-library-kkumtteurak.png",
-          "alt": "부산도서관 공식 06 꿈뜨락 어린이실 및 실감형 책놀이터",
-          "theme": "children"
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMTVfMjUx%2FMDAxNjY4NDc1MDgzNDMy.E8brSSfsi3ofguSyd1o_hM6rVwolQzoWubEW5oBIksMg.bFCRUs7R5pTtrl_2M1CyvTiiB4H2ZJlsko6S5unuTdEg.JPEG.vixx7%2FIMG_1012.JPG&type=sc960_832",
+          "alt": "사상 로컬 카페의 정갈하고 풍성한 수제 생크림 초콜릿 디저트 실사",
+          "theme": "cafe"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832",
+          "alt": "가을 햇살 아래 은빛으로 물결치는 삼락생태공원의 억새 군락 산책로 실사",
+          "theme": "autumn_grass"
         }
       ],
       "library-gimhae-sea-of-wisdom": [
         {
-          "url": "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&auto=format&fit=crop&q=80",
-          "alt": "김해 지혜의바다도서관 거대한 테트리스 벽면서가 전경",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832",
+          "alt": "폐교 체육관의 놀라운 변신! 웅장한 김해 지혜의바다도서관 건물 외관 및 입구",
           "theme": "architecture"
         },
         {
-          "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80",
-          "alt": "편안한 빈백 소파와 함께하는 아늑한 가족 독서 쉼터",
-          "theme": "reading"
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA2MTNfMjc2%2FMDAxNTYwMzg4Mjc4MzE4.qVWBX8dPB5AsSQrP6lDUiRrDL_zvmjC9oZZhqS9QK0Mg.g3Hh8COJdxhmElzUPXMEdv1shBfsnjoisnk8JnOr1Usg.JPEG.hie914%2FB612_20190427_145652_146.jpg&type=sc960_832",
+          "alt": "마치 영화 속 마법 도서관처럼 천장 높이 솟은 김해 지혜의바다도서관 시그니처 테트리스 벽면서가",
+          "theme": "tetris_bookshelf"
         },
         {
-          "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80",
-          "alt": "김해 주촌 인근 감성 베이커리 카페 쉼터",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTBfMTM4%2FMDAxNjQxODEyMjk0OTY4.1HweN32E-lZW2tivQcj4pNkYGDOJZJyJqLzF5LAZvr8g.9kr3glzA9WhmBA7wuL1GA30I4S6XKfFna-nxaf-q3rUg.JPEG.freetime1206%2FIMG_9356.jpg&type=sc960_832",
+          "alt": "도서관 내부와 인근에서 향긋한 커피와 디저트를 즐길 수 있는 김해 감성 카페 공간",
           "theme": "cafe"
         },
         {
-          "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
-          "alt": "김해 연지공원 호수의 고즈넉한 가을 풍경",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTExMTFfMTQ4%2FMDAxNzYyODI4MzUyMTM3.zzgshcOTpbOpalTqU76qNIV-Nj5aoruZ3p7JqwHkR9gg.KFeRg6yoAq1NsPQf5_K6qX_bxGRseptJI-M7__4EeU0g.JPEG%2FA9_09194.jpg&type=sc960_832",
+          "alt": "김해 지혜의바다도서관 인근 호수 산책 명소인 연지공원의 아름다운 가을 풍경",
           "theme": "autumn_park"
         }
       ],
       "library-ulsan-city-library": [
         {
-          "url": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&auto=format&fit=crop&q=80",
-          "alt": "울산도서관 웅장한 로비와 대형 벽면 서가 전경",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832",
+          "alt": "울산의 기상을 형상화한 현대적인 울산도서관 건물 외관 및 주출입구 전경",
           "theme": "architecture"
         },
         {
-          "url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=1200&auto=format&fit=crop&q=80",
-          "alt": "여천천 뷰가 내려다보이는 친환경 열람실과 사색 공간",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832",
+          "alt": "웅장한 중앙 홀 기둥과 개방형 엘리베이터가 어우러진 울산도서관 1층 로비 및 서가",
+          "theme": "lobby"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA0MzBfMzcg%2FMDAxNTI1MDUyNDEzMTE3.Ec9M_A24WjoPVDcjaT5BDJQTxYQ4LbZxNzoZwGTiDVkg.-SRV9aCCxuoCRA1A6qF3xQXkw2LRTUaGI0fne1-jf94g.PNG.ulsannuri%2F4.PNG&type=sc960_832",
+          "alt": "다채로운 도서와 쾌적한 열람 테이블이 갖춰진 울산도서관 내부 종합자료실",
           "theme": "reading"
         },
         {
-          "url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&auto=format&fit=crop&q=80",
-          "alt": "울산 남구 여천천 인근 감성 로스팅 카페",
-          "theme": "cafe"
-        },
-        {
-          "url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
-          "alt": "여천천 생태 산책로와 울산대공원 가을 풍경",
-          "theme": "autumn_park"
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMDdfMjEy%2FMDAxNzA0NjA4MzI5MTkz.4vfINZhvZX8336e-gf1WnKcUOE_1pe_Hv8X5dQ5Ad9Ig.b4PvieX1V5ATAejiMwPDbfHjc_dOLxevvr6qnbu_XKYg.JPEG.ulsan_nuri%2F20240104_112251.jpg&type=sc960_832",
+          "alt": "맑은 하늘 아래 도서관 바로 앞을 유유히 흐르는 여천천 생태하천과 수변 산책로",
+          "theme": "river_walk"
         }
       ]
     },
