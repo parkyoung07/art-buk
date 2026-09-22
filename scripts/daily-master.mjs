@@ -84,7 +84,7 @@ try {
   execSync("git add .", { cwd: rootDir, stdio: "inherit" });
   const status = execSync("git status --porcelain", { cwd: rootDir }).toString();
   if (status.trim()) {
-    execSync('git commit -m "fix(images): 부산도서관 실사 사진 교체 및 이미지 무결성 최신화"', { cwd: rootDir, stdio: "inherit" });
+    execSync(`git commit -m "🤖 Auto: Daily AI post generation [${today}]"`, { cwd: rootDir, stdio: "inherit" });
     execSync("git push origin main", { cwd: rootDir, stdio: "inherit" });
     console.log("✅ GitHub 배포 완료! Cloudflare Pages 자동 빌드가 시작되었습니다.");
   } else {
