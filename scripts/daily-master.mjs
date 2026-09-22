@@ -34,8 +34,12 @@ try {
 }
 
 // 2. 글 발행 필요 여부 판단 및 1회 통합 실행
+const isForce = process.argv.includes("--force");
 let needGeneration = false;
-if (kstHour < 14 && todayPosts.length === 0) {
+if (isForce) {
+  console.log("⚡ [회장님 특별 지시] 오후 슬롯 포스트 강제 당겨 생성 가동");
+  needGeneration = true;
+} else if (kstHour < 14 && todayPosts.length === 0) {
   console.log("💡 오전 슬롯 발행 필요 -> 자동 글 생성 실행");
   needGeneration = true;
 } else if (kstHour >= 14 && todayPosts.length < 2) {

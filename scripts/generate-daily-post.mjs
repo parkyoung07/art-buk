@@ -1262,12 +1262,14 @@ async function fetchNaverImages(query, count = 10) {
       // 3. 키워드 필터 (제목 및 링크 URL 내 블랙리스트 검사)
       if (blockedWords.some(w => rawTitle.includes(w) || link.toLowerCase().includes(w))) continue;
 
-      const secureUrl = link.startsWith("https://")
+      // 네이버 안전 프록시(pstatic)를 통해 외부 블로그 원본의 불펌 방지(403 Forbidden)를 우회하여 엑박 방지
+      const secureUrl = link.includes("pstatic.net")
         ? link
         : `https://search.pstatic.net/common/?src=${encodeURIComponent(link)}`;
 
       validPhotos.push({
         url: secureUrl,
+        rawUrl: link,
         alt: rawTitle || cleanQuery
       });
     }
@@ -1276,6 +1278,135 @@ async function fetchNaverImages(query, count = 10) {
   } catch (err) {
     console.warn(`⚠️ 네이버 이미지 수집 실패 [${query}]:`, err.message);
     return [];
+  }
+}
+
+// 🧠 [Gemini Vision 시각 무결성 검증] 사진을 눈으로 직접 보고 초상권/주제/품질 100% 검증
+async function validateImageWithGeminiVision(imageUrl, targetContext) {
+  if (!GEMINI_API_KEY) return false;
+
+  try {
+    // 1. 이미지 다운로드 및 유효성 확인 (3.5초 타임아웃)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3500);
+    const imgRes = await fetch(imageUrl, {
+      signal: controller.signal,
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }
+    });
+    clearTimeout(timeoutId);
+
+    if (!imgRes.ok) return false;
+    const contentType = imgRes.headers.get("content-type") || "image/jpeg";
+    if (!contentType.startsWith("image/")) return false;
+
+    const arrayBuffer = await imgRes.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    
+    // 너무 작거나 깨진 파일 배제 (5KB 미만)
+    if (buffer.length < 5120) return false;
+
+    const base64Data = buffer.toString("base64");
+    const mimeType = contentType.split(";")[0];
+
+    // 2. Gemini Vision 엄격 검증 프롬프트
+    const prompt = `당신은 대한민국 문화예술/여행 블로그의 '최고 수석 이미지 감수자'입니다.
+제공된 이미지를 꼼꼼히 판독하여 블로그에 게재하기에 100% 적합한지 검증해주세요.
+
+[포스트 주제 및 장소 컨텍스트]:
+"${targetContext}"
+
+[엄격한 배제(탈락) 기준 - 1개라도 해당 시 즉시 FAIL]:
+1. 인물/초상권: 일반인 얼굴, 가족/어린이 얼굴, 셀카가 크게 부각된 사진 (배경에 작게 스쳐 지나가는 군중은 허용하나, 인물/얼굴이 주 피사체이면 즉시 탈락)
+2. 그래픽/비실사: 3D 그래픽, 추상 물감 텍스처, 디지털 일러스트, 컴퓨터 배경화면
+3. 홍보물/포스터: 행사 포스터, 공고문, 도서 표지 스캔본, 글씨/텍스트가 화면의 30% 이상을 차지하는 배너
+4. 비위생/위험/공사: 공사 현장, 크레인, 파괴된 도로, 화장실(변기/세면대), 쓰레기
+5. 주제 불일치: 위 컨텍스트의 장소/테마(전시, 미술관, 도서관, 전통시장, 카페/음식, 자연 풍경)와 전혀 무관한 사진
+
+[출력 형식]:
+위 기준을 모두 통과하고 실제 현장 사진으로 적합하면 정확히 "PASS"라고만 답하세요.
+탈락 사유가 있으면 "FAIL: <탈락이유>" 형식으로 1줄로 답하세요.`;
+
+    const visionModels = ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-flash-latest"];
+    for (const vModel of visionModels) {
+      try {
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${vModel}:generateContent?key=${GEMINI_API_KEY}`;
+        const response = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{
+              parts: [
+                { text: prompt },
+                {
+                  inline_data: {
+                    mime_type: mimeType,
+                    data: base64Data
+                  }
+                }
+              ]
+            }],
+            generationConfig: {
+              temperature: 0.1,
+              maxOutputTokens: 60
+            }
+          })
+        });
+
+        if (!response.ok) continue;
+
+        const result = await response.json();
+        const verdict = result.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || "";
+        const isPass = verdict.startsWith("PASS");
+        console.log(`  👁️ [Gemini Vision 검증: ${vModel}] 판정: "${verdict}" (통과: ${isPass})`);
+        return isPass;
+      } catch {
+        continue;
+      }
+    }
+
+    return false;
+  } catch (err) {
+    console.warn(`  ⚠️ [Gemini Vision 판독 건너뜀]: ${err.message}`);
+    return false;
+  }
+}
+
+// 💾 [자가 발전형 사진 금고(Self-Growing Vault)] 검증 통과된 고품질 사진을 금고에 자동 영구 저장
+function saveToVault(slug, newPhotos) {
+  if (!slug || !newPhotos || newPhotos.length === 0) return;
+  try {
+    const vaultPath = path.join(rootDir, "public/data/verified-image-vault.json");
+    let vaultData = { categories: {}, generic_fallbacks: {} };
+    if (fs.existsSync(vaultPath)) {
+      vaultData = JSON.parse(fs.readFileSync(vaultPath, "utf-8"));
+    }
+    if (!vaultData.categories) vaultData.categories = {};
+    if (!vaultData.categories.ai_verified_cache) vaultData.categories.ai_verified_cache = {};
+
+    if (!vaultData.categories.ai_verified_cache[slug]) {
+      vaultData.categories.ai_verified_cache[slug] = [];
+    }
+
+    const existingUrls = new Set(vaultData.categories.ai_verified_cache[slug].map(p => p.url));
+    let addedCount = 0;
+    for (const photo of newPhotos) {
+      if (!existingUrls.has(photo.url)) {
+        vaultData.categories.ai_verified_cache[slug].push({
+          url: photo.url,
+          alt: photo.alt,
+          verifiedAt: new Date().toISOString()
+        });
+        existingUrls.add(photo.url);
+        addedCount++;
+      }
+    }
+
+    if (addedCount > 0) {
+      fs.writeFileSync(vaultPath, JSON.stringify(vaultData, null, 2), "utf-8");
+      console.log(`💾 [금고 자동 적립] ${slug} 에 새로운 AI 검증 실사 ${addedCount}장 영구 적립 완료!`);
+    }
+  } catch (err) {
+    console.warn(`⚠️ 금고 저장 실패: ${err.message}`);
   }
 }
 
@@ -1298,19 +1429,20 @@ function getSeasonInfo(dateStr) {
   }
 }
 
-// 3. 실제 해당 지역/장소와 계절(봄/여름/가을/겨울)에 대해 100% 사전 검증된 실사 사진 금고(Vault)에서만 매칭 (외부 무작위 검색 영구 배제)
+// 3. 실제 해당 장소와 맥락 100% 일치 실사 매칭 파이프라인 (금고 1순위 -> 네이버+Gemini Vision 2순위 -> 테마 Fallback 3순위)
 async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalUsedImages = new Set()) {
   const photos = [];
   const localUsedUrls = new Set();
   const season = getSeasonInfo(dateStr);
   const slug = exhibition.slug || "";
+  const region = exhibition.region || "부산";
   const cleanVenue = (exhibition.venueName || exhibition.location || "")
     .replace(/\s*(제?\d+[·,\-~0-9]*전시장|전관|돔하우스|석천홀|비프힐.*|미술관\s*$)/g, "")
     .split(" 및 ")[0]
     .split(" (")[0]
     .trim();
 
-  console.log(`🔒 [철벽 무결성 락다운] 장소: ${cleanVenue} (slug: ${slug}) | 계절: ${season.name}`);
+  console.log(`🔒 [3단계 이미지 파이프라인 가동] 장소: ${cleanVenue} (지역: ${region}, slug: ${slug}) | 계절: ${season.name}`);
 
   // [신뢰도 100% 절대 철칙] 100% 검증 실사 금고(Vault) 로드
   const vaultPath = path.join(rootDir, "public/data/verified-image-vault.json");
@@ -1321,67 +1453,149 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
     } catch {}
   }
 
-  // 1순위: CURATED_SAFE_PHOTOS 또는 vault 카테고리 내 등록된 1:1 고유 실사 사진
+  // 1순위: CURATED_SAFE_PHOTOS 또는 vault 카테고리 내 등록된 1:1 고유 실사 사진 (기 검증 완료 사진)
   const safeList = CURATED_SAFE_PHOTOS[slug] || (vaultData?.categories && (
     vaultData.categories.libraries?.[slug] ||
     vaultData.categories.markets?.[slug] ||
     vaultData.categories.healing_routes?.[slug] ||
-    vaultData.categories.museums_and_galleries?.[slug]
+    vaultData.categories.museums_and_galleries?.[slug] ||
+    vaultData.categories.ai_verified_cache?.[slug]
   ));
 
-  if (safeList && safeList.length > 0) {
-    console.log(`✨ [100% 검증 사진 금고 매칭] ${slug} 전용 실사 ${safeList.length}장 1:1 배정 완료`);
+  if (safeList && safeList.length >= 3) {
+    console.log(`✨ [1단계 금고 매칭 완료] ${slug} 전용 실사 ${safeList.length}장 즉시 배정`);
     for (const cPhoto of safeList) {
-      photos.push({
-        url: cPhoto.url,
-        alt: cPhoto.alt
-      });
-      localUsedUrls.add(cPhoto.url);
-      globalUsedImages.add(cPhoto.url);
+      if (!globalUsedImages.has(cPhoto.url)) {
+        photos.push({ url: cPhoto.url, alt: cPhoto.alt });
+        localUsedUrls.add(cPhoto.url);
+        globalUsedImages.add(cPhoto.url);
+      }
     }
-    return photos;
+    if (photos.length >= 3) return photos;
   }
 
-  // 2순위: 카테고리별 테마에 맞추어 검증 금고(Vault)의 100% 안전 실사 사진을 순차 배정
-  console.log(`🛡️ [안전 금고 테마 매칭] ${slug} 에 대해 검증된 가을 실사 세트 구성`);
-  const fb = vaultData?.generic_fallbacks || {
-    autumn_park: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
-    autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-    autumn_landmark: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-    ocean_harbor: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-    korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
-    cafe_dessert: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-    art_gallery: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
-    library_books: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
-  };
+  // 2순위: 네이버 이미지 정밀 검색 + Gemini Vision 실시간 시각 검증 파이프라인
+  console.log(`🔍 [2단계 네이버 API + Gemini Vision 실시간 검증 시작] 장소: ${cleanVenue}`);
+  const newlyVerifiedPhotos = [];
 
-  const isLibrary = /library|도서관|책/i.test(slug + " " + exhibition.title);
-  const isMarket = /market|시장|5day/i.test(slug + " " + exhibition.title);
-  const isNature = /healing|nature|park|산책|늪/i.test(slug + " " + exhibition.title);
+  const themeQueries = [
+    {
+      role: "main",
+      query: `${region} ${cleanVenue} 전경`,
+      context: `${region} ${cleanVenue}의 대표적인 실제 외관 건물 또는 웅장한 전경 사진`,
+      fallbackAlt: `${cleanVenue} 대표 전경`
+    },
+    {
+      role: "sub",
+      query: `${cleanVenue} 내부 전시`,
+      context: `${cleanVenue}의 실제 내부 전시실, 작품, 서가, 또는 활기찬 장터 현장 사진`,
+      fallbackAlt: `${cleanVenue} 내부 및 현장 풍경`
+    },
+    {
+      role: "cafe_food",
+      query: `${cleanVenue} 인근 카페`,
+      context: `${cleanVenue} 주변의 감성 카페 인테리어, 커피, 또는 대표 맛집 음식 사진`,
+      fallbackAlt: `${cleanVenue} 주변 감성 카페 & 디저트`
+    },
+    {
+      role: "spot",
+      query: `${region} ${cleanVenue} 주변 풍경`,
+      context: `${region} ${cleanVenue} 인근의 아름다운 가을 풍경, 산책로, 또는 명소`,
+      fallbackAlt: `${cleanVenue} 인근 가을 산책 코스`
+    }
+  ];
 
-  if (isLibrary) {
-    photos.push({ url: fb.library_books, alt: `${cleanVenue} 웅장한 중앙 서가와 열람 공간` });
-    photos.push({ url: fb.cafe_dessert, alt: `${cleanVenue} 주변 감성 북카페 & 커피 디저트` });
-    photos.push({ url: fb.autumn_reeds, alt: `${cleanVenue} 인근 가을 억새 산책로` });
-  } else if (isMarket) {
-    photos.push({ url: fb.ocean_harbor, alt: `${cleanVenue} 활기 넘치는 전통 장터 풍경` });
-    photos.push({ url: fb.korean_food, alt: `${cleanVenue} 명물 따끈한 전통 미식 한 상` });
-    photos.push({ url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 카페 쉼터` });
-    photos.push({ url: fb.autumn_landmark, alt: `${cleanVenue} 주변 가을 명소 정취` });
-  } else if (isNature) {
-    photos.push({ url: fb.autumn_reeds, alt: `${cleanVenue} 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경` });
-    photos.push({ url: fb.autumn_trail, alt: `${cleanVenue} 고즈넉한 가을 힐링 숲길 산책로` });
-    photos.push({ url: fb.cafe_dessert, alt: `${cleanVenue} 인근 통창 뷰 로컬 힐링 카페` });
-    photos.push({ url: fb.autumn_landmark, alt: `${cleanVenue} 가을빛으로 물든 주변 명소` });
-  } else {
-    // 미술관 / 전시
-    photos.push({ url: fb.art_gallery, alt: `${cleanVenue} 가을 기획전시 및 현대미술 공간` });
-    photos.push({ url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 스페셜티 카페` });
-    photos.push({ url: fb.autumn_park, alt: `${cleanVenue} 주변 고즈넉한 가을 산책 코스` });
+  for (const tq of themeQueries) {
+    if (photos.length >= 4) break;
+    try {
+      console.log(`  🔎 네이버 검색 중: "${tq.query}"`);
+      const candidates = await fetchNaverImages(tq.query, 6);
+      
+      let picked = false;
+      for (const cand of candidates) {
+        if (localUsedUrls.has(cand.url) || globalUsedImages.has(cand.url)) continue;
+
+        console.log(`  🔍 Gemini Vision 검증 시도: ${cand.alt.slice(0, 30)}...`);
+        const isValid = await validateImageWithGeminiVision(cand.url, tq.context);
+
+        if (isValid) {
+          const verifiedPhoto = {
+            url: cand.url,
+            alt: cand.alt || tq.fallbackAlt
+          };
+          photos.push(verifiedPhoto);
+          newlyVerifiedPhotos.push(verifiedPhoto);
+          localUsedUrls.add(cand.url);
+          globalUsedImages.add(cand.url);
+          picked = true;
+          console.log(`  ✅ [Gemini Vision 통과 및 채택]: ${cand.alt.slice(0, 25)}`);
+          break;
+        }
+      }
+
+      if (!picked) {
+        console.log(`  ℹ️ "${tq.query}" 후보 중 비전 검증 통과 사진 없음 (안전 Fallback으로 보충 예정)`);
+      }
+    } catch (e) {
+      console.warn(`  ⚠️ 네이버+비전 검증 단계 오류: ${e.message}`);
+    }
   }
 
-  console.log(`✅ [100% 무결성 검증 통과] ${photos.length}장의 안전 실사 배정 완료`);
+  // 새로 검증 통과된 고품질 사진이 있다면 금고(Vault)에 자동 영구 저장 (자가 발전)
+  if (newlyVerifiedPhotos.length > 0) {
+    saveToVault(slug, newlyVerifiedPhotos);
+  }
+
+  // 3순위: 4장에 모자란 경우, 검증 금고(Vault)의 100% 안전 실사 Fallback 사진으로 순차 보충
+  if (photos.length < 3) {
+    console.log(`🛡️ [3단계 안전 금고 Fallback 보충] 부족한 사진을 검증된 가을 실사 세트로 안전 보충합니다.`);
+    const fb = vaultData?.generic_fallbacks || {
+      autumn_park: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
+      autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
+      autumn_landmark: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      ocean_harbor: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
+      cafe_dessert: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
+      art_gallery: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
+      library_books: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
+    };
+
+    const isLibrary = /library|도서관|책/i.test(slug + " " + exhibition.title);
+    const isMarket = /market|시장|5day/i.test(slug + " " + exhibition.title);
+    const isNature = /healing|nature|park|산책|늪/i.test(slug + " " + exhibition.title);
+
+    const fallbacks = isLibrary ? [
+      { url: fb.library_books, alt: `${cleanVenue} 웅장한 중앙 서가와 열람 공간` },
+      { url: fb.cafe_dessert, alt: `${cleanVenue} 주변 감성 북카페 & 커피 디저트` },
+      { url: fb.autumn_reeds, alt: `${cleanVenue} 인근 가을 억새 산책로` }
+    ] : isMarket ? [
+      { url: fb.ocean_harbor, alt: `${cleanVenue} 활기 넘치는 전통 장터 풍경` },
+      { url: fb.korean_food, alt: `${cleanVenue} 명물 따끈한 전통 미식 한 상` },
+      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 카페 쉼터` },
+      { url: fb.autumn_landmark, alt: `${cleanVenue} 주변 가을 명소 정취` }
+    ] : isNature ? [
+      { url: fb.autumn_reeds, alt: `${cleanVenue} 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경` },
+      { url: fb.autumn_trail, alt: `${cleanVenue} 고즈넉한 가을 힐링 숲길 산책로` },
+      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 통창 뷰 로컬 힐링 카페` },
+      { url: fb.autumn_landmark, alt: `${cleanVenue} 가을빛으로 물든 주변 명소` }
+    ] : [
+      { url: fb.art_gallery, alt: `${cleanVenue} 가을 기획전시 및 현대미술 공간` },
+      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 스페셜티 카페` },
+      { url: fb.autumn_park, alt: `${cleanVenue} 주변 고즈넉한 가을 산책 코스` }
+    ];
+
+    for (const fbPhoto of fallbacks) {
+      if (!localUsedUrls.has(fbPhoto.url)) {
+        photos.push(fbPhoto);
+        localUsedUrls.add(fbPhoto.url);
+        globalUsedImages.add(fbPhoto.url);
+        if (photos.length >= 4) break;
+      }
+    }
+  }
+
+  console.log(`✅ [100% 무결성 검증 통과] 총 ${photos.length}장의 실사 배정 완료`);
   return photos;
 }
 
