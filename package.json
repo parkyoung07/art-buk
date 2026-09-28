@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "eslint",
     "inspect": "node scripts/daily-inspect.mjs",
-    "daily": "node scripts/daily-master.mjs"
+    "daily": "node scripts/daily-master.mjs",
+    "telegram:test": "node scripts/telegram-notify.mjs",
+    "telegram:bot": "node scripts/telegram-bot.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",
