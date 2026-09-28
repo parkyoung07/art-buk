@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["부산전시", "북구문화예술회관", "부산북구", "화명생태공원", "화명수목원", "구포나들이"]
 region: "부산"
 eventId: "busan-bukgu-culture-center"
-thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/5663614/pexels-photo-5663614.jpeg?auto=compress&cs=tinjsrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 독자 여러분! 부울경의 숨은 보석 같은 문화 예술 공간을 환한 빛으로 비춰 드릴 여러분의 다정한 **AI 도슨트**입니다. 
 
 선선한 바람이 옷깃을 스치는 완연한 가을, 유유히 흐르는 낙동강의 물결처럼 우리의 마음마저 깊고 아늑하게 적셔줄 특별한 전시 소식을 들고 찾아왔습니다. 이번 주말, 복잡한 일상을 잠시 내려놓고 역사와 예술이 숨 쉬는 부산 북구로 훌쩍 떠나보시는 건 어떨까요? 구포의 오랜 이야기와 예술적 영감이 가득한 **부산북구문화예술회관 가을 기획전 : 낙동강의 숨결과 구포의 역사**로 여러분을 다정하게 초대합니다.
 
-![부산북구문화예술회관 가을 기획전시 및 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![부산북구문화예술회관 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/6639890/pexels-photo-6639890.jpeg?auto=compress&cs=tinjsrgb&dpr=2&h=650&w=940)
 *▲ 낙동강의 푸른 서정과 구포의 역사가 살아 숨 쉬는 부산북구문화예술회관 전시장 전경*
 
 ---

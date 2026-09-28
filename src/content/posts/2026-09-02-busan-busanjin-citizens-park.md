@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["부산전시", "부산시민공원", "다솜갤러리", "부산진구", "전포카페거리", "서면나들이"]
 region: "부산"
 eventId: "busan-busanjin-citizens-park"
-thumbnail: "https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832"
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정하고 박학다식한 AI 도슨트입니다. 🌿
@@ -15,8 +15,8 @@ thumbnail: "https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg
 
 자연과 예술이 조화롭게 어우러지는 이 공간에서 일상의 피로를 잠시 내려놓고, 현대미술이 건네는 따뜻한 위로의 메시지를 함께 만나보실까요?
 
-![푸른 잔디광장과 어우러지는 야외 현대 조형물](https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 부산시민공원의 푸르른 초록빛 풍경과 함께 관람객을 맞이하는 현대미술 조형 작품의 모습.*
+![부산시민공원 다솜갤러리 기획전시실 내부 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+*▲ 사진 설명: 부산시민공원 다솜갤러리 기획전시실 내부 현대미술 및 디자인 작품 전시 전경.*
 
 ---
 
@@ -42,8 +42,8 @@ thumbnail: "https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg
 #### 2. 현대미술의 문턱을 낮추다: 누구나 즐기는 감성 교감
 어렵고 난해하게만 느껴졌던 현대미술의 장벽을 허물고, 대중과 깊이 교감할 수 있는 직관적이면서도 깊이 있는 작품들이 가득합니다. 설치 미술부터 회화, 미디어 아트까지 다양한 매체를 통해 일상의 사물과 풍경을 새로운 시각으로 재해석한 작가들의 시선을 만끽해 보세요.
 
-![도심 공원 속 금속 구조물과 초록 잔디의 조화](https://images.pexels.com/photos/29196005/pexels-photo-29196005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 자연의 푸름과 대조를 이루며 시각적 즐거움을 선사하는 현대 미술 설치 작업.*
+![다솜갤러리 화이트큐브 벽면 전시 작품](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
+*▲ 사진 설명: 다솜갤러리 화이트큐브 벽면에 전시된 감각적인 회화 및 디자인 기획 작품.*
 
 #### 3. 발걸음마다 여유가 머무는 공간, 다솜갤러리
 전시장이 위치한 다솜갤러리는 공원 산책로와 자연스럽게 이어져 있어 관람 전후로 가볍게 거닐기 좋습니다. 작품을 감상한 뒤 공원의 메타세쿼이아 길을 걸으며 여운을 곱씹어 보는 코스는 이번 전시가 주는 가장 큰 선물입니다.
@@ -70,8 +70,8 @@ thumbnail: "https://images.pexels.com/photos/13517804/pexels-photo-13517804.jpeg
 2. **코스 두 번째 - 다솜갤러리 기획전 관람**: 공원 내 다솜갤러리에서 <도심 속 녹색 쉼표와 현대미술> 전시 관람으로 지적 충전과 감성 힐링 완료!
 3. **코스 세 번째 - 전포카페거리 & 서면 젊음의 거리 투어**: 트렌디한 소품숍 투어와 감성 카페 방문, 맛있는 저녁 식사까지 이어지는 완벽한 주말 코스입니다.
 
-![나무 사이로 비치는 평화로운 도심 풍경](https://images.pexels.com/photos/35462331/pexels-photo-35462331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
-*▲ 사진 설명: 초록빛 가득한 공원 산책로를 걸으며 만나는 평화롭고 아름다운 풍경.*
+![부산시민공원 하야리아 잔디광장과 도심 숲](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
+*▲ 사진 설명: 다솜갤러리 관람 후 여유롭게 산책하기 좋은 부산시민공원 하야리아 잔디광장과 푸른 숲길 풍경.*
 
 ---
 

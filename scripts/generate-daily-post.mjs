@@ -1090,7 +1090,7 @@ const CURATED_SAFE_PHOTOS = {
   // 테마 1 & 2: 전통시장
   "market-busan-jagalchi-nampo": [
     {
-      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       alt: "부산 자갈치시장 남항 바다와 푸른 포구의 탁 트인 전경 (초상권 없는 순수 풍경)"
     },
     {
@@ -1120,7 +1120,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "밀양강변 영남루 뷰 감성 한옥 카페"
     },
     {
-      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       alt: "국보 밀양 영남루와 밀양강 둔치의 고즈넉한 가을빛"
     }
   ],
@@ -1138,7 +1138,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "울주 온양 감성 디저트 카페"
     },
     {
-      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       alt: "간절곶 등대와 외고산 옹기마을 가을 정취"
     }
   ],
@@ -1146,7 +1146,7 @@ const CURATED_SAFE_PHOTOS = {
   // 테마 4: 계절 힐링로드 & 감성 드라이브
   "healing-changnyeong-upo-wetland": [
     {
-      url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
       alt: "창녕 우포늪 태고의 신비를 간직한 물안개와 갈대 습지"
     },
     {
@@ -1164,7 +1164,7 @@ const CURATED_SAFE_PHOTOS = {
   ],
   "healing-miryang-wiyangji-autumn": [
     {
-      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       alt: "밀양 위양지 완재정 연못에 비친 단풍과 물그림자"
     },
     {
@@ -1182,11 +1182,11 @@ const CURATED_SAFE_PHOTOS = {
   ],
   "healing-geoje-windy-hill-autumn": [
     {
-      url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       alt: "거제 바람의 언덕 쪽빛 남해 바다와 이국적인 풍차 전경"
     },
     {
-      url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
       alt: "기암괴석과 푸른 파도가 장관을 이루는 신선대 해안 절벽"
     },
     {
@@ -1455,10 +1455,11 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
 
   // 1순위: CURATED_SAFE_PHOTOS 또는 vault 카테고리 내 등록된 1:1 고유 실사 사진 (기 검증 완료 사진)
   const safeList = CURATED_SAFE_PHOTOS[slug] || (vaultData?.categories && (
+    vaultData.categories.museums?.[slug] ||
+    vaultData.categories.museums_and_galleries?.[slug] ||
     vaultData.categories.libraries?.[slug] ||
     vaultData.categories.markets?.[slug] ||
     vaultData.categories.healing_routes?.[slug] ||
-    vaultData.categories.museums_and_galleries?.[slug] ||
     vaultData.categories.ai_verified_cache?.[slug]
   ));
 
@@ -1553,11 +1554,11 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
       autumn_park: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
       autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-      autumn_landmark: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-      ocean_harbor: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+      autumn_landmark: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
+      ocean_harbor: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
       cafe_dessert: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-      art_gallery: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
+      art_gallery: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832",
       library_books: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
     };
 
@@ -1696,8 +1697,22 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
 - **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치!
 - **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내.
 - **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트.
-- **따뜻한 마무리 멘트**.`;
+- **🏷️ 부울경 나들이 추천 태그 & SNS 해시태그**: 글 맨 마지막에 독자 복사 및 인스타그램/블로그 공유용 #해시태그 10개 이상(#${exhibition.region}전시 #${exhibition.region}가볼만한곳 #주말나들이 #가을나들이 #아이와함께 #데이트코스 #나드리AI 등)을 가로로 정갈하게 나열할 것.`;
   }
+
+  // 🏷️ 회장님 지시 사항 반영: 머리말(Frontmatter) 및 SNS용 황금 해시태그 자동 확장 (8~12개)
+  const baseTags = Array.isArray(exhibition.tags) ? exhibition.tags : [];
+  const autoTagsSet = new Set(baseTags);
+  autoTagsSet.add(`${exhibition.region}가볼만한곳`);
+  autoTagsSet.add(`${exhibition.region}나들이`);
+  if (exhibition.subRegion) {
+    autoTagsSet.add(`${exhibition.region}${exhibition.subRegion}`);
+  }
+  autoTagsSet.add("부울경나들이");
+  autoTagsSet.add("주말가볼만한곳");
+  autoTagsSet.add("가을나들이");
+  autoTagsSet.add("나드리AI");
+  const enrichedTags = Array.from(autoTagsSet).slice(0, 12);
 
   const prompt = `
 너는 '부울경(부산, 울산, 경남) 아트·전시·문화 나들이' 웹사이트의 최고 수석 에디터이자 ${roleTitle}야.
@@ -1711,7 +1726,7 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
 - 운영/장날: ${exhibition.period}
 - 이용료: ${exhibition.price}
 - 요약: ${exhibition.summary}
-- 추천 태그: ${exhibition.tags.join(", ")}
+- 추천 태그: ${enrichedTags.join(", ")}
 
 ### [네이버 실시간 검색 빅데이터]
 - 1. 실제 네이버 블로그 생생 후기:
@@ -1733,15 +1748,21 @@ title: "${exhibition.title}"
 date: "${dateStr}"
 summary: "${exhibition.summary}"
 category: "${exhibition.category || '전시 리뷰'}"
-tags: [${exhibition.tags.map(t => `"${t}"`).join(", ")}]
+tags: [${enrichedTags.map(t => `"${t}"`).join(", ")}]
 region: "${exhibition.region}"
 eventId: "${exhibition.slug}"
 thumbnail: "${photos[0]?.url || ''}"
 ---
 
-2. 본문 구성 가이드라인:${contentGuide}
+2. 본문 구성 가이드라인:
+${contentGuide}
 
-3. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).
+3. **[필수 해시태그 규칙]** 본문 가장 마지막에 반드시 아래 형식으로 SNS 및 검색 최적화용 해시태그 목록을 넣어줘:
+---
+### 🏷️ 부울경 나들이 추천 태그 & SNS 해시태그
+${enrichedTags.map(t => `#${t.replace(/\s+/g, '')}`).join(" ")}
+
+4. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).
 `;
 
   const candidateModels = [

@@ -15,7 +15,7 @@ tags:
 region: 경남
 eventId: healing-miryang-wiyangji-autumn
 thumbnail: >-
-  https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80
+  https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1200&auto=format&fit=crop&q=80
 ---
 
 선선한 바람이 뺨을 스치고, 하늘이 한 뼘 더 높아지는 완연한 가을입니다. 바쁜 일상 속에서 마음에 쉼표 하나 찍고 싶을 때, 여러분은 어디로 향하시나요? 

@@ -42,8 +42,30 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* 데스크톱/태블릿 네비게이션 */}
-        <nav className="flex items-center gap-1 sm:gap-1.5 text-xs font-semibold shrink-0 py-0.5">
+        {/* 모바일 숏컷 (화면 폭 < 640px) : 하단 탭바와 중복되지 않는 핵심 링크 */}
+        <div className="flex sm:hidden items-center gap-1.5 shrink-0">
+          <Link
+            href="/blog"
+            className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all flex items-center gap-1 border cursor-pointer ${
+              pathname.startsWith("/blog")
+                ? "bg-slate-900 text-white border-slate-900 shadow-2xs"
+                : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"
+            }`}
+          >
+            <span>📝</span>
+            <span>블로그</span>
+          </Link>
+          <Link
+            href="/intro"
+            className="px-2 py-1 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 transition-colors flex items-center gap-0.5"
+          >
+            <span>🌟</span>
+            <span>소개</span>
+          </Link>
+        </div>
+
+        {/* 데스크톱/태블릿 네비게이션 (화면 폭 >= 640px) */}
+        <nav className="hidden sm:flex items-center gap-1 sm:gap-1.5 text-xs font-semibold shrink-0 py-0.5">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -64,7 +86,7 @@ export default function Header() {
 
           <Link
             href="/intro"
-            className="hidden md:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50/90 hover:bg-indigo-100 border border-indigo-200 transition-colors shadow-2xs shrink-0"
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-bold text-indigo-700 bg-indigo-50/90 hover:bg-indigo-100 border border-indigo-200 transition-colors shadow-2xs shrink-0"
             title="나드리 AI 소개"
           >
             <span>🌟</span>

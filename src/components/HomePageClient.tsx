@@ -147,7 +147,7 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
                 }`}>
                   {idx === 0 ? "오늘의 1차" : "최신 추천"}
                 </span>
-                <span className="truncate max-w-[280px] sm:max-w-[360px]">📢 {p.title}</span>
+                <span className="truncate max-w-[170px] xs:max-w-[240px] sm:max-w-[360px]">📢 {p.title}</span>
                 <span className="group-hover:translate-x-0.5 transition-transform text-amber-300 shrink-0">➔</span>
               </Link>
             ))}
@@ -242,16 +242,16 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
           {/* 🔥 오늘자 AI 도슨트 정기 추천 2편 실시간 라이브 카드 쇼케이스 (접속하자마자 변화 체감!) */}
           <div className="pt-4 max-w-4xl mx-auto text-left">
             <div className="p-4 sm:p-5 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl space-y-3">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
-                  <span className="text-xs font-black text-amber-300 tracking-wide">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping shrink-0"></span>
+                  <span className="text-xs font-black text-amber-300 tracking-wide line-clamp-1">
                     TODAY AI 큐레이션 실시간 소글 ({posts[0]?.date} 최신 완비)
                   </span>
                 </div>
                 <Link
                   href="/blog"
-                  className="text-[11px] font-bold text-slate-300 hover:text-white flex items-center gap-1"
+                  className="text-[11px] font-bold text-slate-300 hover:text-white flex items-center gap-1 shrink-0 self-end sm:self-auto"
                 >
                   <span>매거진 전체보기</span>
                   <span>➔</span>

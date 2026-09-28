@@ -13,7 +13,7 @@ tags:
 region: 부산
 eventId: busan-dongnae-culture-center
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5786%2F2024%2F06%2F03%2F0000048327_001_20240603154609253.jpg
+  https://images.pexels.com/photos/15053649/pexels-photo-15053649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 여러분! '부울경 아트·전시·문화 나들이'의 다정한 AI 도슨트입니다. 
@@ -22,7 +22,7 @@ thumbnail: >-
 
 동래문화회관에서 펼쳐지는 가을 특별전 **<동래학춤의 선율과 전통 회화의 숨결>**은 부산 전통 문화의 깊은 뿌리를 현대적인 감각의 시각예술로 마주할 수 있는 아주 특별한 기회랍니다. 자, 그럼 저와 함께 설레는 예술 나들이를 시작해 볼까요?
 
-![동래문화회관 가을 전경 및 전시 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5786%2F2024%2F06%2F03%2F0000048327_001_20240603154609253.jpg)
+![동래문화회관 가을 전경 및 전시 공간](https://images.pexels.com/photos/15053649/pexels-photo-15053649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 고즈넉한 가을 정취를 품은 동래문화회관 전경과 이번 특별전이 열리는 전시실 입구의 모습*
 
 ---

@@ -6,7 +6,7 @@ category: "전시 리뷰"
 tags: ["경남전시", "양산전시", "쌍벽루아트홀", "영남알프스", "황산공원", "양산데이트"]
 region: "경남"
 eventId: "yangsan-ssangbyeongnu-autumn"
-thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/13657127/pexels-photo-13657127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 부울경 아트·전시·문화 나들이 독자 여러분! 여러분의 다정하고 박학다식한 AI 도슨트입니다. 
@@ -15,7 +15,7 @@ thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&
 
 영남알프스의 웅장한 능선과 유유히 흐르는 양산천의 사계절을 서정적인 화폭으로 만나볼 수 있는 **<영남알프스와 양산천의 사계>**전으로 저와 함께 감성 가득한 문화 나들이를 떠나보실까요?
 
-![양산 쌍벽루아트홀 가을 기획전시 및 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![양산 쌍벽루아트홀 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/29673604/pexels-photo-29673604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 양산 쌍벽루아트홀에서 펼쳐지는 가을 명품 기획전 전시장 전경*
 
 ---

@@ -30,6 +30,33 @@
           "alt": "수영강변 APEC 나루공원 푸른 잔디와 센텀 마천루 산책로 실사",
           "theme": "naru_park"
         }
+      ],
+      "busan-busanjin-citizens-park": [
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832",
+          "alt": "부산시민공원 다솜갤러리 기획전시실 내부 현대미술 작품 및 관람 전경 실사",
+          "theme": "gallery_inside"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832",
+          "alt": "다솜갤러리 화이트큐브 벽면에 전시된 감각적인 디자인 및 회화 작품 실사",
+          "theme": "art_artwork"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832",
+          "alt": "부산시민공원의 광활한 하야리아 잔디광장과 울창한 도심 숲 전경 실사",
+          "theme": "park_lawn"
+        },
+        {
+          "url": "https://pup-post-phinf.pstatic.net/MjAyNjA3MDdfNjcg/MDAxNzgzMzUyNDAwOTYw.dunWy6fgN8ufnFfFmzD2MFaooqXMvcRzvf7YwfpxGBwg.43LnPSIYPdVKgXGfD02gNJ9mCG-o8j8Q2Bgh_qvM_50g.JPEG/POST_IMAGE_ENC_20260707_003850_497.jpg",
+          "alt": "전포카페거리 로컬 감성 카페의 향긋한 스페셜티 커피와 수제 디저트 실사",
+          "theme": "cafe"
+        },
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfMTM5%2FMDAxNzg5MDE2MTM2ODIy.XKllALZ7PKWZmIvrB4MG5eq7K-BOGDhmu7JHipSCQGQg.gyo_64QkFAKIN1yPEOqe716lvU_R8ht42YvavYAw7Rgg.PNG%2F2732c6f0-8a61-4471-8c5d-19347335bb63.png&type=sc960_832",
+          "alt": "부산시민공원 다솜갤러리 주변 메타세쿼이아 길과 기억의 숲 산책로 실사",
+          "theme": "park_trail"
+        }
       ]
     },
     "libraries": {
@@ -242,7 +269,7 @@
       ],
       "healing-miryang-wiyangji-autumn": [
         {
-          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
           "alt": "밀양 위양지 완재정 연못에 비친 단풍과 물그림자",
           "theme": "autumn_pond"
         },
@@ -264,7 +291,7 @@
       ],
       "healing-geoje-windy-hill-autumn": [
         {
-          "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
           "alt": "거제 바람의 언덕 쪽빛 남해 바다와 이국적인 풍차 전경",
           "theme": "ocean"
         },
@@ -293,7 +320,7 @@
           "theme": "architecture"
         },
         {
-          "url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832",
           "alt": "새롭게 단장한 미술관 메인 전시실과 현대 회화 작품",
           "theme": "exhibition"
         },
@@ -337,11 +364,11 @@
     "autumn_reeds": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "autumn_park": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
     "autumn_trail": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-    "autumn_landmark": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
-    "ocean_harbor": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+    "autumn_landmark": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
+    "ocean_harbor": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
     "korean_food": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
     "cafe_dessert": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-    "art_gallery": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
+    "art_gallery": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832",
     "library_books": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&auto=format&fit=crop&q=80"
   }
 }

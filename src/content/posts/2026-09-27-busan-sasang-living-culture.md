@@ -43,7 +43,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0
 #### 3. 세대를 아우르는 열린 소통의 장
 예술은 어려운 것이라는 선입견을 깨고, 지역 주민과 방문객 모두가 쉽고 편안하게 즐길 수 있도록 기획되었습니다. 작가들의 위트 있는 상상력이 담긴 설치 미술과 회화 작품들을 마주하며 일상의 소소한 행복을 되찾아보세요.
 
-![사상생활문화센터 기획전시 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![사상생활문화센터 기획전시 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
 *▲ 현대 시각예술의 다채로운 매력을 느낄 수 있는 전시 전경.*
 
 ---

@@ -705,7 +705,7 @@ export default function FloatingChatbot() {
   return (
     <aside
       aria-label="부울경 전시 AI 챗봇 안내 도우미"
-      className="fixed bottom-5 right-5 z-50 select-none font-sans"
+      className="fixed bottom-20 md:bottom-5 right-4 md:right-5 z-40 md:z-50 select-none font-sans"
     >
       {/* Chat Window */}
       {isOpen && (

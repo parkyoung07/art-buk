@@ -41,9 +41,20 @@ export default function KakaoSubscribeModal({ isOpen, onClose }: KakaoSubscribeM
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!phoneNumber.trim()) return;
+    // 서버 API로 신청자 번호 전송 및 로컬 스토리지 보존
+    const submitToServer = async () => {
+      try {
+        await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ phone: phoneNumber, source: "kakao_modal" }),
+        });
+      } catch (err) {
+        console.error("Failed to register subscriber to server:", err);
+      }
+    };
+    submitToServer();
 
-    // 로컬 스토리지에 신청 번호 임시 저장 (중복 신청 방지 및 보존)
     try {
       const existing = JSON.parse(localStorage.getItem("artbuk_subscribers") || "[]");
       existing.push({ phone: phoneNumber, date: new Date().toISOString() });

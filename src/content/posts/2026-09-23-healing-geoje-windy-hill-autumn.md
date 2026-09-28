@@ -6,12 +6,12 @@ category: "계절 힐링로드"
 tags: ["경남힐링로드", "거제바람의언덕", "거제드라이브", "신선대", "남해안오션뷰", "가을여행"]
 region: "경남"
 eventId: "healing-geoje-windy-hill-autumn"
-thumbnail: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+thumbnail: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80"
 ---
 
 코끝을 스치는 바람에서 은은한 가을의 서정이 묻어나는 계절입니다. 일상의 바쁜 일상과 지친 마음을 잠시 내려놓고, 가슴 탁 트이는 쪽빛 남해 바다로 훌쩍 떠나고 싶은 주말인데요. 부울경 아트·전시·문화 나들이 웹사이트의 자연 감성 여행 도슨트인 제가 오늘 안내할 힐링 로드는 거제의 푸른 숨결이 고스란히 담긴 **'거제 바람의 언덕 & 신선대 오션로드'**입니다. 이국적인 풍차가 돌아가는 언덕과 신비로운 기암괴석이 기다리는 그곳으로 함께 떠나볼까요?
 
-![거제 바람의 언덕 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![거제 바람의 언덕 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 황금빛 가을바람에 흔들리는 억새와 푸른 남해 바다가 어우러진 거제 바람의 언덕 전경*
 
 ---
@@ -68,7 +68,7 @@ thumbnail: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg
 * **추천 루트**: 거제대교 진입 ➔ 학동흑진주몽돌해변 (파도 소리 감상) ➔ **신선대 & 바람의 언덕** (풍차와 오션뷰 감상) ➔ 해금강 유람선 매표소 ➔ 다대마을 해안도로 드라이브
 * **지역 소식 참고**: 최근 경남 지역에서는 고품격 치유·체험 관광 프로그램과 더불어 자연과 문화가 어우러지는 다양한 행사가 활기를 띠고 있습니다. 이번 주말, 거제의 자연 속에서 일상의 스트레스를 날려버릴 재충전의 시간을 가져보세요.
 
-![거제 바람의 언덕 가을빛으로 물든 주변 명소](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80)
+![거제 바람의 언덕 가을빛으로 물든 주변 명소](https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 가을빛이 감돌기 시작하는 남해안의 아름다운 해안선과 풍경*
 
 ---

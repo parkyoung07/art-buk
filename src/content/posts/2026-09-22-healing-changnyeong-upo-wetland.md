@@ -6,12 +6,12 @@ category: "계절 힐링로드"
 tags: ["경남힐링로드", "창녕우포늪", "람사르습지", "가을갈대", "생태관광", "당일치기드라이브"]
 region: "경남"
 eventId: "healing-changnyeong-upo-wetland"
-thumbnail: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80"
 ---
 
 아침 공기가 제법 서늘해진 요즘, 바쁜 일상 속에서 잠시 숨을 고르고 싶을 때 생각나는 곳이 있습니다. 부울경 에디터가 이번 주말 당장 훌쩍 떠나기 좋은 가을 힐링 로드로 안내합니다. 1억 4천만 년의 시간이 빚어낸 태고의 신비, 국내 최대의 자연 늪지 **창녕 우포늪**입니다. 가을볕 아래 황금빛으로 물드는 갈대숲과 은빛 억새, 물 위로 피어오르는 새벽 물안개가 여러분의 지친 마음에 따스한 온기와 깊은 평온을 안겨줄 것입니다.
 
-![창녕 우포늪 태고의 신비를 간직한 물안개와 갈대 습지](https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80)
+![창녕 우포늪 태고의 신비를 간직한 물안개와 갈대 습지](https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80)
 *▲ 사진 설명: 새벽 안개가 자욱하게 내려앉아 태고의 신비를 더하는 창녕 우포늪의 가을 풍경.*
 
 ---
@@ -50,7 +50,7 @@ thumbnail: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&
 - **창녕 로컬 미식 제안**: 늪지 주변에서 맛볼 수 있는 담백한 메밀국수나 따뜻한 수제비, 그리고 창녕의 명물인 양파를 곁들인 건강한 한정식으로 가을 나들이의 맛을 더해보세요.
 - **감성 카페 쉼터**: 초록빛 들판과 가을 하늘을 통창 너머로 조망할 수 있는 로컬 카페에서 향긋한 드립 커피나 창녕 특산물 음료를 마시며 여유로운 사색의 시간을 가져보길 추천합니다.
 
-![우포늪 생태공원 & 탐방로 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![우포늪 생태공원 & 탐방로 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832)
 *▲ 사진 설명: 황금빛 가을 갈대와 은빛 억새가 장관을 이루는 우포늪 탐방로 전경.*
 
 ---

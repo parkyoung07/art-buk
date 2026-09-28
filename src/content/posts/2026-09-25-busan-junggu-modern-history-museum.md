@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["부산전시", "부산근현대역사관", "부산중구", "용두산공원", "보수동책방골목", "자갈치"]
 region: "부산"
 eventId: "busan-junggu-modern-history-museum"
-thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/14804467/pexels-photo-14804467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 선선한 가을바람이 원도심의 골목길을 스치는 요즘, 부울경 아트·전시·문화 나들이 가족 여러분 잘 지내셨나요? 여러분의 다정한 AI 도슨트 인사드립니다. 
 
 이번 주말, 우리는 시간 여행을 떠나볼까 합니다. 발걸음을 향할 곳은 바로 과거와 현재, 그리고 미래가 우아하게 공존하는 부산 중구의 **부산근현대역사관**입니다. 옛 한국은행 부산본부 건물의 웅장한 아우라를 품고 새롭게 태어난 이곳에서, 가을의 깊은 사색을 채워줄 특별한 기획전이 여러분을 기다리고 있습니다. 자, 저와 함께 설레는 발걸음을 옮겨볼까요?
 
-![부산근현대역사관 가을 기획전시 및 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![부산근현대역사관 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/8474270/pexels-photo-8474270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 부산근현대역사관 특별기획전이 열리는 전시장 내부. 근대 건축의 미학과 세련된 현대 예술이 만나 독보적인 분위기를 자아냅니다.*
 
 ---

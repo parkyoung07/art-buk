@@ -20,7 +20,7 @@ thumbnail: >-
 
 선선한 가을바람이 코끝을 스치는 요즘, 왠지 모르게 마음 한구석이 몽글몽글해지고 어디론가 훌쩍 떠나고 싶어지지 않으신가요? 이번 주말, 오랜 역사와 현대적인 감각이 뜨겁게 교차하는 울산 북구로 예술 나들이를 떠나보는 건 어떨까요? 한반도 철기 문화의 뿌리 깊은 고향에서 펼쳐지는 특별한 불꽃의 예술 속으로 여러분을 초대합니다.
 
-![Modern art installation featuring metal face sculptures](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
+![달천철장의 역사와 현대 금속공예 기획전시 전경](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
 *▲ 달천철장의 유구한 역사와 현대 금속 공예의 숨결이 담긴 전시장 전경*
 
 ---

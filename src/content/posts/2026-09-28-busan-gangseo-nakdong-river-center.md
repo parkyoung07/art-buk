@@ -55,7 +55,7 @@ thumbnail: "https://terms-post-phinf.pstatic.net/MjAxNzExMjJfMjU3/MDAxNTExMzMzNj
 *   **낙동강변 뷰티풀 브런치 카페**: 전시 관람 후 탁 트인 리버뷰를 조망하며 신선한 브런치와 스페셜티 커피를 즐길 수 있는 곳입니다. 잔잔한 강물을 바라보며 고요하게 사색에 잠기기 좋습니다.
 *   **을숙도 향토 미식가든**: 낙동강 하구의 싱그러운 공기를 마신 뒤 든든하게 속을 채워줄 건강한 한식 메뉴를 선보이는 로컬 맛집입니다. 신선한 재료로 만든 정갈한 상차림이 여행의 피로를 사르르 녹여줍니다.
 
-![낙동강문화관 기획전 및 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![낙동강문화관 기획전 및 현대미술 공간](https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200&auto=format&fit=crop&q=80)
 *▲ 예술과 일상이 다정하게 어우러지는 감각적인 전시 인테리어.*
 
 ---

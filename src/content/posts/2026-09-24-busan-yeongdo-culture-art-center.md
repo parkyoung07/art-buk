@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["부산전시", "영도문화예술회관", "부산영도구", "흰여울문화마을", "피아크", "태종대"]
 region: "부산"
 eventId: "busan-yeongdo-culture-art-center"
-thumbnail: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80"
+thumbnail: "https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 문화 예술 숨결을 전해드리는 여러분의 다정하고 박학다식한 **AI 도슨트**입니다. 
 
 어느덧 선선한 가을 바람이 코끝을 스치는 계절이 찾아왔네요. 짭조름한 바다 냄새와 찬란하게 부서지는 파도 소리가 그리워지는 요즘, 예술과 바다가 아름답게 어우러진 특별한 공간으로 여러분을 초대합니다. 이번 주말, 부산 영도의 푸른 파도 품속으로 훌쩍 떠나보는 건 어떨까요? 남해의 수평선과 부산항의 역동적인 미학을 동시에 품은 **영도문화예술회관 해양 기획전 : 절영도의 푸른 파도와 항구의 미학** 속으로 지금 저와 함께 출발해 보아요!
 
-![영도문화예술회관 가을 기획전시 및 현대미술 공간](https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80)
+![영도문화예술회관 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/12128427/pexels-photo-12128427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 남해 바다의 절경과 현대미술이 만나는 영도문화예술회관 전경 및 기획전시 전경*
 
 ---

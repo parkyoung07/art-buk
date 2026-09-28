@@ -1,0 +1,120 @@
+{
+  "todayUV": 24,
+  "todayPV": 78,
+  "totalVisitors": 1286,
+  "topPages": [
+    {
+      "path": "/",
+      "title": "나드리 AI | 부울경 문화·나들이 플랫폼",
+      "count": 32
+    },
+    {
+      "path": "/events/busan-museum-of-art-modern",
+      "title": "부산시립미술관 재개관 특별전 : 퓨처 뮤지올로지",
+      "count": 18
+    },
+    {
+      "path": "/events/busan-biennale-2026",
+      "title": "2026 부산비엔날레 (부산현대미술관 및 을숙도)",
+      "count": 14
+    },
+    {
+      "path": "/markets",
+      "title": "부울경 5일장 전통시장 나들이",
+      "count": 9
+    },
+    {
+      "path": "/libraries",
+      "title": "부울경 특화 도서관 쉼표",
+      "count": 5
+    }
+  ],
+  "weeklyHistory": [
+    {
+      "date": "09-22",
+      "uv": 38,
+      "pv": 112
+    },
+    {
+      "date": "09-23",
+      "uv": 42,
+      "pv": 126
+    },
+    {
+      "date": "09-24",
+      "uv": 35,
+      "pv": 98
+    },
+    {
+      "date": "09-25",
+      "uv": 49,
+      "pv": 145
+    },
+    {
+      "date": "09-26",
+      "uv": 68,
+      "pv": 210
+    },
+    {
+      "date": "09-27",
+      "uv": 74,
+      "pv": 235
+    },
+    {
+      "date": "09-28",
+      "uv": 24,
+      "pv": 78
+    }
+  ],
+  "recentLogs": [
+    {
+      "time": "09:34:12",
+      "path": "/events/busan-museum-of-art-modern",
+      "title": "부산시립미술관 재개관 특별전 : 퓨처 뮤지올로지",
+      "referrer": "네이버 검색 / 블로그",
+      "device": "Mobile"
+    },
+    {
+      "time": "09:28:45",
+      "path": "/",
+      "title": "나드리 AI | 부울경 문화·나들이 플랫폼",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Mobile"
+    },
+    {
+      "time": "09:15:20",
+      "path": "/events/busan-biennale-2026",
+      "title": "2026 부산비엔날레 (부산현대미술관)",
+      "referrer": "카카오톡 / 인스타그램",
+      "device": "Mobile"
+    },
+    {
+      "time": "08:52:10",
+      "path": "/markets",
+      "title": "부울경 5일장 전통시장 나들이",
+      "referrer": "구글 검색",
+      "device": "Desktop"
+    },
+    {
+      "time": "08:30:15",
+      "path": "/",
+      "title": "나드리 AI | 부울경 문화·나들이 플랫폼",
+      "referrer": "당근마켓 동네생활",
+      "device": "Mobile"
+    },
+    {
+      "time": "08:12:44",
+      "path": "/events/busan-cinema-center-media-art",
+      "title": "영화의전당 시네마틱 미디어아트전",
+      "referrer": "네이버 검색 / 블로그",
+      "device": "Mobile"
+    },
+    {
+      "time": "07:45:03",
+      "path": "/libraries",
+      "title": "부울경 특화 도서관 쉼표",
+      "referrer": "직접 접속",
+      "device": "Desktop"
+    }
+  ]
+}

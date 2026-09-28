@@ -50,7 +50,7 @@ thumbnail: >-
 ### 3. 도심과 자연을 잇는 가을 예술 산책
 전시장이 위치한 사상구는 낙동강의 대자연을 품고 있는 곳입니다. 실내 전시 관람 후, 인근의 삼락생태공원 갈대숲으로 이어지는 코스는 이번 전시가 주는 가장 큰 선물입니다. 예술과 자연을 오롯이 누리는 완벽한 반나절 코스를 완성해보세요.
 
-![가을바람에 흔들리는 갈대와 평화로운 강변 풍경](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![가을바람에 흔들리는 갈대와 평화로운 강변 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832)
 *▲ 사진 설명: 사상구의 자랑, 삼락생태공원의 가을 정취. 전시 관람 후 거닐기 좋은 힐링 산책로입니다.*
 
 ---
@@ -91,7 +91,7 @@ thumbnail: >-
 3. **오후 코스:** 대한민국을 대표하는 생태 공원 중 하나인 **삼락생태공원 갈대억새숲** 산책하며 가을 인생샷 남기기
 4. **저녁 코스:** 사상인디스테이션 등 인근 문화예술 거점 공간 둘러보며 하루 마무리하기
 
-![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![새벽안개와 가을 억새밭 사이를 거니는 평화로운 시간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832)
 *▲ 사진 설명: 아침 햇살과 억새가 어우러진 삼락생태공원의 아름다운 풍경.*
 
 ---
