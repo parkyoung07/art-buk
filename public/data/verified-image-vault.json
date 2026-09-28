@@ -358,7 +358,27 @@
         }
       ]
     },
-    "ai_verified_cache": {}
+    "ai_verified_cache": {
+      "ulsan-donggu-daewangam-art": [
+        {
+          "url": "https://ldb-phinf.pstatic.net/20220415_154/1649984445479Xop0m_JPEG/%B9%AE%C8%AD%BF%F8%C0%FC%B0%E6%BB%E7%C1%F8.JPG",
+          "alt": "울산광역시동구문화원",
+          "verifiedAt": "2026-09-28T09:09:38.924Z"
+        },
+        {
+          "url": "https://pup-post-phinf.pstatic.net/MjAyNjA1MDJfMjMx/MDAxNzc3NzE4MjU3MDYw.CALtKSHHYllftYhA5PYeubQdFiRevdeR1Cs3lI2qI2Ag.bzwLnbrgVs25x2NpBNqEvBSwhr5ScPmtAYwRsfI05E4g.JPEG/POST_IMAGE_ENCODING_20260502_193734_565.jpg",
+          "alt": "#오늘클립챌린지#울산동구카페#울산동구베이커리#울산동구빵집#일산지카페#울산일산지카페#일산해수욕장카페#울산오션뷰카페#울산동구빵맛집...",
+          "verifiedAt": "2026-09-28T09:09:38.924Z"
+        }
+      ],
+      "busan-gijang-andersen-fairy-tale": [
+        {
+          "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2025%2F11%2F20%2F0000645948_002_20251120074207826.JPG",
+          "alt": "[2025 자치혁신대상] 부산 기장군, ‘안데르센ㆍ동화마을’로 지역 문화 발전",
+          "verifiedAt": "2026-09-28T09:09:59.808Z"
+        }
+      ]
+    }
   },
   "generic_fallbacks": {
     "autumn_reeds": "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",

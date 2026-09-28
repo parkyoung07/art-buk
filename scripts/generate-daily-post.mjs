@@ -1917,13 +1917,15 @@ async function main() {
   // 14일 쿨다운 필터링
   let availablePool = candidatePool.filter(item => !todayWrittenSlugs.has(item.slug) && !recent14DaysSlugs.has(item.slug));
 
+  // 만약 해당 슬롯 풀에 14일 초과 후보가 부족하면, 전체 풀(EXHIBITION + AFTERNOON)에서 14일 쿨다운을 완벽히 만족하는 안전 후보를 수혈
   if (availablePool.length === 0) {
-    console.warn("⚠️ 14일 초과 미작성 후보가 모두 소진되어, 전체 풀 중 가장 오래전에 소개된 후보를 안전 순환합니다.");
-    availablePool = candidatePool.filter(item => !todayWrittenSlugs.has(item.slug));
+    console.warn(`⚠️ [${targetSlot}] 풀 내 14일 쿨다운 충족 후보가 없어, 전체 풀에서 14일 쿨다운을 완벽히 통과하는 안전 후보를 탐색합니다.`);
+    const combinedPool = [...EXHIBITION_POOL, ...AFTERNOON_THEME_POOL];
+    availablePool = combinedPool.filter(item => !todayWrittenSlugs.has(item.slug) && !recent14DaysSlugs.has(item.slug));
   }
 
   if (availablePool.length === 0) {
-    console.error("❌ 오늘 작성 가능한 후보가 없습니다.");
+    console.error("❌ 오늘 14일 쿨다운을 만족하는 작성 가능한 후보가 없습니다.");
     process.exit(1);
   }
 
