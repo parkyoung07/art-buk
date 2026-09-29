@@ -97,6 +97,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://nadriai.com",
+    types: {
+      "application/rss+xml": "https://nadriai.com/rss.xml",
+    },
   },
   verification: {
     google: "google51f0949a73c1e8e5",

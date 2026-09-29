@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/verify-image-vision.mjs && node scripts/build-search-index.js && next build",
+    "build": "node scripts/verify-image-vision.mjs && node scripts/build-search-index.js && node scripts/build-rss.js && next build",
     "build:search": "node scripts/build-search-index.js",
+    "build:rss": "node scripts/build-rss.js",
     "start": "next start",
     "lint": "eslint",
     "inspect": "node scripts/daily-inspect.mjs",

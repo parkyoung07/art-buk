@@ -88,12 +88,13 @@ try {
   console.error("⚠️ 시각 무결성 검증 중 오류:", e.message);
 }
 
-// 3. 검색 색인 갱신 (1회 통합)
+// 3. 검색 색인 및 RSS 피드 갱신 (1회 통합)
 try {
-  console.log("🔍 [3/4] 검색 색인(search-index.json) 갱신 중...");
+  console.log("🔍 [3/4] 검색 색인(search-index.json) 및 RSS 피드(rss.xml) 갱신 중...");
   execSync("node scripts/build-search-index.js", { cwd: rootDir, stdio: "inherit" });
+  execSync("node scripts/build-rss.js", { cwd: rootDir, stdio: "inherit" });
 } catch (e) {
-  console.error("⚠️ 검색 색인 갱신 중 오류:", e.message);
+  console.error("⚠️ 검색 색인 및 RSS 갱신 중 오류:", e.message);
 }
 
 // 4. 일일 정기 점검 실행 (1회 통합)
