@@ -1105,23 +1105,8 @@ export default function FloatingChatbot() {
         </div>
       )}
 
-      {/* Dynamic Animated & Intuitive Floating Chatbot Button */}
+      {/* Clean Floating Chatbot Button */}
       <div className="relative flex items-center justify-end">
-        {/* Floating Tooltip Pill (열려있지 않을 때 부드럽게 둥둥 뜨며 시선 유도) */}
-        {!isOpen && (
-          <div
-            onClick={() => setIsOpen(true)}
-            className="absolute right-16 bottom-2.5 bg-slate-900/95 backdrop-blur-md text-white text-xs font-bold px-3.5 py-1.5 rounded-2xl shadow-xl whitespace-nowrap flex items-center gap-2 border border-slate-700/80 cursor-pointer hover:scale-105 transition-transform duration-200 animate-bounce select-none"
-          >
-            <span className="text-sm">💬</span>
-            <span>AI 전시 가이드 질문하기</span>
-            <span className="flex h-2 w-2 relative">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-          </div>
-        )}
-
         {/* Main Floating Button */}
         <button
           type="button"

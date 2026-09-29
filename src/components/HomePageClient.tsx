@@ -89,51 +89,23 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
     window.location.href = `/exhibitions?q=${encodeURIComponent(searchQuery.trim())}`;
   };
 
-  // 12개 상황별 퀵필터 처리
-  const handleQuickFilter = (tag: string) => {
-    if (tag === "5일장") {
-      window.location.href = "/markets";
-    } else if (tag === "도서관") {
-      window.location.href = "/libraries";
-    } else if (tag === "전시") {
-      window.location.href = "/exhibitions";
-    } else if (tag === "AI매거진" || tag === "매일추천") {
-      window.location.href = "/blog";
-    } else if (tag === "오늘" || tag === "이번 주말") {
-      const el = document.getElementById("daily-highlight-section") || document.getElementById("today-nadri-section");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    } else if (tag === "무료") {
-      window.location.href = "/exhibitions?free=true";
-    } else if (tag === "아이와") {
-      window.location.href = "/libraries?filter=가족특화";
-    } else {
-      window.location.href = `/exhibitions?theme=${encodeURIComponent(tag)}`;
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
       <Header />
 
-      {/* 1. Hero 섹션 (모바일 최적화 심플 & 모던) */}
-      <section className="relative overflow-hidden text-white py-10 sm:py-16 bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900">
-        <div className="relative max-w-4xl mx-auto px-4 text-center space-y-3 sm:space-y-4">
-          {/* 미니 뱃지 */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-indigo-200 text-xs font-semibold backdrop-blur-md">
-            <span>✨</span>
-            <span>부울경 문화 · 나들이 큐레이션</span>
-          </div>
-
+      {/* 1. Hero 섹션 (모바일 최적화 심플 & 직관적 디자인) */}
+      <section className="relative overflow-hidden text-white py-8 sm:py-14 bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-900">
+        <div className="relative max-w-3xl mx-auto px-4 text-center space-y-2 sm:space-y-3">
           {/* 메인 타이틀 */}
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight [word-break:keep-all]">
             이번 주말, 어디로 떠날까요?
           </h1>
-          <p className="text-xs sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed [word-break:keep-all]">
-            부산 · 울산 · 경남의 전시, 5일장 장터, 힐링 도서관 나들이 코스
+          <p className="text-xs sm:text-base text-slate-300 max-w-lg mx-auto leading-relaxed [word-break:keep-all]">
+            부산 · 울산 · 경남 문화 전시 · 5일장 · 도서관 나들이
           </p>
 
-          {/* 심플 검색창 & 5개 엄선 퀵필터 */}
-          <div className="pt-2 max-w-xl mx-auto space-y-2.5">
+          {/* 심플 검색창 */}
+          <div className="pt-2 max-w-lg mx-auto">
             <form onSubmit={handleSearchSubmit} className="relative">
               <div className="relative flex items-center bg-white/15 hover:bg-white/20 rounded-2xl border border-white/20 backdrop-blur-md transition-all focus-within:ring-2 focus-within:ring-indigo-400 focus-within:bg-white/25">
                 <span className="pl-4 text-slate-300 text-sm select-none">🔍</span>
@@ -146,114 +118,18 @@ export default function HomePageClient({ posts }: HomePageClientProps) {
                 />
                 <button
                   type="submit"
-                  className="absolute right-1.5 px-3.5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-xl transition-all shadow-xs cursor-pointer"
+                  className="absolute right-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-xl transition-all shadow-xs cursor-pointer"
                 >
                   검색
                 </button>
               </div>
             </form>
-
-            <div className="flex flex-wrap items-center justify-center gap-1.5">
-              {[
-                { label: "오늘 장날", tag: "5일장" },
-                { label: "무료 전시", tag: "무료" },
-                { label: "AI 매거진", tag: "AI매거진" },
-                { label: "아이와", tag: "아이와" },
-                { label: "가을 나들이", tag: "이번 주말" },
-              ].map(({ label, tag }) => (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => handleQuickFilter(tag)}
-                  className="px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-[11px] font-medium text-slate-200 transition-all cursor-pointer"
-                >
-                  #{label}
-                </button>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* 2. 4대 퀵 네비게이션 카드 (모바일 2x2, PC 4열 심플 카드) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 sm:-mt-6 relative z-20">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
-          {/* 카드 1: 🎨 전시 */}
-          <Link
-            href="/exhibitions"
-            className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center gap-3 cursor-pointer group"
-          >
-            <div className="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
-              🎨
-            </div>
-            <div className="min-w-0">
-              <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm group-hover:text-indigo-600 transition-colors truncate">
-                전시 찾기
-              </h3>
-              <p className="text-[11px] text-slate-500 truncate">
-                오늘 {stats.openTodayExhibitions}개 관람
-              </p>
-            </div>
-          </Link>
-
-          {/* 카드 2: 🧺 오늘 장날 */}
-          <Link
-            href="/markets"
-            className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center gap-3 cursor-pointer group"
-          >
-            <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
-              🧺
-            </div>
-            <div className="min-w-0">
-              <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm group-hover:text-amber-600 transition-colors truncate">
-                오늘 장날
-              </h3>
-              <p className="text-[11px] text-slate-500 truncate">
-                {stats.todayMarkets}곳 개장
-              </p>
-            </div>
-          </Link>
-
-          {/* 카드 3: 📚 도서관 */}
-          <Link
-            href="/libraries"
-            className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center gap-3 cursor-pointer group"
-          >
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
-              📚
-            </div>
-            <div className="min-w-0">
-              <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm group-hover:text-emerald-600 transition-colors truncate">
-                도서관 쉼표
-              </h3>
-              <p className="text-[11px] text-slate-500 truncate">
-                {stats.totalLibraries}곳 엄선
-              </p>
-            </div>
-          </Link>
-
-          {/* 카드 4: 📰 AI 매거진 */}
-          <Link
-            href="/blog"
-            className="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-100 shadow-xs hover:shadow-md transition-all flex items-center gap-3 cursor-pointer group"
-          >
-            <div className="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl shrink-0 group-hover:scale-105 transition-transform">
-              📰
-            </div>
-            <div className="min-w-0">
-              <h3 className="font-extrabold text-slate-900 text-xs sm:text-sm group-hover:text-rose-600 transition-colors truncate">
-                AI 매거진
-              </h3>
-              <p className="text-[11px] text-slate-500 truncate">
-                매일 신규 연재
-              </p>
-            </div>
-          </Link>
-        </div>
-      </section>
-
-      {/* 3. 본문 메인 콘텐츠 */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16">
+      {/* 2. 본문 메인 콘텐츠 */}
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 sm:space-y-16">
         {/* 🌟 1. [핵심 신규] 매일 올라오는 글 바탕의 오늘의 AI 추천 전시 & 매거진 섹션 */}
         <div id="daily-highlight-section" className="scroll-mt-20">
           <DailyPostHighlightSection posts={posts} />

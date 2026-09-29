@@ -90,29 +90,6 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* 2. 모바일 하단 슬림 네비게이션 바 */}
-      <div className="sm:hidden border-t border-slate-100 bg-slate-50/90 px-3 py-2 overflow-x-auto no-scrollbar">
-        <div className="flex items-center gap-2 justify-between">
-          {navItems.map((item) => {
-            const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`flex-1 py-1.5 rounded-xl text-xs font-bold transition-all text-center flex items-center justify-center gap-1 cursor-pointer ${
-                  isActive
-                    ? "bg-indigo-600 text-white shadow-xs font-black"
-                    : "bg-white text-slate-700 border border-slate-200/60 active:bg-slate-100"
-                }`}
-              >
-                <span className="text-xs">{item.icon}</span>
-                <span>{item.label}</span>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-
       <KakaoSubscribeModal
         isOpen={isKakaoModalOpen}
         onClose={() => setIsKakaoModalOpen(false)}
