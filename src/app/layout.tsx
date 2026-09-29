@@ -98,6 +98,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://nadriai.com",
   },
+  verification: {
+    google: "google51f0949a73c1e8e5",
+  },
 };
 
 export default function RootLayout({
