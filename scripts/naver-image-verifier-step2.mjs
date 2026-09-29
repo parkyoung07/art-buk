@@ -599,10 +599,10 @@ export async function runStep2Pipeline() {
     } catch {}
   }
 
-  // 2단계 후보 리스트 준비 (기존 1단계 후보에 없는 40개 장소)
-  const allCandidates = [...existingCandidates];
+  // 2단계 후보 리스트 준비 (1단계 기 검증 20개 장소 완전 제외, 오직 신규 40곳만 수집)
+  const allCandidates = [];
   const step2Summary = [];
-  const usedUrls = new Set(existingCandidates.map(c => c.image_url));
+  const usedUrls = new Set();
 
   for (let i = 0; i < STEP2_40_VENUES.length; i++) {
     const venue = STEP2_40_VENUES[i];

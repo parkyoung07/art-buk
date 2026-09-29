@@ -263,10 +263,10 @@ export default function ImageReviewPage() {
               <span className="text-emerald-400 text-sm font-medium">네이버 API 안전 선별</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white mt-2 flex items-center gap-3">
-              🔍 네이버 이미지 후보 정밀 검수 센터
+              🔍 [2단계] 신규 40개 명소 네이버 정밀 검수 센터
             </h1>
             <p className="text-slate-400 text-sm mt-1">
-              네이버 API 다중 쿼리 후보를 출처 도메인 + 제목 일치도 + AI Vision 시각 분석으로 100점 채점하여 선별합니다.
+              1단계 완료 20곳은 공식 레지스트리에 보존 완료되었으며, 여기에는 <span className="text-emerald-400 font-semibold">새로 검수할 2단계 신규 40곳</span>의 2024~2026 최신 실사만 노출됩니다.
             </p>
           </div>
 
