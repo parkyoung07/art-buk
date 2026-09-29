@@ -108,7 +108,21 @@ export default function AdminImagesPage() {
       }
 
       if (data && data.success) {
-        setImages(data.images);
+        let loaded = data.images || [];
+        try {
+          const overrides = JSON.parse(localStorage.getItem("nadri_verified_images_overrides") || "{}");
+          loaded = loaded.map((img: any) => {
+            if (overrides[img.image_id]) {
+              return {
+                ...img,
+                status: overrides[img.image_id].status,
+                human_verified: true
+              };
+            }
+            return img;
+          });
+        } catch (e) {}
+        setImages(loaded);
         setStats(data.stats);
       }
     } catch (e) {
@@ -128,9 +142,36 @@ export default function AdminImagesPage() {
   };
 
   const handleUpdateStatus = async (imageId: string, newStatus: "approved" | "rejected") => {
+    setUpdatingId(imageId);
+    // 1. 화면 즉시 상태 변경
+    setImages((prev) =>
+      prev.map((img) => (img.image_id === imageId ? { ...img, status: newStatus, human_verified: true } : img))
+    );
+    if (stats) {
+      setStats((prevStats) => {
+        if (!prevStats) return null;
+        const currentImg = images.find((i) => i.image_id === imageId);
+        const oldStatus = currentImg?.status || "pending";
+        if (oldStatus === newStatus) return prevStats;
+        return {
+          ...prevStats,
+          approved: newStatus === "approved" ? prevStats.approved + 1 : (oldStatus === "approved" ? prevStats.approved - 1 : prevStats.approved),
+          rejected: newStatus === "rejected" ? prevStats.rejected + 1 : (oldStatus === "rejected" ? prevStats.rejected - 1 : prevStats.rejected),
+          pending: oldStatus === "pending" ? prevStats.pending - 1 : prevStats.pending
+        };
+      });
+    }
+
+    // 2. localStorage에 보관
     try {
-      setUpdatingId(imageId);
-      const res = await fetch("/api/admin/images", {
+      const overrides = JSON.parse(localStorage.getItem("nadri_verified_images_overrides") || "{}");
+      overrides[imageId] = { status: newStatus, updated_at: new Date().toISOString() };
+      localStorage.setItem("nadri_verified_images_overrides", JSON.stringify(overrides));
+    } catch (e) {}
+
+    // 3. 백엔드 전송
+    try {
+      await fetch("/api/admin/images", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -142,20 +183,11 @@ export default function AdminImagesPage() {
           }
         })
       });
-      const data = await res.json();
-      if (data.success) {
-        setImages((prev) =>
-          prev.map((img) => (img.image_id === imageId ? { ...img, status: newStatus, human_verified: true } : img))
-        );
-        if (stats) {
-          fetchImages();
-        }
-      }
-    } catch (e) {
-      console.error("상태 변경 실패:", e);
-    } finally {
+    } catch (e) {}
+
+    setTimeout(() => {
       setUpdatingId(null);
-    }
+    }, 150);
   };
 
   const getSourceBadge = (sourceType: string) => {

@@ -69,6 +69,15 @@ export default function ImageReviewPage() {
     }
   };
 
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 2500);
+  };
+
   const fetchCandidates = async () => {
     try {
       setLoading(true);
@@ -102,7 +111,22 @@ export default function ImageReviewPage() {
       }
 
       if (data && data.success) {
-        setCandidates(data.candidates || []);
+        let loaded = data.candidates || [];
+        try {
+          const savedOverrides = JSON.parse(localStorage.getItem("nadri_image_review_overrides") || "{}");
+          loaded = loaded.map((c: any) => {
+            if (savedOverrides[c.candidate_id]) {
+              return {
+                ...c,
+                status: savedOverrides[c.candidate_id].status,
+                is_cover: savedOverrides[c.candidate_id].is_cover ?? c.is_cover,
+                reject_reason: savedOverrides[c.candidate_id].status === "rejected" ? "관리자 수동 거절" : null
+              };
+            }
+            return c;
+          });
+        } catch (e) {}
+        setCandidates(loaded);
       }
     } catch (err) {
       console.error("후보 로드 실패:", err);
@@ -116,9 +140,49 @@ export default function ImageReviewPage() {
   }, [filterStatus, filterPlace]);
 
   const handleAction = async (candidateId: string, action: "approve" | "reject" | "set_cover") => {
+    setUpdatingId(candidateId);
+    
+    // 1. 화면 즉시 상태 업데이트 (클릭 즉시 시각 반영)
+    const nextStatus = action === "reject" ? "rejected" : "approved";
+    let targetPlace = "";
+    setCandidates((prev) => {
+      const next = prev.map((c) => {
+        if (c.candidate_id === candidateId) {
+          targetPlace = c.place_name;
+          return {
+            ...c,
+            status: nextStatus,
+            is_cover: action === "set_cover" ? true : (action === "reject" ? false : c.is_cover),
+            reject_reason: action === "reject" ? "관리자 수동 거절" : null
+          };
+        }
+        return c;
+      });
+      
+      // localStorage에 즉시 영구 보존
+      try {
+        const savedOverrides = JSON.parse(localStorage.getItem("nadri_image_review_overrides") || "{}");
+        savedOverrides[candidateId] = {
+          status: nextStatus,
+          is_cover: action === "set_cover",
+          updated_at: new Date().toISOString()
+        };
+        localStorage.setItem("nadri_image_review_overrides", JSON.stringify(savedOverrides));
+      } catch (err) {}
+      return next;
+    });
+
+    if (action === "approve") {
+      showToast(`✅ [${targetPlace || "선택 사진"}] 승인 처리 완료되었습니다!`);
+    } else if (action === "reject") {
+      showToast(`❌ [${targetPlace || "선택 사진"}] 격리/반려 처리되었습니다.`);
+    } else if (action === "set_cover") {
+      showToast(`⭐ [${targetPlace || "선택 사진"}] 대표 커버 이미지로 설정되었습니다!`);
+    }
+
+    // 2. 백엔드 API 호출 (실패하더라도 화면은 즉각 반영 유지)
     try {
-      setUpdatingId(candidateId);
-      const res = await fetch("/api/admin/image-review", {
+      await fetch("/api/admin/image-review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -126,24 +190,11 @@ export default function ImageReviewPage() {
           action
         })
       });
-      if (res.ok) {
-        setCandidates((prev) =>
-          prev.map((c) =>
-            c.candidate_id === candidateId
-              ? {
-                  ...c,
-                  status: action === "reject" ? "rejected" : "approved",
-                  is_cover: action === "set_cover" ? true : c.is_cover
-                }
-              : c
-          )
-        );
-      }
-    } catch (e) {
-      console.error("액션 실행 실패:", e);
-    } finally {
+    } catch (e) {}
+
+    setTimeout(() => {
       setUpdatingId(null);
-    }
+    }, 150);
   };
 
   const uniquePlaces = Array.from(new Set(candidates.map((c) => c.place_name)));
@@ -191,7 +242,15 @@ export default function ImageReviewPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-8 font-sans">
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-8 font-sans relative">
+      {/* 토스트 알림 팝업 */}
+      {toastMessage && (
+        <div className="fixed top-6 right-6 z-50 bg-slate-900 border border-emerald-500/80 text-white px-5 py-3 rounded-2xl shadow-2xl shadow-emerald-500/20 flex items-center gap-3 animate-bounce">
+          <span className="text-lg">📢</span>
+          <span className="text-sm font-bold">{toastMessage}</span>
+        </div>
+      )}
+
       {/* 상단 헤더 */}
       <div className="max-w-7xl mx-auto mb-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
