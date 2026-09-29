@@ -5,16 +5,29 @@ summary: 한반도 철기 문화의 요람 달천철장의 유구한 쇠부리 �
 category: 전시 리뷰
 region: 울산
 eventId: ulsan-bukgu-soeburi-art
-thumbnail: >-
-  https://images.pexels.com/photos/13566929/pexels-photo-13566929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가볼만한곳", "울산나들이", "울산데이트", "울산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산가볼만한곳
+  - 울산나들이
+  - 울산데이트
+  - 울산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 여러분의 다정한 AI 도슨트입니다. 
 
 선선한 가을바람이 코끝을 스치는 요즘, 왠지 모르게 마음 한구석이 몽글몽글해지고 어디론가 훌쩍 떠나고 싶어지지 않으신가요? 이번 주말, 오랜 역사와 현대적인 감각이 뜨겁게 교차하는 울산 북구로 예술 나들이를 떠나보는 건 어떨까요? 한반도 철기 문화의 뿌리 깊은 고향에서 펼쳐지는 특별한 불꽃의 예술 속으로 여러분을 초대합니다.
 
-![달천철장의 역사와 현대 금속공예 기획전시 전경](https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 달천철장의 역사와 현대 금속공예 기획전시 전경](/images/placeholders/placeholder-art.svg)
 *▲ 달천철장의 유구한 역사와 현대 금속 공예의 숨결이 담긴 전시장 전경*
 
 ---
@@ -41,7 +54,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 #### 2. 차가운 금속이 전하는 따뜻한 생명력
 금속은 대개 차갑고 단단한 물성으로 기억되지만, 이번 전시에 참여한 작가들은 금속을 실처럼 엮고 종이처럼 구부려 유연하고 생동감 넘치는 작품들을 선보입니다. 단단한 철판 위에 새겨진 부드러운 곡선과 빛의 반사에 따라 시시각각 달라지는 금속의 표면 질감을 감상하며 감탄을 자아내게 될 거예요.
 
-![Abstract metallic sculpture installation](https://images.pexels.com/photos/2617015/pexels-photo-2617015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - Abstract metallic sculpture installation](/images/placeholders/placeholder-art.svg)
 *▲ 매끄러운 곡선과 반사면이 돋보이는 추상적 금속 조형물 작품*
 
 #### 3. 울산의 뿌리를 찾는 감각적인 시간 여행
@@ -56,7 +69,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 * **정자항 활어회센터 & 대게 직판장**: 울산 북구 하면 단연 싱싱한 해산물과 명물 '정자 대게'를 빼놓을 수 없습니다. 갓 잡아 올린 싱싱한 회와 입안 가득 퍼지는 풍미 가득한 대게찬은 예술 관람으로 지친 몸과 마음에 활력을 불어넣어 줍니다.
 * **강동 바다뷰 오션뷰 감성 카페 거리**: 탁 트인 동해 바다가 한눈에 내려다보이는 강동 일대에는 감각적인 인테리어와 향긋한 스페셜티 커피를 자랑하는 대형 베이커리 카페들이 즐비합니다. 파도 소리를 들으며 즐기는 따뜻한 라떼와 달콤한 디저트는 완벽한 주말 나들이의 화룡점정입니다.
 
-![Coffee panna cotta dessert and treats in an outdoor setting](https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - Coffee panna cotta dessert and treats in an outdoor setting](/images/placeholders/placeholder-art.svg)
 *▲ 바다 인근 감성 카페에서 즐기는 향긋한 커피와 디저트 타임*
 
 ---
@@ -85,7 +98,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 2. **정자항 등대 (빨간등대 & 대게등대)**: 이색적인 대게 모양의 등대로 유명한 정자항 방파제 길은 탁 트인 바다를 배경으로 인생샷을 남기기에 더할 나위 없는 최고의 포토존입니다.
 3. **울산북구문화예술회관 야외공연장**: 회관 주변의 쾌적한 야외 공간에서 가을의 청명한 하늘을 만끽하며 여유로운 산책을 즐겨보세요.
 
-![A serene view of a city skyline framed by trees and a clear horizon](https://images.pexels.com/photos/37946290/pexels-photo-37946290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - A serene view of a city skyline framed by trees and a clear horizon](/images/placeholders/placeholder-art.svg)
 *▲ 울산 북구의 탁 트인 풍경과 함께 여유로운 힐링을 즐길 수 있는 나들이 코스*
 
 ---

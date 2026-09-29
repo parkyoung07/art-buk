@@ -5,16 +5,29 @@ summary: 국내 최대의 전통 민속 옹기마을 외고산에서 열리는 �
 category: 전시 리뷰
 region: 울산
 eventId: ulsan-uljugun-onggi-museum
-thumbnail: >-
-  https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가볼만한곳", "울산나들이", "울산데이트", "울산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산가볼만한곳
+  - 울산나들이
+  - 울산데이트
+  - 울산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정한 수석 큐레이터, **AI 도슨트**입니다. 🌿
 
 선선한 가을바람이 옷깃을 스치는 요즘, 자연과 전통이 어우러진 특별한 공간으로 여러분을 초대합니다. 이번 주말, 국내 최대의 전통 민속 옹기마을인 울산 외고산에서 숨 쉬는 그릇들의 깊은 미학을 만나보는 건 어떨까요? 투박하지만 정겨운 옹기 선율 속으로 저와 함께 떠나보시죠!
 
-![외고산 옹기마을 풍경](https://images.pexels.com/photos/37248975/pexels-photo-37248975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 외고산 옹기마을 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 사진 설명: 초록빛 자연과 어우러져 숨 쉬는 전통 옹기들의 고즈넉한 풍경*
 
 ---
@@ -41,7 +54,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 #### 2. 외고산 옹기마을 장인들의 숨결을 느끼다
 울산 온양읍 외고산마을은 국내 최대의 옹기 집산지로, 오랜 세월 동안 묵묵히 옹기 가마를 지켜온 장인들의 혼이 서려 있는 곳입니다. 박물관 전시실을 거닐다 보면, 장인들의 거친 손끝에서 탄생한 다양한 형태와 크기의 옹기들이 들려주는 옛이야기에 귀 기울이게 됩니다.
 
-![전통 옹기와 정원](https://images.pexels.com/photos/37621266/pexels-photo-37621266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 전통 옹기와 정원](/images/placeholders/placeholder-art.svg)
 *▲ 사진 설명: 정원 가득 채워진 전통 옹기들이 가을 햇살 아래 평화로운 분위기를 자아냅니다.*
 
 #### 3. 현대적 감각으로 재해석된 옹기의 변신
@@ -57,7 +70,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 - **온양읍 로컬 손국수집**: 따뜻하고 진한 국물이 생각날 때 방문하기 좋은 곳으로, 직접 뽑은 쫄깃한 면발이 지친 발걸음을 위로해 줍니다.
 - **외고산 옹기마을 인근 감성 카페**: 전통 가옥의 멋을 살리거나 초록빛 자연을 품은 뷰티풀 카페들에서 향긋한 핸드드립 커피와 달콤한 디저트를 즐기며 여유로운 사색을 즐겨보세요.
 
-![감성 카페 디저트](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 감성 카페 디저트](/images/placeholders/placeholder-art.svg)
 *▲ 사진 설명: 싱그러운 자연을 바라보며 즐기는 감성 카페의 달콤한 디저트 타임*
 
 ---
@@ -84,7 +97,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산가�
 2. **반구대 암각화 (반구천의 암각화)**: 국보로 지정된 선사시대의 보물, 바위에 새겨진 수많은 동물 그림을 통해 아득한 옛사람들의 숨결을 느껴보세요.
 3. **영남알프스**: 웅장한 산세가 유럽의 알프스 못지않다 하여 붙여진 이름입니다. 가을이면 황금빛 억새가 장관을 이루는 등반 및 트레킹 성지입니다.
 
-![전통 옹기 항아리 풍경](https://images.pexels.com/photos/37427960/pexels-photo-37427960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 전통 옹기 항아리 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 사진 설명: 햇살 아래 정렬된 커다란 전통 옹기 항아리들, 그 뒤로 펼쳐지는 울산의 아름다운 가을 풍경*
 
 ---

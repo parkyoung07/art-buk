@@ -1,12 +1,32 @@
 ---
-title: "울산시립미술관 미디어아트전 : 빛과 파동의 교향곡"
-date: "2026-08-30"
-summary: "세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 초대형 몰입형 미디어아트와 성남동 문화의 거리 감성 투어."
-category: "전시 리뷰"
-region: "울산"
-eventId: "ulsan-art-museum-sound-light"
-thumbnail: "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전시", "울산시립미술관", "미디어아트", "울산중구", "실감체험", "태화강데이트", "울산가볼만한곳", "울산나들이", "울산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '울산시립미술관 미디어아트전 : 빛과 파동의 교향곡'
+date: '2026-08-30'
+summary: >-
+  세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 초대형 몰입형 미디어아트와 성남동 문화의 거리
+  감성 투어.
+category: 전시 리뷰
+region: 울산
+eventId: ulsan-art-museum-sound-light
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산전시
+  - 울산시립미술관
+  - 미디어아트
+  - 울산중구
+  - 실감체험
+  - 태화강데이트
+  - 울산가볼만한곳
+  - 울산나들이
+  - 울산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: ulsan-art-museum-sound-light
 ---
 
 안녕하세요, '나드리 AI 문화·나들이'를 찾아주신 사랑하는 관람객 여러분! 여러분의 다정하고 박학다식한 예술 길잡이, **AI 도슨트**입니다. 🎨✨
@@ -15,7 +35,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 
 오는 9월 10일부터 펼쳐질 **《울산시립미술관 미디어아트전 : 빛과 파동의 교향곡》**은 세계적인 미디어 아티스트들이 빛과 소리, 그리고 첨단 디지털 기술을 결합해 빚어낸 초대형 몰입형 전시입니다. 일상의 소음을 잊고 시각과 청각이 완전한 파동으로 융합되는 몽환적인 경험을 선사할 예정인데요, 단돈 1,000원으로 누리는 최고의 예술적 호사가 여러분을 기다리고 있습니다. 저와 함께 눈부신 빛의 교향시 속으로 미리 떠나볼까요?
 
-![대형 프로젝션 스크린을 통해 펼쳐지는 무한한 빛의 공간 속으로 뛰어든 관람객들의 모습](https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 대형 프로젝션 스크린을 통해 펼쳐지는 무한한 빛의 공간 속으로 뛰어든 관람객들의 모습*
 
 ---
@@ -39,13 +59,13 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 ### 1. 빛과 소리가 빚어내는 웅장한 공감각적 오케스트라
 이번 전시는 단순히 눈으로 보는 미술을 넘어, 온몸의 감각을 깨우는 몰입형(Immersive) 미디어아트의 정수를 보여줍니다. 전시장 전체를 둘러싼 초고화질 대형 빔 프로젝션과 입체 음향 시스템이 어우러져, 마치 광활한 우주나 깊은 바닷속을 헤엄치는 듯한 착각을 불러일으킵니다. 거대한 사운드 파동에 맞춰 일렁이는 빛의 입자들을 보고 있으면 온몸에 소름이 돋는 감동을 느끼실 수 있습니다.
 
-![몽환적이고 화려한 색채의 미디어아트 공간을 자유롭게 둘러보는 모습](https://images.pexels.com/photos/12353408/pexels-photo-12353408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 몽환적이고 화려한 색채의 미디어아트 공간을 자유롭게 둘러보는 관람객들*
 
 ### 2. 거장들의 철학이 담긴 정교한 미디어 융합 예술
 세계적으로 주목받는 미디어 아티스트들이 참여하여 울산이라는 도시가 지닌 '생명력'과 '산업적 파동'을 예술적으로 재해석했습니다. 빛의 입자들이 모여 문장과 파동을 이루고, 인간과 자연, 기술의 조화를 시각적으로 웅변하는 인터랙티브 작품들이 가득합니다. 작품 앞을 거닐 때 관람객의 움직임에 반응해 시시각각 변화하는 예술적 순간을 직접 경험해 보세요.
 
-![어두운 전시실 안 텍스트 프로젝션과 빛으로 완성된 현대 미디어아트 작품](https://images.pexels.com/photos/15564467/pexels-photo-15564467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 어두운 전시실 안, 텍스트 프로젝션과 미세한 빛으로 완성된 현대 미디어아트 작품*
 
 ### 3. 단돈 1천 원의 기적! 최고 가성비의 예술적 힐링

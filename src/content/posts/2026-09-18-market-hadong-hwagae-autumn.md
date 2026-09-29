@@ -7,15 +7,31 @@ summary: >-
 category: 전통시장 나들이
 region: 경남
 eventId: market-hadong-hwagae-autumn
-thumbnail: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832'
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가볼만한곳", "경남나들이", "경남데이트", "경남5일장", "부울경전통시장", "전통시장먹거리", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 경남5일장
+  - 부울경전통시장
+  - 전통시장먹거리
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
+venueId: market-hadong-hwagae-autumn
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 정겨운 골목 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬기 가장 좋은 곳이 어디일까요? 전라도와 경상도를 가르는 화개장터엔 윗마을 아랫마을 사람들이 모여든다는 노랫말처럼, 언제 가도 사람 사는 온기가 몽글몽글 피어오르는 **하동 화개장터**로 여러분을 초대합니다. 이번 주말, 오감으로 느끼는 가을 미식 나들이를 함께 떠나볼까요?
 
 ---
 
-![하동 화개장터 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832)
+![하동 화개장터 정겨운 초가 장옥 및 장날 풍경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832)
 *▲ 영호남의 화합이 이루어지는 정겨운 초가 장옥과 활기찬 하동 화개장터 전경*
 
 ---
@@ -44,7 +60,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 3. **지리산의 기운을 담은 산나물 비빔밥 & 국밥**
    지리산 각지에서 채취한 향긋한 취나물, 다래순, 고사리가 듬뿍 들어간 산나물 비빔밥은 가을철 입맛을 돋우는 최고의 웰빙 푸드입니다. 
 
-![섬진강 뚝배기 재첩국 한 상](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MTlfMjQ3%2FMDAxNzUwMjkzMTk5NDQ3.zprbE6ca9sbk1E8upZfsKntSalKQA040J3zoCm8VmFkg.HU_nez-giH-zvgJw1lbopJlX5HaA6vvmHQqiWU4ei9gg.JPEG%2F900%25A3%25DF20250616%25A3%25DF132900.jpg&type=sc960_832)
+![섬진강 맑은 물에서 건져 올린 시원한 재첩국 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MTlfMjQ3%2FMDAxNzUwMjkzMTk5NDQ3.zprbE6ca9sbk1E8upZfsKntSalKQA040J3zoCm8VmFkg.HU_nez-giH-zvgJw1lbopJlX5HaA6vvmHQqiWU4ei9gg.JPEG%2F900%25A3%25DF20250616%25A3%25DF132900.jpg&type=sc960_832)
 *▲ 보글보글 끓어오르는 맑은 국물과 싱그러운 초록 부추가 가득 담긴 섬진강 재첩국 뚝배기 한 상*
 
 ---
@@ -57,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 * **옥선명차 & 요산당** (경남 하동군 화개면 화개로 814): 하동의 명물인 '야생 녹차'와 전통 다도 문화를 깊이 있게 즐길 수 있는 품격 있는 찻집입니다. 조용히 차분한 시간을 보내고 싶을 때 추천해요.
 * **화개 감성 카페거리**: 지리산 맑은 계곡 물소리를 들으며 즐기는 스페셜티 커피와 정갈한 디저트는 여행의 운치를 더해줍니다.
 
-![하동 전통 야생차 다도 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20141208_240%2Fjinspoon_1418015414678c3EU2_JPEG%2F%25C1%25A6%25B3%25EB%25B9%25D9%25BD%25BA%25C7%25AC_%25283%2529.jpg&type=sc960_832)
+![하동 화개장터 정겨운 초가 장옥 및 장날 풍경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832)
 *▲ 단아한 찻잔 세트에 맑고 깊은 향의 전통 야생차가 정갈하게 우려지는 하동 다도 풍경*
 
 ---
@@ -68,7 +84,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 * **하동 야생녹차**: 화개면 일대는 대한민국 녹차의 발원지입니다. 가을볕을 머금은 구수한 녹차 잎이나 티백을 선물용으로 챙겨보세요.
 * **결제 꿀팁**: 온누리상품권이나 하동사랑상품권을 미리 준비해 가시면 훨씬 알뜰하고 실속 있는 장보기가 가능합니다.
 
-![지리산 말린 산나물과 약초 바구니](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMDdfMjkw%2FMDAxNjM4ODU3OTk1MTI3.evwh6gBdV8QP47Oe0F5F7kv4NcWT6kIWogMrbxHbMDwg.E8PEoeD1bgUP3mYmEP2b7Tc36dzxiSBQwSFkfIF_oGog.PNG.rgmcompany%2Fimage.png&type=sc960_832)
+![하동 화개장터 정겨운 초가 장옥 및 장날 풍경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832)
 *▲ 바구니에 정갈하게 담겨 자연 건조된 지리산 말린 산나물과 약초*
 
 ---

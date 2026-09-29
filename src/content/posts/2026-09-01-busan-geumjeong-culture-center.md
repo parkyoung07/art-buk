@@ -6,15 +6,30 @@ category: 전시 리뷰
 region: 부산
 eventId: busan-geumjeong-culture-center
 thumbnail: >-
-  http://imgnews.naver.net/image/003/2023/12/04/NISI20231204_0020151439_web_20231204141927_20231204142109612.jpg
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
+venueId: busan-geumjeong-culture-center
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 수석 큐레이터, 여러분의 친절한 **AI 도슨트**입니다. 🌿
 
 선선한 가을바람이 옷깃을 스치는 이맘때쯤이면, 자연과 예술이 어우러진 공간으로 훌쩍 떠나고 싶어지지 않으신가요? 이번 주말, 여러분의 감성을 깊게 적셔줄 아주 특별한 전시 소식을 들고 찾아왔습니다. 바로 부산 금정문화회관에서 열리는 **<금정산의 사계와 영남 수묵의 결>** 전인데요. 우리 곁에 숨쉬는 명산 금정산의 아름다움과 천년고찰의 깊은 숨결을 현대적인 수묵 화법으로 풀어낸 명품 기획전입니다. 자, 저와 함께 설레는 예술 나들이를 떠나볼까요?
 
-![금정문화회관 수묵화 기획전 전경](http://imgnews.naver.net/image/003/2023/12/04/NISI20231204_0020151439_web_20231204141927_20231204142109612.jpg)
+![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
 *▲ 금정산의 사계와 영남 수묵의 결 기획전에서 마주하는 현대 수묵화의 깊은 먹빛과 여백의 미학*
 
 ---
@@ -41,7 +56,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 #### 2. 범어사와 금정산성에서 영감을 받은 깊은 사색의 공간
 부산의 대표적인 정신적 문화 유산인 천년고찰 '범어사'와 웅장한 '금정산성'의 정취가 고스란히 전시장으로 옮겨왔습니다. 작품 앞에 서면 마치 새벽 고요를 깨우는 풍경 소리와 은은한 숲속의 흙내음이 전해지는 듯한 착각을 불러일으킵니다. 복잡한 도심을 떠나 온전히 나 자신과 마주하며 마음의 평온을 찾을 수 있는 힐링의 장이 될 것입니다.
 
-![금정산과 범어사의 장엄한 가을 풍경](http://imgnews.naver.net/image/382/2025/11/03/0001233479_001_20251111114409488.jpg)
+![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
 *▲ 금정산 자락과 천년고찰 범어사가 빚어내는 고즈넉하고 장엄한 가을 정취*
 
 #### 3. 전통과 현대의 유기적 결합, 새로운 수묵의 지평
@@ -57,7 +72,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
   * **주소:** 부산광역시 금정구 체육공원로 7 2층 아첸투스
   * **특징:** 금정문화회관 바로 건물 내(또는 인근)에 위치해 전시 관람 전후로 방문하기 가장 좋은 감성 카페입니다. 창밖으로 펼쳐지는 여유로운 풍경을 바라보며 향긋한 커피와 맛있는 디저트를 즐기기에 제격이에요. 차분한 인테리어 속에서 전시의 여운을 친구, 연인과 함께 나누며 도란도란 이야기 꽃을 피워보세요.
 
-![근사한 디저트와 음료가 있는 풍경](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
+![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
 *▲ 전시 관람 후 아첸투스에서 즐기는 달콤한 디저트와 커피 한 잔의 여유.*
 
 ---
@@ -72,7 +87,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 * **회동수원지 황토숲길 산책 코스**
   * **특징:** 전시의 주된 영감의 원천인 자연을 직접 만끽할 수 있는 최고의 힐링 산책로입니다. 맨발로 걸을 수 있는 황토숲길이 잘 조성되어 있어, 맑은 공기를 마시며 몸과 마음의 피로를 말끔히 씻어내기 좋습니다.
 
-![푸른 숲과 산책로가 어우러진 풍경](https://images.pexels.com/photos/14773409/pexels-photo-14773409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
 *▲ 금정구의 아름다운 자연을 품은 숲길과 산책로에서 싱그러운 가을을 만끽해 보세요.*
 
 ---

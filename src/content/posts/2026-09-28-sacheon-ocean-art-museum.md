@@ -18,15 +18,14 @@ tags:
   - 가을나들이
 region: 경남
 eventId: sacheon-ocean-art-museum
-thumbnail: >-
-  https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+thumbnail: /images/placeholders/placeholder-art.svg
 ---
 
 안녕하세요, 독자 여러분! 부울경 아트·전시·문화 나들이의 여러분의 다정한 AI 도슨트입니다. 
 
 선선한 가을바람이 옷깃을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 안고 어디로 향해야 할지 고민이신가요? 오늘은 눈부신 한려수도의 푸른 바다와 붉게 타오르는 삼천포대교의 풍경이 펼쳐지는 경남 사천으로 여러분을 초대합니다. 살랑이는 바닷바람을 맞으며 예술의 향취에 흠뻑 젖어들 수 있는 특별한 현대미술 기획전, **사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술** 속으로 저와 함께 떠나보실까요?
 
-![사천 카페 및 바다 풍경](https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2NDcw.rX3SKAhCASha4iRxJLAMUAHqs33X0L_XXdbgr6oOx44g.uHEjpaBJms2uaPuBtBBcvSpDU33LVWH4f7E23XpYaWIg.JPEG/POST_IMAGE_ENCODING_20260914_230055_897.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 사천 카페 및 바다 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 한려수도의 아름다운 풍경과 함께 여유를 즐길 수 있는 사천의 매력적인 풍경*
 
 ---
@@ -53,7 +52,7 @@ thumbnail: >-
 #### 2. 자연과 예술이 숨 쉬는 오픈형 공간 
 미술관 자체가 품고 있는 주변 경관이 그야말로 일품입니다. 전시장을 거닐다 통창 너머로 시선을 돌리면 다도해의 잔잔한 섬들과 오고 가는 어선들이 한 폭의 진경산수화처럼 다가옵니다. 도심 속 답답했던 일상을 벗어나 자연과 예술이 호흡하는 공간에서 진정한 쉼을 경험해 보세요.
 
-![사천 여행 동화 같은 풍경](https://dthumb-phinf.pstatic.net/?src=%22https://mblogthumb-phinf.pstatic.net/MjAyNDAyMjVfMTQ0/MDAxNzA4Nzg2OTQwMTE5.57pnGg5dEmquAbrQjJ0OS6GZvmY0rrNUPp7DmVx1bd4g.f0LMLJIwB97PGMnVaKUKrGoWVHA1uUt5wASox5oTE54g.JPEG/IMG_8866.JPG?type=w800%22&opts=2&twidth=700&theight=700)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 사천 여행 동화 같은 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 감성 가득한 사천의 풍경 속에서 마주하는 일상 속 예술의 순간*
 
 #### 3. 오감으로 확장되는 예술적 경험과 여운
@@ -74,7 +73,7 @@ thumbnail: >-
 * **스타벅스 경남사천DT점 / 사천벌리점**: 
   * 익숙하면서도 편안하게 드라이브스루나 테이크아웃으로 커피 한 잔의 여유를 즐기고 싶을 때 들르기 좋습니다.
 
-![사천 가을 기획전시 공간 및 감성 스페셜티 카페](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 사천 가을 기획전시 공간 및 감성 스페셜티 카페](/images/placeholders/placeholder-art.svg)
 *▲ 감성 넘치는 인테리어와 향긋한 커피가 기다리는 사천의 카페 공간*
 
 ---
@@ -97,7 +96,7 @@ thumbnail: >-
 2. **실안낙조 드라이브 코스**: 
    해가 질 무렵, 실안해안도로를 따라 드라이브를 즐겨보세요. 붉게 물든 바다와 실안 노을의 장관은 이번 주말 나들이의 완벽한 피날레를 장식해 줄 것입니다.
 
-![사천 인근 자연 및 드라이브 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 사천 인근 자연 및 드라이브 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 마음까지 탁 트이는 사천의 아름다운 자연과 드라이브 코스*
 
 ---

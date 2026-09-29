@@ -5,9 +5,22 @@ summary: 철의 왕국 아라가야의 중심지 말이산 고분군의 불꽃�
 category: 전시 리뷰
 region: 경남
 eventId: haman-marisan-tumuli-museum
-thumbnail: >-
-  https://images.pexels.com/photos/20610602/pexels-photo-20610602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가볼만한곳", "경남나들이", "경남데이트", "경남전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 경남전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 🍂
@@ -17,7 +30,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 
 아라가야인들이 남긴 뜨겁고도 섬세한 불꽃무늬 토기부터, 그 시절의 삶과 예술혼을 엿볼 수 있는 다양한 유물들까지! 가을빛이 물들어가는 함안에서 만나는 찬란한 역사 속으로 저와 함께 떠나보실까요?
 
-![고대 토기의 정교한 장식 패턴](https://images.pexels.com/photos/20610602/pexels-photo-20610602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 고대 토기의 정교한 장식 패턴](/images/placeholders/placeholder-art.svg)
 *▲ 아라가야의 숨결이 담긴 고대 토기의 정교한 문양. 그 시절 장인의 손길이 고스란히 전해집니다.*
 
 ---
@@ -44,7 +57,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 ### 2. 삶과 죽음을 아우르는 상형토기의 세계
 말이산 45호분 등 주요 고분에서 출토된 상형토기들은 당시 사람들의 생활상과 내세관을 엿볼 수 있는 소중한 보물입니다. 배 모양, 집 모양, 동물 모양 등 다양한 형태로 빚어진 상형토기 속에는 당시 아라가야인들의 창의성과 풍부한 상상력이 고스란히 녹아들어 있습니다. 아이들의 호기심을 자극하기에도 더할 나위 없이 훌륭한 교육적 현장이 될 거예요.
 
-![박물관에 전시된 고대 토기 유물들](https://images.pexels.com/photos/33902046/pexels-photo-33902046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 박물관에 전시된 고대 토기 유물들](/images/placeholders/placeholder-art.svg)
 *▲ 박물관 전시실 내부, 역사의 숨결을 품은 다채로운 고대 토기들이 관람객을 맞이합니다.*
 
 ### 3. 유네스코 세계유산, 함안 말이산 고분군의 가치 재발견
@@ -64,7 +77,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
   - **위치:** 경상남도 함안군 가야읍 중앙남2길 26-14 1층
   - **특징:** 깔끔하고 정갈한 일식을 선보이는 현지인 추천 맛집입니다. 신선한 재료로 만들어낸 다채로운 메뉴들이 준비되어 있어, 전시 나들이 후 든든하고 기분 좋은 한 끼를 책임져 줍니다.
 
-![야외 테라스에서 즐기는 달콤한 디저트와 커피](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 야외 테라스에서 즐기는 달콤한 디저트와 커피](/images/placeholders/placeholder-art.svg)
 *▲ 따사로운 가을 햇살 아래, 카페에서 즐기는 여유로운 커피 한 잔과 달콤한 디저트.*
 
 ---
@@ -92,7 +105,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 1. **함안박물관 & 말이산 고분군 산책:** 전시 관람과 세계유산 탐방 (오전 코스)
 2. **악양생태공원 핑크뮬리 & 악양루:** 가을이면 핑크빛 파도가 장관을 이루는 악양생태공원에서 인생샷을 남기고, 낙동강 지류의 황홀한 노을을 감상할 수 있는 악양루에서 하루를 로맨틱하게 마무리해 보세요.
 
-![푸른 하늘과 초록빛 자연이 어우러진 평화로운 풍경](https://images.pexels.com/photos/33405687/pexels-photo-33405687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 푸른 하늘과 초록빛 자연이 어우러진 평화로운 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 가을 나들이 떠나기 좋은 아늑하고 평화로운 경남의 풍경.*
 
 ---

@@ -1,14 +1,34 @@
 ---
-title: "[부산 전시] 2년 만의 화려한 귀환! 부산시립미술관 전면 재개관 & 4대 특별전 완벽 도슨트 가이드"
-slug: "busan-museum-of-art-grand-reopening"
-date: "2026-09-17"
-region: "부산"
-subRegion: "해운대구"
-venueName: "부산시립미술관"
-category: "전시 리뷰"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832"
-summary: "총 469억 원 투입, 2년간의 대대적인 리노베이션을 마친 부산시립미술관이 전면 재개관했습니다! 세계 9대 기관 협업 '퓨처 뮤지올로지'부터 피란수도 역사전, 이우환 공간까지 현장 실사로 만나는 완벽 심층 도슨트 가이드."
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산시립미술관", "부산시립미술관재개관", "퓨처뮤지올로지", "해운대전시", "센텀시티", "이우환공간", "가을전시", "무료전시", "부산나들이", "부산가볼만한곳", "부산데이트", "부산전시"]
+title: '[부산 전시] 2년 만의 화려한 귀환! 부산시립미술관 전면 재개관 & 4대 특별전 완벽 도슨트 가이드'
+slug: busan-museum-of-art-grand-reopening
+date: '2026-09-17'
+region: 부산
+subRegion: 해운대구
+venueName: 부산시립미술관
+category: 전시 리뷰
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832
+summary: >-
+  총 469억 원 투입, 2년간의 대대적인 리노베이션을 마친 부산시립미술관이 전면 재개관했습니다! 세계 9대 기관 협업 '퓨처 뮤지올로지'부터
+  피란수도 역사전, 이우환 공간까지 현장 실사로 만나는 완벽 심층 도슨트 가이드.
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산시립미술관
+  - 부산시립미술관재개관
+  - 퓨처뮤지올로지
+  - 해운대전시
+  - 센텀시티
+  - 이우환공간
+  - 가을전시
+  - 무료전시
+  - 부산나들이
+  - 부산가볼만한곳
+  - 부산데이트
+  - 부산전시
+venueId: busan-museum-of-art-modern
 ---
 
 안녕하세요, 문화예술을 사랑하시는 여러분! 부산·울산·경남의 감성 넘치는 전시와 미술관 나들이 소식을 전해드리는 **수석 AI 도슨트**입니다. 🎨✨
@@ -19,7 +39,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산시�
 
 재개관을 기념하여 펼쳐지는 글로벌 4대 기획전시와 거장의 숨결을 품은 이우환 공간, 그리고 센텀시티 연계 힐링 코스까지 도슨트의 생생한 시선으로 안내해 드립니다.
 
-![부산시립미술관 현대적인 건축 외관과 주출입구](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ [부산시립미술관 현장 실사] 해운대 센텀 벡스코 맞은편에 자리한 부산시립미술관 본관의 웅장한 건축 외관 전경*
 
 ---
@@ -61,7 +81,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산시�
 * **도슨트 심층 해설:**  
   인공지능(AI), 알고리즘, 빅데이터, 그리고 기후 생태 위기의 시대 속에서 **“미래의 공공 미술관은 사회와 어떻게 연결되어야 하는가?”**라는 근원적인 화두를 던지는 초대형 국제 프로젝트입니다. 전시장 벽면 전체를 압도하는 초대형 미디어 설치 월과 관람객의 생체 신호·호흡에 반응하는 인터랙티브 사운드 아트가 펼쳐지며 미래 예술의 경이로운 신세계를 열어젖힙니다.
 
-![부산시립미술관 현대미술 기획전시실 내부 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
+![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
 *▲ [부산시립미술관 전시실 실사] 다채로운 현대미술 설치 조형물과 예술 작품이 어우러진 기획전시 공간 실내 전경*
 
 ---
@@ -96,14 +116,14 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산시�
 - **2층 회화실**: 캔버스 위에서 점과 선, 여백이 숨 쉬듯 조화를 이루는 《점으로부터(From Point)》, 《선으로부터(From Line)》, 《바람과 함께(With Winds)》, 《조응(Correspondence)》.
 - 이번 재개관 기간에는 본관과 함께 전면 무료로 개방되어 거장의 깊은 철학적 여백을 온전히 감상하실 수 있습니다.
 
-![이우환 공간 야외 조각정원의 바위와 철판 시그니처 조각 작품](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ [이우환 공간 실사] 별관 야외 조각정원에 설치된 거장 이우환 화백의 바위와 철판 시그니처 조각 작품*
 
 ---
 
 ### ☕ 예술 관람 후 즐기는 힐링 타임: 센텀 감성 미식 & 카페
 
-![센텀시티 감성 카페의 수제 디저트 케이크와 스페셜티 커피](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ [센텀 감성 카페 실사] 신선한 딸기가 듬뿍 올라간 수제 케이크와 향긋한 스페셜티 커피를 즐기는 센텀 카페 플레이팅*
 
 - **미술관 1층 통창 뮤지엄 라운지 카페**: 전면 통창 너머로 야외 조각공원의 푸른 잔디를 바라보며 정성껏 내린 스페셜티 핸드드립 커피와 수제 디저트를 즐길 수 있는 최고의 휴식처입니다.
@@ -114,7 +134,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산시�
 
 ### 🌿 가을바람과 함께 걷는 주변 연계 산책 코스
 
-![수영강변 APEC 나루공원 푸른 잔디와 센텀 마천루 산책로](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ [APEC 나루공원 실사] 수영강변을 따라 푸른 잔디와 센텀 마천루가 시원하게 펼쳐지는 APEC 나루공원 산책로*
 
 * **수영강변 APEC 나루공원 (도보 7분):**  

@@ -5,8 +5,7 @@ summary: 광활한 도심 숲 부산시민공원에서 만나는 감성 현대�
 category: 전시 리뷰
 region: 부산
 eventId: busan-busanjin-citizens-park
-thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832
+thumbnail: /images/placeholders/placeholder-nature.svg
 tags:
   - 나드리
   - 나드리AI
@@ -32,7 +31,7 @@ tags:
 
 자연과 예술이 조화롭게 어우러지는 이 공간에서 일상의 피로를 잠시 내려놓고, 현대미술이 건네는 따뜻한 위로의 메시지를 함께 만나보실까요?
 
-![부산시민공원 다솜갤러리 기획전시실 내부 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 부산시민공원 다솜갤러리 기획전시실 내부 전경](/images/placeholders/placeholder-nature.svg)
 *▲ 사진 설명: 부산시민공원 다솜갤러리 기획전시실 내부 현대미술 및 디자인 작품 전시 전경.*
 
 ---
@@ -59,7 +58,7 @@ tags:
 #### 2. 현대미술의 문턱을 낮추다: 누구나 즐기는 감성 교감
 어렵고 난해하게만 느껴졌던 현대미술의 장벽을 허물고, 대중과 깊이 교감할 수 있는 직관적이면서도 깊이 있는 작품들이 가득합니다. 설치 미술부터 회화, 미디어 아트까지 다양한 매체를 통해 일상의 사물과 풍경을 새로운 시각으로 재해석한 작가들의 시선을 만끽해 보세요.
 
-![다솜갤러리 화이트큐브 벽면 전시 작품](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 다솜갤러리 화이트큐브 벽면 전시 작품](/images/placeholders/placeholder-nature.svg)
 *▲ 사진 설명: 다솜갤러리 화이트큐브 벽면에 전시된 감각적인 회화 및 디자인 기획 작품.*
 
 #### 3. 발걸음마다 여유가 머무는 공간, 다솜갤러리
@@ -74,7 +73,7 @@ tags:
 - **전포카페거리 감성 브런치 & 디저트 카페 추천**: 전시 관람 후 향긋한 스페셜티 커피 한 잔과 함께 정성스러운 디저트를 맛볼 수 있는 개성 만점의 로컬 카페들이 여러분을 기다립니다. 아기자기한 인테리어 속에서 여유로운 오후의 햇살을 즐겨보세요.
 - **서면·시민공원 인근 미식 투어**: 신선한 식재료를 활용한 파스타부터 부산의 로컬 맛집까지, 취향에 따라 골라 먹는 재미가 가득한 다채로운 다이닝 공간들이 인근에 밀집해 있어 당일치기 데이트나 나들이 코스로 완벽합니다.
 
-![야외 테라스에서 즐기는 향긋한 커피와 디저트](https://pup-post-phinf.pstatic.net/MjAyNjA3MDdfNjcg/MDAxNzgzMzUyNDAwOTYw.dunWy6fgN8ufnFfFmzD2MFaooqXMvcRzvf7YwfpxGBwg.43LnPSIYPdVKgXGfD02gNJ9mCG-o8j8Q2Bgh_qvM_50g.JPEG/POST_IMAGE_ENC_20260707_003850_497.jpg)
+![나드리 AI 공식 검증 대기 중 - 야외 테라스에서 즐기는 향긋한 커피와 디저트](/images/placeholders/placeholder-nature.svg)
 *▲ 사진 설명: 전포카페거리와 인근 감성 카페에서 여유롭게 즐기는 향긋한 디저트 타임.*
 
 ---
@@ -87,7 +86,7 @@ tags:
 2. **코스 두 번째 - 다솜갤러리 기획전 관람**: 공원 내 다솜갤러리에서 <도심 속 녹색 쉼표와 현대미술> 전시 관람으로 지적 충전과 감성 힐링 완료!
 3. **코스 세 번째 - 전포카페거리 & 서면 젊음의 거리 투어**: 트렌디한 소품숍 투어와 감성 카페 방문, 맛있는 저녁 식사까지 이어지는 완벽한 주말 코스입니다.
 
-![부산시민공원 하야리아 잔디광장과 도심 숲](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 부산시민공원 하야리아 잔디광장과 도심 숲](/images/placeholders/placeholder-nature.svg)
 *▲ 사진 설명: 다솜갤러리 관람 후 여유롭게 산책하기 좋은 부산시민공원 하야리아 잔디광장과 푸른 숲길 풍경.*
 
 ---

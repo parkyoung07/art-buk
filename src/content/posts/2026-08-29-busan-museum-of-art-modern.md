@@ -1,12 +1,32 @@
 ---
-title: "부산시립미술관 기획전 : 공간과 시간의 경계"
-date: "2026-08-29"
-summary: "센텀시티 도심 속 예술의 오아시스 부산시립미술관의 특별 기획전! 시공간을 초월하는 현대미술 대작들과 벡스코, 영화의전당 나들이 코스를 총정리합니다."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-museum-of-art-modern"
-thumbnail: "https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시립미술관", "해운대데이트", "센텀시티", "현대미술", "가을전시", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산시립미술관 기획전 : 공간과 시간의 경계'
+date: '2026-08-29'
+summary: >-
+  센텀시티 도심 속 예술의 오아시스 부산시립미술관의 특별 기획전! 시공간을 초월하는 현대미술 대작들과 벡스코, 영화의전당 나들이 코스를
+  총정리합니다.
+category: 전시 리뷰
+region: 부산
+eventId: busan-museum-of-art-modern
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산시립미술관
+  - 해운대데이트
+  - 센텀시티
+  - 현대미술
+  - 가을전시
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-museum-of-art-modern
 ---
 
 안녕하세요, '나드리 AI 문화·나들이'를 찾아주신 관람객 여러분! 여러분의 다정하고 친절한 예술 길잡이 **AI 도슨트**입니다. 🎨✨
@@ -15,7 +35,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 오늘 여러분을 안내할 곳은 바로 부산 현대미술의 심장, **부산시립미술관**입니다. 가을을 맞이하여 펼쳐지는 특별 기획전 **《공간과 시간의 경계》**는 바쁜 도심 속에서 우리가 잠시 잊고 지냈던 시공간의 감각을 깨워줄 웅장하고 서정적인 전시랍니다. 사랑하는 가족, 연인, 혹은 나 자신과 함께 깊은 예술적 대화를 나눠보시는 건 어떨까요?
 
-![미니멀하고 세련된 분위기의 현대미술 조각 설치작품](https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 공간감과 조명이 조화롭게 어우러진 현대미술 조각 및 입체 설치 공간*
 
 ---
@@ -43,7 +63,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 1. 시공간을 입체적으로 확장하는 거대 조형과 입체 조각
 전시장 입구에 들어서는 순간, 은은한 조명 아래 웅장하게 서 있는 대형 조각과 현대적 조형물들이 여러분을 맞이합니다. 3차원 공간 속에서 유기적으로 배치된 작품들은 보는 각도와 관람객의 걸음걸이에 따라 완벽히 다른 서사를 풀어냅니다.
 
-![은은한 조명 아래 조각과 현대 미술품이 어우러진 미술관 내부](https://images.pexels.com/photos/32409831/pexels-photo-32409831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
 *▲ 현대적인 공간 속에서 빛과 물성이 만들어내는 감각적인 조형미*
 
 작품 주위를 천천히 거닐며, 그림자와 실체가 만들어내는 고요한 대화에 귀를 기울여보세요. 멈춰 서 있는 조각품 속에서 흐르는 시간의 숨결을 느끼실 수 있습니다.
@@ -51,7 +71,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 2. 시선을 사로잡는 대형 캔버스와 모던 회화의 서사
 2층 메인 전시실에서는 국내외 정상급 작가들의 독창적인 대형 캔버스 회화 연작들이 펼쳐집니다. 캔버스 위에 겹겹이 쌓아 올린 붓터치와 깊이 있는 색채는 관람객의 시선을 단번에 압도합니다.
 
-![다채로운 현대 미술 회화와 갤러리 전시 공간](https://images.pexels.com/photos/36550406/pexels-photo-36550406.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 웅장한 갤러리 공간 속에서 작품을 감상하는 여유로운 시간*
 
 ### 3. 도심 속 힐링을 선사하는 야외 조각공원과 건축미

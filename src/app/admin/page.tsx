@@ -27,7 +27,11 @@ interface VisitorStats {
   recentLogs: { time: string; path: string; title?: string; referrer?: string; device?: string }[];
 }
 
-const VALID_PASSWORDS = ["artbuk2026", "admin1234", "artbuk"];
+// 보안 관리자 비밀번호 (환경변수 연동 및 복합 보안 키)
+const VALID_PASSWORDS = [
+  process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "nadri2026!master#leo",
+  "nadri2026!master#leo"
+];
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
@@ -256,7 +260,7 @@ export default function AdminPage() {
               type="password"
               value={passwordInput}
               onChange={(e) => setPasswordInput(e.target.value)}
-              placeholder="관리자 비밀번호 입력 (기본: artbuk2026)"
+              placeholder="관리자 보안 비밀번호 입력"
               className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white text-center font-mono placeholder-slate-400 transition-all"
               required
               autoFocus
@@ -269,10 +273,6 @@ export default function AdminPage() {
               대시보드 입장하기 →
             </button>
           </form>
-          <p className="text-[11px] text-slate-400 mt-4">
-            초기 비밀번호: <code className="text-indigo-600 font-semibold">artbuk2026</code> 또는{" "}
-            <code className="text-indigo-600 font-semibold">admin1234</code>
-          </p>
         </div>
       </div>
     );
@@ -337,6 +337,20 @@ export default function AdminPage() {
                 </span>
               )}
             </button>
+            <Link
+              href="/admin/images"
+              className="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50/80 cursor-pointer"
+            >
+              <span>🖼️</span>
+              <span>검증 자산</span>
+            </Link>
+            <Link
+              href="/admin/image-review"
+              className="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 text-emerald-600 hover:text-emerald-800 hover:bg-emerald-50/80 cursor-pointer"
+            >
+              <span>🔍</span>
+              <span>네이버 안전 검수</span>
+            </Link>
           </div>
 
           <div className="hidden lg:flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200/80 px-3 py-1.5 rounded-full text-xs font-semibold">

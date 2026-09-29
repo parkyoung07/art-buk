@@ -1,19 +1,37 @@
 ---
-title: "거제문화예술회관 가을 기획전 : 푸른 남해와 현대 조각의 만남"
-date: "2026-08-31"
-summary: "에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스."
-category: "전시 리뷰"
-region: "경남"
-eventId: "geoje-art-center-ocean-view"
-thumbnail: "https://images.pexels.com/photos/25473965/pexels-photo-25473965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "거제전시", "거제문화예술회관", "남해바다", "야외조각", "거제도데이트", "가을힐링", "경남가볼만한곳", "경남나들이", "경남데이트", "경남전시", "부울경전시", "미술관나들이"]
+title: '거제문화예술회관 가을 기획전 : 푸른 남해와 현대 조각의 만남'
+date: '2026-08-31'
+summary: 에메랄드빛 장승포 바다를 굽어보며 감상하는 수준 높은 현대 조각 및 회화전! 옥포대첩기념공원과 지세포항 해안 드라이브 추천 코스.
+category: 전시 리뷰
+region: 경남
+eventId: geoje-art-center-ocean-view
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 거제전시
+  - 거제문화예술회관
+  - 남해바다
+  - 야외조각
+  - 거제도데이트
+  - 가을힐링
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 경남전시
+  - 부울경전시
+  - 미술관나들이
+venueId: geoje-art-center-ocean-view
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정하고 박학다식한 AI 도슨트입니다. 🎨
 
 선선한 가을바람이 코끝을 스치는 요즘, 훌쩍 떠나고 싶은 마음이 간절해지지 않으시나요? 가을의 문턱에서 눈부시게 푸른 남해 바다와 현대 미술이 하나로 어우러지는 환상적인 예술 여행지를 소개해 드리려 합니다. 바로 거제의 에메랄드빛 바다를 품은 **거제문화예술회관 가을 기획전 : 푸른 남해와 현대 조각의 만남**입니다. 자연의 경이로움과 인간의 예술적 상상력이 어떻게 조화를 이루는지, 저와 함께 설레는 발걸음을 옮겨볼까요?
 
-![A peaceful stroll by the sea with sculptures and lush greenery in Humlebaek, Denmark.](https://images.pexels.com/photos/25473965/pexels-photo-25473965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![거제문화예술회관 앞 장승포 바다 오션뷰 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832)
 *▲ 푸른 남해바다와 싱그러운 초록빛 자연, 그리고 현대 조각이 어우러진 풍경 (참고 이미지)*
 
 ---
@@ -37,7 +55,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "거제전�
 #### 1. 바다와 예술의 경계를 허무는 '야외 조각의 정수'
 거제문화예술회관의 가장 큰 매력은 시원하게 트인 장승포 바다를 배경으로 작품을 만날 수 있다는 점입니다. 이번 기획전은 실내 전시장에만 머물지 않고, 탁 트인 야외 공간까지 무대를 확장했습니다. 햇살에 반짝이는 바다 수면과 바람에 흔들리는 초록빛 가로수, 그리고 단단한 물성(物性)을 가진 현대 조각 작품들이 만들어내는 풍경은 그 자체로 한 폭의 살아있는 회화가 됩니다. 
 
-![A spiral sculpture by the sea in Colonia Del Sacramento with sailboats in the background under a clear blue sky.](https://images.pexels.com/photos/19337160/pexels-photo-19337160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![거제문화예술회관 앞 장승포 바다 오션뷰 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832)
 *▲ 푸른 하늘과 바다, 그리고 그 속에서 유연한 곡선을 뽐내는 현대 조각 작품*
 
 #### 2. 자연의 색채를 담아낸 입체 회화와 도예의 조우
@@ -46,7 +64,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "거제전�
 #### 3. 오감으로 즐기는 가을 힐링, 일상 속 예술 산책
 이번 전시는 어렵고 딱딱한 현대 미술에서 벗어나 누구나 편안하게 걸으며 즐길 수 있도록 기획되었습니다. 복잡한 도심을 떠나 파도 소리를 들으며 예술 작품 사이를 거니는 것만으로도 완벽한 힐링이 됩니다. 
 
-![A modern sculpture with seating area beside the ocean under a cloudy sky.](https://images.pexels.com/photos/12312000/pexels-photo-12312000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![거제문화예술회관 앞 장승포 바다 오션뷰 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832)
 *▲ 바다가 내다보이는 휴식 공간과 어우러진 모던한 조각 작품*
 
 ---

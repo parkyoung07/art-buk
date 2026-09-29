@@ -1,19 +1,37 @@
 ---
-title: "통영 옻칠미술관 기획전 : 천년의 빛, 현대 옻칠 조형전"
-date: "2026-09-11"
-summary: "청정 남해 바다를 배경으로 영롱하게 빛나는 현대 옻칠 회화와 나전칠기 예술! 한국 옻칠 예술의 진수를 맛보는 통영 바다 드라이브 코스."
-category: "전시 리뷰"
-region: "경남"
-eventId: "tongyeong-ottchil-art-museum"
-thumbnail: "https://images.pexels.com/photos/4611337/pexels-photo-4611337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전시", "통영전시", "통영옻칠미술관", "한국전통공예", "남해안드라이브", "통영나들이", "경남가볼만한곳", "경남나들이", "경남데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '통영 옻칠미술관 기획전 : 천년의 빛, 현대 옻칠 조형전'
+date: '2026-09-11'
+summary: 청정 남해 바다를 배경으로 영롱하게 빛나는 현대 옻칠 회화와 나전칠기 예술! 한국 옻칠 예술의 진수를 맛보는 통영 바다 드라이브 코스.
+category: 전시 리뷰
+region: 경남
+eventId: tongyeong-ottchil-art-museum
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남전시
+  - 통영전시
+  - 통영옻칠미술관
+  - 한국전통공예
+  - 남해안드라이브
+  - 통영나들이
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: tongyeong-ottchil-art-museum
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 청명한 가을바람이 남해 바다의 푸른 물결을 간지럽히는 요즘, 여러분의 주말 감성을 촉촉하게 적셔줄 아주 특별하고 찬란한 전시 소식을 들고 왔습니다. 예술가들의 혼이 살아 숨 쉬는 예향(藝香)의 도시 통영, 그곳에서도 자연과 전통, 그리고 현대적 감각이 아름답게 어우러진 **통영옻칠미술관**에서 열리는 **<천년의 빛, 현대 옻칠 조형전>**입니다. 천년의 세월을 견뎌낸 옻칠의 깊고 오묘한 빛깔 속으로 저와 함께 떠나보실까요?
 
-![전통 문양의 섬세한 목공예 조각 작품](https://images.pexels.com/photos/4611337/pexels-photo-4611337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
 *▲ 사진 설명: 세밀한 공예 기법과 전통의 숨결이 느껴지는 목공예 및 옻칠 조형 미학.*
 
 ---
@@ -40,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 #### 2. 영롱한 자개와 옻칠의 오묘한 하모니
 빛의 각도에 따라 오색찬란하게 반짝이는 나전(자개)과 깊고 그윽한 검붉은 옻칠의 만남은 그 자체로 하나의 우주를 연상케 합니다. 자연의 재료가 빚어낸 빛의 향연은 사진이나 화면으로는 절대 담아낼 수 없는 실물만의 압도적인 아우라를 뿜어냅니다. 전시장 안을 거닐며 작품 속으로 빨려 들어가는 듯한 신비로운 경험을 만끽해 보세요.
 
-![전통 옻칠 및 나전 공예 제작 기법을 음미하는 관람객들의 모습](https://images.pexels.com/photos/36351734/pexels-photo-36351734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
 *▲ 사진 설명: 장인의 손길과 현대적 공예 정신이 깃든 옻칠 작업의 세계.*
 
 #### 3. 통영의 바다 풍경과 어우러지는 힐링 갤러리 투어
@@ -55,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 * **통영옻칠미술관 내 기념품샵 & 아트 카페**: 미술관 내부 한켠에 자리한 기념품 판매소 겸 카페에서는 통영의 문학적 감성이 깃든 향긋한 커피와 차를 음미할 수 있습니다. 옻칠 예술품의 여운을 음료 한 잔과 함께 깊이 있게 곱씹어 볼 수 있는 특별한 장소입니다.
 * **통영 해안도로 오션뷰 카페 & 향토 해물 요리 전문점**: 미술관이 위치한 용남면 해안로 일대는 드라이브 코스로 정평이 나 있습니다. 창가 너머로 반짝이는 바다를 조망하며 신선한 통영 생선구이, 해물뚝배기, 그리고 달콤한 디저트를 즐길 수 있는 감성 카페들이 인근에 즐비해 있어 나들이 코스로 완벽합니다.
 
-![남해 바다의 여운을 더해줄 감성 카페의 디저트와 음료](https://pup-post-phinf.pstatic.net/MjAyNjA2MDRfMjM3/MDAxNzgwNTY2MjkzMDMx.wQGgrhpgS_MGNaUwXTyZ7cvNBGmy0zwtNf4S51OeLKUg.dY2PTVCmjPeM-F51rvLXWz1_VeoPTWiMi7L9Bn3aKwEg.JPEG/PostEncodingTask.44FB437F-52A0-4D37-8B7A-5C937C7A431F.jpg)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
 *▲ 사진 설명: 전시 관람 후 즐기는 향긋한 커피와 여유로운 휴식.*
 
 ---
@@ -83,7 +101,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 2. **용남해안로 남해안 드라이브**: 탁 트인 바다를 끼고 이어지는 해안도로를 따라 드라이브를 즐기며 시원한 가을바람을 만끽해 보세요.
 3. **근교 해안 산책로**: 바다를 조망하며 걸을 수 있는 인근 산책로에서 인생 사진을 남겨보는 것도 좋습니다.
 
-![푸른 하늘과 바다가 어우러진 평화로운 남해안 풍경](https://images.pexels.com/photos/28892766/pexels-photo-28892766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
 *▲ 사진 설명: 통영의 푸른 자연과 전통 공예의 아름다움이 어우러지는 나들이 코스.*
 
 ---

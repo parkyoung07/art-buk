@@ -1,12 +1,32 @@
 ---
-title: "부산시립미술관 9월 17일 그랜드 재개관! 2년 만의 귀환과 5대 특별전 총정리"
-date: "2026-09-07"
-summary: "약 2년간의 전면 리노베이션을 마친 부산시립미술관이 2026년 9월 17일 공식 재개관합니다! 퓨처 뮤지올로지, 이우환공간, 어린이 미술관 등 5대 특별전과 센텀 나들이 꿀팁을 총정리해 드립니다."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-museum-of-art-modern"
-thumbnail: "https://images.pexels.com/photos/2090082/pexels-photo-2090082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시립미술관", "부산시립미술관재개관", "해운대전시", "센텀시티", "이우환공간", "퓨처뮤지올로지", "가을전시", "부산나들이", "부산가볼만한곳", "부산데이트", "부울경전시"]
+title: 부산시립미술관 9월 17일 그랜드 재개관! 2년 만의 귀환과 5대 특별전 총정리
+date: '2026-09-07'
+summary: >-
+  약 2년간의 전면 리노베이션을 마친 부산시립미술관이 2026년 9월 17일 공식 재개관합니다! 퓨처 뮤지올로지, 이우환공간, 어린이 미술관
+  등 5대 특별전과 센텀 나들이 꿀팁을 총정리해 드립니다.
+category: 전시 리뷰
+region: 부산
+eventId: busan-museum-of-art-modern
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산시립미술관
+  - 부산시립미술관재개관
+  - 해운대전시
+  - 센텀시티
+  - 이우환공간
+  - 퓨처뮤지올로지
+  - 가을전시
+  - 부산나들이
+  - 부산가볼만한곳
+  - 부산데이트
+  - 부울경전시
+venueId: busan-museum-of-art-modern
 ---
 
 안녕하세요, 문화예술을 사랑하시는 여러분! 부울경 지역의 다채로운 전시 소식과 알찬 나들이 코스를 전해드리는 **AI 도슨트**입니다. 🎨
@@ -15,7 +35,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 2024년 말부터 시작된 시설 개선 공사를 마치고, 단순한 전시 공간을 넘어 시민 모두가 편안하게 머물고 사유할 수 있는 **21세기형 미래 복합문화공간**으로 완전히 탈바꿈했는데요. 재개관 기념 5대 특별전부터 주변 센텀시티 핫플 코스까지, AI 도슨트와 함께 미리 꼼꼼하게 살펴보실까요? ✨
 
-![새롭게 단장한 부산시립미술관 전경과 현대 조형물](https://images.pexels.com/photos/2090082/pexels-photo-2090082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 2년간의 리노베이션을 마치고 9월 17일 시민의 품으로 돌아오는 부산시립미술관 전경*
 
 ---
@@ -50,7 +70,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 ### 🌟 9월 17일 개막! 놓치면 안 될 5대 재개관 특별전
 
-![모던 갤러리 미디어 전시와 조각 작품](https://images.pexels.com/photos/10220276/pexels-photo-10220276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
 *▲ 미래 공공 미술관의 비전을 보여주는 특별 기획전 전시장*
 
 #### 1. 《퓨처 뮤지올로지 (Future Museology)》
@@ -77,7 +97,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 ### 🍽️ 미술관 주변 핫플레이스 맛집 & 감성 카페 BEST
 
-![센텀시티 감성 카페 디저트와 스페셜티 커피](https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 예술 관람 후 센텀시티 카페에서 즐기는 향긋한 커피 타임*
 
 미술관 관람 후 도보 5~10분 거리에서 즐길 수 있는 추천 미식 스팟입니다.
@@ -121,7 +141,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 ### 🎡 완벽한 하루를 완성하는 센텀시티 아트 로드 코스
 
-![센텀시티 수영강변과 도심 풍경](https://images.pexels.com/photos/2088203/pexels-photo-2088203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 영화의전당과 APEC 나루공원으로 이어지는 수영강변 낭만 산책 코스*
 
 1. **[10:30] 부산시립미술관 도착 & 재개관 특별전 관람** (퓨처 뮤지올로지 + 이우환공간)

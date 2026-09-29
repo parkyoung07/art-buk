@@ -5,8 +5,7 @@ summary: '기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대�
 category: 전시 리뷰
 region: 울산
 eventId: ulsan-donggu-daewangam-art
-thumbnail: >-
-  https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+thumbnail: /images/placeholders/placeholder-art.svg
 tags:
   - 나드리
   - 나드리AI
@@ -30,7 +29,7 @@ tags:
 
 선선한 가을바람이 옷깃을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 담아 멋진 나드리 코스를 준비했어요. 이번 주말, 울산 동구의 푸른 바다와 예술이 만나는 곳 **[대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전]**으로 저와 함께 떠나보실까요?
 
-![울산광역시동구문화원](https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 울산광역시동구문화원](/images/placeholders/placeholder-art.svg)
 *▲ 기암괴석과 푸른 동해 바다가 어우러진 대왕암공원 전경*
 
 ---
@@ -57,7 +56,7 @@ tags:
 #### 2. 지역 문화와 자연의 공감각적 확장
 단순한 실내 전시를 넘어, 울산 동구 고유의 정체성과 바다라는 서사를 깊이 있게 탐구합니다. 지역 예술가들의 시선을 통해 동해안의 푸른 파도 소리가 눈앞에 펼쳐지는 듯한 공감각적 예술 경험을 느껴보세요.
 
-![울산동구 카페 및 베이커리 전경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 울산동구 카페 및 베이커리 전경](/images/placeholders/placeholder-art.svg)
 *▲ 전시 관람 후 여유를 즐기기 좋은 울산 동구 일산지 오션뷰 감성 공간*
 
 #### 3. 세대를 아우르는 배리어프리 문화 산책
@@ -72,7 +71,7 @@ tags:
 - **일산해수욕장 오션뷰 베이커리 카페거리**: 탁 트인 동해 바다를 바라보며 갓 구운 빵과 향긋한 스페셜티 커피를 즐길 수 있는 감성 카페들이 즐비해 있습니다. 창가 자리에 앉아 파도멍을 때리기 최고의 장소예요.
 - **방어진 항구 인근 로컬 해산물 맛집**: 동해안에서 바로 건져 올린 신선한 활어회와 칼칼한 매운탕으로 든든하게 미식 여행을 완성해 보세요.
 
-![울산동구 기획전시 및 현대미술 조형 공간](https://images.pexels.com/photos/12128427/pexels-photo-12128427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 울산동구 기획전시 및 현대미술 조형 공간](/images/placeholders/placeholder-art.svg)
 *▲ 감성과 예술이 공존하는 전시 관람 스폿*
 
 ---
@@ -98,7 +97,7 @@ tags:
 2. **슬도 바위길**: 바위에 부딪히는 파도 소리가 거문고 소리처럼 들린다는 슬도에서 감성적인 등대와 바다 풍경을 배경으로 인생 사진을 남겨보세요.
 3. **현대백화점문화센터 울산동구점 및 현대예술회관 연계 코스**: 도심 속 문화 예술 인프라까지 알차게 즐길 수 있습니다.
 
-![울산 동구 바다와 자연 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 울산 동구 바다와 자연 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 탁 트인 동해 바다와 함께하는 힐링 나들이 코스*
 
 ---

@@ -1,19 +1,37 @@
 ---
-title: "부산 영화의전당 비프힐 기획전 : 시네마틱 아트와 스크린의 미래"
-date: "2026-09-10"
-summary: "세계적인 건축미를 자랑하는 영화의전당에서 만나는 스크린 예술의 모든 것! 환상적인 야외 루프 LED 조명과 수영강변 야경 데이트 코스."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-cinema-center-media-art"
-thumbnail: "https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "영화의전당", "시네마틱아트", "해운대전시", "수영강산책", "영화제핫플", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산 영화의전당 비프힐 기획전 : 시네마틱 아트와 스크린의 미래'
+date: '2026-09-10'
+summary: 세계적인 건축미를 자랑하는 영화의전당에서 만나는 스크린 예술의 모든 것! 환상적인 야외 루프 LED 조명과 수영강변 야경 데이트 코스.
+category: 전시 리뷰
+region: 부산
+eventId: busan-cinema-center-media-art
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 영화의전당
+  - 시네마틱아트
+  - 해운대전시
+  - 수영강산책
+  - 영화제핫플
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-cinema-center-media-art
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 선선한 가을바람이 스며드는 요즘, 예술과 영화를 사랑하는 분들의 마음을 설레게 할 특별한 전시 소식을 들고 찾아왔어요. 세계적인 건축가들의 손에서 탄생한 메카, 부산 영화의전당 비프힐에서 펼쳐지는 **<시네마틱 아트와 스크린의 미래>**전입니다. 스크린이라는 캔버스 위에서 펼쳐지는 상상의 나래, 그리고 수영강변의 눈부신 야경까지 함께 즐길 수 있는 이번 주말 나들이 코스로 여러분을 초대합니다!
 
-![몰입형 디지털 아트 전시를 관람하는 관람객들](https://images.pexels.com/photos/10508110/pexels-photo-10508110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 거대한 스크린과 빛의 향연 속으로 빠져드는 몰입형 전시 전경*
 
 ---
@@ -40,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 2. 미래의 영화 예술을 미리 만나다
 아날로그 필름의 향수부터 최첨단 디지털 스크린 아트까지, 영화 매체의 진화 과정을 한눈에 조망할 수 있습니다. 기술과 예술이 만나 어떤 미래를 그려내고 있는지 확인할 수 있는 뜻깊은 공간입니다.
 
-![붉은 커튼과 클래식한 영사기가 빛나는 아늑한 영화 상영 공간](https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 클래식한 감성과 미래지향적 스크린 예술이 공존하는 전시장 내부*
 
 #### 3. 건축 미학과의 완벽한 조화, 영화의전당 비프힐
@@ -56,7 +74,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   * **위치:** 부산광역시 해운대구 수영강변대로 120, 영화의전당 6층
   * **특징:** 전시장 관람 후 멀리 이동할 필요 없이 곧바로 방문하기 좋은 곳입니다. 향긋한 커피와 감성적인 디저트를 맛보며 탁 트인 센텀시티 전경을 감상할 수 있는 최고의 힐링 스팟입니다.
 
-![야외 테라스에서 즐기는 향긋한 디저트와 커피 한 잔](https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1200&auto=format&fit=crop&q=80)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 영화의전당 관람 후 센텀시티 감성 카페에서 즐기는 향긋한 커피와 디저트*
 
 ---
@@ -80,7 +98,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 * **센텀시티 & 신세계백화점 센텀시티점:** 세계 최대 규모의 백화점이자 쇼핑, 엔터테인먼트, 예술이 결합된 복합 문화 공간입니다. 건물 내부를 구경하는 것만으로도 시간 가는 줄 모르는 핫플레이스예요.
 * **센텀 스파랜드:** 도심 속에서 즐기는 최고급 온천 휴양지입니다. 전시 관람으로 쌓인 다리의 피로를 따뜻한 온천수와 스파로 말끔히 씻어내고 완벽한 힐링을 완성해 보세요.
 
-![도심 속 빌딩 숲과 자연이 어우러진 해운대 센텀시티 풍경](https://images.pexels.com/photos/8273646/pexels-photo-8273646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 예술과 도심의 야경이 조화롭게 어우러지는 센텀시티 나들이 코스*
 
 ---

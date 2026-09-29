@@ -1,12 +1,28 @@
 ---
-title: "대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전"
-date: "2026-09-05"
-summary: "기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대왕암공원 가을 조형전! 대왕암 출렁다리와 슬도 바위길 산책 코스."
-category: "전시 리뷰"
-region: "울산"
-eventId: "ulsan-donggu-daewangam-art"
-thumbnail: "https://images.pexels.com/photos/8344103/pexels-photo-8344103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전시", "울산동구", "대왕암공원", "출렁다리", "슬도", "일산해수욕장", "울산가볼만한곳", "울산나들이", "울산데이트", "울산드라이브", "가을힐링로드", "인생샷명소"]
+title: '대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전'
+date: '2026-09-05'
+summary: '기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대왕암공원 가을 조형전! 대왕암 출렁다리와 슬도 바위길 산책 코스.'
+category: 전시 리뷰
+region: 울산
+eventId: ulsan-donggu-daewangam-art
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산전시
+  - 울산동구
+  - 대왕암공원
+  - 출렁다리
+  - 슬도
+  - 일산해수욕장
+  - 울산가볼만한곳
+  - 울산나들이
+  - 울산데이트
+  - 울산드라이브
+  - 가을힐링로드
+  - 인생샷명소
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정한 수석 큐레이터, AI 도슨트입니다. 
@@ -15,7 +31,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 
 울산동구문화원에서 열리는 **<대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전>**은 대자연과 예술이 완벽한 조화를 이루는 특별한 가을 선물 같은 전시랍니다. 자, 저와 함께 설레는 발걸음을 옮겨볼까요?
 
-![대왕암공원 해맞이 기획전 전경](https://images.pexels.com/photos/8344103/pexels-photo-8344103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 대왕암공원 해맞이 기획전 전경](/images/placeholders/placeholder-art.svg)
 *▲ 동해의 탁 트인 푸른 바다와 기암괴석이 어우러진 대왕암공원 인근 해안 풍경*
 
 ---
@@ -42,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 #### 2. 해송 숲의 향기와 예술의 만남
 전시장 주변을 둘러싼 울창한 해송 숲길은 그 자체로 거대한 야외 갤러리입니다. 실내 전시 관람 후 피톤치드가 가득한 숲길을 천천히 거닐다 보면, 자연스럽게 마음의 평온을 찾게 됩니다. 예술 작품으로 채워진 감성과 자연이 주는 위로가 만나 깊은 여운을 남깁니다.
 
-![바닷가 기암괴석과 솔숲의 조화](https://images.pexels.com/photos/36109837/pexels-photo-36109837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 바닷가 기암괴석과 솔숲의 조화](/images/placeholders/placeholder-art.svg)
 *▲ 흑백의 결처럼 고요하고 장엄하게 펼쳐진 바닷가 기암괴석과 한 그루의 나무가 전하는 깊은 고독과 아름다움.*
 
 #### 3. 동해의 일출과 희망의 메시지
@@ -57,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 * **일산해수욕장 오션뷰 회센터 및 해물 요리 전문점들**: 전시 관람 후 싱싱한 동해안 자연산 회와 칼칼한 매운탕으로 든든하게 배를 채우기 좋습니다. 창밖으로 펼쳐지는 일산 바다의 풍경은 덤이랍니다.
 * **대왕암공원 & 슬도 인근 오션뷰 감성 카페 거리**: 통창 너머로 하얗게 부서지는 파도를 감상하며 향긋한 드립 커피와 달콤한 디저트를 즐길 수 있는 로스터리 카페들이 즐비해 있습니다. 바다를 배경으로 인생 사진을 남기기에 이보다 더 좋을 순 없겠죠?
 
-![감성 카페 디저트와 여유](https://pup-post-phinf.pstatic.net/MjAyNjA5MDhfMTYx/MDAxNzg4ODcyMTY4OTYx.zaEbhdAIvaRvzw6SWjenulIq0D537XQEyefD9toF4Q4g.XcLqmCp9qUQ67M6Z2nSx2S44_E-_eQRgGgLu4CeDVGEg.JPEG/POST_IMAGE_ENC_20260908_215531_012.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 감성 카페 디저트와 여유](/images/placeholders/placeholder-art.svg)
 *▲ 야외 테라스에서 즐기는 달콤한 디저트와 향긋한 커피, 나들이의 여유를 더해주는 완벽한 미식 타임.*
 
 ---
@@ -87,7 +103,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 3. **일산해수욕장**: 고운 모래사장과 잔잔한 파도가 반기는 곳으로, 바닷가를 따라 여유롭게 산책하기 좋습니다.
 4. **인근 문화 복합 공간 (현대백화점문화센터 울산동구점 및 꽃바위문화관)**: 지역 주민들과 방문객들을 위한 다양한 문화 예술 프로그램과 전시가 상시 열리는 곳으로 함께 둘러보기 좋습니다.
 
-![울산 동구의 푸른 바다와 자연 풍경](https://images.pexels.com/photos/8322447/pexels-photo-8322447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 울산 동구의 푸른 바다와 자연 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 시원한 바닷바람을 맞으며 바위 해안가를 거니는 관람객의 모습. 자연과 하나 되는 힐링의 순간입니다.*
 
 ---

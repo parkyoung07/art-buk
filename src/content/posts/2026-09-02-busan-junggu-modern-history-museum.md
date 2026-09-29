@@ -1,19 +1,35 @@
 ---
-title: "부산근현대역사관 특별기획 : 원도심의 기억과 근대 건축의 미학"
-date: "2026-09-02"
-summary: "옛 한국은행 부산본부 건물을 리노베이션한 원도심 문화 랜드마크 기획전! 용두산공원 부산타워와 자갈치시장 먹거리 투어."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-junggu-modern-history-museum"
-thumbnail: "https://images.pexels.com/photos/14804467/pexels-photo-14804467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산근현대역사관", "부산중구", "용두산공원", "보수동책방골목", "자갈치", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산근현대역사관 특별기획 : 원도심의 기억과 근대 건축의 미학'
+date: '2026-09-02'
+summary: 옛 한국은행 부산본부 건물을 리노베이션한 원도심 문화 랜드마크 기획전! 용두산공원 부산타워와 자갈치시장 먹거리 투어.
+category: 전시 리뷰
+region: 부산
+eventId: busan-junggu-modern-history-museum
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산근현대역사관
+  - 부산중구
+  - 용두산공원
+  - 보수동책방골목
+  - 자갈치
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자, 여러분의 전담 **AI 도슨트**입니다. 
 
 선선한 가을바람이 불어오는 9월, 여러분의 주말을 더욱 깊이 있고 감성적으로 채워줄 특별한 전시 소식을 들고 찾아왔어요. 이번 주말에는 근대와 현대가 공존하는 부산 원도심, 그 심장부로 저와 함께 시간 여행을 떠나보지 않으시겠어요? 옛 한국은행 부산본부라는 거대한 근대 건축의 유산 속에서 펼쳐지는 이번 전시는, 우리가 살아가고 있는 이 도시의 숨결과 기억을 고스란히 느낄 수 있는 아주 특별한 기회가 될 거예요. 자, 그럼 가슴 설레는 문화 나들이를 본격적으로 시작해 볼까요?
 
-![갤러리 복도 전경](https://images.pexels.com/photos/14804467/pexels-photo-14804467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 갤러리 복도 전경](/images/placeholders/placeholder-art.svg)
 *▲ 고요한 숨결이 머무는 부산근현대역사관 내부 전시 전경.*
 
 ---
@@ -40,7 +56,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 2. 원도심의 기억을 품은 생생한 아카이브
 부산의 근현대사를 관통하는 이주와 도시 생태계, 그리고 그 속에서 살아 숨 쉬던 평범한 사람들의 이야기가 고스란히 담겨 있습니다. 과거 신문 스크랩과 영상, 사진 자료들은 우리가 잊고 지냈던 원도심의 찬란했던 순간들을 되짚어 보게 만듭니다.
 
-![건축 구조물과 유리 돔](https://images.pexels.com/photos/8474270/pexels-photo-8474270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 건축 구조물과 유리 돔](/images/placeholders/placeholder-art.svg)
 *▲ 근대 건축의 구조적 아름다움을 현대적으로 재해석한 전시 공간.*
 
 ### 3. 도시 구조의 변천과 미래를 향한 시선
@@ -62,7 +78,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **위치:** 부산광역시 중구 대청로 99 1층
   - **특징:** 든든하고 바삭한 수제 돈가스로 입소문 난 맛집입니다. 남녀노소 누구나 호불호 없이 맛있게 즐길 수 있는 정갈한 한 끼를 선사합니다.
 
-![달콤한 디저트와 커피](https://www.tu.ac.kr/_attach/tongmyong/editor-image/2024/05/JErGwwuoLESDNfDwehbTmnIfhK.png)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 달콤한 디저트와 커피](/images/placeholders/placeholder-art.svg)
 *▲ 전시 나들이의 감성을 더해줄 향긋한 커피와 디저트 타임.*
 
 ---
@@ -90,7 +106,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 3. **오후 코스:** 도보로 이동 가능한 **용두산공원 부산타워**에 올라 부산항 전경 조망하기 + 추억의 책 냄새가 가득한 **보수동책방골목** 구경하기
 4. **저녁 코스:** **자갈치시장**에서 싱싱한 저녁 식사로 나들이 마무리하기!
 
-![도시의 풍경과 자연이 어우러진 부산 핫플 뷰](https://images.pexels.com/photos/19402434/pexels-photo-19402434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 도시의 풍경과 자연이 어우러진 부산 핫플 뷰](/images/placeholders/placeholder-art.svg)
 *▲ 전시와 도심 산책을 함께 즐기기 좋은 부산 중구의 아름다운 풍경.*
 
 ---

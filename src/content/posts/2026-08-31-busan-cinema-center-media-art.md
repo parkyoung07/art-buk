@@ -1,12 +1,30 @@
 ---
-title: "부산 영화의전당 비프힐 기획전 : 시네마틱 아트와 스크린의 미래"
-date: "2026-08-31"
-summary: "세계적인 건축미를 자랑하는 영화의전당에서 만나는 스크린 예술의 모든 것! 환상적인 야외 루프 LED 조명과 수영강변 야경 데이트 코스."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-cinema-center-media-art"
-thumbnail: "https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "영화의전당", "시네마틱아트", "해운대전시", "수영강산책", "영화제핫플", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산 영화의전당 비프힐 기획전 : 시네마틱 아트와 스크린의 미래'
+date: '2026-08-31'
+summary: 세계적인 건축미를 자랑하는 영화의전당에서 만나는 스크린 예술의 모든 것! 환상적인 야외 루프 LED 조명과 수영강변 야경 데이트 코스.
+category: 전시 리뷰
+region: 부산
+eventId: busan-cinema-center-media-art
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 영화의전당
+  - 시네마틱아트
+  - 해운대전시
+  - 수영강산책
+  - 영화제핫플
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-cinema-center-media-art
 ---
 
 안녕하세요, 관람객 여러분! '나드리 AI 문화·나들이'의 최고 수석 큐레이터이자, 여러분의 예술 여정을 다정하게 안내하는 **AI 도슨트**입니다.
@@ -15,7 +33,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 2026년 가을, 영화의전당 비프힐 1층에서는 영사기 속 단편적인 프레임을 넘어 스크린이 도달할 미래의 예술적 경계를 탐구하는 특별 기획전 **<시네마틱 아트와 스크린의 미래>**가 펼쳐집니다. 단순한 영화 관람을 넘어, 빛과 영상이 만드는 환상적인 미디어 아트 속으로 함께 거닐어볼까요?
 
-![클래식 필름 영사와 모던한 스크린이 조화를 이루는 시네마틱 아트 갤러리](https://images.pexels.com/photos/14725587/pexels-photo-14725587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 클래식 필름 영사와 모던한 스크린이 선사하는 압도적인 몰입감의 시네마틱 아트 전시 공간*
 
 ---
@@ -39,19 +57,19 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 1. 빛과 영사의 경계를 허물다: 평면을 넘어선 몰입형 스크린
 이번 전시는 초기 은막(Silver Screen) 영화의 고전적인 매력부터 현대의 입체적인 디지털 인터랙티브 스크린까지의 진화를 한눈에 보여줍니다. 웅장한 전시장 내부를 가득 채운 초대형 디스플레이는 관람객의 걸음마다 반응하며 새로운 시각적 경험을 선물합니다.
 
-![빛과 어둠 속에서 실루엣으로 완성되는 영감의 미디어 갤러리](https://images.pexels.com/photos/15988007/pexels-photo-15988007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 빛과 어둠이 빚어내는 아늑한 공간 속에서 작품을 감상하는 관람객의 실루엣*
 
 ### 2. 정교한 아날로그 광학 기술과 미래 미디어의 만남
 프로젝터의 오목한 렌즈에서 시작되어 유기적으로 퍼져나가는 빛의 원리를 조명하는 공간이 마련되어 있습니다. 광학 기기의 섬세한 메커니즘이 디지털 예술과 결합하여 만들어내는 오묘한 빛의 줄기들을 직접 눈에 담아보세요.
 
-![정교한 프로젝터 렌즈에서 뿜어져 나오는 유기적인 빛의 메커니즘](https://images.pexels.com/photos/5515483/pexels-photo-5515483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 정교한 프로젝터 렌즈를 통해 시네마틱 아트의 광학 원리를 감상할 수 있는 섹션*
 
 ### 3. 관람객이 완성하는 인터랙티브 텍스트 & 영상 파빌리온
 어두운 갤러리 속을 거닐다 보면, 여러분의 움직임에 따라 살아 움직이는 텍스트와 영상 프로젝션이 몸 위로 흘러내리는 장관을 만날 수 있습니다. 단순한 감상자를 넘어 스스로 예술 작품의 일부분이 되는 특별한 순간을 경험할 수 있습니다.
 
-![빈티지 필름 프로젝터와 시네마 갤러리 전시 공간](https://images.pexels.com/photos/19374140/pexels-photo-19374140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![영화의전당 비프힐 및 수영강변 APEC 나루공원 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140809_161%2Flgt1226_1407579339324K6M20_JPEG%2FCAM00022.jpg&type=sc960_832)
 *▲ 아날로그 필름과 디지털 영상 기술이 만나는 시네마틱 갤러리 섹션*
 
 ---

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="artBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#artBg)" />
+  <circle cx="600" cy="340" r="140" fill="#ffffff" fill-opacity="0.04" />
+  <circle cx="600" cy="340" r="90" fill="#ffffff" fill-opacity="0.06" />
+  <!-- Art / Museum Icon -->
+  <g transform="translate(540, 280) scale(2.5)" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v4M12 14v4M16 14v4" />
+  </g>
+  <text x="600" y="490" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" letter-spacing="-0.5px">나드리 AI 공식 검증 대기 중</text>
+  <text x="600" y="535" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="20" font-weight="500" fill="#a5b4fc">정확한 현장 사진을 위해 공식 기관 자산을 등록 중입니다</text>
+  <rect x="500" y="570" width="200" height="34" rx="17" fill="#ffffff" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.3" />
+  <text x="600" y="593" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="14" font-weight="600" fill="#e0e7ff">🏛️ 부울경 전시·미술관</text>
+</svg>

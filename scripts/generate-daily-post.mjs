@@ -1429,174 +1429,71 @@ function getSeasonInfo(dateStr) {
   }
 }
 
-// 3. 실제 해당 장소와 맥락 100% 일치 실사 매칭 파이프라인 (금고 1순위 -> 네이버+Gemini Vision 2순위 -> 테마 Fallback 3순위)
+// 3. Entity ID 기반 Verified Image Registry 매칭 파이프라인 (인터넷 검색 및 스톡 일체 차단)
 async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalUsedImages = new Set()) {
   const photos = [];
-  const localUsedUrls = new Set();
-  const season = getSeasonInfo(dateStr);
-  const slug = exhibition.slug || "";
+  const slug = exhibition.slug || exhibition.id || "";
   const region = exhibition.region || "부산";
+  const category = exhibition.category || "";
+  const themeType = exhibition.themeType || "exhibition";
   const cleanVenue = (exhibition.venueName || exhibition.location || "")
     .replace(/\s*(제?\d+[·,\-~0-9]*전시장|전관|돔하우스|석천홀|비프힐.*|미술관\s*$)/g, "")
     .split(" 및 ")[0]
     .split(" (")[0]
     .trim();
 
-  console.log(`🔒 [3단계 이미지 파이프라인 가동] 장소: ${cleanVenue} (지역: ${region}, slug: ${slug}) | 계절: ${season.name}`);
+  console.log(`🔒 [Entity ID 기반 이미지 매칭 가동] ID: ${slug} | 장소: ${cleanVenue} | 분류: ${themeType}`);
 
-  // [신뢰도 100% 절대 철칙] 100% 검증 실사 금고(Vault) 로드
-  const vaultPath = path.join(rootDir, "public/data/verified-image-vault.json");
-  let vaultData = null;
-  if (fs.existsSync(vaultPath)) {
+  // 1. Verified Image Registry 로드
+  const registryPath = path.join(rootDir, "public/data/verified-image-registry.json");
+  let registryData = null;
+  if (fs.existsSync(registryPath)) {
     try {
-      vaultData = JSON.parse(fs.readFileSync(vaultPath, "utf-8"));
-    } catch {}
-  }
-
-  // 1순위: CURATED_SAFE_PHOTOS 또는 vault 카테고리 내 등록된 1:1 고유 실사 사진 (기 검증 완료 사진)
-  const safeList = CURATED_SAFE_PHOTOS[slug] || (vaultData?.categories && (
-    vaultData.categories.museums?.[slug] ||
-    vaultData.categories.museums_and_galleries?.[slug] ||
-    vaultData.categories.libraries?.[slug] ||
-    vaultData.categories.markets?.[slug] ||
-    vaultData.categories.healing_routes?.[slug] ||
-    vaultData.categories.ai_verified_cache?.[slug]
-  ));
-
-  if (safeList && safeList.length >= 3) {
-    console.log(`✨ [1단계 금고 매칭 완료] ${slug} 전용 실사 ${safeList.length}장 즉시 배정`);
-    for (const cPhoto of safeList) {
-      if (!globalUsedImages.has(cPhoto.url)) {
-        photos.push({ url: cPhoto.url, alt: cPhoto.alt });
-        localUsedUrls.add(cPhoto.url);
-        globalUsedImages.add(cPhoto.url);
-      }
-    }
-    if (photos.length >= 3) return photos;
-  }
-
-  // 2순위: 네이버 이미지 정밀 검색 + Gemini Vision 실시간 시각 검증 파이프라인
-  console.log(`🔍 [2단계 네이버 API + Gemini Vision 실시간 검증 시작] 장소: ${cleanVenue}`);
-  const newlyVerifiedPhotos = [];
-
-  const themeQueries = [
-    {
-      role: "main",
-      query: `${region} ${cleanVenue} 전경`,
-      context: `${region} ${cleanVenue}의 대표적인 실제 외관 건물 또는 웅장한 전경 사진`,
-      fallbackAlt: `${cleanVenue} 대표 전경`
-    },
-    {
-      role: "sub",
-      query: `${cleanVenue} 내부 전시`,
-      context: `${cleanVenue}의 실제 내부 전시실, 작품, 서가, 또는 활기찬 장터 현장 사진`,
-      fallbackAlt: `${cleanVenue} 내부 및 현장 풍경`
-    },
-    {
-      role: "cafe_food",
-      query: `${cleanVenue} 인근 카페`,
-      context: `${cleanVenue} 주변의 감성 카페 인테리어, 커피, 또는 대표 맛집 음식 사진`,
-      fallbackAlt: `${cleanVenue} 주변 감성 카페 & 디저트`
-    },
-    {
-      role: "spot",
-      query: `${region} ${cleanVenue} 주변 풍경`,
-      context: `${region} ${cleanVenue} 인근의 아름다운 가을 풍경, 산책로, 또는 명소`,
-      fallbackAlt: `${cleanVenue} 인근 가을 산책 코스`
-    }
-  ];
-
-  for (const tq of themeQueries) {
-    if (photos.length >= 4) break;
-    try {
-      console.log(`  🔎 네이버 검색 중: "${tq.query}"`);
-      const candidates = await fetchNaverImages(tq.query, 6);
-      
-      let picked = false;
-      for (const cand of candidates) {
-        if (localUsedUrls.has(cand.url) || globalUsedImages.has(cand.url)) continue;
-
-        console.log(`  🔍 Gemini Vision 검증 시도: ${cand.alt.slice(0, 30)}...`);
-        const isValid = await validateImageWithGeminiVision(cand.url, tq.context);
-
-        if (isValid) {
-          const verifiedPhoto = {
-            url: cand.url,
-            alt: cand.alt || tq.fallbackAlt
-          };
-          photos.push(verifiedPhoto);
-          newlyVerifiedPhotos.push(verifiedPhoto);
-          localUsedUrls.add(cand.url);
-          globalUsedImages.add(cand.url);
-          picked = true;
-          console.log(`  ✅ [Gemini Vision 통과 및 채택]: ${cand.alt.slice(0, 25)}`);
-          break;
-        }
-      }
-
-      if (!picked) {
-        console.log(`  ℹ️ "${tq.query}" 후보 중 비전 검증 통과 사진 없음 (안전 Fallback으로 보충 예정)`);
-      }
+      registryData = JSON.parse(fs.readFileSync(registryPath, "utf-8"));
     } catch (e) {
-      console.warn(`  ⚠️ 네이버+비전 검증 단계 오류: ${e.message}`);
+      console.warn("⚠️ Verified Registry 로드 실패:", e.message);
     }
   }
 
-  // 새로 검증 통과된 고품질 사진이 있다면 금고(Vault)에 자동 영구 저장 (자가 발전)
-  if (newlyVerifiedPhotos.length > 0) {
-    saveToVault(slug, newlyVerifiedPhotos);
-  }
+  // 2. Entity ID로 Registry에서 승인된(approved) 자산만 검색
+  const approvedAssets = (registryData?.images || []).filter(img => 
+    (img.entity_id === slug || img.entity_id === exhibition.id || img.entity_name?.includes(cleanVenue)) &&
+    img.status === "approved"
+  );
 
-  // 3순위: 4장에 모자란 경우, 검증 금고(Vault)의 100% 안전 실사 Fallback 사진으로 순차 보충
-  if (photos.length < 3) {
-    console.log(`🛡️ [3단계 안전 금고 Fallback 보충] 부족한 사진을 검증된 가을 실사 세트로 안전 보충합니다.`);
-    const fb = vaultData?.generic_fallbacks || {
-      autumn_park: "https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
-      autumn_landmark: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
-      ocean_harbor: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
-      korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
-      cafe_dessert: "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      art_gallery: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      library_books: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
-    };
-
-    const isLibrary = /library|도서관|책/i.test(slug + " " + exhibition.title);
-    const isMarket = /market|시장|5day/i.test(slug + " " + exhibition.title);
-    const isNature = /healing|nature|park|산책|늪/i.test(slug + " " + exhibition.title);
-
-    const fallbacks = isLibrary ? [
-      { url: fb.library_books, alt: `${cleanVenue} 웅장한 중앙 서가와 열람 공간` },
-      { url: fb.cafe_dessert, alt: `${cleanVenue} 주변 감성 북카페 & 커피 디저트` },
-      { url: fb.autumn_reeds, alt: `${cleanVenue} 인근 가을 억새 산책로` }
-    ] : isMarket ? [
-      { url: fb.ocean_harbor, alt: `${cleanVenue} 활기 넘치는 전통 장터 풍경` },
-      { url: fb.korean_food, alt: `${cleanVenue} 명물 따끈한 전통 미식 한 상` },
-      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 카페 쉼터` },
-      { url: fb.autumn_landmark, alt: `${cleanVenue} 주변 가을 명소 정취` }
-    ] : isNature ? [
-      { url: fb.autumn_reeds, alt: `${cleanVenue} 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경` },
-      { url: fb.autumn_trail, alt: `${cleanVenue} 고즈넉한 가을 힐링 숲길 산책로` },
-      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 통창 뷰 로컬 힐링 카페` },
-      { url: fb.autumn_landmark, alt: `${cleanVenue} 가을빛으로 물든 주변 명소` }
-    ] : [
-      { url: fb.art_gallery, alt: `${cleanVenue} 가을 기획전시 및 현대미술 공간` },
-      { url: fb.cafe_dessert, alt: `${cleanVenue} 인근 감성 스페셜티 카페` },
-      { url: fb.autumn_park, alt: `${cleanVenue} 주변 고즈넉한 가을 산책 코스` }
-    ];
-
-    for (const fbPhoto of fallbacks) {
-      if (!localUsedUrls.has(fbPhoto.url)) {
-        photos.push(fbPhoto);
-        localUsedUrls.add(fbPhoto.url);
-        globalUsedImages.add(fbPhoto.url);
-        if (photos.length >= 4) break;
-      }
+  for (const asset of approvedAssets) {
+    if (!globalUsedImages.has(asset.image_url)) {
+      photos.push({
+        url: asset.image_url,
+        alt: asset.original_title || `${cleanVenue} 현장 실사`
+      });
+      globalUsedImages.add(asset.image_url);
+      if (photos.length >= 3) break; // 최대 3장까지만 사용
     }
   }
 
-  console.log(`✅ [100% 무결성 검증 통과] 총 ${photos.length}장의 실사 배정 완료`);
+  // 3. 검증 자산 부족 시 공식 Placeholder 정책 (억지 4장 채우기 금지)
+  if (photos.length === 0) {
+    let placeholderUrl = "/images/placeholders/placeholder-default.svg";
+    if (themeType === "market" || category.includes("시장") || slug.startsWith("market-")) {
+      placeholderUrl = "/images/placeholders/placeholder-market.svg";
+    } else if (themeType === "library" || category.includes("도서관") || slug.startsWith("library-")) {
+      placeholderUrl = "/images/placeholders/placeholder-library.svg";
+    } else if (themeType === "healing" || category.includes("자연") || category.includes("힐링")) {
+      placeholderUrl = "/images/placeholders/placeholder-nature.svg";
+    } else if (themeType === "gallery" || category.includes("전시") || category.includes("미술관") || slug.startsWith("busan-") || slug.startsWith("ulsan-") || slug.startsWith("gyeongnam-")) {
+      placeholderUrl = "/images/placeholders/placeholder-art.svg";
+    }
+
+    photos.push({
+      url: placeholderUrl,
+      alt: `나드리 AI 공식 검증 대기 중 - ${cleanVenue}`
+    });
+    console.log(`ℹ️ [공식 Placeholder 배정] 승인된 실사가 없어 브랜드 공식 placeholder를 배정합니다: ${placeholderUrl}`);
+  } else {
+    console.log(`✅ [검증 자산 배정 완료] 승인된 고유 실사 ${photos.length}장 배정 (최대 3장 준수)`);
+  }
+
   return photos;
 }
 
@@ -1638,66 +1535,72 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
   let roleTitle = "최고 수석 큐레이터이자 다정하고 박학다식한 **AI 도슨트**";
   let contentGuide = "";
 
+  // 사진 배치 가이드라인 (실제 제공된 사진 개수만 정직하게 배치)
+  const photoSnippets = photos.map((p, idx) => `![${p.alt}](${p.url})\n*▲ ${p.alt}*`);
+  const mainPhotoMd = photoSnippets[0] || "";
+  const subPhoto1Md = photoSnippets[1] ? `\n\n${photoSnippets[1]}` : "";
+  const subPhoto2Md = photoSnippets[2] ? `\n\n${photoSnippets[2]}` : "";
+
   if (themeType === "market") {
     roleTitle = "부울경 정겨운 오일장과 골목 미식을 꿰뚫고 있는 **전통시장 전문 로컬 큐레이터**";
     contentGuide = `
 - **도입부**: 장날의 설렘과 북적이는 활기, 계절의 싱그러운 공기를 전하는 친근하고 따뜻한 인사
-- **첫 번째 대표 시장 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **대표 사진**: ${mainPhotoMd}
 - **📋 시장 핵심 정보 한눈에 보기**: 마크다운 표 형식 (시장명, 장날/운영일, 위치, 대표 품목, 주차, 편의시설 등)
-- **🔥 오일장에서 절대 놓칠 수 없는 대표 먹거리 TOP 3**: 장터 국밥, 손칼국수, 즉석 튀김, 제철 수산물/산나물 등 군침 도는 생생한 묘사. 중간에 두 번째 현장 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
-- **☕ 시장 옆 감성 카페 & 디저트 쉼표**: 네이버 검색 데이터에 있는 인근 카페/맛집 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
+- **🔥 오일장에서 절대 놓칠 수 없는 대표 먹거리 TOP 3**: 장터 국밥, 손칼국수, 즉석 튀김, 제철 수산물/산나물 등 군침 도는 생생한 묘사.${subPhoto1Md ? ` 중간에 현장 사진(${subPhoto1Md}) 배치.` : ''}
+- **☕ 시장 옆 감성 카페 & 디저트 쉼표**: 네이버 검색 데이터에 있는 인근 카페/맛집 소개.${subPhoto2Md ? ` 중간에 사진(${subPhoto2Md}) 배치.` : ''}
 - **🧺 장바구니 가득! 추천 로컬 특산물 & 온누리상품권 꿀팁**: 장터 알뜰 쇼핑 팁.
-- **🎡 시장 보고 들르기 좋은 주변 명소 & 나들이 코스**: 네이버 볼거리 및 주변 관광지 연계. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **🎡 시장 보고 들르기 좋은 주변 명소 & 나들이 코스**: 네이버 볼거리 및 주변 관광지 연계.
 - **💡 알뜰 방문 & 주차 꿀팁**: 주차장 위치, 현금/상품권 결제 팁, 장날 피크 시간대.
 - **따뜻한 마무리 멘트**: 주말 가족, 연인과 함께 떠나는 정겨운 장터 나들이 초대.`;
   } else if (themeType === "library") {
     roleTitle = "책과 쉼, 공간의 미학을 전하는 **북캉스 & 문화공간 전문 큐레이터**";
     contentGuide = `
-- **도입부**: 은은한 종이 향기와 사색의 여유, 가을의 정취를 담은 감성적이고 지적인 인사
-- **첫 번째 대표 도서관 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **도입부**: 은은한 종이 향기와 사색의 여유, 계절의 정취를 담은 감성적이고 지적인 인사
+- **대표 사진**: ${mainPhotoMd}
 - **📋 도서관 핵심 정보 한눈에 보기**: 마크다운 표 형식 (도서관명, 이용시간, 휴관일, 위치, 특화 분야, 주차 등)
-- **✨ 이 도서관만의 특별한 공간 매력 TOP 3**: 웅장한 서가 뷰, 통창 뷰, 미디어아트, 건축적 미학 등 세부 소개. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
+- **✨ 이 도서관만의 특별한 공간 매력 TOP 3**: 웅장한 서가 뷰, 통창 뷰, 미디어아트, 건축적 미학 등 세부 소개.${subPhoto1Md ? ` 중간에 사진(${subPhoto1Md}) 배치.` : ''}
 - **👶 아이와 함께! 유아·어린이 특화 북플레이존 꿀팁**: 가족 단위 방문객을 위한 편의시설과 추천 도서 코너.
-- **☕ 책 읽다 들르기 좋은 도서관 안팎 감성 카페 & 브런치**: 네이버 검색 기반 인근 맛집/카페 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
-- **🌿 도서관 산책로 & 함께 걷기 좋은 주변 힐링 스팟**: 주변 공원, 숲길, 문화공간 연계. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **☕ 책 읽다 들르기 좋은 도서관 안팎 감성 카페 & 브런치**: 네이버 검색 기반 인근 맛집/카페 소개.${subPhoto2Md ? ` 중간에 사진(${subPhoto2Md}) 배치.` : ''}
+- **🌿 도서관 산책로 & 함께 걷기 좋은 주변 힐링 스팟**: 주변 공원, 숲길, 문화공간 연계.
 - **💡 이용 꿀팁 & 주차 안내**: 회원가입/열람 팁, 대출 권수, 주차 팁.
 - **따뜻한 마무리 멘트**: 복잡한 일상을 벗어나 책 한 권과 함께하는 주말의 여유 권유.`;
   } else if (themeType === "healing") {
     roleTitle = "계절의 숨결과 로컬 힐링로드를 안내하는 **자연 감성 여행 도슨트**";
     contentGuide = `
 - **도입부**: 코끝을 스치는 바람과 계절의 색채, 지친 마음에 쉼표를 찍어주는 서정적 인사
-- **첫 번째 대표 힐링로드 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **대표 사진**: ${mainPhotoMd}
 - **📋 힐링 여행지 핵심 정보 한눈에 보기**: 마크다운 표 형식 (명소명, 위치, 개방시간, 코스 난이도, 입장료, 주차 등)
-- **📸 가을 낭만 가득! 인생샷 & 힐링 포인트 TOP 3**: 감성 포토존, 물안개/노을 조망점, 자연 산책길 묘사. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
-- **🍽️ 금강산도 식후경! 힐링로드 주변 로컬 맛집 & 뷰맛집 카페**: 네이버 검색 기반 현지 맛집과 전망 좋은 카페 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
-- **🚗 당일치기 완성! 추천 드라이브 & 연계 코스**: 주변 명소들을 엮은 완벽한 당일치기 일정. 네 번째 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **📸 계절 낭만 가득! 인생샷 & 힐링 포인트 TOP 3**: 감성 포토존, 물안개/노을 조망점, 자연 산책길 묘사.${subPhoto1Md ? ` 중간에 사진(${subPhoto1Md}) 배치.` : ''}
+- **🍽️ 금강산도 식후경! 힐링로드 주변 로컬 맛집 & 뷰맛집 카페**: 네이버 검색 기반 현지 맛집과 전망 좋은 카페 소개.${subPhoto2Md ? ` 중간에 사진(${subPhoto2Md}) 배치.` : ''}
+- **🚗 당일치기 완성! 추천 드라이브 & 연계 코스**: 주변 명소들을 엮은 완벽한 당일치기 일정.
 - **💡 감성 나들이 꿀팁**: 걷기 편한 복장, 최적의 방문 시간대(일출/일몰), 주차 팁.
 - **따뜻한 마무리 멘트**: 소중한 사람과 함께 걸으며 마음을 채우는 힐링 여정 제안.`;
   } else if (themeType === "gallery") {
     roleTitle = "숨겨진 예술적 영감과 공간의 결을 읽어주는 **아트 스페이스 전문 디렉터**";
     contentGuide = `
 - **도입부**: 골목길 속 숨겨진 예술의 향기와 트렌디한 공간의 미학을 전하는 세련된 인사
-- **첫 번째 대표 갤러리 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **대표 사진**: ${mainPhotoMd}
 - **📋 갤러리 핵심 정보 한눈에 보기**: 마크다운 표 형식 (공간명, 위치, 관람시간, 휴관일, 입장료, 주차 등)
-- **🎨 이 공간이 선사하는 영감 포인트 TOP 3**: 건축 디자인, 기획전 콘셉트, 개성 넘치는 전시 작품 해설. 중간에 두 번째 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
-- **☕ 예술과 커피의 만남! 아트 카페 & 로컬 핫플레이스**: 갤러리 내/인근 스페셜티 카페와 디저트 맛집 소개, 세 번째 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치.
-- **🚶 예술 골목 투어 & 주변 힙플레이스 연계 코스**: 네이버 볼거리 및 편집숍/소품샵/산책로 연계. 네 번째 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치.
+- **🎨 이 공간이 선사하는 영감 포인트 TOP 3**: 건축 디자인, 기획전 콘셉트, 개성 넘치는 전시 작품 해설.${subPhoto1Md ? ` 중간에 사진(${subPhoto1Md}) 배치.` : ''}
+- **☕ 예술과 커피의 만남! 아트 카페 & 로컬 핫플레이스**: 갤러리 내/인근 스페셜티 카페와 디저트 맛집 소개.${subPhoto2Md ? ` 중간에 사진(${subPhoto2Md}) 배치.` : ''}
+- **🚶 예술 골목 투어 & 주변 힙플레이스 연계 코스**: 네이버 볼거리 및 편집숍/소품샵/산책로 연계.
 - **💡 방문 & 감상 꿀팁**: 전시 관람 매너, 도슨트 프로그램, 주차 및 대중교통 팁.
 - **따뜻한 마무리 멘트**: 일상에 신선한 감각을 불어넣는 예술 나들이 초대.`;
   } else {
     // 기존 정통 전시 모드
     contentGuide = `
 - **도입부**: 'AI 도슨트'의 다정한 인사와 계절감, 전시장소의 분위기 소개
-- **첫 번째 대표 전시 사진**: ![설명](${photos[0]?.url || ''}) 및 사진 캡션(*▲ 사진 설명*)
+- **대표 전시 사진**: ${mainPhotoMd}
 - **📋 전시 핵심 정보 한눈에 보기**: 마크다운 표 형식 (전시명, 기간, 장소, 관람시간, 휴관일, 관람료, 문의 등)
-- **🌟 놓칠 수 없는 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 도슨트 해설. 중간에 두 번째 전시 사진(![설명](${photos[1]?.url || photos[0]?.url})) 배치.
-- **🍽️ 전시장 주변 핫플레이스 맛집 & 감성 카페 BEST**: 네이버 검색 데이터에 있는 실제 맛집/카페 상호명과 특징을 소개하고, 세 번째 감성 카페/미식 사진(![설명](${photos[2]?.url || photos[0]?.url})) 배치!
-- **🧺 미술관 옆 정겨운 전통시장 & 5일장 장터 나들이**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 전통 재래시장 및 5일장 장날 정보, 대표 장터 먹거리와 연계 힐링 코스 소개!
-- **📚 아이와 함께! 미술관 옆 도서관 & 쌈지 작은도서관 쉼표**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 복합문화도서관이나 감성 작은도서관, 북플레이존과 가족 힐링 포인트 소개!
-- **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성. 네 번째 주변 풍경 사진(![설명](${photos[3]?.url || photos[photos.length - 1]?.url})) 배치!
-- **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내.
-- **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트.
-- **🏷️ 부울경 나들이 추천 태그 & SNS 해시태그**: 글 맨 마지막에 독자 복사 및 인스타그램/블로그 공유용 #해시태그 10개 이상(#${exhibition.region}전시 #${exhibition.region}가볼만한곳 #주말나들이 #가을나들이 #아이와함께 #데이트코스 #나드리AI 등)을 가로로 정갈하게 나열할 것.`;
+- **🌟 놓칠 수 없는 관람 포인트 TOP 3**: 세부 소제목(### 1, ### 2, ### 3)과 흥미진진한 도슨트 해설.${subPhoto1Md ? ` 중간에 전시 사진(${subPhoto1Md}) 배치.` : ''}
+- **🍽️ 전시장 주변 핫플레이스 맛집 & 감성 카페 BEST**: 네이버 검색 데이터에 있는 실제 맛집/카페 상호명과 특징 소개.${subPhoto2Md ? ` 중간에 사진(${subPhoto2Md}) 배치.` : ''}
+- **🧺 미술관 옆 정겨운 전통시장 & 5일장 장터 나들이**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 전통 재래시장 및 5일장 장날 정보, 대표 장터 먹거리 소개
+- **📚 아이와 함께! 미술관 옆 도서관 쉼표**: ${exhibition.region} ${exhibition.subRegion || ''} 인근의 대표 복합문화도서관 소개
+- **🎡 함께 즐기는 주변 볼거리 & 핫플 투어 코스**: 네이버 볼거리 데이터 및 주변 명소를 엮어 알찬 당일치기/반나절 나들이 코스 구성
+- **🎉 함께 둘러보기 좋은 인근 문화 행사 & 축제**: 네이버 행사/축제 데이터를 소개하며 풍성한 볼거리 안내
+- **💡 AI 도슨트의 관람 & 주차 꿀팁**: 주차 정보, 가장 쾌적한 방문 시간대, 사진 촬영 포인트
+- **🏷️ 부울경 나들이 추천 태그 & SNS 해시태그**: 글 맨 마지막에 독자 복사 및 인스타그램/블로그 공유용 #해시태그 10개 이상을 가로로 정갈하게 나열할 것.`;
   }
 
   // 🏷️ 회장님 지시 사항 반영: 머리말(Frontmatter) 및 SNS용 황금 해시태그 대폭 확장 (12~16개)

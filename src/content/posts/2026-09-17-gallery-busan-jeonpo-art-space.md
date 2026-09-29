@@ -1,19 +1,37 @@
 ---
-title: "서면 전포 카페거리 아트ส페이스 : 골목 속 숨은 독립 갤러리와 문화살롱"
-date: "2026-09-17"
-summary: "트렌디한 전포동 카페골목 사이 숨겨진 감각적인 독립 갤러리! 개성 넘치는 청년 작가들의 작품과 스페셜티 커피를 함께 즐기는 도심 속 예술 쉼터."
-category: "감성 갤러리"
-region: "부산"
-eventId: "gallery-busan-jeonpo-art-space"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F021%2F2008%2F12%2F13%2F2008121301031230048003_b.jpg"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산갤러리", "전포카페거리", "서면핫플", "독립예술", "아트ส페이스", "부산주말데이트", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이"]
+title: '서면 전포 카페거리 아트ส페이스 : 골목 속 숨은 독립 갤러리와 문화살롱'
+date: '2026-09-17'
+summary: >-
+  트렌디한 전포동 카페골목 사이 숨겨진 감각적인 독립 갤러리! 개성 넘치는 청년 작가들의 작품과 스페셜티 커피를 함께 즐기는 도심 속 예술
+  쉼터.
+category: 감성 갤러리
+region: 부산
+eventId: gallery-busan-jeonpo-art-space
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산갤러리
+  - 전포카페거리
+  - 서면핫플
+  - 독립예술
+  - 아트ส페이스
+  - 부산주말데이트
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산전시
+  - 부울경전시
+  - 미술관나들이
 ---
 
 안녕하세요, 부울경의 숨겨진 예술적 영감과 공간의 결을 읽어주는 아트 스페이스 전문 디렉터입니다. 
 
 화창한 가을바람이 전포동의 좁은 골목길 사이로 스며드는 요즘, 발걸음 닿는 곳마다 트렌디한 감각이 피어나는 서면 전포 카페거리로 여러분을 초대합니다. 수많은 카페와 개성 있는 숍들이 즐비한 이 핫플레이스 속에서, 무심코 지나치기 쉬운 골목의 정취를 따라가다 보면 마음속 깊은 곳에 잔잔한 파동을 일으키는 특별한 독립 갤러리를 만나게 됩니다. 이번 주말, 복잡한 일상을 잠시 내려놓고 예술의 향기와 커피 한 잔의 여유가 공존하는 도심 속 문화살롱으로 훌쩍 떠나보는 건 어떨까요?
 
-![전포 아트ส페이스 & 복합문화공간 가을 전경 및 전시 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F021%2F2008%2F12%2F13%2F2008121301031230048003_b.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 전포 아트ส페이스 & 복합문화공간 가을 전경 및 전시 공간](/images/placeholders/placeholder-art.svg)
 *▲ 전포동의 감성적인 풍경 속에 녹아든 독립 갤러리 '전포 아트스페이스' 전경*
 
 ---
@@ -42,7 +60,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산갤�
 **3. 오감으로 체화하는 문화살롱의 매력**
 단순히 눈으로 보고 지나치는 공간을 넘어, 작가와의 대화나 소규모 워크숍 등 로컬 문화 예술 커뮤니티의 거점 역할을 톡톡히 해냅니다. 예술이 삶의 영역으로 자연스럽게 스며드는 순간을 만끽할 수 있습니다.
 
-![전포사잇길 감성카페의 아름다운 가을 실제 풍경](https://pup-post-phinf.pstatic.net/MjAyNjA5MDhfMjgx/MDAxNzg4Nzk2MzcxNDk4.NzuYausVkUhc79Jkj-4wXRv4GRriXIMQW1xwQ6E_hhUg.0uLtTYf4wKt4ASYSCfR6FGS19cyKBDhGBzMSbq0St_8g.JPEG/POST_IMAGE_ENC_20260908_005230_235.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 전포사잇길 감성카페의 아름다운 가을 실제 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 가을 햇살이 내려앉은 전포사잇길 골목의 정취와 트렌디한 무드*
 
 ---
@@ -51,7 +69,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산갤�
 
 예술적 감흥을 온전히 소화하고 나면, 전포 카페거리만의 자랑인 스페셜티 커피와 디저트를 즐길 차례입니다. 갤러리 인근에는 감각적인 인테리어와 개성 넘치는 원두를 선보이는 로컬 카페들이 즐비해 있습니다. 
 
-![전포 아트ส페이스 & 복합문화공간 맛집 카페 대표 미식 & 감성 공간](https://formeqly4682.edge.naverncp.com/service/167203278_7957abd2e229fb3002496cd0a77b4a9f.jpg?type=m&w=900&h=900&autorotate=true&quality=90)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 전포 아트ส페이스 & 복합문화공간 맛집 카페 대표 미식 & 감성 공간](/images/placeholders/placeholder-art.svg)
 *▲ 향긋한 커피 향과 여유가 머무는 전포동 감성 카페의 미식 공간*
 
 - **전포 카페거리 스페셜티 로스터리**: 고소한 넛내음과 풍부한 산미가 조화로운 핸드드립 커피를 마시며, 방금 전 관람한 전시의 여운을 차분히 노트에 기록해 보기에 더없이 좋은 공간입니다.
@@ -66,7 +84,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산갤�
 - **스페이스 별일**: 전포동을 사랑하는 이들이라면 꼭 들러봐야 할 대표적인 인근 복합문화공간입니다. 독창적인 독립 출판물과 소소한 예술 굿즈, 작가들의 개성 있는 소품들을 구경하는 재미가 쏠쏠합니다.
 - **전포사잇길 & 만취골목 산책**: 낮에는 따스한 햇살 아래 아기자기한 편집숍과 공방들을 구경하고, 해 질 무렵에는 고즈넉한 가을 정취가 물씬 풍기는 골목길을 걸으며 서면의 다채로운 매력을 발견해 보세요.
 
-![서면 만취골목 고즈넉한 가을 정취](https://pup-post-phinf.pstatic.net/MjAyNjAyMjhfMjEy/MDAxNzcyMjY4Njc0MzU5.b87VIbdzu5aHC4-WRilFB_FdUUB_GQsoI0RT27Nv03Qg.FbCxARiPA8o16gWguzJApL1744VWB0V1AjNyNuCSu0kg.JPEG/POST_IMAGE_ENCODING_20260228_175112_935.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 서면 만취골목 고즈넉한 가을 정취](/images/placeholders/placeholder-art.svg)
 *▲ 가을의 깊이를 더해가는 서면 골목길의 고즈넉하고 감각적인 풍경*
 
 ---

@@ -18,15 +18,14 @@ tags:
   - 가을나들이
 region: 경남
 eventId: namhae-wind-trace-museum
-thumbnail: >-
-  https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+thumbnail: /images/placeholders/placeholder-art.svg
 ---
 
 안녕하세요, 부울경 독자 여러분! 일상에 기분 좋은 바람이 스며드는 계절, 가을이 찾아왔습니다. 이번 주말, 머리를 맑게 채워줄 예술적 낭만과 쪽빛 바다의 설렘을 동시에 안겨드릴 특별한 나들이 코스를 준비했습니다. 
 
 오늘 제가 소개해 드릴 곳은 경남 남해군의 푸른 산과 호수가 맞닿은 언덕 위에 자리한 **남해 바람흔적미술관**입니다. 수십 개의 붉은 바람개비가 가을바람에 맞춰 일제히 돌아가는 동화 같은 풍경 속으로 저와 함께 떠나보실까요?
 
-![남해 바람흔적 가을 기획전시 및 야외 조각 공간](https://images.pexels.com/photos/29673604/pexels-photo-29673604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 남해 바람흔적 가을 기획전시 및 야외 조각 공간](/images/placeholders/placeholder-art.svg)
 *▲ 남해 바람흔적미술관 전경. 붉은 바람개비와 자연이 어우러진 감성적인 무인 미술관의 풍경입니다.*
 
 ---
@@ -56,7 +55,7 @@ thumbnail: >-
 ### 3. 발길 닿는 곳마다 인생샷! 감성 포토존
 미술관 주변을 에워싼 붉은 바람개비 동산과 호수 주변은 어떻게 찍어도 작품이 되는 환상적인 포토존입니다. 가을 햇살이 부서지는 오후 시간대에 방문하시면 가장 아름다운 인생 샷을 건지실 수 있습니다.
 
-![남해 독일마을 인근 감성 카페 테라스](https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 남해 독일마을 인근 감성 카페 테라스](/images/placeholders/placeholder-art.svg)
 *▲ 미술관 관람 후 따스한 차 한 잔의 여유를 즐길 수 있는 주변 인근 감성 공간 풍경.*
 
 ---
@@ -86,7 +85,7 @@ thumbnail: >-
 * **남해 독일마을 (연계 투어 추천):**
   미술관에서 차로 멀지 않은 거리에 위치한 남해 독일마을은 이국적인 주택들과 푸른 바다가 어우러져 마치 유럽의 어느 소도시를 여행하는 듯한 착각을 불러일으킵니다. 수제 소시지와 시원한 맥주(또는 에이드), 그리고 풍경을 즐기며 완벽한 주말 나들이를 마무리해 보세요.
 
-![남해 쪽빛 바다와 가을 숲길 풍경](https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 남해 쪽빛 바다와 가을 숲길 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 남해의 가을 정취를 만끽하며 걷기 좋은 주변 풍경.*
 
 ---

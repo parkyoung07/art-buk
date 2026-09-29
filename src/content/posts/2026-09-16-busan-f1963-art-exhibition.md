@@ -1,12 +1,30 @@
 ---
-title: "F1963 현대미술 특별전 : 재생과 창조의 숲"
-date: "2026-09-16"
-summary: "옛 와이어 공장을 리노베이션한 복합문화공간 F1963의 가을 특별전! 소리길 대나무숲 산책과 테라로사 커피 나들이."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-f1963-art-exhibition"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5172%2F2019%2F01%2F03%2F0000512094_001_20190103000854439.jpg"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "F1963", "망미단길", "복합문화공간", "대나무숲", "부산데이트", "부산가볼만한곳", "부산나들이", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳"]
+title: 'F1963 현대미술 특별전 : 재생과 창조의 숲'
+date: '2026-09-16'
+summary: 옛 와이어 공장을 리노베이션한 복합문화공간 F1963의 가을 특별전! 소리길 대나무숲 산책과 테라로사 커피 나들이.
+category: 전시 리뷰
+region: 부산
+eventId: busan-f1963-art-exhibition
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - F1963
+  - 망미단길
+  - 복합문화공간
+  - 대나무숲
+  - 부산데이트
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+venueId: busan-f1963-art-exhibition
 ---
 
 안녕하세요, 관람객 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
@@ -15,7 +33,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 지친 일상을 벗어나 예술의 향기 속으로 저와 함께 떠나보실까요?
 
-![F1963 석천홀 가을 전경 및 전시 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5172%2F2019%2F01%2F03%2F0000512094_001_20190103000854439.jpg)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ F1963 석천홀 가을 전경 및 전시 공간*
 
 ---
@@ -45,7 +63,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### ### 3. 예술과 산책의 완벽한 하모니, F1963 소리길
 전시 관람의 여운을 깊게 간직하며 거닐 수 있는 F1963의 명물, 대나무 '소리길'을 놓치지 마세요. 사락사락 부딪히는 대나무 잎 소리를 들으며 걷다 보면, 복잡했던 머릿속이 맑게 비워지는 치유의 시간을 경험하실 수 있습니다.
 
-![F1963 대나무 소리길의 아름다운 가을 실제 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5041%2F2020%2F09%2F26%2F0000620127_001_20200926182536107.jpg)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ F1963 대나무 소리길의 아름다운 가을 실제 풍경*
 
 ---
@@ -61,7 +79,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **위치:** F1963 단지 내
   - **특징:** 옛 공장의 웅장한 틀을 그대로 살린 국내 최대 규모 수준의 복합 카페 공간입니다. 향긋한 핸드드립 커피와 달콤한 레몬케이크, 까눌레를 곁들이며 창밖의 가을 풍경을 감상하는 시간은 그야말로 힐링 그 자체입니다.
 
-![담잔느 대표 미식 & 감성 공간](https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/28/48/21/caption.jpg?w=1100&h=1100&s=1)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 담잔느 대표 미식 & 감성 공간*
 
 ---
@@ -91,7 +109,7 @@ F1963 일대를 중심으로 완벽한 반나절 투어 코스를 짜드립니�
 3. **오후 코스:** 석천홀로 이동해 **<F1963 현대미술 특별전 : 재생과 창조의 숲>** 관람 및 대나무 소리길 산책
 4. **마무리 코스:** F1963 내 '테라로사'에서 향긋한 커피와 함께 전시 소감 나누기
 
-![테라로사 수영점 고즈넉한 가을 정취](https://d2uja84sd90jmv.cloudfront.net/posts/GRlmMg9hUsf7-u3_W8QKyg/ms.jpg?updated=-62167392000)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 테라로사 수영점 고즈넉한 가을 정취*
 
 ---

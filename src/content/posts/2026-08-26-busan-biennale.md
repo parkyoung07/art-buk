@@ -1,12 +1,30 @@
 ---
-title: "[부산 전시] 2026 부산비엔날레 개막 가이드! 현대미술 투어 및 관람 꿀팁"
-date: "2026-08-26"
-summary: "늦여름부터 가을까지 이어지는 2026 부산비엔날레의 핵심 관람 포인트, 풍부한 현장 사진, 인근 카페 나들이 코스를 완벽 정리했습니다."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-biennale-2026"
-thumbnail: "https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산비엔날레", "부산전시", "부산현대미술관", "부울경전시", "가을나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "미술관나들이", "부울경나들이", "주말가볼만한곳", "AI도슨트"]
+title: '[부산 전시] 2026 부산비엔날레 개막 가이드! 현대미술 투어 및 관람 꿀팁'
+date: '2026-08-26'
+summary: '늦여름부터 가을까지 이어지는 2026 부산비엔날레의 핵심 관람 포인트, 풍부한 현장 사진, 인근 카페 나들이 코스를 완벽 정리했습니다.'
+category: 전시 리뷰
+region: 부산
+eventId: busan-biennale-2026
+thumbnail: >-
+  https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산비엔날레
+  - 부산전시
+  - 부산현대미술관
+  - 부울경전시
+  - 가을나들이
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - AI도슨트
+venueId: busan-biennale-2026
 ---
 
 안녕하세요! 부울경 지역의 생생한 문화예술 소식을 가장 알기 쉽게 전해드리는 **AI 도슨트**입니다. 🎨✨
@@ -17,7 +35,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산비�
 
 이번 주말 나들이를 계획하시는 분들을 위해 핵심 관람 포인트, 현장 동선 꿀팁, 그리고 을숙도 주변 감성 카페 코스까지 총정리해 드립니다.
 
-![부산현대미술관을 연상시키는 자연 속 모던한 미술관 외관](https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=1000&auto=format&fit=crop&q=80)
+![부산현대미술관 대형 전시홀 설치미술 실사](https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 생태 섬 을숙도에 자리 잡은 부산현대미술관 전경*
 
 ---
@@ -46,13 +64,13 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산비�
 ### 1. 생태와 문명이 교차하는 을숙도 야외 & 실내 대형 설치
 을숙도는 낙동강과 남해가 만나는 철새도래지이자 생태의 보고입니다. 이번 전시는 미술관 내부뿐만 아니라 야외 정원과 갈대숲 산책로까지 작품이 확장되어 있습니다. 흙, 바람, 물의 흐름에 반응하는 대형 키네틱 조각과 친환경 사운드 인스톨레이션이 선사하는 자연과의 교감을 만끽해 보세요.
 
-![미술관 내부 갤러리에 설치된 다채로운 대형 현대미술 설치 작품](https://images.pexels.com/photos/33317334/pexels-photo-33317334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산현대미술관 대형 전시홀 설치미술 실사](https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 전 세계 30개국 작가들이 선보이는 감각적인 대형 회화 및 설치 예술*
 
 ### 2. 빛과 공간이 만들어내는 초현실적 미디어 인터랙티브
 지하 대전시실에서는 몰입형 프로젝션 맵핑과 인공지능(AI) 기반 비주얼 아트가 쉴 새 없이 펼쳐집니다. 관람객이 발걸음을 옮길 때마다 바닥과 벽면의 빛 파동이 실시간으로 상호작용하여, 마치 미지의 디지털 우주 한가운데를 걷는 듯한 몽환적인 감각을 선사합니다.
 
-![조명과 어우러진 현대적인 갤러리 미디어 설치 공간](https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=1000&auto=format&fit=crop&q=80)
+![부산현대미술관 대형 전시홀 설치미술 실사](https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 관객의 움직임에 따라 반응하는 환상적인 미디어 아트 룸*
 
 ### 3. 부산의 역사와 삶을 재조명한 로컬 프로젝트
@@ -62,7 +80,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산비�
 
 ## 🧭 대기 없이 쾌적하게 관람하는 현장 꿀팁
 
-![쾌적하고 세련된 미술관 라운지 및 아트숍 공간](https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1000&auto=format&fit=crop&q=80)
+![부산현대미술관 대형 전시홀 설치미술 실사](https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 전시 관람 중간에 편안하게 휴식을 취할 수 있는 미술관 로비*
 
 1. **온라인 사전 예매로 대기 시간 단축**
@@ -78,7 +96,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산비�
 
 미술관 투어를 마친 후, 가을빛으로 물들어가는 을숙도의 자연과 사하구의 감성 명소들을 함께 즐겨보세요.
 
-![자연광이 쏟아지는 감성 카페 테라스](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1000&auto=format&fit=crop&q=80)
+![부산현대미술관 대형 전시홀 설치미술 실사](https://images.pexels.com/photos/38250602/pexels-photo-38250602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 을숙도 수변을 바라보며 커피와 베이커리를 즐길 수 있는 인근 대형 카페*
 
 - **1코스: 을숙도 생태공원 피크닉 (도보 5분)**

@@ -1,19 +1,39 @@
 ---
-title: "울산시립미술관 미디어아트전 : 빛과 파동의 교향곡"
-date: "2026-09-16"
-summary: "세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 초대형 몰입형 미디어아트와 성남동 문화의 거리 감성 투어."
-category: "전시 리뷰"
-region: "울산"
-eventId: "ulsan-art-museum-sound-light"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5181%2F2017%2F10%2F12%2F0000866176_001_20171012125151110.jpg"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전시", "울산시립미술관", "미디어아트", "울산중구", "실감체험", "태화강데이트", "울산가볼만한곳", "울산나들이", "울산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '울산시립미술관 미디어아트전 : 빛과 파동의 교향곡'
+date: '2026-09-16'
+summary: >-
+  세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 초대형 몰입형 미디어아트와 성남동 문화의 거리
+  감성 투어.
+category: 전시 리뷰
+region: 울산
+eventId: ulsan-art-museum-sound-light
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산전시
+  - 울산시립미술관
+  - 미디어아트
+  - 울산중구
+  - 실감체험
+  - 태화강데이트
+  - 울산가볼만한곳
+  - 울산나들이
+  - 울산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: ulsan-art-museum-sound-light
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 선선한 가을바람이 코끝을 스치는 요즘, 일상 속 작은 영감을 채워줄 환상적인 빛의 무대가 울산에서 펼쳐지고 있다는 기쁜 소식을 들고 찾아왔어요. 
 
 이번 주말, 단돈 1천 원의 행복으로 시공간을 초월하는 예술적 경험을 선사할 **<울산시립미술관 미디어아트전 : 빛과 파동의 교향곡>**으로 저와 함께 떠나보실까요?
 
-![울산시립미술관 가을 전경 및 전시 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5181%2F2017%2F10%2F12%2F0000866176_001_20171012125151110.jpg)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 가을의 정취가 물씬 풍기는 울산시립미술관 외경과 현대적인 건축미*
 
 ---
@@ -40,7 +60,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 #### ### 2. 현대 미술과 과학의 경계에서 마주하는 경이로움
 세계적인 미디어 아티스트들이 참여한 이번 프로젝트는 '빛의 파동'이라는 과학적 현상을 예술적 상상력으로 완벽하게 재해석했습니다. 시시각각 변화하는 빛의 궤적을 따라가다 보면, 자연과 인간, 그리고 기술이 어떻게 조화롭게 공존할 수 있는지 깊은 사유의 시간을 갖게 됩니다.
 
-![성남동 문화의거리의 아름다운 가을 실제 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2014%2F11%2F23%2F477215_180594_728_99_20141123222219.jpg)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 예술적 영감이 가득한 울산 중구 원도심과 성남동 문화의 거리 풍경*
 
 #### ### 3. 일상에서 탈출하는 도심 속 하이테크 쉼표
@@ -59,7 +79,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
   * **주소:** 울산광역시 중구 새즈믄해거리 50
   * **특징:** 성남동 문화의 거리 감성을 고스란히 담아낸 아기자기한 디저트 카페입니다. 정성스럽게 구워낸 구움과자와 시그니처 음료가 훌륭해 데이트 코스로 언제나 사랑받는 곳이랍니다.
 
-![지관서가 울산시립미술관점 대표 미식 & 감성 공간](https://d12zq4w4guyljn.cloudfront.net/750_750_20260605124431_photo1_33a534a2526c.webp)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 예술과 독서, 휴식이 공존하는 '지관서가 울산시립미술관점' 내부 전경*
 
 ---
@@ -86,7 +106,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 2. **점심 코스:** 미술관 내 **지관서가**에서 가벼운 브런치 또는 성남동 문화의 거리 맛집 탐방
 3. **오후 코스:** 차로 10~15분 거리에 위치한 **태화강 국가정원 십리대숲** 산책 및 가을 국화 관람
 
-![태화강 국가정원 십리대숲 고즈넉한 가을 정취](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F658%2F2025%2F04%2F28%2F0000105440_001_20250428152907689.jpg)
+![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
 *▲ 바람에 흔들리는 대나무 소리가 아름다운 태화강 국가정원 십리대숲*
 
 ---

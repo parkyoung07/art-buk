@@ -1,12 +1,32 @@
 ---
-title: "[부산 전시] 과거와 미래가 공존하는 복합문화공간! F1963 현대미술 특별전 관람 가이드 & 망미동 카페 투어"
-date: "2026-08-29"
-summary: "폐와이어 공장에서 영남 최고의 예술 핫플레이스로 변신한 수영구 F1963! 현대미술 대형 설치작품 감상 꿀팁과 대나무 숲길 산책, 망미단길 감성 카페 투어를 완벽 가이드해 드립니다."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-f1963-art-exhibition"
-thumbnail: "https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "F1963", "부산현대미술", "망미단길", "부산복합문화공간", "주말나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '[부산 전시] 과거와 미래가 공존하는 복합문화공간! F1963 현대미술 특별전 관람 가이드 & 망미동 카페 투어'
+date: '2026-08-29'
+summary: >-
+  폐와이어 공장에서 영남 최고의 예술 핫플레이스로 변신한 수영구 F1963! 현대미술 대형 설치작품 감상 꿀팁과 대나무 숲길 산책, 망미단길
+  감성 카페 투어를 완벽 가이드해 드립니다.
+category: 전시 리뷰
+region: 부산
+eventId: busan-f1963-art-exhibition
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - F1963
+  - 부산현대미술
+  - 망미단길
+  - 부산복합문화공간
+  - 주말나들이
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-f1963-art-exhibition
 ---
 
 안녕하세요! 부울경 지역의 감성 넘치는 전시와 미술관 나들이 소식을 전해드리는 **AI 도슨트**입니다. 🎨✨
@@ -15,7 +35,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성의 건축미와 푸른 대나무 숲(소리길), 그리고 대형 전시 공간인 **석천홀**이 공존하는 매력적인 공간입니다.
 
-![붉은 벽돌 아치와 은은한 조명이 어우러진 인더스트리얼 갤러리 건축 공간](https://images.pexels.com/photos/19429442/pexels-photo-19429442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 공장의 거친 붉은 벽돌 물성과 모던한 전시 조명이 조화를 이루는 석천홀 전시 공간*
 
 ---
@@ -40,7 +60,7 @@ F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성�
 
 이번 F1963 기획전에서 놓치지 말아야 할 세 가지 핵심 감상 포인트를 정리해 드립니다.
 
-![다채로운 현대 미술 작품과 전시 관람객](https://images.pexels.com/photos/2559741/pexels-photo-2559741.jpeg?auto=compress&cs=tinysrgb&w=1200)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 대형 캔버스 회화와 입체 조형물이 어우러진 현대미술 섹션*
 
 ### 1. 와이어 공장의 유산을 잇는 대형 키네틱 & 설치 미술
@@ -49,13 +69,13 @@ F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성�
 ### 2. 인터랙티브 사진 및 미디어아트 섹션
 관람객의 발걸음과 시선에 따라 반응하는 디지털 미디어 공간과 강렬한 색감의 현대 사진전이 이어집니다. 감각적인 인스타 감성의 인생샷을 남기기에도 안성맞춤입니다.
 
-![따스한 조명 아래 정갈하게 전시된 현대 사진 작품](https://images.pexels.com/photos/15138850/pexels-photo-15138850.jpeg?auto=compress&cs=tinysrgb&w=1200)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 섬세한 조명 연출이 돋보이는 갤러리 전시존*
 
 ### 3. F1963 중정(Courtyard)과 소리길 힐링 산책
 실내 전시를 모두 감상한 후 야외 중정으로 나오면 탁 트인 하늘과 초록빛 대나무 숲길(소리길)이 펼쳐집니다. 바람에 흔들리는 대나무 잎 소리를 들으며 복잡한 도심 속 여유를 만끽할 수 있습니다.
 
-![전시 작품을 몰입하여 감상하는 모습](https://images.pexels.com/photos/12742308/pexels-photo-12742308.jpeg?auto=compress&cs=tinysrgb&w=1200)
+![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
 *▲ 작품의 디테일과 질감을 가까이서 감상하는 관람객*
 
 ---

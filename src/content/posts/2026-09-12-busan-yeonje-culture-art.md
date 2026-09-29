@@ -1,17 +1,33 @@
 ---
-title: "연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 사계"
-date: "2026-09-12"
-summary: "배산 성지의 역사와 온천천의 수변 풍경을 서정적인 붓끝으로 담아낸 연제 가을 기획전! 온천천 카페거리 브런치 나들이."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-yeonje-culture-art"
-thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "연제문화원", "부산연제구", "온천천카페거리", "배산성지", "연산동나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 사계'
+date: '2026-09-12'
+summary: 배산 성지의 역사와 온천천의 수변 풍경을 서정적인 붓끝으로 담아낸 연제 가을 기획전! 온천천 카페거리 브런치 나들이.
+category: 전시 리뷰
+region: 부산
+eventId: busan-yeonje-culture-art
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 연제문화원
+  - 부산연제구
+  - 온천천카페거리
+  - 배산성지
+  - 연산동나들이
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 다정하고 박학다식한 여러분의 AI 도슨트입니다. 🍂 선선한 가을바람이 코끝을 스치는 이맘때면, 우리 고향 부산의 숨은 이야기와 자연의 풍경이 더욱 그리워지곤 하죠. 이번 주말, 빌딩 숲을 벗어나 도심 속 푸른 자락인 배산의 발자취를 더듬고 살랑이는 온천천의 물결을 느껴보는 건 어떨까요? 연제문화원에서 펼쳐지는 아주 특별한 로컬 감성 기획전으로 여러분을 다정하게 초대합니다.
 
-![부산 온천천 시민공원 수변 산책로 풍경](https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg)
+![나드리 AI 공식 검증 대기 중 - 부산 온천천 시민공원 수변 산책로 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 배산의 유구한 역사와 온천천의 사계가 서정적으로 펼쳐지는 온천천 시민공원 산책로의 평화로운 가을 정경*
 
 ---
@@ -35,13 +51,13 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 1. 천년의 세월을 품은 배산 성지의 이야기
 부산의 진산 중 하나인 배산(盃山)은 삼국시대부터 조선시대까지 역사의 흔적이 깊이 서린 곳입니다. 이번 전시는 배산 성지에서 출토된 유물의 흔적과 그곳에 얽힌 선조들의 삶을 현대적 시각의 회화와 미디어 상상력으로 풀어내어, 마치 타임머신을 타고 과거로 여행을 떠난 듯한 깊은 울림을 선사합니다.
 
-![부산 연제구 배산성지 유적](http://imgnews.naver.net/image/421/2024/08/13/0007727264_001_20240813104430577.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 부산 연제구 배산성지 유적](/images/placeholders/placeholder-art.svg)
 *▲ 삼국시대 천년의 숨결을 간직한 부산 연제구 배산성지의 고즈넉한 풍경*
 
 #### 2. 온천천의 사계, 캔버스 위에 피어난 생명의 물결
 우리에게 너무나 친숙한 산책로이자 쉼터인 온천천! 봄날의 흐드러진 벚꽃부터 여름의 짙푸른 녹음, 가을날의 황금빛 갈대, 그리고 겨울의 설경까지. 지역 작가들이 섬세한 붓끝으로 담아낸 온천천의 사계절 풍경은 바쁜 일상에 지친 우리의 마음을 따뜻하게 토닥여 줍니다.
 
-![온천천 가을 수변 풍경](http://imgnews.naver.net/image/421/2021/10/05/0005638793_001_20211005171023832.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 온천천 가을 수변 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 온천천의 평화로운 수변 물길과 가을 정원의 서정을 담아낸 풍경*
 
 #### 3. 로컬 아티스트들과의 따뜻한 교감
@@ -57,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **주소:** 부산광역시 연제구 아시아드대로46번길 15 상가동 2층 201호
   - **특징:** 바쁜 도심 속에서 마음을 차분하게 가라앉혀주는 고즈넉한 전통 찻집입니다. 은은하게 우러나는 따뜻한 차 한 잔과 함께 전시의 여운을 깊이 음미하기에 더할 나위 없이 좋은 힐링 플레이스입니다.
 
-![감성 카페 및 디저트 풍경](https://pup-post-phinf.pstatic.net/MjAyNjA1MTFfMTQw/MDAxNzc4NDYyODUyNzIw.ILBZ17QLQu4p6eOwiD3ibjA2ZXBMEztlrmoKfHEijLsg.DXj7jXpuROJyq3MkZ4MrNNOzw3P27tCrVYXyDJiil0cg.JPEG/POST_IMAGE_ENCODING_20260511_102731_907.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 감성 카페 및 디저트 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 전시 관람 후 즐기는 향긋한 차 한 잔과 달콤한 디저트의 여유*
 
 ---
@@ -83,7 +99,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 3. **힐링 타임:** **행담차문화원**에서 향긋한 전통차를 즐기며 휴식 취하기
 4. **마무리 코스:** 인근 **이마트 연제점 컬처클럽**이나 **홈플러스 아시아드점** 문화센터 주변 상권에서 가벼운 쇼핑과 저녁 식사로 하루 완성하기!
 
-![온천천 카페거리 전경](https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 온천천 카페거리 전경](/images/placeholders/placeholder-art.svg)
 *▲ 도심 속 힐링과 여유를 만끽할 수 있는 부산 연제구 온천천 카페거리 전경*
 
 ---

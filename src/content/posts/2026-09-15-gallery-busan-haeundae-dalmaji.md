@@ -5,16 +5,29 @@ summary: 청사포 푸른 바다를 내려다보며 감상하는 수준 높은 �
 category: 감성 갤러리
 region: 부산
 eventId: gallery-busan-haeundae-dalmaji
-thumbnail: >-
-  https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 선선한 가을바람이 해운대 달맞이길의 소나무 숲을 스치며 깊어가는 계절입니다. 안녕하세요, 여러분의 감각적인 예술 산책을 책임지는 아트 스페이스 전문 디렉터입니다. 바쁘게 돌아가는 일상 속에서 잠시 숨을 고르고 싶을 때, 푸른 바다가 한눈에 내려다보이는 언덕 위에서 현대미술의 깊은 결을 마주할 수 있다면 얼마나 좋을까요? 
 
 이번 주말, 발걸음 닿는 곳마다 예술적 영감이 피어나는 **해운대 달맞이길 화랑가(조현화랑 & 갤러리아트숲)**로 여러분을 초대합니다. 자연과 건축, 그리고 동시대 최고의 아티스트들이 빚어낸 감동의 순간 속으로 함께 떠나볼까요?
 
-![달맞이길 화랑가 가을 전경 및 전시 공간](https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 달맞이길 화랑가 가을 전경 및 전시 공간](/images/placeholders/placeholder-art.svg)
 *▲ 가을의 정취가 물씬 풍기는 해운대 달맞이길 화랑가 일대 전경*
 
 ---
@@ -41,7 +54,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 3. **바다와 예술의 완벽한 하모니**
    전시 관람 후 테라스나 창가에 서면 눈앞에 펼쳐지는 청사포의 푸른 수평선. 미술관 내부의 고요함과 바다의 역동적인 에너지가 공존하는 이곳만의 독보적인 결은 방문객에게 잊지 못할 여운을 선사합니다.
 
-![청사포 다릿돌전망대의 아름다운 가을 실제 풍경](https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMjQ2/MDAxNzgzNjcyNTQ1ODAy.fJ6oBA3jeaw5loc-AwHNJdfwegWF4Mn_Xn5LQknB_Fog.QA162J6c3bQepeFlFmRDz6CfHmQdp5Ui4nKNclU4gRwg.JPEG/PostEncodingTask.9046C199-5168-4630-86E3-BCA76BE5ECD3.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 청사포 다릿돌전망대의 아름다운 가을 실제 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 화랑가 투어와 함께 연계하기 좋은 청사포 오션뷰 풍경*
 
 ---
@@ -55,7 +68,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 - **달맞이길 오션뷰 브런치 & 디저트 카페:**
   달맞이 언덕을 따라 늘선 개성 있는 카페들은 감각적인 인테리어와 수제 디저트로 유명합니다. 노을이 질 무렵 테라스 자리에 앉아 바라보는 부산 바다의 야경은 이번 나들이의 하이라이트가 될 것입니다.
 
-![달맞이길 화랑가 맛집 카페 대표 미식 & 감성 공간](https://pup-post-phinf.pstatic.net/MjAyNTEyMTBfMjQ1/MDAxNzY1MzUwMjI1MDc5.an3_hqo5OLIKW_4iaarkNA_ejXzlDARXHgx5VfO7te0g.iQIv1Cj8M87uQPEr_Eq7y6ubpzwbs36AIZdjHkhUBjYg.JPEG/POST_IMAGE_ENCODING_20251210_160343_591.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 달맞이길 화랑가 맛집 카페 대표 미식 & 감성 공간](/images/placeholders/placeholder-art.svg)
 *▲ 예술적 영감이 머무는 달맞이길 감성 카페 공간*
 
 ---
@@ -67,7 +80,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 - **문텐로드 숲길 산책:** 해운대 해수욕장에서 달맞이 고개로 이어지는 소나무 숲길입니다. 피톤치드 가득한 공기를 마시며 걷다 보면 복잡했던 머릿속이 맑아집니다.
 - **해운대 블루라인파크 (미포정거장 ~ 청사포):** 폐철길을 따라 달리는 해변열차와 스카이캡슐을 타고 청사포의 풍광을 입체적으로 감상할 수 있습니다. 가을철 황금빛으로 물드는 해안선을 감상하며 인생 샷을 남겨보세요.
 
-![해운대 블루라인파크 미포정거장 고즈넉한 가을 정취](https://pup-post-phinf.pstatic.net/MjAyNjA1MDRfMTg4/MDAxNzc3ODczNzU5NzE2.WbY4J9J1PyLoL9A_vSdu4I-arHkUAre1hmImUn3C_ggg.Wyzlad1iHVDo1KErFOKnO3rno7UwajH9-toF2SsGRnYg.JPEG/POST_IMAGE_ENCODING_20260504_144919_058.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 해운대 블루라인파크 미포정거장 고즈넉한 가을 정취](/images/placeholders/placeholder-art.svg)
 *▲ 고즈넉한 가을 정취를 더하는 해운대 블루라인파크 인근 풍경*
 
 ---
@@ -78,7 +91,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 - **도슨트 프로그램 확인:** 방문 전 공식 웹사이트나 SNS를 통해 진행 중인 기획전의 도슨트 일정이나 아티스트 토크 일정을 미리 체크하면 작품을 훨씬 깊이 있게 이해할 수 있습니다.
 - **편안한 신발 착용 추천:** 달맞이길과 갤러리 일대는 언덕과 산책로가 많으므로, 굽이 높은 신발보다는 편안한 스니커즈를 권장합니다.
 
-![해운대 달맞이길 감성 갤러리 투어 가을 전시 안내 풍경](https://pup-post-phinf.pstatic.net/MjAyNjA5MDhfMTEg/MDAxNzg4ODAwNjg4Mjcz.NruD6bDL7I6fAwGgSzkMOgl2GBqfHOgQnKVnUdJaGKYg.j52_vMBGjUFT2rue3wqccPNJtyvemJyIUTaROlGzPCEg.JPEG/PostEncodingTask.D80A8342-C72C-47D8-B8C9-71D98DF74CCD.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 해운대 달맞이길 감성 갤러리 투어 가을 전시 안내 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 이번 주말, 감각적인 예술의 바다로 여러분을 초대합니다.*
 
 ---

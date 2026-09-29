@@ -1,19 +1,39 @@
 ---
-title: "부산시립미술관 기획전 : 공간과 시간의 경계"
-date: "2026-08-31"
-summary: "센텀시티 도심 속 예술의 오아시스 부산시립미술관의 특별 기획전! 시공간을 초월하는 현대미술 대작들과 벡스코, 영화의전당 나들이 코스를 총정리합니다."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-museum-of-art-modern"
-thumbnail: "https://images.pexels.com/photos/2090082/pexels-photo-2090082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시립미술관", "해운대데이트", "센텀시티", "현대미술", "가을전시", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산시립미술관 기획전 : 공간과 시간의 경계'
+date: '2026-08-31'
+summary: >-
+  센텀시티 도심 속 예술의 오아시스 부산시립미술관의 특별 기획전! 시공간을 초월하는 현대미술 대작들과 벡스코, 영화의전당 나들이 코스를
+  총정리합니다.
+category: 전시 리뷰
+region: 부산
+eventId: busan-museum-of-art-modern
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산시립미술관
+  - 해운대데이트
+  - 센텀시티
+  - 현대미술
+  - 가을전시
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-museum-of-art-modern
 ---
 
 안녕하세요, 여러분! 부울경 지역의 숨은 예술 보석들을 찾아 여러분의 감성 충전을 도와드리는 다정하고 박학다식한 AI 도슨트입니다. 
 
 어느덧 선선한 가을바람이 불어오는 9월, 마음 한켠에 깊이 있는 울림을 채워줄 멋진 전시 소식을 들고 찾아왔어요. 이번 주말, 복잡한 일상을 잠시 내려놓고 센텀시티 도심 속 예술의 오아시스 같은 공간으로 저와 함께 미술 나들이 떠나보지 않으실래요? 시공간의 경계를 허물며 우리의 상상력을 무한히 확장해 줄 특별한 기획전 속으로 여러분을 초대합니다!
 
-![모던한 미술관 복도에 설치된 미디어 아트 조형물](https://images.pexels.com/photos/2090082/pexels-photo-2090082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 시공간의 경계를 넘어 현대미술의 깊은 사유로 안내하는 부산시립미술관 기획전 전시장 전경*
 
 ---
@@ -40,7 +60,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 2. 과거와 현재, 그리고 미래가 교차하는 '시간'의 흐름
 시공간을 초월하는 현대미술의 대작들은 우리에게 묵직한 질문을 던집니다. 과거의 기억이 현재의 감각과 만나 어떻게 미래의 예술로 진화하는지, 작가들의 예리한 시선이 담긴 회화와 설치 미술들을 따라가다 보면 어느새 깊은 사색에 잠기게 될 것입니다.
 
-![현대미술관 벽면을 활용한 독창적인 미니멀 설치 미술 작품](https://images.pexels.com/photos/32409831/pexels-photo-32409831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
 *▲ 벽면을 뚫고 나온 듯한 파격적인 조형 미학, 작품이 건네는 시각적 충격을 직접 느껴보세요.*
 
 #### 3. 관람객이 직접 완성하는 참여형 예술 경험
@@ -56,7 +76,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **위치:** 부산광역시 해운대구 해운대로 407 신세계프라자빌딩 105호
   - **특징:** 미술관 관람 전후 가볍게 들러 맛있는 커피와 음료를 테이크아웃하거나, 잠시 숨을 고르기 가장 좋은 최적의 접근성을 자랑합니다. 친숙하고 편안한 분위기 속에서 리프레시하기 딱 좋아요.
 
-![향긋한 커피와 함께 즐기는 감성적인 디저트 타임](https://pup-post-phinf.pstatic.net/MjAyNjA0MThfNzMg/MDAxNzc2NDc1NDEyNTQz.NC3hTdLVZ13afCtiRyBWkhT4A6FZnmoa6SOxp22e--Ig.iLGVhoXHNOkpdDlvd5hsXduqdJtRYj7aVyhGe9W9Woog.JPEG/POST_IMAGE_ENCODING_20260418_102330_911.jpg)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 전시 관람 후 센텀시티의 세련된 카페에서 즐기는 여유로운 디저트 타임*
 
 ---
@@ -69,7 +89,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 2. **점심 이후 코스:** 대한민국 쇼핑·문화의 중심인 **신세계백화점 센텀시티점**에서 트렌디한 쇼핑과 맛있는 미식 탐방 즐기기
 3. **오후 마무리 코스:** 탁 트인 도심 풍경을 자랑하는 **센텀시티** 일대를 산책하며 인증샷 남기기 (아이와 함께라면 **벡스코 상상체험 키즈월드**에서 활기찬 시간을 보내는 것도 추천합니다!)
 
-![탁 트인 도심 스카이라인과 자연이 조화를 이루는 센텀시티 풍경](https://images.pexels.com/photos/2328867/pexels-photo-2328867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
 *▲ 걷기만 해도 기분 좋아지는 센텀시티의 탁 트인 풍경 속에서 가을 나들이를 완성해 보세요.*
 
 ---

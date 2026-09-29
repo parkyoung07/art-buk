@@ -1,19 +1,35 @@
 ---
-title: "낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술"
-date: "2026-09-28"
-summary: "낙동강 하구 삼각주의 생태와 생명을 주제로 한 인터랙티브 미디어 및 친환경 설치미술전! 대저생태공원 핑크뮬리 투어."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-gangseo-nakdong-river-center"
-thumbnail: "https://terms-post-phinf.pstatic.net/MjAxNzExMjJfMjU3/MDAxNTExMzMzNjU3OTA0.vrn8EDmSJ_KJQ6sn5xFa8_SXlTwxTObcYSSypcVu37Ag.LF4ND2S2vmY1qxArfK60X8BozCsmGzhPDPWXcdYUV1Mg.JPEG/l28_567_i3.jpg?type=m4500_4500_fst"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "강서문화원", "부산강서구", "낙동강문화관", "대저생태공원", "을숙도", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술'
+date: '2026-09-28'
+summary: 낙동강 하구 삼각주의 생태와 생명을 주제로 한 인터랙티브 미디어 및 친환경 설치미술전! 대저생태공원 핑크뮬리 투어.
+category: 전시 리뷰
+region: 부산
+eventId: busan-gangseo-nakdong-river-center
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 강서문화원
+  - 부산강서구
+  - 낙동강문화관
+  - 대저생태공원
+  - 을숙도
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 독자 여러분! 부울경 아트·전시·문화 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 어느덧 아침저녁으로 옷깃을 여미게 되는 선선한 바람이 불어오는 완연한 가을입니다. 가을의 정취가 가장 깊어지는 이 계절, 자연과 예술이 손을 잡고 우리에게 속삭이는 특별한 공간으로 여러분을 초대합니다. 이번 주말, 강물이 만들어낸 거대한 생명의 대지 위에서 펼쳐지는 아름다운 예술의 바다로 훌쩍 떠나보지 않으시겠어요? 부산 강서구의 낙동강문화관에서 열리고 있는 **<하구 삼각주의 생태와 대지예술>** 기획전 속으로 지금 저와 함께 출발해 보아요!
 
-![낙동강과 금호강 사이에 들어선 독특한 전시 공간](https://terms-post-phinf.pstatic.net/MjAxNzExMjJfMjU3/MDAxNTExMzMzNjU3OTA0.vrn8EDmSJ_KJQ6sn5xFa8_SXlTwxTObcYSSypcVu37Ag.LF4ND2S2vmY1qxArfK60X8BozCsmGzhPDPWXcdYUV1Mg.JPEG/l28_567_i3.jpg?type=m4500_4500_fst)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 낙동강과 금호강 사이에 들어선 독특한 전시 공간](/images/placeholders/placeholder-art.svg)
 *▲ 낙동강의 숨결을 고스란히 품고 있는 독창적인 건축미가 돋보이는 전시 공간 전경.*
 
 ---
@@ -43,7 +59,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 3. 자연을 거스르지 않는 친환경 설치미술
 버려진 자연물과 생태 친화적 소재를 활용해 구성된 대지예술 작품들은 깊은 울림을 줍니다. 작가들이 하구의 흙, 갈대, 모래를 모티브로 완성한 조형물들은 자연이 건네는 무언의 위로를 전합니다. 바쁜 일상에 지친 마음을 잠시 내려놓고 자연의 호흡에 발을 맞추어 보는 건 어떨까요?
 
-![낙동강 뷰와 함께 여유를 즐길 수 있는 인근 감성 공간](https://pup-post-phinf.pstatic.net/MjAyNjA3MjBfMTky/MDAxNzg0NTMyMjY1MDk3.YKEBsJQ4FqfNfcX8Rq6i0hCQDg4K-ZxnfXCUDlmJTOUg.3cusTdBZ8REscE5cjBptBfCN-LFhjhEp-wN-oY616tEg.JPEG/POST_IMAGE_ENC_20260720_162135_291.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 낙동강 뷰와 함께 여유를 즐길 수 있는 인근 감성 공간](/images/placeholders/placeholder-art.svg)
 *▲ 강과 바다가 맞닿는 풍경을 바라보며 따스한 차 한 잔의 여유를 누릴 수 있는 인근 힐링 스팟.*
 
 ---
@@ -55,7 +71,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 *   **낙동강변 뷰티풀 브런치 카페**: 전시 관람 후 탁 트인 리버뷰를 조망하며 신선한 브런치와 스페셜티 커피를 즐길 수 있는 곳입니다. 잔잔한 강물을 바라보며 고요하게 사색에 잠기기 좋습니다.
 *   **을숙도 향토 미식가든**: 낙동강 하구의 싱그러운 공기를 마신 뒤 든든하게 속을 채워줄 건강한 한식 메뉴를 선보이는 로컬 맛집입니다. 신선한 재료로 만든 정갈한 상차림이 여행의 피로를 사르르 녹여줍니다.
 
-![낙동강문화관 기획전 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 낙동강문화관 기획전 및 현대미술 공간](/images/placeholders/placeholder-art.svg)
 *▲ 예술과 일상이 다정하게 어우러지는 감각적인 전시 인테리어.*
 
 ---
@@ -85,7 +101,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 2.  **대저생태공원 (가을 핑크뮬리 투어)**: 9월에서 11월 사이, 대저생태공원은 온통 몽환적인 핑크빛 물결로 뒤덮입니다. 살랑이는 가을바람에 흔들리는 핑크뮬리밭 사이를 거닐며 인생 사진을 남겨보세요. 가을 감성을 충전하기에 이보다 더 좋은 장소는 없답니다.
 3.  **을숙도 생태공원 & 철새도래지**: 낙동강 하구의 살아있는 자연을 가장 가까이서 만날 수 있는 곳입니다. 걷기 좋은 산책로가 잘 정비되어 있어 가족, 연인과 함께 가을 산책을 즐기기 최적의 코스입니다.
 
-![낙동강문화관 인근 감성 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 낙동강문화관 인근 감성 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 가을의 깊은 향기를 품은 낙동강 하구 주변의 아름다운 풍경.*
 
 ---

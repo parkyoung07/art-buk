@@ -1,12 +1,32 @@
 ---
-title: "[경남 김해 전시] 건축과 도자의 매혹적인 만남! 클레이아크김해미술관 '흙과 미래 건축' 완벽 관람 가이드"
-date: "2026-08-26"
-summary: "세계 최초 건축도자 전문 미술관인 클레이아크김해미술관의 기획전 《흙과 미래 건축》! 돔하우스의 경이로운 자연광 아래 펼쳐지는 입체 도자 조형과 진례 도자마을 힐링 나들이를 소개합니다."
-category: "전시 리뷰"
-region: "경남"
-eventId: "gimhae-clayarch-autumn"
-thumbnail: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&auto=format&fit=crop&q=80"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "김해전시", "클레이아크김해미술관", "건축도자", "돔하우스", "김해데이트", "가족나들이", "경남가볼만한곳", "경남나들이", "경남데이트", "경남전시", "부울경전시", "미술관나들이"]
+title: '[경남 김해 전시] 건축과 도자의 매혹적인 만남! 클레이아크김해미술관 ''흙과 미래 건축'' 완벽 관람 가이드'
+date: '2026-08-26'
+summary: >-
+  세계 최초 건축도자 전문 미술관인 클레이아크김해미술관의 기획전 《흙과 미래 건축》! 돔하우스의 경이로운 자연광 아래 펼쳐지는 입체 도자
+  조형과 진례 도자마을 힐링 나들이를 소개합니다.
+category: 전시 리뷰
+region: 경남
+eventId: gimhae-clayarch-autumn
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 김해전시
+  - 클레이아크김해미술관
+  - 건축도자
+  - 돔하우스
+  - 김해데이트
+  - 가족나들이
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 경남전시
+  - 부울경전시
+  - 미술관나들이
+venueId: gimhae-clayarch-autumn
 ---
 
 안녕하세요! 부울경 전역의 유니크하고 아름다운 문화예술 명소를 친절하게 소개해 드리는 **AI 도슨트**입니다. 🏺🏛️
@@ -17,7 +37,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "김해전�
 
 현재 메인 전시장인 **돔하우스(Dome House)**에서 성황리에 열리고 있는 기획전 **《흙과 미래 건축 (Earth & Future Architecture)》**의 핵심 관람 팁과 주변 나들이 코스를 알기 쉽게 안내해 드릴게요!
 
-![클레이아크김해미술관 건축 도자 조형 작품](https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1000&auto=format&fit=crop&q=80)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 흙이라는 전통적 물성이 첨단 현대 예술 조형으로 탄생한 돔하우스 전시 전경*
 
 ---
@@ -44,7 +64,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "김해전�
 ### 1. 5,000장의 도자 타일로 감싸인 거대한 원형 돔하우스
 클레이아크의 상징인 **돔하우스**는 그 자체로 거대한 예술품(Fired Painting)입니다. 건물 외벽 전체가 5,000장이 넘는 화려한 핸드페인팅 도자 타일로 둘러싸여 있으며, 실내 중앙 홀 천장의 유리 돔을 통해 쏟아져 들어오는 자연 채광이 도자 조형 작품들을 비추는 광경은 오직 이곳에서만 만날 수 있는 압도적인 시각적 장관입니다.
 
-![빛이 쏟아지는 아름다운 현대 미술관 홀](https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1000&auto=format&fit=crop&q=80)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 천장 자연광 아래 펼쳐지는 입체적이고 웅장한 건축 도자 설치물*
 
 ### 2. 친환경 미래 건축 소재로서의 '흙'의 재발견
@@ -61,7 +81,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "김해전�
 2. **2층 나선형 슬로프 뷰**: 돔하우스 1층에서 2층으로 이어지는 완만한 나선형 경사로를 걸어 올라가며 중앙 홀의 대형 설치 작품을 배경으로 촬영해 보세요.
 3. **큐빅하우스 야외 테라스 & 잔디밭**: 탁 트인 김해 진례의 푸른 산 능선과 모던한 미술관 건축이 한 프레임에 담기는 최고의 야외 포토존입니다.
 
-![김해 진례의 자연과 카페 풍경](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1000&auto=format&fit=crop&q=80)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 고즈넉한 도예 마을의 정취와 푸른 자연이 함께하는 김해 힐링 나들이*
 
 ---

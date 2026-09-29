@@ -1,14 +1,32 @@
 ---
-title: "[부산 나들이] 웅장한 서가와 미디어아트의 향연! 부산도서관 가을 북캉스 & 사상 힐링 완벽 가이드"
-slug: "library-busan-sasang-main"
-date: "2026-09-21"
-region: "부산"
-subRegion: "사상구"
-venueName: "부산도서관"
-category: "도서관 북캉스"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA2MTJfMzAw%2FMDAxNzgxMjUxMjg3OTUy.NZW4axz_8GBzeKQOdH7tQpUmOtM96j79aYPfAA3kQOwg.CcDMmOaTsPDDjN-KC_4Zbn_lfCzpmi_KcgU6Uc_MDiog.JPEG%2FKakaoTalk_20260612_141450296_16.jpg&type=sc960_832"
-summary: "부산도서관 현장 실사로 만나는 감성 가을 북캉스! 2층 웅장한 계단 서가 '책마루', 1층 어린이 실감 체험관 '꿈뜨락', 사상 감성 카페의 달콤한 수제 디저트와 삼락생태공원 은빛 억새 산책 코스 완벽 총정리."
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도서관", "부산북캉스", "사상구나들이", "삼락생태공원", "복합문화공간", "가을독서", "어린이도서관", "부산무료나들이", "들락날락", "부산가볼만한곳", "부산나들이", "부산데이트"]
+title: '[부산 나들이] 웅장한 서가와 미디어아트의 향연! 부산도서관 가을 북캉스 & 사상 힐링 완벽 가이드'
+slug: library-busan-sasang-main
+date: '2026-09-21'
+region: 부산
+subRegion: 사상구
+venueName: 부산도서관
+category: 도서관 북캉스
+thumbnail: /images/placeholders/placeholder-library.svg
+summary: >-
+  부산도서관 현장 실사로 만나는 감성 가을 북캉스! 2층 웅장한 계단 서가 '책마루', 1층 어린이 실감 체험관 '꿈뜨락', 사상 감성 카페의
+  달콤한 수제 디저트와 삼락생태공원 은빛 억새 산책 코스 완벽 총정리.
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산도서관
+  - 부산북캉스
+  - 사상구나들이
+  - 삼락생태공원
+  - 복합문화공간
+  - 가을독서
+  - 어린이도서관
+  - 부산무료나들이
+  - 들락날락
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
 ---
 
 안녕하세요, 문화예술과 감성 나들이를 사랑하시는 여러분! 부산·울산·경남의 매력적인 공간을 큐레이션해 드리는 **수석 AI 도슨트**입니다. 📚✨
@@ -19,7 +37,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 
 '부유하는 도서관(Floating Library)'이라는 독창적인 건축 컨셉으로 지어진 이곳은, 높은 층고와 통유리창을 통해 쏟아지는 자연광 아래 예술 전시, 첨단 실감형 미디어아트, 그리고 백양산 자락을 조망하는 옥상 바람정원이 어우러진 **영남권 최고 수준의 복합독서문화 예술 플랫폼**입니다. 공식 홈페이지 시설과 100% 일치하는 공간별 관람 꿀팁부터 가족 나들이 코스, 주변 미식까지 도슨트가 생생하게 안내해 드립니다.
 
-![부산도서관 현대적 건물 외관 및 주출입구 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA3MjVfMjgw%2FMDAxNzUzMzY5NzAxNTcw.5UyJWDvLW7NgbbMI0rlRgtYrgfut416eTdiAb4q7ln8g.VIX5hvmpSrpPDzScY_ExeV-vbOuwNUvTWsNrIe2oDCcg.JPEG%2F900%25A3%25DF20250724%25A3%25DF132435.jpg&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 부산도서관 현대적 건물 외관 및 주출입구 전경](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 실제 현장 실사] 덕포역 인근에 웅장하게 자리한 부산도서관 본관 건물 외관*
 
 ---
@@ -47,7 +65,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 
 높은 층고를 따라 시원하게 뻗은 서가와 커다란 통유리창을 통해 따스한 자연 채광이 쏟아져 들어옵니다. 곡선형 원목 롱테이블과 푹신한 소파에 앉아 책을 읽다 보면, 도심 속 소음은 잊히고 오롯이 글귀에 몰입하는 치유의 시간을 경험할 수 있습니다.
 
-![부산도서관 개방형 계단 서가 책마루 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA2MTJfMzAw%2FMDAxNzgxMjUxMjg3OTUy.NZW4axz_8GBzeKQOdH7tQpUmOtM96j79aYPfAA3kQOwg.CcDMmOaTsPDDjN-KC_4Zbn_lfCzpmi_KcgU6Uc_MDiog.JPEG%2FKakaoTalk_20260612_141450296_16.jpg&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 부산도서관 개방형 계단 서가 책마루 실사](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 실제 현장 실사] 높은 천장과 따스한 채광 아래 개방적으로 펼쳐진 2층 계단형 대형 서가 '책마루'*
 
 ---
@@ -57,7 +75,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 * **곡선형 원목 벤치 & 대형 서가:** 감각적인 S자 곡선형 원목 벤치가 마련되어 있어 편안하게 책을 고르고 휴식할 수 있습니다.
 * **오늘의 북플릭스(Bookflix):** 최신 트렌드와 시즌 이슈에 맞춘 주제별 큐레이션 전시가 상시 운영되어 새로운 지적 영감을 선물합니다.
 
-![부산도서관 공식 01 책누리터 일반도서 및 국외도서 서가](/images/library/busan-library-chaeknuriter.png)
+![나드리 AI 공식 검증 대기 중 - 부산도서관 공식 01 책누리터 일반도서 및 국외도서 서가](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 공식 실사] 일반도서 및 국외도서 대출·열람과 감각적인 곡선 소파가 돋보이는 3층 '책누리터'*
 
 ---
@@ -65,7 +83,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 #### 3️⃣ [3층] 부산의 역사와 예술 아카이브가 숨 쉬는: 《02 부산애뜰》
 부산도서관만의 시그니처 공간인 **'부산애뜰'**은 부산 관련 역사 자료, 해양 문학 아카이브, 지역 예술가들의 기획 전시가 펼쳐지는 복합문화공간입니다. 흑갈색 철제 프레임과 은은한 원목 조명 아래 부산의 도시 기억을 담은 귀중한 사료와 갤러리 작품을 감상할 수 있습니다.
 
-![부산도서관 공식 02 부산애뜰 부산 관련 자료 및 전시코너](/images/library/busan-library-busanaettle.png)
+![나드리 AI 공식 검증 대기 중 - 부산도서관 공식 02 부산애뜰 부산 관련 자료 및 전시코너](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 공식 실사] 부산 관련 자료 대출·열람 및 품격 있는 아카이브 전시가 열리는 3층 '부산애뜰'*
 
 ---
@@ -73,7 +91,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 #### 4️⃣ [1층] 최첨단 스마트 학습 & 정보 탐색: 《04 디지털존》
 1층 **'디지털존'**은 인터넷 검색, 문서 작성, 국립중앙도서관 원문 DB 및 영상 DB 열람을 지원하는 최첨단 스마트 정보 공간입니다. 화이트 삼각 프레임과 반투명 파티션으로 설계되어 독립적이고 쾌적하게 멀티미디어 작업을 진행할 수 있습니다.
 
-![부산도서관 공식 04 디지털존 인터넷 및 영상DB 열람실](/images/library/busan-library-digital.png)
+![나드리 AI 공식 검증 대기 중 - 부산도서관 공식 04 디지털존 인터넷 및 영상DB 열람실](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 공식 실사] 쾌적한 개인 파티션과 멀티미디어 환경이 완비된 1층 '디지털존'*
 
 ---
@@ -84,14 +102,14 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 * **모션 인식 인터랙티브 실감 미디어관:** 대형 디지털 스크린을 통해 동화 속 세상을 생생하게 체험하는 인터랙티브 동화구연이 진행됩니다.
 * **가족 친화 시설:** 유모차 보관소, 수유실, 기저귀 갈이대가 완비되어 영유아 부모님도 안심하고 이용할 수 있습니다.
 
-![부산도서관 꿈뜨락 어린이실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMTJfMTMz%2FMDAxNjA1MTYwODcwNDg5.G1yorRIZ6BJxeu5jiz7kfTjYsjVHvX8YJHPnf6JUSl8g.ixeklMF5XuNnGAIEC88vcrdm_n_M1nFGw-I41CjYU7Ig.JPEG.seungjin137%2F20201106_152300.jpg&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 부산도서관 꿈뜨락 어린이실 실사](/images/placeholders/placeholder-library.svg)
 *▲ [부산도서관 꿈뜨락 실사] 귀여운 자동차 모양 책꽂이와 아기자기한 서가가 갖춰진 1층 어린이실 '꿈뜨락' 실내 전경*
 
 ---
 
 ### ☕ 도서관 나들이와 함께 즐기는 사상 감성 미식 & 카페
 
-![도서관 나들이 후 즐기는 사상 로컬 카페 수제 디저트와 커피](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMTVfMjUx%2FMDAxNjY4NDc1MDgzNDMy.E8brSSfsi3ofguSyd1o_hM6rVwolQzoWubEW5oBIksMg.bFCRUs7R5pTtrl_2M1CyvTiiB4H2ZJlsko6S5unuTdEg.JPEG.vixx7%2FIMG_1012.JPG&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 도서관 나들이 후 즐기는 사상 로컬 카페 수제 디저트와 커피](/images/placeholders/placeholder-library.svg)
 *▲ [사상 감성 카페 실사] 부드러운 생크림이 얹어진 수제 디저트와 향긋한 커피를 즐길 수 있는 사상 로컬 감성 카페*
 
 - **도서관 1층 뮤지엄 북카페 & 베이커리**: 갓 구운 소금빵, 휘낭시에와 함께 스페셜티 아메리카노를 마시며 읽던 책의 여운을 즐기기 좋습니다.
@@ -102,7 +120,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산도�
 
 ### 🌿 함께 걷는 최고의 가을 연계 산책 코스: 삼락생태공원
 
-![가을 햇살 아래 은빛으로 빛나는 삼락생태공원의 아름다운 억새 군락 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 가을 햇살 아래 은빛으로 빛나는 삼락생태공원의 아름다운 억새 군락 풍경](/images/placeholders/placeholder-library.svg)
 *▲ [삼락생태공원 실사] 가을 햇살 아래 은빛으로 눈부시게 물결치는 삼락생태공원의 환상적인 억새 산책로*
 
 * **삼락생태공원 갈대숲 & 억새 군락지 (차량 7분 / 대중교통 15분):**  

@@ -5,16 +5,29 @@ summary: 117년 역사를 지닌 옛 부산진역사를 복합 문화공간으�
 category: 전시 리뷰
 region: 부산
 eventId: busan-donggu-culture-platform
-thumbnail: >-
-  https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자이자 여러분의 전담 AI 도슨트입니다. 
 
 선선한 가을바람이 코끝을 스치는 9월, 117년이라는 기나긴 세월 동안 부산의 철길을 지켜온 역사가 예술의 옷을 갈아입고 여러분을 기다립니다. 이번 주말, 과거와 현재가 아름답게 교차하는 부산 동구로 감성 가득한 시간 여행을 떠나보시는 건 어떨까요? 철마가 달리던 자리에 피어난 예술의 향기 속으로 여러분을 초대합니다!
 
-![현대적인 감각으로 재탄생한 전시 공간의 풍경](https://images.pexels.com/photos/15138865/pexels-photo-15138865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 현대적인 감각으로 재탄생한 전시 공간의 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 117년 역사의 공간이 현대적인 예술적 숨결을 품고 관람객을 맞이합니다.*
 
 ---
@@ -41,7 +54,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 ### 2. 철도와 원도심의 기억을 예술로 승화시킨 기획 작품들
 이번 전시는 '철길'과 '부산진역'이라는 지역적 고유 자산을 현대 미술의 언어로 재해석했습니다. 과거 기적 소리가 울려 퍼지던 이곳에서 작가들이 포착한 삶의 흔적과 도시의 기억들은 관람객들에게 깊은 울림과 향수를 선사합니다. 
 
-![지하철역과 현대 미술 전시가 조화를 이룬 공간](https://images.pexels.com/photos/11489986/pexels-photo-11489986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 지하철역과 현대 미술 전시가 조화를 이룬 공간](/images/placeholders/placeholder-art.svg)
 *▲ 일상의 공간이 예술적 상상력으로 가득 채워진 전시장 내부 전경입니다.*
 
 ### 3. 초량 이바구길 및 문화공감 수정과의 완벽한 문화 연계 산책
@@ -57,7 +70,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 *   **문화공감 수정 (전통찻집)**: 옛 적가옥의 풍취를 고스란히 간직한 공간에서 향긋한 전통차를 즐기며 고즈넉한 시간을 보낼 수 있는 최고의 감성 스폿입니다.
 *   **초량 이바구길 카페 거리**: 아기자기한 골목길 사이에 숨어 있는 로컬 카페들에서 창밖으로 펼쳐지는 부산항의 풍경을 내려다보며 달콤한 디저트를 즐겨보세요.
 
-![신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 신선한 디저트와 함께 여유를 즐기는 카페 테라스 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 전시 관람 후 아늑한 카페에서 즐기는 달콤한 디저트와 여유로운 휴식.*
 
 ---
@@ -86,7 +99,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 4.  **액티비티**: '초량 이바구길 168계단' 모노레일을 타고 올라가 부산항 전경 조망하기
 5.  **마무리**: 초량 전통시장 구경 및 로컬 맛집에서 저녁 식사
 
-![도심의 스카이라인과 자연이 어우러진 부산의 아름다운 풍경](https://images.pexels.com/photos/11489991/pexels-photo-11489991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 도심의 스카이라인과 자연이 어우러진 부산의 아름다운 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 예술과 역사가 숨쉬는 동구 원도심에서 만나는 아름다운 부산의 풍경.*
 
 ---

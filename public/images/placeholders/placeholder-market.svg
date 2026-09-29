@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="marketBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+    <linearGradient id="marketAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#marketBg)" />
+  <circle cx="600" cy="340" r="140" fill="#ffffff" fill-opacity="0.04" />
+  <circle cx="600" cy="340" r="90" fill="#ffffff" fill-opacity="0.06" />
+  <!-- Shopping / Market Basket Icon -->
+  <g transform="translate(540, 280) scale(2.5)" fill="none" stroke="url(#marketAccent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" />
+  </g>
+  <text x="600" y="490" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="32" font-weight="700" fill="#ffffff" letter-spacing="-0.5px">나드리 AI 공식 검증 대기 중</text>
+  <text x="600" y="535" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="20" font-weight="500" fill="#fed7aa">지자체 및 공공기관의 검증된 현장 사진을 연결 중입니다</text>
+  <rect x="500" y="570" width="200" height="34" rx="17" fill="#ffffff" fill-opacity="0.1" stroke="#fbbf24" stroke-opacity="0.3" />
+  <text x="600" y="593" text-anchor="middle" font-family="'Pretendard', -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffedd5">🧺 부울경 5일장·전통시장</text>
+</svg>

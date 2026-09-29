@@ -5,16 +5,29 @@ summary: 패트릭 블랑의 거대한 수직정원과 생태 미학이 살아 �
 category: 전시 리뷰
 region: 부산
 eventId: busan-moca-eulsukdo
-thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2022%2F07%2F01%2FAKR20220701037600051_01_i_P4_20220701091514567.jpg
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산전시
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - AI도슨트
 ---
 
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 선선한 가을바람이 낙동강 하구를 간지럽히는 요즘, 자연과 예술이 손을 잡고 우리에게 건네는 특별한 이야기에 귀를 기울여 보실래요? 이번 주말, 철새들의 낙원이자 생명의 섬인 '을숙도'에 위치한 부산현대미술관(MoCA)으로 저와 함께 떠나보셔요. 인간과 자연의 공존을 깊이 있게 성찰하는 감동적인 생태환경전이 여러분을 기다리고 있답니다.
 
-![부산현대미술관 가을 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2022%2F07%2F01%2FAKR20220701037600051_01_i_P4_20220701091514567.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 부산현대미술관 가을 전경](/images/placeholders/placeholder-art.svg)
 *▲ 가을빛으로 물드는 부산현대미술관(MoCA) 전경과 생태예술의 현장*
 
 ---
@@ -44,7 +57,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 ### 3. 지속 가능한 미래를 향한 예술적 실천
 이번 전시는 단순히 눈으로 보는 미술을 넘어, 기후 위기 시대에 우리가 나아가야 할 방향을 조용히 제안합니다. 친환경 재료로 만들어진 작품들과 관객 참여형 프로젝트를 통해, 예술이 우리의 일상과 지구를 어떻게 치유할 수 있는지 직접 경험해 보실 수 있습니다.
 
-![을숙도 철새공원 풍경](https://images.unsplash.com/photo-1508997449629-303059a039c0?w=1200&auto=format&fit=crop&q=80)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 을숙도 철새공원 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 미술관 관람 후 가볍게 거닐기 좋은 을숙도 생태공원의 아름다운 가을 풍경*
 
 ---
@@ -60,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
   - **주소:** 부산광역시 사하구 낙동남로 1191 (미술관 내부/인근)
   - **특징:** 미술관 관람 동선 안팎에서 편안하게 커피 향을 즐길 수 있는 공간입니다. 전시의 여운을 친구, 연인과 함께 깊이 있게 나누기 좋습니다.
 
-![프라한 명지 미식 및 감성 공간](https://pup-post-phinf.pstatic.net/MjAyNjAzMjNfMTc2/MDAxNzc0MjcyODczNTM0.eKBqKpaTANuvcRFMNEkpgSbv-MHbZPovxTE0IdIxP9Ig.UsqsU5WIK-aIDp_pKjxGDMaHA4QvewZ73e1xY-lmr98g.JPEG/POST_IMAGE_ENCODING_20260323_223431_569.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 프라한 명지 미식 및 감성 공간](/images/placeholders/placeholder-art.svg)
 *▲ 트렌디한 인테리어와 훌륭한 맛을 자랑하는 '프라한 명지'의 따스한 풍경*
 
 ---
@@ -88,7 +101,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 3. **코스 3: 블랙업커피 을숙도점** 또는 **프라한 명지**에서 향긋한 커피와 브런치 즐기기
 4. **코스 4: 다대포 해변공원 (몰운대)**로 이동해 황홀한 낙조와 바다 산책으로 하루 마무리하기
 
-![다대포 해변공원 고즈넉한 가을 정취](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2024%2F08%2F07%2FPCM20240215000075051_P4_20240807082213926.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 다대포 해변공원 고즈넉한 가을 정취](/images/placeholders/placeholder-art.svg)
 *▲ 미술관 나들이 후 빼놓을 수 없는 낙동강 하구와 다대포 해변의 고즈넉한 가을 낙조 풍경*
 
 ---

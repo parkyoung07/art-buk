@@ -1,19 +1,37 @@
 ---
-title: "동래문화회관 가을 특별전 : 동래학춤의 선율과 전통 회화의 숨결"
-date: "2026-09-01"
-summary: "부산 전통 문화의 뿌리 동래의 역사성과 동래학춤의 미학을 시각예술로 재해석한 특별전! 동래읍성 북문과 온천천 산책 코스."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-dongnae-culture-center"
-thumbnail: "https://images.pexels.com/photos/15053731/pexels-photo-15053731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "동래문화회관", "부산동래구", "동래읍성", "복천동고분군", "동래온천", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '동래문화회관 가을 특별전 : 동래학춤의 선율과 전통 회화의 숨결'
+date: '2026-09-01'
+summary: 부산 전통 문화의 뿌리 동래의 역사성과 동래학춤의 미학을 시각예술로 재해석한 특별전! 동래읍성 북문과 온천천 산책 코스.
+category: 전시 리뷰
+region: 부산
+eventId: busan-dongnae-culture-center
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 동래문화회관
+  - 부산동래구
+  - 동래읍성
+  - 복천동고분군
+  - 동래온천
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-dongnae-culture-center
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 안내자, 여러분의 AI 도슨트입니다. 
 
 아침저녁으로 제법 선선한 가을바람이 옷깃을 스치는 요즘, 마음 한켠이 몽글몽글 예술적 감성으로 물들지 않으시나요? 이번 주말, 선조들의 고결한 숨결과 춤사위가 살아 숨 쉬는 부산 동래로 저와 함께 발걸음을 옮겨보시는 건 어떨까요? 부산의 뿌리 깊은 역사와 전통 예술의 미학을 오롯이 느낄 수 있는 아주 특별한 전시가 여러분을 기다리고 있답니다. 자, 그럼 가을빛 가득한 동래문화회관으로 설레는 나들이를 떠나볼까요?
 
-![전통 한복을 입은 여인의 모습](https://images.pexels.com/photos/15053731/pexels-photo-15053731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
 *▲ 동래의 역사와 전통의 고결함을 품은 이번 가을 특별전의 메인 포스터 감성*
 
 ---
@@ -40,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 2. 전통 회화의 숨결과 현대적 변주
 먹의 농담과 고결한 채색으로 표현된 전통 회화 작품들은 관람객들에게 깊은 여운을 선사합니다. 선조들의 철학이 담긴 붓끝의 흔적을 따라가다 보면, 복잡했던 일상의 속도가 느려지고 마음이 평온해지는 치유의 시간을 경험하실 수 있습니다.
 
-![야외에서 부채를 들고 한국무용을 선보이는 모습](https://images.pexels.com/photos/15053649/pexels-photo-15053649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
 *▲ 동래학춤의 유려한 선율과 몸짓을 떠올리게 하는 아름다운 예술적 순간*
 
 #### 3. 동래의 역사성과 로컬리티의 재발견
@@ -55,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 *   **동래파전 명가 탐방**: 동래에 왔다면 바삭하고 촉촉한 진짜 '동래파전'을 맛보셔야 합니다! 신선한 해산물과 쪽파가 어우러진 전통 파전과 막걸리 한 잔의 여유는 나들이의 완벽한 마침표가 되어줍니다.
 *   **온천천 카페거리 감성 카페**: 전시장 가까이에 위치한 온천천 카페거리로 향해보세요. 통창 너머로 가을 풍경이 시원하게 펼쳐지는 분위기 좋은 로스터리 카페에서 향긋한 커피 한 잔과 달콤한 디저트를 즐기며 전시의 여운을 차분히 나누어 보시길 추천합니다.
 
-![야외 테라스에서 즐기는 커피와 디저트](https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMTI5/MDAxNzgzNjc1Njc1NDEz.DI7MXDHCO1mdQy3d1AhjgaF7YlAwryz6FtZdAwB9nu4g.Mxvy4hlt4z-4uHY4SE7Ez39jlp2Qi0S59TK_hE35V3Mg.JPEG/PostEncodingTask.D7CA97CF-7E7E-48A4-A05D-40827C7D4EAC.jpg)
+![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
 *▲ 전시 관람 후 온천천 카페거리에서 즐기는 향긋한 커피와 여유로운 오후*
 
 ---
@@ -69,7 +87,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 3.  **코스 3 - 복천동고분군 & 복천박물관**: 삼국시대 가야 문화의 진수를 보여주는 고분군 잔디밭을 거닐며 여유로운 산책을 즐겨보세요. 가을 피크닉 장소로도 손색이 없습니다.
 4.  **코스 4 - 동래온천 족탕**: 나들이의 피로는 천년의 역사를 자랑하는 동래온천의 야외 무료 족탕에서 사르르 녹여보시는 걸 강력 추천합니다!
 
-![전통 야외 공연과 축제를 즐기는 활기찬 모습](https://images.pexels.com/photos/35432324/pexels-photo-35432324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
 *▲ 역사와 문화, 자연이 함께 어우러지는 동래의 활기찬 가을 풍경*
 
 ---

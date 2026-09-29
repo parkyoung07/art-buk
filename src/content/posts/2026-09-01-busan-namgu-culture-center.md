@@ -1,19 +1,37 @@
 ---
-title: "부산문화회관 가을 기획전 : 바다의 서정과 현대 조형의 울림"
-date: "2026-09-01"
-summary: "부산 문화예술의 중심 부산문화회관의 현대 조각 및 회화 기획전! UN기념공원과 오륙도 스카이워크 해안 산책로 연계 감성 투어."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-namgu-culture-center"
-thumbnail: "https://images.pexels.com/photos/2328867/pexels-photo-2328867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산문화회관", "부산남구", "UN기념공원", "오륙도스카이워크", "이기대", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '부산문화회관 가을 기획전 : 바다의 서정과 현대 조형의 울림'
+date: '2026-09-01'
+summary: 부산 문화예술의 중심 부산문화회관의 현대 조각 및 회화 기획전! UN기념공원과 오륙도 스카이워크 해안 산책로 연계 감성 투어.
+category: 전시 리뷰
+region: 부산
+eventId: busan-namgu-culture-center
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산문화회관
+  - 부산남구
+  - UN기념공원
+  - 오륙도스카이워크
+  - 이기대
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: busan-namgu-culture-center
 ---
 
 안녕하세요, 관람객 여러분! 나드리 AI 문화·나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 어느덧 선선한 가을바람이 옷깃을 스치는 9월입니다. 가을은 마음의 양식을 채우고 예술의 향기에 흠뻑 젖어들기에 더할 나위 없이 좋은 계절이죠? 이번 주말, 푸른 부산의 바다 서정과 현대 미술의 깊은 울림을 동시에 만끽할 수 있는 아주 특별한 기획전으로 여러분을 초대합니다. 자, 저와 함께 설레는 예술 나들이를 떠나볼까요?
 
-![현대적인 조명 아래 조각과 회화가 어우러진 모던 아트 갤러리 전경](https://images.pexels.com/photos/2328867/pexels-photo-2328867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
 *▲ 사진 설명: 은은한 앰비언트 조명 아래 감각적인 현대 조각과 회화 작품들이 관람객을 맞이하는 부산문화회관 기획전 전시장 전경.*
 
 ---
@@ -40,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 2. 공간을 압도하는 현대 조형의 입체적 울림
 평면 예술을 넘어 공간과 호흡하는 현대 조각과 설치 미술 작품들이 전시장 곳곳에 포진해 있습니다. 단단한 철제와 유연한 곡선, 혹은 빛과 그림자를 활용한 입체 조형물들은 관람객의 움직임에 따라 시시각각 다른 표정을 지어 보입니다. 
 
-![대리석 흉상과 스테인드글라스 창이 어우러진 세련된 미술관 전시실](https://images.pexels.com/photos/8768516/pexels-photo-8768516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
 *▲ 사진 설명: 작품과 공간, 빛이 완벽한 조화를 이루며 깊은 사색의 시간을 선사하는 전시장 내부.*
 
 #### 3. 자연과 예술의 경계를 허무는 시각적 확장
@@ -62,7 +80,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   * **주소:** 부산광역시 남구 신선로 424
   * **특징:** 가볍고 빠르게 드라이브나 산책 코스 동선에서 간식이나 커피를 테이크아웃하기 좋은 편리한 스팟입니다.
 
-![야외 테라스에서 즐기는 민트 가니쉬 커피 판나코타 디저트와 파인애플, 피오니 넛츠](https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMzYg/MDAxNzgzNjc1NjczNjQ2.ABf7QPN_wZ5UlVUeXHTaGN6kNw5yNztsK1GnvWkS_XEg.EXgMGI6FmkME45yrqWpDLyPaoVuRI4qV8j3F3ApBEL8g.JPEG/PostEncodingTask.77690DBB-29BB-495E-8594-4596B989CB1F.jpg)
+![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
 *▲ 사진 설명: 싱그러운 허브와 달콤한 디저트가 어우러져 전시 나들이의 기분을 한층 더 북돋아 주는 감성 카페의 풍경.*
 
 ---
@@ -78,7 +96,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 3. **오후 산책 코스 (14:30 ~ 17:00) : UN기념공원 & 이기대·오륙도 해안 산책로 연계 투어**
    * 세계 유일의 UN묘역인 UN기념공원의 차분한 정취를 거닐거나, 차로 조금만 이동해 오륙도 스카이워크와 이기대 해안산책로에서 탁 트인 푸른 바다를 조망하며 가을 나들이를 완벽하게 마무리합니다.
 
-![나무 사이로 펼쳐진 푸른 지평선과 아름다운 도시 스카이라인이 조화로운 풍경](https://images.pexels.com/photos/2149422/pexels-photo-2149422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
 *▲ 사진 설명: 바다와 자연이 숨 쉬는 부산 남구의 아름다운 풍경. 예술과 자연을 동시에 품은 최적의 나들이 코스입니다.*
 
 ---

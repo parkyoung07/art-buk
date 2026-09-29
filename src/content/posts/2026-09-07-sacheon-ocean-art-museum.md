@@ -1,19 +1,35 @@
 ---
-title: "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술"
-date: "2026-09-07"
-summary: "한려수도 푸른 바다와 붉은 삼천포대교를 배경으로 펼쳐지는 현대미술 기획전! 사천바다케이블카 탑승과 실안낙조 카페거리 드라이브 코스."
-category: "전시 리뷰"
-region: "경남"
-eventId: "sacheon-ocean-art-museum"
-thumbnail: "https://images.pexels.com/photos/18061306/pexels-photo-18061306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전시", "사천전시", "사천미술관", "삼천포대교", "사천바다케이블카", "사천데이트", "경남가볼만한곳", "경남나들이", "경남데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술'
+date: '2026-09-07'
+summary: 한려수도 푸른 바다와 붉은 삼천포대교를 배경으로 펼쳐지는 현대미술 기획전! 사천바다케이블카 탑승과 실안낙조 카페거리 드라이브 코스.
+category: 전시 리뷰
+region: 경남
+eventId: sacheon-ocean-art-museum
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남전시
+  - 사천전시
+  - 사천미술관
+  - 삼천포대교
+  - 사천바다케이블카
+  - 사천데이트
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 다정하고 박학다식한 AI 도슨트입니다. 🌿
 
 살랑이는 가을바람이 남해안의 푸른 물결을 간지럽히는 9월, 여러분의 주말을 단번에 감성으로 물들일 근사한 미술 나들이 소식을 들고 찾아왔어요. 푸른 바다와 붉은 대교가 어우러진 경남 사천에서 펼쳐지는 이번 기획전은, 자연이 그린 거대한 캔버스 안으로 미술관이 걸어 들어간 듯한 착각을 불러일으킨답니다. 이번 주말, 복잡한 일상을 벗어나 남해의 아름다운 풍경과 현대미술이 건네는 위로 속으로 저와 함께 떠나보실까요?
 
-![사천의 푸른 바다와 등대 풍경](https://images.pexels.com/photos/18061306/pexels-photo-18061306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 사천의 푸른 바다와 등대 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 한려수도의 눈부신 바다와 청량한 하늘이 맞닿은 사천의 풍경, 미술관으로 향하는 발걸음을 설레게 합니다.*
 
 ---
@@ -40,7 +56,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 #### 2. 자연과 예술의 완벽한 하모니 (화이트 큐브를 넘어서)
 실내 전시장 창가 너머로 펼쳐지는 한려수도의 풍경은 그 자체로 또 하나의 살아있는 예술 작품입니다. 미술관 안의 작품과 창밖의 자연이 서로 대화하듯 어우러지는 독특한 공간감은 사천미술관에서만 느낄 수 있는 최고의 관람 포인트예요.
 
-![해안선과 부서지는 파도가 어우러진 풍경](https://images.pexels.com/photos/29583307/pexels-photo-29583307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 해안선과 부서지는 파도가 어우러진 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 자연의 거친 결을 고스란히 품은 해안선. 현대미술이 자연과 교감하는 방식을 깊이 있게 보여줍니다.*
 
 #### 3. 오감이 만족하는 공감각적 예술 산책
@@ -64,7 +80,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 * **스타벅스 경남사천DT점 & 사천벌리점**
   * 믿고 찾는 익숙한 맛과 편안함을 원하신다면 언제든 방문하기 좋은 인근 드라이브 스루 및 시내 거점 카페입니다.
 
-![커피와 감성적인 디저트 플레이팅](https://pup-post-phinf.pstatic.net/MjAyNjA0MjhfMjk5/MDAxNzc3Mzc4NTA4MDA2.OwRD570oWvJuAUzxlsCYBmdtbpqQuoQUGWJoSDnYCS4g.JZ2Q_ZfWr0yhMD-5ElYqggxlvfZGXZuzgjiHNJnafCcg.JPEG/A608FDD8-EBAE-4404-8EDD-C3254126FA3F.jpg)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 커피와 감성적인 디저트 플레이팅](/images/placeholders/placeholder-art.svg)
 *▲ 예술 산책 후 즐기는 향긋한 커피 한 잔과 달콤한 디저트는 나들이의 행복을 배로 만들어 줍니다.*
 
 ---
@@ -93,7 +109,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 2. **실안낙조 드라이브 코스**
    * 해질녘 붉게 물드는 실안 해안도로를 따라 드라이브를 즐겨보세요. 차창 밖으로 펼쳐지는 황홀한 낙조는 이번 나들이의 가장 완벽한 클라이맥스가 되어줄 것입니다.
 
-![바다와 맞닿은 목조 구조물과 확 트인 수평선](https://images.pexels.com/photos/28118880/pexels-photo-28118880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 바다와 맞닿은 목조 구조물과 확 트인 수평선](/images/placeholders/placeholder-art.svg)
 *▲ 사천의 푸른 바다와 파란 하늘이 만들어내는 시원한 파노라마 뷰, 케이블카와 해안 산책로에서 만날 수 있습니다.*
 
 ---

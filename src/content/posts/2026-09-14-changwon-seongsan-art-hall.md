@@ -1,19 +1,37 @@
 ---
-title: "창원 성산아트홀 가을 기획전 : 남도 현대미술의 새로운 지평"
-date: "2026-09-14"
-summary: "남도의 풍부한 서정성과 현대미술의 혁신적인 조형 언어가 만나는 성산아트홀 가을 기획전! 용지호수 음악분수와 창원 가로수길 카페거리 감성 투어."
-category: "전시 리뷰"
-region: "경남"
-eventId: "changwon-seongsan-art-hall"
-thumbnail: "https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전시", "창원전시", "성산아트홀", "용지호수", "창원가로수길", "남도현대미술", "경남가볼만한곳", "경남나들이", "경남데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '창원 성산아트홀 가을 기획전 : 남도 현대미술의 새로운 지평'
+date: '2026-09-14'
+summary: >-
+  남도의 풍부한 서정성과 현대미술의 혁신적인 조형 언어가 만나는 성산아트홀 가을 기획전! 용지호수 음악분수와 창원 가로수길 카페거리 감성
+  투어.
+category: 전시 리뷰
+region: 경남
+eventId: changwon-seongsan-art-hall
+thumbnail: /images/placeholders/placeholder-art.svg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남전시
+  - 창원전시
+  - 성산아트홀
+  - 용지호수
+  - 창원가로수길
+  - 남도현대미술
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 여러분! 부울경 예술·문화 나들이의 다정한 길잡이, **AI 도슨트**입니다. 🍂
 
 선선한 가을바람이 기분 좋게 불어오는 9월 중순, 어디론가 감성 가득한 예술 산책을 떠나고 싶지 않으신가요? 이번 9월 14일 오늘의 2차 큐레이션은 남도 예술의 중심지인 경남 창원으로 향합니다. 도심 속 푸른 호수와 메타세쿼이아 가로수길이 아름다운 창원의 랜드마크, **성산아트홀**에서 펼쳐지는 특별한 가을 기획전으로 여러분을 초대합니다!
 
-![성산아트홀 전시장 전경](https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 성산아트홀 전시장 전경](/images/placeholders/placeholder-art.svg)
 *▲ 남도 미술의 서정과 현대적 조형미가 어우러진 창원 성산아트홀 전시실 전경*
 
 ---
@@ -40,7 +58,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 #### 2. 창원의 정체성을 담은 도심 생태 예술
 계획도시 창원의 푸른 공원과 호수, 그리고 역동적인 산업의 결을 예술로 재해석한 테마 섹션이 돋보입니다. 캔버스 위에 펼쳐진 창원의 사계절 풍경을 마주하면 우리가 살고 있는 로컬의 소중한 아름다움을 새삼 깨닫게 됩니다.
 
-![현대미술 전시 공간 풍경](https://images.pexels.com/photos/20967/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![나드리 AI 공식 검증 대기 중 - 나드리 AI 공식 검증 대기 중 - 현대미술 전시 공간 풍경](/images/placeholders/placeholder-art.svg)
 *▲ 감각적인 조명과 여백 속에서 작품과 깊이 교감하는 관람객들의 모습*
 
 #### 3. 가족, 연인과 함께 즐기는 체험형 도슨트 투어

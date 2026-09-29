@@ -1,17 +1,35 @@
 ---
-title: "클레이아크김해미술관 기획전 : 흙과 미래 건축"
-date: "2026-09-13"
-summary: "건축 도자의 무한한 가능성을 조명하는 돔하우스 특별 기획전! 자연광이 쏟아지는 아름다운 돔 미술관과 도자 체험."
-category: "전시 리뷰"
-region: "경남"
-eventId: "gimhae-clayarch-autumn"
-thumbnail: "https://images.pexels.com/photos/6611208/pexels-photo-6611208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전시", "김해전시", "클레이아크김해", "건축도자", "돔하우스", "가족나들이", "경남가볼만한곳", "경남나들이", "경남데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '클레이아크김해미술관 기획전 : 흙과 미래 건축'
+date: '2026-09-13'
+summary: 건축 도자의 무한한 가능성을 조명하는 돔하우스 특별 기획전! 자연광이 쏟아지는 아름다운 돔 미술관과 도자 체험.
+category: 전시 리뷰
+region: 경남
+eventId: gimhae-clayarch-autumn
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 경남전시
+  - 김해전시
+  - 클레이아크김해
+  - 건축도자
+  - 돔하우스
+  - 가족나들이
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
+venueId: gimhae-clayarch-autumn
 ---
 
 안녕하세요, 부울경 예술 나들이의 다정한 안내자이자 여러분의 전담 **AI 도슨트**입니다! 🌿 선선한 바람이 불어오며 어디론가 훌쩍 떠나고 싶어지는 요즘, 자연과 예술이 숨 쉬는 경남 김해로 여러분을 초대합니다. 맨날 고속도로 위에서 멀리서만 바라보던 그 독특한 돔 모양의 미술관, 궁금하셨죠? 이번 주말, 흙이 지닌 따뜻한 물성과 미래 건축의 무한한 가능성을 만날 수 있는 특별한 전시로 저와 함께 떠나보실까요?
 
-![작업 테이블에서 타일을 만들기 위해 커터로 흙을 성형하는 모습](https://images.pexels.com/photos/6611208/pexels-photo-6611208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 사진 설명: 정교한 손길로 빚어낸 흙과 건축 도자의 만남, 클레이아크김해미술관 기획전 현장.*
 
 ---
@@ -38,7 +56,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 #### 2. '흙'이 지닌 물성과 건축의 만남, 미래를 그리다
 이번 전시는 단순히 빚어내는 도자를 넘어, 건축의 자재로서 흙이 가진 무한한 가능성을 조명합니다. 전통적인 도예의 영역을 확장하여 친환경적이고 감각적인 미래 건축의 대안을 제시하는 작가들의 실험적인 작품들을 만나보세요. 자연과 인간, 그리고 기술이 흙이라는 매개체 안에서 어떻게 조화를 이루는지 깊이 있게 엿볼 수 있습니다.
 
-![푸른 하늘과 구름을 배경으로 한 독특한 푸른빛 세라믹 타워](https://images.pexels.com/photos/32368605/pexels-photo-32368605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 사진 설명: 파란 하늘 아래 빛나는 독창적인 세라믹 조형물과 건축 도자의 조화.*
 
 #### 3. 생생한 감각을 깨우는 도자 예술과 체험의 장
@@ -55,7 +73,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 - **옹기짜장&밀면** (경남 김해시 진례면 서부로 614 1층)
   - 든든하고 맛깔스러운 한 끼를 원하신다면 추천하는 로컬 맛집입니다. 남녀노소 누구나 좋아하는 중식 메뉴를 깔끔하게 즐길 수 있어 가족 단위 관람객들에게 특히 인기가 높습니다.
 
-![야외 테라스에서 민트로 장식된 커피 판나코타 디저트와 파인애플, 잣이 곁들여진 모습](https://d12zq4w4guyljn.cloudfront.net/750_750_20250905011832880_photo_2ad4c9afed8d.webp)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 사진 설명: 미술관 나들이의 달콤한 낭만을 더해주는 감성 카페의 디저트와 음료.*
 
 ---
@@ -80,7 +98,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전�
 2. **김해분청도자박물관** (바로 인근에 위치해 분청도자의 역사와 아름다움을 깊이 있게 배우는 코스)
 3. **진례 로컬 맛집 & 감성 카페 투어** (맛있는 식사와 커피로 재충전)
 
-![도심의 스카이라인과 나무들이 어우러진 평화로운 경치, 여행과 산책에 어울리는 풍경](https://images.pexels.com/photos/6611244/pexels-photo-6611244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
 *▲ 사진 설명: 자연과 일상이 조화롭게 어우러진 경남의 평화로운 풍경 속으로 떠나는 나들목.*
 
 ---
