@@ -35,41 +35,38 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
   }, [posts, selectedDate]);
 
   return (
-    <section className="space-y-6">
+    <section className="space-y-4 sm:space-y-6">
       {/* 섹션 상단 헤더 & 날짜 필터 탭 */}
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/15 via-rose-500/15 to-indigo-500/15 text-indigo-900 border border-indigo-200/60 text-xs font-bold mb-2">
-            <span className="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
-            <span>🔥 AI 도슨트 일일 2회 정기 큐레이션</span>
-            <span className="text-slate-400">|</span>
-            <span className="text-indigo-600 font-extrabold">{selectedDate} 큐레이션 연동</span>
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold mb-1.5">
+            <span>✨</span>
+            <span>AI 추천 매거진</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-            <span>오늘의 AI 추천 전시 & 매거진</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+            오늘의 AI 큐레이션
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 mt-1">
-            부울경 39개 지역의 명품 전시와 로컬 맛집, 5일장, 힐링 도서관 나들이 코스를 매일 2편(오전/오후) 엄선합니다.
+          <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+            매일 엄선되는 부울경 전시와 로컬 나들이 코스
           </p>
         </div>
 
-        {/* 날짜 선택 탭 (실시간 변화 체감 탭) */}
-        <div className="flex items-center gap-1.5 p-1 bg-slate-100/90 rounded-2xl border border-slate-200/60 shrink-0">
+        {/* 날짜 선택 탭 */}
+        <div className="flex items-center gap-1 p-1 bg-slate-100 rounded-xl border border-slate-200/60 shrink-0 self-start sm:self-auto">
           {availableDates.map((d, idx) => {
             const isLatest = idx === 0;
-            const label = isLatest ? `오늘 (${d.slice(5)})` : idx === 1 ? `어제 (${d.slice(5)})` : d.slice(5);
+            const label = isLatest ? `오늘` : idx === 1 ? `어제` : d.slice(5);
             return (
               <button
                 key={d}
                 type="button"
                 onClick={() => setSelectedDate(d)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center gap-1 ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   selectedDate === d
                     ? "bg-indigo-600 text-white shadow-xs"
-                    : "text-slate-600 hover:text-slate-900 hover:bg-white/60"
+                    : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                {isLatest && <span className="w-1.5 h-1.5 rounded-full bg-amber-300 animate-pulse"></span>}
                 <span>{label}</span>
               </button>
             );
@@ -77,13 +74,13 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
         </div>
       </div>
 
-      {/* 🌟 선택된 날짜의 포스트 그리드 (1차 오전 PICK + 2차 오후 PICK) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* 1. 메인 1차 추천 전시 (대형 와이드 카드) */}
-        <div className={`relative bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 rounded-3xl overflow-hidden border border-indigo-800/40 shadow-xl text-white ${secondaryPost ? "lg:col-span-8" : "lg:col-span-12"}`}>
-          <div className="flex flex-col h-full justify-between">
+      {/* 🌟 선택된 날짜의 포스트 그리드 */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
+        {/* 1. 메인 1차 추천 전시 */}
+        <div className={`relative bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between ${secondaryPost ? "lg:col-span-8" : "lg:col-span-12"}`}>
+          <div>
             {/* 상단 이미지 영역 */}
-            <div className="relative h-64 sm:h-76 w-full overflow-hidden group">
+            <div className="relative h-56 sm:h-72 w-full overflow-hidden bg-slate-100 group">
               {mainPost.thumbnail ? (
                 <img
                   src={mainPost.thumbnail}
@@ -91,89 +88,57 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               ) : (
-                <div className="w-full h-full bg-slate-900 flex items-center justify-center text-5xl">
+                <div className="w-full h-full bg-slate-200 flex items-center justify-center text-4xl">
                   🎨
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-
-              {/* 상단 뱃지 */}
-              <div className="absolute top-4 left-4 flex flex-wrap items-center gap-2 z-10">
-                <span className="px-3 py-1 rounded-full text-xs font-black bg-rose-600 text-white shadow-lg flex items-center gap-1">
-                  <span>🌟</span>
-                  <span>{selectedDate === availableDates[0] ? "TODAY 1차 PICK (오전)" : "1차 추천 PICK"}</span>
+              <div className="absolute top-3 left-3 flex items-center gap-1.5">
+                <span className="px-2.5 py-1 rounded-full text-xs font-extrabold bg-indigo-600 text-white shadow-sm">
+                  1차 추천 (오전)
                 </span>
-                <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-md text-indigo-900 shadow-md">
-                  {mainPost.region} · {mainPost.category}
-                </span>
-                <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 shadow-md">
-                  🍂 가을 예술 나들이
-                </span>
-              </div>
-
-              <div className="absolute bottom-3 right-4 z-10">
-                <span className="px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-900/90 border border-indigo-500/50 text-white shadow-md">
-                  📅 {mainPost.date} 정기 발행
+                <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-white/95 text-slate-800 shadow-sm backdrop-blur-xs">
+                  {mainPost.region}
                 </span>
               </div>
             </div>
 
-            {/* 하단 본문 소개 */}
-            <div className="p-6 sm:p-7 space-y-4 flex-1 flex flex-col justify-between">
-              <div className="space-y-2.5">
-                <Link href={`/blog/${mainPost.slug}`} className="block group">
-                  <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-amber-300 transition-colors leading-snug [word-break:keep-all]">
-                    {mainPost.title}
-                  </h3>
-                </Link>
-
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-2 [word-break:keep-all]">
-                  {mainPost.summary}
-                </p>
-
-                {/* 태그 목록 */}
-                {mainPost.tags && mainPost.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {mainPost.tags.slice(0, 5).map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="text-[11px] font-medium text-indigo-200 bg-indigo-500/20 px-2 py-0.5 rounded-md border border-indigo-400/20"
-                      >
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* CTA 버튼 */}
-              <div className="pt-4 flex items-center gap-3">
-                <Link
-                  href={`/blog/${mainPost.slug}`}
-                  className="px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-black text-xs sm:text-sm shadow-md transition-all flex items-center gap-1.5 cursor-pointer group"
-                >
-                  <span>✨ 도슨트 해설 & 코스 읽기</span>
-                  <span className="group-hover:translate-x-1 transition-transform">➔</span>
-                </Link>
-                {mainPost.eventId && (
-                  <Link
-                    href={`/events/${mainPost.eventId}`}
-                    className="px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs transition-all text-center"
-                  >
-                    전시 상세정보
-                  </Link>
-                )}
-              </div>
+            {/* 본문 소개 */}
+            <div className="p-4 sm:p-6 space-y-2">
+              <Link href={`/blog/${mainPost.slug}`} className="block group">
+                <h3 className="text-base sm:text-xl font-black text-slate-900 group-hover:text-indigo-600 transition-colors leading-snug [word-break:keep-all]">
+                  {mainPost.title}
+                </h3>
+              </Link>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2 [word-break:keep-all]">
+                {mainPost.summary}
+              </p>
             </div>
+          </div>
+
+          <div className="p-4 sm:p-6 pt-0 flex items-center justify-between gap-3">
+            <Link
+              href={`/blog/${mainPost.slug}`}
+              className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs sm:text-sm shadow-xs transition-all inline-flex items-center gap-1 cursor-pointer"
+            >
+              <span>코스 읽기</span>
+              <span>➔</span>
+            </Link>
+            {mainPost.eventId && (
+              <Link
+                href={`/events/${mainPost.eventId}`}
+                className="text-xs font-bold text-slate-500 hover:text-indigo-600 transition-colors"
+              >
+                전시 정보 보기
+              </Link>
+            )}
           </div>
         </div>
 
-        {/* 2. 서브 2차 추천 전시 (오후 발행 카드) */}
+        {/* 2. 서브 2차 추천 전시 */}
         {secondaryPost && (
-          <div className="lg:col-span-4 bg-white rounded-3xl overflow-hidden border border-indigo-200 shadow-lg flex flex-col justify-between">
+          <div className="lg:col-span-4 bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
             <div>
-              {/* 이미지 */}
-              <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-slate-100 group">
+              <div className="relative h-44 sm:h-52 w-full overflow-hidden bg-slate-100 group">
                 {secondaryPost.thumbnail ? (
                   <img
                     src={secondaryPost.thumbnail}
@@ -181,54 +146,38 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 ) : (
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center text-4xl">
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center text-3xl">
                     🎨
                   </div>
                 )}
                 <div className="absolute top-3 left-3 flex items-center gap-1.5">
-                  <span className="px-2.5 py-1 rounded-full text-[11px] font-black bg-indigo-600 text-white shadow-md flex items-center gap-1">
-                    <span>✨</span>
-                    <span>2차 추천 PICK (오후)</span>
+                  <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-900 text-white shadow-sm">
+                    2차 추천 (오후)
                   </span>
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/90 text-slate-800">
+                  <span className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/95 text-slate-800 shadow-sm">
                     {secondaryPost.region}
                   </span>
                 </div>
-                <div className="absolute bottom-3 right-3">
-                  <span className="px-2 py-0.5 rounded-md text-[10px] font-extrabold bg-indigo-900 text-white shadow-xs">
-                    {secondaryPost.date}
-                  </span>
-                </div>
               </div>
 
-              {/* 본문 */}
-              <div className="p-5 space-y-2.5">
+              <div className="p-4 space-y-1.5">
                 <Link href={`/blog/${secondaryPost.slug}`} className="block group">
-                  <h3 className="font-extrabold text-slate-900 text-base group-hover:text-indigo-600 transition-colors leading-snug line-clamp-2">
+                  <h3 className="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-indigo-600 transition-colors leading-snug line-clamp-2">
                     {secondaryPost.title}
                   </h3>
                 </Link>
-                <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
                   {secondaryPost.summary}
                 </p>
-                {secondaryPost.tags && (
-                  <div className="flex flex-wrap gap-1 pt-1">
-                    {secondaryPost.tags.slice(0, 3).map((t, idx) => (
-                      <span key={idx} className="text-[10px] font-medium text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded">
-                        #{t}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </div>
             </div>
 
-            <div className="p-5 pt-0">
+            <div className="p-4 pt-0">
               <Link
                 href={`/blog/${secondaryPost.slug}`}
-                className="w-full py-2.5 px-3 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white text-xs font-bold transition-all text-center block"
+                className="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-700 hover:text-white text-xs font-bold transition-all text-center block"
               >
-                오후 추천 코스 읽기 →
+                오후 추천 읽기 →
               </Link>
             </div>
           </div>
