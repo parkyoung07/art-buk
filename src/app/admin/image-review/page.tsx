@@ -315,12 +315,15 @@ export default function ImageReviewPage() {
               onChange={(e) => setFilterPlace(e.target.value)}
               className="px-3 py-1.5 bg-slate-950 border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:border-emerald-500"
             >
-              <option value="all">전체 장소 (20곳)</option>
-              {uniquePlaces.map((name) => (
-                <option key={name} value={candidates.find((c) => c.place_name === name)?.place_id}>
-                  {name}
-                </option>
-              ))}
+              <option value="all">전체 장소 ({uniquePlaces.length}곳)</option>
+              {uniquePlaces.map((name) => {
+                const matched = candidates.find((c) => c.place_name === name);
+                return (
+                  <option key={name} value={matched?.place_id || name}>
+                    {name}
+                  </option>
+                );
+              })}
             </select>
           </div>
 
