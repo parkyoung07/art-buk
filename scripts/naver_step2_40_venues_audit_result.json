@@ -6,37 +6,40 @@
     "category": "미술관/문화공간",
     "region": "부산",
     "sub_region": "영도구",
-    "total_candidates": 20,
+    "total_candidates": 23,
     "approved_count": 3,
-    "pending_count": 16,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "85.0%",
+    "pending_count": 5,
+    "rejected_count": 15,
+    "mismatched_detected": 12,
+    "official_source_ratio": "73.9%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/082/2022/07/07/0001163961_001_20220707213001240.png",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2022%2F07%2F07%2F0001163961_001_20220707213001240.png",
-        "title": "부산 국립해양박물관 개관 10주년…기념 행사 풍성",
+        "url": "https://tong.visitkorea.or.kr/cms/resource/44/4111444_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F44%2F4111444_image2_1.jpg",
+        "title": "국립해양박물관 (2026) - 부산광역시 영도구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "http://imgnews.naver.net/image/082/2025/05/21/0001326803_002_20250521145107997.JPG",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2025%2F05%2F21%2F0001326803_002_20250521145107997.JPG",
+        "title": "국립해양박물관으로 눌러 오세요… ‘2025 해양교육문화박람회’ 프로그램 ‘풍성’",
         "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/469/2016/01/25/617b1270409843db826189040920b09b_99_20160125171405.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F469%2F2016%2F01%2F25%2F617b1270409843db826189040920b09b_99_20160125171405.jpg",
-        "title": "국립해양박물관, 자원봉사가족 모집",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/421/2023/09/14/0007049007_001_20230914074307034.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2023%2F09%2F14%2F0007049007_001_20230914074307034.jpg",
-        "title": "새 단장한 국립해양박물관 내일 상설전시실 공개 …자료 500점 선보여",
-        "score": 85,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=3f719fad-a9ee-4c6a-b89b-ee3e8ae260de",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fcdn.visitkorea.or.kr%2Fimg%2Fcall%3Fcmd%3DVIEW%26id%3D3f719fad-a9ee-4c6a-b89b-ee3e8ae260de",
+        "title": "국립해양박물관> 여행지 | '열린 관광' 모두의 여행:대한민국 구석구석",
+        "score": 92,
+        "source_domain": "cdn.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
       }
     ]
   },
@@ -47,37 +50,40 @@
     "category": "미술관/문화공간",
     "region": "부산",
     "sub_region": "중구",
-    "total_candidates": 19,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 12,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "47.4%",
+    "pending_count": 18,
+    "rejected_count": 3,
+    "mismatched_detected": 1,
+    "official_source_ratio": "70.8%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5832/2026/01/09/2026010907480403033433530906c115139092_20260109075414448.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5832%2F2026%2F01%2F09%2F2026010907480403033433530906c115139092_20260109075414448.jpg",
-        "title": "부산근현대역사관, 겨울뮤캉스",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://www.busan.go.kr/data/synap/20260529/files/421da9ac-d951-4def-b79d-d9378bb33297.png",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fdata%2Fsynap%2F20260529%2Ffiles%2F421da9ac-d951-4def-b79d-d9378bb33297.png",
+        "title": "2026년 부산근현대역사관 6월 운영안내 : 부산소식 : 새소식 : 통합 공지사항 : 부산광역시 2026년 부산근현대역사관 6월 운영안내 : 부산소식...",
+        "score": 102,
+        "source_domain": "www.busan.go.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5445/2024/09/25/0000410336_001_20240925102011827.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5445%2F2024%2F09%2F25%2F0000410336_001_20240925102011827.jpg",
-        "title": "부산근현대역사관, '부산의 노래'로 부산시민의 날 기념",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://www.busan.go.kr/data/synap/20251230/files/aa2aeb7d-c8dd-416a-86f1-433c5d4682c4.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fdata%2Fsynap%2F20251230%2Ffiles%2Faa2aeb7d-c8dd-416a-86f1-433c5d4682c4.jpg",
+        "title": "[안내]2026년 부산근현대역사관 1월 1일 휴관 안내 : 부산소식 : 새소식 : 통합 공지사항 : 부산광역시 [안내]2026년 부산근현대역사관 1월 1일...",
+        "score": 102,
+        "source_domain": "www.busan.go.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/031/2023/07/26/0000761543_001_20230726144403182.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F031%2F2023%2F07%2F26%2F0000761543_001_20230726144403182.jpg",
-        "title": "부산근현대역사관, 초등학생 대상 교육프로그램 운영",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://www.busan.go.kr/data/synap/20260612/files/05098f33-f13f-495c-9c93-8a07b3c59ed3.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fdata%2Fsynap%2F20260612%2Ffiles%2F05098f33-f13f-495c-9c93-8a07b3c59ed3.jpg",
+        "title": "2026년 부산근현대역사관 테마교류전  개최 알림 : 부산소식 : 새소식 : 통합 공지사항 : 부산광역시 2026년...",
+        "score": 102,
+        "source_domain": "www.busan.go.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       }
     ]
   },
@@ -89,28 +95,21 @@
     "region": "부산",
     "sub_region": "사하구",
     "total_candidates": 6,
-    "approved_count": 2,
-    "pending_count": 2,
+    "approved_count": 1,
+    "pending_count": 3,
     "rejected_count": 2,
-    "mismatched_detected": 0,
+    "mismatched_detected": 2,
     "official_source_ratio": "33.3%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://www.indica.or.kr/xe/files/attach/images/1977470/298/047/007/92d30e6234e30466b8f234a4ab805c22.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Fwww.indica.or.kr%2Fxe%2Ffiles%2Fattach%2Fimages%2F1977470%2F298%2F047%2F007%2F92d30e6234e30466b8f234a4ab805c22.jpg",
-        "title": "풍경갤러리 - 다대포 꿈의 낙조분수",
-        "score": 95,
-        "source_domain": "www.indica.or.kr",
-        "source_tier": "A"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5172/2019/07/12/0000561204_001_20190712001413320.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5172%2F2019%2F07%2F12%2F0000561204_001_20190712001413320.jpg",
-        "title": "[바캉스 특집-사하구] 꿈의 낙조분수·부네치아·선셋로드·문화 바캉스…모두 누린다",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://www.busan.go.kr/ImagePrint.do?dir=smartEditor&savename=FILE_00000000000000022359&realname=%EB%82%99%EC%A1%B0%EB%B6%84%EC%88%98.jpg&fileext=jpg&filetype=image/jpeg&filesize=341661",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2FImagePrint.do%3Fdir%3DsmartEditor%26savename%3DFILE_00000000000000022359%26realname%3D%25EB%2582%2599%25EC%25A1%25B0%25EB%25B6%2584%25EC%2588%2598.jpg%26fileext%3Djpg%26filetype%3Dimage%2Fjpeg%26filesize%3D341661",
+        "title": "전체기사보기 : 부산시보 다대포 꿈의 낙조분수 23일 개장",
+        "score": 97,
+        "source_domain": "www.busan.go.kr",
+        "source_tier": "A",
+        "photo_year": null
       }
     ]
   },
@@ -121,29 +120,22 @@
     "category": "힐링/자연",
     "region": "부산",
     "sub_region": "해운대구",
-    "total_candidates": 15,
-    "approved_count": 2,
-    "pending_count": 11,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "33.3%",
+    "total_candidates": 14,
+    "approved_count": 1,
+    "pending_count": 8,
+    "rejected_count": 5,
+    "mismatched_detected": 3,
+    "official_source_ratio": "28.6%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.busan.go.kr/comm/getFile?srvcId=BBSTY3&upperNo=1602227&fileNo=1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fcomm%2FgetFile%3FsrvcId%3DBBSTY3%26upperNo%3D1602227%26fileNo%3D1",
-        "title": "사진 갤러리 - [갈맷길 2-1] 해운대 그린레일웨이 (블루라인파크) : 부산 갈맷길 부산 갈맷길",
-        "score": 87,
-        "source_domain": "www.busan.go.kr",
-        "source_tier": "A"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/016/2020/10/06/20201006000563_0_20201006131133438.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F016%2F2020%2F10%2F06%2F20201006000563_0_20201006131133438.jpg",
-        "title": "해운대 블루라인파크 준공, 친환경 해변열차·캡슐 타고 달린다",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/030/2025/10/15/0003359283_001_20251015193038259.jpeg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F030%2F2025%2F10%2F15%2F0003359283_001_20251015193038259.jpeg",
+        "title": "[2025 대한민국 SNS대상]해운대블루라인파크, 전세계 팔로워들과 소통하며 한국 관광 선도",
+        "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -154,37 +146,40 @@
     "category": "힐링/자연",
     "region": "부산",
     "sub_region": "기장군",
-    "total_candidates": 16,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 13,
-    "rejected_count": 0,
-    "mismatched_detected": 0,
-    "official_source_ratio": "31.3%",
+    "pending_count": 17,
+    "rejected_count": 4,
+    "mismatched_detected": 2,
+    "official_source_ratio": "25.0%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/023/2021/11/04/0003650941_001_20211104173708192.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F023%2F2021%2F11%2F04%2F0003650941_001_20211104173708192.jpg",
-        "title": "바닷가 풍광 부산 해동용궁사, 지리산 화엄사 말사됐다",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://pup-post-phinf.pstatic.net/MjAyNTEyMzFfMjAg/MDAxNzY3MTkxNTQ1Mzcy.R3t98rpiF3lD5mtWTddvTqtn49VtqZdKp7qta6uqzjUg.limEcACB01gle6YJDi1Peppw3Zxaht6-K3Mx5sBRXYIg.JPEG/POST_IMAGE_ENCODING_20251231_233224_761.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fpup-post-phinf.pstatic.net%2FMjAyNTEyMzFfMjAg%2FMDAxNzY3MTkxNTQ1Mzcy.R3t98rpiF3lD5mtWTddvTqtn49VtqZdKp7qta6uqzjUg.limEcACB01gle6YJDi1Peppw3Zxaht6-K3Mx5sBRXYIg.JPEG%2FPOST_IMAGE_ENCODING_20251231_233224_761.jpg",
+        "title": "2026년도 일출 장소로 제격인 부산 #해동용궁사  모두 새해 복 많이... 🌅  #일출장소 #해피뉴이어 #2026 #네이버클립챌린저 #2025클립챌린저...",
+        "score": 75,
+        "source_domain": "pup-post-phinf.pstatic.net",
+        "source_tier": "C",
+        "photo_year": 2026
       },
       {
-        "url": "http://www.indica.or.kr/xe/files/attach/images/1977470/148/386/008/8ca973a31e483394e16d1249eaecfb06.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Fwww.indica.or.kr%2Fxe%2Ffiles%2Fattach%2Fimages%2F1977470%2F148%2F386%2F008%2F8ca973a31e483394e16d1249eaecfb06.jpg",
-        "title": "풍경갤러리 - 해동용궁사",
-        "score": 95,
-        "source_domain": "www.indica.or.kr",
-        "source_tier": "A"
+        "url": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=86c6fbd8-ad6b-4ec5-9c47-9df2ad701a47",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fcdn.visitkorea.or.kr%2Fimg%2Fcall%3Fcmd%3DVIEW%26id%3D86c6fbd8-ad6b-4ec5-9c47-9df2ad701a47",
+        "title": "소원 하나를 이뤄주는, 부산 해동용궁사> 여행기사 | 추천! 가볼만한곳:대한민국 구석구석",
+        "score": 97,
+        "source_domain": "cdn.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
       },
       {
-        "url": "http://imgnews.naver.net/image/5369/2015/04/20/19425_25352_2336_99_20150420102502.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5369%2F2015%2F04%2F20%2F19425_25352_2336_99_20150420102502.jpg",
-        "title": "[SN여행] 아름다운 풍경과 볼거리가 가득한 '해동용궁사' [부산 기장]",
-        "score": 90,
+        "url": "http://imgnews.naver.net/image/5501/2024/01/11/0000015665_004_20240111081203150.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5501%2F2024%2F01%2F11%2F0000015665_004_20240111081203150.jpg",
+        "title": "소원 하나를 이뤄주는, 부산 해동용궁사",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   },
@@ -195,37 +190,31 @@
     "category": "전통시장",
     "region": "부산",
     "sub_region": "부산진구",
-    "total_candidates": 14,
-    "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 0,
-    "mismatched_detected": 0,
-    "official_source_ratio": "71.4%",
+    "total_candidates": 8,
+    "approved_count": 2,
+    "pending_count": 2,
+    "rejected_count": 4,
+    "mismatched_detected": 4,
+    "official_source_ratio": "87.5%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/082/2014/12/15/20141215000065_0_99_20141216095153.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2014%2F12%2F15%2F20141215000065_0_99_20141216095153.jpg",
-        "title": "관광형 쇼핑 1번지로 뜬 부전마켓타운",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://www.busanjin.go.kr/upload_data/board_data/TOURISTSITE/157440208969715.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busanjin.go.kr%2Fupload_data%2Fboard_data%2FTOURISTSITE%2F157440208969715.jpg",
+        "title": "맛집·숙박·쇼핑·뷰티 > 전통시장 > 부전마켓타운 > 부전마켓타운 | 문화관광",
+        "score": 92,
+        "source_domain": "www.busanjin.go.kr",
+        "source_tier": "A",
+        "photo_year": null
       },
       {
-        "url": "http://imgnews.naver.net/image/082/2008/04/29/101029jwi1u.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2008%2F04%2F29%2F101029jwi1u.jpg",
-        "title": "부전마켓타운 아케이드 '날림' 의혹",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5294/2026/01/23/0000440717_001_20260123152614398.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5294%2F2026%2F01%2F23%2F0000440717_001_20260123152614398.jpg",
+        "title": "[위클리오늘] 부산진구 내 집(점포) 앞 내가 쓸기 홍보단, 부전마켓타운 일원 홍보 활동",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/015/2007/11/28/2007112777051_2007112778831.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F015%2F2007%2F11%2F28%2F2007112777051_2007112778831.jpg",
-        "title": "[지역상권 이렇게 살리자] (12) 부산 부전마켓타운‥하얄리야 공원과 지하통로 연결…관광코스로 특화",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       }
     ]
   },
@@ -237,36 +226,30 @@
     "region": "부산",
     "sub_region": "동래구",
     "total_candidates": 19,
-    "approved_count": 3,
-    "pending_count": 13,
-    "rejected_count": 3,
-    "mismatched_detected": 1,
-    "official_source_ratio": "57.9%",
+    "approved_count": 2,
+    "pending_count": 9,
+    "rejected_count": 8,
+    "mismatched_detected": 4,
+    "official_source_ratio": "52.6%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.heritage.go.kr/unisearch/images/history_site/2022050112105800.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.heritage.go.kr%2Funisearch%2Fimages%2Fhistory_site%2F2022050112105800.jpg",
-        "title": "국가유산이미지 | 부산 동래 패총 전경 부산 동래 패총 전경",
-        "score": 80,
-        "source_domain": "www.heritage.go.kr",
-        "source_tier": "A"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/01/3493501_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F01%2F3493501_image2_1.jpg",
+        "title": "동래시장 (2026) - 부산광역시 동래구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "https://www.heritage.go.kr/unisearch/images/monument/1645292.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.heritage.go.kr%2Funisearch%2Fimages%2Fmonument%2F1645292.jpg",
-        "title": "국가유산이미지 | 동래향교 전경 동래향교 전경",
-        "score": 75,
-        "source_domain": "www.heritage.go.kr",
-        "source_tier": "A"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/047/2024/04/17/0002430911_006_20240417210301374.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F047%2F2024%2F04%2F17%2F0002430911_006_20240417210301374.jpg",
-        "title": "내가 만난 '색다른 부산', 동래시장 옛 풍경이 궁금해졌다",
-        "score": 90,
+        "url": "http://imgnews.naver.net/image/001/2023/06/20/C0A8CA3C0000014FD81BB8D90001CC70_P2_20230620092409471.jpeg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2023%2F06%2F20%2FC0A8CA3C0000014FD81BB8D90001CC70_P2_20230620092409471.jpeg",
+        "title": "[부산소식] 동래시장 등 19개 전통시장서 특가 행사",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2023
       }
     ]
   },
@@ -277,37 +260,40 @@
     "category": "전통시장",
     "region": "부산",
     "sub_region": "기장군",
-    "total_candidates": 20,
+    "total_candidates": 22,
     "approved_count": 3,
-    "pending_count": 14,
-    "rejected_count": 3,
-    "mismatched_detected": 0,
-    "official_source_ratio": "45.0%",
+    "pending_count": 11,
+    "rejected_count": 8,
+    "mismatched_detected": 5,
+    "official_source_ratio": "63.6%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5138/2024/02/03/0000522449_001_20240203110204829.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2024%2F02%2F03%2F0000522449_001_20240203110204829.jpg",
-        "title": "기장군, 이번 설에는 기장시장에서 국내산 수산물 구입하시고 온누리상품권 받으세요",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/016/2026/04/27/0002635983_001_20260427152014981.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F016%2F2026%2F04%2F27%2F0002635983_001_20260427152014981.jpg",
+        "title": "기장군, 5월 황금연휴‘2026 기장시장 한마당 잔치’ 열어...맛과 흥에 흠뻑",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5244/2023/05/22/0000443526_001_20230522161204454.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5244%2F2023%2F05%2F22%2F0000443526_001_20230522161204454.jpg",
-        "title": "기장군, 기장역-기장시장-기장읍성 연계 역사문화공간 조성",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/022/2023/05/22/20230522520490_20230522180603547.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F022%2F2023%2F05%2F22%2F20230522520490_20230522180603547.jpg",
-        "title": "기장역-기장시장-기장읍성 연계 역사문화공간 조성 ‘잰걸음’",
+        "url": "https://tong.visitkorea.or.kr/cms/resource/50/1982250_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F50%2F1982250_image2_1.jpg",
+        "title": "송정전통재래시장 (2026) - 부산광역시 기장군 가볼만한곳 - 관광지랭킹",
         "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "http://imgnews.naver.net/image/5017/2025/05/02/beta20250502000104.800x.0_20250502160212336.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5017%2F2025%2F05%2F02%2Fbeta20250502000104.800x.0_20250502160212336.jpg",
+        "title": "[기장군 브리핑] 2025년 기장시장 한마당 잔치 개최",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -318,37 +304,40 @@
     "category": "특화도서관",
     "region": "부산",
     "sub_region": "금정구",
-    "total_candidates": 20,
+    "total_candidates": 21,
     "approved_count": 3,
-    "pending_count": 12,
-    "rejected_count": 5,
-    "mismatched_detected": 0,
-    "official_source_ratio": "75.0%",
+    "pending_count": 9,
+    "rejected_count": 9,
+    "mismatched_detected": 8,
+    "official_source_ratio": "76.2%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/082/2019/01/21/0000872378_001_20190121110305313.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2019%2F01%2F21%2F0000872378_001_20190121110305313.jpg",
-        "title": "금정도서관, 월요일에도 문 연다",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5138/2024/06/24/0000564052_001_20240624130222853.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2024%2F06%2F24%2F0000564052_001_20240624130222853.jpg",
+        "title": "부산시 금정구 도서관으로 떠나는 여름휴가,  금정도서관 2024년 북캉스 운영",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       },
       {
-        "url": "http://imgnews.naver.net/image/5445/2025/08/13/0000452813_001_20250813125817721.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5445%2F2025%2F08%2F13%2F0000452813_001_20250813125817721.jpg",
-        "title": "금정도서관 '들락날락' 개관, 15분 도시 핵심 시설 확충",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://dl.nanet.go.kr/storage/thumb/MONO/1202/4000/0000/MONO12024000000084/MONO12024000000084_3l.jpeg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fdl.nanet.go.kr%2Fstorage%2Fthumb%2FMONO%2F1202%2F4000%2F0000%2FMONO12024000000084%2FMONO12024000000084_3l.jpeg",
+        "title": "2024년부터 이렇게 달라집니다 | 국회도서관 국회전자도서관",
+        "score": 77,
+        "source_domain": "dl.nanet.go.kr",
+        "source_tier": "A",
+        "photo_year": 2024
       },
       {
-        "url": "http://imgnews.naver.net/image/082/2020/04/16/0000996450_001_20200416101311838.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2020%2F04%2F16%2F0000996450_001_20200416101311838.jpg",
-        "title": "금정도서관, ‘집 콕! 도서관 레시피 따라잡기’ 운영",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/011/2025/08/13/0004520420_001_20250813081110500.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F011%2F2025%2F08%2F13%2F0004520420_001_20250813081110500.jpg",
+        "title": "부산 금정도서관 ‘들락날락’ 개관…15분도시 어린이복합문화공간 확충",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -359,31 +348,14 @@
     "category": "특화도서관",
     "region": "부산",
     "sub_region": "해운대구",
-    "total_candidates": 12,
-    "approved_count": 2,
-    "pending_count": 7,
-    "rejected_count": 3,
-    "mismatched_detected": 0,
-    "official_source_ratio": "66.7%",
-    "use_placeholder": false,
-    "approved_images": [
-      {
-        "url": "https://www.busan.go.kr/ImagePrint.do?dir=smartEditor&savename=0e963a7757ad4c55b3a8f2fe60d288b5&realname=20180316_144524.jpg&fileext=jpg&filetype=image/jpeg&filesize=5218029",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2FImagePrint.do%3Fdir%3DsmartEditor%26savename%3D0e963a7757ad4c55b3a8f2fe60d288b5%26realname%3D20180316_144524.jpg%26fileext%3Djpg%26filetype%3Dimage%2Fjpeg%26filesize%3D5218029",
-        "title": "이야기리포트 : 부산시보 해운대 인문학 도서관 개관식을 보고와서",
-        "score": 77,
-        "source_domain": "www.busan.go.kr",
-        "source_tier": "A"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/079/2018/07/18/0003124467_001_20180718110018785.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F079%2F2018%2F07%2F18%2F0003124467_001_20180718110018785.jpg",
-        "title": "해운대인문학도서관에 무인 '스마트도서관' 운영",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      }
-    ]
+    "total_candidates": 14,
+    "approved_count": 0,
+    "pending_count": 2,
+    "rejected_count": 12,
+    "mismatched_detected": 10,
+    "official_source_ratio": "71.4%",
+    "use_placeholder": true,
+    "approved_images": []
   },
   {
     "index": 11,
@@ -392,37 +364,40 @@
     "category": "특화도서관",
     "region": "부산",
     "sub_region": "강서구",
-    "total_candidates": 18,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 14,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "88.9%",
+    "pending_count": 11,
+    "rejected_count": 10,
+    "mismatched_detected": 10,
+    "official_source_ratio": "95.8%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5556/2025/07/10/0000120952_001_20250714101614030.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5556%2F2025%2F07%2F10%2F0000120952_001_20250714101614030.jpg",
-        "title": "국회부산도서관...첫 분관 '안착'",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://dl.nanet.go.kr/storage/thumb/NONB/1202/6000/0041/NONB12026000004121/NONB12026000004121_3l.jpeg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fdl.nanet.go.kr%2Fstorage%2Fthumb%2FNONB%2F1202%2F6000%2F0041%2FNONB12026000004121%2FNONB12026000004121_3l.jpeg",
+        "title": "대한민국 국회도서관 | 정보검색 > 소장정보 검색 > 부산경제동향 (2026. 1) [전자자료] = Busan economic trend 부산경제동향 (2026....",
+        "score": 82,
+        "source_domain": "dl.nanet.go.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/421/2022/03/24/0005986181_002_20220324143106337.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2022%2F03%2F24%2F0005986181_002_20220324143106337.jpg",
-        "title": "국회부산도서관 31일 개관 기념식…지식문화 균형발전 기대",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://dl.nanet.go.kr/storage/thumb/NONB/1202/5000/0165/NONB12025000016566/NONB12025000016566_3l.jpeg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fdl.nanet.go.kr%2Fstorage%2Fthumb%2FNONB%2F1202%2F5000%2F0165%2FNONB12025000016566%2FNONB12025000016566_3l.jpeg",
+        "title": "대한민국 국회도서관 | 정보검색 > 소장정보 검색 > (2025) 부산 평생교육 이슈페이퍼. 이슈 2025-1 [전자자료] (2025) 부산 평생교육...",
+        "score": 82,
+        "source_domain": "dl.nanet.go.kr",
+        "source_tier": "A",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/082/2022/04/13/0001150592_001_20220413163901258.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2022%2F04%2F13%2F0001150592_001_20220413163901258.jpg",
-        "title": "국회부산도서관을 즐기는 9가지 방법",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://dl.nanet.go.kr/storage/thumb/NONB/1202/5000/0035/NONB12025000003575/NONB12025000003575_3l.jpeg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fdl.nanet.go.kr%2Fstorage%2Fthumb%2FNONB%2F1202%2F5000%2F0035%2FNONB12025000003575%2FNONB12025000003575_3l.jpeg",
+        "title": "대한민국 국회도서관 | 정보검색 > 소장정보 검색 > (2025년) 부산광역시 안전관리계획 [전자자료] (2025년) 부산광역시 안전관리계획...",
+        "score": 82,
+        "source_domain": "dl.nanet.go.kr",
+        "source_tier": "A",
+        "photo_year": 2025
       }
     ]
   },
@@ -433,29 +408,40 @@
     "category": "힐링/자연",
     "region": "부산",
     "sub_region": "북구",
-    "total_candidates": 16,
-    "approved_count": 2,
-    "pending_count": 13,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "25.0%",
+    "total_candidates": 21,
+    "approved_count": 3,
+    "pending_count": 15,
+    "rejected_count": 3,
+    "mismatched_detected": 3,
+    "official_source_ratio": "61.9%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5291/2025/03/07/0002211072_001_20250307140808755.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5291%2F2025%2F03%2F07%2F0002211072_001_20250307140808755.jpg",
-        "title": "부산 북구 화명생태공원 일대 보전지구 → '친수지구'로 지정",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/59/3497059_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F59%2F3497059_image2_1.jpg",
+        "title": "화명생태공원 (2026) - 부산광역시 북구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5515/2023/11/09/0000123009_001_20240414051822040.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5515%2F2023%2F11%2F09%2F0000123009_001_20240414051822040.jpg",
-        "title": "부산시자치경찰위, 화명생태공원 산책로 방범용 CCTV 22대 증설",
-        "score": 87,
+        "url": "https://www.busan.go.kr/comm/getFile?srvcId=BBSTY3&upperNo=1708183&fileNo=1",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fcomm%2FgetFile%3FsrvcId%3DBBSTY3%26upperNo%3D1708183%26fileNo%3D1",
+        "title": "사진 갤러리 - [6-4코스] 화명생태공원4 : 부산 갈맷길 부산 갈맷길",
+        "score": 97,
+        "source_domain": "www.busan.go.kr",
+        "source_tier": "A",
+        "photo_year": null
+      },
+      {
+        "url": "http://imgnews.naver.net/image/031/2025/04/28/0000928041_001_20250428112911350.png",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F031%2F2025%2F04%2F28%2F0000928041_001_20250428112911350.png",
+        "title": "부산 밀 페스티벌, 내달 5~6일 화명생태공원서 열린다",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -467,28 +453,39 @@
     "region": "부산",
     "sub_region": "사상구",
     "total_candidates": 16,
-    "approved_count": 2,
-    "pending_count": 10,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "25.0%",
+    "approved_count": 3,
+    "pending_count": 8,
+    "rejected_count": 5,
+    "mismatched_detected": 4,
+    "official_source_ratio": "68.8%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.busan.go.kr/comm/getFile?srvcId=BBSTY3&upperNo=1600934&fileNo=2",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.busan.go.kr%2Fcomm%2FgetFile%3FsrvcId%3DBBSTY3%26upperNo%3D1600934%26fileNo%3D2",
-        "title": "사진 갤러리 - [갈맷길 6-1] 삼락생태공원 : 부산 갈맷길 부산 갈맷길",
-        "score": 97,
-        "source_domain": "www.busan.go.kr",
-        "source_tier": "A"
+        "url": "http://imgnews.naver.net/image/5003/2023/10/18/20231018104610_1939327_762_457_20231018120205783.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5003%2F2023%2F10%2F18%2F20231018104610_1939327_762_457_20231018120205783.jpg",
+        "title": "부산 삼락생태공원 등 7곳 국가생태탐방로 선정…252억 투입해 2026년 준공",
+        "score": 87,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2023
       },
       {
-        "url": "http://tong.visitkorea.or.kr/cms/resource/04/3497104_image2_1.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F04%2F3497104_image2_1.jpg",
+        "url": "https://tong.visitkorea.or.kr/cms/resource/91/3497091_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F91%2F3497091_image2_1.jpg",
         "title": "삼락생태공원 관광 정보와 주변 관광 명소 및 근처 맛집 여행 정보",
         "score": 92,
         "source_domain": "tong.visitkorea.or.kr",
-        "source_tier": "A"
+        "source_tier": "A",
+        "photo_year": null
+      },
+      {
+        "url": "http://imgnews.naver.net/image/098/2025/08/26/RPR20250826007500353_01_i_20250826172106868.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F098%2F2025%2F08%2F26%2FRPR20250826007500353_01_i_20250826172106868.jpg",
+        "title": "사상구 삼락생태공원 어린이 물놀이장, 부산 시민에게 최고의 \"여름 선물\"",
+        "score": 92,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -499,29 +496,22 @@
     "category": "힐링/자연",
     "region": "부산",
     "sub_region": "영도구",
-    "total_candidates": 16,
-    "approved_count": 2,
-    "pending_count": 12,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "25.0%",
+    "total_candidates": 13,
+    "approved_count": 1,
+    "pending_count": 6,
+    "rejected_count": 6,
+    "mismatched_detected": 5,
+    "official_source_ratio": "23.1%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/079/2020/06/15/0003372110_001_20200615151705090.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F079%2F2020%2F06%2F15%2F0003372110_001_20200615151705090.jpg",
-        "title": "부산 흰여울문화마을 미신고 카페·음식점 10곳 적발",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/5853/2025/11/09/0000033950_001_20251109165615782.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5853%2F2025%2F11%2F09%2F0000033950_001_20251109165615782.jpg",
+        "title": "[포토] 부산 흰여울문화마을의 잔잔한 가을바다",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/140/2025/10/27/10_24_55__68f832675c458_20251027171511800.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F140%2F2025%2F10%2F27%2F10_24_55__68f832675c458_20251027171511800.jpg",
-        "title": "[연속기획 4] 부산영상위원회 아카이브 총서  #2, ‘부산의 장소들’, 흰여울문화마을과 영도",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -532,37 +522,40 @@
     "category": "힐링/자연",
     "region": "울산",
     "sub_region": "동구",
-    "total_candidates": 16,
+    "total_candidates": 23,
     "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "43.8%",
+    "pending_count": 13,
+    "rejected_count": 7,
+    "mismatched_detected": 5,
+    "official_source_ratio": "65.2%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5910/2025/02/06/0000008590_002_20250206083418089.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5910%2F2025%2F02%2F06%2F0000008590_002_20250206083418089.jpg",
-        "title": "[한국관광 100선 ⓵ㅣ 울산 대왕암공원] 쪽빛과 옥빛 물결이 오가는 동해, 푸른 꿈을 꾸는 대왕암",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/60/3583560_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F60%2F3583560_image2_1.jpg",
+        "title": "대왕암공원 (2026) - 울산광역시 동구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5277/2019/01/23/0000164405_001_20190123215422403.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2019%2F01%2F23%2F0000164405_001_20190123215422403.jpg",
-        "title": "울산 동구 대왕암공원 '새판짜기' 시동…울산 대표 관광지로 육성한다",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/66/3583466_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F66%2F3583466_image2_1.jpg",
+        "title": "대왕암공원 출렁다리 (2026) - 울산광역시 동구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/082/2017/01/10/20170110000295_0_99_20170112110621.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2017%2F01%2F10%2F20170110000295_0_99_20170112110621.jpg",
-        "title": "대왕암공원 등 울산 4곳  '한국관광 100선' 선정",
+        "url": "http://imgnews.naver.net/image/5820/2025/02/15/0000100636_001_20250215181213506.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5820%2F2025%2F02%2F15%2F0000100636_001_20250215181213506.jpg",
+        "title": "태화강 국가정원·대왕암공원·영남알프스, 2025~2026 한국관광 100선 선정",
         "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -573,37 +566,40 @@
     "category": "힐링/자연",
     "region": "울산",
     "sub_region": "울주군",
-    "total_candidates": 16,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 2,
+    "pending_count": 16,
+    "rejected_count": 5,
     "mismatched_detected": 2,
-    "official_source_ratio": "62.5%",
+    "official_source_ratio": "50.0%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=34107&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D34107%26imgType%3DM1",
-        "title": "간절곶공원_등대전경 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 100,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://pup-post-phinf.pstatic.net/MjAyNTEyMjVfNTMg/MDAxNzY2NjQ3NzUxMTYx.qdCc_BQ9UPJTsBN5SZGn5LfXpujnTE2KDN1w99PLanAg.NU5ur532YgLyRsxH1LIY5iwPWsyZhcj7NiNZQKw2ZEQg.JPEG/POST_IMAGE_ENCODING_20251225_162908_894.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fpup-post-phinf.pstatic.net%2FMjAyNTEyMjVfNTMg%2FMDAxNzY2NjQ3NzUxMTYx.qdCc_BQ9UPJTsBN5SZGn5LfXpujnTE2KDN1w99PLanAg.NU5ur532YgLyRsxH1LIY5iwPWsyZhcj7NiNZQKw2ZEQg.JPEG%2FPOST_IMAGE_ENCODING_20251225_162908_894.jpg",
+        "title": "#클립챌린저 #클립크리에이터 #울산가볼만한곳 #간절곶 #간절곶야경 #간절곶빛축제 #울산2025야간경관전시적설 #간절곶크리스마스트리...",
+        "score": 75,
+        "source_domain": "pup-post-phinf.pstatic.net",
+        "source_tier": "C",
+        "photo_year": 2025
       },
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=34110&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D34110%26imgType%3DM1",
-        "title": "간절곶공원 전경_2 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 100,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://pup-post-phinf.pstatic.net/MjAyNTEyMjVfMjc0/MDAxNzY2NjQ3NzYwNTY0.DnNVOZ5F_z6_LH1Tfe_2UXONA86FzusxBez9NB1anScg.bGQnDWxTPYjS-BeJcXcJXSqcTfzNg8tuNL_6DAyVYiIg.JPEG/POST_IMAGE_ENCODING_20251225_162909_527.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fpup-post-phinf.pstatic.net%2FMjAyNTEyMjVfMjc0%2FMDAxNzY2NjQ3NzYwNTY0.DnNVOZ5F_z6_LH1Tfe_2UXONA86FzusxBez9NB1anScg.bGQnDWxTPYjS-BeJcXcJXSqcTfzNg8tuNL_6DAyVYiIg.JPEG%2FPOST_IMAGE_ENCODING_20251225_162909_527.jpg",
+        "title": "#클립챌린저 #클립크리에이터 #울산가볼만한곳 #간절곶 #간절곶야경 #간절곶빛축제 #울산2025야간경관전시적설 #간절곶크리스마스트리...",
+        "score": 75,
+        "source_domain": "pup-post-phinf.pstatic.net",
+        "source_tier": "C",
+        "photo_year": 2025
       },
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=32259&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D32259%26imgType%3DM1",
-        "title": "간절곶공원과 해안선 전경 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 100,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://pup-post-phinf.pstatic.net/MjAyNTEyMjVfMjI3/MDAxNzY2NjQ3NzYzNTEz.efC58hpAA14FSvg1p0lXaaRtsy6NXPAetSIwqyQoZB4g.cLu0Sa_dkpHRv4qAyqEe7jl9P_i2iLpeOi5yZUk1mpcg.JPEG/POST_IMAGE_ENCODING_20251225_162909_825.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=https%3A%2F%2Fpup-post-phinf.pstatic.net%2FMjAyNTEyMjVfMjI3%2FMDAxNzY2NjQ3NzYzNTEz.efC58hpAA14FSvg1p0lXaaRtsy6NXPAetSIwqyQoZB4g.cLu0Sa_dkpHRv4qAyqEe7jl9P_i2iLpeOi5yZUk1mpcg.JPEG%2FPOST_IMAGE_ENCODING_20251225_162909_825.jpg",
+        "title": "#클립챌린저 #클립크리에이터 #울산가볼만한곳 #간절곶 #간절곶야경 #간절곶빛축제 #울산2025야간경관전시적설 #간절곶크리스마스트리...",
+        "score": 75,
+        "source_domain": "pup-post-phinf.pstatic.net",
+        "source_tier": "C",
+        "photo_year": 2025
       }
     ]
   },
@@ -614,37 +610,40 @@
     "category": "미술관/문화공간",
     "region": "울산",
     "sub_region": "남구",
-    "total_candidates": 20,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 15,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "90.0%",
+    "pending_count": 14,
+    "rejected_count": 7,
+    "mismatched_detected": 6,
+    "official_source_ratio": "79.2%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=35283&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D35283%26imgType%3DM1",
-        "title": "울산박물관_전경 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 100,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/84/3335184_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F84%2F3335184_image2_1.jpg",
+        "title": "울산대곡박물관 (2026) - 울산광역시 울주군 가볼만한곳 - 관광지랭킹",
+        "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5544/2020/04/21/0000743737_001_20200421094852054.jpeg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5544%2F2020%2F04%2F21%2F0000743737_001_20200421094852054.jpeg",
-        "title": "‘띵동! 울산박물관 배달왔습니다’",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/73/3549173_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F73%2F3549173_image2_1.jpg",
+        "title": "울산암각화박물관 (2026) - 울산광역시 울주군 가볼만한곳 - 관광지랭킹",
+        "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5202/2019/10/21/0000192075_001_20191021154040355.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5202%2F2019%2F10%2F21%2F0000192075_001_20191021154040355.jpg",
-        "title": "울산박물관, 대한민국 교육 기부 대상 수상",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/5583/2025/10/30/0000171780_001_20251030204437034.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5583%2F2025%2F10%2F30%2F0000171780_001_20251030204437034.jpg",
+        "title": "울산박물관, 어린이 체험 프로그램 '2025 문견록' 운영",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -657,35 +656,38 @@
     "sub_region": "남구",
     "total_candidates": 19,
     "approved_count": 3,
-    "pending_count": 13,
-    "rejected_count": 3,
-    "mismatched_detected": 0,
+    "pending_count": 4,
+    "rejected_count": 12,
+    "mismatched_detected": 11,
     "official_source_ratio": "73.7%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/032/2023/02/15/0003205098_001_20250518043105174.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F032%2F2023%2F02%2F15%2F0003205098_001_20250518043105174.jpg",
-        "title": "울산 장생포고래문화마을 ‘강소형 관광지 육성사업’ 선정···여행코스 개발·마케팅 지원",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource_photo/83/3343883_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource_photo%2F83%2F3343883_image2_1.jpg",
+        "title": "장생포 고래문화마을 (2026) - 울산광역시 남구 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5541/2023/10/30/0000035665_001_20231030222605790.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5541%2F2023%2F10%2F30%2F0000035665_001_20231030222605790.jpg",
-        "title": "장생포 고래문화마을 체험시설 조성 최종보고회",
+        "url": "http://imgnews.naver.net/image/421/2025/06/08/0008300314_001_20250608143027662.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2025%2F06%2F08%2F0008300314_001_20250608143027662.jpg",
+        "title": "울산 장생포 수국축제 29일까지 개최",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/5090/2015/05/04/20150504095346737035_99_20150504143904.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5090%2F2015%2F05%2F04%2F20150504095346737035_99_20150504143904.jpg",
-        "title": "울산 남구, 15일 장생포 고래문화마을 준공식 개최",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/421/2024/12/29/0007991921_001_20241229090024241.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2024%2F12%2F29%2F0007991921_001_20241229090024241.jpg",
+        "title": "울산 남구, 장생포 고래문화마을서 2025년 새해 해맞이 행사",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   },
@@ -696,39 +698,14 @@
     "category": "전통시장",
     "region": "울산",
     "sub_region": "중구",
-    "total_candidates": 16,
-    "approved_count": 3,
-    "pending_count": 9,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "62.5%",
-    "use_placeholder": false,
-    "approved_images": [
-      {
-        "url": "http://imgnews.naver.net/image/5277/2016/01/04/530094_212674_2954_99_20160104163711.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2016%2F01%2F04%2F530094_212674_2954_99_20160104163711.jpg",
-        "title": "울산 중앙전통시장에 '지역 첫 야시장' 선다",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5277/2016/06/29/549874_228245_5452_99_20160629145813.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2016%2F06%2F29%2F549874_228245_5452_99_20160629145813.jpg",
-        "title": "울산 중앙전통시장 야시장 오는 10월 개장",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/003/2023/09/14/NISI20220905_0019209084_web_20220905115856_20230914143129718.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2023%2F09%2F14%2FNISI20220905_0019209084_web_20220905115856_20230914143129718.jpg",
-        "title": "추석연휴 울산 전통시장 8곳 주변 주·정차 허용",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      }
-    ]
+    "total_candidates": 13,
+    "approved_count": 0,
+    "pending_count": 3,
+    "rejected_count": 10,
+    "mismatched_detected": 10,
+    "official_source_ratio": "53.8%",
+    "use_placeholder": true,
+    "approved_images": []
   },
   {
     "index": 20,
@@ -737,39 +714,14 @@
     "category": "전통시장",
     "region": "울산",
     "sub_region": "남구",
-    "total_candidates": 16,
-    "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "56.3%",
-    "use_placeholder": false,
-    "approved_images": [
-      {
-        "url": "http://imgnews.naver.net/image/5184/2016/03/17/650004_248995_4451_99_20160317000630.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5184%2F2016%2F03%2F17%2F650004_248995_4451_99_20160317000630.jpg",
-        "title": "'수암상가시장 맛집 BEST 8' 선정",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5277/2020/11/02/0000254484_001_20201102212808653.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2020%2F11%2F02%2F0000254484_001_20201102212808653.jpg",
-        "title": "수암상가시장 '온라인 장보기' 시범운영",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5541/2025/08/12/0000045007_001_20250812183013810.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5541%2F2025%2F08%2F12%2F0000045007_001_20250812183013810.jpg",
-        "title": "'한우 특화 야시장' 수암상가시장 시설 정비",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      }
-    ]
+    "total_candidates": 11,
+    "approved_count": 0,
+    "pending_count": 4,
+    "rejected_count": 7,
+    "mismatched_detected": 7,
+    "official_source_ratio": "45.5%",
+    "use_placeholder": true,
+    "approved_images": []
   },
   {
     "index": 21,
@@ -778,37 +730,40 @@
     "category": "전통시장",
     "region": "울산",
     "sub_region": "울주군",
-    "total_candidates": 15,
+    "total_candidates": 18,
     "approved_count": 3,
     "pending_count": 12,
-    "rejected_count": 0,
-    "mismatched_detected": 0,
-    "official_source_ratio": "86.7%",
+    "rejected_count": 3,
+    "mismatched_detected": 3,
+    "official_source_ratio": "72.2%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=33567&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D33567%26imgType%3DM1",
-        "title": "언양 영남알프스시장_2 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 77,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/11/3549511_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F11%2F3549511_image2_1.jpg",
+        "title": "언양알프스시장 (2026) - 울산광역시 울주군 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "https://www.ulsan.go.kr/archive/us/archive/getImage.do?photo=33566&imgType=M1",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.ulsan.go.kr%2Farchive%2Fus%2Farchive%2FgetImage.do%3Fphoto%3D33566%26imgType%3DM1",
-        "title": "언양 영남알프스시장_1 | 울산광역시 도시경관기록 울산광역시 도시경관기록",
-        "score": 77,
-        "source_domain": "www.ulsan.go.kr",
-        "source_tier": "A"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/14/3549514_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F14%2F3549514_image2_1.jpg",
+        "title": "언양알프스시장 (2026) - 울산광역시 울주군 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5583/2025/01/30/0000157535_001_20250130191225259.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5583%2F2025%2F01%2F30%2F0000157535_001_20250130191225259.jpg",
-        "title": "울주군수, 설 맞이 언양알프스시장 방문",
+        "url": "http://imgnews.naver.net/image/5002/2025/06/21/0002901121_001_20250621200814434.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5002%2F2025%2F06%2F21%2F0002901121_001_20250621200814434.jpg",
+        "title": "언양알프스시장 찾은 이재명 대통령",
         "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -819,37 +774,22 @@
     "category": "특화도서관",
     "region": "울산",
     "sub_region": "울주군",
-    "total_candidates": 13,
-    "approved_count": 3,
-    "pending_count": 9,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "92.3%",
+    "total_candidates": 14,
+    "approved_count": 1,
+    "pending_count": 7,
+    "rejected_count": 6,
+    "mismatched_detected": 5,
+    "official_source_ratio": "71.4%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/421/2025/07/17/0008376629_001_20250717151011572.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2025%2F07%2F17%2F0008376629_001_20250717151011572.jpg",
-        "title": "\"새 단장\" 울주선바위도서관, 28일부터 3주간 임시휴관",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5277/2025/12/30/0000399695_001_20251230000431042.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5277%2F2025%2F12%2F30%2F0000399695_001_20251230000431042.jpg",
+        "title": "울주선바위도서관 새단장, 내달 18일까지 기념행사 다채",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5510/2024/11/24/0000169499_001_20241124194213518.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5510%2F2024%2F11%2F24%2F0000169499_001_20241124194213518.jpg",
-        "title": "울주선바위도서관 개관 10년 만에 800만 명 방문… 지역도서관 평가 1위",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5541/2024/11/24/0000041410_001_20241124204617411.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5541%2F2024%2F11%2F24%2F0000041410_001_20241124204617411.jpg",
-        "title": "울주선바위도서관 개관 10년‥800만 명 다녀가",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -860,14 +800,42 @@
     "category": "특화도서관",
     "region": "울산",
     "sub_region": "중구",
-    "total_candidates": 14,
-    "approved_count": 0,
-    "pending_count": 12,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "85.7%",
-    "use_placeholder": true,
-    "approved_images": []
+    "total_candidates": 18,
+    "approved_count": 3,
+    "pending_count": 10,
+    "rejected_count": 5,
+    "mismatched_detected": 3,
+    "official_source_ratio": "88.9%",
+    "use_placeholder": false,
+    "approved_images": [
+      {
+        "url": "https://tong.visitkorea.or.kr/cms/resource/84/1800184_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F84%2F1800184_image2_1.jpg",
+        "title": "서울도서관 (2026) - 서울특별시 중구 가볼만한곳 - 관광지랭킹",
+        "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms/resource/83/1800183_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F83%2F1800183_image2_1.jpg",
+        "title": "서울도서관 (2026) - 서울특별시 중구 가볼만한곳 - 관광지랭킹",
+        "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "http://www.yeonje.go.kr/common/imgView.do?attachId=5110a8912ffd41040f343ac68e1bfe728cc7ee97b413910f7e305968e2993f68&fileSn=f9a1967c526603d17ab488b9d2747cda&mode=origin",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Fwww.yeonje.go.kr%2Fcommon%2FimgView.do%3FattachId%3D5110a8912ffd41040f343ac68e1bfe728cc7ee97b413910f7e305968e2993f68%26fileSn%3Df9a1967c526603d17ab488b9d2747cda%26mode%3Dorigin",
+        "title": "2026년 연제도서관 비치희망도서 신청 안내|공지사항 | 참여마당",
+        "score": 77,
+        "source_domain": "www.yeonje.go.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      }
+    ]
   },
   {
     "index": 24,
@@ -876,21 +844,22 @@
     "category": "힐링/자연",
     "region": "울산",
     "sub_region": "울주군",
-    "total_candidates": 16,
+    "total_candidates": 17,
     "approved_count": 1,
-    "pending_count": 7,
-    "rejected_count": 8,
-    "mismatched_detected": 0,
-    "official_source_ratio": "25.0%",
+    "pending_count": 1,
+    "rejected_count": 15,
+    "mismatched_detected": 10,
+    "official_source_ratio": "47.1%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5184/2017/02/12/0000145008_001_20170212185145236.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5184%2F2017%2F02%2F12%2F0000145008_001_20170212185145236.jpg",
-        "title": "영남알프스 간월재서 가을하늘의 힘찬 비상",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/094/2024/12/03/0000012277_001_20241203070512577.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F094%2F2024%2F12%2F03%2F0000012277_001_20241203070512577.jpg",
+        "title": "영남알프스 완등 인증 월 2개로 제한",
+        "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   },
@@ -901,37 +870,40 @@
     "category": "미술관/문화공간",
     "region": "경남",
     "sub_region": "창원시",
-    "total_candidates": 17,
+    "total_candidates": 22,
     "approved_count": 3,
-    "pending_count": 14,
-    "rejected_count": 0,
-    "mismatched_detected": 0,
-    "official_source_ratio": "82.4%",
+    "pending_count": 13,
+    "rejected_count": 6,
+    "mismatched_detected": 6,
+    "official_source_ratio": "86.4%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5163/2016/01/18/499206_380982_5800_99_20160118084236.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2016%2F01%2F18%2F499206_380982_5800_99_20160118084236.jpg",
-        "title": "경남도립미술관 관장 공석 언제까지",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/5038/2024/12/19/0000991665_001_20241219191016899.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5038%2F2024%2F12%2F19%2F0000991665_001_20241219191016899.jpg",
+        "title": "거제시, 경남도립미술관 남부전시관 2026년 10월 준공 예정",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       },
       {
-        "url": "http://imgnews.naver.net/image/5415/2026/05/08/0000251384_001_20260508215615110.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5415%2F2026%2F05%2F08%2F0000251384_001_20260508215615110.jpg",
-        "title": "\"전시만 하는 미술관 아니다\"…경남도립미술관, 예술강사 공개 모집",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=8f6eb210-145c-4151-8ffc-3b3785883ff5",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fcdn.visitkorea.or.kr%2Fimg%2Fcall%3Fcmd%3DVIEW%26id%3D8f6eb210-145c-4151-8ffc-3b3785883ff5",
+        "title": "경남도립미술관> 여행지 | '열린 관광' 모두의 여행:대한민국 구석구석",
+        "score": 97,
+        "source_domain": "cdn.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
       },
       {
-        "url": "http://imgnews.naver.net/image/001/2024/07/13/AKR20240712053700052_01_i_P4_20240713084514675.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2024%2F07%2F13%2FAKR20240712053700052_01_i_P4_20240713084514675.jpg",
-        "title": "경남도립미술관, '모두를 위한 도슨트' 전시해설 프로그램 운영",
-        "score": 87,
+        "url": "http://imgnews.naver.net/image/5217/2025/10/22/0000296334_001_20251022191818917.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2025%2F10%2F22%2F0000296334_001_20251022191818917.jpg",
+        "title": "'2025 경남도립미술관 미술주간' 1만여 명 다녀가",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -942,37 +914,31 @@
     "category": "힐링/자연",
     "region": "경남",
     "sub_region": "창원시",
-    "total_candidates": 11,
-    "approved_count": 3,
-    "pending_count": 7,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "54.5%",
+    "total_candidates": 14,
+    "approved_count": 2,
+    "pending_count": 6,
+    "rejected_count": 6,
+    "mismatched_detected": 5,
+    "official_source_ratio": "57.1%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "https://tong.visitkorea.or.kr/cms/resource/10/3465110_image2_1.JPG",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F10%2F3465110_image2_1.JPG",
-        "title": "진해드림파크 (2026) - 경상남도 창원시 진해구 가볼만한곳 - 관광지랭킹",
-        "score": 97,
+        "url": "http://tong.visitkorea.or.kr/cms/resource/00/3521300_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F00%2F3521300_image2_1.jpg",
+        "title": "진해드림파크 - 주변 여행 및 근처 관광 명소 - 국내 여행 정보와 관광 명소 정보",
+        "score": 92,
         "source_domain": "tong.visitkorea.or.kr",
-        "source_tier": "A"
+        "source_tier": "A",
+        "photo_year": null
       },
       {
-        "url": "http://imgnews.naver.net/image/001/2009/03/11/PYH2009031106830005200_P2.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2009%2F03%2F11%2FPYH2009031106830005200_P2.jpg",
-        "title": "20일 개장하는 진해드림파크",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5372/2025/06/10/0000169337_001_20250610121614094.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5372%2F2025%2F06%2F10%2F0000169337_001_20250610121614094.jpg",
-        "title": "창원시 진해드림파크에 '무장애 나눔길' 산책로 조성",
-        "score": 87,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "http://tong.visitkorea.or.kr/cms/resource/08/3060808_image2_1.JPG",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F08%2F3060808_image2_1.JPG",
+        "title": "진해드림파크 - 주변 여행 및 근처 관광 명소 - 국내 여행 정보와 관광 명소 정보",
+        "score": 92,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
       }
     ]
   },
@@ -983,39 +949,14 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "창원시",
-    "total_candidates": 17,
-    "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 3,
-    "mismatched_detected": 0,
-    "official_source_ratio": "76.5%",
-    "use_placeholder": false,
-    "approved_images": [
-      {
-        "url": "http://imgnews.naver.net/image/5163/2017/01/11/0000127688_002_20170111083826357.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2017%2F01%2F11%2F0000127688_002_20170111083826357.jpg",
-        "title": "'젊고 편리하고' 창원 상남시장 새바람",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5416/2022/01/20/0000185034_001_20220120174707970.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5416%2F2022%2F01%2F20%2F0000185034_001_20220120174707970.jpg",
-        "title": "허성무 창원시장 설 맞이 상남시장 민생탐방",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5163/2025/10/23/0000364813_001_20251023192012385.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2025%2F10%2F23%2F0000364813_001_20251023192012385.jpg",
-        "title": "[김구연 사진국장의 그땐 그랬지] 24년 전 창원 상남시장 완공",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      }
-    ]
+    "total_candidates": 8,
+    "approved_count": 0,
+    "pending_count": 4,
+    "rejected_count": 4,
+    "mismatched_detected": 4,
+    "official_source_ratio": "87.5%",
+    "use_placeholder": true,
+    "approved_images": []
   },
   {
     "index": 28,
@@ -1024,37 +965,40 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "창원시",
-    "total_candidates": 19,
+    "total_candidates": 17,
     "approved_count": 3,
-    "pending_count": 15,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "89.5%",
+    "pending_count": 6,
+    "rejected_count": 8,
+    "mismatched_detected": 8,
+    "official_source_ratio": "88.2%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5163/2016/08/17/516002_393720_4129_99_20160817084515.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2016%2F08%2F17%2F516002_393720_4129_99_20160817084515.jpg",
-        "title": "마산어시장 제2주차장 예산·보상 문제로 또 실패",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/001/2009/06/30/PYH2009063002210005200_P2.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2009%2F06%2F30%2FPYH2009063002210005200_P2.jpg",
-        "title": "마산어시장 서비스.시설 `업그레이드'",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5297/2021/09/19/2021091912424040_20210919075632705.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5297%2F2021%2F09%2F19%2F2021091912424040_20210919075632705.jpg",
-        "title": "창원시, 활기 찾은 마산어시장",
+        "url": "http://imgnews.naver.net/image/5163/2025/01/23/0000347306_003_20250123174814564.png",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2025%2F01%2F23%2F0000347306_003_20250123174814564.png",
+        "title": "[사진 뉴스] 설 연휴 앞둔 마산어시장, 사람들로 '북적북적'",
         "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
+      },
+      {
+        "url": "http://imgnews.naver.net/image/005/2024/07/25/2024072509011932685_1721865679_0020344188_20240725090608264.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F005%2F2024%2F07%2F25%2F2024072509011932685_1721865679_0020344188_20240725090608264.jpg",
+        "title": "마산어시장 어울림 한마당 장터 건맥데이 27일 개최",
+        "score": 87,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2024
+      },
+      {
+        "url": "http://imgnews.naver.net/image/079/2024/08/12/0003927315_001_20240812174709652.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F079%2F2024%2F08%2F12%2F0003927315_001_20240812174709652.jpg",
+        "title": "\"축제로 소비붐 조성\"…창원시, 마산어시장·오동동 아맥축제 개최",
+        "score": 92,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   },
@@ -1065,37 +1009,40 @@
     "category": "특화도서관",
     "region": "경남",
     "sub_region": "창원시",
-    "total_candidates": 15,
+    "total_candidates": 23,
     "approved_count": 3,
-    "pending_count": 12,
-    "rejected_count": 0,
-    "mismatched_detected": 0,
-    "official_source_ratio": "73.3%",
+    "pending_count": 16,
+    "rejected_count": 4,
+    "mismatched_detected": 4,
+    "official_source_ratio": "60.9%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5416/2021/04/20/0000156888_001_20210420080505645.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5416%2F2021%2F04%2F20%2F0000156888_001_20210420080505645.jpg",
-        "title": "마산합포도서관 찾아가는 북스타트 후속 프로그램 운영",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5714/2026/04/29/0000194442_001_20260429183023731.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2026%2F04%2F29%2F0000194442_001_20260429183023731.jpg",
+        "title": "마산합포도서관, '담장 너머 행복한 책 읽기' 운영",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5358/2023/11/03/0000542307_001_20231103134002122.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5358%2F2023%2F11%2F03%2F0000542307_001_20231103134002122.jpg",
-        "title": "마산합포도서관, 쾌적한 복합문화공간으로 재개실",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5714/2026/03/31/0000188469_001_20260331103018991.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2026%2F03%2F31%2F0000188469_001_20260331103018991.jpg",
+        "title": "마산합포도서관, '2026 도서관의 날·도서관주간' 다채로운 행사 운영",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5714/2025/07/21/0000141410_001_20250721113814996.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2025%2F07%2F21%2F0000141410_001_20250721113814996.jpg",
-        "title": "마산합포도서관, \"여름엔 솔밭스마트도서관\"",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/002/2024/12/26/0002365901_001_20241226111314842.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F002%2F2024%2F12%2F26%2F0002365901_001_20241226111314842.jpg",
+        "title": "창원 마산합포도서관, ‘2025 겨울엔도서관’ 프로그램 신청 접수",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   },
@@ -1108,35 +1055,38 @@
     "sub_region": "진주시",
     "total_candidates": 16,
     "approved_count": 3,
-    "pending_count": 9,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "68.8%",
+    "pending_count": 6,
+    "rejected_count": 7,
+    "mismatched_detected": 5,
+    "official_source_ratio": "56.3%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5291/2022/11/21/0001673173_001_20221121165602533.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5291%2F2022%2F11%2F21%2F0001673173_001_20221121165602533.jpg",
-        "title": "2022 진주관광 전국사진 공모전, 김연희 '촉석루 전경' 금상",
-        "score": 75,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/003/2020/06/11/NISI20200611_0000543105_web_20200611100422_20200611101210364.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2020%2F06%2F11%2FNISI20200611_0000543105_web_20200611100422_20200611101210364.jpg",
-        "title": "진주성 촉석루·영남포정사 문루, 경남도유형문화재 지정·고시",
+        "url": "http://imgnews.naver.net/image/5714/2026/08/26/0000213921_001_20260826173413121.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2026%2F08%2F26%2F0000213921_001_20260826173413121.jpg",
+        "title": "진주 남강·촉석루 일원, '국가지정 자연유산 명승' 눈앞",
         "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       },
       {
-        "url": "https://www.jinju.go.kr/CmsMultiFile/view.do?multifileId=TOUR00621&idx=14982",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.jinju.go.kr%2FCmsMultiFile%2Fview.do%3FmultifileId%3DTOUR00621%26idx%3D14982",
-        "title": "진주8경 | 진주관광 > 제1경 진주성 촉석루",
+        "url": "http://www.jinju.go.kr/CmsMultiFile/view.do?multifileId=RES00157&idx=14389",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Fwww.jinju.go.kr%2FCmsMultiFile%2Fview.do%3FmultifileId%3DRES00157%26idx%3D14389",
+        "title": "모범음식점 | 진주관광 > 촉석루",
         "score": 82,
         "source_domain": "www.jinju.go.kr",
-        "source_tier": "A"
+        "source_tier": "A",
+        "photo_year": null
+      },
+      {
+        "url": "https://www.jinju.go.kr/CmsMultiFile/view.do?multifileId=MF00080430&idx=81443",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Fwww.jinju.go.kr%2FCmsMultiFile%2Fview.do%3FmultifileId%3DMF00080430%26idx%3D81443",
+        "title": "홈 > 시정소식 > 포토갤러리 > 문화/관광 > 촉석루 전경 문화/관광 | 진주시청",
+        "score": 90,
+        "source_domain": "www.jinju.go.kr",
+        "source_tier": "A",
+        "photo_year": null
       }
     ]
   },
@@ -1147,39 +1097,14 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "진주시",
-    "total_candidates": 16,
-    "approved_count": 3,
-    "pending_count": 12,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "93.8%",
-    "use_placeholder": false,
-    "approved_images": [
-      {
-        "url": "http://imgnews.naver.net/image/5217/2019/01/27/0000125202_001_20190127234520482.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2019%2F01%2F27%2F0000125202_001_20190127234520482.jpg",
-        "title": "중진공, 진주 중앙유등시장·청년몰 활성화 캠페인",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/003/2022/04/21/NISI20220421_0018722233_web_20220421165422_20220421165510955.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2022%2F04%2F21%2FNISI20220421_0018722233_web_20220421165422_20220421165510955.jpg",
-        "title": "윤석열 당선인, 진주 중앙유등시장 방문",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "https://tong.visitkorea.or.kr/cms/resource/93/1865193_image2_1.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F93%2F1865193_image2_1.jpg",
-        "title": "진주중앙시장·논개시장 (2026) - 경상남도 진주시 가볼만한곳 - 관광지랭킹",
-        "score": 87,
-        "source_domain": "tong.visitkorea.or.kr",
-        "source_tier": "A"
-      }
-    ]
+    "total_candidates": 12,
+    "approved_count": 0,
+    "pending_count": 1,
+    "rejected_count": 11,
+    "mismatched_detected": 11,
+    "official_source_ratio": "91.7%",
+    "use_placeholder": true,
+    "approved_images": []
   },
   {
     "index": 32,
@@ -1188,37 +1113,31 @@
     "category": "미술관/문화공간",
     "region": "경남",
     "sub_region": "통영시",
-    "total_candidates": 12,
-    "approved_count": 3,
-    "pending_count": 8,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "91.7%",
+    "total_candidates": 18,
+    "approved_count": 2,
+    "pending_count": 5,
+    "rejected_count": 11,
+    "mismatched_detected": 9,
+    "official_source_ratio": "77.8%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5714/2020/11/03/2020110333581069_20201103185234229.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2020%2F11%2F03%2F2020110333581069_20201103185234229.jpg",
-        "title": "통영 디피랑…관광의 발길을 잡았다",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5416/2025/11/05/0000333547_001_20251105174706032.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5416%2F2025%2F11%2F05%2F0000333547_001_20251105174706032.jpg",
+        "title": "통영케이블카·디피랑·어드벤처타워 수능 수험생 50% 할인",
+        "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/5163/2021/10/19/0000260073_001_20211019064816225.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2021%2F10%2F19%2F0000260073_001_20211019064816225.jpg",
-        "title": "밤에 빛난 통영 디피랑, 코로나도 못 막은 발길",
+        "url": "http://imgnews.naver.net/image/082/2023/09/05/0001230651_001_20230905141001209.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2023%2F09%2F05%2F0001230651_001_20230905141001209.jpg",
+        "title": "‘빛의 정원’ 통영 디피랑 9월 꼭 가봐야 할 ‘야경 맛집’",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/421/2023/09/05/0007030442_001_20230905150408694.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2023%2F09%2F05%2F0007030442_001_20230905150408694.jpg",
-        "title": "통영 디피랑, ‘야간관광’ 9월의 가볼 만한 곳 선정",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2023
       }
     ]
   },
@@ -1229,29 +1148,40 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "통영시",
-    "total_candidates": 18,
-    "approved_count": 2,
-    "pending_count": 4,
-    "rejected_count": 12,
-    "mismatched_detected": 0,
-    "official_source_ratio": "33.3%",
+    "total_candidates": 12,
+    "approved_count": 3,
+    "pending_count": 2,
+    "rejected_count": 7,
+    "mismatched_detected": 6,
+    "official_source_ratio": "66.7%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/5217/2015/04/04/237740_9918_1153_99_20150404040750.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2015%2F04%2F04%2F237740_9918_1153_99_20150404040750.jpg",
-        "title": "통영 중앙전통시장, 중기청 특성화사업 선정",
+        "url": "http://tong.visitkorea.or.kr/cms/resource/72/3525672_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F72%2F3525672_image2_1.jpg",
+        "title": "통영중앙전통시장 쇼핑 정보와 주변 관광 명소 및 근처 맛집 여행 정보",
         "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
       },
       {
-        "url": "http://imgnews.naver.net/image/5416/2024/09/18/0000287383_001_20240918172120589.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5416%2F2024%2F09%2F18%2F0000287383_001_20240918172120589.jpg",
-        "title": "천영기 통영시장 추석맞이 전통시장 방문",
+        "url": "http://tong.visitkorea.or.kr/cms/resource/67/3523867_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=http%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F67%2F3523867_image2_1.jpg",
+        "title": "통영중앙전통시장 쇼핑 정보와 주변 관광 명소 및 근처 맛집 여행 정보",
+        "score": 82,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": null
+      },
+      {
+        "url": "http://imgnews.naver.net/image/5551/2023/06/07/0000243831_001_20230607082002283.jpeg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5551%2F2023%2F06%2F07%2F0000243831_001_20230607082002283.jpeg",
+        "title": "통영시 \"제62회 경남도민체전 전통시장도 함께 합니다!\"",
         "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2023
       }
     ]
   },
@@ -1262,37 +1192,40 @@
     "category": "힐링/자연",
     "region": "경남",
     "sub_region": "사천시",
-    "total_candidates": 16,
+    "total_candidates": 20,
     "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 2,
-    "mismatched_detected": 0,
-    "official_source_ratio": "87.5%",
+    "pending_count": 7,
+    "rejected_count": 10,
+    "mismatched_detected": 8,
+    "official_source_ratio": "75.0%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/421/2020/10/22/0004944382_001_20201022160950847.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F421%2F2020%2F10%2F22%2F0004944382_001_20201022160950847.jpg",
-        "title": "사천바다케이블카 타고 가을 단풍·바다 풍경 즐기자",
-        "score": 85,
+        "url": "http://imgnews.naver.net/image/5291/2026/06/25/0002545848_001_20260625171410835.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5291%2F2026%2F06%2F25%2F0002545848_001_20260625171410835.jpg",
+        "title": "사천바다케이블카, 2026 경상남도 관광의 날 맞아 특별 할인",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5090/2015/03/12/20150312134904487524_99_20150312135203.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5090%2F2015%2F03%2F12%2F20150312134904487524_99_20150312135203.jpg",
-        "title": "사천바다케이블카, 연내 착공",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5291/2025/10/28/0002375557_002_20251028170812484.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5291%2F2025%2F10%2F28%2F0002375557_002_20251028170812484.jpg",
+        "title": "사천바다케이블카, 2026년 숙박시설 업무협약 업체 모집",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/5217/2018/04/08/0000104201_002_20180408231626751.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2018%2F04%2F08%2F0000104201_002_20180408231626751.jpg",
-        "title": "사천바다케이블카 미리 타보니 '환상'",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5394/2025/11/27/0001183291_002_20251127153210911.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5394%2F2025%2F11%2F27%2F0001183291_002_20251127153210911.jpg",
+        "title": "사천바다케이블카, 2025년 크리스마스 행사 및 2026년 새해맞이 특별 이벤트 운영",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -1303,37 +1236,40 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "사천시",
-    "total_candidates": 15,
+    "total_candidates": 14,
     "approved_count": 3,
-    "pending_count": 11,
-    "rejected_count": 1,
-    "mismatched_detected": 0,
-    "official_source_ratio": "80.0%",
+    "pending_count": 3,
+    "rejected_count": 8,
+    "mismatched_detected": 7,
+    "official_source_ratio": "85.7%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/003/2014/07/03/NISI20140703_0009877539_web_99_20140703100707.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2014%2F07%2F03%2FNISI20140703_0009877539_web_99_20140703100707.jpg",
-        "title": "삼천포용궁수산시장 ‘첫 돐’, 관광객 북적",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "url": "https://tong.visitkorea.or.kr/cms/resource/62/3515462_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F62%2F3515462_image2_1.jpg",
+        "title": "삼천포용궁수산시장 (2026) - 경상남도 사천시 가볼만한곳 - 관광지랭킹",
+        "score": 102,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
       },
       {
-        "url": "http://imgnews.naver.net/image/5217/2013/10/17/2013101701000744700022311_59_20140218193707.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5217%2F2013%2F10%2F17%2F2013101701000744700022311_59_20140218193707.jpg",
-        "title": "삼천포용궁수산시장 ‘문화 관광형 시장’ 탈바꿈",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/003/2024/03/13/NISI20240313_0020264071_web_20240313135700_20240313152211651.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2024%2F03%2F13%2FNISI20240313_0020264071_web_20240313135700_20240313152211651.jpg",
+        "title": "윤 대통령, 경남 사천 삼천포용궁수산시장 방문 [뉴시스Pic]",
+        "score": 92,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2024
       },
       {
-        "url": "http://imgnews.naver.net/image/5005/2013/11/21/art_1384947459_59_20131121085503.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5005%2F2013%2F11%2F21%2Fart_1384947459_59_20131121085503.jpg",
-        "title": "삼천포용궁수산시장, [바다야놀자] 22일 개막",
-        "score": 82,
+        "url": "http://imgnews.naver.net/image/5138/2023/05/23/0000456740_001_20230523112204589.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2023%2F05%2F23%2F0000456740_001_20230523112204589.jpg",
+        "title": "사천시, 삼천포용궁수산시장, ‘제8회 축원제’ 개최",
+        "score": 87,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2023
       }
     ]
   },
@@ -1344,37 +1280,40 @@
     "category": "힐링/자연",
     "region": "경남",
     "sub_region": "밀양시",
-    "total_candidates": 16,
+    "total_candidates": 21,
     "approved_count": 3,
-    "pending_count": 9,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "62.5%",
+    "pending_count": 12,
+    "rejected_count": 6,
+    "mismatched_detected": 3,
+    "official_source_ratio": "81.0%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/001/2020/12/07/AKR20201207130100052_03_i_P4_20201207163954048.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F001%2F2020%2F12%2F07%2FAKR20201207130100052_03_i_P4_20201207163954048.jpg",
-        "title": "'조선 3대 누각' 밀양 영남루 제모습 찾기 순조",
+        "url": "https://tong.visitkorea.or.kr/cms/resource/96/3584496_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F96%2F3584496_image2_1.jpg",
+        "title": "영남루 수변공원길 (2026) - 경상남도 밀양시 가볼만한곳 - 관광지랭킹",
+        "score": 92,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms/resource/03/4054703_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F03%2F4054703_image2_1.jpg",
+        "title": "[밀양아리랑길 1코스] 영남루 수변공원길 (2026) - 경상남도 밀양시 가볼만한곳 - 관광지랭킹",
+        "score": 92,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "http://imgnews.naver.net/image/5647/2025/10/15/0000081097_001_20251015131214555.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5647%2F2025%2F10%2F15%2F0000081097_001_20251015131214555.jpg",
+        "title": "경남 밀양시, 국보 영남루와 함께하는 2025년 밀양 국가유산 야행 개최",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "https://tong.visitkorea.or.kr/cms/resource/04/2486104_image2_1.jpg",
-        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F04%2F2486104_image2_1.jpg",
-        "title": "찬란하고 아련하게, 밀양 봄마중 - 경상남도 밀양시 - 가볼만한곳 - 관광지랭킹",
-        "score": 87,
-        "source_domain": "tong.visitkorea.or.kr",
-        "source_tier": "A"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/047/2022/12/13/0002375844_001_20221213085401166.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F047%2F2022%2F12%2F13%2F0002375844_001_20221213085401166.jpg",
-        "title": "파노라마 같은 풍경, 밀양에 이런 곳이?",
-        "score": 75,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -1385,37 +1324,40 @@
     "category": "힐링/자연",
     "region": "경남",
     "sub_region": "양산시",
-    "total_candidates": 16,
+    "total_candidates": 22,
     "approved_count": 3,
-    "pending_count": 9,
-    "rejected_count": 4,
-    "mismatched_detected": 0,
-    "official_source_ratio": "43.8%",
+    "pending_count": 8,
+    "rejected_count": 11,
+    "mismatched_detected": 8,
+    "official_source_ratio": "50.0%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/003/2016/07/05/NISI20160705_0011884734_web_99_20160705112714.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2016%2F07%2F05%2FNISI20160705_0011884734_web_99_20160705112714.jpg",
-        "title": "양산 통도사의 전경",
-        "score": 85,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/047/2018/07/01/0002194785_001_20180701171610896.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F047%2F2018%2F07%2F01%2F0002194785_001_20180701171610896.jpg",
-        "title": "양산 통도사 등 7곳 사찰, 유네스코 세계유산 등재",
+        "url": "http://imgnews.naver.net/image/5714/2025/04/22/0000126117_001_20250422132614820.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5714%2F2025%2F04%2F22%2F0000126117_001_20250422132614820.jpg",
+        "title": "양산시 '2026 양산방문의 해' 주요 도시 순회 홍보",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       },
       {
-        "url": "http://imgnews.naver.net/image/5041/2019/06/13/0000500869_002_20190613120802686.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5041%2F2019%2F06%2F13%2F0000500869_002_20190613120802686.jpg",
-        "title": "'무더위 속' 지친 심신 달랠 양산 통도사로 떠나볼까?",
+        "url": "http://imgnews.naver.net/image/5904/2025/04/23/0000005687_002_20250423100220723.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5904%2F2025%2F04%2F23%2F0000005687_002_20250423100220723.jpg",
+        "title": "2026 양산방문의 해 앞두고 전국 순회 게릴라 홍보",
+        "score": 77,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2025
+      },
+      {
+        "url": "http://imgnews.naver.net/image/5416/2025/04/22/0000312002_001_20250422172329726.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5416%2F2025%2F04%2F22%2F0000312002_001_20250422172329726.jpg",
+        "title": "양산시 '2026 양산방문의 해' 주요 도시 순회 홍보",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2025
       }
     ]
   },
@@ -1426,37 +1368,22 @@
     "category": "전통시장",
     "region": "경남",
     "sub_region": "양산시",
-    "total_candidates": 16,
-    "approved_count": 3,
-    "pending_count": 6,
+    "total_candidates": 12,
+    "approved_count": 1,
+    "pending_count": 4,
     "rejected_count": 7,
-    "mismatched_detected": 0,
-    "official_source_ratio": "50.0%",
+    "mismatched_detected": 5,
+    "official_source_ratio": "58.3%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/003/2010/02/03/NISI20100203_0002263645_web.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F003%2F2010%2F02%2F03%2FNISI20100203_0002263645_web.jpg",
-        "title": "\"젊어진 양산 남부시장을 경험하세요\"",
-        "score": 82,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5163/2012/09/26/392397_299347_3717_59_20120926184019.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5163%2F2012%2F09%2F26%2F392397_299347_3717_59_20120926184019.jpg",
-        "title": "나동연 양산시장, 남부시장 찾아 상인 의견 청취",
+        "url": "http://imgnews.naver.net/image/082/2023/01/16/0001193808_003_20230116175501321.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F082%2F2023%2F01%2F16%2F0001193808_003_20230116175501321.jpg",
+        "title": "[포토뉴스]나동연 양산시장, 남부시장에서 전통시장 장보기 캠페인 가져",
         "score": 77,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5372/2022/05/05/0000094556_001_20240410051214616.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5372%2F2022%2F05%2F05%2F0000094556_001_20240410051214616.jpg",
-        "title": "경남도 '전통시장 매니저' 사업 먹혔다…양산남부 온라인매출 70% 쑥",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2023
       }
     ]
   },
@@ -1467,12 +1394,12 @@
     "category": "특화도서관",
     "region": "경남",
     "sub_region": "양산시",
-    "total_candidates": 16,
+    "total_candidates": 20,
     "approved_count": 0,
-    "pending_count": 13,
-    "rejected_count": 3,
-    "mismatched_detected": 0,
-    "official_source_ratio": "81.3%",
+    "pending_count": 10,
+    "rejected_count": 10,
+    "mismatched_detected": 5,
+    "official_source_ratio": "75.0%",
     "use_placeholder": true,
     "approved_images": []
   },
@@ -1483,37 +1410,40 @@
     "category": "힐링/자연",
     "region": "경남",
     "sub_region": "남해군",
-    "total_candidates": 16,
+    "total_candidates": 24,
     "approved_count": 3,
-    "pending_count": 8,
-    "rejected_count": 5,
-    "mismatched_detected": 0,
-    "official_source_ratio": "50.0%",
+    "pending_count": 14,
+    "rejected_count": 7,
+    "mismatched_detected": 5,
+    "official_source_ratio": "66.7%",
     "use_placeholder": false,
     "approved_images": [
       {
-        "url": "http://imgnews.naver.net/image/629/2024/09/04/202418221725437764_20240904172116112.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F629%2F2024%2F09%2F04%2F202418221725437764_20240904172116112.jpg",
-        "title": "올여름 남해군 휴가지 핫플레이스는 '독일마을'",
-        "score": 77,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/022/2022/11/06/20221106502271_20221106092402692.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F022%2F2022%2F11%2F06%2F20221106502271_20221106092402692.jpg",
-        "title": "이국적인 맛과 풍경 즐기는 남해 독일마을 [최현태 기자의 여행홀릭]",
-        "score": 85,
-        "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
-      },
-      {
-        "url": "http://imgnews.naver.net/image/5805/2020/09/23/0000001307_001_20200923214134156.jpg",
-        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5805%2F2020%2F09%2F23%2F0000001307_001_20200923214134156.jpg",
-        "title": "(R) 과도기 맞은 남해 독일마을",
+        "url": "http://imgnews.naver.net/image/5551/2026/05/28/0000412344_002_20260528115220204.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5551%2F2026%2F05%2F28%2F0000412344_002_20260528115220204.jpg",
+        "title": "남해군, '2026 독일마을 마이페스트' 열려",
         "score": 82,
         "source_domain": "imgnews.naver.net",
-        "source_tier": "B"
+        "source_tier": "B",
+        "photo_year": 2026
+      },
+      {
+        "url": "https://tong.visitkorea.or.kr/cms/resource/84/3304484_image2_1.jpg",
+        "thumbnail": "https://search.pstatic.net/sunny/?type=b150&src=https%3A%2F%2Ftong.visitkorea.or.kr%2Fcms%2Fresource%2F84%2F3304484_image2_1.jpg",
+        "title": "남해독일마을 (2026) - 경상남도 남해군 가볼만한곳 - 관광지랭킹",
+        "score": 92,
+        "source_domain": "tong.visitkorea.or.kr",
+        "source_tier": "A",
+        "photo_year": 2026
+      },
+      {
+        "url": "http://imgnews.naver.net/image/5002/2024/11/06/0002726404_001_20241106144811630.jpg",
+        "thumbnail": "https://search.pstatic.net/common/?type=b150&src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5002%2F2024%2F11%2F06%2F0002726404_001_20241106144811630.jpg",
+        "title": "남해관광문화재단 '독일마을 스쿨링캠프' 공개",
+        "score": 77,
+        "source_domain": "imgnews.naver.net",
+        "source_tier": "B",
+        "photo_year": 2024
       }
     ]
   }

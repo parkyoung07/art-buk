@@ -366,26 +366,54 @@ export const STEP2_40_VENUES = [
   }
 ];
 
-// 3. 다중 쿼리 생성
+// 3. 다중 쿼리 생성 (2024~2026년 최신 실사 집중 수집)
 function generateSearchQueries(venue) {
   const name = venue.place_name;
   const reg = venue.region;
   const sub = venue.sub_region || "";
 
   if (venue.category === "market") {
-    return [`${name} 전경`, `${name} 장터`, `${name} 공식`, `${name} ${reg}`, `${name} 먹거리`];
+    return [
+      `${name} 2026`,
+      `${name} 2025`,
+      `${name} 2024`,
+      `${name} 최근 전경`,
+      `${name} 최신 풍경`,
+      `${name} ${reg} ${sub}`
+    ];
   } else if (venue.category === "library") {
-    return [`${name} 외관`, `${name} 내부 서가`, `${name} 공식`, `${name} ${reg}`, `${name} 어린이자료실`];
+    return [
+      `${name} 2026`,
+      `${name} 2025`,
+      `${name} 2024`,
+      `${name} 최근 외관`,
+      `${name} 최신 내부 서가`,
+      `${name} ${reg}`
+    ];
   } else if (venue.category === "nature") {
-    return [`${name} 전경`, `${name} 풍경`, `${name} 공식`, `${name} 산책로`];
+    return [
+      `${name} 2026`,
+      `${name} 2025`,
+      `${name} 2024`,
+      `${name} 최근 풍경`,
+      `${name} 가을 전경`,
+      `${name} 최신`
+    ];
   } else {
-    return [`${name} 전경`, `${name} 전시실`, `${name} 내부`, `${name} 공식`, `${name} ${reg} ${sub}`];
+    return [
+      `${name} 2026`,
+      `${name} 2025`,
+      `${name} 2024`,
+      `${name} 최근 전시`,
+      `${name} 최신 전경`,
+      `${name} ${reg} ${sub}`
+    ];
   }
 }
 
-// 4. 네이버 이미지 검색 호출
-async function fetchNaverImages(query, display = 4) {
-  const url = `https://naverapihub.apigw.ntruss.com/search/v1/image?query=${encodeURIComponent(query)}&display=${display}&sort=sim`;
+// 4. 네이버 이미지 검색 호출 (유사도 + 최신순)
+async function fetchNaverImages(query, display = 6, sort = "sim") {
+  const url = `https://naverapihub.apigw.ntruss.com/search/v1/image?query=${encodeURIComponent(query)}&display=${display}&sort=${sort}`;
   try {
     const res = await fetch(url, {
       headers: {
@@ -399,6 +427,31 @@ async function fetchNaverImages(query, display = 4) {
   } catch (err) {
     return [];
   }
+}
+
+// 4-1. 사진 연도 정밀 추출 함수 (URL / Base64 / 제목 분석)
+function extractYear(url, title) {
+  // 1. URL 내 연도 패턴 (2000~2029)
+  const urlMatch = url.match(/(20[0-2][0-9])[\/\-_]/);
+  if (urlMatch) return parseInt(urlMatch[1], 10);
+
+  // 2. 네이버 블로그 Base64 디코딩 (MjAy...)
+  if (url.includes("blogfiles.naver.net/")) {
+    const base64Part = url.split("blogfiles.naver.net/")[1]?.split("/")[0];
+    if (base64Part) {
+      try {
+        const decoded = Buffer.from(base64Part, "base64").toString("utf8");
+        const b64Match = decoded.match(/(20[0-2][0-9])/);
+        if (b64Match) return parseInt(b64Match[1], 10);
+      } catch (e) {}
+    }
+  }
+
+  // 3. 제목 내 연도 패턴
+  const titleMatch = (title || "").match(/(20[0-2][0-9])년?/);
+  if (titleMatch) return parseInt(titleMatch[1], 10);
+
+  return null;
 }
 
 // 5. 실제 원본 URL 및 도메인 정밀 추출
@@ -493,7 +546,7 @@ function evaluateTitleAndContext(rawTitle, venue) {
 }
 
 // 8. 시각적 휴리스틱 및 Vision 점수
-function evaluateImageVisionHeuristic(title, item, sourceTier) {
+function evaluateImageVisionHeuristic(title, item, sourceTier, year) {
   const isPoster = /포스터|배너|현수막|일정표|안내문|요금표/i.test(title);
   const isFoodOnly = /먹방|존맛|맛집추천|카페디저트|메뉴판|케이크/i.test(title);
   const isRealPlace = /전경|외관|건물|입구|전시실|서가|광장|풍경|거리/i.test(title);
@@ -501,11 +554,25 @@ function evaluateImageVisionHeuristic(title, item, sourceTier) {
   let isDisqualified = false;
   let failReason = "";
 
-  if (isPoster) { isDisqualified = true; failReason = "포스터/안내문 배너"; }
-  else if (isFoodOnly && !title.includes("시장")) { isDisqualified = true; failReason = "음식 단독 촬영"; }
+  // 1. 오래된 과거 사진 엄격 배제 (2022년 이전)
+  if (year && year < 2023) {
+    isDisqualified = true;
+    failReason = `과거 아카이브 사진 (${year}년 촬영 - 최신성 미달)`;
+  } else if (isPoster) {
+    isDisqualified = true;
+    failReason = "포스터/안내문 배너";
+  } else if (isFoodOnly && !title.includes("시장")) {
+    isDisqualified = true;
+    failReason = "음식 단독 촬영";
+  }
 
   let visionScore = isDisqualified ? 0 : (isRealPlace ? 15 : 12);
   let qualityScore = isDisqualified ? 0 : (sourceTier === "A" || sourceTier === "B" ? 10 : 8);
+
+  // 2024~2026년 최신 실사 가산점 (+5점)
+  if (year && year >= 2024 && !isDisqualified) {
+    qualityScore += 5;
+  }
 
   return {
     is_disqualified: isDisqualified,
@@ -513,7 +580,7 @@ function evaluateImageVisionHeuristic(title, item, sourceTier) {
     vision_score: visionScore,
     quality_score: qualityScore,
     total_vision: visionScore + qualityScore,
-    notes: isDisqualified ? failReason : (isRealPlace ? "실제 장소 전경 및 주요 공간" : "장소 관련 현장 사진")
+    notes: isDisqualified ? failReason : (year ? `${year}년 최신 현장 실사` : "최신 현장 실사 사진")
   };
 }
 
@@ -566,6 +633,7 @@ export async function runStep2Pipeline() {
       const { realUrl, domain } = extractRealSourceInfo(item);
       const sourceEval = evaluateSourceDomain(domain, realUrl);
       const titleEval = evaluateTitleAndContext(item.title, venue);
+      const photoYear = extractYear(realUrl, item.title);
 
       if (sourceEval.tier === "A" || sourceEval.tier === "B") {
         officialSourceCount++;
@@ -576,10 +644,10 @@ export async function runStep2Pipeline() {
 
       let visionEval = { total_vision: 0, vision_score: 0, quality_score: 0, notes: "" };
       if (!isRejected) {
-        visionEval = evaluateImageVisionHeuristic(titleEval.cleanTitle, item, sourceEval.tier);
+        visionEval = evaluateImageVisionHeuristic(titleEval.cleanTitle, item, sourceEval.tier, photoYear);
         if (visionEval.is_disqualified) {
           isRejected = true;
-          rejectReason = `Vision 탈락: ${visionEval.fail_reason}`;
+          rejectReason = `Vision/최신성 탈락: ${visionEval.fail_reason}`;
           mismatchedCount++;
         }
       }
@@ -607,7 +675,8 @@ export async function runStep2Pipeline() {
             title: titleEval.cleanTitle,
             score: totalScore,
             source_domain: domain,
-            source_tier: sourceEval.tier
+            source_tier: sourceEval.tier,
+            photo_year: photoYear
           });
           usedUrls.add(realUrl);
         } else {
@@ -633,6 +702,7 @@ export async function runStep2Pipeline() {
         title: titleEval.cleanTitle,
         source_domain: domain,
         source_tier: sourceEval.tier,
+        photo_year: photoYear,
         fetched_at: new Date().toISOString(),
         status,
         score: totalScore,
