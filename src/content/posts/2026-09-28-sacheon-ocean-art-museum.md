@@ -61,7 +61,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2
 * **스타벅스 경남사천DT점 / 사천벌리점**: 
   * 익숙하면서도 편안하게 드라이브스루나 테이크아웃으로 커피 한 잔의 여유를 즐기고 싶을 때 들르기 좋습니다.
 
-![사천 가을 기획전시 공간 및 감성 스페셜티 카페](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![사천 가을 기획전시 공간 및 감성 스페셜티 카페](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 감성 넘치는 인테리어와 향긋한 커피가 기다리는 사천의 카페 공간*
 
 ---
@@ -84,7 +84,7 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2
 2. **실안낙조 드라이브 코스**: 
    해가 질 무렵, 실안해안도로를 따라 드라이브를 즐겨보세요. 붉게 물든 바다와 실안 노을의 장관은 이번 주말 나들이의 완벽한 피날레를 장식해 줄 것입니다.
 
-![사천 인근 자연 및 드라이브 풍경](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![사천 인근 자연 및 드라이브 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 마음까지 탁 트이는 사천의 아름다운 자연과 드라이브 코스*
 
 ---

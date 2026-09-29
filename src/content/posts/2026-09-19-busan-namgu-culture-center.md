@@ -6,7 +6,7 @@ category: 전시 리뷰
 region: 부산
 eventId: busan-namgu-culture-center
 thumbnail: >-
-  https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80
+  https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 
 유난히 파란 가을 하늘과 선선한 바람이 코끝을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 담아 반가운 소식을 들고 왔습니다. 이번 주말, 부산 남구의 문화 예술 랜드마크인 부산문화회관에서 펼쳐지는 아주 특별한 가을 기획전으로 저와 함께 예술 나들이 떠나보지 않으실래요? 바다의 깊은 서정과 현대 조형 예술이 만나 자아내는 감동의 울림 속으로 여러분을 초대합니다!
 
-![부산문화회관 가을 전경 및 전시 공간](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
+![부산문화회관 가을 전경 및 전시 공간](https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 부산 문화 예술의 메카, 부산문화회관 전경과 기획전 포스터*
 
 ---
@@ -82,7 +82,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 1. **UN기념공원 & 평화공원:** 세계 유일의 UN묘역이자 세계 평화의 상징인 곳으로, 가을이면 드넓은 잔디밭과 아름드리나무들이 황금빛 가을옷으로 갈아입어 산책하기 최고입니다.
 2. **이기대 해안산책로 & 오륙도 스카이워크:** 시원하게 펼쳐진 푸른 바다와 기암괴석이 빚어내는 절경을 감상하며 걸을 수 있는 부산 최고의 해안 트레킹 코스입니다.
 
-![평화공원 고즈넉한 가을 정취](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
+![평화공원 고즈넉한 가을 정취](https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 가을 산책을 즐기기 더없이 좋은 부산 남구의 평화로운 풍경*
 
 ---

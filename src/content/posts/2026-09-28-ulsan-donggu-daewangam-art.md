@@ -5,7 +5,7 @@ summary: "기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대�
 category: "전시 리뷰"
 region: "울산"
 eventId: "ulsan-donggu-daewangam-art"
-thumbnail: "https://ldb-phinf.pstatic.net/20220415_154/1649984445479Xop0m_JPEG/%B9%AE%C8%AD%BF%F8%C0%FC%B0%E6%BB%E7%C1%F8.JPG"
+thumbnail: "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전시", "울산동구", "대왕암공원", "출렁다리", "슬도", "일산해수욕장", "울산가볼만한곳", "울산나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "울산데이트"]
 ---
 
@@ -13,8 +13,8 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 
 선선한 가을바람이 옷깃을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 담아 멋진 나드리 코스를 준비했어요. 이번 주말, 울산 동구의 푸른 바다와 예술이 만나는 곳 **[대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전]**으로 저와 함께 떠나보실까요?
 
-![울산광역시동구문화원](https://ldb-phinf.pstatic.net/20220415_154/1649984445479Xop0m_JPEG/%B9%AE%C8%AD%BF%F8%C0%FC%B0%E6%BB%E7%C1%F8.JPG)
-*▲ 울산광역시동구문화원 전경*
+![울산광역시동구문화원](https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+*▲ 기암괴석과 푸른 동해 바다가 어우러진 대왕암공원 전경*
 
 ---
 
@@ -40,7 +40,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 #### 2. 지역 문화와 자연의 공감각적 확장
 단순한 실내 전시를 넘어, 울산 동구 고유의 정체성과 바다라는 서사를 깊이 있게 탐구합니다. 지역 예술가들의 시선을 통해 동해안의 푸른 파도 소리가 눈앞에 펼쳐지는 듯한 공감각적 예술 경험을 느껴보세요.
 
-![울산동구 카페 및 베이커리 전경](https://pup-post-phinf.pstatic.net/MjAyNjA1MDJfMjMx/MDAxNzc3NzE4MjU3MDYw.CALtKSHHYllftYhA5PYeubQdFiRevdeR1Cs3lI2qI2Ag.bzwLnbrgVs25x2NpBNqEvBSwhr5ScPmtAYwRsfI05E4g.JPEG/POST_IMAGE_ENCODING_20260502_193734_565.jpg)
+![울산동구 카페 및 베이커리 전경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 전시 관람 후 여유를 즐기기 좋은 울산 동구 일산지 오션뷰 감성 공간*
 
 #### 3. 세대를 아우르는 배리어프리 문화 산책
@@ -55,7 +55,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 - **일산해수욕장 오션뷰 베이커리 카페거리**: 탁 트인 동해 바다를 바라보며 갓 구운 빵과 향긋한 스페셜티 커피를 즐길 수 있는 감성 카페들이 즐비해 있습니다. 창가 자리에 앉아 파도멍을 때리기 최고의 장소예요.
 - **방어진 항구 인근 로컬 해산물 맛집**: 동해안에서 바로 건져 올린 신선한 활어회와 칼칼한 매운탕으로 든든하게 미식 여행을 완성해 보세요.
 
-![울산동구문화원 가을 기획전시 및 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![울산동구문화원 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 감성과 예술이 공존하는 전시 관람 스폿*
 
 ---
@@ -81,7 +81,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 2. **슬도 바위길**: 바위에 부딪히는 파도 소리가 거문고 소리처럼 들린다는 슬도에서 감성적인 등대와 바다 풍경을 배경으로 인생 사진을 남겨보세요.
 3. **현대백화점문화센터 울산동구점 및 현대예술회관 연계 코스**: 도심 속 문화 예술 인프라까지 알차게 즐길 수 있습니다.
 
-![울산 동구 바다와 자연 풍경](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![울산 동구 바다와 자연 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 탁 트인 동해 바다와 함께하는 힐링 나들이 코스*
 
 ---

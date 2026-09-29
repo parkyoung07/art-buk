@@ -56,7 +56,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남힐�
 * **미피카페 (miffy cafe)** (경상남도 거제시 남부면 다대5길 41)  
   *아기자기한 감성이 가득 담긴 공간으로, 연인이나 가족 단위 방문객들에게 사랑받는 포토스팟 겸 카페입니다.*
 
-![거제 바람의 언덕 인근 통창 뷰 로컬 힐링 카페](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![거제 바람의 언덕 인근 통창 뷰 로컬 힐링 카페](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 창가 너머로 푸른 남해 바다가 펼쳐지는 거제의 감성 오션뷰 카페*
 
 ---

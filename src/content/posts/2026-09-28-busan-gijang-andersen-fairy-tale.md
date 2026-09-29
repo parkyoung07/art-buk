@@ -40,7 +40,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 2. 자연과 예술의 경계를 허무는 숲속 야외 조형전
 실내 전시장을 넘어 기장 숲속 산책로와 어우러진 야외 조형물들을 감상해 보세요. 가을 단풍이 물들어가는 나무들 사이에 숨겨진 동화 속 주인공들을 찾아내는 소소한 재미가 아이들과 연인들의 발걸음을 가볍게 만들어 줍니다.
 
-![기장 안데르센 동화마을 가을 기획전시 및 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![기장 안데르센 동화마을 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ [사진 설명] 현대미술과 자연이 조화를 이루며 감성적인 포토존을 선사하는 기장 안데르센 동화마을 전시 공간.*
 
 ### 3. 온 가족이 함께 즐기는 오감 만족 체험 프로그램
@@ -62,7 +62,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **주소:** 부산광역시 기장군 장안읍 장안로 94 1층 장안돈까스
   - **특징:** 아이들과 함께 방문하기 좋은 든든하고 깔끔한 맛집으로, 남녀노소 누구나 좋아하는 바삭한 수제 돈까스를 맛볼 수 있습니다.
 
-![기장 안데르센 동화마을 인근 감성 스페셜티 카페](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![기장 안데르센 동화마을 인근 감성 스페셜티 카페](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ [사진 설명] 전시 관람 후 여유로운 차 한잔을 즐기기 좋은 기장 인근의 감성 카페 풍경.*
 
 ---
@@ -84,7 +84,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 2. **아홉산숲:** 수십 년 동안 철저히 보존된 거대한 대나무숲과 금강송 군락지를 거닐며 피톤치드를 가득 충전할 수 있는 힐링 산책 코스입니다.
 3. **오시리아 관광단지:** 쇼핑, 테마파크, 맛집 등이 모여 있어 나들이의 마무리를 화려하게 장식할 수 있는 복합 문화 핫플레이스입니다.
 
-![기장 안데르센 동화마을 주변 고즈넉한 가을 산책 코스](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
+![기장 안데르센 동화마을 주변 고즈넉한 가을 산책 코스](https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ [사진 설명] 가을 정취를 만끽하며 걷기 좋은 기장 주변의 고즈넉한 산책로.*
 
 ---

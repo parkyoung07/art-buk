@@ -6,7 +6,7 @@ category: 감성 갤러리
 region: 부산
 eventId: gallery-busan-haeundae-dalmaji
 thumbnail: >-
-  https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80
+  https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산가�
 
 이번 주말, 발걸음 닿는 곳마다 예술적 영감이 피어나는 **해운대 달맞이길 화랑가(조현화랑 & 갤러리아트숲)**로 여러분을 초대합니다. 자연과 건축, 그리고 동시대 최고의 아티스트들이 빚어낸 감동의 순간 속으로 함께 떠나볼까요?
 
-![달맞이길 화랑가 가을 전경 및 전시 공간](https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80)
+![달맞이길 화랑가 가을 전경 및 전시 공간](https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 가을의 정취가 물씬 풍기는 해운대 달맞이길 화랑가 일대 전경*
 
 ---

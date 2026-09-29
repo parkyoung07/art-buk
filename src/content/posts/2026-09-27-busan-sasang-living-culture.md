@@ -43,7 +43,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 3. 세대를 아우르는 열린 소통의 장
 예술은 어려운 것이라는 선입견을 깨고, 지역 주민과 방문객 모두가 쉽고 편안하게 즐길 수 있도록 기획되었습니다. 작가들의 위트 있는 상상력이 담긴 설치 미술과 회화 작품들을 마주하며 일상의 소소한 행복을 되찾아보세요.
 
-![사상생활문화센터 기획전시 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![사상생활문화센터 기획전시 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 현대 시각예술의 다채로운 매력을 느낄 수 있는 전시 전경.*
 
 ---
@@ -57,7 +57,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 * **사상 맛거리 로컬 미식 탐방**
   부산 서부권의 중심지인 사상구는 오랜 세월 사랑받아 온 노포 맛집부터 깔끔한 퓨전 요리 전문점까지 선택의 폭이 넓습니다. 전시 관람 후 든든하게 배를 채울 수 있는 지역 향토 음식과 트렌디한 브런치를 모두 만나보실 수 있습니다.
 
-![사상 인근 감성 스페셜티 카페 풍경](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![사상 인근 감성 스페셜티 카페 풍경](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 감성 가득한 카페에서 즐기는 여유로운 휴식 시간.*
 
 ---
@@ -84,7 +84,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
   - **주소:** 부산광역시 사상구 대동로159번길 107 ㅌㅌㅌ센터
   - **특징:** 최근 사상구의 새로운 문화 핫플레이스로 떠오르고 있는 복합문화공간입니다. 독창적인 전시와 로컬 크리에이터들의 다양한 문화 예술 프로그램이 어우러져 있어, 사상생활문화센터 전시와 함께 연계 코스로 방문하기에 완벽한 장소입니다.
 
-![사상생활문화센터 주변 고즈넉한 가을 산책 코스](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
+![사상생활문화센터 주변 고즈넉한 가을 산책 코스](https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 가을 산책을 즐기기 좋은 삼락생태공원과 주변 풍경.*
 
 ---

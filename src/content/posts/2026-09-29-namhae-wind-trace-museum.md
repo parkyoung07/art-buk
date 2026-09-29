@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["경남전시", "남해전시", "바람흔적미술관", "독일마을", "남해드라이브", "남해여행", "경남가볼만한곳", "경남나들이", "경남남해군", "부울경나들이", "주말가볼만한곳", "가을나들이"]
 region: "경남"
 eventId: "namhae-wind-trace-museum"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832"
+thumbnail: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 부울경 독자 여러분! 일상에 기분 좋은 바람이 스며드는 계절, 가을이 찾아왔습니다. 이번 주말, 머리를 맑게 채워줄 예술적 낭만과 쪽빛 바다의 설렘을 동시에 안겨드릴 특별한 나들이 코스를 준비했습니다. 
 
 오늘 제가 소개해 드릴 곳은 경남 남해군의 푸른 산과 호수가 맞닿은 언덕 위에 자리한 **남해 바람흔적미술관**입니다. 수십 개의 붉은 바람개비가 가을바람에 맞춰 일제히 돌아가는 동화 같은 풍경 속으로 저와 함께 떠나보실까요?
 
-![남해 바람흔적 가을 기획전시 및 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![남해 바람흔적 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 남해 바람흔적미술관 전경. 붉은 바람개비와 자연이 어우러진 감성적인 무인 미술관의 풍경입니다.*
 
 ---
@@ -43,7 +43,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ### 3. 발길 닿는 곳마다 인생샷! 감성 포토존
 미술관 주변을 에워싼 붉은 바람개비 동산과 호수 주변은 어떻게 찍어도 작품이 되는 환상적인 포토존입니다. 가을 햇살이 부서지는 오후 시간대에 방문하시면 가장 아름다운 인생 샷을 건지실 수 있습니다.
 
-![남해 바람흔적 인근 감성 스페셜티 카페](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![남해 바람흔적 인근 감성 스페셜티 카페](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 미술관 관람 후 따스한 차 한 잔의 여유를 즐길 수 있는 주변 인근 감성 공간 풍경.*
 
 ---
@@ -73,7 +73,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 * **남해 독일마을 (연계 투어 추천):**
   미술관에서 차로 멀지 않은 거리에 위치한 남해 독일마을은 이국적인 주택들과 푸른 바다가 어우러져 마치 유럽의 어느 소도시를 여행하는 듯한 착각을 불러일으킵니다. 수제 소시지와 시원한 맥주(또는 에이드), 그리고 풍경을 즐기며 완벽한 주말 나들이를 마무리해 보세요.
 
-![남해 바람흔적 주변 고즈넉한 가을 산책 코스](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
+![남해 바람흔적 주변 고즈넉한 가을 산책 코스](https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 남해의 가을 정취를 만끽하며 걷기 좋은 주변 풍경.*
 
 ---

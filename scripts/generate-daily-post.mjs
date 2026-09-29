@@ -1082,7 +1082,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "울산 남구 여천천 인근 감성 로스팅 카페"
     },
     {
-      url: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "여천천 생태 산책로와 울산대공원 가을 풍경"
     }
   ],
@@ -1098,11 +1098,11 @@ const CURATED_SAFE_PHOTOS = {
       alt: "남포동 비프광장 명물 길거리 미식과 정갈한 간식"
     },
     {
-      url: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "남포동 영도대교 오션뷰 감성 카페와 향긋한 스페셜티 커피"
     },
     {
-      url: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "푸른 가을 하늘 아래 웅장하게 우뚝 솟은 용두산공원 부산타워 전경 (가을 정취)"
     }
   ],
@@ -1134,7 +1134,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "남창 장터의 명물 구수한 소머리국밥 한 상"
     },
     {
-      url: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "울주 온양 감성 디저트 카페"
     },
     {
@@ -1172,7 +1172,7 @@ const CURATED_SAFE_PHOTOS = {
       alt: "고즈넉한 완재정 정자와 못 둘레를 감싸는 가을 숲길"
     },
     {
-      url: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
+      url: "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       alt: "위양지 앞 통창 뷰 감성 베이커리 카페"
     },
     {
@@ -1551,14 +1551,14 @@ async function fetchRealPlacePhotos(exhibition, naverData = {}, dateStr, globalU
   if (photos.length < 3) {
     console.log(`🛡️ [3단계 안전 금고 Fallback 보충] 부족한 사진을 검증된 가을 실사 세트로 안전 보충합니다.`);
     const fb = vaultData?.generic_fallbacks || {
-      autumn_park: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80",
+      autumn_park: "https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       autumn_reeds: "https://images.pexels.com/photos/14456635/pexels-photo-14456635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       autumn_trail: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&auto=format&fit=crop&q=80",
       autumn_landmark: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       ocean_harbor: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1200&auto=format&fit=crop&q=80",
       korean_food: "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&auto=format&fit=crop&q=80",
-      cafe_dessert: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80",
-      art_gallery: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832",
+      cafe_dessert: "https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      art_gallery: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       library_books: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&auto=format&fit=crop&q=80"
     };
 

@@ -67,7 +67,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가�
 *   **카페 그로브 (Grove)** & **밀양9**
     *   *특징*: 세련된 현대적 건축미와 자연이 어우러진 대형 베이커리 카페들로, 가족 혹은 연인과 함께 여유로운 오후의 티타임을 가지기에 안성맞춤인 공간입니다.
 
-![위양지 인근 감성 카페에서 즐기는 여유로운 티타임](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![위양지 인근 감성 카페에서 즐기는 여유로운 티타임](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 산책을 마친 뒤, 따뜻한 커피 한 잔과 달콤한 디저트를 곁들이며 가을날의 여유를 만끽해 보세요.*
 
 ---

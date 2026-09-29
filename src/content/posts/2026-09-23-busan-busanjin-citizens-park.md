@@ -5,7 +5,7 @@ summary: "광활한 도심 숲 부산시민공원에서 만나는 감성 현대�
 category: "전시 리뷰"
 region: "부산"
 eventId: "busan-busanjin-citizens-park"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832"
+thumbnail: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시민공원", "다솜갤러리", "부산진구", "전포카페거리", "서면나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부산드라이브", "가을힐링로드", "인생샷명소"]
 ---
 
@@ -13,7 +13,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 선선한 가을바람이 옷깃을 스치는 요즘, 일상 속 지친 마음을 위로해 줄 완벽한 힐링 나들이 장소를 찾고 계신가요? 이번 주말, 거대한 도심 속 녹색 오아시스인 부산시민공원으로 저와 함께 훌쩍 떠나보시는 건 어떨까요. 광활한 자연이 주는 청량함과 가슴 깊이 스며드는 현대미술의 감동이 여러분을 기다리고 있답니다. 자, 그럼 설레는 마음을 안고 가을빛 가득한 예술 산책을 시작해 볼까요?
 
-![부산시민공원 다솜갤러리 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![부산시민공원 다솜갤러리 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 황금빛 갈대와 은빛 억새가 가을바람에 흔들리는 부산시민공원 다솜갤러리 주변 풍경*
 
 ---
@@ -55,7 +55,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 - **전포카페거리 로컬 감성 카페들**: 신선한 원두를 직접 로스팅하는 핸드드립 커피부터 눈과 입이 즐거워지는 수제 디저트까지, 통창 너머로 가을 햇살이 가득 들어오는 아늑한 공간에서 여유로운 커피 타임을 즐겨보세요.
 - **부산진구 향토 미식 맛집**: 진한 육수의 돼지국밥부터 정갈한 한상차림 브런치, 그리고 신선한 해산물이 어우러진 로컬 맛집들까지 취향에 따라 골라 먹는 재미가 가득합니다.
 
-![부산시민공원 다솜갤러리 인근 통창 뷰 로컬 힐링 카페](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![부산시민공원 다솜갤러리 인근 통창 뷰 로컬 힐링 카페](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 전시 관람 후 따뜻한 차 한 잔의 여유를 즐기기 좋은 인근 감성 카페 풍경*
 
 ---

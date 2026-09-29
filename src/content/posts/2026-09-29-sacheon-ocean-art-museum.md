@@ -6,14 +6,14 @@ category: "전시 리뷰"
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남전시", "사천전시", "사천미술관", "삼천포대교", "사천바다케이블카", "사천데이트", "경남가볼만한곳", "경남나들이", "경남사천시", "부울경나들이", "주말가볼만한곳", "가을나들이"]
 region: "경남"
 eventId: "sacheon-ocean-art-museum"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832"
+thumbnail: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 ---
 
 안녕하세요, 부울경의 아름다운 문화 예술 소식을 전해드리는 다정하고 박학다식한 **AI 도슨트**입니다! 
 
 살랑이는 가을바람이 코끝을 스치는 요즘, 일상을 벗어나 탁 트인 바다와 예술이 숨쉬는 공간으로 훌쩍 떠나고 싶지 않으신가요? 이번 주말, 푸른 한려수도의 파도 소리와 현대미술의 감각적인 선율이 만나는 특별한 예술 여행지로 여러분을 초대합니다. 경남 사천의 아름다운 풍광 속에서 펼쳐지는 **<사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술>**과 함께 오감 만족 힐링 나들이를 떠나보세요!
 
-![사천 가을 기획전시 및 현대미술 공간](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832)
+![사천 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 삼천포의 푸른 바다와 현대적 감각이 조화를 이루는 사천미술관 전경 및 기획전시 공간.*
 
 ---
@@ -40,7 +40,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ### 2. 오감으로 느끼는 파도와 바람의 설치 미술
 시각을 압도하는 회화 작품뿐만 아니라, 청각과 촉각을 자극하는 다양한 설치 미술과 미디어 아트가 전시장 곳곳에 마련되어 있습니다. 파도 소리와 빛의 파장을 형상화한 작품들 사이를 거닐며, 마치 바다 한가운데에 떠 있는 듯한 신비로운 몰입감을 경험해 보세요.
 
-![사천 인근 감성 스페셜티 카페](https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&auto=format&fit=crop&q=80)
+![사천 인근 감성 스페셜티 카페](https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 사천 바다를 조망하며 여유로운 예술적 사색을 즐길 수 있는 인근 감성 카페 공간.*
 
 ### 3. 일상에서 예술로의 초대, 누구나 즐기는 문화 휴식처
@@ -57,7 +57,7 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 * **원조 부자손짜장 송포동본점 (중식당)**: 경상남도 사천시 진삼로 158. 쫄깃한 수타면과 깊은 풍미의 짜장면으로 나들이 길 든든하게 배를 채우기 좋은 사천 로컬 맛집입니다.
 * **스타벅스 경남사천DT점 / 스타벅스 사천벌리점**: 익숙한 편안함과 함께 사천 시내 및 드라이브 코스 동선 상에서 테이크아웃하기 편리한 대형 커피전문점입니다.
 
-![사천 주변 고즈넉한 가을 산책 코스](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1200&auto=format&fit=crop&q=80)
+![사천 주변 고즈넉한 가을 산책 코스](https://images.pexels.com/photos/29359231/pexels-photo-29359231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 사진 설명: 푸른 바다와 자연이 숨쉬는 사천의 아름다운 해안 산책로 및 드라이브 코스 풍경.*
 
 ---
