@@ -108,14 +108,14 @@ export default function AdminImagesPage() {
       }
 
       if (data && data.success) {
-        let loaded = data.images || [];
+        let loaded = (data.images || []) as VerifiedImage[];
         try {
           const overrides = JSON.parse(localStorage.getItem("nadri_verified_images_overrides") || "{}");
-          loaded = loaded.map((img: any) => {
+          loaded = loaded.map((img: VerifiedImage): VerifiedImage => {
             if (overrides[img.image_id]) {
               return {
                 ...img,
-                status: overrides[img.image_id].status,
+                status: overrides[img.image_id].status as "approved" | "pending" | "rejected",
                 human_verified: true
               };
             }
@@ -144,8 +144,8 @@ export default function AdminImagesPage() {
   const handleUpdateStatus = async (imageId: string, newStatus: "approved" | "rejected") => {
     setUpdatingId(imageId);
     // 1. 화면 즉시 상태 변경
-    setImages((prev) =>
-      prev.map((img) => (img.image_id === imageId ? { ...img, status: newStatus, human_verified: true } : img))
+    setImages((prev: VerifiedImage[]): VerifiedImage[] =>
+      prev.map((img: VerifiedImage): VerifiedImage => (img.image_id === imageId ? { ...img, status: newStatus, human_verified: true } : img))
     );
     if (stats) {
       setStats((prevStats) => {

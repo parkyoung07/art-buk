@@ -111,14 +111,14 @@ export default function ImageReviewPage() {
       }
 
       if (data && data.success) {
-        let loaded = data.candidates || [];
+        let loaded = (data.candidates || []) as Candidate[];
         try {
           const savedOverrides = JSON.parse(localStorage.getItem("nadri_image_review_overrides") || "{}");
-          loaded = loaded.map((c: any) => {
+          loaded = loaded.map((c: Candidate): Candidate => {
             if (savedOverrides[c.candidate_id]) {
               return {
                 ...c,
-                status: savedOverrides[c.candidate_id].status,
+                status: savedOverrides[c.candidate_id].status as "approved" | "pending" | "rejected",
                 is_cover: savedOverrides[c.candidate_id].is_cover ?? c.is_cover,
                 reject_reason: savedOverrides[c.candidate_id].status === "rejected" ? "관리자 수동 거절" : null
               };
@@ -143,10 +143,10 @@ export default function ImageReviewPage() {
     setUpdatingId(candidateId);
     
     // 1. 화면 즉시 상태 업데이트 (클릭 즉시 시각 반영)
-    const nextStatus = action === "reject" ? "rejected" : "approved";
+    const nextStatus: "approved" | "rejected" = action === "reject" ? "rejected" : "approved";
     let targetPlace = "";
-    setCandidates((prev) => {
-      const next = prev.map((c) => {
+    setCandidates((prev: Candidate[]): Candidate[] => {
+      const next: Candidate[] = prev.map((c: Candidate): Candidate => {
         if (c.candidate_id === candidateId) {
           targetPlace = c.place_name;
           return {
