@@ -140,16 +140,6 @@
       "caption": "기장 안데르센 동화마을 주변 고즈넉한 가을 산책 코스"
     },
     {
-      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
-      "type": "body",
-      "caption": "달맞이길 화랑가 주변 고즈넉한 가을 산책 코스"
-    },
-    {
-      "file": "2026-09-29-namhae-wind-trace-museum.md",
-      "type": "body",
-      "caption": "남해 바람흔적 주변 고즈넉한 가을 산책 코스"
-    },
-    {
       "file": "2026-09-29-sacheon-ocean-art-museum.md",
       "type": "body",
       "caption": "사천 주변 고즈넉한 가을 산책 코스"
@@ -832,6 +822,11 @@
       "file": "2026-09-22-yangsan-ssangbyeongnu-autumn.md",
       "type": "body",
       "caption": "양산 쌍벽루아트홀 가을 기획전시 및 현대미술 공간"
+    },
+    {
+      "file": "2026-09-29-namhae-wind-trace-museum.md",
+      "type": "body",
+      "caption": "남해 바람흔적 가을 기획전시 및 야외 조각 공간"
     }
   ],
   "http://imgnews.naver.net/image/5354/2019/07/14/0000069791_001_20190714172433946.JPG": [
@@ -848,7 +843,7 @@
       "caption": "탁 트인 자연과 도시가 어우러진 양산의 아름다운 풍경"
     }
   ],
-  "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
+  "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832": [
     {
       "file": "2026-09-02-busan-busanjin-citizens-park.md",
       "type": "thumbnail"
@@ -859,72 +854,18 @@
       "caption": "부산시민공원 다솜갤러리 기획전시실 내부 전경"
     },
     {
-      "file": "2026-09-23-busan-busanjin-citizens-park.md",
-      "type": "thumbnail"
-    },
-    {
-      "file": "2026-09-23-busan-busanjin-citizens-park.md",
-      "type": "body",
-      "caption": "부산시민공원 다솜갤러리 황금빛 갈대와 은빛 억새가 파도치는 가을 풍경"
-    },
-    {
-      "file": "2026-09-27-busan-sasang-living-culture.md",
-      "type": "body",
-      "caption": "사상생활문화센터 기획전시 현대미술 공간"
-    },
-    {
-      "file": "2026-09-28-busan-gangseo-nakdong-river-center.md",
-      "type": "body",
-      "caption": "낙동강문화관 기획전 및 현대미술 공간"
-    },
-    {
-      "file": "2026-09-28-busan-gijang-andersen-fairy-tale.md",
-      "type": "body",
-      "caption": "기장 안데르센 동화마을 가을 기획전시 및 현대미술 공간"
-    },
-    {
-      "file": "2026-09-28-sacheon-ocean-art-museum.md",
-      "type": "body",
-      "caption": "사천 가을 기획전시 공간 및 감성 스페셜티 카페"
-    },
-    {
-      "file": "2026-09-28-ulsan-donggu-daewangam-art.md",
-      "type": "body",
-      "caption": "울산동구문화원 가을 기획전시 및 현대미술 공간"
-    },
-    {
-      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
-      "type": "thumbnail"
-    },
-    {
-      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
-      "type": "body",
-      "caption": "달맞이길 화랑가 가을 기획전시 및 현대미술 공간"
-    },
-    {
-      "file": "2026-09-29-namhae-wind-trace-museum.md",
-      "type": "thumbnail"
-    },
-    {
-      "file": "2026-09-29-namhae-wind-trace-museum.md",
-      "type": "body",
-      "caption": "남해 바람흔적 가을 기획전시 및 현대미술 공간"
-    },
-    {
-      "file": "2026-09-29-sacheon-ocean-art-museum.md",
-      "type": "thumbnail"
-    },
-    {
-      "file": "2026-09-29-sacheon-ocean-art-museum.md",
-      "type": "body",
-      "caption": "사천 가을 기획전시 및 현대미술 공간"
-    }
-  ],
-  "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832": [
-    {
       "file": "2026-09-02-busan-busanjin-citizens-park.md",
       "type": "body",
       "caption": "다솜갤러리 화이트큐브 벽면 전시 작품"
+    },
+    {
+      "file": "2026-09-23-busan-busanjin-citizens-park.md",
+      "type": "thumbnail"
+    },
+    {
+      "file": "2026-09-23-busan-busanjin-citizens-park.md",
+      "type": "body",
+      "caption": "부산시민공원 다솜갤러리 기획전시 작품 실사"
     }
   ],
   "https://pup-post-phinf.pstatic.net/MjAyNjA3MDdfNjcg/MDAxNzgzMzUyNDAwOTYw.dunWy6fgN8ufnFfFmzD2MFaooqXMvcRzvf7YwfpxGBwg.43LnPSIYPdVKgXGfD02gNJ9mCG-o8j8Q2Bgh_qvM_50g.JPEG/POST_IMAGE_ENC_20260707_003850_497.jpg": [
@@ -957,8 +898,18 @@
       "caption": "갤러리 복도 전경"
     },
     {
+      "file": "2026-09-19-busan-namgu-culture-center.md",
+      "type": "body",
+      "caption": "평화공원 고즈넉한 가을 정취"
+    },
+    {
       "file": "2026-09-25-busan-junggu-modern-history-museum.md",
       "type": "thumbnail"
+    },
+    {
+      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
+      "type": "body",
+      "caption": "달맞이길 문텐로드 숲길과 푸른 바다 산책로"
     }
   ],
   "https://images.pexels.com/photos/8474270/pexels-photo-8474270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
@@ -971,6 +922,16 @@
       "file": "2026-09-25-busan-junggu-modern-history-museum.md",
       "type": "body",
       "caption": "부산근현대역사관 가을 기획전시 및 현대미술 공간"
+    },
+    {
+      "file": "2026-09-27-busan-sasang-living-culture.md",
+      "type": "body",
+      "caption": "사상생활문화센터 전시실 실사"
+    },
+    {
+      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
+      "type": "body",
+      "caption": "달맞이길 화랑가 가을 기획전시 및 현대미술 공간"
     }
   ],
   "https://www.tu.ac.kr/_attach/tongmyong/editor-image/2024/05/JErGwwuoLESDNfDwehbTmnIfhK.png": [
@@ -997,6 +958,11 @@
       "file": "2026-09-24-busan-yeongdo-culture-art-center.md",
       "type": "body",
       "caption": "영도문화예술회관 가을 기획전시 및 현대미술 공간"
+    },
+    {
+      "file": "2026-09-28-ulsan-donggu-daewangam-art.md",
+      "type": "body",
+      "caption": "울산동구 기획전시 및 현대미술 조형 공간"
     }
   ],
   "http://shop1.phinf.naver.net/20250227_45/1740616778113wpavk_JPEG/74749639217766393_194470118.jpg": [
@@ -2143,6 +2109,10 @@
       "file": "2026-09-14-changwon-seongsan-art-hall.md",
       "type": "body",
       "caption": "현대미술 전시 공간 풍경"
+    },
+    {
+      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
+      "type": "thumbnail"
     }
   ],
   "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5293%2F2024%2F06%2F17%2F0000393277_001_20240617175614854.jpg": [
@@ -2265,17 +2235,16 @@
     {
       "file": "2026-09-19-busan-namgu-culture-center.md",
       "type": "body",
-      "caption": "부산문화회관 가을 전경 및 전시 공간"
-    },
-    {
-      "file": "2026-09-19-busan-namgu-culture-center.md",
-      "type": "body",
-      "caption": "평화공원 고즈넉한 가을 정취"
+      "caption": "부산문화회관 기획전시 및 현대 조형 공간"
     },
     {
       "file": "2026-09-21-gyeongnam-autumn-masterpiece.md",
       "type": "body",
       "caption": "용지호수공원의 아름다운 가을 실제 풍경"
+    },
+    {
+      "file": "2026-09-29-namhae-wind-trace-museum.md",
+      "type": "thumbnail"
     }
   ],
   "https://pup-post-phinf.pstatic.net/MjAyNjA3MTBfMjQ2/MDAxNzgzNjcyNTQ1ODAy.fJ6oBA3jeaw5loc-AwHNJdfwegWF4Mn_Xn5LQknB_Fog.QA162J6c3bQepeFlFmRDz6CfHmQdp5Ui4nKNclU4gRwg.JPEG/PostEncodingTask.9046C199-5168-4630-86E3-BCA76BE5ECD3.jpg": [
@@ -3060,16 +3029,6 @@
       "caption": "울산 동구 바다와 자연 풍경"
     },
     {
-      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
-      "type": "body",
-      "caption": "달맞이길 화랑가 인근 감성 스페셜티 카페"
-    },
-    {
-      "file": "2026-09-29-namhae-wind-trace-museum.md",
-      "type": "body",
-      "caption": "남해 바람흔적 인근 감성 스페셜티 카페"
-    },
-    {
       "file": "2026-09-29-sacheon-ocean-art-museum.md",
       "type": "body",
       "caption": "사천 인근 감성 스페셜티 카페"
@@ -3114,11 +3073,13 @@
       "caption": "울산도서관 앞 여천천 생태하천과 수변 산책로"
     }
   ],
-  "https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0MzUx.v4f3vBl60ROXEJ7JEOwUUnru2YZC7u5gPZ_UaHCGVoAg.k94nKnE_8mnt1Uk1iADJcDQ6aKIV7LBUs0TdtZReL18g.JPEG/POST_IMAGE_ENC_20260627_020347_965.jpg": [
+  "https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0MzUx.v4f3vBl8L0Ea7nJ9iI8kMvYpZ2k8Xp4v7nI4.JPEG/POST_IMAGE_ENC_20260627_153034_351.jpg": [
     {
       "file": "2026-09-27-busan-sasang-living-culture.md",
       "type": "thumbnail"
-    },
+    }
+  ],
+  "https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0MzUx.v4f3vBl60ROXEJ7JEOwUUnru2YZC7u5gPZ_UaHCGVoAg.k94nKnE_8mnt1Uk1iADJcDQ6aKIV7LBUs0TdtZReL18g.JPEG/POST_IMAGE_ENC_20260627_020347_965.jpg": [
     {
       "file": "2026-09-27-busan-sasang-living-culture.md",
       "type": "body",
@@ -3143,7 +3104,24 @@
       "caption": "낙동강 뷰와 함께 여유를 즐길 수 있는 인근 감성 공간"
     }
   ],
-  "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2025%2F11%2F20%2F0000645948_002_20251120074207826.JPG": [
+  "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
+    {
+      "file": "2026-09-28-busan-gangseo-nakdong-river-center.md",
+      "type": "body",
+      "caption": "낙동강문화관 기획전 및 현대미술 공간"
+    },
+    {
+      "file": "2026-09-28-sacheon-ocean-art-museum.md",
+      "type": "body",
+      "caption": "사천 가을 기획전시 공간 및 감성 스페셜티 카페"
+    },
+    {
+      "file": "2026-09-29-sacheon-ocean-art-museum.md",
+      "type": "body",
+      "caption": "사천 가을 기획전시 및 현대미술 공간"
+    }
+  ],
+  "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5439%2F2025%2F11%2F10%2F0000171271_001_20251110091811559.jpg&type=sc960_832": [
     {
       "file": "2026-09-28-busan-gijang-andersen-fairy-tale.md",
       "type": "thumbnail"
@@ -3151,14 +3129,27 @@
     {
       "file": "2026-09-28-busan-gijang-andersen-fairy-tale.md",
       "type": "body",
+      "caption": "기장 안데르센 동화마을 전시관 실사"
+    }
+  ],
+  "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2025%2F11%2F20%2F0000645948_002_20251120074207826.JPG": [
+    {
+      "file": "2026-09-28-busan-gijang-andersen-fairy-tale.md",
+      "type": "body",
       "caption": "[2025 자치혁신대상] 부산 기장군, ‘안데르센ㆍ동화마을’로 지역 문화 발전"
     }
   ],
-  "https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2NDcw.rX3SKAhCASha4iRxJLAMUAHqs33X0L_XXdbgr6oOx44g.uHEjpaBJms2uaPuBtBBcvSpDU33LVWH4f7E23XpYaWIg.JPEG/POST_IMAGE_ENCODING_20260914_230055_897.jpg": [
+  "https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
     {
       "file": "2026-09-28-sacheon-ocean-art-museum.md",
       "type": "thumbnail"
     },
+    {
+      "file": "2026-09-29-sacheon-ocean-art-museum.md",
+      "type": "thumbnail"
+    }
+  ],
+  "https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2NDcw.rX3SKAhCASha4iRxJLAMUAHqs33X0L_XXdbgr6oOx44g.uHEjpaBJms2uaPuBtBBcvSpDU33LVWH4f7E23XpYaWIg.JPEG/POST_IMAGE_ENCODING_20260914_230055_897.jpg": [
     {
       "file": "2026-09-28-sacheon-ocean-art-museum.md",
       "type": "body",
@@ -3181,6 +3172,25 @@
       "file": "2026-09-28-ulsan-donggu-daewangam-art.md",
       "type": "body",
       "caption": "울산광역시동구문화원"
+    },
+    {
+      "file": "2026-09-29-namhae-wind-trace-museum.md",
+      "type": "body",
+      "caption": "남해 쪽빛 바다와 가을 숲길 풍경"
+    }
+  ],
+  "https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
+    {
+      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
+      "type": "body",
+      "caption": "청사포 오션뷰 스페셜티 감성 카페"
+    }
+  ],
+  "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940": [
+    {
+      "file": "2026-09-29-namhae-wind-trace-museum.md",
+      "type": "body",
+      "caption": "남해 독일마을 인근 감성 카페 테라스"
     }
   ]
 }

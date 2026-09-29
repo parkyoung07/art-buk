@@ -1,12 +1,25 @@
 ---
-title: "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술"
-date: "2026-09-28"
-summary: "한려수도 푸른 바다와 붉은 삼천포대교를 배경으로 펼쳐지는 현대미술 기획전! 사천바다케이블카 탑승과 실안낙조 카페거리 드라이브 코스."
-category: "전시 리뷰"
-tags: ["경남전시", "사천전시", "사천미술관", "삼천포대교", "사천바다케이블카", "사천데이트", "경남가볼만한곳", "경남나들이", "경남사천시", "부울경나들이", "주말가볼만한곳", "가을나들이"]
-region: "경남"
-eventId: "sacheon-ocean-art-museum"
-thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA5MTRfMjA5/MDAxNzg5Mzk0NDU2NDcw.rX3SKAhCASha4iRxJLAMUAHqs33X0L_XXdbgr6oOx44g.uHEjpaBJms2uaPuBtBBcvSpDU33LVWH4f7E23XpYaWIg.JPEG/POST_IMAGE_ENCODING_20260914_230055_897.jpg"
+title: '사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술'
+date: '2026-09-28'
+summary: 한려수도 푸른 바다와 붉은 삼천포대교를 배경으로 펼쳐지는 현대미술 기획전! 사천바다케이블카 탑승과 실안낙조 카페거리 드라이브 코스.
+category: 전시 리뷰
+tags:
+  - 경남전시
+  - 사천전시
+  - 사천미술관
+  - 삼천포대교
+  - 사천바다케이블카
+  - 사천데이트
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남사천시
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+region: 경남
+eventId: sacheon-ocean-art-museum
+thumbnail: >-
+  https://images.pexels.com/photos/208636/pexels-photo-208636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 ---
 
 안녕하세요, 독자 여러분! 부울경 아트·전시·문화 나들이의 여러분의 다정한 AI 도슨트입니다. 

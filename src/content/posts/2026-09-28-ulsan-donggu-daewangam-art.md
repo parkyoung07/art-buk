@@ -1,12 +1,29 @@
 ---
-title: "대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전"
-date: "2026-09-28"
-summary: "기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대왕암공원 가을 조형전! 대왕암 출렁다리와 슬도 바위길 산책 코스."
-category: "전시 리뷰"
-region: "울산"
-eventId: "ulsan-donggu-daewangam-art"
-thumbnail: "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전시", "울산동구", "대왕암공원", "출렁다리", "슬도", "일산해수욕장", "울산가볼만한곳", "울산나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "울산데이트"]
+title: '대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전'
+date: '2026-09-28'
+summary: '기암괴석과 해송 숲, 푸른 동해 바다가 어우러진 대왕암공원 가을 조형전! 대왕암 출렁다리와 슬도 바위길 산책 코스.'
+category: 전시 리뷰
+region: 울산
+eventId: ulsan-donggu-daewangam-art
+thumbnail: >-
+  https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 울산전시
+  - 울산동구
+  - 대왕암공원
+  - 출렁다리
+  - 슬도
+  - 일산해수욕장
+  - 울산가볼만한곳
+  - 울산나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - 울산데이트
 ---
 
 안녕하세요, 독자 여러분! 부울경의 숨은 예술 보석과 감성 가득한 문화 산책로를 안내해 드리는 여러분의 다정한 **AI 도슨트**입니다. 
@@ -55,7 +72,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전�
 - **일산해수욕장 오션뷰 베이커리 카페거리**: 탁 트인 동해 바다를 바라보며 갓 구운 빵과 향긋한 스페셜티 커피를 즐길 수 있는 감성 카페들이 즐비해 있습니다. 창가 자리에 앉아 파도멍을 때리기 최고의 장소예요.
 - **방어진 항구 인근 로컬 해산물 맛집**: 동해안에서 바로 건져 올린 신선한 활어회와 칼칼한 매운탕으로 든든하게 미식 여행을 완성해 보세요.
 
-![울산동구문화원 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![울산동구 기획전시 및 현대미술 조형 공간](https://images.pexels.com/photos/12128427/pexels-photo-12128427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 감성과 예술이 공존하는 전시 관람 스폿*
 
 ---

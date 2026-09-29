@@ -1,12 +1,29 @@
 ---
-title: "사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술"
-date: "2026-09-27"
-summary: "청년 작가들의 독창적인 감각과 생활 문화가 어우러진 현대 시각예술전! 광활한 삼락생태공원 갈대억새숲 연계 코스."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-sasang-living-culture"
-thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0MzUx.v4f3vBl60ROXEJ7JEOwUUnru2YZC7u5gPZ_UaHCGVoAg.k94nKnE_8mnt1Uk1iADJcDQ6aKIV7LBUs0TdtZReL18g.JPEG/POST_IMAGE_ENC_20260627_020347_965.jpg"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "사상생활문화센터", "부산사상구", "삼락생태공원", "사상인디스테이션", "갈대숲", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
+title: '사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술'
+date: '2026-09-27'
+summary: 청년 작가들의 독창적인 감각과 생활 문화가 어우러진 현대 시각예술전! 광활한 삼락생태공원 갈대억새숲 연계 코스.
+category: 전시 리뷰
+region: 부산
+eventId: busan-sasang-living-culture
+thumbnail: >-
+  https://pup-post-phinf.pstatic.net/MjAyNjA2MjdfMTUw/MDAxNzgyNDkzNDM0MzUx.v4f3vBl8L0Ea7nJ9iI8kMvYpZ2k8Xp4v7nI4.JPEG/POST_IMAGE_ENC_20260627_153034_351.jpg
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 사상생활문화센터
+  - 부산사상구
+  - 삼락생태공원
+  - 사상인디스테이션
+  - 갈대숲
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부울경전시
+  - 미술관나들이
+  - 부울경나들이
 ---
 
 안녕하세요, 독자 여러분! 부울경의 숨은 보석 같은 문화 예술 공간을 다정하게 안내해 드릴 여러분의 전담 **AI 도슨트**입니다. 
@@ -43,7 +60,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 #### 3. 세대를 아우르는 열린 소통의 장
 예술은 어려운 것이라는 선입견을 깨고, 지역 주민과 방문객 모두가 쉽고 편안하게 즐길 수 있도록 기획되었습니다. 작가들의 위트 있는 상상력이 담긴 설치 미술과 회화 작품들을 마주하며 일상의 소소한 행복을 되찾아보세요.
 
-![사상생활문화센터 기획전시 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![사상생활문화센터 전시실 실사](https://images.pexels.com/photos/8474270/pexels-photo-8474270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 *▲ 현대 시각예술의 다채로운 매력을 느낄 수 있는 전시 전경.*
 
 ---

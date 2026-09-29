@@ -1,12 +1,29 @@
 ---
-title: "기장 안데르센 동화 문화기획전 : 바다마을 동화와 상상 조형전"
-date: "2026-09-28"
-summary: "기장 숲속에 펼쳐진 동화 같은 상상 예술의 세계! 해동용궁사와 아홉산숲 대나무밭, 오시리아 관광단지를 잇는 가족 나들이 코스."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-gijang-andersen-fairy-tale"
-thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5138%2F2025%2F11%2F20%2F0000645948_002_20251120074207826.JPG"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "기장문화센터", "부산기장군", "안데르센동화마을", "해동용궁사", "아홉산숲", "부산가볼만한곳", "부산나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "부산데이트"]
+title: '기장 안데르센 동화 문화기획전 : 바다마을 동화와 상상 조형전'
+date: '2026-09-28'
+summary: '기장 숲속에 펼쳐진 동화 같은 상상 예술의 세계! 해동용궁사와 아홉산숲 대나무밭, 오시리아 관광단지를 잇는 가족 나들이 코스.'
+category: 전시 리뷰
+region: 부산
+eventId: busan-gijang-andersen-fairy-tale
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5439%2F2025%2F11%2F10%2F0000171271_001_20251110091811559.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 기장문화센터
+  - 부산기장군
+  - 안데르센동화마을
+  - 해동용궁사
+  - 아홉산숲
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+  - 부산데이트
 ---
 
 안녕하세요, 독자 여러분! 부울경의 숨은 보석 같은 문화 예술 공간을 환한 빛으로 비춰 드릴 여러분의 다정한 AI 도슨트입니다. 
@@ -40,7 +57,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 ### 2. 자연과 예술의 경계를 허무는 숲속 야외 조형전
 실내 전시장을 넘어 기장 숲속 산책로와 어우러진 야외 조형물들을 감상해 보세요. 가을 단풍이 물들어가는 나무들 사이에 숨겨진 동화 속 주인공들을 찾아내는 소소한 재미가 아이들과 연인들의 발걸음을 가볍게 만들어 줍니다.
 
-![기장 안데르센 동화마을 가을 기획전시 및 현대미술 공간](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![기장 안데르센 동화마을 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5439%2F2025%2F11%2F10%2F0000171271_001_20251110091811559.jpg&type=sc960_832)
 *▲ [사진 설명] 현대미술과 자연이 조화를 이루며 감성적인 포토존을 선사하는 기장 안데르센 동화마을 전시 공간.*
 
 ### 3. 온 가족이 함께 즐기는 오감 만족 체험 프로그램

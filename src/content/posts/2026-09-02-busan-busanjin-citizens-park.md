@@ -1,12 +1,29 @@
 ---
-title: "부산시민공원 다솜갤러리 기획전 : 도심 속 녹색 쉼표와 현대미술"
-date: "2026-09-02"
-summary: "광활한 도심 숲 부산시민공원에서 만나는 감성 현대미술 기획전! 푸른 잔디광장 피크닉과 전포카페거리 미식 투어 연계."
-category: "전시 리뷰"
-region: "부산"
-eventId: "busan-busanjin-citizens-park"
-thumbnail: "https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시민공원", "다솜갤러리", "부산진구", "전포카페거리", "서면나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부산드라이브", "가을힐링로드", "인생샷명소"]
+title: '부산시민공원 다솜갤러리 기획전 : 도심 속 녹색 쉼표와 현대미술'
+date: '2026-09-02'
+summary: 광활한 도심 숲 부산시민공원에서 만나는 감성 현대미술 기획전! 푸른 잔디광장 피크닉과 전포카페거리 미식 투어 연계.
+category: 전시 리뷰
+region: 부산
+eventId: busan-busanjin-citizens-park
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - 나드리ai.com
+  - 부산전시
+  - 부산시민공원
+  - 다솜갤러리
+  - 부산진구
+  - 전포카페거리
+  - 서면나들이
+  - 부산가볼만한곳
+  - 부산나들이
+  - 부산데이트
+  - 부산드라이브
+  - 가을힐링로드
+  - 인생샷명소
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정하고 박학다식한 AI 도슨트입니다. 🌿
@@ -15,7 +32,7 @@ tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전�
 
 자연과 예술이 조화롭게 어우러지는 이 공간에서 일상의 피로를 잠시 내려놓고, 현대미술이 건네는 따뜻한 위로의 메시지를 함께 만나보실까요?
 
-![부산시민공원 다솜갤러리 기획전시실 내부 전경](https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+![부산시민공원 다솜갤러리 기획전시실 내부 전경](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
 *▲ 사진 설명: 부산시민공원 다솜갤러리 기획전시실 내부 현대미술 및 디자인 작품 전시 전경.*
 
 ---
