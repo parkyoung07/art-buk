@@ -32,28 +32,41 @@ export async function generateMetadata({ params }: PageProps) {
 
   const url = `https://nadriai.com/events/${exhibition.id}/`;
 
-  return {
-    title: {
-      absolute: `${exhibition.title} | 나드리 AI`,
-    },
-    description: `${exhibition.period} | ${exhibition.location} - ${exhibition.description}`,
-    keywords: [
+  const keywords = Array.from(
+    new Set([
+      "나드리",
+      "나드리AI",
+      "나드리ai.com",
+      "nadriai.com",
       exhibition.region,
-      exhibition.subRegion,
+      exhibition.subRegion || "",
+      `${exhibition.region}전시`,
+      `${exhibition.region}가볼만한곳`,
+      `${exhibition.region}데이트`,
       exhibition.category,
       exhibition.venueName || "",
       "부울경전시",
-      "미술관",
-    ],
+      "미술관나들이",
+      "주말가볼만한곳"
+    ].filter(Boolean))
+  );
+
+  return {
+    title: {
+      absolute: `${exhibition.title} | 나드리 AI (nadriai.com)`,
+    },
+    description: `${exhibition.period} | ${exhibition.location} - ${exhibition.description} (나드리 nadriai.com)`,
+    keywords,
     openGraph: {
-      title: `${exhibition.title} | 나드리 AI`,
+      title: `${exhibition.title} | 나드리 AI (nadriai.com)`,
       description: `${exhibition.period} (${exhibition.venueName || exhibition.location}) - ${exhibition.description}`,
       url,
       type: "website",
+      siteName: "나드리 AI",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${exhibition.title} | 나드리 AI`,
+      title: `${exhibition.title} | 나드리 AI (nadriai.com)`,
       description: `${exhibition.period} | ${exhibition.venueName || exhibition.location}`,
     },
   };

@@ -3,10 +3,10 @@ title: "김해 지혜의바다도서관 : 폐교의 화려한 변신, 웅장한 
 date: "2026-09-21"
 summary: "버려진 폐교 체육관이 거대한 책의 바다로 탈바꿈한 경남 대표 특화 도서관! 웅장한 벽면 서가와 편안한 빈백 소파, 다채로운 인형극과 북토크가 가득합니다."
 category: "도서관 북캉스"
-tags: ["경남도서관", "김해지혜의바다", "폐교재생", "이색도서관", "아이와가볼만한곳", "김해주말나들이"]
 region: "경남"
 eventId: "library-gimhae-sea-of-wisdom"
 thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남도서관", "김해지혜의바다", "폐교재생", "이색도서관", "아이와가볼만한곳", "김해주말나들이", "경남가볼만한곳", "경남나들이", "경남데이트", "부울경도서관", "북캉스", "부울경나들이"]
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 사색의 쉼터를 전하는 북캉스 & 문화공간 큐레이터입니다. 
@@ -88,3 +88,8 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ### 🍊 에디터의 따뜻한 마무리 멘트
 
 바쁘게 흘러가는 시간 속에서 잠시 멈춤의 미학을 배우고 싶다면, 이번 주말에는 고요한 책의 숲이 기다리는 **김해 지혜의바다도서관**으로 훌쩍 떠나보세요. 웅장한 서가 아래에서 마주한 한 권의 책이 당신의 일상에 작은 파문과 깊은 위로를 건네줄 것입니다. 부울경 아트·전시·문화 나들이는 앞으로도 여러분의 감성 충만한 발걸음과 함께합니다.
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #경남도서관 #김해지혜의바다 #폐교재생 #이색도서관 #아이와가볼만한곳 #김해주말나들이 #경남가볼만한곳 #경남나들이 #경남데이트 #부울경도서관 #북캉스 #부울경나들이

@@ -5,16 +5,10 @@ summary: >-
   조선 시대부터 이어져 온 500년 전통의 영남 대표 장터! 국보 영남루 산책 후 맛보는 토렴식 밀양 돼지국밥과 손 메밀묵의 구수한 미식
   여행.
 category: 전통시장 나들이
-tags:
-  - 경남전통시장
-  - 밀양아리랑시장
-  - 밀양5일장
-  - 밀양돼지국밥
-  - 영남루
-  - 가을장터
 region: 경남
 eventId: market-miryang-arirang-autumn
 thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDRfMjk2%2FMDAxNzU0MjcwMzEwMzUy.aOXj6lSApKFiAAtBaMQlS-QlvhZ6cgg8495GGDnACHcg.MG7ZZh6784qCjyPQ6kmxCm2Zm_gH9w8FttwVvojAODwg.JPEG%2F900%25A3%25DF20250802%25A3%25DF174536.jpg&type=sc960_832"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가볼만한곳", "경남나들이", "경남데이트", "경남5일장", "부울경전통시장", "전통시장먹거리", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화와 다채로운 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬러 어디로 떠날지 고민이신가요? 
@@ -88,3 +82,8 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ---
 
 이번 주말, 화려한 도심의 카페 대신 사람 사는 온기와 500년 전통의 세월이 숨쉬는 경남 밀양 아리랑시장으로 발걸음을 옮겨보는 건 어떨까요? 국보 영남루의 그늘 아래서 맛보는 구수한 돼지국밥 한 그릇과 정겨운 장터의 풍경이 여러분의 가을 주말을 따뜻하게 채워줄 것입니다.
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #경남가볼만한곳 #경남나들이 #경남데이트 #경남5일장 #부울경전통시장 #전통시장먹거리 #부울경나들이 #주말가볼만한곳 #가을나들이 #AI도슨트

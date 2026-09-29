@@ -34,18 +34,41 @@ export async function generateMetadata({ params }: PageProps) {
   const url = `https://nadriai.com/blog/${post.slug}/`;
   const image = post.thumbnail || "https://nadriai.com/og-default.jpg";
 
+  const dynamicKeywords = Array.from(
+    new Set([
+      "나드리",
+      "나드리AI",
+      "나드리ai.com",
+      "nadriai.com",
+      "nadriai",
+      ...(post.tags || []),
+      post.region,
+      `${post.region}전시`,
+      `${post.region}가볼만한곳`,
+      `${post.region}나들이`,
+      "부울경전시",
+      "부울경나드리",
+      "미술관나들이",
+      "주말데이트",
+      "가을나들이",
+      "AI도슨트",
+      post.category || "전시리뷰"
+    ].filter(Boolean))
+  );
+
   return {
     title: {
-      absolute: `${post.title} | 나드리 AI`,
+      absolute: `${post.title} | 나드리 AI (nadriai.com)`,
     },
-    description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
-    keywords: [...post.tags, post.region, "부울경전시", "미술관나들이", "나드리AI"],
+    description: `${post.summary || "부산, 울산, 경남 문화 나들이 및 AI 도슨트 가이드"} (나드리 nadriai.com)`,
+    keywords: dynamicKeywords,
     openGraph: {
-      title: `${post.title} | 나드리 AI`,
-      description: post.summary || "부산, 울산, 경남 미술관 전시 리뷰 및 AI 도슨트 나들이 팁",
+      title: `${post.title} | 나드리 AI (nadriai.com)`,
+      description: `${post.summary || "부산, 울산, 경남 문화 나들이 및 AI 도슨트 가이드"} (나드리 nadriai.com)`,
       url,
       type: "article",
       publishedTime: post.date,
+      siteName: "나드리 AI (nadriai.com)",
       images: [
         {
           url: image,
@@ -57,7 +80,7 @@ export async function generateMetadata({ params }: PageProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | 나드리 AI`,
+      title: `${post.title} | 나드리 AI (nadriai.com)`,
       description: post.summary,
       images: [image],
     },
@@ -82,7 +105,20 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     getNaverCafeReviews(searchKeyword, 2),
   ]);
 
-  // BlogPosting JSON-LD 구조화 데이터
+  const allTagsString = Array.from(
+    new Set([
+      "나드리",
+      "나드리AI",
+      "nadriai.com",
+      "나드리ai.com",
+      ...(post.tags || []),
+      `${post.region}가볼만한곳`,
+      "부울경나들이",
+      "주말데이트"
+    ])
+  ).join(", ");
+
+  // BlogPosting JSON-LD 구조화 데이터 (검색엔진 완벽 노출용)
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -91,6 +127,13 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     image: post.thumbnail ? [post.thumbnail] : undefined,
     datePublished: post.date,
     dateModified: post.date,
+    keywords: allTagsString,
+    inLanguage: "ko-KR",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "나드리 AI",
+      url: "https://nadriai.com",
+    },
     author: {
       "@type": "Organization",
       name: "나드리 AI 도슨트",
@@ -98,7 +141,7 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     },
     publisher: {
       "@type": "Organization",
-      name: "nadriai",
+      name: "나드리 AI (nadriai.com)",
       url: "https://nadriai.com",
       logo: {
         "@type": "ImageObject",
@@ -238,20 +281,32 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
             );
           })()}
 
-          {/* 태그 목록 */}
-          {post.tags && post.tags.length > 0 && (
-            <div className="mt-10 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold text-slate-400">TAGS :</span>
-              {post.tags.map((tag, idx) => (
+          {/* 태그 목록 (SEO 및 SNS 공유 최적화) */}
+          <div className="mt-10 pt-6 border-t border-slate-200 space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">🏷️ 관련 해시태그</span>
+              <span className="text-[11px] text-slate-400 font-normal">(네이버·구글 검색 & SNS 공유 키워드)</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="px-3 py-1.5 rounded-xl bg-indigo-50 text-indigo-700 text-xs font-bold border border-indigo-100">
+                #나드리
+              </span>
+              <span className="px-3 py-1.5 rounded-xl bg-indigo-50 text-indigo-700 text-xs font-bold border border-indigo-100">
+                #나드리AI
+              </span>
+              <span className="px-3 py-1.5 rounded-xl bg-indigo-50 text-indigo-700 text-xs font-bold border border-indigo-100">
+                #nadriai.com
+              </span>
+              {post.tags && post.tags.map((tag, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-xl bg-slate-100 text-slate-600 text-xs font-medium"
+                  className="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-medium transition-colors"
                 >
                   #{tag}
                 </span>
               ))}
             </div>
-          )}
+          </div>
 
           {/* 출처 및 공공데이터 명시 (E-E-A-T 신뢰도) */}
           <div className="mt-8 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 text-xs text-slate-500 flex items-center gap-2">

@@ -3,10 +3,10 @@ title: "울산 남창옹기종기시장 5일장 : 100년 전통의 소머리국�
 date: "2026-09-19"
 summary: "남창역 바로 앞, 동해남부선 기차를 타고 떠나는 활기찬 100년 전통 5일장! 진한 소머리국밥 한 뚝배기와 외고산 옹기마을 연계 가을 나들이 코스."
 category: "전통시장 나들이"
-tags: ["울산전통시장", "남창옹기종기시장", "울산5일장", "남창소머리국밥", "외고산옹기마을", "울주여행"]
 region: "울산"
 eventId: "market-ulsan-namchang-onggi"
 thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "울산전통시장", "남창옹기종기시장", "울산5일장", "남창소머리국밥", "외고산옹기마을", "울주여행", "울산가볼만한곳", "울산나들이", "울산데이트", "부울경전통시장", "전통시장먹거리", "부울경나들이"]
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 장터와 골목 미식을 전해드리는 전통시장 전문 로컬 큐레이터입니다! 
@@ -84,3 +84,8 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ---
 
 이번 주말, 차창 밖으로 스치는 풍경을 즐기며 동해선 기차를 타고 남창역으로 향해보세요. 100년의 역사가 녹아든 구수한 소머리국밥 한 그릇과 인심 좋은 상인들의 웃음소리가 여러분의 주말을 포근하고 따뜻하게 채워줄 것입니다. 부울경 로컬 큐레이터가 적극 추천하는 남창옹기종기시장으로 지금 당장 훌쩍 떠나보세요!
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #울산전통시장 #남창옹기종기시장 #울산5일장 #남창소머리국밥 #외고산옹기마을 #울주여행 #울산가볼만한곳 #울산나들이 #울산데이트 #부울경전통시장 #전통시장먹거리 #부울경나들이

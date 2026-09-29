@@ -3,17 +3,11 @@ title: '경남도립미술관 가을 기획전 : 남도의 붓길'
 date: '2026-09-21'
 summary: 영남 근현대 회화의 깊은 정취를 느끼는 가을 명품전! 미술관 관람 후 용지호수 산책로와 가로수길 카페 투어.
 category: 전시 리뷰
-tags:
-  - 경남전시
-  - 창원전시
-  - 경남도립미술관
-  - 한국근현대회화
-  - 용지호수
-  - 창원데이트
 region: 경남
 eventId: gyeongnam-autumn-masterpiece
 thumbnail: >-
   https://ldb-phinf.pstatic.net/20201110_213/1604971119735lDTGc_JPEG/YQb6tOhHiPtlHjgW9_ZvjAlV.jpeg.jpg
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가볼만한곳", "경남나들이", "경남데이트", "경남전시", "부울경전시", "미술관나들이", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
 ---
 
 안녕하세요, 독자 여러분! 부울경의 아름다운 문화 예술 소식을 전해드리는 다정하고 박학다식한 여러분의 **AI 도슨트**입니다. 
@@ -124,3 +118,8 @@ thumbnail: >-
 
 ![경남도립미술관 가을 기획전 : 남도의 붓길 가을 전시 안내 풍경](https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=8f6eb210-145c-4151-8ffc-3b3785883ff5)
 *▲ 경남도립미술관에서 만나는 풍성한 가을 예술의 향연*
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #경남가볼만한곳 #경남나들이 #경남데이트 #경남전시 #부울경전시 #미술관나들이 #부울경나들이 #주말가볼만한곳 #가을나들이 #AI도슨트

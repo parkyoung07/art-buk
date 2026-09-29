@@ -7,17 +7,37 @@ import KakaoSubscribeBanner from "@/components/KakaoSubscribeBanner";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
+    absolute: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
   },
-  description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
+  description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 5일장 먹거리 및 나들이 추천 코스를 매거진 형태로 전해드립니다. (나드리 nadriai.com)",
+  keywords: [
+    "나드리",
+    "나드리AI",
+    "나드리ai.com",
+    "nadriai.com",
+    "부울경전시리뷰",
+    "부산전시후기",
+    "울산전시후기",
+    "경남전시후기",
+    "AI도슨트",
+    "미술관도슨트",
+    "문화나들이블로그",
+    "부산가볼만한곳",
+    "울산가볼만한곳",
+    "경남가볼만한곳",
+    "주말데이트",
+    "가족나들이"
+  ],
   openGraph: {
-    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
-    description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
+    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+    description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다. 나드리ai.com",
     url: "https://nadriai.com/blog/",
+    siteName: "나드리 AI",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI",
+    title: "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
     description: "부산, 울산, 경남의 미술관 전시 리뷰, 도슨트 작품 해설, 주변 나들이 추천 코스를 매거진 형태로 전해드립니다.",
   },
 };

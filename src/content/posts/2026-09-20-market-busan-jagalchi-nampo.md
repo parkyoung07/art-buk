@@ -3,10 +3,10 @@ title: "부산 자갈치시장 & 국제시장 가을 나들이 : 싱싱한 해�
 date: "2026-09-20"
 summary: "살아 숨 쉬는 부산의 활력소 자갈치시장! 남포동 비프광장의 씨앗호떡, 국제시장 꽃분이네, 자갈치 옥상 전망대에서 바라보는 영도대교 가을 풍경."
 category: "전통시장 나들이"
-tags: ["부산전통시장", "자갈치시장", "국제시장", "남포동비프광장", "부산먹거리", "부산가을여행"]
 region: "부산"
 eventId: "market-busan-jagalchi-nampo"
 thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전통시장", "자갈치시장", "국제시장", "남포동비프광장", "부산먹거리", "부산가을여행", "부산가볼만한곳", "부산나들이", "부산데이트", "부산5일장", "부울경전통시장", "전통시장먹거리"]
 ---
 
 선선한 가을바람이 코끝을 간지럽히는 요즘, 부울경 로컬 큐레이터가 가장 먼저 추천하는 주말 나들이 장소가 있습니다. 바로 바다의 생명력이 파도처럼 밀려드는 부산의 상징, **자갈치시장과 남포동 골목 일대**입니다. 
@@ -86,3 +86,8 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ---
 
 이번 주말, 싱싱한 바다의 맛과 사람 냄새 나는 따뜻한 정이 가득한 부산 자갈치시장과 남포동 골목으로 가을 나들이를 떠나보세요. 부울경 로컬 큐레이터가 보증하는 최고의 오감 만족 힐링 여행이 될 것입니다!
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #부산전통시장 #자갈치시장 #국제시장 #남포동비프광장 #부산먹거리 #부산가을여행 #부산가볼만한곳 #부산나들이 #부산데이트 #부산5일장 #부울경전통시장 #전통시장먹거리

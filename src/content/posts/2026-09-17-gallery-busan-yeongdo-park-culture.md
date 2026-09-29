@@ -3,10 +3,10 @@ title: "영도 피아크(P.ARK) 복합문화공간 : 오션뷰 라운지와 감�
 date: "2026-09-17"
 summary: "초대형 통창 너머로 부산항의 웅장한 바다 풍경이 펼쳐지는 복합예술 플랫폼! 베이커리 카페와 야외 인조잔디 광장, 기획 전시를 한곳에서 만납니다."
 category: "감성 갤러리"
-tags: ["부산복합문화공간", "영도피아크", "부산항오션뷰", "영도핫플", "가을바다", "주말나들이"]
 region: "부산"
 eventId: "gallery-busan-yeongdo-park-culture"
 thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjAyMDJfMjIx/MDAxNzcwMDA3ODI1MTgy.Gtb3eFzXvNmNglom1DmbQQMnNWQoo201XZhI6bg5q48g.LVSzTxe0cVaKYkkmNOFic6mN7jlvNawN9qV4qz4NvT8g.JPEG/POST_IMAGE_ENCODING_20260202_135023_812.jpg"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산복합문화공간", "영도피아크", "부산항오션뷰", "영도핫플", "가을바다", "주말나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부산전시", "부울경전시", "미술관나들이"]
 ---
 
 안녕하세요, 부울경의 숨겨진 예술적 영감과 공간의 결을 읽어드리는 아트 스페이스 전문 디렉터입니다. 
@@ -83,3 +83,8 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjAyMDJfMjIx/MDAxNzcwMDA3ODI1
 ### 🏛️ 에디터의 따뜻한 마무리 멘트
 
 바쁘게 흘러가는 일상 속에서 잠시 숨을 고르고 싶을 때, 거대한 바다와 예술이 호흡하는 영도 피아크는 우리에게 가장 완벽한 쉼터이자 영감의 원동력이 되어줍니다. 이번 주말, 탁 트인 오션뷰와 감성적인 기획전이 기다리는 영도로 발걸음을 옮겨 여러분만의 아름다운 예술적 페이지를 채워보시길 바랍니다.
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #부산복합문화공간 #영도피아크 #부산항오션뷰 #영도핫플 #가을바다 #주말나들이 #부산가볼만한곳 #부산나들이 #부산데이트 #부산전시 #부울경전시 #미술관나들이

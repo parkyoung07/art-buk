@@ -1700,9 +1700,12 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
 - **🏷️ 부울경 나들이 추천 태그 & SNS 해시태그**: 글 맨 마지막에 독자 복사 및 인스타그램/블로그 공유용 #해시태그 10개 이상(#${exhibition.region}전시 #${exhibition.region}가볼만한곳 #주말나들이 #가을나들이 #아이와함께 #데이트코스 #나드리AI 등)을 가로로 정갈하게 나열할 것.`;
   }
 
-  // 🏷️ 회장님 지시 사항 반영: 머리말(Frontmatter) 및 SNS용 황금 해시태그 자동 확장 (8~12개)
+  // 🏷️ 회장님 지시 사항 반영: 머리말(Frontmatter) 및 SNS용 황금 해시태그 대폭 확장 (12~16개)
   const baseTags = Array.isArray(exhibition.tags) ? exhibition.tags : [];
-  const autoTagsSet = new Set(baseTags);
+  const autoTagsSet = new Set(["나드리", "나드리AI", "nadriai.com", "나드리ai.com"]);
+  for (const t of baseTags) {
+    autoTagsSet.add(t);
+  }
   autoTagsSet.add(`${exhibition.region}가볼만한곳`);
   autoTagsSet.add(`${exhibition.region}나들이`);
   if (exhibition.subRegion) {
@@ -1711,8 +1714,8 @@ async function generatePostWithGemini(exhibition, photos, dateStr, naverData = {
   autoTagsSet.add("부울경나들이");
   autoTagsSet.add("주말가볼만한곳");
   autoTagsSet.add("가을나들이");
-  autoTagsSet.add("나드리AI");
-  const enrichedTags = Array.from(autoTagsSet).slice(0, 12);
+  autoTagsSet.add("데이트코스");
+  const enrichedTags = Array.from(autoTagsSet).slice(0, 16);
 
   const prompt = `
 너는 '부울경(부산, 울산, 경남) 아트·전시·문화 나들이' 웹사이트의 최고 수석 에디터이자 ${roleTitle}야.
@@ -1759,7 +1762,7 @@ ${contentGuide}
 
 3. **[필수 해시태그 규칙]** 본문 가장 마지막에 반드시 아래 형식으로 SNS 및 검색 최적화용 해시태그 목록을 넣어줘:
 ---
-### 🏷️ 부울경 나들이 추천 태그 & SNS 해시태그
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
 ${enrichedTags.map(t => `#${t.replace(/\s+/g, '')}`).join(" ")}
 
 4. 오직 완성된 마크다운 내용만 출력해 (앞뒤에 \`\`\`markdown 또는 추가 설명 붙이지 말 것).

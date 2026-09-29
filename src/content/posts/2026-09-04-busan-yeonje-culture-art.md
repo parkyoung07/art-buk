@@ -3,10 +3,10 @@ title: "연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 
 date: "2026-09-04"
 summary: "배산 성지의 역사와 온천천의 수변 풍경을 서정적인 붓끝으로 담아낸 연제 가을 기획전! 온천천 카페거리 브런치 나들이."
 category: "전시 리뷰"
-tags: ["부산전시", "연제문화원", "부산연제구", "온천천카페거리", "배산성지", "연산동나들이"]
 region: "부산"
 eventId: "busan-yeonje-culture-art"
 thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3ODA5.YWcfatyUe9riM033FZr9KyJT6KOCv9UTlNYVIc1pxPUg.ei6NiW1TwWEQMU4qNZvWvFRVBMjoWcH9aA59z815O_Ug.JPEG/POST_IMAGE_ENCODING_20251127_002656_645.jpg"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "연제문화원", "부산연제구", "온천천카페거리", "배산성지", "연산동나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
 ---
 
 안녕하세요, 관람객 여러분! '부울경 아트·전시 나들이'의 최고 수석 큐레이터이자 다정한 **AI 도슨트**입니다. 🌾🍁
@@ -85,3 +85,8 @@ thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNTExMjdfMTgg/MDAxNzY0MTcwODY3
 - **추천 일정:** 오전에 연제문화원에서 전시를 관람하고, 점심에 온천천 카페거리에서 맛있는 식사를 즐긴 뒤 수변 산책로를 걷는 반나절 코스를 추천합니다.
 
 도심 속 역사와 자연이 빚어내는 아름다운 예술의 향연, 이번 주말 연제문화원에서 특별한 추억을 만들어보세요!
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #부산전시 #연제문화원 #부산연제구 #온천천카페거리 #배산성지 #연산동나들이 #부산가볼만한곳 #부산나들이 #부산데이트 #부울경전시 #미술관나들이 #부울경나들이

@@ -5,16 +5,10 @@ summary: >-
   영호남의 화합을 상징하는 대한민국 대표 장터 화개장터! 지리산 산나물과 구수한 수수부꾸미, 시원한 섬진강 재첩진국을 맛보는 가을 로컬 장터
   투어.
 category: 전통시장 나들이
-tags:
-  - 경남전통시장
-  - 하동화개장터
-  - 5일장
-  - 섬진강재첩국
-  - 지리산약초
-  - 하동가을여행
 region: 경남
 eventId: market-hadong-hwagae-autumn
 thumbnail: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfMjcg%2FMDAxNjM3ODE1NjY2NjEz.VW3Uguen-fdTQC1k5vRMY79725qUGADJ7jbrRQ6MPqEg.-HGgoDuK631x8tWsKdzNaxGmN2Vdk54iCnyy5gD7r98g.JPEG.dmsrl65%2FIMG_0276.jpg%25C8%25AD%25B0%25B3%25C0%25E5%25C5%25CD1.jpg&type=sc960_832'
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "경남가볼만한곳", "경남나들이", "경남데이트", "경남5일장", "부울경전통시장", "전통시장먹거리", "부울경나들이", "주말가볼만한곳", "가을나들이", "AI도슨트"]
 ---
 
 안녕하세요, 부울경의 숨은 보석 같은 문화 공간과 정겨운 골목 미식을 전해드리는 로컬 큐레이터입니다. 선선한 가을바람이 옷깃을 스치는 요즘, 콧바람 쐬기 가장 좋은 곳이 어디일까요? 전라도와 경상도를 가르는 화개장터엔 윗마을 아랫마을 사람들이 모여든다는 노랫말처럼, 언제 가도 사람 사는 온기가 몽글몽글 피어오르는 **하동 화개장터**로 여러분을 초대합니다. 이번 주말, 오감으로 느끼는 가을 미식 나들이를 함께 떠나볼까요?
@@ -97,3 +91,8 @@ thumbnail: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 ---
 
 이번 주말, 바쁜 일상은 잠시 내려놓고 정겨운 장터의 흥과 섬진강의 맛이 기다리는 하동 화개장터로 훌쩍 떠나보는 건 어떨까요? 부울경 로컬 큐레이터가 추천하는 알찬 가을 미식 기행과 함께 행복한 추억 가득 채워오시길 바랍니다!
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #경남가볼만한곳 #경남나들이 #경남데이트 #경남5일장 #부울경전통시장 #전통시장먹거리 #부울경나들이 #주말가볼만한곳 #가을나들이 #AI도슨트

@@ -3,10 +3,10 @@ title: "낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예�
 date: "2026-09-28"
 summary: "낙동강 하구 삼각주의 생태와 생명을 주제로 한 인터랙티브 미디어 및 친환경 설치미술전! 대저생태공원 핑크뮬리 투어."
 category: "전시 리뷰"
-tags: ["부산전시", "강서문화원", "부산강서구", "낙동강문화관", "대저생태공원", "을숙도"]
 region: "부산"
 eventId: "busan-gangseo-nakdong-river-center"
 thumbnail: "https://terms-post-phinf.pstatic.net/MjAxNzExMjJfMjU3/MDAxNTExMzMzNjU3OTA0.vrn8EDmSJ_KJQ6sn5xFa8_SXlTwxTObcYSSypcVu37Ag.LF4ND2S2vmY1qxArfK60X8BozCsmGzhPDPWXcdYUV1Mg.JPEG/l28_567_i3.jpg?type=m4500_4500_fst"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "강서문화원", "부산강서구", "낙동강문화관", "대저생태공원", "을숙도", "부산가볼만한곳", "부산나들이", "부산데이트", "부울경전시", "미술관나들이", "부울경나들이"]
 ---
 
 안녕하세요, 독자 여러분! 부울경 아트·전시·문화 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
@@ -106,3 +106,8 @@ thumbnail: "https://terms-post-phinf.pstatic.net/MjAxNzExMjJfMjU3/MDAxNTExMzMzNj
 ---
 
 선선한 가을바람이 발길을 이끄는 이번 주말, 복잡한 일상은 잠시 내려놓고 강물이 들려주는 생명의 이야기에 귀 기울여 보시는 건 어떨까요? 부산 강서구 낙동강문화관에서 여러분의 다정한 AI 도슨트가 기다리고 있겠습니다. 마음까지 훈훈해지는 풍성한 가을 나들이 되시기를 바랍니다!
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #부산전시 #강서문화원 #부산강서구 #낙동강문화관 #대저생태공원 #을숙도 #부산가볼만한곳 #부산나들이 #부산데이트 #부울경전시 #미술관나들이 #부울경나들이

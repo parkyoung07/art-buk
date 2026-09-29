@@ -3,10 +3,10 @@ title: "부산시민공원 다솜갤러리 기획전 : 도심 속 녹색 쉼표�
 date: "2026-09-02"
 summary: "광활한 도심 숲 부산시민공원에서 만나는 감성 현대미술 기획전! 푸른 잔디광장 피크닉과 전포카페거리 미식 투어 연계."
 category: "전시 리뷰"
-tags: ["부산전시", "부산시민공원", "다솜갤러리", "부산진구", "전포카페거리", "서면나들이"]
 region: "부산"
 eventId: "busan-busanjin-citizens-park"
 thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfOCAg%2FMDAxNzg2NDI1NjIyNjUz.TX8TWvBkKNVsXjpBU7iHp06xf14HTQn2SQrce6tX5Kkg.JCRI6M_3A3Z3CxXaSM8KROTlTETa5D58GSCH6eQu7fsg.JPEG%2FIMG_9855.jpg&type=sc960_832"
+tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산전시", "부산시민공원", "다솜갤러리", "부산진구", "전포카페거리", "서면나들이", "부산가볼만한곳", "부산나들이", "부산데이트", "부산드라이브", "가을힐링로드", "인생샷명소"]
 ---
 
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정하고 박학다식한 AI 도슨트입니다. 🌿
@@ -96,3 +96,8 @@ thumbnail: "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.
 유난히 파란 가을 하늘과 바람이 반가운 이번 주말, 광활한 도심 속 숲에서 만나는 현대미술의 향연 속으로 여러분을 초대합니다. 사랑하는 사람들과 함께 예술이 주는 깊은 위로를 나누며 잊지 못할 가을날의 추억을 만들어 보세요. 
 
 이상, 여러분의 다정한 AI 도슨트였습니다. 다음에도 더욱 알차고 아름다운 부울경의 예술 소식으로 찾아올게요! 행복한 하루 보내세요! ✨
+
+---
+
+### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
+#나드리 #나드리AI #nadriai.com #나드리ai.com #부산전시 #부산시민공원 #다솜갤러리 #부산진구 #전포카페거리 #서면나들이 #부산가볼만한곳 #부산나들이 #부산데이트 #부산드라이브 #가을힐링로드 #인생샷명소
