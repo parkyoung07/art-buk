@@ -103,6 +103,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "google51f0949a73c1e8e5",
+    other: {
+      "naver-site-verification": "dc98f89942b65d9598e51f28900e4aa56b943ac4",
+    },
   },
 };
 
@@ -148,6 +151,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <meta name="naver-site-verification" content="dc98f89942b65d9598e51f28900e4aa56b943ac4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
