@@ -6,7 +6,7 @@ category: 전시 리뷰
 region: 경남
 eventId: tongyeong-ottchil-art-museum
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832
+  https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg
 tags:
   - 나드리
   - 나드리AI
@@ -33,7 +33,7 @@ venueId: tongyeong-ottchil-art-museum
 
 수천 년의 시간 동안 변함없이 영롱한 빛을 품어온 우리 전통 옻칠과 나전이 현대적인 감각과 만나 새로운 조형 예술로 탄생하는 미학의 현장! 옻나무 액이 선사하는 깊은 투명감과 조개껍데기가 빚어내는 반짝임이 남해 바다의 파도 소리와 어우러지는 기적 같은 공간으로 여러분을 안내합니다.
 
-![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg)
 *▲ 세월을 뛰어넘어 오묘한 빛과 정교함으로 깊은 울림을 주는 옻칠 공예의 섬세한 기법과 문양*
 
 ---
@@ -57,13 +57,13 @@ venueId: tongyeong-ottchil-art-museum
 ### 1. 천년을 이어온 '옻칠'과 '나전'이 선사하는 현대적 빛의 변주
 천년이 지나도 색과 형태가 변하지 않는다는 옻칠(Lacquer) 예술은 수십 번 칠하고, 말리고, 연마하는 숭고한 노동의 결실입니다. 이번 전시에서는 전통 공예의 영역을 넘어 현대적인 회화와 조형으로 확장된 **현대 옻칠 예술**의 진수를 보여줍니다. 칠흑 같은 채색 속에 감춰진 깊은 빛깔과 은은하게 스며 나오는 자개 빛이 장엄한 분위기를 연출합니다.
 
-![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg)
 *▲ 칠을 겹겹이 얹고 섬세하게 연마하며 혼을 쏟아붓는 현대 옻칠 작가들의 정성 어린 작업*
 
 ### 2. 남해의 자연과 어우러지는 입체 옻칠 조형 오브제
 평면적인 옻칠 회화뿐만 아니라 3차원 공간으로 거듭난 입체 조형 작품들이 관람객의 시선을 사로잡습니다. 입체적인 목조 조형 위에 수없이 겹쳐 칠해진 옻칠은 시선의 각도와 광원에 따라 다채로운 반사와 입체감을 선사합니다. 자연과 인간, 시공간의 순환을 담아낸 유기적인 곡선과 묵직한 질감은 보는 것만으로도 깊은 명상의 시간을 선사합니다.
 
-![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)
+![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg)
 *▲ 목조 입체 조형과 정교한 조각 기법이 결합되어 강렬한 아우라를 발산하는 옻칠 조형 작품*
 
 ### 3. 통영 바다가 병풍이 되는 환상적인 미술관 건축과 조망

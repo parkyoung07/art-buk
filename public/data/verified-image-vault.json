@@ -57,6 +57,25 @@
           "alt": "부산시민공원 다솜갤러리 주변 메타세쿼이아 길과 기억의 숲 산책로 실사",
           "theme": "park_trail"
         }
+      ],
+      "gyeongnam-jinju-national-museum": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg",
+          "alt": "진주성 내 국립진주박물관 본관 건축물 정면 실사 (김수근 설계)",
+          "theme": "architecture"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Jinju_National_Museum2.jpg/1280px-The_Jinju_National_Museum2.jpg",
+          "alt": "진주성 성곽 숲과 어우러진 국립진주박물관 전경 실사",
+          "theme": "scenery"
+        }
+      ],
+      "tongyeong-ottchil-art-museum": [
+        {
+          "url": "https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg",
+          "alt": "통영옻칠미술관 본관 및 해안 전시관 현장 실사",
+          "theme": "architecture"
+        }
       ]
     },
     "libraries": {

@@ -8,7 +8,7 @@ category: 전시 리뷰
 region: 경남
 eventId: gyeongnam-jinju-national-museum
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832
+  https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg
 tags:
   - 나드리
   - 나드리AI
@@ -35,7 +35,7 @@ venueId: gyeongnam-jinju-national-museum
 
 유유히 흐르는 남강의 물결과 늠름한 진주성의 고즈넉함 속에서 펼쳐지는 이번 전시에서는 세월을 견뎌낸 유물들이 저마다의 미학을 나지막이 읊조립니다. 저와 함께 가을빛 물든 진주로 떠나볼까요?
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 섬세한 문양과 우아한 미의식이 돋보이는 영남 지역의 고대 토기 유물*
 
 ---
@@ -59,13 +59,13 @@ venueId: gyeongnam-jinju-national-museum
 ### 1. 남강의 젖줄 따라 펼쳐진 영남 미학의 뿌리
 남강은 오랜 세월 동안 영남 사람들의 삶과 예술에 마르지 않는 영감을 주어온 생명의 젖줄입니다. 이번 특별전에서는 굽이치는 남강 유역에서 발굴된 선사 시대부터 조선 시대에 이르는 다양한 역사적 유물들을 한자리에 모았습니다. 고대 토기의 소박하면서도 정교한 선과 조선시대 도자기의 기품 있는 백색은 보는 이의 마음을 단번에 사로잡습니다.
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 세월의 깊이를 담은 유물 앞에서 깊은 명상과 감상에 잠긴 관람객의 모습*
 
 ### 2. 난세 속에 꽃피운 예인의 정신과 진주성의 웅혼함
 진주성과 남강 하면 임진왜란의 뜨거운 역사적 순간을 빼놓을 수 없죠. 국립진주박물관은 임진왜란 전문 박물관으로서의 정체성도 함께 지니고 있습니다. 난세 속에서도 절개를 잃지 않고 예인으로서의 정신을 지켜낸 선조들의 기록화와 서화, 무기 유물들이 함께 전시되어, 단순한 아름다움을 넘어 가슴 뭉클한 호국과 예술의 조화를 선사합니다.
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 조용하고 고풍스러운 조명 아래 품격 있게 전시된 영남의 역사 유물들*
 
 ### 3. 건축가 김수근의 유작, 공간 자체가 선사하는 예술적 울림

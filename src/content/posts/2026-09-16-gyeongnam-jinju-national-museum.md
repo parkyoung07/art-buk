@@ -8,7 +8,7 @@ category: 전시 리뷰
 region: 경남
 eventId: gyeongnam-jinju-national-museum
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832
+  https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg
 tags:
   - 나드리
   - 나드리AI
@@ -31,7 +31,7 @@ venueId: gyeongnam-jinju-national-museum
 
 선선한 가을바람이 옷깃을 스치는 요즘, 유유히 흐르는 남강 물결과 함께 고풍스러운 역사가 숨 쉬는 진주로 떠나보는 건 어떨까요? 이번 주말, 진주성의 아름다운 가을 정취 속에서 영남의 깊은 미학과 역사적 숨결을 만끽할 수 있는 특별한 전시가 여러분을 기다리고 있습니다. 자, 저와 함께 설레는 발걸음을 옮겨볼까요?
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 국립진주박물관(진주성 내) 가을 전경 및 전시 공간*
 
 ---
@@ -58,7 +58,7 @@ venueId: gyeongnam-jinju-national-museum
 ### 2. 영남 미학의 정수를 담은 정교한 공예와 회화
 이번 전시는 실용적이면서도 아름다움을 잃지 않았던 선조들의 미적 감각을 조명합니다. 세밀한 붓질 속에서 피어나는 기품과 단아한 공예품들을 들여다보고 있으면, 시간과 공간을 초월한 예술적 교감이 온몸으로 전해집니다.
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 촉석루의 아름다운 가을 실제 풍경*
 
 ### 3. 진주성 산책과 연계되는 입체적 문화 기행
@@ -74,7 +74,7 @@ venueId: gyeongnam-jinju-national-museum
   * **주소:** 경상남도 진주시 창렬로 12
   * **특징:** 진주성 인근에서 가장 핫한 감성 레스토랑 중 하나입니다. 고풍스러운 인테리어 속에서 즐기는 파스타, 스테이크 등 훌륭한 양식 메뉴는 데이트 코스나 특별한 날의 식사로 손색이 없습니다. 맛과 분위기를 모두 잡은 힐링 공간이에요!
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 국립진주박물관 주변 감성 미식 & 카페 공간*
 
 ---
@@ -100,7 +100,7 @@ venueId: gyeongnam-jinju-national-museum
   * **주소:** 경상남도 진주시 본성동
   * **특징:** 임진왜란 3대 대첩 중 하나인 진주대첩의 역사 현장이자, 남강을 내려다보는 절경을 자랑하는 진주의 랜드마크입니다. 국립진주박물관이 성 내부에 자리하고 있어 박물관 관람 전후로 성곽 산책을 즐기기에 이보다 더 좋을 수 없습니다.
 
-![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)
+![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg)
 *▲ 진주성 공북문 고즈넉한 가을 정취*
 
 * **갤러리아백화점 진주점**
