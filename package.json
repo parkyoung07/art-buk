@@ -11,6 +11,9 @@
     "lint": "eslint",
     "inspect": "node scripts/daily-inspect.mjs",
     "daily": "node scripts/daily-master.mjs",
+    "draft:am": "node scripts/generate-daily-draft.mjs --slot=am",
+    "draft:pm": "node scripts/generate-daily-draft.mjs --slot=pm",
+    "draft:approve": "node scripts/approve-and-publish.mjs",
     "telegram:test": "node scripts/telegram-notify.mjs",
     "telegram:bot": "node scripts/telegram-bot.mjs"
   },

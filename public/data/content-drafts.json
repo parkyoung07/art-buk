@@ -1,0 +1,228 @@
+[
+  {
+    "id": "2026-09-30-pm",
+    "slot": "pm",
+    "slotName": "오후 14:00 (주말/내일 코스)",
+    "date": "2026-09-30",
+    "targetDate": "2026-09-30",
+    "createdAt": "2026-09-30T07:15:26.782Z",
+    "updatedAt": "2026-09-30T07:15:26.782Z",
+    "status": "review_required",
+    "slug": "tongyeong-ottchil-art-museum",
+    "title": "부모님 모시고 가기 좋은 통영 하루 코스 : 옻칠미술관 & 이순신공원 산책",
+    "summary": "청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식 투어.",
+    "category": "부모님과 나들이",
+    "region": "경남",
+    "subRegion": "통영시",
+    "tags": [
+      "부모님나들이",
+      "주말코스",
+      "통영전시",
+      "통영옻칠미술관",
+      "이순신공원",
+      "가을힐링"
+    ],
+    "thumbnail": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832",
+    "thumbnailSource": "통영옻칠미술관 공식 공식 (KOGL 공공누리)",
+    "content": "## 1. 이번 주말 놓치면 아쉬운 추천 포인트\n\n바쁜 일상 속에서 잠시 숨을 고르고 감성을 충전할 수 있는 최적의 명소, 바로 **통영옻칠미술관**입니다. 청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식 투어.\n\n![통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832)\n\n## 2. 통영옻칠미술관 핵심 볼거리 & 감상 포인트\n\n통영옻칠미술관은(는) 경남 통영시에 위치하여 뛰어난 접근성과 쾌적한 관람 환경을 자랑합니다.\n\n- **위치**: 경상남도 통영시 용남면 미지해안로 160\n- **운영 시간**: 10:00 ~ 17:00 (매주 월요일 휴관)\n- **휴관일**: 매주 월요일, 명절 당일\n- **관람료**: 성인 3,000원 / 경로 2,000원 / 청소년 1,500원\n\n## 3. 함께 둘러보기 좋은 주변 연계 코스 & 미식\n\n관람 후에는 인근의 **이순신공원, 동피랑 벽화마을** 등을 함께 연계하여 여유로운 나들이를 완성해 보세요.\n\n## 4. 방문 전 필수 체크리스트\n\n- **주차 안내**: 미술관 야외 전용 주차장 (무료)\n- **공식 안내**: http://ottchil.art\n\n> 💡 **나드리 알림**: 방문 전 공식 홈페이지에서 최종 일정을 확인하시길 권장합니다.",
+    "venues": [
+      {
+        "name": "통영옻칠미술관",
+        "address": "경상남도 통영시 용남면 미지해안로 160",
+        "period": "2026.09.15 ~ 2026.12.15",
+        "hours": "10:00 ~ 17:00 (매주 월요일 휴관)",
+        "closedDays": "매주 월요일, 명절 당일",
+        "price": "성인 3,000원 / 경로 2,000원 / 청소년 1,500원",
+        "marketDays": "",
+        "parking": "미술관 야외 전용 주차장 (무료)",
+        "homepage": "http://ottchil.art",
+        "isVerified": true,
+        "notes": ""
+      }
+    ],
+    "images": [
+      {
+        "id": "img-tongyeong-ottchil-art-museum-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832",
+        "alt": "통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사",
+        "theme": "exhibition",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "통영옻칠미술관 공식 공식 (KOGL 공공누리)",
+        "sourceDomain": "http://www.ottchil.org",
+        "photographer": "통영옻칠미술관 공식",
+        "matchReason": "통영옻칠미술관의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "통영옻칠미술관"
+      }
+    ],
+    "availableImagePool": [
+      {
+        "id": "img-tongyeong-ottchil-art-museum-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832",
+        "alt": "통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사",
+        "theme": "exhibition",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "통영옻칠미술관 공식 공식 (KOGL 공공누리)",
+        "sourceDomain": "http://www.ottchil.org",
+        "photographer": "통영옻칠미술관 공식",
+        "matchReason": "통영옻칠미술관의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "통영옻칠미술관"
+      }
+    ],
+    "imageCredits": [
+      {
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTE2%2FMDAxNjUyNjAzMDc3NjMz.I64DY3bT1HnqS2aETuYyI66LV6FkHRlc-is_07-0pBcg.Q_1LZ2tsb94UDFTuRcNS5fp5hgM6WDgHbiyd_LvUimwg.JPEG.sddoom%2FIMG_4788.jpg&type=sc960_832",
+        "source": "통영옻칠미술관 공식 공식 (KOGL 공공누리)",
+        "alt": "통영옻칠미술관 전통 옻칠 회화 및 현대 공예 전시실 실사",
+        "verified": true
+      }
+    ],
+    "infoSources": [
+      {
+        "name": "통영옻칠미술관 공식 웹사이트",
+        "url": "http://ottchil.art"
+      },
+      {
+        "name": "공공데이터포털 문화포털 API",
+        "url": "https://data.go.kr"
+      },
+      {
+        "name": "나드리 AI 공식 검증 아카이브",
+        "url": "https://nadriai.com"
+      }
+    ],
+    "expectedUrl": "https://nadriai.com/blog/2026-09-30-tongyeong-ottchil-art-museum/",
+    "previewUrl": "https://nadriai.com/admin/content-review/?draftId=2026-09-30-pm",
+    "reviewUrl": "https://nadriai.com/admin/content-review/",
+    "approvedAt": null,
+    "publishedAt": null,
+    "rejectReason": null,
+    "curatorNotes": "부모님과 나들이 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)"
+  },
+  {
+    "id": "2026-09-30-am",
+    "slot": "am",
+    "slotName": "오전 09:00 (오늘 바로 활용)",
+    "date": "2026-09-30",
+    "targetDate": "2026-09-30",
+    "createdAt": "2026-09-30T07:15:13.260Z",
+    "updatedAt": "2026-09-30T07:15:13.260Z",
+    "status": "review_required",
+    "slug": "gyeongnam-jinju-national-museum",
+    "title": "오늘 아이와 함께 가기 좋은 진주성 & 국립진주박물관 역사 탐방",
+    "summary": "유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관! 쾌적한 실내 어린이 박물관 체험과 촉석루 산책을 함께 즐기는 추천 코스.",
+    "category": "아이·가족 나들이",
+    "region": "경남",
+    "subRegion": "진주시",
+    "tags": [
+      "경남나들이",
+      "오늘아이와",
+      "국립진주박물관",
+      "진주성",
+      "가족나들이",
+      "역사체험"
+    ],
+    "thumbnail": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832",
+    "thumbnailSource": "국립중앙박물관 / 국립진주박물관 공식 (KOGL 공공누리)",
+    "content": "## 1. 오늘 바로 떠나는 특별한 이유\n\n바쁜 일상 속에서 잠시 숨을 고르고 감성을 충전할 수 있는 최적의 명소, 바로 **국립진주박물관 (진주성 내)**입니다. 유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관! 쾌적한 실내 어린이 박물관 체험과 촉석루 산책을 함께 즐기는 추천 코스.\n\n![진주성 내 국립진주박물관 및 남강 촉석루 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832)\n\n## 2. 국립진주박물관 (진주성 내) 핵심 볼거리 & 감상 포인트\n\n국립진주박물관 (진주성 내)은(는) 경남 진주시에 위치하여 뛰어난 접근성과 쾌적한 관람 환경을 자랑합니다.\n\n- **위치**: 경상남도 진주시 남강로 626-35 (본성동)\n- **운영 시간**: 09:00 ~ 18:00 (매주 월요일 휴관)\n- **휴관일**: 매주 월요일, 1월 1일\n- **관람료**: 박물관 무료 (진주성 입장료: 성인 2,000원, 어린이 600원)\n\n## 3. 함께 둘러보기 좋은 주변 연계 코스 & 미식\n\n관람 후에는 인근의 **촉석루, 진주성 공북문** 등을 함께 연계하여 여유로운 나들이를 완성해 보세요.\n\n## 4. 방문 전 필수 체크리스트\n\n- **주차 안내**: 진주성 공북문/남문 공영주차장\n- **공식 안내**: https://jinju.museum.go.kr\n\n> 💡 **나드리 알림**: 방문 전 공식 홈페이지에서 최종 일정을 확인하시길 권장합니다.",
+    "venues": [
+      {
+        "name": "국립진주박물관 (진주성 내)",
+        "address": "경상남도 진주시 남강로 626-35 (본성동)",
+        "period": "상설전시 및 가을 특별전 (2026.09.05 ~ 2026.11.25)",
+        "hours": "09:00 ~ 18:00 (매주 월요일 휴관)",
+        "closedDays": "매주 월요일, 1월 1일",
+        "price": "박물관 무료 (진주성 입장료: 성인 2,000원, 어린이 600원)",
+        "marketDays": "",
+        "parking": "진주성 공북문/남문 공영주차장",
+        "homepage": "https://jinju.museum.go.kr",
+        "isVerified": true,
+        "notes": ""
+      }
+    ],
+    "images": [
+      {
+        "id": "img-gyeongnam-jinju-national-museum-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832",
+        "alt": "진주성 내 국립진주박물관 및 남강 촉석루 전경 실사",
+        "theme": "general",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "국립중앙박물관 / 국립진주박물관 공식 (KOGL 공공누리)",
+        "sourceDomain": "https://jinju.museum.go.kr",
+        "photographer": "국립중앙박물관 / 국립진주박물관",
+        "matchReason": "국립진주박물관 (진주성 내)의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "국립진주박물관 (진주성 내)"
+      }
+    ],
+    "availableImagePool": [
+      {
+        "id": "img-gyeongnam-jinju-national-museum-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832",
+        "alt": "진주성 내 국립진주박물관 및 남강 촉석루 전경 실사",
+        "theme": "general",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "국립중앙박물관 / 국립진주박물관 공식 (KOGL 공공누리)",
+        "sourceDomain": "https://jinju.museum.go.kr",
+        "photographer": "국립중앙박물관 / 국립진주박물관",
+        "matchReason": "국립진주박물관 (진주성 내)의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "국립진주박물관 (진주성 내)"
+      }
+    ],
+    "imageCredits": [
+      {
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEwMTdfOTQg%2FMDAxNjM0NDcyNDIyNjAw.583v-OahDTzLpIt4-gAEQLidsHyv47D0-ZP4u2UAwBkg.l6IFeflH9qNMvfqzr50xJpGfPQyddqGxhQb3BJ_vfwgg.JPEG.duswjd2370%2FIMG_9936.JPG&type=sc960_832",
+        "source": "국립중앙박물관 / 국립진주박물관 공식 (KOGL 공공누리)",
+        "alt": "진주성 내 국립진주박물관 및 남강 촉석루 전경 실사",
+        "verified": true
+      }
+    ],
+    "infoSources": [
+      {
+        "name": "국립진주박물관 (진주성 내) 공식 웹사이트",
+        "url": "https://jinju.museum.go.kr"
+      },
+      {
+        "name": "공공데이터포털 문화포털 API",
+        "url": "https://data.go.kr"
+      },
+      {
+        "name": "나드리 AI 공식 검증 아카이브",
+        "url": "https://nadriai.com"
+      }
+    ],
+    "expectedUrl": "https://nadriai.com/blog/2026-09-30-gyeongnam-jinju-national-museum/",
+    "previewUrl": "https://nadriai.com/admin/content-review/?draftId=2026-09-30-am",
+    "reviewUrl": "https://nadriai.com/admin/content-review/",
+    "approvedAt": null,
+    "publishedAt": null,
+    "rejectReason": null,
+    "curatorNotes": "아이·가족 나들이 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)"
+  }
+]

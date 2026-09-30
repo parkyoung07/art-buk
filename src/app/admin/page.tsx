@@ -338,6 +338,13 @@ export default function AdminPage() {
               )}
             </button>
             <Link
+              href="/admin/content-review"
+              className="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 bg-amber-500/10 text-amber-800 border border-amber-300 hover:bg-amber-500/20 cursor-pointer"
+            >
+              <span>📝</span>
+              <span>콘텐츠 검수·승인</span>
+            </Link>
+            <Link
               href="/admin/images"
               className="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 hover:bg-indigo-50/80 cursor-pointer"
             >

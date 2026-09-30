@@ -247,22 +247,129 @@ ${listText || "발행된 글이 없습니다."}
 모든 글은 시각 검증(3중 쉴드)을 완벽 통과한 상태입니다! ✨`;
   }
 
-  // (6) 글 생성 및 배포 원격 지시
-  if (clean === "/생성" || clean === "/포스트" || lower.includes("글생성") || lower.includes("포스트생성")) {
+  // (5-1) 초안 검수 및 대기 목록 확인 ("초안", "검수", "미리보기", "대기", "초안목록")
+  if (lower.includes("초안") || lower.includes("검수") || lower.includes("미리보기") || lower.includes("대기중") || lower.includes("대기목록")) {
+    const draftsPath = path.join(rootDir, "public/data/content-drafts.json");
+    let drafts = [];
+    if (fs.existsSync(draftsPath)) {
+      try {
+        drafts = JSON.parse(fs.readFileSync(draftsPath, "utf8"));
+      } catch (e) {}
+    }
+
+    const pending = drafts.filter(d => d.status === "review_required" || d.status === "draft_generated");
+    if (pending.length === 0) {
+      return `📋 <b>[나드리 AI 콘텐츠 초안 검수 현황]</b>
+
+회장님, 현재 승인 대기 중인 초안이 없습니다.
+오늘 생성된 모든 초안이 이미 승인/배포되었거나 대기 중인 작업이 없습니다! ✨
+
+🔗 <b>관리자 검수 센터:</b>
+https://nadriai.com/admin/content-review/`;
+    }
+
+    const listText = pending.map((d, i) => {
+      const slotLabel = d.slot === "am" ? "오전 09:00" : "오후 14:00";
+      return `📌 <b>${i + 1}. [${slotLabel}] ${d.title}</b>\n• 분야: ${d.region} | ${d.category}\n• 상태: ⏳ <b>승인 대기</b>\n• 미리보기: ${d.previewUrl || `https://nadriai.com/admin/content-review/?draftId=${d.id}`}`;
+    }).join("\n\n");
+
+    return `📋 <b>[회장님 승인 대기 중인 콘텐츠 초안]</b> (총 ${pending.length}건)
+
+${listText}
+
+━━━━━━━━━━━━━━━━━━
+💬 <b>원터치 승인 방법:</b>
+• <code>승인</code> 또는 <code>배포해</code> (대기 건 일괄/순차 승인)
+• <code>오전 승인</code> 또는 <code>1번 승인</code> (해당 건 즉시 배포)`;
+  }
+
+  // (5-2) 회장님 승인 및 배포 지시 ("승인", "배포해", "게시해", "올려줘", "이 글 승인", "이대로 배포")
+  const isApproveCommand =
+    lower === "승인" ||
+    lower === "배포해" ||
+    lower === "게시해" ||
+    lower === "올려줘" ||
+    lower.includes("글승인") ||
+    lower.includes("이대로배포") ||
+    lower.includes("승인해") ||
+    lower.includes("배포해줘") ||
+    lower.includes("오전승인") ||
+    lower.includes("오후승인") ||
+    lower.includes("1번승인") ||
+    lower.includes("2번승인");
+
+  if (isApproveCommand) {
     if (isTaskRunning) {
-      return `⏳ 회장님, 현재 이미 다른 생성/배포 작업이 진행 중입니다. 잠시만 기다려 주십시오!`;
+      return `⏳ 회장님, 현재 다른 배포 작업이 진행 중입니다. 잠시만 기다려 주십시오!`;
+    }
+
+    const draftsPath = path.join(rootDir, "public/data/content-drafts.json");
+    let drafts = [];
+    if (fs.existsSync(draftsPath)) {
+      try {
+        drafts = JSON.parse(fs.readFileSync(draftsPath, "utf8"));
+      } catch (e) {}
+    }
+
+    const pending = drafts.filter(d => d.status === "review_required" || d.status === "draft_generated");
+
+    if (pending.length === 0) {
+      return `ℹ️ 회장님, 현재 승인 대기 중인 초안이 없습니다. 먼저 초안을 생성하거나 확인해 주세요!`;
+    }
+
+    // 대상 초안 선별
+    let targetDraft = null;
+    if (lower.includes("오전") || lower.includes("1번")) {
+      targetDraft = pending.find(d => d.slot === "am") || pending[0];
+    } else if (lower.includes("오후") || lower.includes("2번")) {
+      targetDraft = pending.find(d => d.slot === "pm") || pending[1] || pending[0];
+    } else if (pending.length === 1) {
+      targetDraft = pending[0];
+    } else {
+      // 대기 중인 글이 2건 이상인 경우 선택 확인 (Rule 13)
+      return `❓ <b>[승인 대상 확인]</b>
+
+회장님, 현재 승인 대기 중인 초안이 <b>${pending.length}건</b> 있습니다:
+
+1. <b>[오전 9시]</b> ${pending[0].title}
+2. <b>[오후 2시]</b> ${pending[1]?.title || "오후 초안"}
+
+어느 글을 승인하시겠습니까?
+• <code>오전 승인</code> 또는 <code>1번 승인</code>
+• <code>오후 승인</code> 또는 <code>2번 승인</code>`;
     }
 
     isTaskRunning = true;
-    sendMessage(`🚀 회장님의 지시를 접수했습니다!\n\n<b>[신규 포스트 생성 + 실사 검증 + Cloudflare 배포]</b> 작업을 즉시 가동합니다. 완료되는 대로 폰으로 보고드리겠습니다.`);
+    sendMessage(`🚀 <b>[회장님 승인 접수]</b>\n\n"${targetDraft.title}"\n\n승인 검증 및 Cloudflare 배포 작업을 즉시 개시합니다! 완료되는 대로 보고드리겠습니다. 🫡`);
 
-    exec("node scripts/daily-master.mjs --force", { cwd: rootDir }, (error, stdout, stderr) => {
+    exec(`node scripts/approve-and-publish.mjs --id=${targetDraft.id}`, { cwd: rootDir }, (error, stdout, stderr) => {
       isTaskRunning = false;
       if (error) {
-        console.error("⚠️ 생성 실패:", error);
-        sendMessage(`⚠️ <b>[작업 실패 보고]</b>\n\n회장님, 포스트 생성 중 오류가 발생했습니다:\n<code>${error.message.slice(0, 300)}</code>`);
+        console.error("⚠️ 배포 실패:", error);
+        sendMessage(`⚠️ <b>[배포 처리 오류]</b>\n<code>${error.message.slice(0, 300)}</code>`);
       } else {
-        console.log("✅ 원격 글 생성 완료");
+        console.log("✅ 승인 및 배포 완결");
+      }
+    });
+    return null;
+  }
+
+  // (6) 초안 생성 수동 요청
+  if (clean === "/생성" || clean === "/포스트" || lower.includes("초안생성") || lower.includes("글생성")) {
+    if (isTaskRunning) {
+      return `⏳ 회장님, 현재 이미 다른 작업이 진행 중입니다. 잠시만 기다려 주십시오!`;
+    }
+
+    isTaskRunning = true;
+    sendMessage(`✍️ 회장님의 지시를 접수했습니다!\n\n<b>[신규 콘텐츠 초안 자동 작성]</b>을 가동합니다. 작성이 완료되면 승인 대기 링크와 함께 즉시 보고드리겠습니다.`);
+
+    exec("node scripts/generate-daily-draft.mjs --force", { cwd: rootDir }, (error, stdout, stderr) => {
+      isTaskRunning = false;
+      if (error) {
+        console.error("⚠️ 초안 생성 실패:", error);
+        sendMessage(`⚠️ <b>[초안 생성 오류]</b>\n<code>${error.message.slice(0, 300)}</code>`);
+      } else {
+        console.log("✅ 원격 초안 생성 완료");
       }
     });
     return null;
@@ -273,7 +380,7 @@ ${listText || "발행된 글이 없습니다."}
 
 보내주신 말씀: <i>"${clean}"</i>
 
-궁금하신 내용이 있으시면 언제든 <b>"오늘 방문자 어때?"</b> 또는 <b>"보고해줘"</b> 라고 말씀해 주시면 즉시 정리해 올리겠습니다! 🙇`;
+궁금하신 점이 있으시면 언제든 <b>"보고해줘"</b>, <b>"초안 확인"</b>, 또는 <b>"승인"</b> 이라고 말씀해 주시면 즉시 실행하겠습니다! 🙇`;
 }
 
 // 6. 텔레그램 롱 폴링(Long Polling) 루프
