@@ -1,5 +1,118 @@
 [
   {
+    "id": "2026-10-01-pm",
+    "slot": "pm",
+    "slotName": "오후 14:00 (주말/내일 코스)",
+    "date": "2026-10-01",
+    "targetDate": "2026-10-01",
+    "createdAt": "2026-10-01T20:28:26.857Z",
+    "updatedAt": "2026-10-01T20:28:26.857Z",
+    "status": "review_required",
+    "slug": "busan-f1963-art-exhibition",
+    "title": "이번 주말 부산 어디 갈까? F1963 복합문화공간 반나절 데이트 코스",
+    "summary": "옛 와이어 공장의 감각적인 재탄생! 석천홀 현대미술 전시, 대나무 소리길 산책, 테라로사 커피와 예스24 중고서점을 잇는 주말 감성 코스.",
+    "category": "부부·연인 데이트",
+    "region": "부산",
+    "subRegion": "수영구",
+    "tags": [
+      "주말데이트",
+      "이번주말추천",
+      "F1963",
+      "망미단길",
+      "복합문화공간",
+      "대나무숲"
+    ],
+    "thumbnail": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832",
+    "thumbnailSource": "고려제강 / F1963 공식 (KOGL 공공누리)",
+    "content": "## 1. 이번 주말 놓치면 아쉬운 추천 포인트\n\n바쁜 일상 속에서 잠시 숨을 고르고 감성을 충전할 수 있는 최적의 명소, 바로 **F1963 석천홀 & 복합문화공간**입니다. 옛 와이어 공장의 감각적인 재탄생! 석천홀 현대미술 전시, 대나무 소리길 산책, 테라로사 커피와 예스24 중고서점을 잇는 주말 감성 코스.\n\n![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)\n\n## 2. F1963 석천홀 & 복합문화공간 핵심 볼거리 & 감상 포인트\n\nF1963 석천홀 & 복합문화공간은(는) 부산 수영구에 위치하여 뛰어난 접근성과 쾌적한 관람 환경을 자랑합니다.\n\n- **위치**: 부산광역시 수영구 구락로123번길 20\n- **운영 시간**: 09:00 ~ 21:00 (공간별 상이, 전시 10:00~18:00)\n- **휴관일**: 연중무휴 (전시장은 월요일 휴관)\n- **관람료**: 공간 무료 (기획전시별 상이)\n\n## 3. 함께 둘러보기 좋은 주변 연계 코스 & 미식\n\n관람 후에는 인근의 **대나무 소리길, 테라로사 수영점** 등을 함께 연계하여 여유로운 나들이를 완성해 보세요.\n\n## 4. 방문 전 필수 체크리스트\n\n- **주차 안내**: F1963 제1·제2 전용 주차장 (구매 금액별 무료 주차)\n- **공식 안내**: http://www.f1963.org\n\n> 💡 **나드리 알림**: 방문 전 공식 홈페이지에서 최종 일정을 확인하시길 권장합니다.",
+    "venues": [
+      {
+        "name": "F1963 석천홀 & 복합문화공간",
+        "address": "부산광역시 수영구 구락로123번길 20",
+        "period": "2026.09.05 ~ 2026.11.30",
+        "hours": "09:00 ~ 21:00 (공간별 상이, 전시 10:00~18:00)",
+        "closedDays": "연중무휴 (전시장은 월요일 휴관)",
+        "price": "공간 무료 (기획전시별 상이)",
+        "marketDays": "",
+        "parking": "F1963 제1·제2 전용 주차장 (구매 금액별 무료 주차)",
+        "homepage": "http://www.f1963.org",
+        "isVerified": true,
+        "notes": ""
+      }
+    ],
+    "images": [
+      {
+        "id": "img-busan-f1963-art-exhibition-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832",
+        "alt": "F1963 석천홀 및 대나무 소리길 실사",
+        "theme": "general",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "고려제강 / F1963 공식 (KOGL 공공누리)",
+        "sourceDomain": "http://www.f1963.org",
+        "photographer": "고려제강 / F1963",
+        "matchReason": "F1963 석천홀 & 복합문화공간의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "F1963 석천홀 & 복합문화공간"
+      }
+    ],
+    "availableImagePool": [
+      {
+        "id": "img-busan-f1963-art-exhibition-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832",
+        "alt": "F1963 석천홀 및 대나무 소리길 실사",
+        "theme": "general",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "고려제강 / F1963 공식 (KOGL 공공누리)",
+        "sourceDomain": "http://www.f1963.org",
+        "photographer": "고려제강 / F1963",
+        "matchReason": "F1963 석천홀 & 복합문화공간의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "F1963 석천홀 & 복합문화공간"
+      }
+    ],
+    "imageCredits": [
+      {
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832",
+        "source": "고려제강 / F1963 공식 (KOGL 공공누리)",
+        "alt": "F1963 석천홀 및 대나무 소리길 실사",
+        "verified": true
+      }
+    ],
+    "infoSources": [
+      {
+        "name": "F1963 석천홀 & 복합문화공간 공식 웹사이트",
+        "url": "http://www.f1963.org"
+      },
+      {
+        "name": "공공데이터포털 문화포털 API",
+        "url": "https://data.go.kr"
+      },
+      {
+        "name": "나드리 AI 공식 검증 아카이브",
+        "url": "https://nadriai.com"
+      }
+    ],
+    "expectedUrl": "https://nadriai.com/blog/2026-10-01-busan-f1963-art-exhibition/",
+    "previewUrl": "https://nadriai.com/admin/content-review/?draftId=2026-10-01-pm",
+    "reviewUrl": "https://nadriai.com/admin/content-review/",
+    "approvedAt": null,
+    "publishedAt": null,
+    "rejectReason": null,
+    "curatorNotes": "부부·연인 데이트 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)"
+  },
+  {
     "id": "2026-10-01-am",
     "slot": "am",
     "slotName": "오전 09:00 (오늘 바로 활용)",
