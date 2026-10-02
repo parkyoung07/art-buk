@@ -1,5 +1,118 @@
 [
   {
+    "id": "2026-10-02-am",
+    "slot": "am",
+    "slotName": "오전 09:00 (오늘 바로 활용)",
+    "date": "2026-10-02",
+    "targetDate": "2026-10-02",
+    "createdAt": "2026-10-02T11:45:01.818Z",
+    "updatedAt": "2026-10-02T11:45:01.818Z",
+    "status": "review_required",
+    "slug": "ulsan-art-museum-sound-light",
+    "title": "오늘 가기 좋은 울산 실내 나들이 : 울산시립미술관 미디어아트전",
+    "summary": "세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 몰입형 미디어아트와 성남동 문화의 거리 감성 투어.",
+    "category": "전시·미술관",
+    "region": "울산",
+    "subRegion": "중구",
+    "tags": [
+      "울산전시",
+      "오늘갈곳",
+      "울산시립미술관",
+      "미디어아트",
+      "실내나들이",
+      "성남동데이트"
+    ],
+    "thumbnail": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832",
+    "thumbnailSource": "울산시립미술관 공식 공식 (KOGL 공공누리)",
+    "content": "## 1. 오늘 바로 떠나는 특별한 이유\n\n바쁜 일상 속에서 잠시 숨을 고르고 감성을 충전할 수 있는 최적의 명소, 바로 **울산시립미술관**입니다. 세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 몰입형 미디어아트와 성남동 문화의 거리 감성 투어.\n\n![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)\n\n## 2. 울산시립미술관 핵심 볼거리 & 감상 포인트\n\n울산시립미술관은(는) 울산 중구에 위치하여 뛰어난 접근성과 쾌적한 관람 환경을 자랑합니다.\n\n- **위치**: 울산광역시 중구 미술관길 72\n- **운영 시간**: 10:00 ~ 18:00 (매주 월요일 휴관)\n- **휴관일**: 매주 월요일\n- **관람료**: 성인 1,000원 (울산시민 500원)\n\n## 3. 함께 둘러보기 좋은 주변 연계 코스 & 미식\n\n관람 후에는 인근의 **성남동 문화의거리, 태화강 국가정원 십리대숲** 등을 함께 연계하여 여유로운 나들이를 완성해 보세요.\n\n## 4. 방문 전 필수 체크리스트\n\n- **주차 안내**: 미술관 지하 주차장 이용 가능\n- **공식 안내**: https://www.ulsan.go.kr/uam\n\n> 💡 **나드리 알림**: 방문 전 공식 홈페이지에서 최종 일정을 확인하시길 권장합니다.",
+    "venues": [
+      {
+        "name": "울산시립미술관",
+        "address": "울산광역시 중구 미술관길 72",
+        "period": "2026.09.10 ~ 2026.12.20",
+        "hours": "10:00 ~ 18:00 (매주 월요일 휴관)",
+        "closedDays": "매주 월요일",
+        "price": "성인 1,000원 (울산시민 500원)",
+        "marketDays": "",
+        "parking": "미술관 지하 주차장 이용 가능",
+        "homepage": "https://www.ulsan.go.kr/uam",
+        "isVerified": true,
+        "notes": ""
+      }
+    ],
+    "images": [
+      {
+        "id": "img-ulsan-art-museum-sound-light-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832",
+        "alt": "울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사",
+        "theme": "exhibition",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "울산시립미술관 공식 공식 (KOGL 공공누리)",
+        "sourceDomain": "https://www.ulsan.go.kr/uam",
+        "photographer": "울산시립미술관 공식",
+        "matchReason": "울산시립미술관의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "울산시립미술관"
+      }
+    ],
+    "availableImagePool": [
+      {
+        "id": "img-ulsan-art-museum-sound-light-01",
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832",
+        "alt": "울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사",
+        "theme": "exhibition",
+        "isCover": true,
+        "stage1Selected": true,
+        "stage2Verified": true,
+        "humanVerified": true,
+        "coverApproved": true,
+        "status": "approved",
+        "priorityRank": "2순위 (공식 레지스트리)",
+        "verificationStage": "공식 인증 자산 레지스트리 (Entity ID Verified)",
+        "source": "울산시립미술관 공식 공식 (KOGL 공공누리)",
+        "sourceDomain": "https://www.ulsan.go.kr/uam",
+        "photographer": "울산시립미술관 공식",
+        "matchReason": "울산시립미술관의 웅장한 외관 및 랜드마크를 한눈에 보여주는 대표 이미지로 최적합",
+        "venueName": "울산시립미술관"
+      }
+    ],
+    "imageCredits": [
+      {
+        "url": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832",
+        "source": "울산시립미술관 공식 공식 (KOGL 공공누리)",
+        "alt": "울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사",
+        "verified": true
+      }
+    ],
+    "infoSources": [
+      {
+        "name": "울산시립미술관 공식 웹사이트",
+        "url": "https://www.ulsan.go.kr/uam"
+      },
+      {
+        "name": "공공데이터포털 문화포털 API",
+        "url": "https://data.go.kr"
+      },
+      {
+        "name": "나드리 AI 공식 검증 아카이브",
+        "url": "https://nadriai.com"
+      }
+    ],
+    "expectedUrl": "https://nadriai.com/blog/2026-10-02-ulsan-art-museum-sound-light/",
+    "previewUrl": "https://nadriai.com/admin/content-review/?draftId=2026-10-02-am",
+    "reviewUrl": "https://nadriai.com/admin/content-review/",
+    "approvedAt": null,
+    "publishedAt": null,
+    "rejectReason": null,
+    "curatorNotes": "전시·미술관 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)"
+  },
+  {
     "id": "2026-10-01-pm",
     "slot": "pm",
     "slotName": "오후 14:00 (주말/내일 코스)",
