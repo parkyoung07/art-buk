@@ -6,15 +6,15 @@ category: "감성 갤러리"
 tags: ["나드리", "나드리AI", "nadriai.com", "나드리ai.com", "부산복합문화공간", "영도피아크", "부산항오션뷰", "영도핫플", "가을바다", "주말나들이", "부산가볼만한곳", "부산나들이", "부산영도구", "부울경나들이", "주말가볼만한곳", "가을나들이"]
 region: "부산"
 eventId: "gallery-busan-yeongdo-park-culture"
-thumbnail: "/images/placeholders/placeholder-art.svg"
+thumbnail: "https://pup-post-phinf.pstatic.net/MjAyNjAyMDJfMjIx/MDAxNzcwMDA3ODI1MTgy.Gtb3eFzXvNmNglom1DmbQQMnNWQoo201XZhI6bg5q48g.LVSzTxe0cVaKYkkmNOFic6mN7jlvNawN9qV4qz4NvT8g.JPEG/POST_IMAGE_ENCODING_20260202_135023_812.jpg"
 ---
 
 안녕하세요, 부울경의 숨겨진 예술적 영감과 공간의 결을 읽어주는 아트 스페이스 전문 디렉터입니다. 
 
 선선한 가을바람이 바다 향기와 함께 밀려오는 주말, 일상에 지친 감각을 부드럽게 깨워줄 예술의 항구로 여러분을 초대합니다. 이번 주말, 거대한 바다의 호흡과 트렌디한 현대미술이 만나는 곳, 영도 피아크(P.ARK)로 훌쩍 떠나보는 건 어떨까요? 바다를 향해 항해하는 거대한 방주처럼, 영도의 푸른 파도 위에서 예술과 휴식이 공존하는 특별한 시간을 선사합니다.
 
-![나드리 AI 공식 검증 대기 중 - 피아크](/images/placeholders/placeholder-art.svg)
-*▲ 나드리 AI 공식 검증 대기 중 - 피아크*
+![피아크 (P.ARK) 2·3층 복합문화전시장 가을 전경 및 전시 공간](https://pup-post-phinf.pstatic.net/MjAyNjAyMDJfMjIx/MDAxNzcwMDA3ODI1MTgy.Gtb3eFzXvNmNglom1DmbQQMnNWQoo201XZhI6bg5q48g.LVSzTxe0cVaKYkkmNOFic6mN7jlvNawN9qV4qz4NvT8g.JPEG/POST_IMAGE_ENCODING_20260202_135023_812.jpg)
+*▲ 피아크 (P.ARK) 2·3층 복합문화전시장 가을 전경 및 전시 공간*
 
 ---
 
