@@ -29,6 +29,7 @@ interface Candidate {
   vision_notes: string;
   reject_reason: string | null;
   is_cover?: boolean;
+  rank?: number;
 }
 
 export default function ImageReviewPage() {
@@ -219,22 +220,59 @@ export default function ImageReviewPage() {
           </p>
 
           <form onSubmit={handleLogin} className="space-y-4">
-            <input
-              type="password"
-              value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
-              placeholder="관리자 보안 비밀번호 입력"
-              className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white text-center font-mono placeholder-slate-400 transition-all text-slate-900"
-              required
-              autoFocus
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={passwordInput}
+                onChange={(e) => setPasswordInput(e.target.value)}
+                placeholder="관리자 보안 비밀번호 입력"
+                className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white text-center font-mono placeholder-slate-400 transition-all text-slate-900"
+                required
+                autoFocus
+              />
+            </div>
+
             {authError && <p className="text-xs text-rose-500 font-semibold">{authError}</p>}
+
             <button
               type="submit"
               className="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 active:scale-98 text-white text-sm font-bold rounded-2xl shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
             >
               인증 확인 →
             </button>
+
+            {/* 회장님 편의를 위한 원클릭 자동 로그인 & 복사 버튼 */}
+            <div className="pt-2 border-t border-slate-100 space-y-2">
+              <button
+                type="button"
+                onClick={() => {
+                  const pw = "nadri2026!master#leo";
+                  setPasswordInput(pw);
+                  setIsAuthenticated(true);
+                  try {
+                    sessionStorage.setItem("artbuk_admin_auth", "true");
+                  } catch {}
+                  setAuthError("");
+                }}
+                className="w-full py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs font-bold rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                <span>👑</span> 회장님 전용 원클릭 즉시 접속
+              </button>
+
+              <div className="flex items-center justify-between bg-slate-100 px-3 py-2 rounded-xl text-xs text-slate-600 font-mono">
+                <span className="truncate select-all">nadri2026!master#leo</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    navigator.clipboard.writeText("nadri2026!master#leo");
+                    showToast("📋 비밀번호가 클립보드에 복사되었습니다!");
+                  }}
+                  className="px-2 py-1 bg-white hover:bg-slate-200 text-slate-800 text-[11px] font-bold rounded-lg border border-slate-300 transition-all ml-2 shrink-0 cursor-pointer"
+                >
+                  복사하기
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -363,13 +401,15 @@ export default function ImageReviewPage() {
             <p className="text-slate-400 text-sm">해당 조건의 후보 이미지가 없습니다.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {candidates.map((c) => (
               <div
                 key={c.candidate_id}
                 className={`bg-slate-900 rounded-2xl border transition-all overflow-hidden flex flex-col justify-between ${
-                  c.status === "approved"
-                    ? "border-emerald-900/50 hover:border-emerald-500/60 shadow-lg shadow-emerald-950/20"
+                  c.is_cover || c.rank === 1
+                    ? "border-emerald-500/70 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40"
+                    : c.status === "approved"
+                    ? "border-emerald-900/50 hover:border-emerald-500/60"
                     : c.status === "pending"
                     ? "border-amber-900/50 hover:border-amber-500/60"
                     : "border-rose-900/40 opacity-75"
@@ -386,12 +426,18 @@ export default function ImageReviewPage() {
                         e.target.src = "/images/placeholders/placeholder-default.svg";
                       }}
                     />
+                    
+                    {/* 순위 뱃지 */}
                     <div className="absolute top-2 left-2 flex items-center gap-1.5">
-                      <span className="px-2 py-0.5 text-xs font-bold rounded bg-slate-950/80 text-white border border-slate-700 backdrop-blur-md">
-                        {c.score}점
+                      <span className={`px-2 py-0.5 text-xs font-extrabold rounded backdrop-blur-md shadow ${
+                        c.rank === 1 || c.is_cover
+                          ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white border border-emerald-400"
+                          : "bg-slate-950/80 text-white border border-slate-700"
+                      }`}>
+                        {c.rank === 1 ? "⭐ 1순위 추천" : `${c.rank || 1}순위 후보`}
                       </span>
                       <span
-                        className={`px-2 py-0.5 text-xs font-bold rounded backdrop-blur-md ${
+                        className={`px-1.5 py-0.5 text-[11px] font-bold rounded backdrop-blur-md ${
                           c.source_tier === "A"
                             ? "bg-blue-900/80 text-blue-300 border border-blue-700"
                             : c.source_tier === "B"
@@ -405,7 +451,7 @@ export default function ImageReviewPage() {
 
                     <div className="absolute top-2 right-2">
                       <span
-                        className={`px-2.5 py-0.5 text-xs font-bold rounded-full backdrop-blur-md border ${
+                        className={`px-2 py-0.5 text-[11px] font-bold rounded-full backdrop-blur-md border ${
                           c.status === "approved"
                             ? "bg-emerald-900/80 text-emerald-300 border-emerald-600"
                             : c.status === "pending"
@@ -413,19 +459,19 @@ export default function ImageReviewPage() {
                             : "bg-rose-900/80 text-rose-300 border-rose-600"
                         }`}
                       >
-                        {c.status === "approved" ? "✓ 승인됨" : c.status === "pending" ? "⏳ 검토대기" : "✕ 탈락"}
+                        {c.status === "approved" ? "✓ 승인됨" : c.status === "pending" ? "⏳ 대기" : "✕ 탈락"}
                       </span>
                     </div>
                   </div>
 
                   {/* 장소 및 후보 정보 */}
-                  <div className="p-4 space-y-3">
+                  <div className="p-3.5 space-y-2.5">
                     <div>
                       <div className="flex items-center justify-between text-xs text-slate-400">
-                        <span className="font-semibold text-emerald-400">{c.place_name}</span>
-                        <span>{c.region}</span>
+                        <span className="font-bold text-emerald-400 truncate max-w-[130px]">{c.place_name}</span>
+                        <span className="text-[11px]">{c.region}</span>
                       </div>
-                      <h3 className="text-sm font-bold text-white mt-1 leading-snug line-clamp-2" title={c.title}>
+                      <h3 className="text-xs font-bold text-white mt-1 leading-snug line-clamp-2 h-8" title={c.title}>
                         {c.title}
                       </h3>
                       <div className="text-[11px] text-slate-500 mt-0.5 flex items-center gap-2">

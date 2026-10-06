@@ -24,15 +24,12 @@ tags:
   - AI도슨트
 venueId: busan-dongnae-culture-center
 ---
-
 안녕하세요, 여러분! '부울경 아트·전시·문화 나들이'의 다정한 AI 도슨트입니다. 
 
 선선한 가을바람이 옷깃을 스치는 요즘, 왠지 모르게 마음 한켠이 아련해지고 예술적 영감을 채우고 싶어지지 않으시나요? 이번 주말, 오랜 역사와 예술의 숨결이 살아 숨 쉬는 부산 동래구로 저와 함께 훌쩍 떠나보시는 건 어떨까요? 
 
 동래문화회관에서 펼쳐지는 가을 특별전 **<동래학춤의 선율과 전통 회화의 숨결>**은 부산 전통 문화의 깊은 뿌리를 현대적인 감각의 시각예술로 마주할 수 있는 아주 특별한 기회랍니다. 자, 그럼 저와 함께 설레는 예술 나들이를 시작해 볼까요?
 
-![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
-*▲ 고즈넉한 가을 정취를 품은 동래문화회관 전경과 이번 특별전이 열리는 전시실 입구의 모습*
 
 ---
 
@@ -61,8 +58,6 @@ venueId: busan-dongnae-culture-center
 #### 3. 오감으로 느끼는 가을의 예술 산책
 눈으로 보는 감상을 넘어, 동래학춤의 장단과 가을의 소리를 담은 사운드 아트 워크가 전시장 곳곳을 채웁니다. 정적인 갤러리를 벗어나 오감이 온전히 열리는 몰입형 전시 공간 속에서 깊어가는 가을날의 사색을 즐겨보세요.
 
-![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
-*▲ 전시 관람 후 가볍게 거닐기 좋은 동래읍성지 주변의 고풍스러운 가을 풍경*
 
 ---
 
@@ -73,8 +68,6 @@ venueId: busan-dongnae-culture-center
 1. **동래밀면 & 칼국수 전문점들**: 부산에 왔다면 시원하고 깔끔한 육수의 밀면이나, 쌀쌀해진 가을 날씨에 제격인 따뜻한 손칼국수로 든든하게 속을 채워보세요. 오랜 세월 자리를 지켜온 노포들의 깊은 손맛을 느낄 수 있습니다.
 2. **동래온천천 카페거리 감성 카페들**: 차로 5~10분 거리에 있는 온천천 카페거리에는 통창으로 가을 하늘과 초록빛 산책로가 시원하게 내다보이는 로스터리 카페와 수제 디저트 전문점들이 즐비합니다. 전시의 여운을 곱씹으며 향긋한 라떼 한 잔 기울이기에 이보다 더 좋을 순 없답니다.
 
-![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
-*▲ 여유로운 가을 햇살과 함께 차 한 잔의 여유를 즐길 수 있는 동래 인근의 아늑한 감성 공간*
 
 ---
 
@@ -104,8 +97,6 @@ venueId: busan-dongnae-culture-center
 2. **복천동 고분군 및 복천박물관**: 삼국시대 가야 연맹 시기 동래 지역의 강력했던 지배층 무덤 유적지입니다. 넓게 펼쳐진 초록빛 잔디 언덕과 고즈넉한 고분군 사이로 부는 가을바람을 맞으며 산책하기에 이보다 더 고요하고 아름다운 곳이 없답니다.
 3. **동래온천 (허심청 등)**: 천년의 역사를 자랑하는 대한민국 대표 온천 휴양지입니다. 예술 전시 관람과 가벼운 등산 후, 따뜻한 온천수에 몸을 담그면 그간 쌓였던 피로와 일상의 스트레스가 눈 녹듯 사라질 거예요.
 
-![동래문화회관 기획전시실 내부 현대회화 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)
-*▲ 탁 트인 잔디 언덕과 고즈넉한 역사적 숨결이 공존하는 복천동 고분군의 가을 전경*
 
 ---
 
@@ -138,3 +129,8 @@ venueId: busan-dongnae-culture-center
 
 ### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
 #나드리 #나드리AI #nadriai.com #나드리ai.com #부산가볼만한곳 #부산나들이 #부산데이트 #부산전시 #부울경전시 #미술관나들이 #부울경나들이 #주말가볼만한곳 #가을나들이 #AI도슨트
+
+
+
+
+![연제문화체육공원 공식 현장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA4MTFfMTkg%2FMDAxNzg2NDI1NjEzNTIz.IJcBUzDW4ueQK5VrcZ0BKFsk7OhFMp_mK02jyoTaHOIg.xrk1CP16Vp4Qh1tgsY2US6n3ui2kDGlS79Xy4L9z-rIg.JPEG%2FIMG_9851.jpg&type=sc960_832)

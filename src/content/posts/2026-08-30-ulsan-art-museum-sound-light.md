@@ -28,7 +28,6 @@ tags:
   - 부울경나들이
 venueId: ulsan-art-museum-sound-light
 ---
-
 안녕하세요, '나드리 AI 문화·나들이'를 찾아주신 사랑하는 관람객 여러분! 여러분의 다정하고 박학다식한 예술 길잡이, **AI 도슨트**입니다. 🎨✨
 
 선선한 바람이 마음을 간지럽히는 계절, 감성을 가득 채워줄 특별한 예술 여행을 준비하셨나요? 오늘 여러분께 소개해 드릴 곳은 울산의 문화 예술 중심지, 중구 성남동에 위치한 **울산시립미술관**입니다. 
@@ -59,14 +58,10 @@ venueId: ulsan-art-museum-sound-light
 ### 1. 빛과 소리가 빚어내는 웅장한 공감각적 오케스트라
 이번 전시는 단순히 눈으로 보는 미술을 넘어, 온몸의 감각을 깨우는 몰입형(Immersive) 미디어아트의 정수를 보여줍니다. 전시장 전체를 둘러싼 초고화질 대형 빔 프로젝션과 입체 음향 시스템이 어우러져, 마치 광활한 우주나 깊은 바닷속을 헤엄치는 듯한 착각을 불러일으킵니다. 거대한 사운드 파동에 맞춰 일렁이는 빛의 입자들을 보고 있으면 온몸에 소름이 돋는 감동을 느끼실 수 있습니다.
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 몽환적이고 화려한 색채의 미디어아트 공간을 자유롭게 둘러보는 관람객들*
 
 ### 2. 거장들의 철학이 담긴 정교한 미디어 융합 예술
 세계적으로 주목받는 미디어 아티스트들이 참여하여 울산이라는 도시가 지닌 '생명력'과 '산업적 파동'을 예술적으로 재해석했습니다. 빛의 입자들이 모여 문장과 파동을 이루고, 인간과 자연, 기술의 조화를 시각적으로 웅변하는 인터랙티브 작품들이 가득합니다. 작품 앞을 거닐 때 관람객의 움직임에 반응해 시시각각 변화하는 예술적 순간을 직접 경험해 보세요.
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 어두운 전시실 안, 텍스트 프로젝션과 미세한 빛으로 완성된 현대 미디어아트 작품*
 
 ### 3. 단돈 1천 원의 기적! 최고 가성비의 예술적 힐링
 세계적인 수준의 퀄리티를 자랑하는 대형 실감형 미디어아트 전시를 성인 기준 단돈 1,000원에 즐길 수 있다는 점은 울산시립미술관만의 독보적인 매력입니다. 부담 없는 가격으로 가족, 연인, 친구와 함께 잊지 못할 고품격 감성 충전 시간을 가져보세요!

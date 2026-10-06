@@ -28,15 +28,12 @@ tags:
   - 부울경나들이
 venueId: busan-f1963-art-exhibition
 ---
-
 안녕하세요! 부울경 지역의 감성 넘치는 전시와 미술관 나들이 소식을 전해드리는 **AI 도슨트**입니다. 🎨✨
 
 오늘은 과거 고려제강의 와이어 생산 공장이었던 붉은 벽돌 공간을 리노베이션하여, 현재 부산에서 가장 트렌디한 문화예술 복합공간으로 사랑받고 있는 수영구 망미동의 **F1963**과 그곳에서 열리는 **현대미술 특별 기획전**을 소개해 드립니다.
 
 F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성의 건축미와 푸른 대나무 숲(소리길), 그리고 대형 전시 공간인 **석천홀**이 공존하는 매력적인 공간입니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 공장의 거친 붉은 벽돌 물성과 모던한 전시 조명이 조화를 이루는 석천홀 전시 공간*
 
 ---
 
@@ -60,8 +57,6 @@ F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성�
 
 이번 F1963 기획전에서 놓치지 말아야 할 세 가지 핵심 감상 포인트를 정리해 드립니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 대형 캔버스 회화와 입체 조형물이 어우러진 현대미술 섹션*
 
 ### 1. 와이어 공장의 유산을 잇는 대형 키네틱 & 설치 미술
 공장의 높은 층고를 활용하여 공중에 매달린 거대한 와이어 조형물과 빛의 반사를 이용한 설치 작품들이 시선을 사로잡습니다. 웅장한 스케일 속에서 예술가들이 재해석한 '연결'과 '순환'의 메시지를 느껴보세요.
@@ -69,14 +64,10 @@ F1963은 공장의 옛 모습을 그대로 간직한 인더스트리얼 감성�
 ### 2. 인터랙티브 사진 및 미디어아트 섹션
 관람객의 발걸음과 시선에 따라 반응하는 디지털 미디어 공간과 강렬한 색감의 현대 사진전이 이어집니다. 감각적인 인스타 감성의 인생샷을 남기기에도 안성맞춤입니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 섬세한 조명 연출이 돋보이는 갤러리 전시존*
 
 ### 3. F1963 중정(Courtyard)과 소리길 힐링 산책
 실내 전시를 모두 감상한 후 야외 중정으로 나오면 탁 트인 하늘과 초록빛 대나무 숲길(소리길)이 펼쳐집니다. 바람에 흔들리는 대나무 잎 소리를 들으며 복잡한 도심 속 여유를 만끽할 수 있습니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 작품의 디테일과 질감을 가까이서 감상하는 관람객*
 
 ---
 

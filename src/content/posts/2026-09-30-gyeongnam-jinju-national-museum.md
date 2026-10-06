@@ -1,11 +1,12 @@
 ---
-title: '오늘 아이와 함께 가기 좋은 진주성 & 국립진주박물관 역사 탐방'
+title: 오늘 아이와 함께 가기 좋은 진주성 & 국립진주박물관 역사 탐방
 date: '2026-09-30'
 summary: 유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관! 쾌적한 실내 어린이 박물관 체험과 촉석루 산책을 함께 즐기는 추천 코스.
 category: 아이·가족 나들이
 region: 경남
 subRegion: 진주시
-thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg
+thumbnail: >-
+  https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/The_Jinju_National_Museum.jpg/1280px-The_Jinju_National_Museum.jpg
 tags:
   - 나드리
   - 나드리AI
@@ -21,7 +22,6 @@ tags:
   - 부울경전시
 eventId: gyeongnam-jinju-national-museum-event
 ---
-
 ## 1. 오늘 바로 떠나는 특별한 이유
 
 바쁜 일상 속에서 잠시 숨을 고르고 아이들과 함께 유익한 시간을 보낼 수 있는 최적의 명소, 바로 **국립진주박물관 (진주성 내)**입니다. 유유히 흐르는 남강과 역사 깊은 진주성 내에 위치하여 쾌적한 실내 어린이 박물관 체험과 성곽 산책을 동시에 즐길 수 있습니다.

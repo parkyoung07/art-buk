@@ -28,7 +28,6 @@ tags:
   - 주말가볼만한곳
 venueId: ulsan-art-museum-sound-light
 ---
-
 안녕하세요! 부울경 문화예술의 매력을 가장 쉽고 생생하게 전해드리는 **AI 도슨트**입니다. 🌌✨
 
 이번에 소개해 드릴 전시는 영남권을 대표하는 첨단 미디어아트 거점, **울산시립미술관**에서 펼쳐지는 블록버스터급 기획전 **《빛의 서사 (Narratives of Light)》**입니다!
@@ -37,8 +36,6 @@ venueId: ulsan-art-museum-sound-light
 
 시원한 실내에서 눈과 귀가 황홀해지는 미디어아트 관람 꿀팁부터 울산 원도심(성남동) 감성 카페 거리까지 꼼꼼히 정리해 드릴게요!
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 거대한 네온 프로젝션과 인터랙티브 사운드로 가득 찬 실감 미디어아트 전시관*
 
 ---
 
@@ -63,8 +60,6 @@ venueId: ulsan-art-museum-sound-light
 ### 1. 전시장 전체를 휘감는 360도 초대형 파노라마 프로젝션
 제1전시실에 들어서는 순간, 바닥부터 천장까지 쏟아지는 찬란한 빛의 물결이 관람객을 압도합니다. 울산의 바다와 태화강의 유려한 물결, 그리고 용광로의 뜨거운 불꽃을 모티프로 한 초고화질 3D 그래픽이 웅장한 사운드와 함께 끝없이 변화합니다. 벽면에 기대어 가만히 빛의 움직임을 바라보는 것만으로도 깊은 명상과 힐링을 경험할 수 있습니다.
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 빛과 공간의 경계를 허무는 초현실적 인터랙티브 미디어 작품*
 
 ### 2. 지하 1층 XR랩: 관객의 터치와 걸음에 반응하는 인터랙티브 센서
 지하 1층 XR(확장현실)랩에서는 관객이 직접 작품의 일부가 되는 신기한 체험이 기다립니다. 관람객이 걸어갈 때마다 발밑에서 빛의 꽃이 피어나고, 손을 뻗으면 입체 사운드가 공간을 가득 채웁니다. 아이를 동반한 가족이나 연인 모두에게 잊지 못할 인생 사진을 선물하는 가장 인기 있는 공간입니다.
@@ -80,8 +75,6 @@ venueId: ulsan-art-museum-sound-light
 2. **흰색 계열 의상 추천**: 어두운 미디어 전시관 특성상 흰색 또는 밝은 베이지 톤의 옷을 입고 가면, 빔 프로젝터의 다채로운 패턴이 옷 위에 자연스럽게 맵핑되어 더욱 특별한 연출이 가능합니다.
 3. **XR랩 바닥 투영샷**: 바닥에 펼쳐지는 빛의 파동을 위에서 아래로 내려다보며 발 사진이나 앉은 포즈로 촬영해 보세요!
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 울산 원도심 성남동 문화의 거리와 태화강변의 감성 스팟들*
 
 ---
 

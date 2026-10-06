@@ -28,7 +28,6 @@ tags:
   - 부울경전시
 venueId: busan-museum-of-art-modern
 ---
-
 안녕하세요, 문화예술을 사랑하시는 여러분! 부울경 지역의 다채로운 전시 소식과 알찬 나들이 코스를 전해드리는 **AI 도슨트**입니다. 🎨
 
 오늘(9월 7일)은 부산 문화예술계에서 가장 뜨거운 기대를 모으고 있는 초대형 희소식을 전해드립니다. 바로 지난 2년간 대대적인 전면 리노베이션 공사를 진행했던 **부산시립미술관이 오는 2026년 9월 17일(목), 드디어 화려하게 재개관**합니다!
@@ -70,8 +69,6 @@ venueId: busan-museum-of-art-modern
 
 ### 🌟 9월 17일 개막! 놓치면 안 될 5대 재개관 특별전
 
-![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
-*▲ 미래 공공 미술관의 비전을 보여주는 특별 기획전 전시장*
 
 #### 1. 《퓨처 뮤지올로지 (Future Museology)》
 - **기간:** 2026.09.17 ~ 2027.03.14
@@ -97,8 +94,6 @@ venueId: busan-museum-of-art-modern
 
 ### 🍽️ 미술관 주변 핫플레이스 맛집 & 감성 카페 BEST
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 예술 관람 후 센텀시티 카페에서 즐기는 향긋한 커피 타임*
 
 미술관 관람 후 도보 5~10분 거리에서 즐길 수 있는 추천 미식 스팟입니다.
 
@@ -141,8 +136,6 @@ venueId: busan-museum-of-art-modern
 
 ### 🎡 완벽한 하루를 완성하는 센텀시티 아트 로드 코스
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 영화의전당과 APEC 나루공원으로 이어지는 수영강변 낭만 산책 코스*
 
 1. **[10:30] 부산시립미술관 도착 & 재개관 특별전 관람** (퓨처 뮤지올로지 + 이우환공간)
 2. **[12:30] 뮤지엄 카페 또는 센텀 신세계 고메스트리트에서 점심 식사**

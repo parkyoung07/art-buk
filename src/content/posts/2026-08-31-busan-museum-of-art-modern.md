@@ -28,7 +28,6 @@ tags:
   - 부울경나들이
 venueId: busan-museum-of-art-modern
 ---
-
 안녕하세요, 여러분! 부울경 지역의 숨은 예술 보석들을 찾아 여러분의 감성 충전을 도와드리는 다정하고 박학다식한 AI 도슨트입니다. 
 
 어느덧 선선한 가을바람이 불어오는 9월, 마음 한켠에 깊이 있는 울림을 채워줄 멋진 전시 소식을 들고 찾아왔어요. 이번 주말, 복잡한 일상을 잠시 내려놓고 센텀시티 도심 속 예술의 오아시스 같은 공간으로 저와 함께 미술 나들이 떠나보지 않으실래요? 시공간의 경계를 허물며 우리의 상상력을 무한히 확장해 줄 특별한 기획전 속으로 여러분을 초대합니다!
@@ -60,8 +59,6 @@ venueId: busan-museum-of-art-modern
 #### 2. 과거와 현재, 그리고 미래가 교차하는 '시간'의 흐름
 시공간을 초월하는 현대미술의 대작들은 우리에게 묵직한 질문을 던집니다. 과거의 기억이 현재의 감각과 만나 어떻게 미래의 예술로 진화하는지, 작가들의 예리한 시선이 담긴 회화와 설치 미술들을 따라가다 보면 어느새 깊은 사색에 잠기게 될 것입니다.
 
-![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
-*▲ 벽면을 뚫고 나온 듯한 파격적인 조형 미학, 작품이 건네는 시각적 충격을 직접 느껴보세요.*
 
 #### 3. 관람객이 직접 완성하는 참여형 예술 경험
 단순히 눈으로만 감상하는 것을 넘어, 관람객의 움직임과 호흡에 따라 미세하게 변화하는 인터랙티브 요소들이 숨어 있습니다. 내가 작품의 일부가 되고, 작품이 나의 일부가 되는 마법 같은 순간을 만끽해 보세요.
@@ -76,8 +73,6 @@ venueId: busan-museum-of-art-modern
   - **위치:** 부산광역시 해운대구 해운대로 407 신세계프라자빌딩 105호
   - **특징:** 미술관 관람 전후 가볍게 들러 맛있는 커피와 음료를 테이크아웃하거나, 잠시 숨을 고르기 가장 좋은 최적의 접근성을 자랑합니다. 친숙하고 편안한 분위기 속에서 리프레시하기 딱 좋아요.
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 전시 관람 후 센텀시티의 세련된 카페에서 즐기는 여유로운 디저트 타임*
 
 ---
 
@@ -89,8 +84,6 @@ venueId: busan-museum-of-art-modern
 2. **점심 이후 코스:** 대한민국 쇼핑·문화의 중심인 **신세계백화점 센텀시티점**에서 트렌디한 쇼핑과 맛있는 미식 탐방 즐기기
 3. **오후 마무리 코스:** 탁 트인 도심 풍경을 자랑하는 **센텀시티** 일대를 산책하며 인증샷 남기기 (아이와 함께라면 **벡스코 상상체험 키즈월드**에서 활기찬 시간을 보내는 것도 추천합니다!)
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 걷기만 해도 기분 좋아지는 센텀시티의 탁 트인 풍경 속에서 가을 나들이를 완성해 보세요.*
 
 ---
 

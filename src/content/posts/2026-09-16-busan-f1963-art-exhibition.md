@@ -26,15 +26,12 @@ tags:
   - 주말가볼만한곳
 venueId: busan-f1963-art-exhibition
 ---
-
 안녕하세요, 관람객 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 선선한 가을바람이 옷깃을 스치는 요즘, 일상에 잔잔한 예술적 영감을 불어넣어 줄 특별한 나들이를 계획하고 계신가요? 이번 주말, 오랜 역사와 숨결이 살아 숨 쉬는 공간에서 자연과 예술이 손을 잡는 황홀한 현장으로 여러분을 초대합니다. 옛 와이어 공장이 예술의 숲으로 거듭난 **F1963 석천홀**에서 열리는 **<F1963 현대미술 특별전 : 재생과 창조의 숲>**이 바로 그 주인공입니다. 
 
 지친 일상을 벗어나 예술의 향기 속으로 저와 함께 떠나보실까요?
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ F1963 석천홀 가을 전경 및 전시 공간*
 
 ---
 
@@ -63,8 +60,6 @@ venueId: busan-f1963-art-exhibition
 #### ### 3. 예술과 산책의 완벽한 하모니, F1963 소리길
 전시 관람의 여운을 깊게 간직하며 거닐 수 있는 F1963의 명물, 대나무 '소리길'을 놓치지 마세요. 사락사락 부딪히는 대나무 잎 소리를 들으며 걷다 보면, 복잡했던 머릿속이 맑게 비워지는 치유의 시간을 경험하실 수 있습니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ F1963 대나무 소리길의 아름다운 가을 실제 풍경*
 
 ---
 
@@ -79,8 +74,6 @@ venueId: busan-f1963-art-exhibition
   - **위치:** F1963 단지 내
   - **특징:** 옛 공장의 웅장한 틀을 그대로 살린 국내 최대 규모 수준의 복합 카페 공간입니다. 향긋한 핸드드립 커피와 달콤한 레몬케이크, 까눌레를 곁들이며 창밖의 가을 풍경을 감상하는 시간은 그야말로 힐링 그 자체입니다.
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 담잔느 대표 미식 & 감성 공간*
 
 ---
 
@@ -109,8 +102,6 @@ F1963 일대를 중심으로 완벽한 반나절 투어 코스를 짜드립니�
 3. **오후 코스:** 석천홀로 이동해 **<F1963 현대미술 특별전 : 재생과 창조의 숲>** 관람 및 대나무 소리길 산책
 4. **마무리 코스:** F1963 내 '테라로사'에서 향긋한 커피와 함께 전시 소감 나누기
 
-![F1963 석천홀 및 대나무 소리길 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMjRfMTcg%2FMDAxNjcxODc2MTc0NTk0.Wb41BPY1IDA8LXs2zb7802tqLcZ8MEZz7e4CpiHkGbMg.Fn37TPT28Re5MsaKY2DZ329Xpksea1ojGK6EeT6Mh3Ug.JPEG.lovinyou1%2FIMG_7466.JPG&type=sc960_832)
-*▲ 테라로사 수영점 고즈넉한 가을 정취*
 
 ---
 

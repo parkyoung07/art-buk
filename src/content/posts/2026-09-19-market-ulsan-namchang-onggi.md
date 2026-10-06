@@ -8,7 +8,7 @@ category: 전통시장 나들이
 region: 울산
 eventId: market-ulsan-namchang-onggi
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MDJfMTk1%2FMDAxNjE5OTYxMDIxMDg1.5due03WNb9eGxFsOCbHlDvPic9b_f5zL7GMdSXF5Kl0g.EAlu2YIO4sTmTPQz5_usj5CD1wtWtWoFQjoautulTewg.JPEG.minkyeong1990%2Foutput_3672126558.jpg&type=sc960_832
 tags:
   - 나드리
   - 나드리AI
@@ -28,14 +28,13 @@ tags:
   - 부울경나들이
 venueId: market-ulsan-namchang-onggi
 ---
-
 안녕하세요, 부울경의 숨은 보석 같은 장터와 골목 미식을 전해드리는 전통시장 전문 로컬 큐레이터입니다! 
 
 선선한 가을바람이 옷깃을 스치는 요즘, 칙칙폭폭 기차 소리와 함께 왁자지껄한 사람 냄새가 그리워지지 않으시나요? 이번 주말에는 복잡한 일상을 잠시 내려놓고, 동해선 기차 타고 가볍게 떠나기 좋은 100년 전통의 울산 **남창옹기종기시장 5일장**으로 향해보려 합니다. 남창역 문을 나서자마자 코끝을 간지럽히는 구수한 국밥 냄새와 상인들의 정겨운 콧소리가 우리를 반기는 곳, 지금 바로 활기찬 장터 나들이를 시작해볼까요?
 
 ---
 
-![울산 남창옹기종기시장 활기찬 3·8일 장터 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832)
+
 *▲ '남창옹기종기시장' 간판 아래 다채로운 파라솔과 난전이 펼쳐진 활기찬 장터 거리 전경*
 
 ---
@@ -61,8 +60,6 @@ venueId: market-ulsan-namchang-onggi
 2. **손맛 가득 장터 손칼국수**: 멸치 육수를 진하게 우려내어 갓 뽑아낸 쫄깃한 면발과 투박하지만 정성스러운 고명이 올라간 칼국수. 찬 바람 불 때 호로록 들이켜면 온몸이 사르르 녹아내립니다.
 3. **갓 튀겨낸 바삭한 즉석 튀김과 옛날 통닭**: 시장 골목 어귀에서 고소한 기름 냄새로 발길을 붙잡는 튀김과 통닭. 고구마, 새우, 오징어 튀김을 종이봉투에 가득 담아 걸으며 먹는 재미가 장터 나들이의 또 다른 묘미입니다.
 
-![100년 전통의 진하고 구수한 남창 소머리국밥 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA5MTdfNjgg%2FMDAxNzU4MDk0NjY2MzE4.vvX7pD_6Un0aK6dBQ5kbaMgBzcWqF01dYrhEjkg-Qkcg.Qtrqm7yox7TkrwzwTqFzjO9Gc9HwueLe--igeA7JrQgg.JPEG%2Foutput%25A3%25DF570647189.jpg&type=sc960_832)
-*▲ 뚝배기 안에 푸짐한 고기와 진한 육수가 담긴 남창 5일장 소머리국밥 한 상 차림*
 
 ---
 
@@ -73,8 +70,6 @@ venueId: market-ulsan-namchang-onggi
 * **남창옹기종기땅콩빵 본점** (울산광역시 울주군 온양읍 남창역길 39-1): 시장 바로 인근에 위치해 고소하고 달달한 냄새로 이끄는 곳입니다. 갓 구워낸 바삭 촉촉한 땅콩빵은 장터 구경의 피로를 싹 씻어주는 완벽한 디저트입니다.
 * **서생 & 간절곶 오션뷰 카페거리**: 남창역에서 차로 10분만 달리면 시원한 바다를 조망하며 바삭한 크로플과 스페셜티 아메리카노를 맛볼 수 있는 감성 카페들이 즐비합니다.
 
-![울산 남창옹기종기시장 활기찬 3·8일 장터 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832)
-*▲ 바삭하고 달콤한 크로플과 시원한 아이스 아메리카노가 차려진 울주 감성 카페 테이블*
 
 ---
 
@@ -90,8 +85,6 @@ venueId: market-ulsan-namchang-onggi
 * **외고산 옹기마을**: 국내 최대 규모의 옹기 집산지로, 수천 개의 옹기 장독대들이 야외 마당에 펼쳐진 고즈넉한 명소입니다. 전통 가마와 옹기 박물관이 있어 산책과 힐링을 즐기기에 안성맞춤입니다.
 * **간절곶 해안 드라이브**: 한반도에서 가장 먼저 해가 뜨는 간절곶으로 이어지는 해안 도로를 따라 푸른 동해 바다의 시원한 파도 소리를 만끽해 보세요.
 
-![울산 남창옹기종기시장 활기찬 3·8일 장터 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832)
-*▲ 야외 마당에 크고 작은 전통 옹기 장독대들이 자연스럽게 늘어선 외고산 옹기마을 풍경*
 
 ---
 
@@ -109,3 +102,6 @@ venueId: market-ulsan-namchang-onggi
 
 ### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
 #나드리 #나드리AI #nadriai.com #나드리ai.com #울산전통시장 #남창옹기종기시장 #울산5일장 #남창소머리국밥 #외고산옹기마을 #울주여행 #울산가볼만한곳 #울산나들이 #울산데이트 #부울경전통시장 #전통시장먹거리 #부울경나들이
+
+
+![외고산 옹기마을 공식 현장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTRfMTUg%2FMDAxNjI4OTE5NTk2MzYy.fO8prK04ghOnxBqaTjHAv_0dzT3gO3ItMCZrz6t_WS8g.CuvDlUbqabenHevvBsS6nzt4N9OwuL12dMhYIAdAOIkg.JPEG.gamanhi28%2F%253F%259A%25B8%253F%2582%25B0%253F%2582%25A8%25EC%25B0%25BD%25EC%2598%25B9%25EA%25B8%25B0%25EC%25A2%2585%25EA%25B8%25B0%25EC%258B%259C%253F%259E%25A5_%252817%2529.JPG&type=sc960_832)

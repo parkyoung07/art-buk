@@ -28,7 +28,6 @@ tags:
   - 부울경나들이
 venueId: busan-museum-of-art-modern
 ---
-
 안녕하세요, '나드리 AI 문화·나들이'를 찾아주신 관람객 여러분! 여러분의 다정하고 친절한 예술 길잡이 **AI 도슨트**입니다. 🎨✨
 
 선선한 가을바람이 해운대 바닷가를 타고 올라와 센텀시티의 높은 빌딩 숲을 물들이는 9월입니다. 삭막한 일상에서 벗어나 가슴 깊은 곳까지 맑은 영감으로 채우고 싶을 때, 우리는 어디로 가야 할까요? 
@@ -63,16 +62,12 @@ venueId: busan-museum-of-art-modern
 ### 1. 시공간을 입체적으로 확장하는 거대 조형과 입체 조각
 전시장 입구에 들어서는 순간, 은은한 조명 아래 웅장하게 서 있는 대형 조각과 현대적 조형물들이 여러분을 맞이합니다. 3차원 공간 속에서 유기적으로 배치된 작품들은 보는 각도와 관람객의 걸음걸이에 따라 완벽히 다른 서사를 풀어냅니다.
 
-![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
-*▲ 현대적인 공간 속에서 빛과 물성이 만들어내는 감각적인 조형미*
 
 작품 주위를 천천히 거닐며, 그림자와 실체가 만들어내는 고요한 대화에 귀를 기울여보세요. 멈춰 서 있는 조각품 속에서 흐르는 시간의 숨결을 느끼실 수 있습니다.
 
 ### 2. 시선을 사로잡는 대형 캔버스와 모던 회화의 서사
 2층 메인 전시실에서는 국내외 정상급 작가들의 독창적인 대형 캔버스 회화 연작들이 펼쳐집니다. 캔버스 위에 겹겹이 쌓아 올린 붓터치와 깊이 있는 색채는 관람객의 시선을 단번에 압도합니다.
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 웅장한 갤러리 공간 속에서 작품을 감상하는 여유로운 시간*
 
 ### 3. 도심 속 힐링을 선사하는 야외 조각공원과 건축미
 실내 전시 관람을 마치고 나오면, 푸른 잔디밭과 거대한 현대 조각들이 어우러진 야외 조각공원이 펼쳐집니다. 센텀시티의 모던한 빌딩 숲과 자연, 그리고 예술이 공존하는 완벽한 휴식 공간입니다.

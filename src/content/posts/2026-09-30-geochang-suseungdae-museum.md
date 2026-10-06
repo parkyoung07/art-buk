@@ -1,20 +1,36 @@
 ---
-title: "거창박물관 가을 특별기획 : 수승대의 풍류와 영남 유학의 미학"
-date: "2026-09-30"
-summary: "국가지정 명승 수승대의 거북바위와 요수정, 영남 선비들의 풍류와 학문적 깊이를 조명하는 거창박물관 가을 특별전! 감악산 아스타국화 언덕 투어."
-category: "전시 리뷰"
-tags: ["나드리", "나드리AI", "nadriai.com", "nadriai.com", "경남전시", "거창전시", "거창박물관", "수승대", "거창창포원", "감악산", "경남가볼만한곳", "경남나들이", "경남거창군", "부울경나들이", "주말가볼만한곳", "가을나들이"]
-region: "경남"
-eventId: "geochang-suseungdae-museum"
-thumbnail: "/images/placeholders/placeholder-art.svg"
+title: '거창박물관 가을 특별기획 : 수승대의 풍류와 영남 유학의 미학'
+date: '2026-09-30'
+summary: >-
+  국가지정 명승 수승대의 거북바위와 요수정, 영남 선비들의 풍류와 학문적 깊이를 조명하는 거창박물관 가을 특별전! 감악산 아스타국화 언덕
+  투어.
+category: 전시 리뷰
+tags:
+  - 나드리
+  - 나드리AI
+  - nadriai.com
+  - nadriai.com
+  - 경남전시
+  - 거창전시
+  - 거창박물관
+  - 수승대
+  - 거창창포원
+  - 감악산
+  - 경남가볼만한곳
+  - 경남나들이
+  - 경남거창군
+  - 부울경나들이
+  - 주말가볼만한곳
+  - 가을나들이
+region: 경남
+eventId: geochang-suseungdae-museum
+thumbnail: >-
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F053%2F2021%2F11%2F24%2F0000030029_001_20211124085801102.jpg
 ---
-
 안녕하세요, 부울경 독자 여러분! 일교차가 제법 선선해진 요즘, 마음 한켠에 고즈넉한 풍경과 깊이 있는 사유를 담고 싶어지는 완벽한 가을이 찾아왔습니다. 이번 주말, 여러분의 감성 지수를 가득 채워줄 다정한 AI 도슨트가 안내할 곳은 바로 청량한 물소리가 가득한 경남 거창입니다. 
 
 그동안 거창의 아름다운 자연경관만 감상하셨다면 이번엔 조금 더 깊이 있게 그 속살을 들여다볼 차례입니다. 거창박물관에서 펼쳐지는 가을 특별기획전 **<수승대의 풍류와 영남 유학의 미학>**과 함께, 형색색의 아스타국화가 만개한 감악산의 가을 언덕까지 꽉 찬 당일치기 나들이를 떠나볼까요?
 
-![나드리 AI 공식 검증 대기 중 - 거창박물관](/images/placeholders/placeholder-art.svg)
-*▲ 나드리 AI 공식 검증 대기 중 - 거창박물관*
 
 ---
 
@@ -101,3 +117,8 @@ thumbnail: "/images/placeholders/placeholder-art.svg"
 ---
 ### 🏷️ 나드리 AI 추천 태그 & SNS 해시태그 (nadriai.com)
 #나드리 #나드리AI #nadriai.com #nadriai.com #경남전시 #거창전시 #거창박물관 #수승대 #거창창포원 #감악산 #경남가볼만한곳 #경남나들이 #경남거창군 #부울경나들이 #주말가볼만한곳 #가을나들이
+
+
+
+
+![거창 수승대 공식 현장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F053%2F2021%2F11%2F24%2F0000030029_001_20211124085801102.jpg)

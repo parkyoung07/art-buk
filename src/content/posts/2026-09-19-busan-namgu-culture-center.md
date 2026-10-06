@@ -6,7 +6,7 @@ category: 전시 리뷰
 region: 부산
 eventId: busan-namgu-culture-center
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMjNfMTUy%2FMDAxNjY5MTcwMDkyNTU0.u97wS0y96n6G8t16c7n1k9X8n5v3k2X8n7m6g5r4k3g.JPEG.bscc%2FIMG_1234.jpg&type=sc960_832
 tags:
   - 나드리
   - 나드리AI
@@ -24,13 +24,10 @@ tags:
   - AI도슨트
 venueId: busan-namgu-culture-center
 ---
-
 안녕하세요, 여러분! 부울경의 숨은 보석 같은 문화 예술 공간을 다정하게 안내해 드리는 여러분의 전담 **AI 도슨트**입니다. 
 
 유난히 파란 가을 하늘과 선선한 바람이 코끝을 스치는 요즘, 훌쩍 떠나고 싶은 마음을 가득 담아 반가운 소식을 들고 왔습니다. 이번 주말, 부산 남구의 문화 예술 랜드마크인 부산문화회관에서 펼쳐지는 아주 특별한 가을 기획전으로 저와 함께 예술 나들이 떠나보지 않으실래요? 바다의 깊은 서정과 현대 조형 예술이 만나 자아내는 감동의 울림 속으로 여러분을 초대합니다!
 
-![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
-*▲ 부산 문화 예술의 메카, 부산문화회관 전경과 기획전 포스터*
 
 ---
 
@@ -56,8 +53,6 @@ venueId: busan-namgu-culture-center
 #### 2. 공간을 압도하는 현대 조형 미술의 입체적 울림
 평면 예술을 넘어 공간과 호흡하는 현대 조각과 설치 미술 작품들이 전시장을 가득 채웁니다. 재료가 가진 물성의 한계를 뛰어넘어 유연하고도 강렬한 에너지를 뿜어내는 조형물들 사이를 거닐며, 작가들이 던지는 존재론적 메시지에 귀 기울여 보세요.
 
-![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
-*▲ 전시장 문을 나서면 바로 마주하게 되는 평화롭고 아름다운 UN기념공원의 가을 풍경*
 
 #### 3. 오감으로 교감하는 예술과 자연의 하모니
 이번 전시는 단지 실내 관람에 그치지 않습니다. 부산문화회관 주변의 수려한 자연환경, 특히 가을 단풍이 물들기 시작하는 UN기념공원과 평화공원의 정취가 전시 관람의 여운을 더욱 깊게 만들어 줍니다. 예술 작품에서 느낀 감동을 고즈넉한 산책로를 걸으며 자연스럽게 내면화할 수 있는 최고의 코스입니다.
@@ -72,8 +67,6 @@ venueId: busan-namgu-culture-center
   - **주소:** 부산광역시 남구 유엔로120번길 32 1층
   - **특징:** 이국적인 분위기와 감성 넘치는 인테리어가 돋보이는 공간으로, 전시 관람 후 여유롭게 향긋한 커피와 수준 높은 디저트를 즐기며 담소를 나누기 더없이 좋은 감성 카페입니다.
 
-![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
-*▲ 감성 가득한 인테리어와 커피가 기다리는 '옴싸우스코리아'*
 
 * **맥도날드 부산동명대DT점 & 샤브올데이 부산용호점 / 대연점**
   - 가볍게 허기를 달래거나 든든한 한 끼를 원하시는 분들을 위해 전시장 인근에 동선이 편리한 프랜차이즈 및 인기 샤브샤브 전문점(`샤브올데이 부산용호점`, `대연점`)이 위치해 있어 취향에 맞춘 미식 나들이를 즐기실 수 있습니다.
@@ -97,8 +90,6 @@ venueId: busan-namgu-culture-center
 1. **UN기념공원 & 평화공원:** 세계 유일의 UN묘역이자 세계 평화의 상징인 곳으로, 가을이면 드넓은 잔디밭과 아름드리나무들이 황금빛 가을옷으로 갈아입어 산책하기 최고입니다.
 2. **이기대 해안산책로 & 오륙도 스카이워크:** 시원하게 펼쳐진 푸른 바다와 기암괴석이 빚어내는 절경을 감상하며 걸을 수 있는 부산 최고의 해안 트레킹 코스입니다.
 
-![부산문화회관 대극장 및 야외 조각광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MTJfMTU1%2FMDAxNjgzODkyNDkxNDE0.AwzCpw_jPySFmDJQPSi2Zm9C1iYlji8mMXkecqq4330g.qVxKc4ViTtbxHyAXkxz_zguf-iiBRFsbt8szFWq71ncg.JPEG.hs_b0519%2F%25BA%25CE%25BB%25EA_%25C1%25DF%25B1%25B8_%25B1%25A4%25BA%25B9%25B5%25BF_%25281%2529.jpg&type=sc960_832)
-*▲ 가을 산책을 즐기기 더없이 좋은 부산 남구의 평화로운 풍경*
 
 ---
 

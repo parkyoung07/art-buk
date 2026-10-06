@@ -24,13 +24,10 @@ tags:
   - AI도슨트
 venueId: busan-geumjeong-culture-center
 ---
-
 안녕하세요, 여러분! 나드리 AI 문화·나들이의 다정한 수석 큐레이터, 여러분의 친절한 **AI 도슨트**입니다. 🌿
 
 선선한 가을바람이 옷깃을 스치는 이맘때쯤이면, 자연과 예술이 어우러진 공간으로 훌쩍 떠나고 싶어지지 않으신가요? 이번 주말, 여러분의 감성을 깊게 적셔줄 아주 특별한 전시 소식을 들고 찾아왔습니다. 바로 부산 금정문화회관에서 열리는 **<금정산의 사계와 영남 수묵의 결>** 전인데요. 우리 곁에 숨쉬는 명산 금정산의 아름다움과 천년고찰의 깊은 숨결을 현대적인 수묵 화법으로 풀어낸 명품 기획전입니다. 자, 저와 함께 설레는 예술 나들이를 떠나볼까요?
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 금정산의 사계와 영남 수묵의 결 기획전에서 마주하는 현대 수묵화의 깊은 먹빛과 여백의 미학*
 
 ---
 
@@ -56,8 +53,6 @@ venueId: busan-geumjeong-culture-center
 #### 2. 범어사와 금정산성에서 영감을 받은 깊은 사색의 공간
 부산의 대표적인 정신적 문화 유산인 천년고찰 '범어사'와 웅장한 '금정산성'의 정취가 고스란히 전시장으로 옮겨왔습니다. 작품 앞에 서면 마치 새벽 고요를 깨우는 풍경 소리와 은은한 숲속의 흙내음이 전해지는 듯한 착각을 불러일으킵니다. 복잡한 도심을 떠나 온전히 나 자신과 마주하며 마음의 평온을 찾을 수 있는 힐링의 장이 될 것입니다.
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 금정산 자락과 천년고찰 범어사가 빚어내는 고즈넉하고 장엄한 가을 정취*
 
 #### 3. 전통과 현대의 유기적 결합, 새로운 수묵의 지평
 오래된 기법으로만 여겨졌던 수묵화가 오늘날 우리 시대의 감성과 어떻게 조화를 이루는지 확인할 수 있는 소중한 기회입니다. 은빛샘·금빛샘 전시실의 여백의 미학 속에서 피어나는 강렬한 에너지는 세대를 불문하고 깊은 울림을 줍니다. 작품 하나하나에 담긴 작가들의 치열한 고민과 붓끝의 정취를 놓치지 마세요.
@@ -72,8 +67,6 @@ venueId: busan-geumjeong-culture-center
   * **주소:** 부산광역시 금정구 체육공원로 7 2층 아첸투스
   * **특징:** 금정문화회관 바로 건물 내(또는 인근)에 위치해 전시 관람 전후로 방문하기 가장 좋은 감성 카페입니다. 창밖으로 펼쳐지는 여유로운 풍경을 바라보며 향긋한 커피와 맛있는 디저트를 즐기기에 제격이에요. 차분한 인테리어 속에서 전시의 여운을 친구, 연인과 함께 나누며 도란도란 이야기 꽃을 피워보세요.
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 전시 관람 후 아첸투스에서 즐기는 달콤한 디저트와 커피 한 잔의 여유.*
 
 ---
 
@@ -87,8 +80,6 @@ venueId: busan-geumjeong-culture-center
 * **회동수원지 황토숲길 산책 코스**
   * **특징:** 전시의 주된 영감의 원천인 자연을 직접 만끽할 수 있는 최고의 힐링 산책로입니다. 맨발로 걸을 수 있는 황토숲길이 잘 조성되어 있어, 맑은 공기를 마시며 몸과 마음의 피로를 말끔히 씻어내기 좋습니다.
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 금정구의 아름다운 자연을 품은 숲길과 산책로에서 싱그러운 가을을 만끽해 보세요.*
 
 ---
 

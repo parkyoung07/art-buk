@@ -1,7 +1,7 @@
 {
-  "todayUV": 24,
-  "todayPV": 78,
-  "totalVisitors": 1286,
+  "todayUV": 25,
+  "todayPV": 86,
+  "totalVisitors": 1287,
   "topPages": [
     {
       "path": "/",
@@ -27,6 +27,21 @@
       "path": "/libraries",
       "title": "부울경 특화 도서관 쉼표",
       "count": 5
+    },
+    {
+      "path": "/blog/",
+      "title": "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+      "count": 4
+    },
+    {
+      "path": "/blog/2026-09-30-gyeongnam-jinju-national-museum/",
+      "title": "오늘 아이와 함께 가기 좋은 진주성 & 국립진주박물관 역사 탐방 | 나드리 AI (nadriai.com)",
+      "count": 1
+    },
+    {
+      "path": "/blog/2026-09-30-tongyeong-ottchil-art-museum/",
+      "title": "/blog/2026-09-30-tongyeong-ottchil-art-museum/",
+      "count": 1
     }
   ],
   "weeklyHistory": [
@@ -62,11 +77,67 @@
     },
     {
       "date": "09-28",
-      "uv": 24,
-      "pv": 78
+      "uv": 25,
+      "pv": 86
     }
   ],
   "recentLogs": [
+    {
+      "time": "18:08:32",
+      "path": "/blog/2026-09-29-sacheon-ocean-art-museum/",
+      "title": "/blog/2026-09-29-sacheon-ocean-art-museum/",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:08:18",
+      "path": "/blog/",
+      "title": "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:08:01",
+      "path": "/blog/2026-09-30-hapcheon-okjeon-tumuli-museum/",
+      "title": "/blog/2026-09-30-hapcheon-okjeon-tumuli-museum/",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:07:56",
+      "path": "/blog/",
+      "title": "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:07:44",
+      "path": "/blog/2026-09-30-tongyeong-ottchil-art-museum/",
+      "title": "/blog/2026-09-30-tongyeong-ottchil-art-museum/",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:07:41",
+      "path": "/blog/",
+      "title": "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:07:29",
+      "path": "/blog/2026-09-30-gyeongnam-jinju-national-museum/",
+      "title": "오늘 아이와 함께 가기 좋은 진주성 & 국립진주박물관 역사 탐방 | 나드리 AI (nadriai.com)",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
+    {
+      "time": "18:07:20",
+      "path": "/blog/",
+      "title": "문화 나들이 블로그 & AI 도슨트 | 나드리 AI (nadriai.com)",
+      "referrer": "직접 접속 / 북마크",
+      "device": "Desktop"
+    },
     {
       "time": "09:34:12",
       "path": "/events/busan-museum-of-art-modern",

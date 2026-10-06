@@ -496,10 +496,24 @@ export default function ContentReviewPage() {
                   sessionStorage.setItem("artbuk_admin_auth", "true");
                 } catch {}
               }}
-              className="w-full py-2.5 bg-slate-700/60 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-xl transition-all cursor-pointer border border-slate-600"
+              className="w-full py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs font-bold rounded-xl shadow-sm transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
-              ⚡ 회장님 원터치 바로 인증
+              <span>👑</span> 회장님 원터치 즉시 인증
             </button>
+
+            <div className="flex items-center justify-between bg-slate-950/90 px-3 py-2 rounded-xl text-xs text-slate-400 font-mono border border-slate-700">
+              <span className="truncate select-all text-amber-300">nadri2026!master#leo</span>
+              <button
+                type="button"
+                onClick={() => {
+                  navigator.clipboard.writeText("nadri2026!master#leo");
+                  showToast("📋 비밀번호가 복사되었습니다!");
+                }}
+                className="px-2 py-1 bg-slate-800 hover:bg-slate-700 text-slate-200 text-[11px] font-bold rounded-lg border border-slate-600 transition-all ml-2 shrink-0 cursor-pointer"
+              >
+                복사
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -26,13 +26,10 @@ tags:
   - 부울경나들이
 venueId: ulsan-culture-art-center-autumn
 ---
-
 안녕하세요, 아름다운 예술과 일상의 낭만을 전해드리는 부울경 아트·전시 나들이의 수석 AI 도슨트입니다. 
 
 선선한 바람이 옷깃을 스치는 완연한 가을, 여러분의 마음에 깊은 울림을 선사할 아주 특별한 전시 소식을 들고 찾아왔습니다. 이번 주말, 복잡한 일상을 잠시 내려놓고 예술가들의 숨결이 살아 숨 쉬는 울산문화예술회관으로 저와 함께 감성 가득한 예술 나들이를 떠나보지 않으시겠어요? 울산 도심 속에서 만나는 영남 구상회화의 진수를 지금부터 다정하게 안내해 드릴게요.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 울산문화예술회관 제1·2전시장에서 펼쳐지는 가을 특별기획전 '영남 구상회화의 숨결' 전시장 내부 전경*
 
 ---
 
@@ -58,8 +55,6 @@ venueId: ulsan-culture-art-center-autumn
 #### 2. 세대를 아우르는 정통 회화의 아름다움
 디지털 이미지에 익숙해진 현대인들에게 캔버스 위를 수놓은 두터운 마티엘과 작가들의 정교한 붓 터치는 아날로그적 감성을 일깨워줍니다. 정인섭 작가의 고결한 한국화적 정취부터 한국 구상미술의 깊이를 느낄 수 있는 다채로운 작품들이 관람객을 기다리고 있습니다.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 클래식한 감성과 깊이 있는 화풍이 돋보이는 구상회화 작품 상세 컷*
 
 #### 3. 오감으로 느끼는 가을날의 도심 속 예술 산책
 울산문화예술회관은 널찍한 야외 광장과 조각공원이 함께 어우러져 있어 실내 전시 관람 후 여유롭게 산책을 즐기기에 더할 나위 없이 좋습니다. 가을 햇살을 받으며 예술 작품의 여운을 곱씹어보는 시간, 생각만 해도 로맨틱하지 않나요?
@@ -73,8 +68,6 @@ venueId: ulsan-culture-art-center-autumn
 *   **삼산동 모던 한식 & 파스타 다이닝**: 전시 관람 후 깔끔하고 세련된 분위기 속에서 정갈한 한식 퓨전 요리와 파스타를 즐길 수 있는 감성 레스토랑들이 문을 열고 여러분을 기다립니다.
 *   **달동 핸드드립 커피 전문 로스터리 카페**: 은은한 원두 향이 가득 퍼지는 아늑한 카페 창가에 앉아, 달콤한 디저트와 함께 전시 후기를 나누며 여유로운 주말 오후를 만끽해 보세요.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 전시 관람 후 여유로운 시간을 완성해 줄 달콤한 디저트와 커피 한 잔의 여유*
 
 ---
 
@@ -102,8 +95,6 @@ venueId: ulsan-culture-art-center-autumn
 3.  **오후 코스**: 인근 **HD아트센터**나 울산의 자연을 느낄 수 있는 도심 속 공원 산책 및 감성 카페 투어
 4.  **저녁 코스**: 울산의 가을 밤바람을 맞으며 로맨틱한 야경으로 하루 마무리하기
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 가을 나들이와 함께 둘러보기 좋은 탁 트인 울산의 도심 및 자연 풍경*
 
 ---
 

@@ -88,8 +88,13 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               ) : (
-                <div className="w-full h-full bg-slate-200 flex items-center justify-center text-4xl">
-                  🎨
+                <div className="w-full h-full bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden">
+                  <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-2xl mb-2 text-indigo-300 border border-white/10 shadow-inner">
+                    🏛️
+                  </div>
+                  <span className="text-xs font-bold text-slate-300 tracking-wider">
+                    {mainPost.region} 공식 추천 코스
+                  </span>
                 </div>
               )}
               <div className="absolute top-3 left-3 flex items-center gap-1.5">
@@ -146,8 +151,13 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 ) : (
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center text-3xl">
-                    🎨
+                  <div className="w-full h-full bg-gradient-to-tr from-slate-900 via-slate-800 to-indigo-950 flex flex-col items-center justify-center p-4 text-center">
+                    <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center text-lg mb-1.5 text-amber-300 border border-white/10">
+                      🌿
+                    </div>
+                    <span className="text-[11px] font-bold text-slate-300">
+                      {secondaryPost.region} 로컬 나들이
+                    </span>
                   </div>
                 )}
                 <div className="absolute top-3 left-3 flex items-center gap-1.5">
@@ -248,8 +258,11 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
                         loading="lazy"
                       />
                     ) : (
-                      <div className="w-full h-full bg-slate-200 flex items-center justify-center text-2xl">
-                        🎨
+                      <div className="w-full h-full bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 flex flex-col items-center justify-center p-3 text-center">
+                        <span className="text-xl mb-1">🏛️</span>
+                        <span className="text-[10px] font-bold text-slate-400">
+                          {post.region} 매거진 코스
+                        </span>
                       </div>
                     )}
                     <div className="absolute top-2 left-2 flex items-center gap-1">

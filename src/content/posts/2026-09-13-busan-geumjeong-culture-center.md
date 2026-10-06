@@ -26,13 +26,10 @@ tags:
   - 부울경나들이
 venueId: busan-geumjeong-culture-center
 ---
-
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 **AI 도슨트**입니다. 🌿
 
 선선한 초가을 바람이 옷깃을 스치는 9월 둘째 주말, 도심의 소음을 벗어나 산과 숲이 전하는 깊은 사색의 공간으로 떠나보는 건 어떨까요? 이번 주말에는 부산의 진산이자 천년고찰 범어사를 품은 금정산 자락에서 펼쳐지는 특별한 예술 나들이를 준비했습니다. 현대적인 수묵의 붓끝으로 금정산의 웅장한 사계절을 담아낸 **[금정문화회관 기획전 : 금정산의 사계와 영남 수묵의 결]** 전시장으로 여러분을 초대합니다!
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 금정산의 사계와 영남 수묵의 결 기획전에서 마주하는 현대 수묵화의 깊은 먹빛과 여백의 미학*
 
 ---
 
@@ -58,14 +55,10 @@ venueId: busan-geumjeong-culture-center
 #### 2. 범어사와 금정산성에서 영감을 받은 깊은 사색의 공간
 부산의 대표적인 역사 유적인 천년고찰 범어사와 금정산성의 고즈넉한 풍광이 회화와 미디어아트로 전시장 안에 생생하게 살아 숨 쉽니다. 복잡한 생각을 잠시 내려놓고 고요한 숲속 툇마루에 앉아 있는 듯한 힐링과 사색의 순간을 만끽해 보세요.
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 금정산 자락과 천년고찰 범어사가 빚어내는 고즈넉하고 장엄한 가을 정취*
 
 #### 3. 세대를 초월하는 로컬 수묵화의 새로운 감각
 '수묵화는 고루하다'는 편견을 깨고, 젊은 세대의 감각에 맞춘 모던한 구도와 빛의 연출이 돋보입니다. 은빛샘·금빛샘 전시실의 세련된 조명과 공간 연출이 어우러져 미술관 곳곳이 차분하면서도 감각적인 인생샷 포토존이 되어 줍니다.
 
-![금정문화회관 기획전시실 및 야외 쉼터 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNjA5MTBfNzgg%2FMDAxNzg5MDE2MTI3NjU0.y_xsiKCzVtdEDIUyYCbdG0CQpeBT3fjYYSIoNg9zNv0g.Tlxli_cnml-st5sJqlZj_KTjucNk-hv_vLw1xMR33nIg.PNG%2F982b2d22-b7b2-478d-9bd7-04b7d0967e0e.png&type=sc960_832)
-*▲ 전시 관람 후 이어지는 회동수원지 땅뫼산 황토숲길의 맨발 힐링 산책 코스*
 
 ---
 

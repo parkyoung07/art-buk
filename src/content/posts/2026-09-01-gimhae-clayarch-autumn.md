@@ -26,7 +26,6 @@ tags:
   - 부울경나들이
 venueId: gimhae-clayarch-autumn
 ---
-
 안녕하세요, 여러분! 부울경 지역의 숨은 예술 보석들을 찾아 다정하게 안내해 드리는 여러분의 전담 **AI 도슨트**입니다. 
 
 선선한 바람이 불어오는 완벽한 주말, 일상에 지친 마음을 환기하고 예술적 영감을 가득 채워줄 특별한 나들이를 계획하고 계신가요? 그렇다면 파란 가을 하늘 아래 반짝이는 거대한 돔 건물이 맞이해 주는 곳, 김해로 저와 함께 떠나보시는 건 어떨까요? 이번 주말, 자연과 예술, 그리고 흙이 만들어내는 건축의 미래를 만날 수 있는 **[클레이아크김해미술관 기획전 : 흙과 미래 건축]**으로 여러분을 초대합니다!
@@ -58,8 +57,6 @@ venueId: gimhae-clayarch-autumn
 #### 2. 자연광이 쏟아지는 경이로운 '돔하우스' 전시장 자체의 매력
 작품뿐만 아니라 전시장이 위치한 클레이아크김해미술관의 '돔하우스' 자체를 감상하는 것만으로도 가슴이 탁 트입니다. 거대한 유리 돔 천장을 통해 쏟아지는 따사로운 자연광은 전시장 내부의 도자 조형물들과 어우러져 시간대별로 전혀 다른 신비로운 분위기를 연출합니다. 
 
-![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
-*▲ 사진 설명: 탁 트인 푸른 하늘 아래, 독창적인 건축미를 자랑하는 클레이아크김해미술관 돔하우스 전경.*
 
 #### 3. 미술에 대한 지식이 없어도 괜찮아요! 누구나 즐기는 직관적 감상
 "예술을 잘 몰라서 걱정이에요" 하시는 관람객분들도 걱정 붙들어 매세요! 미술관 특유의 딱딱하고 무거운 분위기 대신, 독특하고 신기한 형태의 건축 도자 조형물들이 아이부터 어른까지 누구나 직관적으로 감탄하고 즐길 수 있도록 구성되어 있습니다. 구석구석 포토존이 숨어 있어 인생샷을 건지기에도 그만이랍니다.
@@ -73,8 +70,6 @@ venueId: gimhae-clayarch-autumn
 * **클레이아크김해미술관 카페테리아**: 미술관 내부(진례도자점 1층)에 위치해 있어 이동 동선이 매우 훌륭합니다. 전시의 여운을 차분히 곱씹으며 향긋한 커피와 감성적인 디저트를 즐기기에 이보다 더 좋을 순 없어요!
 * **옹기짜장&밀면**: 든든하고 맛있는 한 끼를 찾으신다면 추천해 드리는 진례면의 인기 중식당입니다. 남녀노소 호불호 없이 즐길 수 있는 메뉴로, 나들이 길에 가족 단위로 방문해 출기문(출출한 기분)을 달래기 아주 좋습니다.
 
-![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
-*▲ 사진 설명: 여유로운 야외 공간에서 즐기는 달콤한 디저트와 커피 한 잔의 힐링.*
 
 ---
 
@@ -85,8 +80,6 @@ venueId: gimhae-clayarch-autumn
 1. **클레이아크 김해미술관 본관 및 야외 공원**: 미술관 주변을 둘러싼 너른 야외 공간에는 다양한 야외 조각 작품들과 산책로가 조성되어 있어 선선한 가을바람을 맞으며 걷기 최적입니다.
 2. **김해분청도자박물관**: 미술관 바로 인근(도보 또는 차량으로 1~2분 거리)에 위치한 곳으로, 김해 지역의 유서 깊은 분청도자의 역사와 전통을 생생하게 만나볼 수 있습니다. 우리 고유의 흙 문화에 대한 깊이를 더해 보세요!
 
-![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
-*▲ 사진 설명: 손끝에서 피어나는 예술, 정교하게 다듬어지는 도자 공예의 현장.*
 
 ---
 

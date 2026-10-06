@@ -28,7 +28,6 @@ tags:
   - 부울경나들이
 venueId: ulsan-art-museum-sound-light
 ---
-
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 선선한 가을바람이 코끝을 스치는 요즘, 일상 속 작은 영감을 채워줄 환상적인 빛의 무대가 울산에서 펼쳐지고 있다는 기쁜 소식을 들고 찾아왔어요. 
 
 이번 주말, 단돈 1천 원의 행복으로 시공간을 초월하는 예술적 경험을 선사할 **<울산시립미술관 미디어아트전 : 빛과 파동의 교향곡>**으로 저와 함께 떠나보실까요?
@@ -60,8 +59,6 @@ venueId: ulsan-art-museum-sound-light
 #### ### 2. 현대 미술과 과학의 경계에서 마주하는 경이로움
 세계적인 미디어 아티스트들이 참여한 이번 프로젝트는 '빛의 파동'이라는 과학적 현상을 예술적 상상력으로 완벽하게 재해석했습니다. 시시각각 변화하는 빛의 궤적을 따라가다 보면, 자연과 인간, 그리고 기술이 어떻게 조화롭게 공존할 수 있는지 깊은 사유의 시간을 갖게 됩니다.
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 예술적 영감이 가득한 울산 중구 원도심과 성남동 문화의 거리 풍경*
 
 #### ### 3. 일상에서 탈출하는 도심 속 하이테크 쉼표
 복잡한 도심을 벗어나 조용히 사색에 잠기고 싶으신가요? 울산시립미술관의 탁 트인 건축 미학 속에서 여유롭게 작품을 감상하고, 미술관 테라스를 거닐며 가을 하늘을 올려다보는 것만으로도 최고의 힐링이 될 것입니다.
@@ -79,8 +76,6 @@ venueId: ulsan-art-museum-sound-light
   * **주소:** 울산광역시 중구 새즈믄해거리 50
   * **특징:** 성남동 문화의 거리 감성을 고스란히 담아낸 아기자기한 디저트 카페입니다. 정성스럽게 구워낸 구움과자와 시그니처 음료가 훌륭해 데이트 코스로 언제나 사랑받는 곳이랍니다.
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 예술과 독서, 휴식이 공존하는 '지관서가 울산시립미술관점' 내부 전경*
 
 ---
 
@@ -106,8 +101,6 @@ venueId: ulsan-art-museum-sound-light
 2. **점심 코스:** 미술관 내 **지관서가**에서 가벼운 브런치 또는 성남동 문화의 거리 맛집 탐방
 3. **오후 코스:** 차로 10~15분 거리에 위치한 **태화강 국가정원 십리대숲** 산책 및 가을 국화 관람
 
-![울산시립미술관 현대 건축 외관 및 미디어아트 전시관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMTY1%2FMDAxNjE3Njg0MDA0ODEz.mLYs-ANGDdgGRE10KnftCU-HhKIRnM4tGcpHhDYVvMwg.yIbkNJ405iU_UxZ9NCiFynn-2Y8cDGQFzv8R10QXFpcg.JPEG.sujin6638%2FIMG_8715.jpg&type=sc960_832)
-*▲ 바람에 흔들리는 대나무 소리가 아름다운 태화강 국가정원 십리대숲*
 
 ---
 

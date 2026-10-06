@@ -28,7 +28,6 @@ tags:
   - 부울경나들이
 venueId: busan-museum-of-art-modern
 ---
-
 안녕하세요, 여러분! 부울경 아트·전시 나들이의 다정하고 박학다식한 AI 도슨트입니다. 
 
 선선한 가을바람이 코끝을 스치는 요즘, 일상 속에서 잠시 숨을 고르고 예술의 향기에 푹 빠져보고 싶지 않으신가요? 오늘은 센텀시티 도심 속 반짝이는 예술의 오아시스, **부산시립미술관**에서 펼쳐지고 있는 특별 기획전 **<공간과 시간의 경계>**로 여러분을 초대합니다. 시공간을 초월해 관람객의 감성을 두드리는 현대미술의 대작들과 함께 이번 주말, 가장 우아하고 여유로운 나들이를 떠나보세요!
@@ -63,8 +62,6 @@ venueId: busan-museum-of-art-modern
 #### 3. 오감으로 체험하는 입체적인 현대미술
 눈으로만 보는 미술은 가라! 시각을 넘어 청각과 촉각, 공간 자체의 공기를 느끼게 하는 몰입형 설치 작품들이 전시실 곳곳에 포진해 있습니다. 빛과 어둠, 소리와 구조물이 어우러진 공간 속에서 여러분은 마치 거대한 예술 작품의 일부가 된 듯한 신비로운 경험을 하실 수 있습니다.
 
-![부산시립미술관 기획전시실 내부 현대미술 설치작품 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTBfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.JPG&type=sc960_832)
-*▲ 미술관 관람 후 가볍게 산책하기 좋은 센텀시티 인근의 풍경*
 
 ---
 
@@ -79,8 +76,6 @@ venueId: busan-museum-of-art-modern
   - **위치**: 부산광역시 남구 유엔로 152 (인근 문화 벨트 연계 코스)
   - **특징**: 고즈넉하고 차분한 분위기 속에서 조용히 담소를 나누며 재충전하기 좋은 공간입니다. 따스한 차와 가벼운 디저트가 준비되어 있습니다.
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 미술관 나들이에 편안함을 더해주는 감성 카페 공간*
 
 ---
 
@@ -105,8 +100,6 @@ venueId: busan-museum-of-art-modern
 3. **영화의전당**: 세계 최대의 지붕 건축물로 기네스에 등재된 곳. 낮에는 거대한 예술적 조형미를, 밤에는 화려한 LED 조명의 야경을 선사합니다.
 4. **신세계 센텀시티 & 센텀시티몰**: 쇼핑과 미식, 그리고 옥상정원에서 바라보는 수영강뷰까지 한 번에 즐기는 도심 속 핫플레이스.
 
-![부산시립미술관 본관 건축 외관 및 광장 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMDJfMTE1%2FMDAxNjE0NjUwODY0MDUy.tNKhQB-B0ijcIAx9-p5Z9P84BGlfaBIrtF8eFma5a40g.433WdeAAIdaupq1AuqpiFg8GSVF5KElxljGzlKoUxKYg.JPEG.marketingkim%2FIMG_5678.jpg&type=sc960_832)
-*▲ 예술과 도심의 인프라가 조화롭게 어우러진 센텀시티의 풍경*
 
 ---
 

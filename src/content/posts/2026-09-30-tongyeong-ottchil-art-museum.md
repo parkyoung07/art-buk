@@ -1,11 +1,13 @@
 ---
 title: '부모님 모시고 가기 좋은 통영 하루 코스 : 옻칠미술관 & 이순신공원 산책'
 date: '2026-09-30'
-summary: 청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식 투어.
+summary: >-
+  청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식
+  투어.
 category: 부모님과 나들이
 region: 경남
 subRegion: 통영시
-thumbnail: https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg
+thumbnail: 'https://tong.visitkorea.or.kr/cms/resource/62/1611662_image2_1.jpg'
 tags:
   - 나드리
   - 나드리AI
@@ -21,7 +23,6 @@ tags:
   - 부울경전시
 eventId: tongyeong-ottchil-art-museum-event
 ---
-
 ## 1. 이번 주말 놓치면 아쉬운 추천 포인트
 
 바쁜 일상 속에서 잠시 숨을 고르고 감성을 충전할 수 있는 최적의 명소, 바로 **통영옻칠미술관**입니다. 청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식 투어로 완벽한 하루를 선물해 보세요.

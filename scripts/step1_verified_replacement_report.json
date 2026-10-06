@@ -1,0 +1,620 @@
+{
+  "timestamp": "2026-10-05T03:44:13.266Z",
+  "stats": {
+    "totalPlaceholderPosts": 76,
+    "matchedAndUpdated": 17,
+    "remainingUnmatched": 59
+  },
+  "matchedList": [
+    {
+      "file": "2026-08-26-gyeongnam-art-museum.md",
+      "title": "[경남 창원 전시] 가을 감성 가득한 경남도립미술관 '남도의 붓길' 기획전! 용지호수 산책과 함께하는 힐링 예술 여행",
+      "region": "경남",
+      "matchedKey": "경남도립미술관",
+      "appliedCover": "http://tong.visitkorea.or.kr/cms/resource/07/2851507_image2_1.JPG",
+      "totalImagesUsed": 17
+    },
+    {
+      "file": "2026-09-01-gyeongnam-autumn-masterpiece.md",
+      "title": "경남도립미술관 가을 기획전 : 남도의 붓길",
+      "region": "경남",
+      "matchedKey": "경남도립미술관",
+      "appliedCover": "http://tong.visitkorea.or.kr/cms/resource/07/2851507_image2_1.JPG",
+      "totalImagesUsed": 17
+    },
+    {
+      "file": "2026-09-02-busan-junggu-modern-history-museum.md",
+      "title": "부산근현대역사관 특별기획 : 원도심의 기억과 근대 건축의 미학",
+      "region": "부산",
+      "matchedKey": "부산근현대역사관",
+      "appliedCover": "http://imgnews.naver.net/image/082/2023/04/19/0001208131_001_20230419143901159.png",
+      "totalImagesUsed": 20
+    },
+    {
+      "file": "2026-09-04-busan-yeonje-culture-art.md",
+      "title": "연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 사계",
+      "region": "부산",
+      "matchedKey": "부산근현대역사관",
+      "appliedCover": "http://imgnews.naver.net/image/082/2023/04/19/0001208131_001_20230419143901159.png",
+      "totalImagesUsed": 20
+    },
+    {
+      "file": "2026-09-05-busan-yeonje-culture-art.md",
+      "title": "연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 사계",
+      "region": "부산",
+      "matchedKey": "부산근현대역사관",
+      "appliedCover": "http://imgnews.naver.net/image/082/2023/04/19/0001208131_001_20230419143901159.png",
+      "totalImagesUsed": 20
+    },
+    {
+      "file": "2026-09-05-ulsan-donggu-daewangam-art.md",
+      "title": "대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전",
+      "region": "울산",
+      "matchedKey": "대왕암공원",
+      "appliedCover": "https://tong.visitkorea.or.kr/cms/resource/60/3583560_image2_1.jpg",
+      "totalImagesUsed": 15
+    },
+    {
+      "file": "2026-09-07-sacheon-ocean-art-museum.md",
+      "title": "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술",
+      "region": "경남",
+      "matchedKey": "사천미술관",
+      "appliedCover": "https://www.sacheon.go.kr/board/image.do?gcode=2935&name=%EC%82%AC%EC%B2%9C%EB%AF%B8%EC%88%A0%EA%B4%80+2026%EB%85%84+%EC%97%AC%EB%A6%84+%EA%B8%B0%ED%9A%8D%EC%A0%84%EC%8B%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98+%EB%B0%A9%EC%8B%9D+%281%29.jpg",
+      "totalImagesUsed": 3
+    },
+    {
+      "file": "2026-09-12-busan-yeonje-culture-art.md",
+      "title": "연제문화예술 특별전 : 배산(盃山)의 역사와 온천천의 사계",
+      "region": "부산",
+      "matchedKey": "부산근현대역사관",
+      "appliedCover": "http://imgnews.naver.net/image/082/2023/04/19/0001208131_001_20230419143901159.png",
+      "totalImagesUsed": 20
+    },
+    {
+      "file": "2026-09-15-busan-moca-eulsukdo.md",
+      "title": "부산현대미술관(MoCA) 생태환경전 : 을숙도의 갈대와 지속가능한 미래",
+      "region": "부산",
+      "matchedKey": "busanmocaeulsukdo",
+      "appliedCover": "http://imgnews.naver.net/image/5369/2026/09/15/0000176889_001_20260915115211988.jpg",
+      "totalImagesUsed": 3
+    },
+    {
+      "file": "2026-09-17-busan-moca-eulsukdo.md",
+      "title": "부산현대미술관(MoCA) 생태환경전 : 을숙도의 갈대와 지속가능한 미래",
+      "region": "부산",
+      "matchedKey": "busanmocaeulsukdo",
+      "appliedCover": "http://imgnews.naver.net/image/5369/2026/09/15/0000176889_001_20260915115211988.jpg",
+      "totalImagesUsed": 3
+    },
+    {
+      "file": "2026-09-21-gyeongnam-autumn-masterpiece.md",
+      "title": "경남도립미술관 가을 기획전 : 남도의 붓길",
+      "region": "경남",
+      "matchedKey": "경남도립미술관",
+      "appliedCover": "http://tong.visitkorea.or.kr/cms/resource/07/2851507_image2_1.JPG",
+      "totalImagesUsed": 17
+    },
+    {
+      "file": "2026-09-21-library-busan-sasang-main.md",
+      "title": "[부산 나들이] 웅장한 서가와 미디어아트의 향연! 부산도서관 가을 북캉스 & 사상 힐링 완벽 가이드",
+      "region": "부산",
+      "matchedKey": "부산도서관",
+      "appliedCover": "https://www.busan.go.kr/bschild/upload/img/%ED%99%8D%EB%B3%B4%EB%AC%BC(2025%20%EB%B6%80%EC%82%B0%EB%B0%94%EB%8B%A4%EB%8F%84%EC%84%9C%EA%B4%80%20%EC%83%81%EB%B0%98%EA%B8%B0%ED%96%89%EC%82%AC).jpg",
+      "totalImagesUsed": 1
+    },
+    {
+      "file": "2026-09-22-healing-changnyeong-upo-wetland.md",
+      "title": "창녕 우포늪 가을 생태 힐링로드 : 1억 4천만 년 태고의 신비와 물안개 갈대숲 걷기",
+      "region": "경남",
+      "matchedKey": "을숙도생태공원&갈대숲",
+      "appliedCover": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEwMTFfMTEz%2FMDAxNzYwMTc0MTU0ODM2.xBKbmN2s-2cZGhoKEStcW84Ij7hYjmvv0ke_4v7VE_cg.DKS4yhu7MDdx0cvf0gtfHSIYlRGUEVlpjuaFoz4xB08g.PNG%2Fimage.png&type=sc960_832",
+      "totalImagesUsed": 1
+    },
+    {
+      "file": "2026-09-25-busan-junggu-modern-history-museum.md",
+      "title": "부산근현대역사관 특별기획 : 원도심의 기억과 근대 건축의 미학",
+      "region": "부산",
+      "matchedKey": "부산근현대역사관",
+      "appliedCover": "http://imgnews.naver.net/image/082/2023/04/19/0001208131_001_20230419143901159.png",
+      "totalImagesUsed": 20
+    },
+    {
+      "file": "2026-09-28-sacheon-ocean-art-museum.md",
+      "title": "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술",
+      "region": "경남",
+      "matchedKey": "사천미술관",
+      "appliedCover": "https://www.sacheon.go.kr/board/image.do?gcode=2935&name=%EC%82%AC%EC%B2%9C%EB%AF%B8%EC%88%A0%EA%B4%80+2026%EB%85%84+%EC%97%AC%EB%A6%84+%EA%B8%B0%ED%9A%8D%EC%A0%84%EC%8B%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98+%EB%B0%A9%EC%8B%9D+%281%29.jpg",
+      "totalImagesUsed": 3
+    },
+    {
+      "file": "2026-09-28-ulsan-donggu-daewangam-art.md",
+      "title": "대왕암공원 해맞이 기획전 : 동해의 푸른 파도와 기암괴석 조형전",
+      "region": "울산",
+      "matchedKey": "대왕암공원",
+      "appliedCover": "https://tong.visitkorea.or.kr/cms/resource/60/3583560_image2_1.jpg",
+      "totalImagesUsed": 15
+    },
+    {
+      "file": "2026-09-29-sacheon-ocean-art-museum.md",
+      "title": "사천미술관 바다 기획전 : 삼천포 푸른 물결과 현대미술",
+      "region": "경남",
+      "matchedKey": "사천미술관",
+      "appliedCover": "https://www.sacheon.go.kr/board/image.do?gcode=2935&name=%EC%82%AC%EC%B2%9C%EB%AF%B8%EC%88%A0%EA%B4%80+2026%EB%85%84+%EC%97%AC%EB%A6%84+%EA%B8%B0%ED%9A%8D%EC%A0%84%EC%8B%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%9D%98+%EB%B0%A9%EC%8B%9D+%281%29.jpg",
+      "totalImagesUsed": 3
+    }
+  ],
+  "unmatchedList": [
+    {
+      "file": "2026-09-01-miryang-arirang-art-center.md",
+      "slug": "2026-09-01-miryang-arirang-art-center",
+      "title": "밀양아리랑아트센터 특별기획 : 아리랑의 선율과 영남루의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "miryang-arirang-art-center"
+    },
+    {
+      "file": "2026-09-01-yangsan-ssangbyeongnu-autumn.md",
+      "slug": "2026-09-01-yangsan-ssangbyeongnu-autumn",
+      "title": "양산 쌍벽루아트홀 가을 기획전 : 영남알프스와 양산천의 사계",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "yangsan-ssangbyeongnu-autumn"
+    },
+    {
+      "file": "2026-09-02-busan-busanjin-citizens-park.md",
+      "slug": "2026-09-02-busan-busanjin-citizens-park",
+      "title": "부산시민공원 다솜갤러리 기획전 : 도심 속 녹색 쉼표와 현대미술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-busanjin-citizens-park"
+    },
+    {
+      "file": "2026-09-02-busan-yeongdo-culture-art-center.md",
+      "slug": "2026-09-02-busan-yeongdo-culture-art-center",
+      "title": "영도문화예술회관 해양 기획전 : 절영도의 푸른 파도와 항구의 미학",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-yeongdo-culture-art-center"
+    },
+    {
+      "file": "2026-09-03-busan-bukgu-culture-center.md",
+      "slug": "2026-09-03-busan-bukgu-culture-center",
+      "title": "부산북구문화예술회관 가을 기획전 : 낙동강의 숨결과 구포의 역사",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-bukgu-culture-center"
+    },
+    {
+      "file": "2026-09-03-busan-donggu-culture-platform.md",
+      "slug": "2026-09-03-busan-donggu-culture-platform",
+      "title": "동구문화플랫폼 기획전 : 철길 위의 예술, 부산진역의 재탄생",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-donggu-culture-platform"
+    },
+    {
+      "file": "2026-09-03-busan-seogu-songdo-ocean-art.md",
+      "slug": "2026-09-03-busan-seogu-songdo-ocean-art",
+      "title": "서구문화예술 기획전 : 대한민국 제1호 송도해변과 해양 조각전",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-seogu-songdo-ocean-art"
+    },
+    {
+      "file": "2026-09-04-busan-gangseo-nakdong-river-center.md",
+      "slug": "2026-09-04-busan-gangseo-nakdong-river-center",
+      "title": "낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-gangseo-nakdong-river-center"
+    },
+    {
+      "file": "2026-09-04-busan-sasang-living-culture.md",
+      "slug": "2026-09-04-busan-sasang-living-culture",
+      "title": "사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-sasang-living-culture"
+    },
+    {
+      "file": "2026-09-05-busan-gijang-andersen-fairy-tale.md",
+      "slug": "2026-09-05-busan-gijang-andersen-fairy-tale",
+      "title": "기장 안데르센 동화 문화기획전 : 바다마을 동화와 상상 조형전",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-gijang-andersen-fairy-tale"
+    },
+    {
+      "file": "2026-09-05-ulsan-bukgu-soeburi-art.md",
+      "slug": "2026-09-05-ulsan-bukgu-soeburi-art",
+      "title": "울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예",
+      "region": "울산",
+      "category": "전시 리뷰",
+      "eventId": "ulsan-bukgu-soeburi-art"
+    },
+    {
+      "file": "2026-09-06-changnyeong-gaya-tumuli-museum.md",
+      "slug": "2026-09-06-changnyeong-gaya-tumuli-museum",
+      "title": "창녕박물관 유네스코 세계유산 등재 기념전 : 비화가야의 숨결",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "changnyeong-gaya-tumuli-museum"
+    },
+    {
+      "file": "2026-09-06-goseong-sogaya-heritage-museum.md",
+      "slug": "2026-09-06-goseong-sogaya-heritage-museum",
+      "title": "고성박물관 가을 기획전 : 소가야의 해양 교류와 남해의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "goseong-sogaya-heritage-museum"
+    },
+    {
+      "file": "2026-09-06-ulsan-uljugun-onggi-museum.md",
+      "slug": "2026-09-06-ulsan-uljugun-onggi-museum",
+      "title": "외고산 옹기박물관 특별전 : 숨 쉬는 그릇, 천년 옹기의 미학",
+      "region": "울산",
+      "category": "전시 리뷰",
+      "eventId": "ulsan-uljugun-onggi-museum"
+    },
+    {
+      "file": "2026-09-07-busan-gijang-andersen-fairy-tale.md",
+      "slug": "2026-09-07-busan-gijang-andersen-fairy-tale",
+      "title": "기장 안데르센 동화 문화기획전 : 바다마을 동화와 상상 조형전",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-gijang-andersen-fairy-tale"
+    },
+    {
+      "file": "2026-09-07-namhae-wind-trace-museum.md",
+      "slug": "2026-09-07-namhae-wind-trace-museum",
+      "title": "남해 바람흔적미술관 기획전 : 쪽빛 바다와 바람의 조각",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "namhae-wind-trace-museum"
+    },
+    {
+      "file": "2026-09-08-geochang-suseungdae-museum.md",
+      "slug": "2026-09-08-geochang-suseungdae-museum",
+      "title": "거창박물관 가을 특별기획 : 수승대의 풍류와 영남 유학의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "geochang-suseungdae-museum"
+    },
+    {
+      "file": "2026-09-08-hadong-jirisan-art-farm.md",
+      "slug": "2026-09-08-hadong-jirisan-art-farm",
+      "title": "지리산아트팜 특별기획 : 섬진강의 서정과 지리산 대지예술",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hadong-jirisan-art-farm"
+    },
+    {
+      "file": "2026-09-08-hamyang-sangrim-art-center.md",
+      "slug": "2026-09-08-hamyang-sangrim-art-center",
+      "title": "함양문화예술회관 가을 기획전 : 천년의 상림숲과 지리산의 사계",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hamyang-sangrim-art-center"
+    },
+    {
+      "file": "2026-09-08-hapcheon-okjeon-tumuli-museum.md",
+      "slug": "2026-09-08-hapcheon-okjeon-tumuli-museum",
+      "title": "합천박물관 유네스코 세계유산전 : 옥전고분군과 다라국의 황금유산",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hapcheon-okjeon-tumuli-museum"
+    },
+    {
+      "file": "2026-09-08-namhae-wind-trace-museum.md",
+      "slug": "2026-09-08-namhae-wind-trace-museum",
+      "title": "남해 바람흔적미술관 기획전 : 쪽빛 바다와 바람의 조각",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "namhae-wind-trace-museum"
+    },
+    {
+      "file": "2026-09-09-hadong-jirisan-art-farm.md",
+      "slug": "2026-09-09-hadong-jirisan-art-farm",
+      "title": "지리산아트팜 특별기획 : 섬진강의 서정과 지리산 대지예술",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hadong-jirisan-art-farm"
+    },
+    {
+      "file": "2026-09-09-haman-marisan-tumuli-museum.md",
+      "slug": "2026-09-09-haman-marisan-tumuli-museum",
+      "title": "함안박물관 유네스코 세계유산 특별전 : 아라가야의 찬란한 불꽃",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "haman-marisan-tumuli-museum"
+    },
+    {
+      "file": "2026-09-09-sancheong-donguibogam-museum.md",
+      "slug": "2026-09-09-sancheong-donguibogam-museum",
+      "title": "산청 동의보감촌 특별기획 : 지리산 약초의 향기와 힐링 예술",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "sancheong-donguibogam-museum"
+    },
+    {
+      "file": "2026-09-09-uiryeong-righteous-army-museum.md",
+      "slug": "2026-09-09-uiryeong-righteous-army-museum",
+      "title": "의령 의병박물관 가을 특별전 : 곽재우 의병장의 호국혼과 남강의 기상",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "uiryeong-righteous-army-museum"
+    },
+    {
+      "file": "2026-09-10-changnyeong-gaya-tumuli-museum.md",
+      "slug": "2026-09-10-changnyeong-gaya-tumuli-museum",
+      "title": "창녕박물관 유네스코 세계유산 등재 기념전 : 비화가야의 숨결",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "changnyeong-gaya-tumuli-museum"
+    },
+    {
+      "file": "2026-09-10-haman-marisan-tumuli-museum.md",
+      "slug": "2026-09-10-haman-marisan-tumuli-museum",
+      "title": "함안박물관 유네스코 세계유산 특별전 : 아라가야의 찬란한 불꽃",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "haman-marisan-tumuli-museum"
+    },
+    {
+      "file": "2026-09-10-miryang-arirang-art-center.md",
+      "slug": "2026-09-10-miryang-arirang-art-center",
+      "title": "밀양아리랑아트센터 특별기획 : 아리랑의 선율과 영남루의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "miryang-arirang-art-center"
+    },
+    {
+      "file": "2026-09-10-ulsan-uljugun-onggi-museum.md",
+      "slug": "2026-09-10-ulsan-uljugun-onggi-museum",
+      "title": "외고산 옹기박물관 특별전 : 숨 쉬는 그릇, 천년 옹기의 미학",
+      "region": "울산",
+      "category": "전시 리뷰",
+      "eventId": "ulsan-uljugun-onggi-museum"
+    },
+    {
+      "file": "2026-09-11-goseong-sogaya-heritage-museum.md",
+      "slug": "2026-09-11-goseong-sogaya-heritage-museum",
+      "title": "고성박물관 가을 기획전 : 소가야의 해양 교류와 남해의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "goseong-sogaya-heritage-museum"
+    },
+    {
+      "file": "2026-09-11-uiryeong-righteous-army-museum.md",
+      "slug": "2026-09-11-uiryeong-righteous-army-museum",
+      "title": "의령 의병박물관 가을 특별전 : 곽재우 의병장의 호국혼과 남강의 기상",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "uiryeong-righteous-army-museum"
+    },
+    {
+      "file": "2026-09-12-busan-donggu-culture-platform.md",
+      "slug": "2026-09-12-busan-donggu-culture-platform",
+      "title": "동구문화플랫폼 기획전 : 철길 위의 예술, 부산진역의 재탄생",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-donggu-culture-platform"
+    },
+    {
+      "file": "2026-09-13-ulsan-bukgu-soeburi-art.md",
+      "slug": "2026-09-13-ulsan-bukgu-soeburi-art",
+      "title": "울산북구문화예술회관 기획전 : 달천철장의 불꽃과 현대 금속공예",
+      "region": "울산",
+      "category": "전시 리뷰",
+      "eventId": "ulsan-bukgu-soeburi-art"
+    },
+    {
+      "file": "2026-09-14-busan-seogu-songdo-ocean-art.md",
+      "slug": "2026-09-14-busan-seogu-songdo-ocean-art",
+      "title": "서구문화예술 기획전 : 대한민국 제1호 송도해변과 해양 조각전",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-seogu-songdo-ocean-art"
+    },
+    {
+      "file": "2026-09-14-changwon-seongsan-art-hall.md",
+      "slug": "2026-09-14-changwon-seongsan-art-hall",
+      "title": "창원 성산아트홀 가을 기획전 : 남도 현대미술의 새로운 지평",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "changwon-seongsan-art-hall"
+    },
+    {
+      "file": "2026-09-14-tongyeong-jeon-hyeok-lim-museum.md",
+      "slug": "2026-09-14-tongyeong-jeon-hyeok-lim-museum",
+      "title": "통영 전혁림미술관 특별전 : 바다의 화폭과 코발트블루의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "tongyeong-jeon-hyeok-lim-museum"
+    },
+    {
+      "file": "2026-09-15-gallery-busan-haeundae-dalmaji.md",
+      "slug": "2026-09-15-gallery-busan-haeundae-dalmaji",
+      "title": "해운대 달맞이길 감성 갤러리 투어 : 청사포 오션뷰와 현대미술의 향연",
+      "region": "부산",
+      "category": "감성 갤러리",
+      "eventId": "gallery-busan-haeundae-dalmaji"
+    },
+    {
+      "file": "2026-09-15-geoje-haegeumgang-theme-museum.md",
+      "slug": "2026-09-15-geoje-haegeumgang-theme-museum",
+      "title": "거제 해금강테마박물관 기획전 : 동서양 근현대 미술의 향연",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "geoje-haegeumgang-theme-museum"
+    },
+    {
+      "file": "2026-09-15-jinju-gyeongnam-culture-art-center.md",
+      "slug": "2026-09-15-jinju-gyeongnam-culture-art-center",
+      "title": "경남문화예술회관 특별전 : 남강의 물결과 영남 조형예술의 맥",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "jinju-gyeongnam-culture-art-center"
+    },
+    {
+      "file": "2026-09-15-sacheon-aerospace-museum.md",
+      "slug": "2026-09-15-sacheon-aerospace-museum",
+      "title": "사천 우주항공박물관 특별기획 : 푸른 하늘을 향한 비상과 미래 우주",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "sacheon-aerospace-museum"
+    },
+    {
+      "file": "2026-09-15-tongyeong-jeon-hyeok-lim-museum.md",
+      "slug": "2026-09-15-tongyeong-jeon-hyeok-lim-museum",
+      "title": "통영 전혁림미술관 특별전 : 바다의 화폭과 코발트블루의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "tongyeong-jeon-hyeok-lim-museum"
+    },
+    {
+      "file": "2026-09-16-geoje-haegeumgang-theme-museum.md",
+      "slug": "2026-09-16-geoje-haegeumgang-theme-museum",
+      "title": "거제 해금강테마박물관 기획전 : 동서양 근현대 미술의 향연",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "geoje-haegeumgang-theme-museum"
+    },
+    {
+      "file": "2026-09-17-gallery-busan-jeonpo-art-space.md",
+      "slug": "2026-09-17-gallery-busan-jeonpo-art-space",
+      "title": "서면 전포 카페거리 아트ส페이스 : 골목 속 숨은 독립 갤러리와 문화살롱",
+      "region": "부산",
+      "category": "감성 갤러리",
+      "eventId": "gallery-busan-jeonpo-art-space"
+    },
+    {
+      "file": "2026-09-17-gallery-busan-yeongdo-park-culture.md",
+      "slug": "2026-09-17-gallery-busan-yeongdo-park-culture",
+      "title": "영도 피아크(P.ARK) 복합문화공간 : 오션뷰 라운지와 감성 기획전",
+      "region": "부산",
+      "category": "감성 갤러리",
+      "eventId": "gallery-busan-yeongdo-park-culture"
+    },
+    {
+      "file": "2026-09-18-gallery-namhae-space-mijo.md",
+      "slug": "2026-09-18-gallery-namhae-space-mijo",
+      "title": "남해 스페이스 미조 : 옛 냉동창고의 부활, 남해안 재생 문화예술 플랫폼",
+      "region": "경남",
+      "category": "감성 갤러리",
+      "eventId": "gallery-namhae-space-mijo"
+    },
+    {
+      "file": "2026-09-22-healing-miryang-wiyangji-autumn.md",
+      "slug": "2026-09-22-healing-miryang-wiyangji-autumn",
+      "title": "밀양 위양지 가을 감성 산책 : 완재정 연못에 비친 고즈넉한 단풍과 반영의 미학",
+      "region": "경남",
+      "category": "계절 힐링로드",
+      "eventId": "healing-miryang-wiyangji-autumn"
+    },
+    {
+      "file": "2026-09-22-yangsan-ssangbyeongnu-autumn.md",
+      "slug": "2026-09-22-yangsan-ssangbyeongnu-autumn",
+      "title": "양산 쌍벽루아트홀 가을 기획전 : 영남알프스와 양산천의 사계",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "yangsan-ssangbyeongnu-autumn"
+    },
+    {
+      "file": "2026-09-23-busan-busanjin-citizens-park.md",
+      "slug": "2026-09-23-busan-busanjin-citizens-park",
+      "title": "부산시민공원 다솜갤러리 기획전 : 도심 속 녹색 쉼표와 현대미술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-busanjin-citizens-park"
+    },
+    {
+      "file": "2026-09-23-healing-geoje-windy-hill-autumn.md",
+      "slug": "2026-09-23-healing-geoje-windy-hill-autumn",
+      "title": "거제 바람의 언덕 & 신선대 오션로드 : 쪽빛 남해 바다와 이국적인 풍차 언덕 드라이브",
+      "region": "경남",
+      "category": "계절 힐링로드",
+      "eventId": "healing-geoje-windy-hill-autumn"
+    },
+    {
+      "file": "2026-09-24-busan-yeongdo-culture-art-center.md",
+      "slug": "2026-09-24-busan-yeongdo-culture-art-center",
+      "title": "영도문화예술회관 해양 기획전 : 절영도의 푸른 파도와 항구의 미학",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-yeongdo-culture-art-center"
+    },
+    {
+      "file": "2026-09-26-busan-bukgu-culture-center.md",
+      "slug": "2026-09-26-busan-bukgu-culture-center",
+      "title": "부산북구문화예술회관 가을 기획전 : 낙동강의 숨결과 구포의 역사",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-bukgu-culture-center"
+    },
+    {
+      "file": "2026-09-27-busan-sasang-living-culture.md",
+      "slug": "2026-09-27-busan-sasang-living-culture",
+      "title": "사상생활문화센터 기획전 : 삼락 억새물결과 도심 속 청년 예술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-sasang-living-culture"
+    },
+    {
+      "file": "2026-09-28-busan-gangseo-nakdong-river-center.md",
+      "slug": "2026-09-28-busan-gangseo-nakdong-river-center",
+      "title": "낙동강문화관 기획전 : 하구 삼각주의 생태와 대지예술",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-gangseo-nakdong-river-center"
+    },
+    {
+      "file": "2026-09-28-busan-gijang-andersen-fairy-tale.md",
+      "slug": "2026-09-28-busan-gijang-andersen-fairy-tale",
+      "title": "기장 안데르센 동화 문화기획전 : 바다마을 동화와 상상 조형전",
+      "region": "부산",
+      "category": "전시 리뷰",
+      "eventId": "busan-gijang-andersen-fairy-tale"
+    },
+    {
+      "file": "2026-09-29-gallery-busan-haeundae-dalmaji.md",
+      "slug": "2026-09-29-gallery-busan-haeundae-dalmaji",
+      "title": "해운대 달맞이길 감성 갤러리 투어 : 청사포 오션뷰와 현대미술의 향연",
+      "region": "부산",
+      "category": "감성 갤러리",
+      "eventId": "gallery-busan-haeundae-dalmaji"
+    },
+    {
+      "file": "2026-09-29-hamyang-sangrim-art-center.md",
+      "slug": "2026-09-29-hamyang-sangrim-art-center",
+      "title": "함양문화예술회관 가을 기획전 : 천년의 상림숲과 지리산의 사계",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hamyang-sangrim-art-center"
+    },
+    {
+      "file": "2026-09-29-namhae-wind-trace-museum.md",
+      "slug": "2026-09-29-namhae-wind-trace-museum",
+      "title": "남해 바람흔적미술관 기획전 : 쪽빛 바다와 바람의 조각",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "namhae-wind-trace-museum"
+    },
+    {
+      "file": "2026-09-30-geochang-suseungdae-museum.md",
+      "slug": "2026-09-30-geochang-suseungdae-museum",
+      "title": "거창박물관 가을 특별기획 : 수승대의 풍류와 영남 유학의 미학",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "geochang-suseungdae-museum"
+    },
+    {
+      "file": "2026-09-30-hapcheon-okjeon-tumuli-museum.md",
+      "slug": "2026-09-30-hapcheon-okjeon-tumuli-museum",
+      "title": "합천박물관 유네스코 세계유산전 : 옥전고분군과 다라국의 황금유산",
+      "region": "경남",
+      "category": "전시 리뷰",
+      "eventId": "hapcheon-okjeon-tumuli-museum"
+    }
+  ]
+}

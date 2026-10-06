@@ -26,13 +26,10 @@ tags:
   - 부울경나들이
 venueId: ulsan-culture-art-center-autumn
 ---
-
 안녕하세요, 여러분! 부울경의 아름다운 예술 숨결을 전해드리는 다정하고 박학다식한 여러분의 **AI 도슨트**입니다. 
 
 어느덧 선선한 가을바람이 옷깃을 스치는 계절이 찾아왔네요. 가을은 참 신기하게도 마음 한구석을 몽글몽글하게 만들고, 깊이 있는 예술적 사유에 푹 빠져들게 만드는 마법 같은 힘이 있어요. 이번 주말, 울산 도심 속에서 계절의 풍요로움을 만끽하며 예술적 영감을 채워줄 아주 특별한 전시 소식을 들고 왔답니다. 바로 울산문화예술회관에서 열리는 **가을 특별기획전 〈영남 구상회화의 숨결〉**입니다. 자, 그럼 저와 함께 캔버스 위로 펼쳐지는 찬란한 예술의 바다로 떠나볼까요?
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 클래식한 빈티지 프레임 속에 담긴 영남 구상회화의 깊은 감성을 느껴보세요.*
 
 ---
 
@@ -58,8 +55,6 @@ venueId: ulsan-culture-art-center-autumn
 #### ### 2. 원화와 조각이 어우러지는 입체적인 공간 연출
 평면 회화에만 머무르지 않고, 공간감을 더해주는 수준 높은 조각 작품들이 함께 배치되어 관람의 재미를 한층 높여줍니다. 은은한 조명 아래 정교하게 다듬어진 조각상들과 회화가 자아내는 대화는 마치 시간 여행을 온 듯한 깊은 몰입감을 선사합니다. 조용히 발걸음을 옮기며 작품 하나하나가 건네는 무언의 위로에 귀 기울여 보세요.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 은은한 조명과 아늑한 공간 속에서 작품과 온전히 교감할 수 있는 제1·2전시장 전경.*
 
 #### ### 3. 울산 도심 속에서 만나는 여유로운 예술 산책
 바쁜 일상에 치여 잊고 살았던 감수성을 되찾기에 이보다 더 좋을 순 없습니다. 관람료가 무료라는 점 덕분에 부담 없이 방문해 오전이나 오후 시간을 온전히 예술과 사색을 위해 쓸 수 있죠. 사랑하는 연인, 가족, 혹은 혼자만의 사색을 즐기는 이들에게도 이번 가을 가장 근사한 선물이 될 것입니다.
@@ -73,8 +68,6 @@ venueId: ulsan-culture-art-center-autumn
 *   **삼산동 모던 미식 테이블 (추천 맛집)**: 신선한 제철 식재료를 활용한 파스타와 스테이크를 선보이는 곳으로, 깔끔한 인테리어와 정갈한 플레이팅이 돋보여 전시 여운을 나누며 데이트하기에 안성맞춤입니다.
 *   **태화강변 뷰티풀 브런치 카페 (감성 카페)**: 탁 트인 창밖으로 가을 하늘과 여유로운 풍경이 펼쳐지는 공간입니다. 향긋한 핸드드립 커피와 함께 달콤한 디저트를 즐기며 감성 충전을 마무리해보세요.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 전시 관람 후 즐기는 향긋한 커피와 디저트는 나들이의 완벽한 화룡점정입니다.*
 
 ---
 
@@ -86,8 +79,6 @@ venueId: ulsan-culture-art-center-autumn
 2.  **코스 두 번째 - 태화강 국가정원 산책**: 도심 속 푸른 생태의 오아시스인 태화강 국가정원을 거닐며 가을의 선선한 바람을 만끽하기.
 3.  **코스 세 번째 - 삼산동 디자인거리 및 번영로 쇼핑 & 카페 투어**: 트렌디한 숍과 감성 카페에서 여유로운 티타임으로 주말 나들이 완성하기.
 
-![울산문화예술회관 대공연장 및 상설전시실 로비 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MDZfMjQ5%2FMDAxNjE3NzAzOTcxMzYy.hgASQntiHEJIz0pWmgmpmYCuiI0HQ0KAnMjmlq6eQ4og.gQNfWbPZHvJQzn8w_Vv3-N6onvYUR4Cez7jL8Dt3jMIg.JPEG.choisugil200%2FKakaoTalk_20210405_095142231_04.jpg&type=sc960_832)
-*▲ 울산의 자연과 도심이 조화롭게 어우러진 아름다운 풍경 속으로 떠나보세요.*
 
 ---
 

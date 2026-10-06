@@ -8,7 +8,7 @@ category: 전통시장 나들이
 region: 부산
 eventId: market-busan-jagalchi-nampo
 thumbnail: >-
-  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832
+  https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMDVfNDQg%2FMDAxNzY0OTA0MDcyNjMw.Du8kGFrOdXBgm6GwQgIUZUQMuUOzXr1qEB3nAJ6uObQg.5RwP7zOHZF5N4D8KUtcUuqIFzbWDwoJuaiEo0kGg4bEg.JPEG%2F900%25A3%25DF20251203%25A3%25DF170233.jpg&type=sc960_832
 tags:
   - 나드리
   - 나드리AI
@@ -28,7 +28,6 @@ tags:
   - 전통시장먹거리
 venueId: market-busan-jagalchi-nampo
 ---
-
 선선한 가을바람이 코끝을 간지럽히는 요즘, 부울경 로컬 큐레이터가 가장 먼저 추천하는 주말 나들이 장소가 있습니다. 바로 바다의 생명력이 파도처럼 밀려드는 부산의 상징, **자갈치시장과 남포동 골목 일대**입니다. 
 
 "오이소, 보이소, 사이소!"라는 정겨운 사투리가 환영 인사처럼 반겨주는 이곳은 단순한 시장을 넘어 부산 사람들의 삶과 애환, 그리고 맛있는 추억이 고스란히 담긴 보물창고 같은 공간이지요. 이번 주말, 싱싱한 바다 향기와 근현대 골목의 레트로한 감성을 찾아 훌쩍 떠나볼까요?
@@ -64,8 +63,6 @@ venueId: market-busan-jagalchi-nampo
 3. **남포동 비프광장 명물 '씨앗호떡' & 국제시장 길거리 간식**
    바삭하게 구워낸 호떡 가슴을 갈라 해바라기씨, 호박씨 등 각종 견과류를 아낌없이 듬뿍 채워 넣은 씨앗호떡은 달콤 짭조름한 매력으로 발걸음을 멈추게 합니다.
 
-![남포동 비프광장 명물 씨앗호떡 미식 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MzBfMjQw%2FMDAxNzU2NTQ1NzgzMTMw.Gz8q_bVYgwuCGJCwWovTgqbdB1I0y0TCBdPdh36NHOgg.WgCzBXNffjGLz_Fjs1-XlCxzM5SHCX6zk7gzNmKOkrgg.JPEG%2F1756545598984.jpg&type=sc960_832)
-*▲ [남포동 비프광장 실사] 노릇하게 구워낸 명물 씨앗호떡을 사기 위해 줄 서 있는 남포동 비프광장의 활기찬 거리 풍경*
 
 ---
 
@@ -76,8 +73,6 @@ venueId: market-busan-jagalchi-nampo
 - **남포동 영도대교 뷰 오션 감성 카페**: 통창 너머로 부산 남항의 푸른 바다와 영도대교를 바라보며 향긋한 스페셜티 커피를 즐기기 좋습니다.
 - **남포동 골목 로스터리 카페**: 시장의 활기찬 분위기와는 또 다른 아늑하고 차분한 감성으로, 달콤한 디저트와 함께 쉬어가기 안성맞춤입니다.
 
-![부산 자갈치시장 남항 바다 수변테라스 및 장터 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832)
-*▲ [남포동 오션뷰 카페 실사] 부산 남항 바다와 노을빛이 내려다보이는 창가에서 즐기는 향긋한 커피와 디저트*
 
 ---
 
@@ -93,8 +88,6 @@ venueId: market-busan-jagalchi-nampo
 - **국제시장 '꽃분이네' & 근현대 골목**: 영화 속 촬영지로 유명한 꽃분이네를 찾아가 옛 추억을 더듬어보고, 미로 같은 골목골목 숨겨진 빈티지 숍들을 구경하는 재미가 쏠쏠합니다.
 - **영도대교 도개 행사**: 매일 오후 2시, 다리가 번쩍 들려 올려지는 진풍경을 자갈치 옥상 전망대나 물 위에서 감상해 보세요. 부산의 역사와 로맨스가 고스란히 전해집니다.
 
-![부산 자갈치시장 남항 바다 수변테라스 및 장터 전경 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MDdfMjI0%2FMDAxNzQ5Mjg1MDgyNDQy.TzjC8MGkLMQ3qtvJZxxBLO4kBP6pvqdpz4U__dpFJWIg.K4IbgivtoMyz2aRh4JOJ5xeZB0yHKJl_2YcccNYDp3Ag.JPEG%2F900%25A3%25DF20250607%25A3%25DF131230.jpg&type=sc960_832)
-*▲ [용두산공원 부산타워 실사] 맑은 가을 하늘 아래 우뚝 솟은 용두산공원 부산타워와 도심 공원 전경*
 
 ---
 

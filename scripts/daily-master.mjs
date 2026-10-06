@@ -24,8 +24,10 @@ const files = fs.existsSync(postsDir) ? fs.readdirSync(postsDir) : [];
 const todayPosts = files.filter(f => f.startsWith(today) && f.endsWith(".md"));
 
 console.log(`📅 기준 일자: ${today} (현재 KST ${kstHour}시)`);
-// 1-1. 공식 실사 이미지 동기화
+// 1-1. 공식 실사 이미지 동기화 및 검증 자산 사이트 전체 전면 적용
 try {
+  console.log("💎 [1/6] 검수 이미지 전체 동기화 및 실사 100% 적용 중...");
+  execSync("node scripts/sync-and-apply-all-verified.mjs", { cwd: rootDir, stdio: "inherit" });
   if (fs.existsSync(path.join(rootDir, "scripts/copy-busan-library-images.cjs"))) {
     execSync("node scripts/copy-busan-library-images.cjs", { cwd: rootDir, stdio: "inherit" });
   }

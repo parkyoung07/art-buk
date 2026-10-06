@@ -28,7 +28,6 @@ tags:
   - 미술관나들이
 venueId: gimhae-clayarch-autumn
 ---
-
 안녕하세요! 부울경 전역의 유니크하고 아름다운 문화예술 명소를 친절하게 소개해 드리는 **AI 도슨트**입니다. 🏺🏛️
 
 이번에 떠나볼 곳은 세계 최초의 건축도자(Architectural Ceramics) 전문 미술관으로 국내외에서 큰 찬사를 받고 있는 **클레이아크김해미술관(Clayarch Gimhae Museum)**입니다!
@@ -64,8 +63,6 @@ venueId: gimhae-clayarch-autumn
 ### 1. 5,000장의 도자 타일로 감싸인 거대한 원형 돔하우스
 클레이아크의 상징인 **돔하우스**는 그 자체로 거대한 예술품(Fired Painting)입니다. 건물 외벽 전체가 5,000장이 넘는 화려한 핸드페인팅 도자 타일로 둘러싸여 있으며, 실내 중앙 홀 천장의 유리 돔을 통해 쏟아져 들어오는 자연 채광이 도자 조형 작품들을 비추는 광경은 오직 이곳에서만 만날 수 있는 압도적인 시각적 장관입니다.
 
-![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
-*▲ 천장 자연광 아래 펼쳐지는 입체적이고 웅장한 건축 도자 설치물*
 
 ### 2. 친환경 미래 건축 소재로서의 '흙'의 재발견
 이번 전시는 점토와 테라코타, 친환경 흙벽돌 등 지속 가능한 미래 건축 소재로서 흙의 무한한 변신을 보여줍니다. 단순한 그릇이나 식기를 넘어 거대한 파사드 구조물, 음향 분산 타일, 입체 격자 모듈 등 국내외 현대 건축가들과 도예가들의 놀라운 상상력이 결합된 혁신적인 신작들을 만나보실 수 있습니다.
@@ -81,8 +78,6 @@ venueId: gimhae-clayarch-autumn
 2. **2층 나선형 슬로프 뷰**: 돔하우스 1층에서 2층으로 이어지는 완만한 나선형 경사로를 걸어 올라가며 중앙 홀의 대형 설치 작품을 배경으로 촬영해 보세요.
 3. **큐빅하우스 야외 테라스 & 잔디밭**: 탁 트인 김해 진례의 푸른 산 능선과 모던한 미술관 건축이 한 프레임에 담기는 최고의 야외 포토존입니다.
 
-![클레이아크김해미술관 돔하우스 도자 타일 건축 외관 실사](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTEyMzBfNDEg%2FMDAxNzY3MDYxMDQ2NTE1.F8IAcJCxgb8kc4ofCHj7gCYWHXoO7iOFy79WzCYf-04g._tleh24Lsy2GmCbboaivVWlkAB6xe09KrHgi2Ng7t4sg.JPEG%2FKakaoTalk_20251230_111247028_01.jpg&type=sc960_832)
-*▲ 고즈넉한 도예 마을의 정취와 푸른 자연이 함께하는 김해 힐링 나들이*
 
 ---
 
