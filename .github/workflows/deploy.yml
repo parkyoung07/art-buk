@@ -203,7 +203,10 @@ jobs:
             done
           }
 
-          npx wrangler pages deployment list --project-name=art-buk --environment production --json > "$RUNNER_TEMP/prior.json"
+          curl --fail-with-body -sS \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments?env=production" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -o "$RUNNER_TEMP/prior.json"
           GITHUB_OUTPUT="$RUNNER_TEMP/prior.env" node scripts/verify-cloudflare-deployment.mjs \
             --file="$RUNNER_TEMP/prior.json" --environment=production --prefix=prior --latest --allow-empty
           . "$RUNNER_TEMP/prior.env"
@@ -224,7 +227,11 @@ jobs:
           preview_verified=0
           for preview_attempt in 1 2 3 4 5 6; do
             rm -f "$RUNNER_TEMP/preview.env"
-            npx wrangler pages deployment list --project-name=art-buk --environment preview --json > "$RUNNER_TEMP/preview.json"
+            # REST equivalent of Wrangler's --environment preview metadata lookup.
+            curl --fail-with-body -sS \
+              "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments?env=preview" \
+              -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+              -o "$RUNNER_TEMP/preview.json"
             if GITHUB_OUTPUT="$RUNNER_TEMP/preview.env" node scripts/verify-cloudflare-deployment.mjs \
               --file="$RUNNER_TEMP/preview.json" --environment=preview --sha="$DEPLOYED_SHA" --prefix=preview; then
               preview_verified=1
@@ -269,7 +276,10 @@ jobs:
           trap rollback ERR
           switched=1
           npx wrangler pages deploy out --project-name=art-buk --branch=main --commit-hash="$DEPLOYED_SHA" --commit-dirty=false
-          npx wrangler pages deployment list --project-name=art-buk --environment production --json > "$RUNNER_TEMP/production.json"
+          curl --fail-with-body -sS \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments?env=production" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -o "$RUNNER_TEMP/production.json"
           GITHUB_OUTPUT="$RUNNER_TEMP/production.env" node scripts/verify-cloudflare-deployment.mjs \
             --file="$RUNNER_TEMP/production.json" --environment=production --sha="$DEPLOYED_SHA" --prefix=production
           . "$RUNNER_TEMP/production.env"
