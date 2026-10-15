@@ -438,7 +438,7 @@ async function main() {
   console.log(`🆔 생성할 초안 ID: ${draftId}`);
 
   // 초안 데이터 파일 로드
-  const draftsFilePath = path.join(rootDir, "public/data/content-drafts.json");
+  const draftsFilePath = path.join(rootDir, "data/private/content-drafts.json");
   let existingDrafts = [];
   if (fs.existsSync(draftsFilePath)) {
     try {
@@ -573,7 +573,7 @@ async function main() {
     curatorNotes: `${selectedTopic.category} 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)`
   };
 
-  // 초안 데이터 저장 (public/data/content-drafts.json)
+  // 초안 데이터 저장 (data/private/content-drafts.json)
   const existingIdx = existingDrafts.findIndex(d => d.id === draftId);
   if (existingIdx !== -1) {
     existingDrafts[existingIdx] = draftObj;
@@ -596,7 +596,7 @@ async function main() {
   console.log(`🎉 [초안 생성 완료]`);
   console.log(`   - ID: ${draftId}`);
   console.log(`   - 상태: review_required (회장님 승인 대기)`);
-  console.log(`   - 파일: public/data/content-drafts.json 및 src/content/drafts/${draftId}.json`);
+  console.log(`   - 파일: data/private/content-drafts.json 및 src/content/drafts/${draftId}.json`);
   console.log(`   - 운영 사이트 게시 여부: ❌ 절대 게시되지 않음 (승인 대기 중)`);
 
   // 텔레그램 알림 발송

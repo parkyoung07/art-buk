@@ -249,7 +249,7 @@ ${listText || "발행된 글이 없습니다."}
 
   // (5-1) 초안 검수 및 대기 목록 확인 ("초안", "검수", "미리보기", "대기", "초안목록")
   if (lower.includes("초안") || lower.includes("검수") || lower.includes("미리보기") || lower.includes("대기중") || lower.includes("대기목록")) {
-    const draftsPath = path.join(rootDir, "public/data/content-drafts.json");
+    const draftsPath = path.join(rootDir, "data/private/content-drafts.json");
     let drafts = [];
     if (fs.existsSync(draftsPath)) {
       try {
@@ -299,59 +299,12 @@ ${listText}
     lower.includes("2번승인");
 
   if (isApproveCommand) {
-    if (isTaskRunning) {
-      return `⏳ 회장님, 현재 다른 배포 작업이 진행 중입니다. 잠시만 기다려 주십시오!`;
-    }
+    return `🔒 <b>[승인 경로 변경]</b>
 
-    const draftsPath = path.join(rootDir, "public/data/content-drafts.json");
-    let drafts = [];
-    if (fs.existsSync(draftsPath)) {
-      try {
-        drafts = JSON.parse(fs.readFileSync(draftsPath, "utf8"));
-      } catch (e) {}
-    }
+Production 승인은 텔레그램이나 로컬 스크립트에서 실행하지 않습니다.
+검토한 초안 ID·SHA256·main SHA를 입력해 아래 GitHub Actions 워크플로를 수동 실행해 주세요.
 
-    const pending = drafts.filter(d => d.status === "review_required" || d.status === "draft_generated");
-
-    if (pending.length === 0) {
-      return `ℹ️ 회장님, 현재 승인 대기 중인 초안이 없습니다. 먼저 초안을 생성하거나 확인해 주세요!`;
-    }
-
-    // 대상 초안 선별
-    let targetDraft = null;
-    if (lower.includes("오전") || lower.includes("1번")) {
-      targetDraft = pending.find(d => d.slot === "am") || pending[0];
-    } else if (lower.includes("오후") || lower.includes("2번")) {
-      targetDraft = pending.find(d => d.slot === "pm") || pending[1] || pending[0];
-    } else if (pending.length === 1) {
-      targetDraft = pending[0];
-    } else {
-      // 대기 중인 글이 2건 이상인 경우 선택 확인 (Rule 13)
-      return `❓ <b>[승인 대상 확인]</b>
-
-회장님, 현재 승인 대기 중인 초안이 <b>${pending.length}건</b> 있습니다:
-
-1. <b>[오전 9시]</b> ${pending[0].title}
-2. <b>[오후 2시]</b> ${pending[1]?.title || "오후 초안"}
-
-어느 글을 승인하시겠습니까?
-• <code>오전 승인</code> 또는 <code>1번 승인</code>
-• <code>오후 승인</code> 또는 <code>2번 승인</code>`;
-    }
-
-    isTaskRunning = true;
-    sendMessage(`🚀 <b>[회장님 승인 접수]</b>\n\n"${targetDraft.title}"\n\n승인 검증 및 Cloudflare 배포 작업을 즉시 개시합니다! 완료되는 대로 보고드리겠습니다. 🫡`);
-
-    exec(`node scripts/approve-and-publish.mjs --id=${targetDraft.id}`, { cwd: rootDir }, (error, stdout, stderr) => {
-      isTaskRunning = false;
-      if (error) {
-        console.error("⚠️ 배포 실패:", error);
-        sendMessage(`⚠️ <b>[배포 처리 오류]</b>\n<code>${error.message.slice(0, 300)}</code>`);
-      } else {
-        console.log("✅ 승인 및 배포 완결");
-      }
-    });
-    return null;
+https://github.com/parkyoung07/art-buk/actions/workflows/approve-and-deploy.yml`;
   }
 
   // (6) 초안 생성 수동 요청

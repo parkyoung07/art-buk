@@ -1,33 +1,260 @@
 name: Deploy to Cloudflare Pages
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
+    inputs:
+      expected_sha:
+        description: 'Exact 40-hex main commit to deploy'
+        required: true
+        type: string
+      confirmation:
+        description: 'Type DEPLOY <expected_sha>'
+        required: true
+        type: string
+      approved_draft_id:
+        description: 'Single approved draft allowed in this artifact'
+        required: false
+        type: string
+      verify_path:
+        description: 'Live path that must return 200'
+        required: false
+        default: '/'
+        type: string
+      expected_marker:
+        description: 'Text/slug that must exist in the verified response'
+        required: false
+        type: string
+  workflow_call:
+    inputs:
+      expected_sha:
+        required: true
+        type: string
+      approved_draft_id:
+        required: false
+        type: string
+      verify_path:
+        required: false
+        default: '/'
+        type: string
+      expected_marker:
+        required: false
+        type: string
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      CLOUDFLARE_ACCOUNT_ID:
+        required: true
+    outputs:
+      deployed_sha:
+        value: ${{ jobs.deploy.outputs.deployed_sha }}
+      verified_at:
+        value: ${{ jobs.deploy.outputs.verified_at }}
+      deployment_id:
+        value: ${{ jobs.deploy.outputs.deployment_id }}
+      deployment_url:
+        value: ${{ jobs.deploy.outputs.deployment_url }}
+      prior_deployment_id:
+        value: ${{ jobs.deploy.outputs.prior_deployment_id }}
+concurrency:
+  group: ${{ github.event_name == 'workflow_call' && format('production-release-called-{0}', github.run_id) || 'production-release' }}
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+    outputs:
+      deployed_sha: ${{ steps.meta.outputs.deployed_sha }}
+      verified_at: ${{ steps.release.outputs.verified_at }}
+      deployment_id: ${{ steps.release.outputs.production_deployment_id }}
+      deployment_url: ${{ steps.release.outputs.production_deployment_url }}
+      prior_deployment_id: ${{ steps.release.outputs.prior_deployment_id }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Validate release inputs
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          CALLER_WORKFLOW_REF: ${{ github.workflow_ref }}
+          EXPECTED_CALLER_WORKFLOW_REF: ${{ format('{0}/.github/workflows/approve-and-deploy.yml@refs/heads/main', github.repository) }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+          APPROVED_DRAFT_ID: ${{ inputs.approved_draft_id }}
+          VERIFY_PATH: ${{ inputs.verify_path || '/' }}
+          EXPECTED_MARKER: ${{ inputs.expected_marker }}
+          ACTOR: ${{ github.actor }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          [[ "$VERIFY_PATH" =~ ^/[A-Za-z0-9_/-]*$ ]] || exit 1
+          [[ "$EXPECTED_MARKER" =~ ^[A-Za-z0-9_-]{0,100}$ ]] || exit 1
+          if [ "$EVENT_NAME" = workflow_dispatch ]; then
+            [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
+            test "$CONFIRMATION" = "DEPLOY $EXPECTED_SHA"
+            test -z "$APPROVED_DRAFT_ID"
+            test "$ACTOR" = "$REPOSITORY_OWNER"
+          elif [ "$EVENT_NAME" = workflow_call ]; then
+            test "$CALLER_WORKFLOW_REF" = "$EXPECTED_CALLER_WORKFLOW_REF"
+            [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
+            if [ -n "$APPROVED_DRAFT_ID" ]; then
+              [[ "$APPROVED_DRAFT_ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)$ ]] || exit 1
+            fi
+          else
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/heads/main
+          fetch-depth: 0
+      - id: meta
+        name: Verify checked-out main deployment SHA
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+        run: |
+          SHA=$(git rev-parse HEAD)
+          [[ "$SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
+          if [ -n "$EXPECTED_SHA" ] && [ "$SHA" != "$EXPECTED_SHA" ]; then
+            echo 'Manual deployments may only deploy current main; checked-out SHA does not match expected_sha.' >&2
+            exit 1
+          fi
+          echo "deployed_sha=$SHA" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build static site
-        run: npm run build
-
-      - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy out --project-name=art-buk --branch=main --commit-dirty=true
+          cache: npm
+      - run: npm ci
+      - name: Block accidental deployment of unverified approved drafts
+        env:
+          APPROVED_DRAFT_ID: ${{ inputs.approved_draft_id }}
+        run: node scripts/assert-deployable-drafts.mjs --allow-approved="$APPROVED_DRAFT_ID"
+      - name: Test and build exact commit
+        env:
+          DEPLOYED_SHA: ${{ steps.meta.outputs.deployed_sha }}
+        run: |
+          npm test
+          npx eslint src/hooks/useHydrated.ts src/utils/date-labels.ts src/utils/drafts.ts src/components/DailyPostHighlightSection.tsx src/components/ExhibitionSimpleCard.tsx src/components/MarketInfoCard.tsx src/components/MarketSection.tsx src/components/AiTripPlanner.tsx src/app/markets/page.tsx
+          npm run build
+          test ! -e out/data/content-drafts.json
+          printf '%s\n' "$DEPLOYED_SHA" > out/deployment-marker.txt
+      - id: release
+        name: Verify immutable Preview, switch Production, and verify custom domain
+        shell: bash
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          DEPLOYED_SHA: ${{ steps.meta.outputs.deployed_sha }}
+          VERIFY_PATH: ${{ inputs.verify_path || '/' }}
+          EXPECTED_MARKER: ${{ inputs.expected_marker }}
+        run: |
+          set -Eeuo pipefail
+          verify_content() {
+            local base="$1" file="$2" url="${1}${VERIFY_PATH}"
+            for attempt in 1 2 3 4 5 6 7 8 9 10 11 12; do
+              code=$(curl -sS -L -o "$file" -w '%{http_code}' "$url" || true)
+              if [ "$code" = 200 ] && { [ -z "$EXPECTED_MARKER" ] || grep -Fq "$EXPECTED_MARKER" "$file"; }; then return 0; fi
+              sleep 10
+            done
+            echo "Content verification failed for $url" >&2
+            return 1
+          }
+          verify_deployment_marker() {
+            local base="$1" expected="$2" file="$RUNNER_TEMP/deployment-marker.txt"
+            for attempt in 1 2 3 4 5 6 7 8 9 10 11 12; do
+              code=$(curl -sS -L -o "$file" -w '%{http_code}' "${base}/deployment-marker.txt" || true)
+              actual=$(tr -d '\r\n' < "$file" 2>/dev/null || true)
+              if [ "$code" = 200 ] && [ "$actual" = "$expected" ]; then return 0; fi
+              sleep 10
+            done
+            echo "Deployment marker verification failed for $base" >&2
+            return 1
+          }
+          verify_rollback_home() {
+            local expected_file="$1" actual_file="$RUNNER_TEMP/rollback-home.html"
+            local expected_hash actual_hash code
+            expected_hash=$(sha256sum "$expected_file" | cut -d' ' -f1)
+            for attempt in 1 2 3 4 5 6 7 8 9 10 11 12; do
+              code=$(curl -sS -L -o "$actual_file" -w '%{http_code}' 'https://nadriai.com/' || true)
+              actual_hash=$(sha256sum "$actual_file" 2>/dev/null | cut -d' ' -f1 || true)
+              if [ "$code" = 200 ] && [ "$actual_hash" = "$expected_hash" ]; then return 0; fi
+              sleep 10
+            done
+            echo 'Rollback custom-domain content did not match the prior immutable deployment.' >&2
+            return 1
+          }
+          verify_private() {
+            local base="$1" code method private_path
+            local -a curl_args
+            for private_path in /data/content-drafts.json /api/admin/drafts; do
+              for method in GET POST; do
+                curl_args=(-sS -L -o /dev/null -w '%{http_code}' --request "$method")
+                if [ "$method" = POST ]; then
+                  curl_args+=(--header 'Content-Type: application/json' --data '{"invalid":true}')
+                fi
+                if ! code=$(curl "${curl_args[@]}" "${base}${private_path}"); then
+                  echo "Private draft probe failed: $method $private_path" >&2
+                  return 1
+                fi
+                if [[ ! "$code" =~ ^(404|405|410)$ ]]; then
+                  echo "Private draft endpoint did not return 404/405/410 ($code): $method $private_path" >&2
+                  return 1
+                fi
+              done
+            done
+          }
 
+          npx wrangler pages deployment list --project-name=art-buk --environment production --json > "$RUNNER_TEMP/prior.json"
+          GITHUB_OUTPUT="$RUNNER_TEMP/prior.env" node scripts/verify-cloudflare-deployment.mjs \
+            --file="$RUNNER_TEMP/prior.json" --environment=production --prefix=prior --latest
+          . "$RUNNER_TEMP/prior.env"
+          echo "prior_deployment_id=$prior_deployment_id" >> "$GITHUB_OUTPUT"
+
+          curl --fail-with-body -sS -L "$prior_deployment_url/" -o "$RUNNER_TEMP/prior-home.html"
+          prior_has_marker=0
+          prior_marker_code=$(curl -sS -L -o "$RUNNER_TEMP/prior-marker.txt" -w '%{http_code}' "$prior_deployment_url/deployment-marker.txt" || true)
+          if [ "$prior_marker_code" = 200 ] && [ "$(tr -d '\015\012' < "$RUNNER_TEMP/prior-marker.txt")" = "$prior_deployed_sha" ]; then
+            prior_has_marker=1
+          fi
+
+          npx wrangler pages deploy out --project-name=art-buk --branch="release-$DEPLOYED_SHA" --commit-hash="$DEPLOYED_SHA" --commit-dirty=false
+          npx wrangler pages deployment list --project-name=art-buk --environment preview --json > "$RUNNER_TEMP/preview.json"
+          GITHUB_OUTPUT="$RUNNER_TEMP/preview.env" node scripts/verify-cloudflare-deployment.mjs \
+            --file="$RUNNER_TEMP/preview.json" --environment=preview --sha="$DEPLOYED_SHA" --prefix=preview
+          . "$RUNNER_TEMP/preview.env"
+          verify_content "$preview_deployment_url" "$RUNNER_TEMP/preview-response.html"
+          verify_deployment_marker "$preview_deployment_url" "$DEPLOYED_SHA"
+          verify_private "$preview_deployment_url"
+          cat "$RUNNER_TEMP/preview.env" >> "$GITHUB_OUTPUT"
+
+          switched=0
+          rollback() {
+            status=$?
+            trap - ERR
+            if [ "$switched" = 1 ]; then
+              curl --fail-with-body -sS \
+                "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments/$prior_deployment_id/rollback" \
+                -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" > "$RUNNER_TEMP/rollback.json"
+              node -e 'const r=require(process.argv[1]); if(r.success!==true) process.exit(1)' "$RUNNER_TEMP/rollback.json"
+              if [ "$prior_has_marker" = 1 ]; then
+                verify_deployment_marker 'https://nadriai.com' "$prior_deployed_sha"
+              else
+                verify_rollback_home "$RUNNER_TEMP/prior-home.html"
+              fi
+              verify_private 'https://nadriai.com'
+              echo "Rolled Production back to $prior_deployment_id" >&2
+            fi
+            exit "$status"
+          }
+          trap rollback ERR
+          switched=1
+          npx wrangler pages deploy out --project-name=art-buk --branch=main --commit-hash="$DEPLOYED_SHA" --commit-dirty=false
+          npx wrangler pages deployment list --project-name=art-buk --environment production --json > "$RUNNER_TEMP/production.json"
+          GITHUB_OUTPUT="$RUNNER_TEMP/production.env" node scripts/verify-cloudflare-deployment.mjs \
+            --file="$RUNNER_TEMP/production.json" --environment=production --sha="$DEPLOYED_SHA" --prefix=production
+          . "$RUNNER_TEMP/production.env"
+          verify_content 'https://nadriai.com' "$RUNNER_TEMP/production-response.html"
+          verify_deployment_marker 'https://nadriai.com' "$DEPLOYED_SHA"
+          verify_private 'https://nadriai.com'
+          trap - ERR
+          cat "$RUNNER_TEMP/production.env" >> "$GITHUB_OUTPUT"
+          echo "verified_at=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"

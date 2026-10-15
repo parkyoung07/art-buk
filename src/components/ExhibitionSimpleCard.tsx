@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Exhibition } from "@/types/art";
 import { calculateDDay } from "@/utils/date";
 import { PostData } from "@/lib/posts";
+import { useHydrated } from "@/hooks/useHydrated";
 
 interface ExhibitionSimpleCardProps {
   exhibition: Exhibition;
@@ -10,6 +11,7 @@ interface ExhibitionSimpleCardProps {
 }
 
 export default function ExhibitionSimpleCard({ exhibition, post }: ExhibitionSimpleCardProps) {
+  const hydrated = useHydrated();
   const dDayInfo = calculateDDay(exhibition.endDate || exhibition.period, exhibition.startDate);
 
   // AI 한 줄 추천 텍스트 추출/정제 (연동된 블로그 글이 있으면 블로그 요약 우선 반영하여 변화감 극대화)
@@ -70,7 +72,9 @@ export default function ExhibitionSimpleCard({ exhibition, post }: ExhibitionSim
         <div className="absolute top-2.5 right-2.5 z-10">
           <span
             className={`px-2 py-0.5 rounded-lg text-[11px] font-bold shadow-xs backdrop-blur-md ${
-              dDayInfo.badgeType === "urgent"
+              !hydrated
+                ? "bg-slate-600 text-white"
+                : dDayInfo.badgeType === "urgent"
                 ? "bg-rose-600 text-white animate-pulse"
                 : dDayInfo.badgeType === "soon"
                 ? "bg-amber-600 text-white"
@@ -81,13 +85,17 @@ export default function ExhibitionSimpleCard({ exhibition, post }: ExhibitionSim
                 : "bg-indigo-600 text-white"
             }`}
           >
-            {dDayInfo.badgeText}
+            {hydrated ? dDayInfo.badgeText : "일정 확인 중"}
           </span>
         </div>
 
         {/* 오늘 관람 가능 태그 */}
         <div className="absolute bottom-2 left-2.5 z-10">
-          {dDayInfo.isOpenToday ? (
+          {!hydrated ? (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-slate-900/80 text-slate-200 text-[10.5px] font-medium">
+              일정 확인 중
+            </span>
+          ) : dDayInfo.isOpenToday ? (
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-white/95 backdrop-blur-md text-slate-800 text-[10.5px] font-bold shadow-2xs">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
               오늘 관람 가능

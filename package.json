@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/verify-image-vision.mjs && node scripts/build-search-index.js && node scripts/build-rss.js && next build",
+    "build": "node scripts/verify-image-vision.mjs && node scripts/build-search-index.js && node scripts/build-rss.js && next build && node scripts/sanitize-static-output.mjs",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/operations-pipeline.test.mjs tests/date-ui-contract.test.mjs",
     "build:search": "node scripts/build-search-index.js",
     "build:rss": "node scripts/build-rss.js",
     "start": "next start",

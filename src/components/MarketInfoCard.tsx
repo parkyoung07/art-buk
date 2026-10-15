@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { TraditionalMarket } from '@/data/markets';
 import { getMarketStatus, getMarketMapUrl } from '@/utils/market';
+import { useHydrated } from '@/hooks/useHydrated';
 
 interface MarketInfoCardProps {
   market: TraditionalMarket;
@@ -10,6 +11,7 @@ interface MarketInfoCardProps {
 }
 
 export default function MarketInfoCard({ market, compact = false }: MarketInfoCardProps) {
+  const hydrated = useHydrated();
   const [copied, setCopied] = useState(false);
   const status = getMarketStatus(market);
   const naverMapUrl = getMarketMapUrl(market);
@@ -24,6 +26,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
   };
 
   const getBadgeStyle = () => {
+    if (!hydrated) return 'bg-slate-100 text-slate-600 border border-slate-200';
     switch (status.badgeType) {
       case 'today':
         return 'bg-gradient-to-r from-rose-500 to-red-600 text-white shadow-sm shadow-rose-500/30 animate-pulse';
@@ -72,7 +75,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
               {getMarketTypeBadge()}
             </div>
             <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full shrink-0 ${getBadgeStyle()}`}>
-              {status.badgeText}
+              {hydrated ? status.badgeText : '장날 확인 중'}
             </span>
           </div>
 
@@ -131,7 +134,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
         </div>
 
         <span className={`text-xs font-extrabold px-3 py-1 rounded-full ${getBadgeStyle()}`}>
-          {status.badgeText}
+          {hydrated ? status.badgeText : '장날 확인 중'}
         </span>
       </div>
 
@@ -139,7 +142,7 @@ export default function MarketInfoCard({ market, compact = false }: MarketInfoCa
       <div className="mb-4">
         <h3 className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2 flex items-center gap-2">
           <span>{market.name}</span>
-          {status.isToday && (
+          {hydrated && status.isToday && (
             <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-rose-100 text-rose-700 border border-rose-200">
               오늘 활기 가득!
             </span>
