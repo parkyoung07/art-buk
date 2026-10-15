@@ -3,6 +3,8 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { PostData } from "@/lib/posts";
+import { useHydrated } from "@/hooks/useHydrated";
+import { formatAbsoluteDateLabel, formatPostDateLabel } from "@/utils/date-labels";
 
 interface DailyPostHighlightSectionProps {
   posts: PostData[];
@@ -10,6 +12,11 @@ interface DailyPostHighlightSectionProps {
 
 export default function DailyPostHighlightSection({ posts }: DailyPostHighlightSectionProps) {
   if (!posts || posts.length === 0) return null;
+  return <DailyPostHighlightContent posts={posts} />;
+}
+
+function DailyPostHighlightContent({ posts }: DailyPostHighlightSectionProps) {
+  const hydrated = useHydrated();
 
   // 유니크 날짜 목록 추출 (최신순 4개 날짜)
   const availableDates = useMemo(() => {
@@ -53,9 +60,8 @@ export default function DailyPostHighlightSection({ posts }: DailyPostHighlightS
 
         {/* 날짜 선택 탭 */}
         <div className="flex items-center gap-1 p-1 bg-slate-100 rounded-xl border border-slate-200/60 shrink-0 self-start sm:self-auto">
-          {availableDates.map((d, idx) => {
-            const isLatest = idx === 0;
-            const label = isLatest ? `오늘` : idx === 1 ? `어제` : d.slice(5);
+          {availableDates.map((d) => {
+            const label = hydrated ? formatPostDateLabel(d) : formatAbsoluteDateLabel(d);
             return (
               <button
                 key={d}

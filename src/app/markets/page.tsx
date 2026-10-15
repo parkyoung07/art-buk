@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 import MarketInfoCard from "@/components/MarketInfoCard";
 import { TRADITIONAL_MARKETS } from "@/data/markets";
 import { getMarketStatus } from "@/utils/market";
+import { useHydrated } from "@/hooks/useHydrated";
 
 export default function MarketsPage() {
+  const hydrated = useHydrated();
   const [selectedFilter, setSelectedFilter] = useState<
     "오늘장날" | "정기5일장" | "상설시장" | "전체" | "부산" | "울산" | "경남"
   >("오늘장날");
@@ -24,6 +26,10 @@ export default function MarketsPage() {
   // 통계 계산 (100% 동적 계산)
   const todayCount = useMemo(
     () => marketsWithStatus.filter((item) => item.status.badgeType === "today").length,
+    [marketsWithStatus]
+  );
+  const todayAndTomorrowCount = useMemo(
+    () => marketsWithStatus.filter((item) => item.status.badgeType === "today" || item.status.badgeType === "tomorrow").length,
     [marketsWithStatus]
   );
   const fiveDayCount = useMemo(
@@ -76,6 +82,10 @@ export default function MarketsPage() {
     });
   }, [marketsWithStatus, selectedFilter, searchQuery]);
 
+  if (!hydrated) {
+    return <div className="min-h-screen flex flex-col bg-slate-50"><Header /><main className="flex-1 py-16 text-center text-slate-500">장날 확인 중</main><Footer /></div>;
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
       <Header />
@@ -117,7 +127,7 @@ export default function MarketsPage() {
                     : "text-slate-600 hover:text-slate-900 hover:bg-white"
                 }`}
               >
-                🔥 오늘·내일 장날 ({todayCount})
+                🔥 오늘·내일 장날 ({todayAndTomorrowCount})
               </button>
               <button
                 type="button"
@@ -187,7 +197,7 @@ export default function MarketsPage() {
               <button
                 key={reg.id}
                 type="button"
-                onClick={() => setSelectedFilter(reg.id as any)}
+                onClick={() => setSelectedFilter(reg.id as "부산" | "울산" | "경남")}
                 className={`px-3 py-1 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   selectedFilter === reg.id
                     ? "bg-indigo-600 text-white shadow-xs"

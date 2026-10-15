@@ -8,6 +8,7 @@ import { Exhibition } from "@/types/art";
 import { TraditionalMarket } from "@/data/markets";
 import { LibraryItem } from "@/data/libraries";
 import CustomCalendarModal from "@/components/CustomCalendarModal";
+import { useHydrated } from "@/hooks/useHydrated";
 import {
   getKoreanToday,
   getUpcomingWeekendDates,
@@ -40,7 +41,15 @@ interface TimelineStep {
   link?: string;
 }
 
-export default function AiTripPlanner({ initialCompact = false }: { initialCompact?: boolean }) {
+export default function AiTripPlanner(props: { initialCompact?: boolean }) {
+  const hydrated = useHydrated();
+  if (!hydrated) {
+    return <section className="rounded-3xl border border-slate-200 bg-white p-8 text-center text-sm text-slate-500">날짜 확인 중</section>;
+  }
+  return <AiTripPlannerReady {...props} />;
+}
+
+function AiTripPlannerReady({ initialCompact = false }: { initialCompact?: boolean }) {
   const today = getKoreanToday();
   const weekends = getUpcomingWeekendDates(today);
 

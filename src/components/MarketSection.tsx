@@ -5,12 +5,14 @@ import Link from 'next/link';
 import { TRADITIONAL_MARKETS } from '@/data/markets';
 import { getMarketStatus } from '@/utils/market';
 import MarketInfoCard from '@/components/MarketInfoCard';
+import { useHydrated } from '@/hooks/useHydrated';
 
 interface MarketSectionProps {
   maxItems?: number;
 }
 
 export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
+  const hydrated = useHydrated();
   const [selectedFilter, setSelectedFilter] = useState<'오늘장날' | '정기5일장' | '상설시장' | '전체' | '부산' | '울산' | '경남'>('오늘장날');
 
   // 시장별 상태 계산 및 필터링
@@ -37,8 +39,8 @@ export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
     return marketsWithStatus.filter(item => item.market.region === selectedFilter);
   }, [marketsWithStatus, selectedFilter]);
 
-  const todayCount = useMemo(() => {
-    return marketsWithStatus.filter(item => item.status.badgeType === 'today').length;
+  const todayAndTomorrowCount = useMemo(() => {
+    return marketsWithStatus.filter(item => item.status.badgeType === 'today' || item.status.badgeType === 'tomorrow').length;
   }, [marketsWithStatus]);
 
   const fiveDayCount = useMemo(() => {
@@ -55,6 +57,10 @@ export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
 
   const displayMarkets = maxItems ? filteredMarkets.slice(0, maxItems) : filteredMarkets;
 
+  if (!hydrated) {
+    return <section id="market-section" className="py-12 text-center text-sm text-slate-500">장날 확인 중</section>;
+  }
+
   return (
     <section id="market-section" className="py-12 sm:py-16 bg-gradient-to-b from-amber-50/40 via-orange-50/20 to-transparent border-t border-b border-amber-100/70 relative overflow-hidden scroll-mt-16 rounded-3xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -64,9 +70,9 @@ export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 font-bold text-xs mb-3 border border-amber-200">
               <span>🧺</span>
               <span>미술관 옆 로컬 미식 탐방</span>
-              {todayCount > 0 && (
+              {todayAndTomorrowCount > 0 && (
                 <span className="px-1.5 py-0.2 rounded-md bg-rose-500 text-white font-extrabold text-[10px] animate-pulse">
-                  오늘 {todayCount}곳 장날!
+                  오늘·내일 {todayAndTomorrowCount}곳 장날!
                 </span>
               )}
             </div>
@@ -88,7 +94,7 @@ export default function MarketSection({ maxItems = 6 }: MarketSectionProps) {
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
               }`}
             >
-              🔥 오늘 열린 장 ({todayCount})
+              🔥 오늘·내일 장날 ({todayAndTomorrowCount})
             </button>
             <button
               onClick={() => setSelectedFilter('정기5일장')}
