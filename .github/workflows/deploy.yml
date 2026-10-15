@@ -169,19 +169,6 @@ jobs:
             echo "Deployment marker verification failed for $base" >&2
             return 1
           }
-          verify_rollback_home() {
-            local expected_file="$1" actual_file="$RUNNER_TEMP/rollback-home.html"
-            local expected_hash actual_hash code
-            expected_hash=$(sha256sum "$expected_file" | cut -d' ' -f1)
-            for attempt in 1 2 3 4 5 6 7 8 9 10 11 12; do
-              code=$(curl -sS -L -o "$actual_file" -w '%{http_code}' 'https://nadriai.com/' || true)
-              actual_hash=$(sha256sum "$actual_file" 2>/dev/null | cut -d' ' -f1 || true)
-              if [ "$code" = 200 ] && [ "$actual_hash" = "$expected_hash" ]; then return 0; fi
-              sleep 10
-            done
-            echo 'Rollback custom-domain content did not match the prior immutable deployment.' >&2
-            return 1
-          }
           verify_private() {
             local base="$1" code method private_path
             local -a curl_args
@@ -202,6 +189,26 @@ jobs:
               done
             done
           }
+          verify_custom_domain_convergence() {
+            local expected_sha="$1" marker_file="$RUNNER_TEMP/custom-domain-marker.txt"
+            local attempt marker_code marker_value get_api_code post_api_code get_static_code
+            for attempt in 1 2 3 4 5 6 7 8 9 10 11 12; do
+              marker_code=$(curl -sS -L -o "$marker_file" -w '%{http_code}' 'https://nadriai.com/deployment-marker.txt' || true)
+              marker_value=$(tr -d '\015\012' < "$marker_file" 2>/dev/null || true)
+              get_api_code=$(curl -sS -L -o /dev/null -w '%{http_code}' --request GET 'https://nadriai.com/api/admin/drafts' || true)
+              post_api_code=$(curl -sS -L -o /dev/null -w '%{http_code}' --request POST --header 'Content-Type: application/json' --data '{"invalid":true}' 'https://nadriai.com/api/admin/drafts' || true)
+              get_static_code=$(curl -sS -L -o /dev/null -w '%{http_code}' --request GET 'https://nadriai.com/data/content-drafts.json' || true)
+              if [ "$marker_code" = 200 ] && [ "$marker_value" = "$expected_sha" ] \
+                && [[ "$get_api_code" =~ ^(403|404|410)$ ]] \
+                && [[ "$post_api_code" =~ ^(403|404|405|410)$ ]] \
+                && [[ "$get_static_code" =~ ^(403|404|410)$ ]]; then
+                return 0
+              fi
+              if [ "$attempt" -lt 12 ]; then sleep 5; fi
+            done
+            echo "Custom domain did not converge to deployment $expected_sha with closed draft endpoints after 12 attempts." >&2
+            return 1
+          }
 
           curl --fail-with-body -sS \
             "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments?env=production" \
@@ -210,16 +217,18 @@ jobs:
           GITHUB_OUTPUT="$RUNNER_TEMP/prior.env" node scripts/verify-cloudflare-deployment.mjs \
             --file="$RUNNER_TEMP/prior.json" --environment=production --prefix=prior --latest --allow-empty
           . "$RUNNER_TEMP/prior.env"
-          echo "prior_deployment_id=${prior_deployment_id:-}" >> "$GITHUB_OUTPUT"
 
-          prior_has_marker=0
+          rollback_available=0
           if [ "$bootstrap_mode" = false ]; then
-            curl --fail-with-body -sS -L "$prior_deployment_url/" -o "$RUNNER_TEMP/prior-home.html"
-            prior_marker_code=$(curl -sS -L -o "$RUNNER_TEMP/prior-marker.txt" -w '%{http_code}' "$prior_deployment_url/deployment-marker.txt" || true)
-            if [ "$prior_marker_code" = 200 ] && [ "$(tr -d '\015\012' < "$RUNNER_TEMP/prior-marker.txt")" = "$prior_deployed_sha" ]; then
-              prior_has_marker=1
+            if verify_private "$prior_deployment_url"; then
+              rollback_available=1
+              echo "prior_deployment_id=$prior_deployment_id" >> "$GITHUB_OUTPUT"
+            else
+              echo "Prior Production deployment $prior_deployment_id failed the privacy gate and is excluded from rollback." >&2
+              echo "prior_deployment_id=" >> "$GITHUB_OUTPUT"
             fi
           else
+            echo "prior_deployment_id=" >> "$GITHUB_OUTPUT"
             echo 'Bootstrap mode: no prior Production deployment is available for rollback.'
           fi
 
@@ -256,20 +265,26 @@ jobs:
           rollback() {
             status=$?
             trap - ERR
-            if [ "$switched" = 1 ] && [ "$bootstrap_mode" = false ]; then
+            if [ "$switched" = 1 ] && [ "$rollback_available" = 1 ]; then
               curl --fail-with-body -sS \
                 "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments/$prior_deployment_id/rollback" \
                 -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" > "$RUNNER_TEMP/rollback.json"
               node -e 'const r=require(process.argv[1]); if(r.success!==true) process.exit(1)' "$RUNNER_TEMP/rollback.json"
-              if [ "$prior_has_marker" = 1 ]; then
-                verify_deployment_marker 'https://nadriai.com' "$prior_deployed_sha"
-              else
-                verify_rollback_home "$RUNNER_TEMP/prior-home.html"
-              fi
-              verify_private 'https://nadriai.com'
-              echo "Rolled Production back to $prior_deployment_id" >&2
+              curl --fail-with-body -sS \
+                "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments?env=production" \
+                -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+                -o "$RUNNER_TEMP/rollback-production.json"
+              rm -f "$RUNNER_TEMP/rollback-production.env"
+              GITHUB_OUTPUT="$RUNNER_TEMP/rollback-production.env" node scripts/verify-cloudflare-deployment.mjs \
+                --file="$RUNNER_TEMP/rollback-production.json" --environment=production --sha="$prior_deployed_sha" --prefix=rollback
+              . "$RUNNER_TEMP/rollback-production.env"
+              [ "$rollback_deployment_id" = "$prior_deployment_id" ]
+              [ "$rollback_deployed_sha" = "$prior_deployed_sha" ]
+              verify_custom_domain_convergence "$prior_deployed_sha"
+              verify_deployment_marker 'https://nadriai.com' "$prior_deployed_sha"
+              echo "Rolled Production back to privacy-safe deployment $prior_deployment_id" >&2
             elif [ "$switched" = 1 ]; then
-              echo 'Bootstrap Production deployment failed; no prior deployment exists, so automatic rollback was skipped.' >&2
+              echo 'Production deployment failed; no privacy-safe prior deployment is available, so automatic rollback was skipped.' >&2
             fi
             exit "$status"
           }
@@ -284,8 +299,7 @@ jobs:
             --file="$RUNNER_TEMP/production.json" --environment=production --sha="$DEPLOYED_SHA" --prefix=production
           . "$RUNNER_TEMP/production.env"
           verify_content 'https://nadriai.com' "$RUNNER_TEMP/production-response.html"
-          verify_deployment_marker 'https://nadriai.com' "$DEPLOYED_SHA"
-          verify_private 'https://nadriai.com'
+          verify_custom_domain_convergence "$DEPLOYED_SHA"
           trap - ERR
           cat "$RUNNER_TEMP/production.env" >> "$GITHUB_OUTPUT"
           echo "verified_at=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
