@@ -75,6 +75,14 @@ export interface ContentDraft {
   reviewUrl: string;
   approvedAt?: string | null;
   publishedAt?: string | null;
+  approvalDigest?: string;
+  approvedBy?: string;
+  approvalRunId?: string;
+  verifiedAt?: string;
+  deployedSha?: string;
+  liveUrl?: string;
+  cloudflareDeploymentId?: string;
+  immutableDeploymentUrl?: string;
   rejectReason?: string | null;
   curatorNotes?: string;
 }

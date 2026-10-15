@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 const rootDir = process.cwd();
-const draftsPath = path.join(rootDir, "public/data/content-drafts.json");
+const draftsPath = path.join(rootDir, "data/private/content-drafts.json");
 const postsDir = path.join(rootDir, "src/content/posts");
 
 let drafts = [];

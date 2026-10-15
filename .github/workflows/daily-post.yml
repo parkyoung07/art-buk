@@ -1,100 +1,66 @@
-name: Daily AI Draft Generation & Review System
+name: Daily AI Draft Generation
 
 on:
   schedule:
-    # 1) [오전 09:00 KST 초안 작성] (UTC 00:00) - 오늘 바로 활용할 수 있는 정보
-    - cron: '0 0 * * *'
-    # 2) [오후 14:00 KST 초안 작성] (UTC 05:00) - 내일 또는 이번 주말 계획 추천 코스
-    - cron: '0 5 * * *'
+    - cron: '0 0 * * *' # 09:00 KST
+    - cron: '0 5 * * *' # 14:00 KST
   workflow_dispatch:
     inputs:
-      action:
-        description: '실행 작업 선택 (draft: 초안 생성, approve: 승인 및 배포)'
-        required: true
-        default: 'draft'
-        type: choice
-        options:
-          - draft
-          - approve
       slot:
-        description: '슬롯 선택 (am: 오전 9시, pm: 오후 2시, auto: 자동)'
-        required: false
-        default: 'auto'
-      draft_id:
-        description: '승인할 초안 ID (approve 작업 시 사용, 예: 2026-09-30-am)'
-        required: false
-        default: ''
-
+        description: 'am, pm, or auto'
+        required: true
+        default: auto
+        type: choice
+        options: [auto, am, pm]
   repository_dispatch:
-    types: [daily_draft_trigger, approve_post_trigger]
+    types: [daily_draft_trigger]
+
+concurrency:
+  group: production-release
+  cancel-in-progress: false
 
 jobs:
-  draft-or-publish:
+  generate-draft:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Git commit & push 권한 부여
-
+      contents: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
           fetch-depth: 0
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      # 1. 초안 생성 단계 (기본 스케줄 또는 action=draft)
-      - name: Generate Content Draft with Gemini & Verified Images
-        if: ${{ github.event.inputs.action != 'approve' && github.event.action != 'approve_post_trigger' }}
-        run: |
-          SLOT_ARG="${{ github.event.inputs.slot }}"
-          if [ -n "$SLOT_ARG" ] && [ "$SLOT_ARG" != "auto" ]; then
-            node scripts/generate-daily-draft.mjs --slot=$SLOT_ARG
-          else
-            node scripts/generate-daily-draft.mjs
-          fi
+          cache: npm
+      - run: npm ci
+      - name: Snapshot existing drafts and individual file hashes
+        run: node scripts/assert-daily-draft-scope.mjs --snapshot="$RUNNER_TEMP/drafts-before.json"
+      - name: Generate review_required draft only
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
-      # 2. 승인 및 배포 단계 (action=approve 또는 repository_dispatch)
-      - name: Approve and Publish Content if triggered
-        if: ${{ github.event.inputs.action == 'approve' || github.event.action == 'approve_post_trigger' }}
+          SLOT_RAW: ${{ inputs.slot || github.event.client_payload.slot || 'auto' }}
         run: |
-          DRAFT_ID="${{ github.event.inputs.draft_id }}"
-          if [ -n "$DRAFT_ID" ]; then
-            node scripts/approve-and-publish.mjs --id=$DRAFT_ID
+          SLOT="${SLOT_RAW:-auto}"
+          case "$SLOT" in auto|am|pm) ;; *) echo 'Invalid slot.' >&2; exit 1;; esac
+          if [ "$SLOT" = auto ]; then
+            node scripts/generate-daily-draft.mjs
           else
-            node scripts/approve-and-publish.mjs
+            node scripts/generate-daily-draft.mjs --slot="$SLOT"
           fi
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      # 3. 변경 사항 Commit & Push (초안 파일 또는 발행 글 저장)
-      - name: Commit and Push changes
+      - name: Enforce exactly one aggregate and matching individual draft change
+        run: node scripts/assert-daily-draft-scope.mjs --verify="$RUNNER_TEMP/drafts-before.json"
+      - name: Commit draft without triggering Production
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/content-drafts.json src/content/drafts/ src/content/posts/ public/search-index.json public/rss.xml
-          if git diff --staged --quiet; then
-            echo "ℹ️ 변경 사항이 없습니다."
-          else
-            git commit -m "🤖 Auto: Content Review & Draft Pipeline Update [$(date +'%Y-%m-%d %H:%M')]"
-            git pull --rebase origin main || true
-            git push origin main
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/private/content-drafts.json src/content/drafts/
+          if git diff --cached --quiet; then
+            echo 'No new draft to commit.'
+            exit 0
           fi
+          git commit -m "chore(drafts): generate review_required draft"
+          git push origin HEAD:main
