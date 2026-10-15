@@ -205,15 +205,19 @@ jobs:
 
           npx wrangler pages deployment list --project-name=art-buk --environment production --json > "$RUNNER_TEMP/prior.json"
           GITHUB_OUTPUT="$RUNNER_TEMP/prior.env" node scripts/verify-cloudflare-deployment.mjs \
-            --file="$RUNNER_TEMP/prior.json" --environment=production --prefix=prior --latest
+            --file="$RUNNER_TEMP/prior.json" --environment=production --prefix=prior --latest --allow-empty
           . "$RUNNER_TEMP/prior.env"
-          echo "prior_deployment_id=$prior_deployment_id" >> "$GITHUB_OUTPUT"
+          echo "prior_deployment_id=${prior_deployment_id:-}" >> "$GITHUB_OUTPUT"
 
-          curl --fail-with-body -sS -L "$prior_deployment_url/" -o "$RUNNER_TEMP/prior-home.html"
           prior_has_marker=0
-          prior_marker_code=$(curl -sS -L -o "$RUNNER_TEMP/prior-marker.txt" -w '%{http_code}' "$prior_deployment_url/deployment-marker.txt" || true)
-          if [ "$prior_marker_code" = 200 ] && [ "$(tr -d '\015\012' < "$RUNNER_TEMP/prior-marker.txt")" = "$prior_deployed_sha" ]; then
-            prior_has_marker=1
+          if [ "$bootstrap_mode" = false ]; then
+            curl --fail-with-body -sS -L "$prior_deployment_url/" -o "$RUNNER_TEMP/prior-home.html"
+            prior_marker_code=$(curl -sS -L -o "$RUNNER_TEMP/prior-marker.txt" -w '%{http_code}' "$prior_deployment_url/deployment-marker.txt" || true)
+            if [ "$prior_marker_code" = 200 ] && [ "$(tr -d '\015\012' < "$RUNNER_TEMP/prior-marker.txt")" = "$prior_deployed_sha" ]; then
+              prior_has_marker=1
+            fi
+          else
+            echo 'Bootstrap mode: no prior Production deployment is available for rollback.'
           fi
 
           npx wrangler pages deploy out --project-name=art-buk --branch="release-$DEPLOYED_SHA" --commit-hash="$DEPLOYED_SHA" --commit-dirty=false
@@ -230,7 +234,7 @@ jobs:
           rollback() {
             status=$?
             trap - ERR
-            if [ "$switched" = 1 ]; then
+            if [ "$switched" = 1 ] && [ "$bootstrap_mode" = false ]; then
               curl --fail-with-body -sS \
                 "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments/$prior_deployment_id/rollback" \
                 -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" > "$RUNNER_TEMP/rollback.json"
@@ -242,6 +246,8 @@ jobs:
               fi
               verify_private 'https://nadriai.com'
               echo "Rolled Production back to $prior_deployment_id" >&2
+            elif [ "$switched" = 1 ]; then
+              echo 'Bootstrap Production deployment failed; no prior deployment exists, so automatic rollback was skipped.' >&2
             fi
             exit "$status"
           }
