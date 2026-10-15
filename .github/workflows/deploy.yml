@@ -221,9 +221,24 @@ jobs:
           fi
 
           npx wrangler pages deploy out --project-name=art-buk --branch="release-$DEPLOYED_SHA" --commit-hash="$DEPLOYED_SHA" --commit-dirty=false
-          npx wrangler pages deployment list --project-name=art-buk --environment preview --json > "$RUNNER_TEMP/preview.json"
-          GITHUB_OUTPUT="$RUNNER_TEMP/preview.env" node scripts/verify-cloudflare-deployment.mjs \
-            --file="$RUNNER_TEMP/preview.json" --environment=preview --sha="$DEPLOYED_SHA" --prefix=preview
+          preview_verified=0
+          for preview_attempt in 1 2 3 4 5 6; do
+            rm -f "$RUNNER_TEMP/preview.env"
+            npx wrangler pages deployment list --project-name=art-buk --environment preview --json > "$RUNNER_TEMP/preview.json"
+            if GITHUB_OUTPUT="$RUNNER_TEMP/preview.env" node scripts/verify-cloudflare-deployment.mjs \
+              --file="$RUNNER_TEMP/preview.json" --environment=preview --sha="$DEPLOYED_SHA" --prefix=preview; then
+              preview_verified=1
+              break
+            fi
+            if [ "$preview_attempt" -lt 6 ]; then
+              echo "Preview deployment for $DEPLOYED_SHA is not visible yet (attempt $preview_attempt/6); retrying in 5 seconds."
+              sleep 5
+            fi
+          done
+          if [ "$preview_verified" != 1 ]; then
+            echo "No successful Preview deployment matched $DEPLOYED_SHA after 6 attempts." >&2
+            exit 1
+          fi
           . "$RUNNER_TEMP/preview.env"
           verify_content "$preview_deployment_url" "$RUNNER_TEMP/preview-response.html"
           verify_deployment_marker "$preview_deployment_url" "$DEPLOYED_SHA"
