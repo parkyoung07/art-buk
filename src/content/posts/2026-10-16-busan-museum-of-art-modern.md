@@ -11,14 +11,14 @@ tags:
   - 센텀시티
 region: 부산
 subRegion: 해운대구
-thumbnail: /images/placeholders/placeholder-art.svg
+thumbnail: /images/venues/busan-museum-of-art/cover-2026-reopening-exhibitions.jpg
 eventId: busan-museum-of-art-modern-event
 ---
 ## 1. 오늘 가볼 이유
 
 부산시립미술관은 약 2년간의 리노베이션을 마치고 2026년 9월 17일 다시 문을 열었습니다. 지금은 재개관 특별전 네 편과 이우환 공간 상설전시를 함께 확인할 수 있습니다. 2026년 10월 16일은 금요일로 정규 운영일에 해당하지만, 임시 휴관이나 현장 운영 변경이 있을 수 있으니 출발 전 공식 홈페이지 공지를 확인해 주세요.
 
-![대표사진 검수 대기](/images/placeholders/placeholder-art.svg)
+![부산시립미술관 현재 전시 대표 커버](/images/venues/busan-museum-of-art/cover-2026-reopening-exhibitions.jpg)
 
 ## 2. 현재 실제 전시
 

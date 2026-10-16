@@ -1,15 +1,15 @@
 {
   "version": "2.0.0",
-  "last_updated": "2026-10-06T01:47:16.907Z",
+  "last_updated": "2026-10-16T06:54:59Z",
   "description": "나드리 AI 주요 40개 명소 공식 인증 자산 레지스트리 (Entity ID Verified Assets)",
   "target_core_venues_count": 40,
   "stats": {
-    "total_images": 515,
-    "approved": 515,
+    "total_images": 517,
+    "approved": 517,
     "pending": 0,
     "rejected": 0,
     "by_type": {
-      "venue": 74,
+      "venue": 76,
       "library": 60,
       "market": 89,
       "nature": 150
@@ -12403,6 +12403,63 @@
       "approved": true,
       "is_cover": false,
       "notes": "[신규 2차 후보] 전혁림미술관 최신 실사"
+    },
+    {
+      "image_id": "img-busan-museum-of-art-cover-kto-01",
+      "venue_id": "busan-museum-of-art",
+      "venue_name": "부산시립미술관",
+      "entity_type": "venue",
+      "entity_id": "busan-museum-of-art",
+      "entity_name": "부산시립미술관",
+      "venue_aliases": [
+        "busan-museum-of-art-modern",
+        "busan-museum-of-art-grand-reopening"
+      ],
+      "role": "cover",
+      "is_cover": true,
+      "human_selected": true,
+      "human_verified": true,
+      "status": "approved",
+      "approved": true,
+      "usage_status": "사용선택",
+      "watermark_policy": "단일 출처 표기(좌측 하단 최소 크기)",
+      "template_id": "NADRI-COVER-01",
+      "template_name": "NADRI COVER 01 — 전시·미술관",
+      "image_url": "/images/venues/busan-museum-of-art/cover-2026-reopening-exhibitions.jpg",
+      "base_image_url": "/images/venues/busan-museum-of-art/cover-base-16x9.jpg",
+      "original_file_url": "/images/venues/busan-museum-of-art/source-kto-548704f8.jpg",
+      "original_image_url": "https://access.visitkorea.or.kr/bfvk_img/call?cmd=VIEW&id=548704f8-1331-4c30-8d5a-8946e0f728f3",
+      "source_name": "한국관광공사 열린관광 모두의 여행",
+      "source_page": "https://access.visitkorea.or.kr/ms/detail.do?cotId=91648cf1-4fad-4b10-b3b9-301bcd89e90f",
+      "photo_description": "부산시립미술관 본관과 야외 공간 전경",
+      "reuse_policy": "부산시립미술관 글의 기본 베이스로 재사용하고 전시 변경 시 전시명 텍스트만 새로 합성",
+      "notes": "사람이 대표사진으로 직접 선택. 원본 한국관광공사 워터마크 유지."
+    },
+    {
+      "image_id": "img-busan-museum-of-art-backup-commons-01",
+      "venue_id": "busan-museum-of-art",
+      "venue_name": "부산시립미술관",
+      "entity_type": "venue",
+      "entity_id": "busan-museum-of-art",
+      "entity_name": "부산시립미술관",
+      "venue_aliases": [
+        "busan-museum-of-art-modern",
+        "busan-museum-of-art-grand-reopening"
+      ],
+      "role": "secondary/backup",
+      "is_cover": false,
+      "human_selected": true,
+      "human_verified": true,
+      "status": "approved",
+      "approved": true,
+      "usage_status": "예비선택",
+      "watermark_policy": "해당 없음",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Autumn_leaves_outside_the_Busan_Museum_of_Art.jpg",
+      "source_name": "Wikimedia Commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Autumn_leaves_outside_the_Busan_Museum_of_Art.jpg",
+      "license": "CC BY-SA 4.0",
+      "photo_description": "가을 단풍과 부산시립미술관 외부 보행 공간",
+      "notes": "대표사진 사용이 어려울 때 사용할 secondary/backup."
     }
   ]
 }
