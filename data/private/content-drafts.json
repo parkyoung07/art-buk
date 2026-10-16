@@ -6,8 +6,8 @@
     "date": "2026-10-16",
     "targetDate": "2026-10-16",
     "createdAt": "2026-10-16T10:21:47.492Z",
-    "updatedAt": "2026-10-16T11:00:54+09:00",
-    "status": "review_required",
+    "updatedAt": "2026-10-16T03:14:21.568Z",
+    "status": "approved",
     "slug": "busan-museum-of-art-modern",
     "title": "다시 문 연 부산시립미술관, 2026년 가을 현재 전시와 관람정보",
     "summary": "2026년 9월 17일 재개관한 부산시립미술관의 현재 전시와 공식 관람정보를 정리했습니다.",
@@ -130,10 +130,13 @@
     "expectedUrl": "https://nadriai.com/blog/2026-10-16-busan-museum-of-art-modern/",
     "previewUrl": "https://nadriai.com/admin/content-review/?draftId=2026-10-16-am",
     "reviewUrl": "https://nadriai.com/admin/content-review/",
-    "approvedAt": null,
+    "approvedAt": "2026-10-16T03:14:21.568Z",
     "publishedAt": null,
     "rejectReason": null,
-    "curatorNotes": "2026-10-16 게시 전 최종 교정 완료. 제목 확정. 입장마감은 당일 공식 관람안내 확인으로 표시. 대표사진은 placeholder 유지, 공식 배너 3건은 저작권·상업적 이용 가능 여부 미확정으로 pending_review 유지."
+    "curatorNotes": "2026-10-16 게시 전 최종 교정 완료. 제목 확정. 입장마감은 당일 공식 관람안내 확인으로 표시. 대표사진은 placeholder 유지, 공식 배너 3건은 저작권·상업적 이용 가능 여부 미확정으로 pending_review 유지.",
+    "approvalDigest": "a1a0aa9a48ed1537045b599690aa6673fb4991cbfd1397946764ac77edc05de8",
+    "approvedBy": "parkyoung07",
+    "approvalRunId": "38843668848"
   },
   {
     "id": "2026-10-15-am",
