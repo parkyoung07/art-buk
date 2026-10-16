@@ -66,6 +66,35 @@
           "alt": "통영옻칠미술관 본관 및 해안 전시관 현장 실사",
           "theme": "architecture"
         }
+      ],
+      "busan-museum-of-art": [
+        {
+          "url": "/images/venues/busan-museum-of-art/cover-2026-reopening-exhibitions.jpg",
+          "base_url": "/images/venues/busan-museum-of-art/cover-base-16x9.jpg",
+          "original_url": "/images/venues/busan-museum-of-art/source-kto-548704f8.jpg",
+          "alt": "부산시립미술관 본관 전경과 2026년 대표 전시",
+          "theme": "architecture",
+          "role": "cover",
+          "human_selected": true,
+          "source_name": "한국관광공사 열린관광 모두의 여행",
+          "source_page": "https://access.visitkorea.or.kr/ms/detail.do?cotId=91648cf1-4fad-4b10-b3b9-301bcd89e90f",
+          "usage_status": "사용선택",
+          "watermark_policy": "단일 출처 표기(좌측 하단 최소 크기)",
+          "template_id": "NADRI-COVER-01",
+          "template_name": "NADRI COVER 01 — 전시·미술관",
+          "reuse_policy": "장소사진과 레이아웃은 유지하고 전시 변경 시 전시명 텍스트만 새로 합성"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Autumn_leaves_outside_the_Busan_Museum_of_Art.jpg",
+          "alt": "가을 단풍과 부산시립미술관 외부 보행 공간",
+          "theme": "architecture",
+          "role": "secondary/backup",
+          "human_selected": true,
+          "source_name": "Wikimedia Commons",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Autumn_leaves_outside_the_Busan_Museum_of_Art.jpg",
+          "usage_status": "예비선택",
+          "license": "CC BY-SA 4.0"
+        }
       ]
     },
     "libraries": {
