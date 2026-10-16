@@ -117,13 +117,20 @@ test('workflow expressions are never interpolated directly into shell commands',
   }
 });
 
-test('daily workflow only creates review-required drafts', () => {
+test('daily workflow creates and auto-merges only isolated review-required draft PRs', () => {
   const workflow = read('.github/workflows/daily-post.yml');
   assert.doesNotMatch(workflow, /approve_post_trigger|approve-and-publish|Cloudflare|CLOUDFLARE/);
+  assert.doesNotMatch(workflow, /git push origin HEAD:main/);
   assert.match(workflow, /generate-daily-draft\.mjs/);
   assert.match(workflow, /review_required/);
   assert.match(workflow, /assert-daily-draft-scope\.mjs --snapshot/);
   assert.match(workflow, /assert-daily-draft-scope\.mjs --verify/);
+  assert.match(workflow, /pull-requests:\s*write/);
+  assert.match(workflow, /DRAFT_BRANCH="draft\/\$DRAFT_ID"/);
+  assert.match(workflow, /git push --set-upstream origin "HEAD:\$DRAFT_BRANCH"/);
+  assert.match(workflow, /gh pr create --base main/);
+  assert.match(workflow, /gh pr merge "\$PR_URL" --squash --delete-branch/);
+  assert.match(workflow, /repository_dispatch:[\s\S]*daily_draft_trigger/);
   assert.match(workflow, /--untracked-files=all|assert-daily-draft-scope/);
 });
 
@@ -237,7 +244,7 @@ test('deployment verifies Preview then Production and can roll back post-switch 
   assert.match(approval, /recover-production:[\s\S]*needs\.deploy-approved\.outputs\.prior_deployment_id[\s\S]*\/rollback/);
   assert.match(approval, /CURRENT_MAIN_SHA[\s\S]*CANDIDATE_SHA[\s\S]*skipping rollback/);
   assert.doesNotMatch(approval, /deploy-final-state:/);
-  assert.match(daily, /concurrency:[\s\S]*group:\s*production-release/);
+  assert.match(daily, /concurrency:[\s\S]*group:\s*daily-draft-generation/);
   assert.match(workflow, /deployment_id:/);
   assert.match(workflow, /deployment_url:/);
   assert.ok(workflow.lastIndexOf('verified_at=') > workflow.indexOf('Verify custom domain'));
