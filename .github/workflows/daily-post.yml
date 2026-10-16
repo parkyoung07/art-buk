@@ -2,8 +2,8 @@ name: Daily AI Draft Generation
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 09:00 KST
-    - cron: '0 5 * * *' # 14:00 KST
+    - cron: '17 0 * * *' # 09:17 KST
+    - cron: '17 5 * * *' # 14:17 KST
   workflow_dispatch:
     inputs:
       slot:
