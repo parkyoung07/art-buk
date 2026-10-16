@@ -16,7 +16,7 @@ on:
     types: [daily_draft_trigger]
 
 concurrency:
-  group: production-release
+  group: daily-draft-generation
   cancel-in-progress: false
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,33 +35,79 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Snapshot existing drafts and individual file hashes
-        run: node scripts/assert-daily-draft-scope.mjs --snapshot="$RUNNER_TEMP/drafts-before.json"
-      - name: Generate review_required draft only
+      - name: Resolve draft identity and reject duplicates
+        id: target
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           SLOT_RAW: ${{ inputs.slot || github.event.client_payload.slot || 'auto' }}
         run: |
           SLOT="${SLOT_RAW:-auto}"
           case "$SLOT" in auto|am|pm) ;; *) echo 'Invalid slot.' >&2; exit 1;; esac
           if [ "$SLOT" = auto ]; then
-            node scripts/generate-daily-draft.mjs
-          else
-            node scripts/generate-daily-draft.mjs --slot="$SLOT"
+            KST_HOUR="$(TZ=Asia/Seoul date +%H)"
+            if [ "$((10#$KST_HOUR))" -ge 14 ]; then SLOT=pm; else SLOT=am; fi
           fi
-      - name: Enforce exactly one aggregate and matching individual draft change
-        run: node scripts/assert-daily-draft-scope.mjs --verify="$RUNNER_TEMP/drafts-before.json"
-      - name: Commit draft without triggering Production
+          DRAFT_ID="$(TZ=Asia/Seoul date +%F)-$SLOT"
+          DRAFT_BRANCH="draft/$DRAFT_ID"
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "draft_id=$DRAFT_ID" >> "$GITHUB_OUTPUT"
+          echo "draft_branch=$DRAFT_BRANCH" >> "$GITHUB_OUTPUT"
+          if DRAFT_ID="$DRAFT_ID" node -e "const fs=require('fs'); const drafts=JSON.parse(fs.readFileSync('data/private/content-drafts.json','utf8')); process.exit(drafts.some((draft)=>draft.id===process.env.DRAFT_ID)?0:1)"; then
+            echo "Draft $DRAFT_ID already exists on main; nothing to do."
+            echo 'skip=true' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git ls-remote --exit-code --heads origin "refs/heads/$DRAFT_BRANCH" >/dev/null 2>&1; then
+            echo "Draft branch $DRAFT_BRANCH already exists; refusing duplicate generation."
+            echo 'skip=true' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo 'skip=false' >> "$GITHUB_OUTPUT"
+      - name: Snapshot existing drafts and individual file hashes
+        if: steps.target.outputs.skip != 'true'
+        run: node scripts/assert-daily-draft-scope.mjs --snapshot="$RUNNER_TEMP/drafts-before.json"
+      - name: Generate review_required draft only
+        if: steps.target.outputs.skip != 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          SLOT: ${{ steps.target.outputs.slot }}
+        run: node scripts/generate-daily-draft.mjs --slot="$SLOT"
+      - name: Enforce draft scope, state, and static privacy
+        if: steps.target.outputs.skip != 'true'
+        id: scope
+        run: node scripts/assert-daily-draft-scope.mjs --verify="$RUNNER_TEMP/drafts-before.json" --output="$GITHUB_OUTPUT" --body="$RUNNER_TEMP/draft-pr-body.md"
+      - name: Commit and push isolated draft branch
+        if: steps.target.outputs.skip != 'true'
+        env:
+          DRAFT_ID: ${{ steps.scope.outputs.draft_id }}
+          DRAFT_BRANCH: ${{ steps.scope.outputs.draft_branch }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/private/content-drafts.json src/content/drafts/
-          if git diff --cached --quiet; then
-            echo 'No new draft to commit.'
-            exit 0
-          fi
-          git commit -m "chore(drafts): generate review_required draft"
-          git push origin HEAD:main
+          git switch -c "$DRAFT_BRANCH"
+          git add -- data/private/content-drafts.json "src/content/drafts/$DRAFT_ID.json"
+          git commit -m "chore(drafts): add $DRAFT_ID review draft"
+          git push --set-upstream origin "HEAD:$DRAFT_BRANCH"
+      - name: Create draft-only pull request
+        if: steps.target.outputs.skip != 'true'
+        id: pull_request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT_ID: ${{ steps.scope.outputs.draft_id }}
+          DRAFT_BRANCH: ${{ steps.scope.outputs.draft_branch }}
+        run: |
+          PR_URL="$(gh pr create --base main --head "$DRAFT_BRANCH" --title "chore(drafts): add $DRAFT_ID review draft" --body-file "$RUNNER_TEMP/draft-pr-body.md")"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+      - name: Revalidate remote draft-only PR and auto-merge
+        if: steps.target.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.pull_request.outputs.pr_url }}
+          DRAFT_ID: ${{ steps.scope.outputs.draft_id }}
+        run: |
+          PR_JSON="$(gh pr view "$PR_URL" --json state,files)"
+          PR_JSON="$PR_JSON" DRAFT_ID="$DRAFT_ID" node -e "const pr=JSON.parse(process.env.PR_JSON); const got=pr.files.map((file)=>file.path).sort(); const expected=['data/private/content-drafts.json','src/content/drafts/'+process.env.DRAFT_ID+'.json'].sort(); if(pr.state!=='OPEN'||JSON.stringify(got)!==JSON.stringify(expected)) throw new Error('Remote PR scope mismatch: '+JSON.stringify(got));"
+          gh pr merge "$PR_URL" --squash --delete-branch
+          test "$(gh pr view "$PR_URL" --json state --jq .state)" = 'MERGED'
