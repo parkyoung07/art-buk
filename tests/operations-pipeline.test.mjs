@@ -98,15 +98,27 @@ test('reusable deployment authorizes only the exact main workflow_ref', () => {
   assert.doesNotMatch(workflow, /CALLER_WORKFLOW:[^\n]*github\.workflow(?:\s|$)/);
 });
 
-test('approval mutation is protected by production environment after validation', () => {
+test('approval mutation is protected by production environment and both state changes use scoped PRs', () => {
   const workflow = read('.github/workflows/approve-and-deploy.yml');
   const approveJob = workflow.slice(workflow.indexOf('  approve:'), workflow.indexOf('  deploy-approved:'));
+  const finalizeJob = workflow.slice(workflow.indexOf('  finalize:'), workflow.indexOf('  recover-production:'));
   assert.match(approveJob, /environment:\s*production/);
   assert.match(approveJob, /APPROVAL_ACTOR:[^\n]*github\.actor/);
   assert.match(approveJob, /REPOSITORY_OWNER:[^\n]*github\.repository_owner/);
   assert.match(approveJob, /test "\$APPROVAL_ACTOR" = "\$REPOSITORY_OWNER"/);
   assert.ok(approveJob.indexOf('name: Validate approval inputs') < approveJob.indexOf('Move exactly one reviewed draft to approved'));
-  assert.ok(approveJob.indexOf('name: Validate approval inputs') < approveJob.indexOf('git push origin HEAD:main'));
+  assert.doesNotMatch(workflow, /git push origin HEAD:main/);
+  assert.match(approveJob, /pull-requests:\s*write/);
+  assert.match(finalizeJob, /pull-requests:\s*write/);
+  assert.match(approveJob, /APPROVE_BRANCH="release\/approve-\$DRAFT_ID-\$GITHUB_RUN_ID"/);
+  assert.match(finalizeJob, /FINALIZE_BRANCH="release\/finalize-\$DRAFT_ID-\$GITHUB_RUN_ID"/);
+  assert.match(approveJob, /gh pr create --base main --head "\$APPROVE_BRANCH"/);
+  assert.match(finalizeJob, /gh pr create --base main --head "\$FINALIZE_BRANCH"/);
+  assert.match(approveJob, /baseRefOid,files/);
+  assert.match(finalizeJob, /baseRefOid,files/);
+  assert.match(approveJob, /gh pr merge "\$PR_URL" --squash --delete-branch/);
+  assert.match(finalizeJob, /gh pr merge "\$PR_URL" --squash --delete-branch/);
+  assert.match(approveJob, /candidate_sha=\$CANDIDATE_SHA/);
 });
 
 test('workflow expressions are never interpolated directly into shell commands', () => {

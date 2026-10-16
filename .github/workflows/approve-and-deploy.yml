@@ -30,8 +30,9 @@ jobs:
     environment: production
     permissions:
       contents: write
+      pull-requests: write
     outputs:
-      candidate_sha: ${{ steps.commit.outputs.candidate_sha }}
+      candidate_sha: ${{ steps.merge_candidate.outputs.candidate_sha }}
       live_url: ${{ steps.approve.outputs.live_url }}
       post_slug: ${{ steps.approve.outputs.post_slug }}
       approval_digest: ${{ steps.approve.outputs.approval_digest }}
@@ -119,16 +120,44 @@ jobs:
           npm run build
           test ! -e out/data/content-drafts.json
       - id: commit
-        name: Commit approved candidate to main without rebase
+        name: Commit approved candidate on isolated release branch
         env:
           DRAFT_ID: ${{ inputs.draft_id }}
+          POST_SLUG: ${{ steps.approve.outputs.post_slug }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "src/content/drafts/$DRAFT_ID.json" data/private/content-drafts.json src/content/posts/ public/data/search-index.json public/search-index.json public/rss.xml public/feed.xml
+          APPROVE_BRANCH="release/approve-$DRAFT_ID-$GITHUB_RUN_ID"
+          git switch -c "$APPROVE_BRANCH"
+          git add "src/content/drafts/$DRAFT_ID.json" data/private/content-drafts.json "src/content/posts/$POST_SLUG.md" public/data/search-index.json public/search-index.json public/rss.xml public/feed.xml
           git commit -m "feat(content): approve $DRAFT_ID for production"
-          git push origin HEAD:main
-          echo "candidate_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          git push --set-upstream origin "HEAD:$APPROVE_BRANCH"
+          echo "approve_branch=$APPROVE_BRANCH" >> "$GITHUB_OUTPUT"
+      - id: approval_pr
+        name: Create approved-candidate pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          APPROVE_BRANCH: ${{ steps.commit.outputs.approve_branch }}
+        run: |
+          PR_URL="$(gh pr create --base main --head "$APPROVE_BRANCH" --title "feat(content): approve $DRAFT_ID for production" --body "Exact approved candidate for $DRAFT_ID. Production deployment remains gated by the production Environment and verified deployment workflow.")"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+      - id: merge_candidate
+        name: Revalidate and merge approved-candidate pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.approval_pr.outputs.pr_url }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          POST_SLUG: ${{ steps.approve.outputs.post_slug }}
+          EXPECTED_MAIN_SHA: ${{ inputs.expected_main_sha }}
+        run: |
+          PR_JSON="$(gh pr view "$PR_URL" --json state,baseRefOid,files)"
+          PR_JSON="$PR_JSON" DRAFT_ID="$DRAFT_ID" POST_SLUG="$POST_SLUG" EXPECTED_MAIN_SHA="$EXPECTED_MAIN_SHA" node -e "const pr=JSON.parse(process.env.PR_JSON); const got=pr.files.map(file=>file.path).sort(); const expected=['data/private/content-drafts.json','src/content/drafts/'+process.env.DRAFT_ID+'.json','src/content/posts/'+process.env.POST_SLUG+'.md','public/data/search-index.json','public/search-index.json','public/rss.xml','public/feed.xml'].sort(); if(pr.state!=='OPEN'||pr.baseRefOid!==process.env.EXPECTED_MAIN_SHA||JSON.stringify(got)!==JSON.stringify(expected)) throw new Error('Approval PR scope mismatch: '+JSON.stringify({state:pr.state,baseRefOid:pr.baseRefOid,got}));"
+          gh pr merge "$PR_URL" --squash --delete-branch
+          CANDIDATE_SHA="$(gh pr view "$PR_URL" --json state,mergeCommit --jq 'select(.state == "MERGED") | .mergeCommit.oid')"
+          [[ "$CANDIDATE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$CANDIDATE_SHA"
+          echo "candidate_sha=$CANDIDATE_SHA" >> "$GITHUB_OUTPUT"
 
   deploy-approved:
     needs: approve
@@ -145,6 +174,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -187,14 +217,41 @@ jobs:
             --deployment-id="$DEPLOYMENT_ID" \
             --deployment-url="$DEPLOYMENT_URL" \
             --verified-at="$VERIFIED_AT"
-      - env:
+      - id: finalize_commit
+        name: Commit published state on isolated release branch
+        env:
           DRAFT_ID: ${{ inputs.draft_id }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          FINALIZE_BRANCH="release/finalize-$DRAFT_ID-$GITHUB_RUN_ID"
+          git switch -c "$FINALIZE_BRANCH"
           git add "src/content/drafts/$DRAFT_ID.json" data/private/content-drafts.json
           git commit -m "chore(content): mark $DRAFT_ID published"
-          git push origin HEAD:main
+          git push --set-upstream origin "HEAD:$FINALIZE_BRANCH"
+          echo "finalize_branch=$FINALIZE_BRANCH" >> "$GITHUB_OUTPUT"
+      - id: finalize_pr
+        name: Create published-state pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          FINALIZE_BRANCH: ${{ steps.finalize_commit.outputs.finalize_branch }}
+        run: |
+          PR_URL="$(gh pr create --base main --head "$FINALIZE_BRANCH" --title "chore(content): mark $DRAFT_ID published" --body "Finalize $DRAFT_ID only after the approved candidate was deployed and verified on Production.")"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+      - name: Revalidate and merge published-state pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.finalize_pr.outputs.pr_url }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          CANDIDATE_SHA: ${{ needs.approve.outputs.candidate_sha }}
+        run: |
+          PR_JSON="$(gh pr view "$PR_URL" --json state,baseRefOid,files)"
+          PR_JSON="$PR_JSON" DRAFT_ID="$DRAFT_ID" CANDIDATE_SHA="$CANDIDATE_SHA" node -e "const pr=JSON.parse(process.env.PR_JSON); const got=pr.files.map(file=>file.path).sort(); const expected=['data/private/content-drafts.json','src/content/drafts/'+process.env.DRAFT_ID+'.json'].sort(); if(pr.state!=='OPEN'||pr.baseRefOid!==process.env.CANDIDATE_SHA||JSON.stringify(got)!==JSON.stringify(expected)) throw new Error('Finalize PR scope mismatch: '+JSON.stringify({state:pr.state,baseRefOid:pr.baseRefOid,got}));"
+          gh pr merge "$PR_URL" --squash --delete-branch
+          PUBLISHED_SHA="$(gh pr view "$PR_URL" --json state,mergeCommit --jq 'select(.state == "MERGED") | .mergeCommit.oid')"
+          [[ "$PUBLISHED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$PUBLISHED_SHA"
 
   recover-production:
     if: ${{ always() && needs.deploy-approved.result == 'success' && needs.finalize.result != 'success' }}
