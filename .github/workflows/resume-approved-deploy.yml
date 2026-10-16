@@ -1,0 +1,245 @@
+name: Resume Approved Draft Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      draft_id:
+        description: 'Exact approved draft ID'
+        required: true
+        type: string
+      expected_approval_digest:
+        description: 'Stored approvalDigest of the approved draft'
+        required: true
+        type: string
+      expected_main_sha:
+        description: 'Exact approved candidate SHA currently on main'
+        required: true
+        type: string
+      confirmation:
+        description: 'Type RESUME <draft_id>'
+        required: true
+        type: string
+
+concurrency:
+  group: production-release
+  cancel-in-progress: false
+
+jobs:
+  validate-approved:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      candidate_sha: ${{ steps.validate.outputs.candidate_sha }}
+      post_slug: ${{ steps.validate.outputs.post_slug }}
+      live_url: ${{ steps.validate.outputs.live_url }}
+      approval_digest: ${{ steps.validate.outputs.approval_digest }}
+    steps:
+      - name: Validate resume inputs
+        shell: bash
+        env:
+          DRAFT_ID: ${{ inputs.draft_id }}
+          EXPECTED_APPROVAL_DIGEST: ${{ inputs.expected_approval_digest }}
+          EXPECTED_MAIN_SHA: ${{ inputs.expected_main_sha }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+          ACTOR: ${{ github.actor }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          [[ "$DRAFT_ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)$ ]] || exit 1
+          [[ "$EXPECTED_APPROVAL_DIGEST" =~ ^[0-9a-f]{64}$ ]] || exit 1
+          [[ "$EXPECTED_MAIN_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
+          test "$CONFIRMATION" = "RESUME $DRAFT_ID"
+          test "$ACTOR" = "$REPOSITORY_OWNER"
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/heads/main
+          fetch-depth: 0
+      - name: Verify checked-out approved candidate SHA
+        shell: bash
+        env:
+          EXPECTED_MAIN_SHA: ${{ inputs.expected_main_sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_MAIN_SHA"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$EXPECTED_MAIN_SHA"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: validate
+        name: Validate exact approved draft without mutation
+        shell: bash
+        env:
+          DRAFT_ID: ${{ inputs.draft_id }}
+          EXPECTED_APPROVAL_DIGEST: ${{ inputs.expected_approval_digest }}
+          EXPECTED_MAIN_SHA: ${{ inputs.expected_main_sha }}
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const id = process.env.DRAFT_ID;
+          const expectedDigest = process.env.EXPECTED_APPROVAL_DIGEST;
+          const expectedMain = process.env.EXPECTED_MAIN_SHA;
+          const individualPath = path.join('src', 'content', 'drafts', `${id}.json`);
+          if (!fs.existsSync(individualPath)) throw new Error(`Draft not found: ${id}`);
+          const individual = JSON.parse(fs.readFileSync(individualPath, 'utf8'));
+          const drafts = JSON.parse(fs.readFileSync('data/private/content-drafts.json', 'utf8'));
+          const matches = drafts.filter(draft => draft.id === id);
+          if (matches.length !== 1) throw new Error(`Expected exactly one aggregate draft ${id}, found ${matches.length}`);
+          const draft = matches[0];
+          if (JSON.stringify(individual) !== JSON.stringify(draft)) throw new Error('Individual and aggregate draft state differ');
+          if (draft.status !== 'approved') throw new Error(`Draft must be approved, found ${draft.status}`);
+          if (draft.publishedAt !== null) throw new Error('Draft already has publishedAt');
+          if (draft.approvalDigest !== expectedDigest) throw new Error('approvalDigest mismatch');
+          if (typeof draft.approvedBy !== 'string' || !draft.approvedBy.trim()) throw new Error('approvedBy is missing');
+          if (typeof draft.approvedAt !== 'string' || Number.isNaN(Date.parse(draft.approvedAt))) throw new Error('approvedAt is missing or invalid');
+          if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug) || draft.slug.length > 100) throw new Error('Invalid approved draft slug');
+          if (!/^\d{4}-\d{2}-\d{2}$/.test(draft.date) || draft.date !== id.slice(0, 10)) throw new Error('Invalid approved draft date');
+          const postSlug = `${draft.date}-${draft.slug}`;
+          const postPath = path.join('src', 'content', 'posts', `${postSlug}.md`);
+          if (!fs.existsSync(postPath)) throw new Error(`Approved post markdown is missing: ${postPath}`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `candidate_sha=${expectedMain}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `post_slug=${postSlug}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `live_url=https://nadriai.com/blog/${postSlug}/\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `approval_digest=${draft.approvalDigest}\n`);
+          NODE
+          node scripts/assert-deployable-drafts.mjs --allow-approved="$DRAFT_ID"
+          git diff --exit-code
+
+  deploy-approved:
+    needs: validate-approved
+    uses: ./.github/workflows/deploy.yml
+    with:
+      expected_sha: ${{ needs.validate-approved.outputs.candidate_sha }}
+      approved_draft_id: ${{ inputs.draft_id }}
+      verify_path: /blog/${{ needs.validate-approved.outputs.post_slug }}/
+      expected_marker: ${{ needs.validate-approved.outputs.post_slug }}
+    secrets: inherit
+
+  finalize:
+    needs: [validate-approved, deploy-approved]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/heads/main
+          fetch-depth: 0
+      - name: Verify checked-out deployed candidate SHA
+        shell: bash
+        env:
+          CANDIDATE_SHA: ${{ needs.validate-approved.outputs.candidate_sha }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$CANDIDATE_SHA"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Preserve non-target draft state
+        run: cp data/private/content-drafts.json "$RUNNER_TEMP/drafts-before-finalize.json"
+      - name: Mark published only after verified Production response
+        env:
+          DRAFT_ID: ${{ inputs.draft_id }}
+          APPROVAL_DIGEST: ${{ needs.validate-approved.outputs.approval_digest }}
+          CANDIDATE_SHA: ${{ needs.validate-approved.outputs.candidate_sha }}
+          DEPLOYED_SHA: ${{ needs.deploy-approved.outputs.deployed_sha }}
+          LIVE_URL: ${{ needs.validate-approved.outputs.live_url }}
+          DEPLOYMENT_ID: ${{ needs.deploy-approved.outputs.deployment_id }}
+          DEPLOYMENT_URL: ${{ needs.deploy-approved.outputs.deployment_url }}
+          VERIFIED_AT: ${{ needs.deploy-approved.outputs.verified_at }}
+        run: |
+          test "$DEPLOYED_SHA" = "$CANDIDATE_SHA"
+          node scripts/approve-and-publish.mjs \
+            --phase=finalize \
+            --id="$DRAFT_ID" \
+            --expected-sha256="$APPROVAL_DIGEST" \
+            --deployed-sha="$DEPLOYED_SHA" \
+            --live-url="$LIVE_URL" \
+            --deployment-id="$DEPLOYMENT_ID" \
+            --deployment-url="$DEPLOYMENT_URL" \
+            --verified-at="$VERIFIED_AT"
+      - name: Prove all other drafts are unchanged
+        env:
+          TARGET_ID: ${{ inputs.draft_id }}
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const before = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/drafts-before-finalize.json'));
+          const after = JSON.parse(fs.readFileSync('data/private/content-drafts.json'));
+          const clean = drafts => drafts.filter(draft => draft.id !== process.env.TARGET_ID);
+          if (JSON.stringify(clean(before)) !== JSON.stringify(clean(after))) throw new Error('Non-target drafts changed');
+          const target = after.find(draft => draft.id === process.env.TARGET_ID);
+          if (!target || target.status !== 'published' || !target.publishedAt) throw new Error('Target was not finalized');
+          NODE
+      - id: finalize_commit
+        name: Commit published state on isolated resume branch
+        env:
+          DRAFT_ID: ${{ inputs.draft_id }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          FINALIZE_BRANCH="release/finalize-resume-$DRAFT_ID-$GITHUB_RUN_ID"
+          git switch -c "$FINALIZE_BRANCH"
+          git add "src/content/drafts/$DRAFT_ID.json" data/private/content-drafts.json
+          git commit -m "chore(content): mark $DRAFT_ID published"
+          git push --set-upstream origin "HEAD:$FINALIZE_BRANCH"
+          echo "finalize_branch=$FINALIZE_BRANCH" >> "$GITHUB_OUTPUT"
+      - id: finalize_pr
+        name: Create resumed published-state pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          FINALIZE_BRANCH: ${{ steps.finalize_commit.outputs.finalize_branch }}
+        run: |
+          PR_URL="$(gh pr create --base main --head "$FINALIZE_BRANCH" --title "chore(content): mark $DRAFT_ID published" --body "Finalize the already-approved $DRAFT_ID only after its exact candidate SHA was deployed and verified on Production.")"
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+      - name: Revalidate and merge resumed published-state pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ steps.finalize_pr.outputs.pr_url }}
+          DRAFT_ID: ${{ inputs.draft_id }}
+          CANDIDATE_SHA: ${{ needs.validate-approved.outputs.candidate_sha }}
+        run: |
+          PR_JSON="$(gh pr view "$PR_URL" --json state,baseRefOid,files)"
+          PR_JSON="$PR_JSON" DRAFT_ID="$DRAFT_ID" CANDIDATE_SHA="$CANDIDATE_SHA" node -e "const pr=JSON.parse(process.env.PR_JSON); const got=pr.files.map(file=>file.path).sort(); const expected=['data/private/content-drafts.json','src/content/drafts/'+process.env.DRAFT_ID+'.json'].sort(); if(pr.state!=='OPEN'||pr.baseRefOid!==process.env.CANDIDATE_SHA||JSON.stringify(got)!==JSON.stringify(expected)) throw new Error('Resume finalize PR scope mismatch: '+JSON.stringify({state:pr.state,baseRefOid:pr.baseRefOid,got}));"
+          gh pr merge "$PR_URL" --squash --delete-branch
+          PUBLISHED_SHA="$(gh pr view "$PR_URL" --json state,mergeCommit --jq 'select(.state == "MERGED") | .mergeCommit.oid')"
+          [[ "$PUBLISHED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$PUBLISHED_SHA"
+
+  recover-production:
+    if: ${{ always() && needs.deploy-approved.result == 'success' && needs.finalize.result != 'success' }}
+    needs: [validate-approved, deploy-approved, finalize]
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+    steps:
+      - name: Restore prior Production deployment and keep draft approved
+        shell: bash
+        env:
+          PRIOR_DEPLOYMENT_ID: ${{ needs.deploy-approved.outputs.prior_deployment_id }}
+          CANDIDATE_SHA: ${{ needs.validate-approved.outputs.candidate_sha }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          [[ "$PRIOR_DEPLOYMENT_ID" =~ ^[0-9a-f-]{36}$ ]] || exit 1
+          CURRENT_MAIN_SHA=$(curl --fail-with-body -sS \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H 'Accept: application/vnd.github+json' \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/git/ref/heads/main" \
+            | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>process.stdout.write(JSON.parse(s).object.sha))")
+          if [ "$CURRENT_MAIN_SHA" != "$CANDIDATE_SHA" ]; then
+            echo 'Finalize PR may already be on main; skipping rollback to avoid published-source/Production divergence.'
+            exit 0
+          fi
+          curl --fail-with-body -sS \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/art-buk/deployments/$PRIOR_DEPLOYMENT_ID/rollback" \
+            -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" > "$RUNNER_TEMP/rollback.json"
+          node -e 'const result=require(process.argv[1]); if(result.success!==true) process.exit(1)' "$RUNNER_TEMP/rollback.json"

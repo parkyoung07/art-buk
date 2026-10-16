@@ -12,6 +12,7 @@ const workflowPaths = [
   '.github/workflows/daily-post.yml',
   '.github/workflows/deploy.yml',
   '.github/workflows/approve-and-deploy.yml',
+  '.github/workflows/resume-approved-deploy.yml',
 ];
 const shellBodies = (source) => {
   const lines = source.split(/\r?\n/);
@@ -90,11 +91,13 @@ test('release workflows checkout main and verify its exact SHA before repository
   assert.match(deploy, /Manual deployments may only deploy current main/);
 });
 
-test('reusable deployment authorizes only the exact main workflow_ref', () => {
+test('reusable deployment authorizes only exact release workflow refs', () => {
   const workflow = read('.github/workflows/deploy.yml');
   assert.match(workflow, /CALLER_WORKFLOW_REF:[^\n]*github\.workflow_ref/);
   assert.match(workflow, /github\.repository/);
   assert.match(workflow, /\.github\/workflows\/approve-and-deploy\.yml@refs\/heads\/main/);
+  assert.match(workflow, /\.github\/workflows\/resume-approved-deploy\.yml@refs\/heads\/main/);
+  assert.match(workflow, /\.github\/workflows\/deploy\.yml@refs\/heads\/main/);
   assert.doesNotMatch(workflow, /CALLER_WORKFLOW:[^\n]*github\.workflow(?:\s|$)/);
 });
 
@@ -119,6 +122,35 @@ test('approval mutation is protected by production environment and both state ch
   assert.match(approveJob, /gh pr merge "\$PR_URL" --squash --delete-branch/);
   assert.match(finalizeJob, /gh pr merge "\$PR_URL" --squash --delete-branch/);
   assert.match(approveJob, /candidate_sha=\$CANDIDATE_SHA/);
+});
+
+test('approved deployment resume avoids reapproval and finalizes through a scoped PR', () => {
+  const deploy = read('.github/workflows/deploy.yml');
+  const resume = read('.github/workflows/resume-approved-deploy.yml');
+  const deployConcurrency = deploy.slice(deploy.indexOf('concurrency:'), deploy.indexOf('\njobs:'));
+  assert.match(deployConcurrency, /group:\s*production-deploy/);
+  assert.match(deployConcurrency, /cancel-in-progress:\s*false/);
+  assert.doesNotMatch(deployConcurrency, /github\.event_name|workflow_call/);
+  assert.match(resume, /concurrency:[\s\S]*group:\s*production-release/);
+  assert.match(resume, /expected_approval_digest:/);
+  assert.match(resume, /expected_main_sha:/);
+  assert.match(resume, /RESUME \$DRAFT_ID/);
+  assert.match(resume, /draft\.status !== 'approved'/);
+  assert.match(resume, /draft\.publishedAt !== null/);
+  assert.match(resume, /draft\.approvalDigest !== expectedDigest/);
+  assert.match(resume, /draft\.approvedBy/);
+  assert.match(resume, /draft\.approvedAt/);
+  assert.match(resume, /Approved post markdown is missing/);
+  assert.match(resume, /assert-deployable-drafts\.mjs --allow-approved="\$DRAFT_ID"/);
+  assert.match(resume, /uses:\s*\.\/\.github\/workflows\/deploy\.yml/);
+  assert.doesNotMatch(resume, /--phase=approve|git push origin HEAD:main/);
+  assert.match(resume, /--phase=finalize/);
+  assert.match(resume, /test "\$DEPLOYED_SHA" = "\$CANDIDATE_SHA"/);
+  assert.match(resume, /FINALIZE_BRANCH="release\/finalize-resume-\$DRAFT_ID-\$GITHUB_RUN_ID"/);
+  assert.match(resume, /gh pr create --base main --head "\$FINALIZE_BRANCH"/);
+  assert.match(resume, /baseRefOid,files/);
+  assert.match(resume, /gh pr merge "\$PR_URL" --squash --delete-branch/);
+  assert.match(resume, /recover-production:[\s\S]*needs\.deploy-approved\.outputs\.prior_deployment_id[\s\S]*\/rollback/);
 });
 
 test('workflow expressions are never interpolated directly into shell commands', () => {
