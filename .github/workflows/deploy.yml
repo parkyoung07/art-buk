@@ -56,7 +56,7 @@ on:
       prior_deployment_id:
         value: ${{ jobs.deploy.outputs.prior_deployment_id }}
 concurrency:
-  group: ${{ github.event_name == 'workflow_call' && format('production-release-called-{0}', github.run_id) || 'production-release' }}
+  group: production-deploy
   cancel-in-progress: false
 
 jobs:
@@ -78,7 +78,9 @@ jobs:
           EXPECTED_SHA: ${{ inputs.expected_sha }}
           EVENT_NAME: ${{ github.event_name }}
           CALLER_WORKFLOW_REF: ${{ github.workflow_ref }}
-          EXPECTED_CALLER_WORKFLOW_REF: ${{ format('{0}/.github/workflows/approve-and-deploy.yml@refs/heads/main', github.repository) }}
+          APPROVAL_WORKFLOW_REF: ${{ format('{0}/.github/workflows/approve-and-deploy.yml@refs/heads/main', github.repository) }}
+          RESUME_WORKFLOW_REF: ${{ format('{0}/.github/workflows/resume-approved-deploy.yml@refs/heads/main', github.repository) }}
+          MANUAL_WORKFLOW_REF: ${{ format('{0}/.github/workflows/deploy.yml@refs/heads/main', github.repository) }}
           CONFIRMATION: ${{ inputs.confirmation }}
           APPROVED_DRAFT_ID: ${{ inputs.approved_draft_id }}
           VERIFY_PATH: ${{ inputs.verify_path || '/' }}
@@ -88,17 +90,14 @@ jobs:
         run: |
           [[ "$VERIFY_PATH" =~ ^/[A-Za-z0-9_/-]*$ ]] || exit 1
           [[ "$EXPECTED_MARKER" =~ ^[A-Za-z0-9_-]{0,100}$ ]] || exit 1
-          if [ "$EVENT_NAME" = workflow_dispatch ]; then
+          if [ "$CALLER_WORKFLOW_REF" = "$APPROVAL_WORKFLOW_REF" ] || [ "$CALLER_WORKFLOW_REF" = "$RESUME_WORKFLOW_REF" ]; then
+            [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
+            [[ "$APPROVED_DRAFT_ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)$ ]] || exit 1
+          elif [ "$EVENT_NAME" = workflow_dispatch ] && [ "$CALLER_WORKFLOW_REF" = "$MANUAL_WORKFLOW_REF" ]; then
             [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
             test "$CONFIRMATION" = "DEPLOY $EXPECTED_SHA"
             test -z "$APPROVED_DRAFT_ID"
             test "$ACTOR" = "$REPOSITORY_OWNER"
-          elif [ "$EVENT_NAME" = workflow_call ]; then
-            test "$CALLER_WORKFLOW_REF" = "$EXPECTED_CALLER_WORKFLOW_REF"
-            [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || exit 1
-            if [ -n "$APPROVED_DRAFT_ID" ]; then
-              [[ "$APPROVED_DRAFT_ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-(am|pm)$ ]] || exit 1
-            fi
           else
             exit 1
           fi
