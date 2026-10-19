@@ -446,3 +446,76 @@ test('no production admin page embeds a client-side credential', () => {
     assert.doesNotMatch(source, /NEXT_PUBLIC_ADMIN_PASSWORD|nadri2026|artbuk_admin_auth/);
   }
 });
+
+test('content integrity rejects URL-encoded fragments, short text, and missing headings', async () => {
+  const { validateContentIntegrity } = await import('../scripts/generate-daily-draft.mjs');
+
+  // 1. URL encoding or corrupt fragment at start must fail
+  assert.throws(
+    () => validateContentIntegrity('MTFfMjc1%2FMDAxNjM5MTI0OTIzNDU2.5-rMGdLS2ddyzE1k8UuyUen08ULMekJLFNZCzmGxRBMg.4hdHnCG0ajfenqi50n03YdnumPzyVCjiJbVwaNIBciMg.JPEG.huikeem%2FIMG_4990.'),
+    /무결성 검사 실패/
+  );
+
+  // 2. Short content must fail
+  assert.throws(
+    () => validateContentIntegrity('## 짧은 본문\n내용이 너무 적습니다.'),
+    /무결성 검사 실패.*길이/
+  );
+
+  // 3. Content missing markdown headings must fail
+  const longTextWithoutHeading = '가'.repeat(350);
+  assert.throws(
+    () => validateContentIntegrity(longTextWithoutHeading),
+    /무결성 검사 실패.*헤딩/
+  );
+
+  // 4. Proper markdown content must pass
+  const validContent = `## 1. 오늘 바로 떠나는 특별한 이유
+
+바쁜 일상 속에서 감성을 충전할 수 있는 최적의 명소입니다. 영남권 문화예술의 중심지에서 가을의 정취와 함께 수준 높은 작품들을 관람해 보세요. 가족, 연인과 함께 여유로운 시간을 보내기에 더할 나위 없이 좋습니다.
+
+## 2. 핵심 볼거리 & 감상 포인트
+
+- 현대미술 기획전시실 내부 작품 감상
+- 야외 조각광장과 힐링 산책로 코스 둘러보기
+- 감각적인 인테리어와 포토존
+
+## 3. 함께 둘러보기 좋은 주변 연계 코스
+
+전시 관람 후에는 센텀시티 인근 명소와 카페를 방문하여 하루를 알차게 완성해 보세요.
+
+## 4. 방문 전 필수 체크리스트
+
+- 관람료: 무료 관람 (일부 기획전 별도)
+- 주차: 공영주차장 완비`;
+  assert.equal(validateContentIntegrity(validContent, '테스트장소'), true);
+});
+
+test('verified image resolver prioritizes local human-selected cover and disables automatic coverApproved', async () => {
+  const { resolveVerifiedImages } = await import('../scripts/verified-image-resolver.mjs');
+
+  const resolved = resolveVerifiedImages(
+    'busan-museum-of-art-modern',
+    '부산시립미술관',
+    '전시·미술관',
+    '부산'
+  );
+
+  // 1. Cover must be local human-selected image (NADRI COVER 01), not legacy external/blog URL
+  assert.ok(resolved.coverImage.url.startsWith('/images/'), `Expected local image URL, got: ${resolved.coverImage.url}`);
+  assert.equal(resolved.coverImage.url, '/images/venues/busan-museum-of-art/cover-2026-reopening-exhibitions.jpg');
+
+  // 2. coverApproved must remain false prior to admin human approval
+  assert.equal(resolved.coverImage.coverApproved, false);
+  for (const img of resolved.selectedImages) {
+    assert.equal(img.coverApproved, false);
+  }
+  for (const img of resolved.allPool) {
+    assert.equal(img.coverApproved, false);
+    // 3. Blog URLs must NEVER be labeled as official/KOGL
+    if (img.url.includes('pstatic.net') || img.url.includes('blogfiles.naver.net')) {
+      assert.notEqual(img.status, 'approved');
+      assert.doesNotMatch(img.source, /공식.*KOGL/);
+    }
+  }
+});
