@@ -49,7 +49,7 @@ if (fs.existsSync(vaultPath)) {
   }
 }
 
-// 3. 12대 핵심 분야 후보 풀 (AM/PM 테마별 완벽 분류)
+// 3. 12대 핵심 분야 후보 풀 (AM/PM 테마별 분류 및 팩트 검증 메타데이터)
 const TOPIC_REGISTRY = [
   // ----------------------------------------------------
   // [AM 슬롯: 오늘 바로 활용 - 전시/미술관/무료전시/실내]
@@ -64,11 +64,12 @@ const TOPIC_REGISTRY = [
     summary: "센텀시티 도심 속 예술의 오아시스! 오늘 바로 방문하기 좋은 부산시립미술관의 무료 기획전시와 이우환 공간, 센텀 힐링 코스를 총정리합니다.",
     venueName: "부산시립미술관",
     address: "부산광역시 해운대구 APEC로 58",
-    period: "2026.09.01 ~ 2026.11.30",
-    hours: "10:00 ~ 18:00 (입장마감 17:00, 매주 월요일 휴관)",
-    closedDays: "매주 월요일",
-    price: "무료 (특별기획전 별도)",
-    parking: "미술관 지하/야외 전용 주차장 완비 (유료)",
+    period: "공식 재개관 특별전 운영 (전시별 일정 상이, 방문 당일 공식 홈페이지 확인 필요)",
+    periodVerified: false,
+    hours: "10:00 ~ 18:00 (입장마감 본관 17:00 / 이우환공간 17:30, 매주 월요일 휴관)",
+    closedDays: "매주 월요일, 1월 1일 (월요일이 공휴일인 경우 익일 휴관)",
+    price: "현재 한시적 무료 (특별기획전 별도)",
+    parking: "미술관 지하/야외 전용 주차장 완비 (10분당 400원, 대중교통 권장)",
     homepage: "https://art.busan.go.kr",
     tags: ["부산전시", "오늘전시", "무료전시", "부산시립미술관", "해운대나들이", "센텀시티"],
     themeType: "exhibition_free",
@@ -84,7 +85,8 @@ const TOPIC_REGISTRY = [
     summary: "세계적인 미디어 아티스트들이 빚어내는 환상적인 빛과 소리의 향연! 단돈 1천 원으로 즐기는 몰입형 미디어아트와 성남동 문화의 거리 감성 투어.",
     venueName: "울산시립미술관",
     address: "울산광역시 중구 미술관길 72",
-    period: "2026.09.10 ~ 2026.12.20",
+    period: "기획전시 운영 중 (방문 전 공식 홈페이지 일정 확인 필요)",
+    periodVerified: false,
     hours: "10:00 ~ 18:00 (매주 월요일 휴관)",
     closedDays: "매주 월요일",
     price: "성인 1,000원 (울산시민 500원)",
@@ -104,7 +106,8 @@ const TOPIC_REGISTRY = [
     summary: "유유히 흐르는 남강과 우아한 진주성 내에 위치한 국립진주박물관! 쾌적한 실내 어린이 박물관 체험과 촉석루 산책을 함께 즐기는 추천 코스.",
     venueName: "국립진주박물관 (진주성 내)",
     address: "경상남도 진주시 남강로 626-35 (본성동)",
-    period: "상설전시 및 가을 특별전 (2026.09.05 ~ 2026.11.25)",
+    period: "상설전시 운영 중 (특별전 일정 공식 홈페이지 확인 필요)",
+    periodVerified: false,
     hours: "09:00 ~ 18:00 (매주 월요일 휴관)",
     closedDays: "매주 월요일, 1월 1일",
     price: "박물관 무료 (진주성 입장료: 성인 2,000원, 어린이 600원)",
@@ -124,7 +127,8 @@ const TOPIC_REGISTRY = [
     summary: "낙동강변에서 열리는 영남 최대의 전통 5일장! 갓 삶은 70년 전통 구포국수와 가마솥 족발, 활기 넘치는 장터 풍경을 생생히 전해드립니다.",
     venueName: "구포 5일장 (구포시장)",
     address: "부산광역시 북구 구포시장1길 17",
-    period: "매월 3일 · 8일 5일장 (상설시장 매일 운영)",
+    period: "매월 3일·8일 5일장 및 상설시장 운영",
+    periodVerified: true,
     hours: "07:00 ~ 20:00 (장날 활성화)",
     closedDays: "연중무휴 (점포별 상이)",
     price: "무료 입장 (온누리상품권 사용 가능)",
@@ -145,7 +149,8 @@ const TOPIC_REGISTRY = [
     summary: "탁 트인 층고와 통유리 채광이 매력적인 부산대표도서관! 쾌적한 북카페, 옥상 하늘정원, 전시실이 어우러진 도심 속 힐링 독서 명소.",
     venueName: "부산도서관 (부산대표도서관)",
     address: "부산광역시 사상구 사상로310번길 33",
-    period: "상설 운영",
+    period: "상설 운영 (매주 월요일 휴관)",
+    periodVerified: true,
     hours: "화~금 09:00 ~ 22:00 / 토~일 09:00 ~ 18:00 (월요일 휴관)",
     closedDays: "매주 월요일, 법정공휴일",
     price: "무료 이용",
@@ -169,7 +174,8 @@ const TOPIC_REGISTRY = [
     summary: "옛 와이어 공장의 감각적인 재탄생! 석천홀 현대미술 전시, 대나무 소리길 산책, 테라로사 커피와 예스24 중고서점을 잇는 주말 감성 코스.",
     venueName: "F1963 석천홀 & 복합문화공간",
     address: "부산광역시 수영구 구락로123번길 20",
-    period: "2026.09.05 ~ 2026.11.30",
+    period: "상설 복합문화공간 및 기획전시 (방문 전 공식 홈페이지 확인 필요)",
+    periodVerified: false,
     hours: "09:00 ~ 21:00 (공간별 상이, 전시 10:00~18:00)",
     closedDays: "연중무휴 (전시장은 월요일 휴관)",
     price: "공간 무료 (기획전시별 상이)",
@@ -190,6 +196,7 @@ const TOPIC_REGISTRY = [
     venueName: "거제 바람의 언덕 & 도장포 마을",
     address: "경상남도 거제시 남부면 갈곶리 산14-47",
     period: "연중 상시 개방",
+    periodVerified: true,
     hours: "24시간 상시 개방 (일몰 전 방문 추천)",
     closedDays: "연중무휴",
     price: "무료 입장",
@@ -209,7 +216,8 @@ const TOPIC_REGISTRY = [
     summary: "청정 남해 바다를 배경으로 영롱하게 빛나는 천년 옻칠 예술! 부모님과 함께 여유롭게 감상하는 현대 옻칠 회화와 서호시장 해물뚝배기 미식 투어.",
     venueName: "통영옻칠미술관",
     address: "경상남도 통영시 용남면 미지해안로 160",
-    period: "2026.09.15 ~ 2026.12.15",
+    period: "상설 및 기획전시 운영 (매주 월요일 휴관, 공식 일정 확인 필요)",
+    periodVerified: false,
     hours: "10:00 ~ 17:00 (매주 월요일 휴관)",
     closedDays: "매주 월요일, 명절 당일",
     price: "성인 3,000원 / 경로 2,000원 / 청소년 1,500원",
@@ -229,7 +237,8 @@ const TOPIC_REGISTRY = [
     summary: "흙과 건축도자가 만나는 세계 유일의 건축도자 전문 미술관! 돔하우스 특별전, 도자 빚기 체험, 야외 잔디 조각공원에서 즐기는 주말 가족 나들이.",
     venueName: "클레이아크 김해미술관",
     address: "경상남도 김해시 진례면 진례로 275-51",
-    period: "2026.09.01 ~ 2026.11.30",
+    period: "상설 및 기획전시 운영 (매주 월요일 휴관, 공식 일정 확인 필요)",
+    periodVerified: false,
     hours: "10:00 ~ 18:00 (입장마감 17:00, 매주 월요일 휴관)",
     closedDays: "매주 월요일, 1월 1일",
     price: "성인 2,000원 / 중고생 1,000원 / 어린이 500원",
@@ -250,6 +259,7 @@ const TOPIC_REGISTRY = [
     venueName: "밀양 위양지 & 완재정",
     address: "경상남도 밀양시 부북면 위양리 278",
     period: "연중 상시 개방",
+    periodVerified: true,
     hours: "24시간 상시 개방 (아침/오후 산책 추천)",
     closedDays: "연중무휴",
     price: "무료 입장",
@@ -300,6 +310,49 @@ async function fetchNaverSearchData(venueName, region) {
 }
 
 import { resolveVerifiedImages } from "./verified-image-resolver.mjs";
+
+// 5. 생성된 본문의 무결성 철저 검증 (필수 수정 6)
+export function validateContentIntegrity(content, venueOrTitle = "") {
+  if (typeof content !== "string") {
+    throw new Error(`[무결성 검사 실패] 본문이 문자열이 아닙니다 (타입: ${typeof content})`);
+  }
+
+  const trimmed = content.trim();
+
+  // 1. URL 인코딩 조각 또는 깨진 파일명/바이너리 조각으로 시작하는지 검사
+  const corruptStartPatterns = [
+    /^MTFf/i,
+    /^MDAx/i,
+    /^%[0-9a-f]{2}/i,
+    /^[a-z0-9+/=_%-]{20,}(?:\.jpg|\.png|\.jpeg|\.webp|%2f)/i,
+    /^(?:https?:\/\/|\/images\/|[a-z0-9_-]+\.(?:jpg|jpeg|png|webp))/i,
+    /^(?:search\.pstatic\.net|blogfiles\.naver\.net)/i
+  ];
+
+  for (const pattern of corruptStartPatterns) {
+    if (pattern.test(trimmed)) {
+      throw new Error(`[무결성 검사 실패] 본문이 비정상적인 URL 인코딩/파일명 조각으로 시작합니다 (검출 패턴: ${pattern}, 시작부: "${trimmed.slice(0, 40)}...")`);
+    }
+  }
+
+  // 서두(첫 60자) 내에 URL 인코딩 잔여 조각(%2F, %3A 등 연속 문자) 여부 검사
+  if (/^[A-Za-z0-9_=%-]{10,}%[0-9A-Fa-f]{2}/.test(trimmed.slice(0, 60))) {
+    throw new Error(`[무결성 검사 실패] 서두에 URL 인코딩 조각이 검출되었습니다 ("${trimmed.slice(0, 40)}...")`);
+  }
+
+  // 2. 최소 길이 검사 (기본 템플릿도 최소 300자 이상)
+  if (trimmed.length < 300) {
+    throw new Error(`[무결성 검사 실패] 본문 길이가 너무 짧습니다 (${trimmed.length}자 / 최소 300자 필요)`);
+  }
+
+  // 3. 필수 마크다운 헤딩 구조 검사 (## 1., ## 2. 등)
+  if (!/(?:^|\n)##\s+/.test(trimmed)) {
+    throw new Error("[무결성 검사 실패] 본문에 필수 마크다운 헤딩(##) 섹션이 존재하지 않습니다.");
+  }
+
+  console.log(`🛡️ [무결성 검사 통과] 대상: ${venueOrTitle} | 본문 길이: ${trimmed.length}자 | 마크다운 헤딩 및 본문 서두 정상`);
+  return true;
+}
 
 // 6. Gemini AI 콘텐츠 생성
 async function generateDraftWithGemini(topic, photos, today, slot, naverData) {
@@ -398,7 +451,14 @@ ${photos[1] ? `![${photos[1].alt}](${photos[1].url})\n` : ""}
       if (response.ok) {
         const data = await response.json();
         const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (generatedText) return generatedText;
+        if (generatedText) {
+          try {
+            validateContentIntegrity(generatedText, topic.venueName);
+            return generatedText;
+          } catch (valErr) {
+            console.warn(`⚠️ [${modelName}] 생성 결과 무결성 검증 실패 (무시 후 재시도/폴백):`, valErr.message);
+          }
+        }
       }
     } catch (e) {
       console.warn(`⚠️ [${modelName}] 호출 오류:`, e.message);
@@ -458,37 +518,69 @@ async function main() {
     return;
   }
 
-  // 14일 쿨다운 및 최근 게시글/초안 분석
+  // -------------------------------------------------------------------------
+  // [필수 수정 1] 최근 7일 내 동일 slug 재생성 금지 (이미 사용된 장소면 다음 후보 선택)
+  // -------------------------------------------------------------------------
   const postsDir = path.join(rootDir, "src/content/posts");
   const publishedFiles = fs.existsSync(postsDir) ? fs.readdirSync(postsDir).filter(f => f.endsWith(".md")) : [];
-  const recent14DaysSlugs = new Set();
+  const recent7DaysSlugs = new Set();
+  const lastUsedTimestamps = new Map(); // slug -> latest timestamp ms
   const todayTime = new Date(today).getTime();
 
+  const recordUsage = (slug, dateStr) => {
+    if (!slug || !dateStr) return;
+    const time = new Date(dateStr).getTime();
+    if (Number.isNaN(time)) return;
+    const diffDays = Math.floor((todayTime - time) / (1000 * 60 * 60 * 24));
+    if (diffDays >= 0 && diffDays < 7) {
+      recent7DaysSlugs.add(slug);
+    }
+    const currentLatest = lastUsedTimestamps.get(slug) || 0;
+    if (time > currentLatest) {
+      lastUsedTimestamps.set(slug, time);
+    }
+  };
+
+  // 1) 기발행 포스트(src/content/posts) 기준 최근 7일 사용 확인
   for (const file of publishedFiles) {
     const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
     if (match) {
       const [, pDate, pSlug] = match;
-      const diffDays = Math.floor((todayTime - new Date(pDate).getTime()) / (1000 * 60 * 60 * 24));
-      if (diffDays >= 0 && diffDays < 14) {
-        recent14DaysSlugs.add(pSlug);
-      }
+      recordUsage(pSlug, pDate);
     }
   }
 
-  // 기존 미승인/기발행 초안의 slug도 포함
+  // 2) 기존 초안 목록에서도 최근 7일 내 생성된 slug만 정확히 판별 (전체 초안을 무조건 추가하던 버그 해결)
   existingDrafts.forEach(d => {
-    if (d.slug) recent14DaysSlugs.add(d.slug);
+    const draftDate = d.date || d.targetDate || (d.id ? d.id.slice(0, 10) : null);
+    if (d.slug && draftDate) {
+      recordUsage(d.slug, draftDate);
+    }
   });
 
-  // 해당 슬롯에 맞는 후보 선별
-  let slotCandidates = TOPIC_REGISTRY.filter(t => t.slot === slot && !recent14DaysSlugs.has(t.slug));
+  // 해당 슬롯에 맞는 후보 중 7일 쿨다운 미포함 후보 선별 (가장 오래 사용되지 않은 순 정렬)
+  const sortByLeastRecent = (list) => {
+    return [...list].sort((a, b) => {
+      const aTime = lastUsedTimestamps.get(a.slug) || 0;
+      const bTime = lastUsedTimestamps.get(b.slug) || 0;
+      return aTime - bTime;
+    });
+  };
+
+  let slotCandidates = sortByLeastRecent(
+    TOPIC_REGISTRY.filter(t => t.slot === slot && !recent7DaysSlugs.has(t.slug))
+  );
+
   if (slotCandidates.length === 0) {
-    console.warn(`⚠️ [${slot}] 슬롯의 14일 쿨다운 미포함 후보가 부족하여 전체 후보에서 탐색합니다.`);
-    slotCandidates = TOPIC_REGISTRY.filter(t => !recent14DaysSlugs.has(t.slug));
+    console.warn(`⚠️ [${slot}] 슬롯의 7일 쿨다운 미포함 후보가 부족하여 반대 슬롯 후보에서 탐색합니다.`);
+    slotCandidates = sortByLeastRecent(
+      TOPIC_REGISTRY.filter(t => !recent7DaysSlugs.has(t.slug))
+    );
   }
+
   if (slotCandidates.length === 0) {
-    console.warn("⚠️ 전체 14일 쿨다운 후보 중 가장 오래된 후보를 선택합니다.");
-    slotCandidates = [...TOPIC_REGISTRY];
+    console.warn("⚠️ 전체 7일 쿨다운 후보가 소진되어 가장 오래전에 다루었던 장소를 순환 선택합니다.");
+    slotCandidates = sortByLeastRecent(TOPIC_REGISTRY);
   }
 
   const selectedTopic = slotCandidates[0];
@@ -516,7 +608,11 @@ async function main() {
   console.log(`✍️ AI 본문 초안 작성 중...`);
   const markdownBody = await generateDraftWithGemini(selectedTopic, photos, today, slot, naverData);
 
+  // [필수 수정 6] 생성된 본문 최종 무결성 검증 (비정상 시 즉시 FAIL 및 PR 생성 원천 차단)
+  validateContentIntegrity(markdownBody, selectedTopic.title);
+
   // 초안 객체 생성 (항상 review_required 상태)
+  const isPeriodVerified = selectedTopic.periodVerified === true;
   const draftObj = {
     id: draftId,
     slot: slot,
@@ -547,17 +643,24 @@ async function main() {
         marketDays: selectedTopic.marketDays || "",
         parking: selectedTopic.parking,
         homepage: selectedTopic.homepage,
-        isVerified: true,
-        notes: ""
+        isVerified: isPeriodVerified,
+        notes: isPeriodVerified ? "" : "전시/행사 일정 및 관람정보 공식 확인 필요 (fact review 대상)"
       }
     ],
-    images: resolvedImages.selectedImages,
-    availableImagePool: resolvedImages.allPool,
+    // [필수 수정 5] 새 draft의 coverApproved는 회장님 검수 전에는 항상 false로 유지
+    images: resolvedImages.selectedImages.map(p => ({
+      ...p,
+      coverApproved: false
+    })),
+    availableImagePool: resolvedImages.allPool.map(p => ({
+      ...p,
+      coverApproved: false
+    })),
     imageCredits: resolvedImages.selectedImages.map(p => ({
       url: p.url,
       source: p.source,
       alt: p.alt,
-      verified: true
+      verified: p.stage2Verified ?? true
     })),
     infoSources: [
       { name: `${selectedTopic.venueName} 공식 웹사이트`, url: selectedTopic.homepage },
@@ -570,7 +673,9 @@ async function main() {
     approvedAt: null,
     publishedAt: null,
     rejectReason: null,
-    curatorNotes: `${selectedTopic.category} 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)`
+    curatorNotes: isPeriodVerified
+      ? `${selectedTopic.category} 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)`
+      : `[fact review 필요 - 관람정보 공식 확인 대기] ${selectedTopic.category} 가을 맞춤 큐레이션 (1·2단계 검수 자산 100% 매칭)`
   };
 
   // 초안 데이터 저장 (data/private/content-drafts.json)
@@ -627,7 +732,14 @@ ${draftObj.reviewUrl}
   }
 }
 
-main().catch(err => {
-  console.error("❌ 초안 생성 실패:", err);
-  process.exit(1);
-});
+const isDirectExecution = process.argv[1] && (
+  fileURLToPath(import.meta.url) === path.resolve(process.argv[1]) ||
+  process.argv[1].endsWith("generate-daily-draft.mjs")
+);
+
+if (isDirectExecution) {
+  main().catch(err => {
+    console.error("❌ 초안 생성 실패:", err);
+    process.exit(1);
+  });
+}
