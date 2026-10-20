@@ -201,21 +201,6 @@ export default function FloatingChatbot() {
   const [isTyping, setIsTyping] = useState(false);
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState("");
-  const [userId] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      try {
-        let storedId = localStorage.getItem("artbuk_chat_uid");
-        if (!storedId) {
-          storedId = `user_${Math.random().toString(36).substring(2, 7)}`;
-          localStorage.setItem("artbuk_chat_uid", storedId);
-        }
-        return storedId;
-      } catch {
-        return "";
-      }
-    }
-    return "";
-  });
   const [isLiveMode, setIsLiveMode] = useState(false); // 상담원 1:1 실시간 모드 플래그
   const [showFaqDrawer, setShowFaqDrawer] = useState(false);
 
@@ -223,17 +208,6 @@ export default function FloatingChatbot() {
   const inputRef = useRef<HTMLInputElement>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const searchIndexRef = useRef<any[]>([]);
-
-  // 1. Ensure userId is synced to localStorage on mount
-  useEffect(() => {
-    try {
-      if (userId) {
-        localStorage.setItem("artbuk_chat_uid", userId);
-      }
-    } catch {
-      // ignore
-    }
-  }, [userId]);
 
   // 2. Load chat-data.json and search-index.json on mount
   useEffect(() => {
@@ -316,49 +290,7 @@ export default function FloatingChatbot() {
     }
   }, [isOpen]);
 
-  // 6. [핵심] 상담원 모드 시 3초마다 관리자 새 메시지 실시간 폴링 (Polling)
-  useEffect(() => {
-    if (!isOpen || !isLiveMode || !userId) return;
-
-    const interval = setInterval(async () => {
-      try {
-        const res = await fetch(`/api/messages?userId=${encodeURIComponent(userId)}`);
-        if (res.ok) {
-          const data = await res.json();
-          if (data.messages && Array.isArray(data.messages)) {
-            // KV에 저장된 관리자 메시지 중 아직 표시되지 않은 신규 메시지 추가
-            setMessages((prev) => {
-              const existingTexts = new Set(prev.map((m) => `${m.sender}:${m.text}`));
-              const newIncoming = data.messages
-                .filter((m: { id: string; sender: string; text: string; timestamp: string }) => 
-                  !existingTexts.has(`${m.sender === "admin" ? "bot" : "user"}:${m.text}`)
-                )
-                .map((m: { id: string; sender: string; text: string; timestamp: string }) => ({
-                  id: m.id || generateMsgId("kv"),
-                  sender: (m.sender === "admin" ? "bot" : "user") as "bot" | "user",
-                  text: m.text,
-                  timestamp: new Date(m.timestamp).toLocaleTimeString([], {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  }),
-                }));
-
-              if (newIncoming.length > 0) {
-                return [...prev, ...newIncoming];
-              }
-              return prev;
-            });
-          }
-        }
-      } catch (err) {
-        console.warn("실시간 메시지 동기화 에러:", err);
-      }
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [isOpen, isLiveMode, userId]);
-
-  // 7. Handle Question Chip Click
+  // 6. Handle Question Chip Click
   const handleSelectQuestion = (qItem: QuestionItem) => {
     if (isTyping) return;
 
@@ -437,38 +369,7 @@ export default function FloatingChatbot() {
     router.push(rawUrl);
   };
 
-  // 8. [핵심] '상담원 연결하기' 클릭 핸들러
-  const handleConnectAgent = () => {
-    setIsLiveMode(true);
-
-    const botMessage: Message = {
-      id: generateMsgId("sys"),
-      sender: "bot",
-      text: "상담원과 연결 중입니다... 👩‍💼\n궁금하신 내용을 입력창에 남겨주시면 상담원이 실시간으로 확인 후 친절히 답변해 드립니다.",
-      timestamp: formatCurrentTime(),
-    };
-
-    setMessages((prev) => [...prev, botMessage]);
-
-    // Cloudflare KV에 상담 요청 메시지 등록
-    if (userId) {
-      fetch("/api/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId,
-          message: "👋 안녕하세요, 1:1 실시간 상담을 요청합니다.",
-          sender: "user",
-        }),
-      }).catch(() => {});
-    }
-
-    setTimeout(() => {
-      inputRef.current?.focus();
-    }, 150);
-  };
-
-  // 9. 사용자 메시지 전송 (상담 모드 vs AI 모드 분기)
+  // 8. 사용자 메시지 전송
   const handleSendMessage = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     const query = inputValue.trim();
@@ -488,34 +389,7 @@ export default function FloatingChatbot() {
     setMessages((prev) => [...prev, userMessage]);
     setInputValue("");
 
-    // ==========================================
-    // A. 실시간 상담원(Live) 모드인 경우
-    // ==========================================
-    if (isLiveMode) {
-      // KV 저장소(/api/messages)에만 저장하고 상담원의 답변 대기
-      if (userId) {
-        fetch("/api/messages", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ userId, message: query, sender: "user" }),
-        }).catch(() => {});
-      }
-      return;
-    }
-
-    // ==========================================
-    // B. AI 챗봇 모드인 경우 (/api/chat 호출)
-    // ==========================================
     setIsTyping(true);
-
-    // 사용자 메시지 기록
-    if (userId) {
-      fetch("/api/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, message: query, sender: "user" }),
-      }).catch(() => {});
-    }
 
     try {
       const response = await fetch("/api/chat", {
@@ -542,13 +416,6 @@ export default function FloatingChatbot() {
           };
           setMessages((prev) => [...prev, botMessage]);
 
-          if (userId) {
-            fetch("/api/messages", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ userId, message: replyText, sender: "admin" }),
-            }).catch(() => {});
-          }
           return;
         }
       }
@@ -995,19 +862,19 @@ export default function FloatingChatbot() {
                         </button>
                       ))}
 
-                      {/* 실시간 상담원 연결하기 버튼 */}
+                      {/* 상담 기능 중단 안내 */}
                       <button
                         type="button"
-                        disabled={isTyping}
-                        onClick={handleConnectAgent}
-                        className="mt-1 text-left text-xs bg-gradient-to-r from-violet-50 to-indigo-50 hover:from-violet-100 hover:to-indigo-100 active:scale-98 text-indigo-900 font-bold p-3 rounded-xl border border-indigo-200/80 transition-all duration-200 shadow-xs flex items-center justify-between group cursor-pointer"
+                        disabled
+                        aria-disabled="true"
+                        className="mt-1 text-left text-xs bg-slate-100 text-slate-500 font-bold p-3 rounded-xl border border-slate-200 shadow-xs flex items-center justify-between cursor-not-allowed"
                       >
                         <div className="flex items-center gap-2">
                           <span className="text-base">👩‍💼</span>
-                          <span>실시간 상담원 1:1 연결하기</span>
+                          <span>1:1 상담은 보안 점검 중</span>
                         </div>
-                        <span className="px-2 py-0.5 rounded-full bg-indigo-600 text-white text-[10px] font-bold group-hover:bg-indigo-700 transition-colors">
-                          연결 →
+                        <span className="px-2 py-0.5 rounded-full bg-slate-300 text-slate-600 text-[10px] font-bold">
+                          이용 중단
                         </span>
                       </button>
                     </div>
@@ -1024,10 +891,11 @@ export default function FloatingChatbot() {
                       </button>
                       <button
                         type="button"
-                        onClick={handleConnectAgent}
-                        className="text-[11px] font-bold text-violet-800 bg-violet-50 hover:bg-violet-100 px-2.5 py-1.5 rounded-xl border border-violet-200 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                        disabled
+                        aria-disabled="true"
+                        className="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-1.5 rounded-xl border border-slate-200 flex items-center gap-1 cursor-not-allowed shadow-2xs"
                       >
-                        <span>👩‍💼 1:1 상담원 연결</span>
+                        <span>👩‍💼 1:1 상담 보안 점검 중</span>
                       </button>
                     </div>
 
