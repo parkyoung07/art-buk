@@ -13,7 +13,6 @@ export default function IntroPage() {
   ]);
   const [feedbackName, setFeedbackName] = useState('');
   const [feedbackText, setFeedbackText] = useState('');
-  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [copiedType, setCopiedType] = useState<string | null>(null);
   const [isKakaoModalOpen, setIsKakaoModalOpen] = useState(false);
@@ -45,42 +44,6 @@ export default function IntroPage() {
 
   const handleSubmitFeedback = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!feedbackText.trim() || submitting) return;
-
-    setSubmitting(true);
-    const feedbackPayload = {
-      rating,
-      selectedFeatures,
-      name: feedbackName.trim() || '익명의 방문객',
-      feedback: feedbackText.trim(),
-      createdAt: new Date().toISOString(),
-    };
-
-    const formattedMessage = `[📝 나드리AI 사용자 피드백 접수]\n- 작성자: ${feedbackPayload.name}\n- 별점: ${'⭐'.repeat(rating)} (${rating}점/5점)\n- 마음에 든 기능: ${selectedFeatures.join(', ') || '선택 없음'}\n- 의견 및 보완 제안:\n${feedbackPayload.feedback}`;
-
-    try {
-      await fetch('/api/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          userId: `feedback_${Date.now()}`,
-          message: formattedMessage,
-          sender: 'user',
-        }),
-      });
-    } catch {
-      // 로컬 스토리지 백업 저장
-      try {
-        const saved = JSON.parse(localStorage.getItem('artbuk_feedbacks') || '[]');
-        saved.push(feedbackPayload);
-        localStorage.setItem('artbuk_feedbacks', JSON.stringify(saved));
-      } catch {
-        // ignore
-      }
-    }
-
-    setSubmitting(false);
-    setSubmitted(true);
   };
 
   return (
@@ -114,11 +77,13 @@ export default function IntroPage() {
             </button>
 
             <button
-              onClick={() => handleCopyPromo('feedback')}
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition-colors cursor-pointer"
+              type="button"
+              disabled
+              aria-disabled="true"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-800 text-slate-500 text-xs font-bold border border-slate-700 cursor-not-allowed"
             >
               <span>📢</span>
-              <span className="hidden md:inline">홍보문구 복사</span>
+              <span className="hidden md:inline">피드백 접수 중단</span>
             </button>
 
             <Link
@@ -186,13 +151,14 @@ export default function IntroPage() {
               <span>🚀 포털 바로 체험하기</span>
               <span>→</span>
             </Link>
-            <a
-              href="#feedback-section"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs sm:text-sm border border-slate-700 transition-colors"
+            <button
+              type="button"
+              disabled
+              aria-disabled="true"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-2xl bg-slate-800 text-slate-500 font-bold text-xs sm:text-sm border border-slate-700 cursor-not-allowed"
             >
-              <span>📋 장·단점 피드백 남기기</span>
-              <span>↓</span>
-            </a>
+              <span>📋 피드백 접수 보안 점검 중</span>
+            </button>
             <button
               type="button"
               onClick={() => setIsKakaoModalOpen(true)}
@@ -312,7 +278,7 @@ export default function IntroPage() {
             <div className="flex flex-wrap gap-1.5 text-[11px] font-bold text-pink-300 pt-2 border-t border-slate-700/60">
               <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">⚡ 실시간 즉시 답변</span>
               <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">🔗 바로가기 카드</span>
-              <span className="px-2 py-0.5 rounded-md bg-pink-950/60 border border-pink-800/50">👩‍💼 1:1 상담원 연결</span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-800 border border-slate-700 text-slate-400">👩‍💼 1:1 상담은 보안 점검 중</span>
             </div>
           </div>
 
@@ -401,10 +367,11 @@ export default function IntroPage() {
               </div>
               <button
                 type="button"
-                onClick={() => handleCopyPromo('feedback')}
-                className="w-full py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 active:scale-98 text-white font-bold text-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                disabled
+                aria-disabled="true"
+                className="w-full py-2.5 rounded-xl bg-slate-700 text-slate-400 font-bold text-xs flex items-center justify-center gap-1.5 cursor-not-allowed"
               >
-                <span>{copiedType === 'feedback' ? '✅ 복사 완료!' : '📋 피드백 요청 문구 복사'}</span>
+                <span>📋 피드백 요청 문구 사용 중단</span>
               </button>
             </div>
           </div>
@@ -422,6 +389,9 @@ export default function IntroPage() {
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg mx-auto break-keep">
               이용해 보시며 <strong>수정할 점, 보완할 점, 추가되었으면 하는 기능</strong>을 남겨주시면
               더 멋진 서비스로 발전시켜 나가겠습니다.
+            </p>
+            <p className="mt-3 rounded-xl border border-amber-500/40 bg-amber-950/50 px-4 py-3 text-xs font-bold text-amber-200">
+              피드백 접수는 보안 점검 중입니다. 안전한 접수 경로가 확인된 뒤 다시 안내하겠습니다.
             </p>
           </div>
 
@@ -454,7 +424,8 @@ export default function IntroPage() {
               </div>
             </div>
           ) : (
-            <form onSubmit={handleSubmitFeedback} className="space-y-5 sm:space-y-6">
+            <form onSubmit={handleSubmitFeedback} aria-disabled="true">
+              <fieldset disabled className="space-y-5 sm:space-y-6 opacity-60">
               {/* 1. 종합 만족도 별점 */}
               <div>
                 <label className="block text-xs sm:text-sm font-bold text-slate-200 mb-2 leading-normal break-keep">
@@ -552,18 +523,12 @@ export default function IntroPage() {
               {/* 제출 버튼 */}
               <button
                 type="submit"
-                disabled={submitting || !feedbackText.trim()}
+                disabled
                 className="w-full py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:to-purple-500 disabled:opacity-50 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-indigo-600/30 transition-all cursor-pointer flex items-center justify-center gap-2"
               >
-                {submitting ? (
-                  <span>의견을 안전하게 전송하는 중...</span>
-                ) : (
-                  <>
-                    <span>💌 소중한 의견 및 피드백 보내기</span>
-                    <span>→</span>
-                  </>
-                )}
+                <span>피드백 접수 일시 중단</span>
               </button>
+              </fieldset>
             </form>
           )}
         </div>
