@@ -2,7 +2,7 @@ name: Daily AI Draft Generation
 
 on:
   schedule:
-    # 주 1회 정기 초안 생성 (매주 화요일 UTC 00:17 / 수요일 KST 09:17)
+    # 주 1회 정기 초안 생성: 매주 화요일 오전 09:17 KST (화요일 UTC 00:17)
     - cron: '17 0 * * 2'
   workflow_dispatch:
     inputs:

@@ -35,8 +35,6 @@ function loadEnv() {
 loadEnv();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const NAVER_CLIENT_ID = process.env.NAVER_CLIENT_ID;
-const NAVER_CLIENT_SECRET = process.env.NAVER_CLIENT_SECRET;
 
 // 2. 검증된 이미지 금고 로드
 const vaultPath = path.join(rootDir, "public/data/verified-image-vault.json");
@@ -271,69 +269,8 @@ const TOPIC_REGISTRY = [
   }
 ];
 
-// 4. 네이버 실시간 검색 API 연동 (30일 로컬 캐싱으로 불필요한 반복 호출 및 비용 원천 차단)
-const naverCacheDir = path.join(rootDir, "data/cache/naver");
-if (!fs.existsSync(naverCacheDir)) {
-  fs.mkdirSync(naverCacheDir, { recursive: true });
-}
+// 4. 네이버 검색 API 호출 완전 배제 (TOPIC_REGISTRY 큐레이션 데이터 전담 활용)
 
-async function fetchNaverSearchData(venueName, region) {
-  if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) {
-    return { blogReviews: [], localRestaurants: [], nearbyAttractions: [] };
-  }
-
-  const cleanVenue = venueName.replace(/\s*\(.*?\)/g, "").trim();
-  const safeFilename = encodeURIComponent(cleanVenue) + ".json";
-  const cachePath = path.join(naverCacheDir, safeFilename);
-
-  // 30일 이내 캐시가 존재하면 재사용하여 Naver API 호출 0건 처리
-  if (fs.existsSync(cachePath)) {
-    try {
-      const cached = JSON.parse(fs.readFileSync(cachePath, "utf8"));
-      const cacheAge = Date.now() - new Date(cached.cachedAt || 0).getTime();
-      if (cacheAge < 30 * 24 * 60 * 60 * 1000) {
-        console.log(`📦 [Naver API 캐시 재사용] ${cleanVenue} (호출 0건)`);
-        return cached.data;
-      }
-    } catch (e) {}
-  }
-
-  const baseHeaders = {
-    "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
-    "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
-  };
-
-  try {
-    const blogUrl = `https://naverapihub.apigw.ntruss.com/search/v1/blog?query=${encodeURIComponent(cleanVenue + " 나들이")}&display=3&sort=sim`;
-    const blogRes = await fetch(blogUrl, { headers: baseHeaders });
-    const blogData = blogRes.ok ? await blogRes.json() : { items: [] };
-
-    const foodUrl = `https://naverapihub.apigw.ntruss.com/search/v1/local?query=${encodeURIComponent(cleanVenue + " 맛집")}&display=3&sort=comment`;
-    const foodRes = await fetch(foodUrl, { headers: baseHeaders });
-    const foodData = foodRes.ok ? await foodRes.json() : { items: [] };
-
-    const result = {
-      blogReviews: (blogData.items || []).map(item => ({
-        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
-        description: (item.description || "").replace(/<[^>]*>?/gm, "")
-      })),
-      localRestaurants: (foodData.items || []).map(item => ({
-        title: (item.title || "").replace(/<[^>]*>?/gm, ""),
-        category: (item.category || "").split(">").pop() || "맛집",
-        address: item.roadAddress || item.address || ""
-      }))
-    };
-
-    try {
-      fs.writeFileSync(cachePath, JSON.stringify({ cachedAt: new Date().toISOString(), data: result }, null, 2), "utf8");
-    } catch (e) {}
-
-    return result;
-  } catch (err) {
-    console.warn("⚠️ 네이버 검색 API 호출 경고:", err.message);
-    return { blogReviews: [], localRestaurants: [], nearbyAttractions: [] };
-  }
-}
 
 import { resolveVerifiedImages } from "./verified-image-resolver.mjs";
 
@@ -381,7 +318,7 @@ export function validateContentIntegrity(content, venueOrTitle = "") {
 }
 
 // 6. Gemini AI 콘텐츠 생성
-async function generateDraftWithGemini(topic, photos, today, slot, naverData) {
+async function generateDraftWithGemini(topic, photos, today, slot) {
   const isMorning = slot === "am";
   const slotDirective = isMorning
     ? `[오전 09:00 슬롯 핵심 지침]:
@@ -613,10 +550,6 @@ async function main() {
   console.log(`🎯 선별된 주제: [${selectedTopic.category}] ${selectedTopic.title}`);
   console.log(`📍 장소: ${selectedTopic.venueName} (${selectedTopic.address})`);
 
-  // 네이버 실시간 데이터 조회
-  console.log(`🔍 네이버 실시간 검색 수집 중 (${selectedTopic.venueName})...`);
-  const naverData = await fetchNaverSearchData(selectedTopic.venueName, selectedTopic.region);
-
   // 1·2단계 검증 실사 자산 우선 선별 (4단계 우선순위 매칭)
   console.log(`📸 1·2단계 검증 실사 사진 자산 우선 조회 중 (${selectedTopic.venueName})...`);
   const resolvedImages = resolveVerifiedImages(
@@ -632,7 +565,7 @@ async function main() {
 
   // 본문 생성
   console.log(`✍️ AI 본문 초안 작성 중...`);
-  const markdownBody = await generateDraftWithGemini(selectedTopic, photos, today, slot, naverData);
+  const markdownBody = await generateDraftWithGemini(selectedTopic, photos, today, slot);
 
   // [필수 수정 6] 생성된 본문 최종 무결성 검증 (비정상 시 즉시 FAIL 및 PR 생성 원천 차단)
   validateContentIntegrity(markdownBody, selectedTopic.title);
