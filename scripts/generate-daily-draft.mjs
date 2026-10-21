@@ -271,13 +271,33 @@ const TOPIC_REGISTRY = [
   }
 ];
 
-// 4. 네이버 실시간 검색 API 연동
+// 4. 네이버 실시간 검색 API 연동 (30일 로컬 캐싱으로 불필요한 반복 호출 및 비용 원천 차단)
+const naverCacheDir = path.join(rootDir, "data/cache/naver");
+if (!fs.existsSync(naverCacheDir)) {
+  fs.mkdirSync(naverCacheDir, { recursive: true });
+}
+
 async function fetchNaverSearchData(venueName, region) {
   if (!NAVER_CLIENT_ID || !NAVER_CLIENT_SECRET) {
     return { blogReviews: [], localRestaurants: [], nearbyAttractions: [] };
   }
 
   const cleanVenue = venueName.replace(/\s*\(.*?\)/g, "").trim();
+  const safeFilename = encodeURIComponent(cleanVenue) + ".json";
+  const cachePath = path.join(naverCacheDir, safeFilename);
+
+  // 30일 이내 캐시가 존재하면 재사용하여 Naver API 호출 0건 처리
+  if (fs.existsSync(cachePath)) {
+    try {
+      const cached = JSON.parse(fs.readFileSync(cachePath, "utf8"));
+      const cacheAge = Date.now() - new Date(cached.cachedAt || 0).getTime();
+      if (cacheAge < 30 * 24 * 60 * 60 * 1000) {
+        console.log(`📦 [Naver API 캐시 재사용] ${cleanVenue} (호출 0건)`);
+        return cached.data;
+      }
+    } catch (e) {}
+  }
+
   const baseHeaders = {
     "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
     "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET
@@ -292,7 +312,7 @@ async function fetchNaverSearchData(venueName, region) {
     const foodRes = await fetch(foodUrl, { headers: baseHeaders });
     const foodData = foodRes.ok ? await foodRes.json() : { items: [] };
 
-    return {
+    const result = {
       blogReviews: (blogData.items || []).map(item => ({
         title: (item.title || "").replace(/<[^>]*>?/gm, ""),
         description: (item.description || "").replace(/<[^>]*>?/gm, "")
@@ -303,6 +323,12 @@ async function fetchNaverSearchData(venueName, region) {
         address: item.roadAddress || item.address || ""
       }))
     };
+
+    try {
+      fs.writeFileSync(cachePath, JSON.stringify({ cachedAt: new Date().toISOString(), data: result }, null, 2), "utf8");
+    } catch (e) {}
+
+    return result;
   } catch (err) {
     console.warn("⚠️ 네이버 검색 API 호출 경고:", err.message);
     return { blogReviews: [], localRestaurants: [], nearbyAttractions: [] };
