@@ -70,8 +70,6 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PUBLIC_DATA_API_KEY: ${{ secrets.PUBLIC_DATA_API_KEY }}
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           SLOT: ${{ steps.target.outputs.slot }}
         run: node scripts/generate-daily-draft.mjs --slot="$SLOT"
       - name: Enforce draft scope, state, and static privacy
